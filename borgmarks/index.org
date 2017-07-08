@@ -4,7 +4,7 @@ Bookmarks in emacs org-mode.
 
 Curated, categorized, and tagged by hand.
 
-** Theory of organization
+* Theory of organization
 
    Primary categories are used for bucketing related ideas.
 
@@ -33,36 +33,96 @@ Curated, categorized, and tagged by hand.
 )  
 #+END_SRC
 
-** Great Talks
+*** [[http://orgmode.org/orgcard.pdf][Org Card]] 				       :emacs:orgmode:reference:card:
 
-*** [[https://www.youtube.com/watch?v=Sg4U4r_AgJU][Brian Kernighan - How to succeed at language design without really trying]] :talk:kernighan:language:design:awk:
+* Algorithms
+
+** Books
+
+*** [[https://github.com/mdipierro/nlib][Annotated Algorithms in Python]] :book:algorithms:python:
+
+** Programming Exercises
+
+*** [[https://projecteuler.net/][Project Euler]] 				  :programming:exercise:math:
+   
+*** [[http://codewars.com/][Codewars]] 					       :programming:exercise:
+   
+*** [[http://exercism.io/][Exercism]] 				    :programming:exercise:opensource:
+
+
+
+* Cryptography
+
+** [[https://begriffs.com/posts/2016-11-05-advanced-intro-gnupg.html][Advanced Introduction to GnuPG]] :cryptography:tutorial:gnupg:
+
+* Great Talks
+
+** [[https://www.youtube.com/watch?v=Sg4U4r_AgJU][Brian Kernighan - How to succeed at language design without really trying]] :talk:kernighan:language:design:awk:
 
     Mentions Alan Perlis' [[http://www.cs.yale.edu/homes/perlis-alan/quotes.html][Epigrams in Programming]]
 
-*** [[https://www.youtube.com/watch?v=O3tVctB_VSU][Gerald Sussman - We Don't Really Know how to Compute]] :talk:sussman:computation:
+** [[https://www.youtube.com/watch?v=O3tVctB_VSU][Gerald Sussman - We Don't Really Know how to Compute]] :talk:sussman:computation:
 
-** Revision Control
+* Frontend Web Design
 
-*** [[https://git-scm.com/book/en/v2][Git Book (v2)]] 						   :git:book:
+** [[http://flexboxfroggy.com/][CSS Flexbox Froggy]] :css:flexbox:tutorial:game:
 
-*** [[http://gitready.com/][git ready]] 						    :git:tips:tricks:
+** [[http://cssgridgarden.com/][CSS Grid Garden]] :css:grid:tutorial:game:
+
+
+* Graphics
+
+** [[http://www.extentofthejam.com/pseudo/][Lou's Psuedo 3d Page]] :graphics:3d:rendering:
+
+** [[http://machinethink.net/blog/3d-rendering-without-shaders/][3D Rendering without shaders]] :graphics:3d:rendering:shaders:
+
+[[https://news.ycombinator.com/item?id=13448047][Hackernews discussion]] with some interesting discourse and links such as [[https://fgiesen.wordpress.com/2013/02/06/the-barycentric-conspirac/][The Barycentric Conspiracy]].
+
+
+* Functional Programming
+
+** [[https://chriskohlhepp.wordpress.com/functional-programming-section/metacircular-adventures-in-functional-abstraction-challenging-clojure-in-common-lisp/][Metacircular Adventures in Functional Abstraction]] :functional:programming:common:lisp:clojure:
+
+
+* Mazes
+
+** [[http://weblog.jamisbuck.org/2011/2/7/maze-generation-algorithm-recap][Maze Generation Algorithm Recap]] :maze:algorithms:
+
+Nice recap of maze generation algorithms from a minecraft modder.  Check out his [[http://jamisbuck.org/mazes/minecraft.html][minecraft maze generator]].
+
+* Revision Control
+
+** [[https://git-scm.com/book/en/v2][Git Book (v2)]] 						   :git:book:
+
+** [[http://gitready.com/][git ready]] 						    :git:tips:tricks:
      
-*** [[https://github.com/GitAlias/gitalias/blob/master/gitalias.txt][GitAlias/gitalias/gitalias.txt]] 		   :git:alias:aliases:tricks:
+** [[https://github.com/GitAlias/gitalias/blob/master/gitalias.txt][GitAlias/gitalias/gitalias.txt]] 		   :git:alias:aliases:tricks:
 
-*** [[http://manishearth.github.io/blog/2017/03/05/understanding-git-filter-branch/][Understanding git filter-branch]] :git:advanced:branch:tricks:
+** [[http://manishearth.github.io/blog/2017/03/05/understanding-git-filter-branch/][Understanding git filter-branch]] 		 :git:advanced:branch:tricks:
     
-*** [[http://nvie.com/posts/a-successful-git-branching-model/][A successful Git branching model]] :git:workflow:branch:model:
+** [[http://nvie.com/posts/a-successful-git-branching-model/][A successful Git branching model]] 		  :git:workflow:branch:model:
 
     Original post from 2010.  Also check out [[https://github.com/nvie/gitflow][Van Driessen's git flow plugin]].
 
-*** [[https://www.atlassian.com/git/tutorials/comparing-workflows][Atlassian's comparing workflows and tutorials]] :git:workflow:branch:model:
+** [[https://www.atlassian.com/git/tutorials/comparing-workflows][Atlassian's comparing workflows and tutorials]]  :git:workflow:branch:model:
 
-*** [[https://bitbucket.org/yujiewu/hgflow/wiki/Home.wiki#!generalized-driessens-branching-model][HGFlow - Generalized Driessen's Branching Model]] :hg:workflow:branch:model:
+** [[https://bitbucket.org/yujiewu/hgflow/wiki/Home.wiki#!generalized-driessens-branching-model][HGFlow - Generalized Driessen's Branching Model]] :hg:workflow:branch:model:
 
-*** [[https://guides.github.com/introduction/flow/][Understanding the Github Flow]] :git:github:workflow:branch:model:
+** [[https://guides.github.com/introduction/flow/][Understanding the Github Flow]] 	   :git:github:workflow:branch:model:
 
-*** [[https://github.com/jonas/tig][tig]] :git:porcelain:curses:
+** [[https://github.com/jonas/tig][tig]] 						       :git:porcelain:curses:
 
-*** [[https://magit.vc/][Magit]] :git:porcelain:emacs:
+** [[https://magit.vc/][Magit]] 						:git:porcelain:emacs:
+   
 
-** Uncategorized
+* Uncategorized Otherwise
+
+** [[http://www.silota.com/docs/recipes/][Advanced SQL Recipes to jumpstart your Analysis]] :sql:tricks:data:analysis:
+** [[http://www.linusakesson.net/programming/tty/][The TTY Demystified]] :unix:history:tty:
+** [[http://blog.triplebyte.com/how-to-interview-engineers][How to Interview Engineers]] :hiring:engineers:
+
+
+* UNIX and BSD
+
+** [[https://fosdem.org/2017/schedule/event/my_bsd_sucks_less/][My BSD Sucks Less Than Yours]] :talk:unix:openbsd:freebsd:
+
