@@ -1,4 +1,68 @@
 * Borgmarks
 
-Bookmarks in emacs org-mode
+Bookmarks in emacs org-mode.
 
+Curated, categorized, and tagged by hand.
+
+** Theory of organization
+
+   Primary categories are used for bucketing related ideas.
+
+   Tagging is used for exposing topics related to a particular link.
+
+** Theory of operation
+
+   Links should be their own headings followed by tags.
+   Optional properties with CREATED date.
+   Description.
+
+*** [[http://karl-voit.at/2014/08/10/bookmarks-with-orgmode/][Managing web bookmarks with Org-mode]] :emacs:orgmode:bookmarks:
+:PROPERTIES:
+:CREATED: [2014-08-09 Sat 10:41]
+:END:
+
+    Well written post linked to from [[https://www.reddit.com/r/orgmode/comments/3vtxz1/storing_a_collection_of_web_bookmarks_with_org/][this discussion on reddit]] and elsewhere.
+
+#+BEGIN_SRC emacs-lisp
+(setq org-capture-templates
+  '(
+    ;; many more capture templates
+    ("b" "Bookmark" entry (file+headline "~/share/all/org-mode/notes.org" "Bookmarks") "* %?\n:PROPERTIES:\n:CREATED: %U\n:END:\n\n" :empty-lines 1)
+    ;; many more capture templates
+   )
+)  
+#+END_SRC
+
+** Great Talks
+
+*** [[https://www.youtube.com/watch?v=Sg4U4r_AgJU][Brian Kernighan - How to succeed at language design without really trying]] :talk:kernighan:language:design:awk:
+
+    Mentions Alan Perlis' [[http://www.cs.yale.edu/homes/perlis-alan/quotes.html][Epigrams in Programming]]
+
+*** [[https://www.youtube.com/watch?v=O3tVctB_VSU][Gerald Sussman - We Don't Really Know how to Compute]] :talk:sussman:computation:
+
+** Revision Control
+
+*** [[https://git-scm.com/book/en/v2][Git Book (v2)]] 						   :git:book:
+
+*** [[http://gitready.com/][git ready]] 						    :git:tips:tricks:
+     
+*** [[https://github.com/GitAlias/gitalias/blob/master/gitalias.txt][GitAlias/gitalias/gitalias.txt]] 		   :git:alias:aliases:tricks:
+
+*** [[http://manishearth.github.io/blog/2017/03/05/understanding-git-filter-branch/][Understanding git filter-branch]] :git:advanced:branch:tricks:
+    
+*** [[http://nvie.com/posts/a-successful-git-branching-model/][A successful Git branching model]] :git:workflow:branch:model:
+
+    Original post from 2010.  Also check out [[https://github.com/nvie/gitflow][Van Driessen's git flow plugin]].
+
+*** [[https://www.atlassian.com/git/tutorials/comparing-workflows][Atlassian's comparing workflows and tutorials]] :git:workflow:branch:model:
+
+*** [[https://bitbucket.org/yujiewu/hgflow/wiki/Home.wiki#!generalized-driessens-branching-model][HGFlow - Generalized Driessen's Branching Model]] :hg:workflow:branch:model:
+
+*** [[https://guides.github.com/introduction/flow/][Understanding the Github Flow]] :git:github:workflow:branch:model:
+
+*** [[https://github.com/jonas/tig][tig]] :git:porcelain:curses:
+
+*** [[https://magit.vc/][Magit]] :git:porcelain:emacs:
+
+** Uncategorized
