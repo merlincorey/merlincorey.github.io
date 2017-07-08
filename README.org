@@ -12,6 +12,7 @@ Starting with a basic hand written /index.html and /404.html
 
 Emacs org-mode can directly output HTML from its markup using =org-html-export-to-html= typically bound to =C-c C-e h=.
 
-Compare [[/README.org][README.org]] and [[/README.html][README.html]]
+Compare [[./README.org][README.org]] and [[./README.html][README.html]]
+
 
 
