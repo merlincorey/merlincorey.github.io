@@ -6,15 +6,58 @@
 
 Starting with a basic hand written /index.html and /404.html
 
-** Generator Zoo
+** Implemented Generators
 
-*** [[http://orgmode.org/][orgmode]]
+   This repository implements some of the static site generators.
+
+   - orgmode :: Implemented in [[./README.html][README.html]] and [[./borgmarks/][borgmarks]]
+   - reveal.js :: Implemented in [[./reeventure/][reeventure]]
+
+** Comparison Matrix
+
+| Generator | Implemented | Inputs            | Pros                                                | Cons                                                                          |
+|-----------+-------------+-------------------+-----------------------------------------------------+-------------------------------------------------------------------------------|
+| orgmode   | yes         | orgmode           | Emacs mode means full featured editing environment. | Emacs mode means so much more than I even know how to uses yet.               |
+| reveal.js | yes         | html5, javascript | HTML5 layout is both readable and writeable.        | Heavy Javascript and CSS dependencies, especially for more than basic slides. |
+|           |             |                   |                                                     |                                                                               |
+
+* Generator Zoo
+
+** [[http://orgmode.org/][orgmode]] 						    :emacs:lisp:html:
 
 Emacs org-mode can directly output HTML from its markup using =org-html-export-to-html= typically bound to =C-c C-e h=.
 
 Compare [[./README.org][README.org]] and [[./README.html][README.html]]
 
-*** [[http://lab.hakim.se/reveal-js/][reveal.js]]
+** [[http://lab.hakim.se/reveal-js/][reveal.js]] 					    :javascript:html5:slides:
 
 Flexible, powerful, and usable Javascript and HTML5 slide presentation framework with an [[https://slides.com/][online editor]].
+
+** [[https://www.getlektor.com/][lektor]] 						       :python:react:
+
+A flexible and powerful static content management system for building complex and beautiful websites out of flat files — for people who do not want to make a compromise between a CMS and a static blog engine.
+
+Python and brought to us by [[http://lucumr.pocoo.org/about/][Armin Ronacher]].
+
+** [[http://pythonhosted.org/Frozen-Flask/][frozen flask]] 					       :python:jinja:
+
+Python flask extension to "freeze" a flask site to static content.
+
+** [[https://github.com/eudicots/Cactus][cactus]] 						      :python:django:
+
+Simple python with django template based static site generator built for front-end designers.
+
+** [[http://hyde.github.io/][hyde (python)]] 					       :python:jinja:
+
+Python powerful static site generator supporting basic jinja templates.
+
+[[http://merlin.rebrovic.net/hyde-starter-kit/first-steps.html][Merlin Rebrovic's Hyde Starter Kit]] is a good entry point.
+
+** [[https://getpelican.com/][pelican]] 				       :python:markdown:restructured:
+
+Python static site generator supporting themes with jinja templates, code highlighting, and content in several markup languages.
+
+** [[http://wiki.call-cc.org/eggref/4/hyde][hyde (chicken scheme)]] 			       :scheme:sxml:markdown:
+
+Scheme simple static site generator supporting SXML, markdown, and custom transformations.
 
