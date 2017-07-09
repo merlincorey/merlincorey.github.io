@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>reveal.js</title>
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/black.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+	<section data-state="navigation-enable">
+	  <h1>reeventure</h1>
+	  <p>You are in a dark room</p>
+	  <p style="color: #777">Press space or right to continue.</p>
+	  <aside class="notes">
+	    TODO: Figure out why navigation-enable state is not firing after dying.
+	  </aside>
+	</section>
+	<section>
+	  <section data-background="#999999">
+	    <h1>reeventure</h1>
+	    <p>A <span style="color: yellow">light</span> turns on.</p>
+	    <p class="fragment">You see a door.</p>
+	    <p class="fragment" style="color: #777">Press space to open the door or right to stay here.</p>
+	  </section>
+	  <section data-background="#c0ff33">
+	    <h1>reeventure</h1>
+	    <p>You <span style="color: red">open</span> the door.</p>
+	    <p class="fragment">You see a hallway.</p>
+	    <p class="fragment" style="color: #777"><a href="#/6" alt="Down the hallway">Click here to continue down the hallway!</a></p>
+	  </section>
+	</section>
+	<section>
+	    <h1>reeventure</h1>
+	    <p>You <span style="color: red">stay</span> and the light goes back out.</p>
+	</section>
+	<section data-background="#cfcfcf" data-state="navigation-disable">
+	    <h1>reeventure</h1>
+	    <p>You see a flash of light!</p>
+	    <p><a href="#/1" alt="First slide">Click here to try again!</a></p>
+	    <aside class="notes">
+	      This is slide <a href="#/5" alt="Fifth slide">#/5</a>
+	    </aside>
+	</section>
+	<section data-background="#c0ff33">
+	  <h1>reeventure</h1>
+	  <p>You win, at least for now.</p>
+	  <aside class="notes">
+	    This is slide <a href="#/6" alt="Sixth slide">#/6</a>
+	  </aside>
+	</section>
+      </div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // More info about config & dependencies:
+      // - https://github.com/hakimel/reveal.js#configuration
+      // - https://github.com/hakimel/reveal.js#dependencies
+      Reveal.initialize({
+      dependencies: [
+      { src: 'plugin/markdown/marked.js' },
+      { src: 'plugin/markdown/markdown.js' },
+      { src: 'plugin/notes/notes.js', async: true },
+      { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+      ]
+      });
+
+      function toggle_navigation(allow) {
+        Reveal.configure({controls: allow, progress: allow, keyboard: allow, overview: allow, touch: allow});
+      }
+
+      Reveal.addEventListener('navigation-enable', function() { toggle_navigation(true); });
+      Reveal.addEventListener('navigation-disable', function() { toggle_navigation(false); });
+    </script>
+  </body>
+</html>
