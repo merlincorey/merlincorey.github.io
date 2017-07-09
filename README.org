@@ -2,17 +2,19 @@
 
 [[./images/merlin-wizard-hat.jpg][Merlin's Wizard Hat]]
 
-** Static pages and site generators, oh my!
+* Static pages and site generators, oh my!
 
 Starting with a basic hand written /index.html and /404.html
 
-*** Generator Zoo
+** Generator Zoo
 
-**** org-mode
+*** [[http://orgmode.org/][orgmode]]
 
 Emacs org-mode can directly output HTML from its markup using =org-html-export-to-html= typically bound to =C-c C-e h=.
 
 Compare [[./README.org][README.org]] and [[./README.html][README.html]]
 
+*** [[http://lab.hakim.se/reveal-js/][reveal.js]]
 
+Flexible, powerful, and usable Javascript and HTML5 slide presentation framework with an [[https://slides.com/][online editor]].
 
