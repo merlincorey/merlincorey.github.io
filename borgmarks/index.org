@@ -4,6 +4,7 @@ Bookmarks in emacs org-mode.
 
 Curated, categorized, and tagged by hand.
 
+
 * Theory of organization
 
    Primary categories are used for bucketing related ideas.
@@ -35,6 +36,7 @@ Curated, categorized, and tagged by hand.
 
 *** [[http://orgmode.org/orgcard.pdf][Org Card]] 				       :emacs:orgmode:reference:card:
 
+
 * Algorithms
 
 ** Books
@@ -55,6 +57,7 @@ Curated, categorized, and tagged by hand.
 
 ** [[https://begriffs.com/posts/2016-11-05-advanced-intro-gnupg.html][Advanced Introduction to GnuPG]] :cryptography:tutorial:gnupg:
 
+
 * Great Talks
 
 ** [[https://www.youtube.com/watch?v=Sg4U4r_AgJU][Brian Kernighan - How to succeed at language design without really trying]] :talk:kernighan:language:design:awk:
@@ -63,11 +66,24 @@ Curated, categorized, and tagged by hand.
 
 ** [[https://www.youtube.com/watch?v=O3tVctB_VSU][Gerald Sussman - We Don't Really Know how to Compute]] :talk:sussman:computation:
 
+
 * Frontend Web Design
 
 ** [[http://flexboxfroggy.com/][CSS Flexbox Froggy]] :css:flexbox:tutorial:game:
 
 ** [[http://cssgridgarden.com/][CSS Grid Garden]] :css:grid:tutorial:game:
+
+
+* Functional Programming
+
+** [[https://chriskohlhepp.wordpress.com/functional-programming-section/metacircular-adventures-in-functional-abstraction-challenging-clojure-in-common-lisp/][Metacircular Adventures in Functional Abstraction]] :functional:programming:common:lisp:clojure:
+   
+** [[https://aphyr.com/posts/301-clojure-from-the-ground-up-welcome][Clojure from the ground up]] :functional:programming:clojure:
+** [[http://eli.thegreenplace.net/2017/reducers-transducers-and-coreasync-in-clojure/][Reducers, transducers, and core.async in clojure]] :functional:programming:clojure:
+
+* Game Theory
+
+** [[http://www.chesstactics.org/index.php?Type=page&Action=next&From=1,1,1,1][Ward Farnsworth's Predator at the Chessboard]] :gametheory:book:chess:
 
 
 * Graphics
@@ -79,16 +95,13 @@ Curated, categorized, and tagged by hand.
 [[https://news.ycombinator.com/item?id=13448047][Hackernews discussion]] with some interesting discourse and links such as [[https://fgiesen.wordpress.com/2013/02/06/the-barycentric-conspirac/][The Barycentric Conspiracy]].
 
 
-* Functional Programming
-
-** [[https://chriskohlhepp.wordpress.com/functional-programming-section/metacircular-adventures-in-functional-abstraction-challenging-clojure-in-common-lisp/][Metacircular Adventures in Functional Abstraction]] :functional:programming:common:lisp:clojure:
-
 
 * Mazes
 
 ** [[http://weblog.jamisbuck.org/2011/2/7/maze-generation-algorithm-recap][Maze Generation Algorithm Recap]] :maze:algorithms:
 
 Nice recap of maze generation algorithms from a minecraft modder.  Check out his [[http://jamisbuck.org/mazes/minecraft.html][minecraft maze generator]].
+
 
 * Revision Control
 
@@ -115,14 +128,20 @@ Nice recap of maze generation algorithms from a minecraft modder.  Check out his
 ** [[https://magit.vc/][Magit]] 						:git:porcelain:emacs:
    
 
+* Systems Engineering
+
+** [[https://alestic.com/2010/12/ec2-user-data-output/][Logging user-data Script Output on EC2 Instances]] :systems:cloudinit:logging:aws:ec2:
+
 * Uncategorized Otherwise
 
 ** [[http://www.silota.com/docs/recipes/][Advanced SQL Recipes to jumpstart your Analysis]] :sql:tricks:data:analysis:
 ** [[http://www.linusakesson.net/programming/tty/][The TTY Demystified]] :unix:history:tty:
 ** [[http://blog.triplebyte.com/how-to-interview-engineers][How to Interview Engineers]] :hiring:engineers:
 
+** [[http://www.wisdom.weizmann.ac.il/~harel/papers/Statecharts.pdf][StateCharts: A Visual Formalism for Complex Systems]] :paper:statemachine:
 
 * UNIX and BSD
+
 
 ** [[https://fosdem.org/2017/schedule/event/my_bsd_sucks_less/][My BSD Sucks Less Than Yours]] :talk:unix:openbsd:freebsd:
 
