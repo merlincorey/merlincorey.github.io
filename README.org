@@ -34,6 +34,7 @@
 |-----------------------+-----------------+-------------------+------------+---|
 | orgmode               |                 | orgmode           | elisp      |   |
 | reveal.js             |                 | html5, javascript | javascript |   |
+| jupyter               |                 | python, R         |            |   |
 | lektor                |                 |                   |            |   |
 | frozen-flask          |                 |                   |            |   |
 | cactus                | 2011-02 to 2017 |                   |            |   |
@@ -54,6 +55,10 @@ Compare [[./README.org][README.org]] and [[./README.html][README.html]]
 ** [[http://lab.hakim.se/reveal-js/][reveal.js]] 					    :javascript:html5:slides:
 
 Flexible, powerful, and usable Javascript and HTML5 slide presentation framework with an [[https://slides.com/][online editor]].
+
+** [[https://jupyter.org][jupyter]] :programming:notebook:python:r:html:pdf:
+
+Programming notebook for Python and R (primarily, but not exclusively) that can output static HTML and PDF versions of a dynamic notebook state.
 
 ** [[https://www.getlektor.com/][lektor]] 						       :python:react:
 
