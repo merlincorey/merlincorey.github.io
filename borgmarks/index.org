@@ -141,6 +141,11 @@ Nice recap of maze generation algorithms from a minecraft modder.  Check out his
 
 ** [[http://www.wisdom.weizmann.ac.il/~harel/papers/Statecharts.pdf][StateCharts: A Visual Formalism for Complex Systems]] :paper:statemachine:
 
+** [[https://the-eye.eu/public/rom/][The Eye's ROM Section]] :open:index:emulation:nes:snes:gba:n64:
+
+The Eye's Rom Section is a project dedicated towards the preservation and archival of video games. All game versions present on the site are already out of production and are unavailable in the primary market.
+
+
 * UNIX and BSD
 
 
