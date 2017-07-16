@@ -1,10 +1,14 @@
 * merlincorey.github.io
 
-[[./images/merlin-wizard-hat.jpg][Merlin's Wizard Hat]]
+  #+CAPTION: This is Merlin's Wizard Hat
+  #+NAME:   fig:MERLIN-HAT
+  [[./images/merlin-wizard-hat.jpg]]
 
 * Static pages and site generators, oh my!
 
-Starting with a basic hand written /index.html and /404.html
+  Starting with a basic hand written =/index.html= and =/404.html=
+
+  [[https://staticsitegenerators.net/][Static Site Generators]] lists 459 static site generators available on [[https://github.com][GitHub]] listed by license, language, creation date, and last update date.  It will be consulted for vintages on many of these.
 
 ** Implemented Generators
 
@@ -12,14 +16,35 @@ Starting with a basic hand written /index.html and /404.html
 
    - orgmode :: Implemented in [[./README.html][README.html]] and [[./borgmarks/][borgmarks]]
    - reveal.js :: Implemented in [[./reeventure/][reeventure]]
+   - jupyter :: Implemented in [[./vclguba-abgrobbx/][vclguba-abgrobbx]]
 
-** Comparison Matrix
+* Comparisons
 
-| Generator | Implemented | Inputs            | Pros                                                | Cons                                                                          |
-|-----------+-------------+-------------------+-----------------------------------------------------+-------------------------------------------------------------------------------|
-| orgmode   | yes         | orgmode           | Emacs mode means full featured editing environment. | Emacs mode means so much more than I even know how to uses yet.               |
-| reveal.js | yes         | html5, javascript | HTML5 layout is both readable and writeable.        | Heavy Javascript and CSS dependencies, especially for more than basic slides. |
-|           |             |                   |                                                     |                                                                               |
+** Implemented Here
+
+| Generator | Inputs            | Pros                                                | Cons                                                                               |
+|-----------+-------------------+-----------------------------------------------------+------------------------------------------------------------------------------------|
+| orgmode   | orgmode           | Emacs mode means full featured editing environment. | Emacs mode means so much more than I even know how to uses yet.                    |
+| reveal.js | html5, javascript | HTML5 layout is both readable and writeable.        | Heavy Javascript and CSS dependencies, especially for more than basic slides.      |
+| jupyter   | python, R         | Sharing programming sessions has never been easier. | A bit of a learning curve to figure out how to use all the subcommands and the UI. |
+|           |                   |                                                     |                                                                                    |
+
+
+** Objective Matrix
+
+| Generator             | Vintage         | Inputs            | Extensions |   |
+|-----------------------+-----------------+-------------------+------------+---|
+| orgmode               |                 | orgmode           | elisp      |   |
+| reveal.js             |                 | html5, javascript | javascript |   |
+| jupyter               |                 | python, R         |            |   |
+| lektor                |                 |                   |            |   |
+| frozen-flask          |                 |                   |            |   |
+| cactus                | 2011-02 to 2017 |                   |            |   |
+| hyde (python)         |                 |                   |            |   |
+| pelican               |                 |                   |            |   |
+| hyde (chicken scheme) |                 |                   |            |   |
+| gatsby                |                 |                   |            |   |
+
 
 * Generator Zoo
 
@@ -32,6 +57,10 @@ Compare [[./README.org][README.org]] and [[./README.html][README.html]]
 ** [[http://lab.hakim.se/reveal-js/][reveal.js]] 					    :javascript:html5:slides:
 
 Flexible, powerful, and usable Javascript and HTML5 slide presentation framework with an [[https://slides.com/][online editor]].
+
+** [[https://jupyter.org][jupyter]] :programming:notebook:python:r:html:pdf:
+
+Programming notebook for Python and R (primarily, but not exclusively) that can output static HTML and PDF versions of a dynamic notebook state.
 
 ** [[https://www.getlektor.com/][lektor]] 						       :python:react:
 
@@ -61,3 +90,6 @@ Python static site generator supporting themes with jinja templates, code highli
 
 Scheme simple static site generator supporting SXML, markdown, and custom transformations.
 
+** [[https://www.gatsbyjs.org/][gatsby]] :javascript:react:
+
+React centric static site generator designed to be fast and flexible.
