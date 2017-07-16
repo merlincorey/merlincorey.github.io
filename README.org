@@ -16,16 +16,18 @@
 
    - orgmode :: Implemented in [[./README.html][README.html]] and [[./borgmarks/][borgmarks]]
    - reveal.js :: Implemented in [[./reeventure/][reeventure]]
+   - jupyter :: Implemented in [[./vclguba-abgrobbx/][vclguba-abgrobbx]]
 
 * Comparisons
 
 ** Implemented Here
 
-| Generator | Inputs            | Pros                                                | Cons                                                                          |
-|-----------+-------------------+-----------------------------------------------------+-------------------------------------------------------------------------------|
-| orgmode   | orgmode           | Emacs mode means full featured editing environment. | Emacs mode means so much more than I even know how to uses yet.               |
-| reveal.js | html5, javascript | HTML5 layout is both readable and writeable.        | Heavy Javascript and CSS dependencies, especially for more than basic slides. |
-|           |                   |                                                     |                                                                               |
+| Generator | Inputs            | Pros                                                | Cons                                                                               |
+|-----------+-------------------+-----------------------------------------------------+------------------------------------------------------------------------------------|
+| orgmode   | orgmode           | Emacs mode means full featured editing environment. | Emacs mode means so much more than I even know how to uses yet.                    |
+| reveal.js | html5, javascript | HTML5 layout is both readable and writeable.        | Heavy Javascript and CSS dependencies, especially for more than basic slides.      |
+| jupyter   | python, R         | Sharing programming sessions has never been easier. | A bit of a learning curve to figure out how to use all the subcommands and the UI. |
+|           |                   |                                                     |                                                                                    |
 
 
 ** Objective Matrix

@@ -95,7 +95,7 @@ Curated, categorized, and tagged by hand.
 [[https://news.ycombinator.com/item?id=13448047][Hackernews discussion]] with some interesting discourse and links such as [[https://fgiesen.wordpress.com/2013/02/06/the-barycentric-conspirac/][The Barycentric Conspiracy]].
 
 
-** [[https://www.fasterthan.life/blog/2017/7/11/i-am-graphics-and-so-can-you-part-1][I Am Graphics And So Can You]] :graphics:3d:rendering:vulkan:
+** [[https://www.fasterthan.life/blog/2017/7/11/i-am-graphics-and-so-can-you-part-1][I Am Graphics And So Can You]] 	       :graphics:3d:rendering:vulkan:
 
 * Mazes
 
