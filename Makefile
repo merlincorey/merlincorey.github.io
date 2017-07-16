@@ -27,3 +27,5 @@ init: env requirements
 reveal.js-master:
 	curl 'https://codeload.github.com/hakimel/reveal.js/zip/master' | unzip -
 
+clean:
+	find . -type f -name '*~' -delete
