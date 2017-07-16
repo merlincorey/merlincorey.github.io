@@ -2,9 +2,8 @@
 ### Makefile for merlincorey.github.io
 ###
 
-# TODO: Change to python3 when kashfa supports it
-ENV_PYTHON	=python2
-ENV_ACTIVE	=env | grep VIRTUAL_ENV || source env/bin/activate
+ENV_PYTHON	=python3
+ENV_ACTIVE	=(env | grep VIRTUAL_ENV) || . env/bin/activate
 REQUIREMENTS	=requirements.txt
 
 ALL		=init reveal.js-master
@@ -29,3 +28,9 @@ reveal.js-master:
 
 clean:
 	find . -type f -name '*~' -delete
+
+jupyter-start:
+	$(ENV_ACTIVE) && jupyter notebook --no-browser --notebook-dir=vclguba-abgrobbx/
+
+jupyter-publish:
+	$(ENV_ACTIVE) && jupyter nbconvert vclguba-abgrobbx/index.ipynb --to html
