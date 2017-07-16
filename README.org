@@ -58,7 +58,7 @@ Compare [[./README.org][README.org]] and [[./README.html][README.html]]
 
 Flexible, powerful, and usable Javascript and HTML5 slide presentation framework with an [[https://slides.com/][online editor]].
 
-** [[https://jupyter.org][jupyter]] :programming:notebook:python:r-language:html:pdf:
+** [[https://jupyter.org][jupyter]] :programming:notebook:python:rlanguage:html:pdf:
 
 Interactive programming notebook for [[https://www.python.org/][Python]] and [[https://www.r-project.org/][R]] (primarily, but not exclusively) that can output static HTML and PDF versions of a dynamic notebook state.
 
