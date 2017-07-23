@@ -66,6 +66,10 @@ Curated, categorized, and tagged by hand.
 
 ** [[https://www.youtube.com/watch?v=O3tVctB_VSU][Gerald Sussman - We Don't Really Know how to Compute]] :talk:sussman:computation:
 
+** [[https://www.youtube.com/watch?v=OyfBQmvr2Hc][William Byrd - The Most Beautiful Program Ever Written]] :talk:byrd:interpreters:provers:solvers:minikanren:
+
+   The first half is an overview of Scheme and writing an interpreter in scheme.
+   The second half goes into using an advanced interpreter along with logic programming in minikanren to find programs that match test constraints.
 
 * Frontend Web Design
 
