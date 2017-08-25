@@ -44,52 +44,57 @@
 | pelican               |                 |                   |            |   |
 | hyde (chicken scheme) |                 |                   |            |   |
 | gatsby                |                 |                   |            |   |
+| stagit                |                 | git               |            |   |
 
 
 * Generator Zoo
 
 ** [[http://orgmode.org/][orgmode]] 						    :emacs:lisp:html:
 
-Emacs org-mode can directly output HTML from its markup using =org-html-export-to-html= typically bound to =C-c C-e h=.
-
-Compare [[./README.org][README.org]] and [[./README.html][README.html]]
+   Emacs org-mode can directly output HTML from its markup using =org-html-export-to-html= typically bound to =C-c C-e h=.
+   
+   Compare [[./README.org][README.org]] and [[./README.html][README.html]]
 
 ** [[http://lab.hakim.se/reveal-js/][reveal.js]] 					    :javascript:html5:slides:
 
-Flexible, powerful, and usable Javascript and HTML5 slide presentation framework with an [[https://slides.com/][online editor]].
-
+   Flexible, powerful, and usable Javascript and HTML5 slide presentation framework with an [[https://slides.com/][online editor]].
+   
 ** [[https://jupyter.org][jupyter]] :programming:notebook:python:rlanguage:html:pdf:
 
-Interactive programming notebook for [[https://www.python.org/][Python]] and [[https://www.r-project.org/][R]] (primarily, but not exclusively) that can output static HTML and PDF versions of a dynamic notebook state.
+   Interactive programming notebook for [[https://www.python.org/][Python]] and [[https://www.r-project.org/][R]] (primarily, but not exclusively) that can output static HTML and PDF versions of a dynamic notebook state.
 
 ** [[https://www.getlektor.com/][lektor]] 						       :python:react:
 
-A flexible and powerful static content management system for building complex and beautiful websites out of flat files — for people who do not want to make a compromise between a CMS and a static blog engine.
-
-Python and brought to us by [[http://lucumr.pocoo.org/about/][Armin Ronacher]].
+   A flexible and powerful static content management system for building complex and beautiful websites out of flat files — for people who do not want to make a compromise between a CMS and a static blog engine.
+   
+   Python and brought to us by [[http://lucumr.pocoo.org/about/][Armin Ronacher]].
 
 ** [[http://pythonhosted.org/Frozen-Flask/][frozen flask]] 					       :python:jinja:
 
-Python flask extension to "freeze" a flask site to static content.
-
+   Python flask extension to "freeze" a flask site to static content.
+   
 ** [[https://github.com/eudicots/Cactus][cactus]] 						      :python:django:
 
-Simple python with django template based static site generator built for front-end designers.
-
+   Simple python with django template based static site generator built for front-end designers.
+   
 ** [[http://hyde.github.io/][hyde (python)]] 					       :python:jinja:
 
-Python powerful static site generator supporting basic jinja templates.
-
-[[http://merlin.rebrovic.net/hyde-starter-kit/first-steps.html][Merlin Rebrovic's Hyde Starter Kit]] is a good entry point.
+   Python powerful static site generator supporting basic jinja templates.
+   
+   [[http://merlin.rebrovic.net/hyde-starter-kit/first-steps.html][Merlin Rebrovic's Hyde Starter Kit]] is a good entry point.
 
 ** [[https://getpelican.com/][pelican]] 				       :python:markdown:restructured:
 
-Python static site generator supporting themes with jinja templates, code highlighting, and content in several markup languages.
-
+   Python static site generator supporting themes with jinja templates, code highlighting, and content in several markup languages.
+   
 ** [[http://wiki.call-cc.org/eggref/4/hyde][hyde (chicken scheme)]] 			       :scheme:sxml:markdown:
 
-Scheme simple static site generator supporting SXML, markdown, and custom transformations.
+   Scheme simple static site generator supporting SXML, markdown, and custom transformations.
 
 ** [[https://www.gatsbyjs.org/][gatsby]] :javascript:react:
+   
+   React centric static site generator designed to be fast and flexible.
 
-React centric static site generator designed to be fast and flexible.
+** [[https://git.codemadness.org/stagit/file/README.html][stagit]] :git:page:generator:
+
+   Static git page generator.  Generates a static HTML view of a git repository.
