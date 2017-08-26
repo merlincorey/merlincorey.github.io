@@ -65,6 +65,8 @@ Curated, categorized, and tagged by hand.
 
 ** [[https://begriffs.com/posts/2016-11-05-advanced-intro-gnupg.html][Advanced Introduction to GnuPG]] :cryptography:tutorial:gnupg:
 
+** [[https://github.com/gchq/CyberChef][GCHQ CyberChef]] :cryptography:tools:
+   Forked on my own github [[https://github.com/merlincorey/CyberChef][merlincorey/CyberChef]].
 
 ** Crypto currencies
 
