@@ -249,6 +249,8 @@ The Eye's Rom Section is a project dedicated towards the preservation and archiv
 ** [[http://willamette.edu/~fruehr/haskell/evolution.html][Evolution of a Haskell Programmer]] :haskell:humor:
 ** [[http://farmos.org/][FarmOS]] :open:source:farm:management:
 
+** [[https://www.believermag.com/issues/200609/][Destroy All Monsters]] :role:playing:dungeons:and:dragons:2006:
+
 
 * UNIX and BSD
 
