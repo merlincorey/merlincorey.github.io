@@ -78,7 +78,7 @@ Curated, categorized, and tagged by hand.
 
 * Datastructures and Databases
 
-* [[https://www.interviewcake.com/article/python/data-structures-coding-interview][Datastructures for Coding Interviews]] :datastructures:python:interviews:
+** [[https://www.interviewcake.com/article/python/data-structures-coding-interview][Datastructures for Coding Interviews]]    :datastructures:python:interviews:
 
 ** Alembic
 
