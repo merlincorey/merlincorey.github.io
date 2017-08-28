@@ -255,6 +255,7 @@ Nice recap of maze generation algorithms from a minecraft modder.  Check out his
 *** [[http://home.pipeline.com/~hbaker1/CheneyMTA.html][CONS Should Not CONS Its Arguments, Part II: Cheney on the M.T.A.]] :paper:lisp:scheme:tail:recursion:c:1994:
 *** [[https://www.microsoft.com/en-us/research/wp-content/uploads/2016/07/state-lasc.pdf][State in Haskell]] :paper:haskell:state:1995:
 *** [[https://www.cs.cmu.edu/~rwh/theses/okasaki.pdf][Purely Functional Data Structures]] :paper:functional:programming:data:structures:1996:
+*** [[https://www.cs.cmu.edu/~fp/courses/15317-f00/handouts/logic.pdf][Constructive Logic]] :paper:logic:2000:
 *** [[http://erlang.org/download/armstrong_thesis_2003.pdf][Making Reliable Distributed Systems in the Presence of Software Errors]] :paper:distributed:systems:2003:
 *** [[https://github.com/papers-we-love/papers-we-love/blob/master/design/out-of-the-tar-pit.pdf][Out of the Tarpit]] :paper:design:complexity:2006:
 *** [[http://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf][Dynamo: Amazon’s Highly Available Key-value Store]] :paper:distrubted:database:dynamodb:2007:
