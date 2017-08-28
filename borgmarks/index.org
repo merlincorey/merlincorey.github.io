@@ -70,6 +70,7 @@ Curated, categorized, and tagged by hand.
 
 ** Crypto currencies
 
+*** [[https://storeofvalue.github.io/posts/cryptocurrency-hacks-so-far-august-24th/][List Of High Profile Cryptocurrency Hacks So Far]] :cryptography:currency:crime:and:theft:2017:
 *** [[http://www.jsfour.com/can-you-really-hack-ethereum-smart-contracts/][Can you really hack Ethereum smart contracts?]] :cryptography:currency:ethereum:hate:
 
 
@@ -253,6 +254,8 @@ The Eye's Rom Section is a project dedicated towards the preservation and archiv
 
 ** [[https://www.believermag.com/issues/200609/][Destroy All Monsters]] :role:playing:dungeons:and:dragons:2006:
 
+** [[http://lcamtuf.coredump.cx/prep/][Doomsday planning for less crazy folk]] :planning:for:life:
+** [[https://ski.ihoc.net/][The Most Officialest SkiFree Home Page!]] :software:history:skifree:
 
 * UNIX and BSD
 
