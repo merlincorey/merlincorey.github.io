@@ -257,6 +257,8 @@ The Eye's Rom Section is a project dedicated towards the preservation and archiv
 ** [[http://lcamtuf.coredump.cx/prep/][Doomsday planning for less crazy folk]] :planning:for:life:
 ** [[https://ski.ihoc.net/][The Most Officialest SkiFree Home Page!]] :software:history:skifree:
 
+** [[http://vvvvalvalval.github.io/posts/what-makes-a-good-repl.html][What makes a good REPL?]] :programming:language:interpreter:design:clojure:
+
 * UNIX and BSD
 
 ** [[https://fosdem.org/2017/schedule/event/my_bsd_sucks_less/][My BSD Sucks Less Than Yours]] :talk:unix:openbsd:freebsd:
