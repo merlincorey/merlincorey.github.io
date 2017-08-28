@@ -78,6 +78,7 @@ Curated, categorized, and tagged by hand.
 
 * Datastructures and Databases
 
+** [[http://www.eelis.net/C++/analogliterals.xhtml][Multi-Dimensional Analog Literals]] :datastructures:analog:literals:2006:
 ** [[https://www.interviewcake.com/article/python/data-structures-coding-interview][Datastructures for Coding Interviews]]    :datastructures:python:interviews:
 
 ** Alembic
@@ -89,6 +90,7 @@ Curated, categorized, and tagged by hand.
 * Free Books
 
 ** [[http://www.ccs.neu.edu/home/matthias/HtDP2e/][How to Design Programs 2]] :book:scheme:2014:
+
 
 * Great Talks
 
@@ -130,6 +132,7 @@ Curated, categorized, and tagged by hand.
 ** [[http://eli.thegreenplace.net/2017/reducers-transducers-and-coreasync-in-clojure/][Reducers, transducers, and core.async in clojure]] :functional:programming:clojure:
 
 
+** [[http://adit.io/posts/2013-04-17-functors,_applicatives,_and_monads_in_pictures.html][Functors, Applicatives, And Monads In Pictures]] :functional:programming:functors:monads:visualizations:
 
 * Game Theory
 
@@ -157,6 +160,7 @@ Curated, categorized, and tagged by hand.
    Lots of resources including their [[https://github.com/bruhautomation][github]] for various home automation things.
 
 *** [[https://www.youtube.com/watch?v=9KI36GTgwuQ][The BEST Digital LED Strip Light Tutorial - DIY, WIFI-Controllable via ESP, MQTT, and Home Assistant]] :home:automation:led:strip:mqtt:2016:
+
 
 * Make
 
