@@ -287,6 +287,9 @@ The Eye's Rom Section is a project dedicated towards the preservation and archiv
 
 
 
+** [[http://www.projectrho.com/public_html/rocket/worldbuilding.php][Worldbuilding]] :world:building:
+
+   Resource on all things world-building with lots of interesting information and pointers to more information about world building.
 
 * UNIX and BSD
 
