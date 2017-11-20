@@ -45,6 +45,8 @@
 | hyde (chicken scheme) |                 |                   |            |   |
 | gatsby                |                 |                   |            |   |
 | stagit                |                 | git               |            |   |
+| hugo                  |                 |                   | go         |   |
+|                       |                 |                   |            |   |
 
 
 * Generator Zoo
@@ -98,3 +100,5 @@
 ** [[https://git.codemadness.org/stagit/file/README.html][stagit]] :git:page:generator:
 
    Static git page generator.  Generates a static HTML view of a git repository.
+** [[https://gohugo.io/][hugo]] :go:
+
