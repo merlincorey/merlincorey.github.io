@@ -4,8 +4,6 @@ Bookmarks in emacs org-mode.
 
 Curated, categorized, and tagged by hand.
 
-
-
 * Theory of organization
 
    Primary categories are used for bucketing related ideas.
@@ -37,32 +35,24 @@ Curated, categorized, and tagged by hand.
 
 *** [[http://orgmode.org/orgcard.pdf][Org Card]] 				       :emacs:orgmode:reference:card:
 
-
-
 * Algorithms
-
 ** Books
 
 *** [[https://github.com/mdipierro/nlib][Annotated Algorithms in Python]] :book:algorithms:python:
 
-
 ** Programming Exercises
-
 *** [[https://projecteuler.net/][Project Euler]] 				  :programming:exercise:math:
-
 *** [[http://codewars.com/][Codewars]] 					       :programming:exercise:
-
 *** [[http://exercism.io/][Exercism]] 				    :programming:exercise:opensource:
-
-
-
-** [[https://bost.ocks.org/mike/algorithms/][Visualizing Algorithms]] :bostocks:visualization:algorithms:
+** [[https://bost.ocks.org/mike/algorithms/][Visualizing Algorithms]] 		  :bostocks:visualization:algorithms:
 
    Great overview of various algorithms with visualizations from visualization master Mike Bostocks.
 
 ** [[https://yurichev.com/blog/rubik/][Solving pocket Rubik's cube (2 * 2 * 2) using Z3 and SAT solver]] :algorithms:simplified:rubiks:cube:solver:
 ** [[https://users.cs.duke.edu/~ola/bubble/bubble.html][Bubble Sort: An Archaeological Algorithmic Analysis]] :algorithms:bubble:sort:analysis:
-
+** [[http://www.keithschwarz.com/interesting/][The Archive of Interesting Code]] :algorithms:datastructures:archive:examples:
+* Assembly
+** [[http://bob.cs.sonoma.edu/IntroCompOrg-RPi/intro-co-rpi.html][Introduction to Computer Organization: ARM Assembly Language Using the Raspberry Pi]] :assembly:arm:raspberry:pi:
 * Cryptography
 
 ** [[https://begriffs.com/posts/2016-11-05-advanced-intro-gnupg.html][Advanced Introduction to GnuPG]] :cryptography:tutorial:gnupg:
@@ -80,20 +70,19 @@ Curated, categorized, and tagged by hand.
 
 *** [[http://www.michaelburge.us/2017/08/31/roll-your-own-bitcoin-exchange.html][Roll your Own Bitcoin Exchange in Haskell]] :cryptography:currency:exchange:haskell:
 
-* Datastructures and Databases
-
+* Datastructures, Databases, and Filesystems
 ** [[http://www.eelis.net/C++/analogliterals.xhtml][Multi-Dimensional Analog Literals]] :datastructures:analog:literals:2006:
 ** [[https://www.interviewcake.com/article/python/data-structures-coding-interview][Datastructures for Coding Interviews]]    :datastructures:python:interviews:
-
+** [[http://www.catb.org/esr/structure-packing/][The Lost Art of C Structure Packing]] :datastructures:c:packing:esr:2014:
 ** [[https://cstack.github.io/db_tutorial/][Let's Build a Simple Database]] :datastructures:databases:c:language:sql:sqlite:
 
    Writing a sqlite clone from scratch in C
 
+** [[http://use-the-index-luke.com/no-offset][We need tool support for keyset pagination]] :datastructures:databases:sql:pitfall:pagination:offset:
+** [[https://www.percona.com/blog/2017/11/15/zfs-from-a-mysql-perspective/][ZFS from a MySQL perspective]] :datastructures:databases:filesystems:mysql:zfs:2017:
 ** Alembic
-
 *** [[http://www.chesnok.com/daily/2013/07/02/a-practical-guide-to-using-alembic/][A Practical Guide to using Alembic]] :database:migrations:sqlalchemy:alembic:
 *** [[https://www.compose.com/articles/schema-migrations-with-alembic-python-and-postgresql/][Schema Migrations with Alembic, Python, and PostgreSQL]] :databse:migrations:sqlalchemy:alembic:postgres:
-
 
 * Development Environments and Editors
 
@@ -102,7 +91,6 @@ Curated, categorized, and tagged by hand.
 * Free Books
 
 ** [[http://www.ccs.neu.edu/home/matthias/HtDP2e/][How to Design Programs 2]] :book:scheme:2014:
-
 
 * Great Talks
 
@@ -117,6 +105,7 @@ Curated, categorized, and tagged by hand.
    The first half is an overview of Scheme and writing an interpreter in scheme.
    The second half goes into using an advanced interpreter along with logic programming in minikanren to find programs that match test constraints.
 
+** [[https://www.youtube.com/watch?v=Jib2AmRb_rk&app=desktop][SQLite: The Database at the Edge of the Network with Dr. Richard Hipp]] :talk:hipp:database:sqlite:
 
 ** Rich Hickey
    Creator of Clojure known for many great talks.
@@ -127,14 +116,11 @@ Curated, categorized, and tagged by hand.
 *** [[http://www.youtube.com/watch?v=ROor6_NGIWU][The Language of the System]] :talk:hickey:distrubuted:language:design:
 *** [[http://www.infoq.com/presentations/Design-Composition-Performance][Design, Composition, and Performance]] :talk:hickey:
 
-
 * Frontend Web Design
 
 ** [[http://flexboxfroggy.com/][CSS Flexbox Froggy]] :css:flexbox:tutorial:game:
 
 ** [[http://cssgridgarden.com/][CSS Grid Garden]] :css:grid:tutorial:game:
-
-
 
 * Functional Programming
 
@@ -151,8 +137,6 @@ Curated, categorized, and tagged by hand.
 
 ** [[http://www.chesstactics.org/index.php?Type=page&Action=next&From=1,1,1,1][Ward Farnsworth's Predator at the Chessboard]] :gametheory:book:chess:
 
-
-
 * Graphics
 
 ** [[http://www.extentofthejam.com/pseudo/][Lou's Psuedo 3d Page]] :graphics:3d:rendering:
@@ -166,14 +150,34 @@ Curated, categorized, and tagged by hand.
 
 ** [[http://iquilezles.org/www/index.htm][Íñigo Quílez' Demo and Shader Graphics Articles]] :graphics:demo:scene:shaders:
 
-* Home Automation
+* Hardware
+** [[https://jaycarlson.net/microcontrollers/][The Amazing $1 Microcontroller]]
 
+   Exploration of 21 different microcontrollers each costing less than $1 to help familiarize oneself with all the major ecosystems out there.
+
+   #+BEGIN_QUOTE
+While some projects that come across my desk are complex enough to require a hundreds-of-MHz microcontroller with all the bells and whistles, it’s amazing how many projects work great using nothing more than a $1 chip — so this is the only rule I established for the shoot-out. 1
+
+I wanted to explore the $1 pricing zone specifically because it’s the least amount of money you can spend on an MCU that’s still general-purpose enough to be widely useful in a diverse array of projects.
+
+Any cheaper, and you end up with 6- or 8-pin parts with only a few dozen bytes of RAM, no ADC, nor any peripherals other than a single timer and some GPIO.
+
+Any more expensive, and the field completely opens up to an overwhelming number of parts — all with heavily-specialized peripherals and connectivity options.
+
+These MCUs were selected to represent their entire families — or sub-families, depending on the architecture — and in my analysis, I’ll offer some information about the family as a whole.
+
+If you want to scroll down and find out who the winner is, don’t bother — there’s really no sense in trying to declare the “king of $1 MCUs” as everyone knows the best microcontroller is the one that best matches your application needs. I mean, everyone knows the best microcontroller is the one you already know how to use. No, wait — the best microcontroller is definitely the one that is easiest to prototype with. Or maybe that has the lowest impact on BOM pricing?
+
+I can’t even decide on the criteria for the best microcontroller — let alone crown a winner.
+
+What I will do, however, is offer a ton of different recommendations for different users at the end. Read on!
+   #+END_QUOTE
+* Home Automation
 ** [[http://www.bruhautomation.com/][Bruh Automation]] :home:automation:tutorials:reviews:
 
    Lots of resources including their [[https://github.com/bruhautomation][github]] for various home automation things.
 
 *** [[https://www.youtube.com/watch?v=9KI36GTgwuQ][The BEST Digital LED Strip Light Tutorial - DIY, WIFI-Controllable via ESP, MQTT, and Home Assistant]] :home:automation:led:strip:mqtt:2016:
-
 
 * Locksmithery and Lockpickery
 
@@ -183,17 +187,13 @@ Curated, categorized, and tagged by hand.
 
 ** [[http://nullprogram.com/blog/2017/08/20/][A Tutorial on Portable Makefiles]] :portable:make:2017:
 
-
 * Mazes
 
 ** [[http://weblog.jamisbuck.org/2011/2/7/maze-generation-algorithm-recap][Maze Generation Algorithm Recap]] :maze:algorithms:
 
 Nice recap of maze generation algorithms from a minecraft modder.  Check out his [[http://jamisbuck.org/mazes/minecraft.html][minecraft maze generator]].
 
-
-
 * Networking
-
 ** [[https://www.nanog.org/sites/default/files/2_Steenbergen_Tutor][Everything You Always Wanted to Know About Optical Networking – But Were Afraid to Ask]] :networking:optical:fiber:2017:
 
 ** [[http://beej.us/guide/bgnet/][Beej's Guide to Network Programming]] :networking:programming:c:unix:sockets:beejs:guide:
@@ -205,6 +205,43 @@ Nice recap of maze generation algorithms from a minecraft modder.  Check out his
    - [[http://beej.us/guide/bgc/][Beej's Guide to C Programming]]
    - [[http://beej.us/guide/bgipc/][Beej's Guide to Unix Interprocess Communication]]
    - [[http://beej.us/guide/bggdb/][Beej's Quick Guide to GDB]]
+
+** [[https://modern.ircdocs.horse/][Modern IRC Client Protocol]] :networking:protocol:living:documentation:irc:
+* Papers
+** [[https://www.theatlantic.com/magazine/archive/1945/07/as-we-may-think/303881/][As We May Think]] 						 :paper:1945:
+
+    Some musings on hypertext and what we might build after the conclusion of World War II.
+
+** [[http://math.harvard.edu/~ctm/home/text/others/shannon/entropy/entropy.pdf][A Mathematical Theory of Communication]] 	      :paper:networking:1948:
+
+    Defines the term "bit" for Binary digIT.
+
+** [[https://www.csee.umbc.edu/courses/471/papers/turing.pdf][Computing Machinery and Intelligence]] :paper:turing:artificial:intelligence:1950:
+** [[https://ia801903.us.archive.org/1/items/bstj29-2-147/bstj29-2-147.pdf][Error Detecting and Error Correcting Codes]] 		 :paper:hamming:1950:
+
+** [[http://www-formal.stanford.edu/jmc/recursive.html][Recursive Functions of Symbolic Expressions and their Computation by Machine]] :paper:mccarthy:lisp:1960:
+** [[http://www.melconway.com/Home/Committees_Paper.html][How do Committees Invent]] 		     :paper:design:organization:1968:
+    Apparently this some of the inspiration for Mythical Man Month.
+** [[https://www-ee.stanford.edu/~hellman/publications/24.pdf][New Directions in Cryptography]]    :paper:cryptography:diffie:hellman:1976:
+** [[http://amturing.acm.org/p558-lamport.pdf][Time, Clocks, and the Ordering of Events in a Distributed System]] :paper:distributed:1978:
+** [[http://fermatslibrary.com/s/reflections-on-trusting-trust][Reflections on Trusting Trust]] 	     :paper:security:trust:unix:1984:
+** [[https://www.student.cs.uwaterloo.ca/~cs492/11public_html/p18-smith.pdf][The Limits of Corrrectness]] 					 :paper:1985:
+** [[http://www.usingcsp.com/cspbook.pdf][Communicating Sequential Processes]] 		      :paper:concurrent:1985:
+** [[http://cseweb.ucsd.edu/~ravir/274/15/papers/p143-kajiya.pdf][The Rendering Equation]] 	     :paper:graphics:rendering:pipeline:1986:
+** [[http://www.wisdom.weizmann.ac.il/~harel/papers/Statecharts.pdf][StateCharts: A Visual Formalism for Complex Systems]] :paper:statemachine:1987:
+** [[http://fermatslibrary.com/s/a-sample-of-brilliance][A Sample of Brilliance]] 		     :paper:randomness:sampling:1987:
+** [[https://www.finseth.com/craft/][A Cookbook for an Emacs]] 				   :paper:emacs:1991:
+** [[http://home.pipeline.com/~hbaker1/CheneyMTA.html][CONS Should Not CONS Its Arguments, Part II: Cheney on the M.T.A.]] :paper:lisp:scheme:tail:recursion:c:1994:
+** [[https://www.microsoft.com/en-us/research/wp-content/uploads/2016/07/state-lasc.pdf][State in Haskell]] 				   :paper:haskell:state:1995:
+** [[https://www.cs.cmu.edu/~rwh/theses/okasaki.pdf][Purely Functional Data Structures]] :paper:functional:programming:data:structures:1996:
+** [[https://www.cs.cmu.edu/~fp/courses/15317-f00/handouts/logic.pdf][Constructive Logic]] 					   :paper:logic:2000:
+** [[http://erlang.org/download/armstrong_thesis_2003.pdf][Making Reliable Distributed Systems in the Presence of Software Errors]] :paper:distributed:systems:2003:
+** [[https://github.com/papers-we-love/papers-we-love/blob/master/design/out-of-the-tar-pit.pdf][Out of the Tarpit]] 			       :paper:design:complexity:2006:
+** [[http://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf][Dynamo: Amazon’s Highly Available Key-value Store]] :paper:distrubted:database:dynamodb:2007:
+** [[https://bitcoin.org/bitcoin.pdf][Bitcoin: A Peer-to-Peer Electronic Cash System]] :paper:cryptography:currency:bitcoin:2008:
+** [[http://www.diku.dk/hjemmesider/ansatte/henglein/papers/henglein2011a.pdf][Generic Top-down Discrimination for Sorting and Partitioning in Linear Time]] :paper:sorting:2010:
+**** [[http://www.diku.dk/hjemmesider/ansatte/henglein/papers/henglein2011c.pdf][Generic Multiset Programming with Discrimination-based Joins and Symbolic Cartesian Products]] :paper:sorting:2011:
+** [[https://raft.github.io/raft.pdf][In Search of an Understandable Consensus Algorithm]] :paper:distributed:consenus:2014:
 
 * Revision Control
 
@@ -230,13 +267,10 @@ Nice recap of maze generation algorithms from a minecraft modder.  Check out his
 
 ** [[https://magit.vc/][Magit]] 						:git:porcelain:emacs:
 
-
-
 * Shells
 
 ** [[https://zanshin.net/2013/02/02/zsh-configuration-from-the-ground-up/][Zsh Configuration From the Ground Up]] :zsh:configuration:tutorial:2013:
 ** [[http://www.howardism.org/Technical/Emacs/eshell-fun.html][Eschewing Zshell for Emacs Shell]] :zsh:emacs:eshell:
-
 
 * Systems Engineering
 
@@ -249,48 +283,7 @@ Nice recap of maze generation algorithms from a minecraft modder.  Check out his
 *** [[https://opencredo.com/terraform-infrastructure-design-patterns/][Terraform Infrastructure Design Patterns]] :systems:terraform:2015:
 *** [[https://medium.com/levops/self-invented-how-to-terraform-rules-4b1eb00709ac][Self-invented “how to Terraform” rules]] :systems:terraform:2017:
 
-
-
 * Uncategorized Otherwise
-
-** Papers
-
-*** [[https://www.theatlantic.com/magazine/archive/1945/07/as-we-may-think/303881/][As We May Think]] :paper:1945:
-
-    Some musings on hypertext and what we might build after the conclusion of World War II.
-
-*** [[http://math.harvard.edu/~ctm/home/text/others/shannon/entropy/entropy.pdf][A Mathematical Theory of Communication]] :paper:networking:1948:
-
-    Defines the term "bit" for Binary digIT.
-
-*** [[https://www.csee.umbc.edu/courses/471/papers/turing.pdf][Computing Machinery and Intelligence]] :paper:turing:artificial:intelligence:1950:
-*** [[https://ia801903.us.archive.org/1/items/bstj29-2-147/bstj29-2-147.pdf][Error Detecting and Error Correcting Codes]] :paper:hamming:1950:
-
-*** [[http://www-formal.stanford.edu/jmc/recursive.html][Recursive Functions of Symbolic Expressions and their Computation by Machine]] :paper:mccarthy:lisp:1960:
-*** [[http://www.melconway.com/Home/Committees_Paper.html][How do Committees Invent]] :paper:design:organization:1968:
-    Apparently this some of the inspiration for Mythical Man Month.
-*** [[https://www-ee.stanford.edu/~hellman/publications/24.pdf][New Directions in Cryptography]] :paper:cryptography:diffie:hellman:1976:
-*** [[http://amturing.acm.org/p558-lamport.pdf][Time, Clocks, and the Ordering of Events in a Distributed System]] :paper:distributed:1978:
-*** [[http://fermatslibrary.com/s/reflections-on-trusting-trust][Reflections on Trusting Trust]] :paper:security:trust:unix:1984:
-*** [[https://www.student.cs.uwaterloo.ca/~cs492/11public_html/p18-smith.pdf][The Limits of Corrrectness]] :paper:1985:
-*** [[http://www.usingcsp.com/cspbook.pdf][Communicating Sequential Processes]] :paper:concurrent:1985:
-*** [[http://cseweb.ucsd.edu/~ravir/274/15/papers/p143-kajiya.pdf][The Rendering Equation]] :paper:graphics:rendering:pipeline:1986:
-*** [[http://www.wisdom.weizmann.ac.il/~harel/papers/Statecharts.pdf][StateCharts: A Visual Formalism for Complex Systems]]  :paper:statemachine:1987:
-*** [[http://fermatslibrary.com/s/a-sample-of-brilliance][A Sample of Brilliance]] :paper:randomness:sampling:1987:
-*** [[https://www.finseth.com/craft/][A Cookbook for an Emacs]] :paper:emacs:1991:
-*** [[http://home.pipeline.com/~hbaker1/CheneyMTA.html][CONS Should Not CONS Its Arguments, Part II: Cheney on the M.T.A.]] :paper:lisp:scheme:tail:recursion:c:1994:
-*** [[https://www.microsoft.com/en-us/research/wp-content/uploads/2016/07/state-lasc.pdf][State in Haskell]] :paper:haskell:state:1995:
-*** [[https://www.cs.cmu.edu/~rwh/theses/okasaki.pdf][Purely Functional Data Structures]] :paper:functional:programming:data:structures:1996:
-*** [[https://www.cs.cmu.edu/~fp/courses/15317-f00/handouts/logic.pdf][Constructive Logic]] :paper:logic:2000:
-*** [[http://erlang.org/download/armstrong_thesis_2003.pdf][Making Reliable Distributed Systems in the Presence of Software Errors]] :paper:distributed:systems:2003:
-*** [[https://github.com/papers-we-love/papers-we-love/blob/master/design/out-of-the-tar-pit.pdf][Out of the Tarpit]] :paper:design:complexity:2006:
-*** [[http://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf][Dynamo: Amazon’s Highly Available Key-value Store]] :paper:distrubted:database:dynamodb:2007:
-*** [[https://bitcoin.org/bitcoin.pdf][Bitcoin: A Peer-to-Peer Electronic Cash System]] :paper:cryptography:currency:bitcoin:2008:
-*** [[http://www.diku.dk/hjemmesider/ansatte/henglein/papers/henglein2011a.pdf][Generic Top-down Discrimination for Sorting and Partitioning in Linear Time]] :paper:sorting:2010:
-**** [[http://www.diku.dk/hjemmesider/ansatte/henglein/papers/henglein2011c.pdf][Generic Multiset Programming with Discrimination-based Joins and Symbolic Cartesian Products]] :paper:sorting:2011:
-*** [[https://raft.github.io/raft.pdf][In Search of an Understandable Consensus Algorithm]] :paper:distributed:consenus:2014:
-
-
 ** [[http://www.silota.com/docs/recipes/][Advanced SQL Recipes to jumpstart your Analysis]] :sql:tricks:data:analysis:
 ** [[http://www.linusakesson.net/programming/tty/][The TTY Demystified]] :unix:history:tty:
 ** [[http://blog.triplebyte.com/how-to-interview-engineers][How to Interview Engineers]] :hiring:engineers:
@@ -313,19 +306,17 @@ The Eye's Rom Section is a project dedicated towards the preservation and archiv
 ** [[https://github.com/karllhughes/side-project-marketing/blob/master/marketing-checklist.md][Side Project Marketing Checklist]] :open:source:marketing:checklist:2017:
 ** [[http://www.drdobbs.com/architecture-and-design/software-engineering-computer-science/217701907][Software Engineering ≠ Computer Science]] :software:engineering:architecture:design:2009:
 
-
 ** [[http://www.projectrho.com/public_html/rocket/worldbuilding.php][Worldbuilding]] :world:building:
 
    Resource on all things world-building with lots of interesting information and pointers to more information about world building.
 
 ** [[https://www.youtube.com/channel/UCEXz4oDS5KqIcinH2CjxVfg/videos][Eckkehard The German Butcher]] :youtube:channel:charcutery:butchery:
 
-
-
+** [[http://www.idallen.com/topposting.html][Topposting and Bottomposting]] :opinion:holy:war:email:netiquette:
+** [[https://techsolidarity.org/resources/basic_security.htm][Basic security precautions for non-profits and journalists in the United States]] :computer:security:guidelines:precautions:2017:
 * UNIX and BSD
 
 ** [[https://fosdem.org/2017/schedule/event/my_bsd_sucks_less/][My BSD Sucks Less Than Yours]] :talk:unix:openbsd:freebsd:
-
 
 * Web Comics
 
