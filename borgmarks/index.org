@@ -53,6 +53,8 @@ Curated, categorized, and tagged by hand.
 ** [[http://www.keithschwarz.com/interesting/][The Archive of Interesting Code]] :algorithms:datastructures:archive:examples:
 * Assembly
 ** [[http://bob.cs.sonoma.edu/IntroCompOrg-RPi/intro-co-rpi.html][Introduction to Computer Organization: ARM Assembly Language Using the Raspberry Pi]] :assembly:arm:raspberry:pi:
+** [[http://benhoyt.com/writings/pyast64/][Compiling Python syntax to x86-64 assembly for fun and (zero) profit]] :assembly:x86:python:static:2017:
+** [[https://csl.name/post/python-compiler/][JIT compiling a subset of Python to x86-64]] :assembly:x86:python:jit:2017:
 * Cryptography
 
 ** [[https://begriffs.com/posts/2016-11-05-advanced-intro-gnupg.html][Advanced Introduction to GnuPG]] :cryptography:tutorial:gnupg:
@@ -80,14 +82,15 @@ Curated, categorized, and tagged by hand.
 
 ** [[http://use-the-index-luke.com/no-offset][We need tool support for keyset pagination]] :datastructures:databases:sql:pitfall:pagination:offset:
 ** [[https://www.percona.com/blog/2017/11/15/zfs-from-a-mysql-perspective/][ZFS from a MySQL perspective]] :datastructures:databases:filesystems:mysql:zfs:2017:
+** [[https://blog.demofox.org/2017/11/21/floating-point-precision/][Demystifying Floating Point Precision]] :datastructures:floating:point:numbers:2017:
 ** Alembic
 *** [[http://www.chesnok.com/daily/2013/07/02/a-practical-guide-to-using-alembic/][A Practical Guide to using Alembic]] :database:migrations:sqlalchemy:alembic:
 *** [[https://www.compose.com/articles/schema-migrations-with-alembic-python-and-postgresql/][Schema Migrations with Alembic, Python, and PostgreSQL]] :databse:migrations:sqlalchemy:alembic:postgres:
 
 * Development Environments and Editors
-
-** [[https://portacle.github.io/][Portacle - Portable Common Lisp IDE]] :emacs:slime:sbcl:common:lisp:
-
+** [[https://www.emacswiki.org/][Emacs Wiki]] :emacs:xemacs:emacs:lisp:wiki:
+** [[http://orgmode.org/manual/][OrgMode Manual]] :emacs:org:mode:manual:
+** [[https://portacle.github.io/][Portacle - Portable Common Lisp IDE]] 	       :emacs:slime:sbcl:common:lisp:
 * Free Books
 
 ** [[http://www.ccs.neu.edu/home/matthias/HtDP2e/][How to Design Programs 2]] :book:scheme:2014:
@@ -243,6 +246,9 @@ Nice recap of maze generation algorithms from a minecraft modder.  Check out his
 **** [[http://www.diku.dk/hjemmesider/ansatte/henglein/papers/henglein2011c.pdf][Generic Multiset Programming with Discrimination-based Joins and Symbolic Cartesian Products]] :paper:sorting:2011:
 ** [[https://raft.github.io/raft.pdf][In Search of an Understandable Consensus Algorithm]] :paper:distributed:consenus:2014:
 
+* Programming Languages
+** [[http://norvig.com/lispy.html][(How to Write a (Lisp) Interpreter (in Python))]] :norvig:implementing:lisp:in:python:2010:
+** [[https://carld.github.io/2017/06/20/lisp-in-less-than-200-lines-of-c.html][Lisp In Less Than 200 Lines Of C]] :implementing:lisp:in:c:2017:
 * Revision Control
 
 ** [[https://git-scm.com/book/en/v2][Git Book (v2)]] 						   :git:book:
@@ -314,6 +320,10 @@ The Eye's Rom Section is a project dedicated towards the preservation and archiv
 
 ** [[http://www.idallen.com/topposting.html][Topposting and Bottomposting]] :opinion:holy:war:email:netiquette:
 ** [[https://techsolidarity.org/resources/basic_security.htm][Basic security precautions for non-profits and journalists in the United States]] :computer:security:guidelines:precautions:2017:
+** [[https://mynoise.net/NoiseMachines/neuromodulationTonesGenerator.php][Neural Symphony - Neuromodulated Tinnitus Relief]] :audio:neural:tinnitus:relief:
+
+   Sounds purported to help provide temporary relief to tinnitus sufferers.
+
 * UNIX and BSD
 
 ** [[https://fosdem.org/2017/schedule/event/my_bsd_sucks_less/][My BSD Sucks Less Than Yours]] :talk:unix:openbsd:freebsd:
