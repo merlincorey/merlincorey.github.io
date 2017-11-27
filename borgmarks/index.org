@@ -83,18 +83,29 @@ Curated, categorized, and tagged by hand.
 ** [[http://use-the-index-luke.com/no-offset][We need tool support for keyset pagination]] :datastructures:databases:sql:pitfall:pagination:offset:
 ** [[https://www.percona.com/blog/2017/11/15/zfs-from-a-mysql-perspective/][ZFS from a MySQL perspective]] :datastructures:databases:filesystems:mysql:zfs:2017:
 ** [[https://blog.demofox.org/2017/11/21/floating-point-precision/][Demystifying Floating Point Precision]] :datastructures:floating:point:numbers:2017:
+** [[https://norvig.com/design-patterns/design-patterns.pdf][Design Patterns in Dynamic Programming]] :datastructures:design:patterns:norvig:1996:
+** [[http://mishadoff.com/blog/clojure-design-patterns/][Clojure Design Patterns]] :datastructures:design:patterns:2017:
 ** Alembic
 *** [[http://www.chesnok.com/daily/2013/07/02/a-practical-guide-to-using-alembic/][A Practical Guide to using Alembic]] :database:migrations:sqlalchemy:alembic:
 *** [[https://www.compose.com/articles/schema-migrations-with-alembic-python-and-postgresql/][Schema Migrations with Alembic, Python, and PostgreSQL]] :databse:migrations:sqlalchemy:alembic:postgres:
-
 * Development Environments and Editors
 ** [[https://www.emacswiki.org/][Emacs Wiki]] :emacs:xemacs:emacs:lisp:wiki:
 ** [[http://orgmode.org/manual/][OrgMode Manual]] :emacs:org:mode:manual:
+** [[http://sachachua.com/blog/2007/12/how-to-use-emacs-org-as-a-basic-day-planner/][How to use Emacs Org as a Basic Day Planner]] :emacs:org:mode:day:planner:2007:
+** [[http://newartisans.com/2007/08/using-org-mode-as-a-day-planner/][Using org-mode as a Day Planner]] :emacs:org:mode:org:day:planner:2007:
+** [[http://orgmode.org/worg/org-tutorials/orgtutorial_dto.html][David O'Toole Org tutorial]] :emacs:org:mode:tutorial:todo:agenda:
+** [[http://orgmode.org/worg/org-tutorials/non-beamer-presentations.html][Writing Non-Beamer presentations in org-mode]] :emacs:org:mode:presentations:slides:
 ** [[https://portacle.github.io/][Portacle - Portable Common Lisp IDE]] 	       :emacs:slime:sbcl:common:lisp:
+** [[https://github.com/emacs-helm/helm][helm - Emacs incremental completion and selection narrowing framework]] :emacs:package:incremental:completion:search:
+** [[https://github.com/bbatsov/projectile][projectile - Project Interaction Library for Emacs]] :emacs:package:project:management:
+** [[https://notmuchmail.org/notmuch-emacs/][notmuch for emacs]] :emacs:package:notmuch:integration:
+   Searchable and scriptable email in shell and emacs, yes please.
+** [[https://geokon-gh.github.io/.emacs.d/][Emacs configuration for C++/CMake/git]] :emacs:configuration:c:language:integrated:development:environment:explained:
+** [[https://github.com/rnkn/fountain-mode][fountain-mode - Emacs major mode for screenwriting in Fountain plaintext markup]] :emacs:package:screenwriting:
 * Free Books
-
 ** [[http://www.ccs.neu.edu/home/matthias/HtDP2e/][How to Design Programs 2]] :book:scheme:2014:
-
+** [[https://softwarefoundations.cis.upenn.edu/][Software Foundations Series (books)]] :books:logic:math:computer:science:proofs:coq:
+** [[http://adam.chlipala.net/cpdt/][Certified Programming with Dependent Types]] :book:logic:types:proofs:coq:2017:
 * Great Talks
 
 ** [[https://www.youtube.com/watch?v=Sg4U4r_AgJU][Brian Kernighan - How to succeed at language design without really trying]] :talk:kernighan:language:design:awk:
@@ -325,9 +336,14 @@ The Eye's Rom Section is a project dedicated towards the preservation and archiv
    Sounds purported to help provide temporary relief to tinnitus sufferers.
 
 * UNIX and BSD
-
 ** [[https://fosdem.org/2017/schedule/event/my_bsd_sucks_less/][My BSD Sucks Less Than Yours]] :talk:unix:openbsd:freebsd:
 
-* Web Comics
+** [[https://manpages.bsd.lv/][Practical UNIX Manuals - mdoc: structure, style, and composition]] :book:unix:man:pages:mdoc:
+* Video Series
+** [[https://www.youtube.com/watch?list=PL2VAYZE_4wRJi_vgpjsH75kMhN4KsuzR_&v=m0TsdytmGhc][Little Bits of Lisp with Baggers]] :video:series:common:lisp:
+** [[https://www.youtube.com/watch?v=MCuzvy79WWQ][Rewriting BSD 4.4 Shell Commands (part 1: cat)]]
 
+   According to [[https://learnto.computer/courses][learnto.computer/courses]] not all of the episodes are intended to be free, but at least at one time they were.
+
+* Web Comics
 ** [[http://darthsanddroids.net/episodes/0001.html][Darths and Droids]] :webcomic:tabletop:rpg:starwars:
