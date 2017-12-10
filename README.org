@@ -48,7 +48,6 @@
 | hugo                  |                 |                   | go         |   |
 |                       |                 |                   |            |   |
 
-
 * Generator Zoo
 
 ** [[http://orgmode.org/][orgmode]] 						    :emacs:lisp:html:
@@ -100,5 +99,8 @@
 ** [[https://git.codemadness.org/stagit/file/README.html][stagit]] :git:page:generator:
 
    Static git page generator.  Generates a static HTML view of a git repository.
+
 ** [[https://gohugo.io/][hugo]] :go:
+
+   [[https://fillmem.com/post/fast-secured-and-free-static-site/][Build a fast, secured and free static site in less than 3 hours]] includes a little tutorial on getting setup with hugo.
 

@@ -37,9 +37,7 @@ Curated, categorized, and tagged by hand.
 
 * Algorithms
 ** Books
-
 *** [[https://github.com/mdipierro/nlib][Annotated Algorithms in Python]] :book:algorithms:python:
-
 ** Programming Exercises
 *** [[https://projecteuler.net/][Project Euler]] 				  :programming:exercise:math:
 *** [[http://codewars.com/][Codewars]] 					       :programming:exercise:
@@ -52,10 +50,32 @@ Curated, categorized, and tagged by hand.
 ** [[https://users.cs.duke.edu/~ola/bubble/bubble.html][Bubble Sort: An Archaeological Algorithmic Analysis]] :algorithms:bubble:sort:analysis:
 ** [[http://www.keithschwarz.com/interesting/][The Archive of Interesting Code]] :algorithms:datastructures:archive:examples:
 ** [[https://accidentallyquadratic.tumblr.com/][Accidentally Quadratic]] 		   :blog:algorithms:complexity:big:o:
+=======
+** [[https://www.redblobgames.com/grids/hexagons/][Hexagonal Grids]] :algorithms:datastructures:examples:hexagonal:grids:
 * Assembly
 ** [[http://bob.cs.sonoma.edu/IntroCompOrg-RPi/intro-co-rpi.html][Introduction to Computer Organization: ARM Assembly Language Using the Raspberry Pi]] :assembly:arm:raspberry:pi:
 ** [[http://benhoyt.com/writings/pyast64/][Compiling Python syntax to x86-64 assembly for fun and (zero) profit]] :assembly:x86:python:static:2017:
 ** [[https://csl.name/post/python-compiler/][JIT compiling a subset of Python to x86-64]] :assembly:x86:python:jit:2017:
+* Artificial Life
+** [[https://codegolf.stackexchange.com/questions/11880/build-a-working-game-of-tetris-in-conways-game-of-life][Build a working game of Tetris in Conway's Game of Life]] :artificial:life:computer:tetris:in:game:of:life:
+
+   #+BEGIN_QUOTE
+The underlying idea of this project is abstraction.
+Rather than develop a Tetris game in Life directly, we slowly ratcheted up the abstraction in a series of steps.
+At each layer, we get further away from the difficulties of Life and closer to the construction of a computer that is as easy to program as any other.
+   #+END_QUOTE
+
+   - [[http://www.conwaylife.com/wiki/OTCA_metapixel][OCTA Meta Pixels]] as first level of abstraction
+   - [[https://en.wikipedia.org/wiki/Wireworld][Wireworld]] and the [[https://www.quinapalus.com/wi-index.html][Wireworld Computer]] as inspiration
+
+
+   #+BEGIN_QUOTE
+From here we developed an architecture for our processor.
+We spent significant effort on designing an architecture that was both as non-esoteric and as easily-implementable as possible.
+Whereas the Wireworld computer used a rudimentary transport-triggered architecture, this project uses a much more flexible RISC architecture complete with multiple opcodes and addressing modes.
+We created an assembly language, known as QFTASM (Quest for Tetris Assembly), which guided the construction of our processor.
+   #+END_QUOTE
+
 * Cryptography
 
 ** [[https://begriffs.com/posts/2016-11-05-advanced-intro-gnupg.html][Advanced Introduction to GnuPG]] :cryptography:tutorial:gnupg:
@@ -133,7 +153,7 @@ Curated, categorized, and tagged by hand.
 *** [[http://www.infoq.com/presentations/Value-Values][The Value of Values]] :talk:hickey:
 *** [[http://www.youtube.com/watch?v=ROor6_NGIWU][The Language of the System]] :talk:hickey:distrubuted:language:design:
 *** [[http://www.infoq.com/presentations/Design-Composition-Performance][Design, Composition, and Performance]] :talk:hickey:
-
+*** [[https://www.youtube.com/watch?v=2V1FtfBDsLU][Effective Programs - 10 Years of Clojure - Rich Hickey]] :talk:hickey:effectiveness:2017:
 * Frontend Web Design
 
 ** [[http://flexboxfroggy.com/][CSS Flexbox Froggy]] :css:flexbox:tutorial:game:
@@ -156,7 +176,6 @@ Curated, categorized, and tagged by hand.
 ** [[http://www.chesstactics.org/index.php?Type=page&Action=next&From=1,1,1,1][Ward Farnsworth's Predator at the Chessboard]] :gametheory:book:chess:
 
 * Graphics
-
 ** [[http://www.extentofthejam.com/pseudo/][Lou's Psuedo 3d Page]] :graphics:3d:rendering:
 
 ** [[http://machinethink.net/blog/3d-rendering-without-shaders/][3D Rendering without shaders]] :graphics:3d:rendering:shaders:
@@ -164,7 +183,6 @@ Curated, categorized, and tagged by hand.
 [[https://news.ycombinator.com/item?id=13448047][Hackernews discussion]] with some interesting discourse and links such as [[https://fgiesen.wordpress.com/2013/02/06/the-barycentric-conspirac/][The Barycentric Conspiracy]].
 
 ** [[https://www.fasterthan.life/blog/2017/7/11/i-am-graphics-and-so-can-you-part-1][I Am Graphics And So Can You]] 	       :graphics:3d:rendering:vulkan:
-
 
 ** [[http://iquilezles.org/www/index.htm][Íñigo Quílez' Demo and Shader Graphics Articles]] :graphics:demo:scene:shaders:
 
@@ -190,13 +208,14 @@ I can’t even decide on the criteria for the best microcontroller — let alone
 
 What I will do, however, is offer a ton of different recommendations for different users at the end. Read on!
    #+END_QUOTE
-* Home Automation
+* Home Automation and Internet of Things
 ** [[http://www.bruhautomation.com/][Bruh Automation]] :home:automation:tutorials:reviews:
 
    Lots of resources including their [[https://github.com/bruhautomation][github]] for various home automation things.
 
 *** [[https://www.youtube.com/watch?v=9KI36GTgwuQ][The BEST Digital LED Strip Light Tutorial - DIY, WIFI-Controllable via ESP, MQTT, and Home Assistant]] :home:automation:led:strip:mqtt:2016:
 
+** [[https://github.com/adi0x90/attifyos][Attify OS - Distro for pentesting IoT devices]]
 * Locksmithery and Lockpickery
 
 ** [[https://www.defcon.org/images/defcon-21/dc-21-presentations/Tobias-Bluzmanis/DEFCON-21-Tobias-Bluzmanis-Insecurity-A-Failure-of-Imagination.pdf][A FAILURE OF IMAGINATION: Kwikset Smartkey® and Insecurity Engineering]] :physical:security:lockpicking:kwikset:smart:key:
@@ -269,6 +288,78 @@ Nice recap of maze generation algorithms from a minecraft modder.  Check out his
 ** [[http://faust.grame.fr/about/][Faust Programming Language]] :dsp:programming:compiling:to:cpp:2016:
 *** [[https://news.ycombinator.com/item?id=15832989][HackerNews discussion about Faust 2017-12-02]]
 *** [[https://news.ycombinator.com/item?id=13012880][HackerNews discussion about Faust 2016-11]]
+** [[https://www.quora.com/What-did-Alan-Kay-mean-by-Lisp-is-the-greatest-single-programming-language-ever-designed/answer/Alan-Kay-11][What did Alan Kay mean by, "Lisp is the greatest single programming language ever designed"? Answer by Alan Kay]] :alan:kay:programming:language:design:lisp:2017:
+
+   [[https://www.quora.com/profile/Alan-Kay-11][Alan Kay]], I am the Alan Kay in question. Updated =2017 October 29=.
+
+   #+BEGIN_QUOTE
+First, let me clear up a few misconceptions from the previous answers.
+One of them said “Try writing an operating system with Lisp”, as though this would be somehow harder.
+In fact, one of the nicest operating systems ever done was on “The Lisp Machines” (in Zeta-Lisp), the hardware and software following the lead of “The Parc Machines” and Smalltalk — and we in turn had been very influenced by the Lisp model of programming and implementation.
+(These operating systems in both Smalltalk and Lisp were both better (claim) and easier to write (simpler to demonstrate) than the standard ones of today.)
+
+Another interesting answer assumed that “the test of time” is somehow a cosmic optimization.
+But as every biologist knows, Darwinian processes “find fits” to an environment, and if the environment is lacking, then the fits will be lacking.
+Similarly, if most computer people lack understanding and knowledge, then what they will select will also be lacking.
+There is abundant evidence today that this is just what has happened.
+
+But neither of these has anything to do with my praise of Lisp (and I did explain what I meant in more detail in “The Early History of Smalltalk”).
+
+To start with an analogy, let’s notice that a person who has learned calculus fluently can in many areas out-think the greatest geniuses in history.
+Scientists after Newton were qualitatively more able than before, etc.
+My slogan for this is “Point of view is worth 80 IQ points” (you can use “context” or “perspective” etc.).
+A poor one might subtract 80 IQ points! (See above).
+A new more powerful one makes some thinking possible that was too difficult before.
+
+One of our many problems with thinking is “cognitive load”: the number of things we can pay attention to at once.
+The cliche is 7±2, but for many things it is even less.
+We make progress by making those few things be more powerful.
+
+This is one of the reasons mathematicians like compact notation.
+The downside is the extra layers of abstraction and new cryptic things to learn — this is the practice part of violin playing — but once you can do this, what you can think about at once has been vastly magnified.
+There were 20 Maxwell’s Equations in their original form (in terms of partial differentials and cartesian coordinates).
+Today the four equations we can think about all at once are primarily due to their reformulation by Heaviside to emphasize what is really important about them (and what is likely to be problematic — e.g.
+the electric and magnetic fields should probably be symmetric with respect to movement, etc).
+
+Modern science is about experiencing phenomena and devising models whose relationships with the phenomena can be “negotiated”.
+The “negotiation” is necessary because what’s inside our heads, and our representations systems etc have no necessary connection to “what’s out there?”.
+
+Taking this point of view, we can see there can be a “bridge science” and “bridge scientists” because engineers build bridges and these furnish phenomena for scientists to make models of.
+
+Similarly, there can be a “computer science” and “computer scientists” because engineers build hardware and software and these furnish phenomena for scientists to make models of.
+(In fact, this was a large part of what was meant by “computer science” in the early 60s — and it was an aspiration — still is — not an accomplished fact).
+
+The story behind Lisp is fun (you can read John McCarthy’s account in the first History of Programming Languages).
+One of the motivations was that he wanted something like “Mathematical Physics” — he called it a “Mathematical Theory of Computation”.
+Another was that he needed a very general kind of language to make a user interface AI — called “The Advice Taker” — that he had thought up in the late 50s.
+
+He could program — most programs were then in machine code, Fortran existed, and there was a language that had linked lists.
+
+John made something that could do what any programming language could do (relatively easy), but did it in such a way so that it could express the essence of what it was about (this was the math part or the meta part or the modern Maxwell’s Equations part, however you might like to think of it).
+He partly did this — he says — to show that this way to do things was “neater than a Turing Machine”.
+
+Another observation about this is that the “slope” from the simplest machine structures to the highest level language was the steepest ever — meaning that the journey from recognizable hardware to cosmic expression is a rocket jump!
+
+As is often the case — especially in engineering — a great scientific model is often superior to what exists, and can lead to much better artifacts.
+This was certainly true here.
+Steve Russell (later famous for being the main inventor and programmer of “SpaceWar”) looked at what John had done, and said: “That’s a program.
+If I coded it up we’d have a running version”.
+As John remarked: “He did, and we did”!
+
+The result was “unlimited programming in an eyeful” (the bottom half of page 13 in the Lisp 1.5 manual).
+The key was not so much “Lisp” but the kinds of thinking that this kind of representational approach allowed and opened up regarding all kinds of programming language schemes.
+
+A fun thing about it this is that once you’ve grokked it, you can think right away of better programming languages than Lisp, and you can think right away of better ways to write the meta descriptions than John did.
+This is the “POV = 80 IQ points” part.
+
+But this is like saying that once you’ve seen Newton, it becomes possible to do electrodynamics and relativity.
+The biggest feat in science was Newton’s!
+
+This is why “Lisp is the greatest!”
+   #+END_QUOTE
+
+* Reverse Engineering
+** [[https://github.com/FireyFly/pixd][Colourful visualization tool for binary files]] :binary:data:visualization:
 * Revision Control
 
 ** [[https://git-scm.com/book/en/v2][Git Book (v2)]] 						   :git:book:
@@ -293,16 +384,27 @@ Nice recap of maze generation algorithms from a minecraft modder.  Check out his
 
 ** [[https://magit.vc/][Magit]] 						:git:porcelain:emacs:
 
-* Shells
-
+* Shells and Terminals
 ** [[https://zanshin.net/2013/02/02/zsh-configuration-from-the-ground-up/][Zsh Configuration From the Ground Up]] :zsh:configuration:tutorial:2013:
 ** [[http://www.howardism.org/Technical/Emacs/eshell-fun.html][Eschewing Zshell for Emacs Shell]] :zsh:emacs:eshell:
 
+** [[https://termux.com][Termux]] :android:terminal:emulator:
 * Systems Engineering
-
 ** [[https://alestic.com/2010/12/ec2-user-data-output/][Logging user-data Script Output on EC2 Instances]] :systems:cloudinit:logging:aws:ec2:
 
 ** [[http://www.brendangregg.com/blog/2017-08-08/linux-load-averages.html][Linux Load Averages: Solving the Mystery]] :systems:linux:load:average:algorithm:history:
+
+** [[https://lonesysadmin.net/2011/11/08/ssh-escape-sequences-aka-kill-dead-ssh-sessions/amp/][SSH Escape Sequences]] :systems:linux:ssh:escape:sequences:2011:
+
+   - ~. :: terminate connection (and any multiplexed sessions)
+   - ~B :: send a BREAK to the remote system
+   - ~C :: open a command line
+   - ~R :: Request rekey (SSH protocol 2 only)
+   - ~^Z:: suspend ssh
+   - ~# :: list forwarded connections
+   - ~& :: background ssh (when waiting for connections to terminate)
+   - ~? :: this message
+   - ~~ :: send the escape character by typing it twice
 
 ** Terraform
 
@@ -344,6 +446,8 @@ The Eye's Rom Section is a project dedicated towards the preservation and archiv
 
    Sounds purported to help provide temporary relief to tinnitus sufferers.
 
+** [[http://www.sloperama.com/advice.html][Game Design FAQs]] :game:design:frequently:asked:questions:
+** [[https://www.linkedin.com/pulse/invitation-live-consciously-business-introduction-part-fred-kofman][An Invitation to Live Consciously in Business]] :fred:kofman:linkedin:conscious:business:academy:2015:
 * UNIX and BSD
 ** [[https://fosdem.org/2017/schedule/event/my_bsd_sucks_less/][My BSD Sucks Less Than Yours]] :talk:unix:openbsd:freebsd:
 
