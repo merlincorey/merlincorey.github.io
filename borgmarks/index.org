@@ -78,22 +78,43 @@ We created an assembly language, known as QFTASM (Quest for Tetris Assembly), wh
    #+END_QUOTE
 
 * Cryptography
-
 ** [[https://begriffs.com/posts/2016-11-05-advanced-intro-gnupg.html][Advanced Introduction to GnuPG]] :cryptography:tutorial:gnupg:
 
 ** [[https://github.com/gchq/CyberChef][GCHQ CyberChef]] :cryptography:tools:
    Forked on my own github [[https://github.com/merlincorey/CyberChef][merlincorey/CyberChef]].
 
-
 ** Crypto currencies
-
 *** [[http://www.righto.com/2014/02/ascii-bernanke-wikileaks-photographs.html][Hidden surprises in the Bitcoin blockchain and how they are stored: Nelson Mandela, Wikileaks, photos, and Python software]] :cryptocurrency:blockchain:creative:hacking:2014:
 *** [[https://storeofvalue.github.io/posts/cryptocurrency-hacks-so-far-august-24th/][List Of High Profile Cryptocurrency Hacks So Far]] :cryptography:currency:crime:and:theft:2017:
 *** [[http://www.jsfour.com/can-you-really-hack-ethereum-smart-contracts/][Can you really hack Ethereum smart contracts?]] :cryptography:currency:ethereum:hate:2017:
-
-
 *** [[http://www.michaelburge.us/2017/08/31/roll-your-own-bitcoin-exchange.html][Roll your Own Bitcoin Exchange in Haskell]] :cryptography:currency:exchange:haskell:
+*** [[https://hackernoon.com/why-everyone-missed-the-most-important-invention-in-the-last-500-years-c90b0151c169][Why Everyone Missed the Most Important Invention in the Last 500 Years]] :cryptography:accounting:triple:entry:bookkeeping:
+**** [[https://www.cmu.edu/piper/news/archives/2017/january/yuji-ijiri-obituary.html][Yuji Ijiri's obituary at CMU]] :obituary::2017:
+    
+    #+CAPTION: 
+    #+BEGIN_QUOTE
+Former Carnegie Mellon University professor Yuji Ijiri, founder of the transitional momentum accounting practice, also known as triple-entry accounting, died on Jan. 18. He was 81.
 
+Born Feb. 24, 1935, educated and employed as an accountant in his native Japan, Ijiri later adopted the Graduate School of Industrial Administration (GSIA), now the Tepper School of Business, and Carnegie Mellon University as his workplace and home for the final half-century of his life. He earned a Ph.D. in industrial administration at Carnegie Mellon in 1963 and, after four years at the Stanford Graduate School of Business, joined the faculty of GSIA. He remained a central Carnegie Mellon figure from 1967 until his death.
+
+Until his retirement in 2011, Ijiri was the R.M. Trueblood University Professor of Accounting and Economics, emeritus. During his time in this position he collaborated and taught alongside such notables as Nobel laureate Herb Simon, former university president Richard Cyert, global operations and accounting visionary Bill Cooper, Ijiri’s thesis adviser James March, political scientist and co-author of the Behavioral Theory of the Firm, and global economics expert and Federal Reserve historian Allan Meltzer.
+
+“Yuji played an instrumental role in the history of the Tepper School and is considered one of the intellectual giants of his era,” said Robert Dammon, dean of the Tepper School and professor of financial economics, who remembers his own 1984 arrival at the school, meeting the luminaries such as Simon and Ijiri. “Throughout his career, Yuji was an intellectual leader who had tremendous impact on the field of accounting, his colleagues, and the legions of Ph.D. students he worked with over the years. His influence and contributions have left an enduring legacy of research productivity and impact that sets one of the highest standards for academic achievement.”
+
+Ijiri was named to the Accounting Hall of Fame in 1989, an honor afforded just 94 people through its 67-year history at Ohio State University. He authored 200 published papers and 25 books, some translated into Spanish, French and Japanese, but none more important to him than his 1989 work about triple-entry accounting. He was among the founding members of the Journal of Accounting and Public Policy in the early 1980s, as well as the only four-time winner of the American Accounting Association (AAA) Notable Contributions to Accounting Lecturer Award: 1966, 1967, 1971 and 1976. Ijiri served the AAA as vice president in the mid-1970s and president in the 1980s.
+
+Ijiri, by his own description a “constant gardener” in education, once said, “Carnegie Mellon has indeed been ‘small gardens’ of learning blessed with exceptional teachers and students. Yet there seems to be something more. The gardens seem to have a special way of letting people grow.”
+
+Ijiri was 6 years old when he attended the Abacus Math School in Kobe, Japan, and by the 10th grade was doing the bookkeeping for his father’s bakery. In 1952, before even graduating from the Nara High School of Commerce, he passed a test that allowed him to take the CPA examination without a college degree. He passed the CPA exam in 1953, while attending Doshisha Junior College at night. He finished three years at Ritsumeikan University, also in Kyoto, with a bachelor’s of law degree. Thus, he had completed all requirements for a CPA certificate at age 21, the youngest on record in Japan.
+
+He worked at a small accounting firm and then with Price Waterhouse & Co. before leaving in 1959 to attend graduate school at the University of Minnesota, where he received a master’s degree in 1960. From there, he attended Carnegie Mellon, where he remained except for four years at Stanford.
+
+Ijiri also was recognized internationally in accounting for aggregation theory, firm size distributions, accounting measurement theory, computer languages, and quantitative models in business and economics. Fair value accounting in the early 2000s brought his concepts to the forefront again, and among his final papers were works exploring connections between triple-entry accounting and quantum physics and quantum computing. At Carnegie Mellon, his service included academic councils, dean policy advisory and more. He was awarded the Weil Prize for faculty research in 2009-10. Established in 1990, the Yuji Ijiri Award for Excellence in Accounting is awarded to an MBA student during the school’s diploma ceremony each year.
+
+Surviving are his wife of 54 years, Tomoko, of Oberlin, Ohio; and two daughters, Yumi (Oberlin, Ohio) and Lisa (Boston, Massachusetts).
+    #+END_QUOTE
+
+**** [[http://iang.org/papers/triple_entry.html][Triple Entry Accounting - Ian Grigg Systemics, Inc.]] :paper::2005:
 * Datastructures, Databases, and Filesystems
 ** [[http://www.eelis.net/C++/analogliterals.xhtml][Multi-Dimensional Analog Literals]] :datastructures:analog:literals:2006:
 ** [[https://www.interviewcake.com/article/python/data-structures-coding-interview][Datastructures for Coding Interviews]]    :datastructures:python:interviews:
