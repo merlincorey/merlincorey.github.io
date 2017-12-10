@@ -51,6 +51,7 @@ Curated, categorized, and tagged by hand.
 ** [[https://yurichev.com/blog/rubik/][Solving pocket Rubik's cube (2 * 2 * 2) using Z3 and SAT solver]] :algorithms:simplified:rubiks:cube:solver:
 ** [[https://users.cs.duke.edu/~ola/bubble/bubble.html][Bubble Sort: An Archaeological Algorithmic Analysis]] :algorithms:bubble:sort:analysis:
 ** [[http://www.keithschwarz.com/interesting/][The Archive of Interesting Code]] :algorithms:datastructures:archive:examples:
+** [[https://accidentallyquadratic.tumblr.com/][Accidentally Quadratic]] 		   :blog:algorithms:complexity:big:o:
 * Assembly
 ** [[http://bob.cs.sonoma.edu/IntroCompOrg-RPi/intro-co-rpi.html][Introduction to Computer Organization: ARM Assembly Language Using the Raspberry Pi]] :assembly:arm:raspberry:pi:
 ** [[http://benhoyt.com/writings/pyast64/][Compiling Python syntax to x86-64 assembly for fun and (zero) profit]] :assembly:x86:python:static:2017:
@@ -224,6 +225,7 @@ Nice recap of maze generation algorithms from a minecraft modder.  Check out his
    - [[http://beej.us/guide/bggdb/][Beej's Quick Guide to GDB]]
 
 ** [[https://modern.ircdocs.horse/][Modern IRC Client Protocol]] :networking:protocol:living:documentation:irc:
+** [[https://coldfix.eu/2017/01/29/vpn-box/][VPN in a Nutshell]] :networking:linux:vpn:per:application:
 * Papers
 ** [[https://www.theatlantic.com/magazine/archive/1945/07/as-we-may-think/303881/][As We May Think]] 						 :paper:1945:
 
@@ -246,6 +248,7 @@ Nice recap of maze generation algorithms from a minecraft modder.  Check out his
 ** [[http://www.usingcsp.com/cspbook.pdf][Communicating Sequential Processes]] 		      :paper:concurrent:1985:
 ** [[http://cseweb.ucsd.edu/~ravir/274/15/papers/p143-kajiya.pdf][The Rendering Equation]] 	     :paper:graphics:rendering:pipeline:1986:
 ** [[http://www.wisdom.weizmann.ac.il/~harel/papers/Statecharts.pdf][StateCharts: A Visual Formalism for Complex Systems]] :paper:statemachine:1987:
+*** [[https://www.slideshare.net/lmatteis/are-statecharts-the-next-big-ui-paradigm][Are statecharts the next big UI paradigm?]] :blog:post:statemachine:2017:
 ** [[http://fermatslibrary.com/s/a-sample-of-brilliance][A Sample of Brilliance]] 		     :paper:randomness:sampling:1987:
 ** [[https://www.finseth.com/craft/][A Cookbook for an Emacs]] 				   :paper:emacs:1991:
 ** [[http://home.pipeline.com/~hbaker1/CheneyMTA.html][CONS Should Not CONS Its Arguments, Part II: Cheney on the M.T.A.]] :paper:lisp:scheme:tail:recursion:c:1994:
@@ -263,6 +266,9 @@ Nice recap of maze generation algorithms from a minecraft modder.  Check out his
 * Programming Languages
 ** [[http://norvig.com/lispy.html][(How to Write a (Lisp) Interpreter (in Python))]] :norvig:implementing:lisp:in:python:2010:
 ** [[https://carld.github.io/2017/06/20/lisp-in-less-than-200-lines-of-c.html][Lisp In Less Than 200 Lines Of C]] :implementing:lisp:in:c:2017:
+** [[http://faust.grame.fr/about/][Faust Programming Language]] :dsp:programming:compiling:to:cpp:2016:
+*** [[https://news.ycombinator.com/item?id=15832989][HackerNews discussion about Faust 2017-12-02]]
+*** [[https://news.ycombinator.com/item?id=13012880][HackerNews discussion about Faust 2016-11]]
 * Revision Control
 
 ** [[https://git-scm.com/book/en/v2][Git Book (v2)]] 						   :git:book:
