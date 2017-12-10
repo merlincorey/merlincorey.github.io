@@ -52,6 +52,7 @@ Curated, categorized, and tagged by hand.
 ** [[https://accidentallyquadratic.tumblr.com/][Accidentally Quadratic]] 		   :blog:algorithms:complexity:big:o:
 =======
 ** [[https://www.redblobgames.com/grids/hexagons/][Hexagonal Grids]] :algorithms:datastructures:examples:hexagonal:grids:
+** [[https://github.com/norvig/pytudes][Pytudes -  Python programs to practice or demonstrate skills.]] :norvig:python:etudes:algorithms:datastructures:problem:solving:
 * Assembly
 ** [[http://bob.cs.sonoma.edu/IntroCompOrg-RPi/intro-co-rpi.html][Introduction to Computer Organization: ARM Assembly Language Using the Raspberry Pi]] :assembly:arm:raspberry:pi:
 ** [[http://benhoyt.com/writings/pyast64/][Compiling Python syntax to x86-64 assembly for fun and (zero) profit]] :assembly:x86:python:static:2017:
@@ -389,6 +390,8 @@ This is why “Lisp is the greatest!”
 ** [[http://www.howardism.org/Technical/Emacs/eshell-fun.html][Eschewing Zshell for Emacs Shell]] :zsh:emacs:eshell:
 
 ** [[https://termux.com][Termux]] :android:terminal:emulator:
+* Software Engineering
+** [[http://python.apichecklist.com/][Python API Checklist]] :python:api:programming:checklist:
 * Systems Engineering
 ** [[https://alestic.com/2010/12/ec2-user-data-output/][Logging user-data Script Output on EC2 Instances]] :systems:cloudinit:logging:aws:ec2:
 
@@ -405,6 +408,17 @@ This is why “Lisp is the greatest!”
    - ~& :: background ssh (when waiting for connections to terminate)
    - ~? :: this message
    - ~~ :: send the escape character by typing it twice
+
+** [[http://nginx.org/][NginX]] 				   :systems:backwards:proxy:web:mail:
+
+   I have been using NginX since version =0.5.x= and have been involved in the community here and there.
+
+   These are some great resources mostly from the [[http://nginx.org/en/docs/][docs]] I commonly share:
+
+   - [[http://nginx.org/en/docs/beginners_guide.html][NginX Beginner's Guide]]
+   - [[http://nginx.org/en/docs/http/request_processing.html][How NginX processes a request]]
+   - [[http://nginx.org/en/docs/http/configuring_https_servers.html][Configuring HTTPS servers with NginX]]
+   - [[https://www.nginx.com/resources/admin-guide/][NginX Administration Guide]]
 
 ** Terraform
 
@@ -448,6 +462,11 @@ The Eye's Rom Section is a project dedicated towards the preservation and archiv
 
 ** [[http://www.sloperama.com/advice.html][Game Design FAQs]] :game:design:frequently:asked:questions:
 ** [[https://www.linkedin.com/pulse/invitation-live-consciously-business-introduction-part-fred-kofman][An Invitation to Live Consciously in Business]] :fred:kofman:linkedin:conscious:business:academy:2015:
+** [[https://www.sbnation.com/a/17776-football/][17776-football]] :digital:novel:artificial:intelligence:artificial:life:2017:
+
+   A most intriguing story about Football in the year =17776=.
+
+** [[https://cs007.blog/][CS 007 - Personal Finance for Programmers]] :personal:finance:programmers:course:2017:
 * UNIX and BSD
 ** [[https://fosdem.org/2017/schedule/event/my_bsd_sucks_less/][My BSD Sucks Less Than Yours]] :talk:unix:openbsd:freebsd:
 
