@@ -37,9 +37,7 @@ Curated, categorized, and tagged by hand.
 
 * Algorithms
 ** Books
-
 *** [[https://github.com/mdipierro/nlib][Annotated Algorithms in Python]] :book:algorithms:python:
-
 ** Programming Exercises
 *** [[https://projecteuler.net/][Project Euler]] 				  :programming:exercise:math:
 *** [[http://codewars.com/][Codewars]] 					       :programming:exercise:
@@ -51,27 +49,107 @@ Curated, categorized, and tagged by hand.
 ** [[https://yurichev.com/blog/rubik/][Solving pocket Rubik's cube (2 * 2 * 2) using Z3 and SAT solver]] :algorithms:simplified:rubiks:cube:solver:
 ** [[https://users.cs.duke.edu/~ola/bubble/bubble.html][Bubble Sort: An Archaeological Algorithmic Analysis]] :algorithms:bubble:sort:analysis:
 ** [[http://www.keithschwarz.com/interesting/][The Archive of Interesting Code]] :algorithms:datastructures:archive:examples:
+** [[https://accidentallyquadratic.tumblr.com/][Accidentally Quadratic]] 		   :blog:algorithms:complexity:big:o:
+** [[https://www.redblobgames.com/grids/hexagons/][Hexagonal Grids]] :algorithms:datastructures:examples:hexagonal:grids:
+** [[https://github.com/norvig/pytudes][Pytudes -  Python programs to practice or demonstrate skills.]] :norvig:python:etudes:algorithms:datastructures:problem:solving:
+** [[https://github.com/mandliya/algorithms_and_data_structures][mandliya/algorithms_and_data_structures]] :algorithms:datastructures:c:++:
+** [[http://www.asimovinstitute.org/neural-network-zoo/][The Neural Network Zoo]] :algorithms:neural:networks:
+** [[https://docs.google.com/presentation/d/1kSuQyW5DTnkVaZEjGYCkfOxvzCqGEFzWBy4e9Uedd9k/preview?imm_mid=0f9b7e&cmp=em-data-na-na-newsltr_20171213#slide=id.g168a3288f7_0_58][Machine Learning 101]] :algorithms:machine:learning:slides:2017:
 * Assembly
 ** [[http://bob.cs.sonoma.edu/IntroCompOrg-RPi/intro-co-rpi.html][Introduction to Computer Organization: ARM Assembly Language Using the Raspberry Pi]] :assembly:arm:raspberry:pi:
 ** [[http://benhoyt.com/writings/pyast64/][Compiling Python syntax to x86-64 assembly for fun and (zero) profit]] :assembly:x86:python:static:2017:
 ** [[https://csl.name/post/python-compiler/][JIT compiling a subset of Python to x86-64]] :assembly:x86:python:jit:2017:
-* Cryptography
+* Artificial Life
+** [[https://codegolf.stackexchange.com/questions/11880/build-a-working-game-of-tetris-in-conways-game-of-life][Build a working game of Tetris in Conway's Game of Life]] :artificial:life:computer:tetris:in:game:of:life:
 
+   #+BEGIN_QUOTE
+The underlying idea of this project is abstraction.
+Rather than develop a Tetris game in Life directly, we slowly ratcheted up the abstraction in a series of steps.
+At each layer, we get further away from the difficulties of Life and closer to the construction of a computer that is as easy to program as any other.
+   #+END_QUOTE
+
+   - [[http://www.conwaylife.com/wiki/OTCA_metapixel][OCTA Meta Pixels]] as first level of abstraction
+   - [[https://en.wikipedia.org/wiki/Wireworld][Wireworld]] and the [[https://www.quinapalus.com/wi-index.html][Wireworld Computer]] as inspiration
+
+
+   #+BEGIN_QUOTE
+From here we developed an architecture for our processor.
+We spent significant effort on designing an architecture that was both as non-esoteric and as easily-implementable as possible.
+Whereas the Wireworld computer used a rudimentary transport-triggered architecture, this project uses a much more flexible RISC architecture complete with multiple opcodes and addressing modes.
+We created an assembly language, known as QFTASM (Quest for Tetris Assembly), which guided the construction of our processor.
+   #+END_QUOTE
+
+* Build Systems
+** [[http://nullprogram.com/blog/2017/08/20/][A Tutorial on Portable Makefiles]] :portable:make:2017:
+** [[http://gittup.org/tup/build_system_rules_and_algorithms.pdf][Build System Rules and Algorithms]] :paper:shal:build:systems:2009:
+** [[http://gittup.org/tup/][tup]] :tup:shal:reverse:dag:
+
+   #+BEGIN_QUOTE
+   In a typical build system, the dependency arrows go down.
+   Although this is the way they would naturally go due to gravity, it is unfortunately also where the enemy's gate is.
+   This makes it very inefficient and unfriendly.
+   In tup, the arrows go up.
+   This is obviously true because it rhymes.
+   See how the dependencies differ in make and tup:
+   #+END_QUOTE
+   
+   #+CAPTION: Diagram of Make versus Tup directed graphs
+   #+BEGIN_EXAMPLE
+            Make                     Tup
+            ----                     ---
+        hello-world              hello-world
+       V           V            ^           ^
+     foo.o       bar.o        foo.o        bar.o
+    V     V     V     V      ^     ^      ^     ^
+   foo.c foo.h bar.c bar.h  foo.c foo.h  bar.h bar.c
+   #+END_EXAMPLE
+
+   #+BEGIN_QUOTE
+   See the difference? The arrows go up.
+   This makes it very fast.
+   In fact, in at least one case, tup is optimal.
+   See the Build System Rules and Algorithms (PDF) paper for more detailed information.
+   #+END_QUOTE
+
+* Cryptography
 ** [[https://begriffs.com/posts/2016-11-05-advanced-intro-gnupg.html][Advanced Introduction to GnuPG]] :cryptography:tutorial:gnupg:
 
 ** [[https://github.com/gchq/CyberChef][GCHQ CyberChef]] :cryptography:tools:
    Forked on my own github [[https://github.com/merlincorey/CyberChef][merlincorey/CyberChef]].
 
-
 ** Crypto currencies
-
-*** [[http://www.righto.com/2014/02/ascii-bernanke-wikileaks-photographs.html][Hidden surprises in the Bitcoin blockchain and how they are stored: Nelson Mandela, Wikileaks, photos, and Python software]] :cryptocurrency:blockchain:creative:hacking:2014:
+*** [[http://www.righto.com/2014/09/mining-bitcoin-with-pencil-and-paper.html][Mining Bitcoin with pencil and paper: 0.67 hashes per day]] :cryptography:currency:bitcoin:2014:
+*** [[http://www.righto.com/2014/02/ascii-bernanke-wikileaks-photographs.html][Hidden surprises in the Bitcoin blockchain and how they are stored: Nelson Mandela, Wikileaks, photos, and Python software]] :cryptography:currency:blockchain:creative:hacking:2014:
 *** [[https://storeofvalue.github.io/posts/cryptocurrency-hacks-so-far-august-24th/][List Of High Profile Cryptocurrency Hacks So Far]] :cryptography:currency:crime:and:theft:2017:
 *** [[http://www.jsfour.com/can-you-really-hack-ethereum-smart-contracts/][Can you really hack Ethereum smart contracts?]] :cryptography:currency:ethereum:hate:2017:
-
-
 *** [[http://www.michaelburge.us/2017/08/31/roll-your-own-bitcoin-exchange.html][Roll your Own Bitcoin Exchange in Haskell]] :cryptography:currency:exchange:haskell:
+*** [[https://hackernoon.com/why-everyone-missed-the-most-important-invention-in-the-last-500-years-c90b0151c169][Why Everyone Missed the Most Important Invention in the Last 500 Years]] :cryptography:accounting:triple:entry:bookkeeping:
+**** [[https://www.cmu.edu/piper/news/archives/2017/january/yuji-ijiri-obituary.html][Yuji Ijiri's obituary at CMU]] :obituary::2017:
+    
+    #+CAPTION: 
+    #+BEGIN_QUOTE
+Former Carnegie Mellon University professor Yuji Ijiri, founder of the transitional momentum accounting practice, also known as triple-entry accounting, died on Jan. 18. He was 81.
 
+Born Feb. 24, 1935, educated and employed as an accountant in his native Japan, Ijiri later adopted the Graduate School of Industrial Administration (GSIA), now the Tepper School of Business, and Carnegie Mellon University as his workplace and home for the final half-century of his life. He earned a Ph.D. in industrial administration at Carnegie Mellon in 1963 and, after four years at the Stanford Graduate School of Business, joined the faculty of GSIA. He remained a central Carnegie Mellon figure from 1967 until his death.
+
+Until his retirement in 2011, Ijiri was the R.M. Trueblood University Professor of Accounting and Economics, emeritus. During his time in this position he collaborated and taught alongside such notables as Nobel laureate Herb Simon, former university president Richard Cyert, global operations and accounting visionary Bill Cooper, Ijiri’s thesis adviser James March, political scientist and co-author of the Behavioral Theory of the Firm, and global economics expert and Federal Reserve historian Allan Meltzer.
+
+“Yuji played an instrumental role in the history of the Tepper School and is considered one of the intellectual giants of his era,” said Robert Dammon, dean of the Tepper School and professor of financial economics, who remembers his own 1984 arrival at the school, meeting the luminaries such as Simon and Ijiri. “Throughout his career, Yuji was an intellectual leader who had tremendous impact on the field of accounting, his colleagues, and the legions of Ph.D. students he worked with over the years. His influence and contributions have left an enduring legacy of research productivity and impact that sets one of the highest standards for academic achievement.”
+
+Ijiri was named to the Accounting Hall of Fame in 1989, an honor afforded just 94 people through its 67-year history at Ohio State University. He authored 200 published papers and 25 books, some translated into Spanish, French and Japanese, but none more important to him than his 1989 work about triple-entry accounting. He was among the founding members of the Journal of Accounting and Public Policy in the early 1980s, as well as the only four-time winner of the American Accounting Association (AAA) Notable Contributions to Accounting Lecturer Award: 1966, 1967, 1971 and 1976. Ijiri served the AAA as vice president in the mid-1970s and president in the 1980s.
+
+Ijiri, by his own description a “constant gardener” in education, once said, “Carnegie Mellon has indeed been ‘small gardens’ of learning blessed with exceptional teachers and students. Yet there seems to be something more. The gardens seem to have a special way of letting people grow.”
+
+Ijiri was 6 years old when he attended the Abacus Math School in Kobe, Japan, and by the 10th grade was doing the bookkeeping for his father’s bakery. In 1952, before even graduating from the Nara High School of Commerce, he passed a test that allowed him to take the CPA examination without a college degree. He passed the CPA exam in 1953, while attending Doshisha Junior College at night. He finished three years at Ritsumeikan University, also in Kyoto, with a bachelor’s of law degree. Thus, he had completed all requirements for a CPA certificate at age 21, the youngest on record in Japan.
+
+He worked at a small accounting firm and then with Price Waterhouse & Co. before leaving in 1959 to attend graduate school at the University of Minnesota, where he received a master’s degree in 1960. From there, he attended Carnegie Mellon, where he remained except for four years at Stanford.
+
+Ijiri also was recognized internationally in accounting for aggregation theory, firm size distributions, accounting measurement theory, computer languages, and quantitative models in business and economics. Fair value accounting in the early 2000s brought his concepts to the forefront again, and among his final papers were works exploring connections between triple-entry accounting and quantum physics and quantum computing. At Carnegie Mellon, his service included academic councils, dean policy advisory and more. He was awarded the Weil Prize for faculty research in 2009-10. Established in 1990, the Yuji Ijiri Award for Excellence in Accounting is awarded to an MBA student during the school’s diploma ceremony each year.
+
+Surviving are his wife of 54 years, Tomoko, of Oberlin, Ohio; and two daughters, Yumi (Oberlin, Ohio) and Lisa (Boston, Massachusetts).
+    #+END_QUOTE
+
+**** [[http://iang.org/papers/triple_entry.html][Triple Entry Accounting - Ian Grigg Systemics, Inc.]] :paper::2005:
 * Datastructures, Databases, and Filesystems
 ** [[http://www.eelis.net/C++/analogliterals.xhtml][Multi-Dimensional Analog Literals]] :datastructures:analog:literals:2006:
 ** [[https://www.interviewcake.com/article/python/data-structures-coding-interview][Datastructures for Coding Interviews]]    :datastructures:python:interviews:
@@ -88,26 +166,31 @@ Curated, categorized, and tagged by hand.
 ** Alembic
 *** [[http://www.chesnok.com/daily/2013/07/02/a-practical-guide-to-using-alembic/][A Practical Guide to using Alembic]] :database:migrations:sqlalchemy:alembic:
 *** [[https://www.compose.com/articles/schema-migrations-with-alembic-python-and-postgresql/][Schema Migrations with Alembic, Python, and PostgreSQL]] :databse:migrations:sqlalchemy:alembic:postgres:
+** postgres
+*** [[http://rhaas.blogspot.com/2018/01/the-state-of-vacuum.html][The State of VACUUM]] :database:postgres:vacuum:2018:
 * Development Environments and Editors
-** [[https://www.emacswiki.org/][Emacs Wiki]] :emacs:xemacs:emacs:lisp:wiki:
-** [[http://orgmode.org/manual/][OrgMode Manual]] :emacs:org:mode:manual:
-** [[http://sachachua.com/blog/2007/12/how-to-use-emacs-org-as-a-basic-day-planner/][How to use Emacs Org as a Basic Day Planner]] :emacs:org:mode:day:planner:2007:
-** [[http://newartisans.com/2007/08/using-org-mode-as-a-day-planner/][Using org-mode as a Day Planner]] :emacs:org:mode:org:day:planner:2007:
-** [[http://orgmode.org/worg/org-tutorials/orgtutorial_dto.html][David O'Toole Org tutorial]] :emacs:org:mode:tutorial:todo:agenda:
-** [[http://orgmode.org/worg/org-tutorials/non-beamer-presentations.html][Writing Non-Beamer presentations in org-mode]] :emacs:org:mode:presentations:slides:
-** [[https://portacle.github.io/][Portacle - Portable Common Lisp IDE]] 	       :emacs:slime:sbcl:common:lisp:
-** [[https://github.com/emacs-helm/helm][helm - Emacs incremental completion and selection narrowing framework]] :emacs:package:incremental:completion:search:
-** [[https://github.com/bbatsov/projectile][projectile - Project Interaction Library for Emacs]] :emacs:package:project:management:
-** [[https://notmuchmail.org/notmuch-emacs/][notmuch for emacs]] :emacs:package:notmuch:integration:
+** Emacs
+*** [[https://www.emacswiki.org/][Emacs Wiki]] 				       :emacs:xemacs:emacs:lisp:wiki:
+*** [[http://orgmode.org/manual/][OrgMode Manual]] 				      :emacs:org:mode:manual:
+*** [[http://sachachua.com/blog/2007/12/how-to-use-emacs-org-as-a-basic-day-planner/][How to use Emacs Org as a Basic Day Planner]] :emacs:org:mode:day:planner:2007:
+*** [[http://newartisans.com/2007/08/using-org-mode-as-a-day-planner/][Using org-mode as a Day Planner]] 	:emacs:org:mode:org:day:planner:2007:
+*** [[http://orgmode.org/worg/org-tutorials/orgtutorial_dto.html][David O'Toole Org tutorial]] 		:emacs:org:mode:tutorial:todo:agenda:
+*** [[http://orgmode.org/worg/org-tutorials/non-beamer-presentations.html][Writing Non-Beamer presentations in org-mode]] :emacs:org:mode:presentations:slides:
+*** [[https://portacle.github.io/][Portacle - Portable Common Lisp IDE]]        :emacs:slime:sbcl:common:lisp:
+*** [[https://github.com/emacs-helm/helm][helm - Emacs incremental completion and selection narrowing framework]] :emacs:package:incremental:completion:search:
+*** [[https://github.com/bbatsov/projectile][projectile - Project Interaction Library for Emacs]] :emacs:package:project:management:
+*** [[https://notmuchmail.org/notmuch-emacs/][notmuch for emacs]] 			  :emacs:package:notmuch:integration:
    Searchable and scriptable email in shell and emacs, yes please.
-** [[https://geokon-gh.github.io/.emacs.d/][Emacs configuration for C++/CMake/git]] :emacs:configuration:c:language:integrated:development:environment:explained:
-** [[https://github.com/rnkn/fountain-mode][fountain-mode - Emacs major mode for screenwriting in Fountain plaintext markup]] :emacs:package:screenwriting:
+*** [[https://geokon-gh.github.io/.emacs.d/][Emacs configuration for C++/CMake/git]] :emacs:configuration:c:language:integrated:development:environment:explained:
+*** [[https://blog.fugue.co/2015-11-11-guide-to-emacs.html][A CEO's Guide to Emacs]] :emacs:configuration:exposition:2015:
+*** [[https://github.com/rnkn/fountain-mode][fountain-mode - Emacs major mode for screenwriting in Fountain plaintext markup]] :emacs:package:screenwriting:
+*** [[http://howardism.org/Technical/Emacs/literate-devops.html][Literate Devops]] :emacs:org:mode:devops:
+**** [[https://www.youtube.com/watch?v=dljNabciEGg][YouTube: Literate Devops]]           :emacs:org:mode:devops:youtube:video:
 * Free Books
 ** [[http://www.ccs.neu.edu/home/matthias/HtDP2e/][How to Design Programs 2]] :book:scheme:2014:
 ** [[https://softwarefoundations.cis.upenn.edu/][Software Foundations Series (books)]] :books:logic:math:computer:science:proofs:coq:
 ** [[http://adam.chlipala.net/cpdt/][Certified Programming with Dependent Types]] :book:logic:types:proofs:coq:2017:
 * Great Talks
-
 ** [[https://www.youtube.com/watch?v=Sg4U4r_AgJU][Brian Kernighan - How to succeed at language design without really trying]] :talk:kernighan:language:design:awk:
 
     Mentions Alan Perlis' [[http://www.cs.yale.edu/homes/perlis-alan/quotes.html][Epigrams in Programming]]
@@ -120,7 +203,6 @@ Curated, categorized, and tagged by hand.
    The second half goes into using an advanced interpreter along with logic programming in minikanren to find programs that match test constraints.
 
 ** [[https://www.youtube.com/watch?v=Jib2AmRb_rk&app=desktop][SQLite: The Database at the Edge of the Network with Dr. Richard Hipp]] :talk:hipp:database:sqlite:
-
 ** Rich Hickey
    Creator of Clojure known for many great talks.
 *** [[http://www.infoq.com/presentations/Are-We-There-Yet-Rich-Hickey][Are we there yet?]] 				 :talk:hickey:clojure:design:
@@ -129,7 +211,7 @@ Curated, categorized, and tagged by hand.
 *** [[http://www.infoq.com/presentations/Value-Values][The Value of Values]] :talk:hickey:
 *** [[http://www.youtube.com/watch?v=ROor6_NGIWU][The Language of the System]] :talk:hickey:distrubuted:language:design:
 *** [[http://www.infoq.com/presentations/Design-Composition-Performance][Design, Composition, and Performance]] :talk:hickey:
-
+*** [[https://www.youtube.com/watch?v=2V1FtfBDsLU][Effective Programs - 10 Years of Clojure - Rich Hickey]] :talk:hickey:effectiveness:2017:
 * Frontend Web Design
 
 ** [[http://flexboxfroggy.com/][CSS Flexbox Froggy]] :css:flexbox:tutorial:game:
@@ -152,7 +234,6 @@ Curated, categorized, and tagged by hand.
 ** [[http://www.chesstactics.org/index.php?Type=page&Action=next&From=1,1,1,1][Ward Farnsworth's Predator at the Chessboard]] :gametheory:book:chess:
 
 * Graphics
-
 ** [[http://www.extentofthejam.com/pseudo/][Lou's Psuedo 3d Page]] :graphics:3d:rendering:
 
 ** [[http://machinethink.net/blog/3d-rendering-without-shaders/][3D Rendering without shaders]] :graphics:3d:rendering:shaders:
@@ -160,7 +241,6 @@ Curated, categorized, and tagged by hand.
 [[https://news.ycombinator.com/item?id=13448047][Hackernews discussion]] with some interesting discourse and links such as [[https://fgiesen.wordpress.com/2013/02/06/the-barycentric-conspirac/][The Barycentric Conspiracy]].
 
 ** [[https://www.fasterthan.life/blog/2017/7/11/i-am-graphics-and-so-can-you-part-1][I Am Graphics And So Can You]] 	       :graphics:3d:rendering:vulkan:
-
 
 ** [[http://iquilezles.org/www/index.htm][Íñigo Quílez' Demo and Shader Graphics Articles]] :graphics:demo:scene:shaders:
 
@@ -186,20 +266,17 @@ I can’t even decide on the criteria for the best microcontroller — let alone
 
 What I will do, however, is offer a ton of different recommendations for different users at the end. Read on!
    #+END_QUOTE
-* Home Automation
+* Home Automation and Internet of Things
 ** [[http://www.bruhautomation.com/][Bruh Automation]] :home:automation:tutorials:reviews:
 
    Lots of resources including their [[https://github.com/bruhautomation][github]] for various home automation things.
 
 *** [[https://www.youtube.com/watch?v=9KI36GTgwuQ][The BEST Digital LED Strip Light Tutorial - DIY, WIFI-Controllable via ESP, MQTT, and Home Assistant]] :home:automation:led:strip:mqtt:2016:
 
+** [[https://github.com/adi0x90/attifyos][Attify OS - Distro for pentesting IoT devices]]
 * Locksmithery and Lockpickery
 
 ** [[https://www.defcon.org/images/defcon-21/dc-21-presentations/Tobias-Bluzmanis/DEFCON-21-Tobias-Bluzmanis-Insecurity-A-Failure-of-Imagination.pdf][A FAILURE OF IMAGINATION: Kwikset Smartkey® and Insecurity Engineering]] :physical:security:lockpicking:kwikset:smart:key:
-
-* Make
-
-** [[http://nullprogram.com/blog/2017/08/20/][A Tutorial on Portable Makefiles]] :portable:make:2017:
 
 * Mazes
 
@@ -221,6 +298,7 @@ Nice recap of maze generation algorithms from a minecraft modder.  Check out his
    - [[http://beej.us/guide/bggdb/][Beej's Quick Guide to GDB]]
 
 ** [[https://modern.ircdocs.horse/][Modern IRC Client Protocol]] :networking:protocol:living:documentation:irc:
+** [[https://coldfix.eu/2017/01/29/vpn-box/][VPN in a Nutshell]] :networking:linux:vpn:per:application:
 * Papers
 ** [[https://www.theatlantic.com/magazine/archive/1945/07/as-we-may-think/303881/][As We May Think]] 						 :paper:1945:
 
@@ -243,6 +321,7 @@ Nice recap of maze generation algorithms from a minecraft modder.  Check out his
 ** [[http://www.usingcsp.com/cspbook.pdf][Communicating Sequential Processes]] 		      :paper:concurrent:1985:
 ** [[http://cseweb.ucsd.edu/~ravir/274/15/papers/p143-kajiya.pdf][The Rendering Equation]] 	     :paper:graphics:rendering:pipeline:1986:
 ** [[http://www.wisdom.weizmann.ac.il/~harel/papers/Statecharts.pdf][StateCharts: A Visual Formalism for Complex Systems]] :paper:statemachine:1987:
+*** [[https://www.slideshare.net/lmatteis/are-statecharts-the-next-big-ui-paradigm][Are statecharts the next big UI paradigm?]] :blog:post:statemachine:2017:
 ** [[http://fermatslibrary.com/s/a-sample-of-brilliance][A Sample of Brilliance]] 		     :paper:randomness:sampling:1987:
 ** [[https://www.finseth.com/craft/][A Cookbook for an Emacs]] 				   :paper:emacs:1991:
 ** [[http://home.pipeline.com/~hbaker1/CheneyMTA.html][CONS Should Not CONS Its Arguments, Part II: Cheney on the M.T.A.]] :paper:lisp:scheme:tail:recursion:c:1994:
@@ -260,8 +339,82 @@ Nice recap of maze generation algorithms from a minecraft modder.  Check out his
 * Programming Languages
 ** [[http://norvig.com/lispy.html][(How to Write a (Lisp) Interpreter (in Python))]] :norvig:implementing:lisp:in:python:2010:
 ** [[https://carld.github.io/2017/06/20/lisp-in-less-than-200-lines-of-c.html][Lisp In Less Than 200 Lines Of C]] :implementing:lisp:in:c:2017:
-* Revision Control
+** [[http://faust.grame.fr/about/][Faust Programming Language]] :dsp:programming:compiling:to:cpp:2016:
+*** [[https://news.ycombinator.com/item?id=15832989][HackerNews discussion about Faust 2017-12-02]]
+*** [[https://news.ycombinator.com/item?id=13012880][HackerNews discussion about Faust 2016-11]]
+** [[https://www.quora.com/What-did-Alan-Kay-mean-by-Lisp-is-the-greatest-single-programming-language-ever-designed/answer/Alan-Kay-11][What did Alan Kay mean by, "Lisp is the greatest single programming language ever designed"? Answer by Alan Kay]] :alan:kay:programming:language:design:lisp:2017:
 
+   [[https://www.quora.com/profile/Alan-Kay-11][Alan Kay]], I am the Alan Kay in question. Updated =2017 October 29=.
+
+   #+BEGIN_QUOTE
+First, let me clear up a few misconceptions from the previous answers.
+One of them said “Try writing an operating system with Lisp”, as though this would be somehow harder.
+In fact, one of the nicest operating systems ever done was on “The Lisp Machines” (in Zeta-Lisp), the hardware and software following the lead of “The Parc Machines” and Smalltalk — and we in turn had been very influenced by the Lisp model of programming and implementation.
+(These operating systems in both Smalltalk and Lisp were both better (claim) and easier to write (simpler to demonstrate) than the standard ones of today.)
+
+Another interesting answer assumed that “the test of time” is somehow a cosmic optimization.
+But as every biologist knows, Darwinian processes “find fits” to an environment, and if the environment is lacking, then the fits will be lacking.
+Similarly, if most computer people lack understanding and knowledge, then what they will select will also be lacking.
+There is abundant evidence today that this is just what has happened.
+
+But neither of these has anything to do with my praise of Lisp (and I did explain what I meant in more detail in “The Early History of Smalltalk”).
+
+To start with an analogy, let’s notice that a person who has learned calculus fluently can in many areas out-think the greatest geniuses in history.
+Scientists after Newton were qualitatively more able than before, etc.
+My slogan for this is “Point of view is worth 80 IQ points” (you can use “context” or “perspective” etc.).
+A poor one might subtract 80 IQ points! (See above).
+A new more powerful one makes some thinking possible that was too difficult before.
+
+One of our many problems with thinking is “cognitive load”: the number of things we can pay attention to at once.
+The cliche is 7±2, but for many things it is even less.
+We make progress by making those few things be more powerful.
+
+This is one of the reasons mathematicians like compact notation.
+The downside is the extra layers of abstraction and new cryptic things to learn — this is the practice part of violin playing — but once you can do this, what you can think about at once has been vastly magnified.
+There were 20 Maxwell’s Equations in their original form (in terms of partial differentials and cartesian coordinates).
+Today the four equations we can think about all at once are primarily due to their reformulation by Heaviside to emphasize what is really important about them (and what is likely to be problematic — e.g.
+the electric and magnetic fields should probably be symmetric with respect to movement, etc).
+
+Modern science is about experiencing phenomena and devising models whose relationships with the phenomena can be “negotiated”.
+The “negotiation” is necessary because what’s inside our heads, and our representations systems etc have no necessary connection to “what’s out there?”.
+
+Taking this point of view, we can see there can be a “bridge science” and “bridge scientists” because engineers build bridges and these furnish phenomena for scientists to make models of.
+
+Similarly, there can be a “computer science” and “computer scientists” because engineers build hardware and software and these furnish phenomena for scientists to make models of.
+(In fact, this was a large part of what was meant by “computer science” in the early 60s — and it was an aspiration — still is — not an accomplished fact).
+
+The story behind Lisp is fun (you can read John McCarthy’s account in the first History of Programming Languages).
+One of the motivations was that he wanted something like “Mathematical Physics” — he called it a “Mathematical Theory of Computation”.
+Another was that he needed a very general kind of language to make a user interface AI — called “The Advice Taker” — that he had thought up in the late 50s.
+
+He could program — most programs were then in machine code, Fortran existed, and there was a language that had linked lists.
+
+John made something that could do what any programming language could do (relatively easy), but did it in such a way so that it could express the essence of what it was about (this was the math part or the meta part or the modern Maxwell’s Equations part, however you might like to think of it).
+He partly did this — he says — to show that this way to do things was “neater than a Turing Machine”.
+
+Another observation about this is that the “slope” from the simplest machine structures to the highest level language was the steepest ever — meaning that the journey from recognizable hardware to cosmic expression is a rocket jump!
+
+As is often the case — especially in engineering — a great scientific model is often superior to what exists, and can lead to much better artifacts.
+This was certainly true here.
+Steve Russell (later famous for being the main inventor and programmer of “SpaceWar”) looked at what John had done, and said: “That’s a program.
+If I coded it up we’d have a running version”.
+As John remarked: “He did, and we did”!
+
+The result was “unlimited programming in an eyeful” (the bottom half of page 13 in the Lisp 1.5 manual).
+The key was not so much “Lisp” but the kinds of thinking that this kind of representational approach allowed and opened up regarding all kinds of programming language schemes.
+
+A fun thing about it this is that once you’ve grokked it, you can think right away of better programming languages than Lisp, and you can think right away of better ways to write the meta descriptions than John did.
+This is the “POV = 80 IQ points” part.
+
+But this is like saying that once you’ve seen Newton, it becomes possible to do electrodynamics and relativity.
+The biggest feat in science was Newton’s!
+
+This is why “Lisp is the greatest!”
+   #+END_QUOTE
+
+* Reverse Engineering
+** [[https://github.com/FireyFly/pixd][Colourful visualization tool for binary files]] :binary:data:visualization:
+* Revision Control
 ** [[https://git-scm.com/book/en/v2][Git Book (v2)]] 						   :git:book:
 
 ** [[http://gitready.com/][git ready]] 						    :git:tips:tricks:
@@ -283,17 +436,46 @@ Nice recap of maze generation algorithms from a minecraft modder.  Check out his
 ** [[https://github.com/jonas/tig][tig]] 						       :git:porcelain:curses:
 
 ** [[https://magit.vc/][Magit]] 						:git:porcelain:emacs:
-
-* Shells
-
+*** [[https://magit.vc/manual/magit.html#Getting-Started][Magit User Manual - Getting Started]] :git:magit:user:manual:
+*** [[https://emacsair.me/2017/09/01/magit-walk-through/#start][magit walk through]] :git:magit:walkthrough:2017:
+** [[http://gittup.org/gittup/][gittup]] :git:linux:distribution:
+** [[http://ohshitgit.com/][ohshitgit]] :git:oh:shit:pitfalls:remedies:
+* Shells and Terminals
 ** [[https://zanshin.net/2013/02/02/zsh-configuration-from-the-ground-up/][Zsh Configuration From the Ground Up]] :zsh:configuration:tutorial:2013:
 ** [[http://www.howardism.org/Technical/Emacs/eshell-fun.html][Eschewing Zshell for Emacs Shell]] :zsh:emacs:eshell:
 
+** [[https://termux.com][Termux]] :android:terminal:emulator:
+* Software Engineering
+** [[http://python.apichecklist.com/][Python API Checklist]] :python:api:programming:checklist:2017:
+** [[https://blog.ionelmc.ro/2014/06/25/python-packaging-pitfalls/][Python Packaging Pitfalls]] :python:packaging:2014:
+** [[https://ep2015.europython.eu/conference/talks/less-known-packaging-features-and-tricks][Less known (python) packaging features and tricks]] :python:packaging:talk:slides:video:2015:
 * Systems Engineering
-
 ** [[https://alestic.com/2010/12/ec2-user-data-output/][Logging user-data Script Output on EC2 Instances]] :systems:cloudinit:logging:aws:ec2:
 
 ** [[http://www.brendangregg.com/blog/2017-08-08/linux-load-averages.html][Linux Load Averages: Solving the Mystery]] :systems:linux:load:average:algorithm:history:
+
+** [[https://lonesysadmin.net/2011/11/08/ssh-escape-sequences-aka-kill-dead-ssh-sessions/amp/][SSH Escape Sequences]] :systems:linux:ssh:escape:sequences:2011:
+
+   - ~. :: terminate connection (and any multiplexed sessions)
+   - ~B :: send a BREAK to the remote system
+   - ~C :: open a command line
+   - ~R :: Request rekey (SSH protocol 2 only)
+   - ~^Z:: suspend ssh
+   - ~# :: list forwarded connections
+   - ~& :: background ssh (when waiting for connections to terminate)
+   - ~? :: this message
+   - ~~ :: send the escape character by typing it twice
+
+** [[http://nginx.org/][NginX]] 				   :systems:backwards:proxy:web:mail:
+
+   I have been using NginX since version =0.5.x= and have been involved in the community here and there.
+
+   These are some great resources mostly from the [[http://nginx.org/en/docs/][docs]] I commonly share:
+
+   - [[http://nginx.org/en/docs/beginners_guide.html][NginX Beginner's Guide]]
+   - [[http://nginx.org/en/docs/http/request_processing.html][How NginX processes a request]]
+   - [[http://nginx.org/en/docs/http/configuring_https_servers.html][Configuring HTTPS servers with NginX]]
+   - [[https://www.nginx.com/resources/admin-guide/][NginX Administration Guide]]
 
 ** Terraform
 
@@ -335,10 +517,19 @@ The Eye's Rom Section is a project dedicated towards the preservation and archiv
 
    Sounds purported to help provide temporary relief to tinnitus sufferers.
 
+** [[http://www.sloperama.com/advice.html][Game Design FAQs]] :game:design:frequently:asked:questions:
+** [[https://www.linkedin.com/pulse/invitation-live-consciously-business-introduction-part-fred-kofman][An Invitation to Live Consciously in Business]] :fred:kofman:linkedin:conscious:business:academy:2015:
+** [[https://www.sbnation.com/a/17776-football/][17776-football]] :digital:novel:artificial:intelligence:artificial:life:2017:
+
+   A most intriguing story about Football in the year =17776=.
+
+** [[https://cs007.blog/][CS 007 - Personal Finance for Programmers]] :personal:finance:programmers:course:2017:
+** [[http://www.people.vcu.edu/~dcranston/490/handouts/math-read.html][How to Read Mathematics]] :mathematics:reading:how:to:
 * UNIX and BSD
 ** [[https://fosdem.org/2017/schedule/event/my_bsd_sucks_less/][My BSD Sucks Less Than Yours]] :talk:unix:openbsd:freebsd:
 
 ** [[https://manpages.bsd.lv/][Practical UNIX Manuals - mdoc: structure, style, and composition]] :book:unix:man:pages:mdoc:
+** [[https://vez.mrsk.me/freebsd-defaults.txt][FreeBSD - a lesson in poor defaults]] :freebsd:defaults:security:2017:
 * Video Series
 ** [[https://www.youtube.com/watch?list=PL2VAYZE_4wRJi_vgpjsH75kMhN4KsuzR_&v=m0TsdytmGhc][Little Bits of Lisp with Baggers]] :video:series:common:lisp:
 ** [[https://www.youtube.com/watch?v=MCuzvy79WWQ][Rewriting BSD 4.4 Shell Commands (part 1: cat)]]
