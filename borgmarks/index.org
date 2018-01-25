@@ -92,7 +92,7 @@ We created an assembly language, known as QFTASM (Quest for Tetris Assembly), wh
    This is obviously true because it rhymes.
    See how the dependencies differ in make and tup:
    #+END_QUOTE
-   
+
    #+CAPTION: Diagram of Make versus Tup directed graphs
    #+BEGIN_EXAMPLE
             Make                     Tup
@@ -125,8 +125,8 @@ We created an assembly language, known as QFTASM (Quest for Tetris Assembly), wh
 *** [[http://www.michaelburge.us/2017/08/31/roll-your-own-bitcoin-exchange.html][Roll your Own Bitcoin Exchange in Haskell]] :cryptography:currency:exchange:haskell:
 *** [[https://hackernoon.com/why-everyone-missed-the-most-important-invention-in-the-last-500-years-c90b0151c169][Why Everyone Missed the Most Important Invention in the Last 500 Years]] :cryptography:accounting:triple:entry:bookkeeping:
 **** [[https://www.cmu.edu/piper/news/archives/2017/january/yuji-ijiri-obituary.html][Yuji Ijiri's obituary at CMU]] :obituary::2017:
-    
-    #+CAPTION: 
+
+    #+CAPTION:
     #+BEGIN_QUOTE
 Former Carnegie Mellon University professor Yuji Ijiri, founder of the transitional momentum accounting practice, also known as triple-entry accounting, died on Jan. 18. He was 81.
 
@@ -299,6 +299,10 @@ Nice recap of maze generation algorithms from a minecraft modder.  Check out his
 
 ** [[https://modern.ircdocs.horse/][Modern IRC Client Protocol]] :networking:protocol:living:documentation:irc:
 ** [[https://coldfix.eu/2017/01/29/vpn-box/][VPN in a Nutshell]] :networking:linux:vpn:per:application:
+** [[https://fgiesen.wordpress.com/2018/01/20/network-latencies-and-speed-of-light/][Network latencies and the speed of light]] :networking:physics:2018:
+** [[https://www.ibiblio.org/harris/500milemail.html][The case of the 500 mile long email]] :networking:physics:statistics:
+* Operating Systems
+** [[http://greenteapress.com/thinkos/thinkos.pdf][Think OS: A Brief Introduction to Operating Systems]] :operating:systems:2015:
 * Papers
 ** [[https://www.theatlantic.com/magazine/archive/1945/07/as-we-may-think/303881/][As We May Think]] 						 :paper:1945:
 
@@ -525,6 +529,18 @@ The Eye's Rom Section is a project dedicated towards the preservation and archiv
 
 ** [[https://cs007.blog/][CS 007 - Personal Finance for Programmers]] :personal:finance:programmers:course:2017:
 ** [[http://www.people.vcu.edu/~dcranston/490/handouts/math-read.html][How to Read Mathematics]] :mathematics:reading:how:to:
+** [[https://www.youtube.com/watch?v=3GJUM6pCpew][standupmaths - Why is TV 29.97 frames per second?]] :mathematics:color:television:video:ntsc:
+** [[https://github.com/leandromoreira/ffmpeg-libav-tutorial#learn-ffmpeg-libav-the-hard-way][Learn ffmpeg the hard way]] :video:ffmpeg:tutorial:
+** [[http://crasseux.com/books/ctutorial/][The GNU C Programming Tutorial]] :gnu:c:programming:tutorial:
+** [[https://viewsourcecode.org/snaptoken/][snaptoken C utility]]
+
+   These tutorials walk you through writing medium-size software projects from scratch, step by step.
+   The projects are based on real open-source software projects, and most of the tutorials stay true to the original source code.
+   Every line of code is explained in detail, allowing you to thoroughly understand the project’s entire codebase.
+
+   - [[https://viewsourcecode.org/snaptoken/kilo/][kilo]] :: Guide for building text editor in C based on antirez's 1000 line editor
+
+** [[https://www.smbc-comics.com/comic/the-talk-3][Sunday Morning Breakfast Comisc: The Talk 3]] :web:comic:quantum:mechanics:
 * UNIX and BSD
 ** [[https://fosdem.org/2017/schedule/event/my_bsd_sucks_less/][My BSD Sucks Less Than Yours]] :talk:unix:openbsd:freebsd:
 
