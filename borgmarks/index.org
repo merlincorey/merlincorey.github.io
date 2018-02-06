@@ -163,11 +163,15 @@ Surviving are his wife of 54 years, Tomoko, of Oberlin, Ohio; and two daughters,
 ** [[https://blog.demofox.org/2017/11/21/floating-point-precision/][Demystifying Floating Point Precision]] :datastructures:floating:point:numbers:2017:
 ** [[https://norvig.com/design-patterns/design-patterns.pdf][Design Patterns in Dynamic Programming]] :datastructures:design:patterns:norvig:1996:
 ** [[http://mishadoff.com/blog/clojure-design-patterns/][Clojure Design Patterns]] :datastructures:design:patterns:2017:
+** [[https://www.youtube.com/watch?v=T0yzrZL1py0][6.851 MIT Open Courseware - Advanced Datastructures]] :mit:open:courseware:advanced:datastructures:2012:
+** [[https://rcoh.me/posts/cache-oblivious-datastructures/][Cache Oblivious Datastructures]] :datastructures:cache:obliious:2017:
+** [[https://modern-sql.com/use-case/pivot][SQL Pivot — Rows to Columns]] :databases:sql:pivot:
 ** Alembic
 *** [[http://www.chesnok.com/daily/2013/07/02/a-practical-guide-to-using-alembic/][A Practical Guide to using Alembic]] :database:migrations:sqlalchemy:alembic:
 *** [[https://www.compose.com/articles/schema-migrations-with-alembic-python-and-postgresql/][Schema Migrations with Alembic, Python, and PostgreSQL]] :databse:migrations:sqlalchemy:alembic:postgres:
 ** postgres
 *** [[http://rhaas.blogspot.com/2018/01/the-state-of-vacuum.html][The State of VACUUM]] :database:postgres:vacuum:2018:
+*** [[https://github.com/makmanalp/sqlalchemy-crosstab-postgresql][sqlalchemy-crosstab-postgresql]]
 * Development Environments and Editors
 ** Emacs
 *** [[https://www.emacswiki.org/][Emacs Wiki]] 				       :emacs:xemacs:emacs:lisp:wiki:
@@ -203,6 +207,7 @@ Surviving are his wife of 54 years, Tomoko, of Oberlin, Ohio; and two daughters,
    The second half goes into using an advanced interpreter along with logic programming in minikanren to find programs that match test constraints.
 
 ** [[https://www.youtube.com/watch?v=Jib2AmRb_rk&app=desktop][SQLite: The Database at the Edge of the Network with Dr. Richard Hipp]] :talk:hipp:database:sqlite:
+** [[http://dtrace.org/blogs/bmc/2018/02/03/talks/][Brian Cantril talks]]
 ** Rich Hickey
    Creator of Clojure known for many great talks.
 *** [[http://www.infoq.com/presentations/Are-We-There-Yet-Rich-Hickey][Are we there yet?]] 				 :talk:hickey:clojure:design:
