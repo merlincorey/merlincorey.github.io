@@ -150,6 +150,7 @@ Surviving are his wife of 54 years, Tomoko, of Oberlin, Ohio; and two daughters,
     #+END_QUOTE
 
 **** [[http://iang.org/papers/triple_entry.html][Triple Entry Accounting - Ian Grigg Systemics, Inc.]] :paper::2005:
+*** [[https://blog.keep.network/miners-arent-your-friends-cde9b6e0e9ac?gi=21d51593759c][Miners Aren’t Your Friends: Miners and Consensus: Part 1 of 2]] :cryptography:currency:2018:
 * Datastructures, Databases, and Filesystems
 ** [[http://www.eelis.net/C++/analogliterals.xhtml][Multi-Dimensional Analog Literals]] :datastructures:analog:literals:2006:
 ** [[https://www.interviewcake.com/article/python/data-structures-coding-interview][Datastructures for Coding Interviews]]    :datastructures:python:interviews:
@@ -306,6 +307,11 @@ Nice recap of maze generation algorithms from a minecraft modder.  Check out his
 ** [[https://coldfix.eu/2017/01/29/vpn-box/][VPN in a Nutshell]] :networking:linux:vpn:per:application:
 ** [[https://fgiesen.wordpress.com/2018/01/20/network-latencies-and-speed-of-light/][Network latencies and the speed of light]] :networking:physics:2018:
 ** [[https://www.ibiblio.org/harris/500milemail.html][The case of the 500 mile long email]] :networking:physics:statistics:
+** [[http://networkdiagram101.com/][16 Tips to Better Network Diagrams]] :networking:diagrams:
+** [[https://arxiv.org/abs/1103.0463][Fitting Square Pegs Through Round Pipes: Unordered Delivery Wire-Compatible with TCP and TLS]] :networking:protocols:minion:2011:
+** [[https://tools.ietf.org/html/draft-iyengar-minion-protocol-01][Minion - Wire Protocol]] :networking:protocols:minion:2013:
+
+** [[http://ieeexplore.ieee.org/document/7497221/][TCP Hollywood]] :networking:protocols:2016:
 * Operating Systems
 ** [[http://greenteapress.com/thinkos/thinkos.pdf][Think OS: A Brief Introduction to Operating Systems]] :operating:systems:2015:
 * Papers
@@ -487,6 +493,7 @@ This is why “Lisp is the greatest!”
    - [[http://nginx.org/en/docs/http/configuring_https_servers.html][Configuring HTTPS servers with NginX]]
    - [[https://www.nginx.com/resources/admin-guide/][NginX Administration Guide]]
 
+** [[https://chrisdown.name/2018/01/02/in-defence-of-swap.html][In defence of swap: common misconceptions]] :systems:swap:memory:2018:
 ** Terraform
 
 *** [[https://opencredo.com/terraform-infrastructure-design-patterns/][Terraform Infrastructure Design Patterns]] :systems:terraform:2015:
