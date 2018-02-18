@@ -174,6 +174,7 @@ Surviving are his wife of 54 years, Tomoko, of Oberlin, Ohio; and two daughters,
 *** [[http://rhaas.blogspot.com/2018/01/the-state-of-vacuum.html][The State of VACUUM]] :database:postgres:vacuum:2018:
 *** [[https://github.com/makmanalp/sqlalchemy-crosstab-postgresql][sqlalchemy-crosstab-postgresql]]
 * Development Environments and Editors
+** [[https://ecc-comp.blogspot.com/2015/05/a-brief-glance-at-how-5-text-editors.html][A Brief Glance at How Various Text Editors Manage Their Textual Data]] :editors:data:structures:text:representation:2015:
 ** Emacs
 *** [[https://www.emacswiki.org/][Emacs Wiki]] 				       :emacs:xemacs:emacs:lisp:wiki:
 *** [[http://orgmode.org/manual/][OrgMode Manual]] 				      :emacs:org:mode:manual:
@@ -225,31 +226,24 @@ Surviving are his wife of 54 years, Tomoko, of Oberlin, Ohio; and two daughters,
 ** [[http://cssgridgarden.com/][CSS Grid Garden]] :css:grid:tutorial:game:
 
 * Functional Programming
-
 ** [[https://chriskohlhepp.wordpress.com/functional-programming-section/metacircular-adventures-in-functional-abstraction-challenging-clojure-in-common-lisp/][Metacircular Adventures in Functional Abstraction]] :functional:programming:common:lisp:clojure:
-
 ** [[https://aphyr.com/posts/301-clojure-from-the-ground-up-welcome][Clojure from the ground up]] :functional:programming:clojure:
 ** [[http://eli.thegreenplace.net/2017/reducers-transducers-and-coreasync-in-clojure/][Reducers, transducers, and core.async in clojure]] :functional:programming:clojure:
-
-
 ** [[http://adit.io/posts/2013-04-17-functors,_applicatives,_and_monads_in_pictures.html][Functors, Applicatives, And Monads In Pictures]] :functional:programming:functors:monads:visualizations:
 ** [[https://patrickmn.com/software/the-haskell-pyramid/][The Haskell Pyramid]] :functional:programming:haskell:
-
+* Game Development
+** [[https://www.haroldserrano.com/blog/books-i-used-to-develop-a-game-engine][Books I had to read to develop a game engine]] :game:development:game:engine:2018:
 * Game Theory
-
 ** [[http://www.chesstactics.org/index.php?Type=page&Action=next&From=1,1,1,1][Ward Farnsworth's Predator at the Chessboard]] :gametheory:book:chess:
 
 * Graphics
 ** [[http://www.extentofthejam.com/pseudo/][Lou's Psuedo 3d Page]] :graphics:3d:rendering:
-
 ** [[http://machinethink.net/blog/3d-rendering-without-shaders/][3D Rendering without shaders]] :graphics:3d:rendering:shaders:
 
-[[https://news.ycombinator.com/item?id=13448047][Hackernews discussion]] with some interesting discourse and links such as [[https://fgiesen.wordpress.com/2013/02/06/the-barycentric-conspirac/][The Barycentric Conspiracy]].
+   [[https://news.ycombinator.com/item?id=13448047][Hackernews discussion]] with some interesting discourse and links such as [[https://fgiesen.wordpress.com/2013/02/06/the-barycentric-conspirac/][The Barycentric Conspiracy]].
 
 ** [[https://www.fasterthan.life/blog/2017/7/11/i-am-graphics-and-so-can-you-part-1][I Am Graphics And So Can You]] 	       :graphics:3d:rendering:vulkan:
-
 ** [[http://iquilezles.org/www/index.htm][Íñigo Quílez' Demo and Shader Graphics Articles]] :graphics:demo:scene:shaders:
-
 * Hardware
 ** [[https://jaycarlson.net/microcontrollers/][The Amazing $1 Microcontroller]]
 
@@ -554,12 +548,21 @@ The Eye's Rom Section is a project dedicated towards the preservation and archiv
    - [[https://viewsourcecode.org/snaptoken/kilo/][kilo]] :: Guide for building text editor in C based on antirez's 1000 line editor
 
 ** [[https://www.smbc-comics.com/comic/the-talk-3][Sunday Morning Breakfast Comisc: The Talk 3]] :web:comic:quantum:mechanics:
+** [[http://wordsandbuttons.online/programmers_guide_to_polynomials_and_splines.html][Programmer's Guide to Polynomials and Splines]] :mathematics:guide:splines:
+** [[https://www.math.uh.edu/~dblecher/pf2.html][How to Study Mathematics]] :mathematics:study:tool:
+** [[https://www.susanjfowler.com/blog/2016/8/13/so-you-want-to-learn-physics][So You Want to Learn Physics...]] :physics:susan:flower:2016:
+** [[https://physicstravelguide.com/][Physics Travel Guides]] :physics:study:tool:
+** [[http://www.pathsensitive.com/2018/01/the-benjamin-franklin-method-of-reading.html][The Benjamin Franklin Method of Reading Programming Books]] :programming:study:method:2018:
+** [[https://www.b-list.org/weblog/2018/feb/11/usernames/][Let’s talk about usernames]] :programming:foibles:usernames:2018:
 * UNIX and BSD
 ** [[https://fosdem.org/2017/schedule/event/my_bsd_sucks_less/][My BSD Sucks Less Than Yours]] :talk:unix:openbsd:freebsd:
 
+** [[http://changelog.complete.org/archives/9317-has-linux-lost-its-way-comments-prompt-a-debian-developer-to-revisit-freebsd-after-20-years][“Has Linux lost its way?” comments prompt a Debian developer to revisit FreeBSD after 20 years]] :unix:linux:comparison:2015:
 ** [[https://manpages.bsd.lv/][Practical UNIX Manuals - mdoc: structure, style, and composition]] :book:unix:man:pages:mdoc:
 ** [[https://vez.mrsk.me/freebsd-defaults.txt][FreeBSD - a lesson in poor defaults]] :freebsd:defaults:security:2017:
 * Video Series
+** [[https://www.youtube.com/user/professorleonard57][Professor Leonard]] :video::mathematics:lectures:
+** [[https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw][3Blue1Brown]] :video:series:mathematics:
 ** [[https://www.youtube.com/watch?list=PL2VAYZE_4wRJi_vgpjsH75kMhN4KsuzR_&v=m0TsdytmGhc][Little Bits of Lisp with Baggers]] :video:series:common:lisp:
 ** [[https://www.youtube.com/watch?v=MCuzvy79WWQ][Rewriting BSD 4.4 Shell Commands (part 1: cat)]]
 
