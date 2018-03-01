@@ -53,8 +53,9 @@ Curated, categorized, and tagged by hand.
 ** [[https://www.redblobgames.com/grids/hexagons/][Hexagonal Grids]] :algorithms:datastructures:examples:hexagonal:grids:
 ** [[https://github.com/norvig/pytudes][Pytudes -  Python programs to practice or demonstrate skills.]] :norvig:python:etudes:algorithms:datastructures:problem:solving:
 ** [[https://github.com/mandliya/algorithms_and_data_structures][mandliya/algorithms_and_data_structures]] :algorithms:datastructures:c:++:
-** [[http://www.asimovinstitute.org/neural-network-zoo/][The Neural Network Zoo]] :algorithms:neural:networks:
-** [[https://docs.google.com/presentation/d/1kSuQyW5DTnkVaZEjGYCkfOxvzCqGEFzWBy4e9Uedd9k/preview?imm_mid=0f9b7e&cmp=em-data-na-na-newsltr_20171213#slide=id.g168a3288f7_0_58][Machine Learning 101]] :algorithms:machine:learning:slides:2017:
+** [[https://www.slideshare.net/lmatteis/are-statecharts-the-next-big-ui-paradigm][Are statecharts the next big UI paradigm?]] :algorithms:visualization:state:machines:state:charts:
+** [[https://statecharts.github.io/][Welcome to the (unfinished) world of Statecharts]] :algorithms:visualization:state:machines:state:charts:
+*** [[https://news.ycombinator.com/item?id=15835005][Hacker News Discussion #15835005]]
 * Assembly
 ** [[http://bob.cs.sonoma.edu/IntroCompOrg-RPi/intro-co-rpi.html][Introduction to Computer Organization: ARM Assembly Language Using the Raspberry Pi]] :assembly:arm:raspberry:pi:
 ** [[http://benhoyt.com/writings/pyast64/][Compiling Python syntax to x86-64 assembly for fun and (zero) profit]] :assembly:x86:python:static:2017:
@@ -278,6 +279,10 @@ What I will do, however, is offer a ton of different recommendations for differe
 
 ** [[https://www.defcon.org/images/defcon-21/dc-21-presentations/Tobias-Bluzmanis/DEFCON-21-Tobias-Bluzmanis-Insecurity-A-Failure-of-Imagination.pdf][A FAILURE OF IMAGINATION: Kwikset Smartkey® and Insecurity Engineering]] :physical:security:lockpicking:kwikset:smart:key:
 
+* Machine Learning
+** [[http://www.asimovinstitute.org/neural-network-zoo/][The Neural Network Zoo]]                        :machine:learning:neural:networks:
+** [[https://docs.google.com/presentation/d/1kSuQyW5DTnkVaZEjGYCkfOxvzCqGEFzWBy4e9Uedd9k/preview?imm_mid=0f9b7e&cmp=em-data-na-na-newsltr_20171213#slide=id.g168a3288f7_0_58][Machine Learning 101]]             :machine:learning:slides:2017:
+** [[https://developers.google.com/machine-learning/crash-course/][Google Machine Learning: Crash Course]] :machine:learning:crash:course:
 * Mazes
 
 ** [[http://weblog.jamisbuck.org/2011/2/7/maze-generation-algorithm-recap][Maze Generation Algorithm Recap]] :maze:algorithms:
@@ -306,6 +311,12 @@ Nice recap of maze generation algorithms from a minecraft modder.  Check out his
 ** [[https://tools.ietf.org/html/draft-iyengar-minion-protocol-01][Minion - Wire Protocol]] :paper:networking:protocols:minion:2013:
 
 ** [[http://ieeexplore.ieee.org/document/7497221/][TCP Hollywood]] :networking:protocols:2016:
+* Object Oriented Programming and Design
+** [[https://ericlippert.com/2015/04/27/wizards-and-warriors-part-one/][Wizards and Warriors: Part One]] :object:oriented:design:
+*** [[https://ericlippert.com/2015/04/30/wizards-and-warriors-part-two/][Wizards and Warriors: Part Two]] :object:oriented:design:
+*** [[https://ericlippert.com/2015/05/04/wizards-and-warriors-part-three/][Wizards and Warriors: Part Three]] :object:oriented:design:
+*** [[https://ericlippert.com/2015/05/07/wizards-and-warriors-part-four/][Wizards and Warriors: Part Four]] :object:oriented:design:
+*** [[https://ericlippert.com/2015/05/11/wizards-and-warriors-part-five/][Wizards and Warriors: Part Five]] :object:oriented:design:
 * Operating Systems
 ** [[http://greenteapress.com/thinkos/thinkos.pdf][Think OS: A Brief Introduction to Operating Systems]] :operating:systems:2015:
 * Papers
@@ -329,9 +340,10 @@ Nice recap of maze generation algorithms from a minecraft modder.  Check out his
 ** [[https://www.student.cs.uwaterloo.ca/~cs492/11public_html/p18-smith.pdf][The Limits of Corrrectness]] 					 :paper:1985:
 ** [[http://www.usingcsp.com/cspbook.pdf][Communicating Sequential Processes]] 		      :paper:concurrent:1985:
 ** [[http://cseweb.ucsd.edu/~ravir/274/15/papers/p143-kajiya.pdf][The Rendering Equation]] 	     :paper:graphics:rendering:pipeline:1986:
-** [[http://www.wisdom.weizmann.ac.il/~harel/papers/Statecharts.pdf][StateCharts: A Visual Formalism for Complex Systems]] :paper:statemachine:1987:
+** [[http://www.wisdom.weizmann.ac.il/~harel/papers/Statecharts.pdf][StateCharts: A Visual Formalism for Complex Systems]] :paper:state:machine:1987:
 *** [[https://www.slideshare.net/lmatteis/are-statecharts-the-next-big-ui-paradigm][Are statecharts the next big UI paradigm?]] :blog:post:statemachine:2017:
 ** [[http://fermatslibrary.com/s/a-sample-of-brilliance][A Sample of Brilliance]] 		     :paper:randomness:sampling:1987:
+** [[http://www.wisdom.weizmann.ac.il/~harel/SCANNED.PAPERS/VisualFormalisms.pdf][On Visual Formalisms]] :paper:state:machine:1988:
 ** [[https://www.finseth.com/craft/][A Cookbook for an Emacs]] 				   :paper:emacs:1991:
 ** [[http://home.pipeline.com/~hbaker1/CheneyMTA.html][CONS Should Not CONS Its Arguments, Part II: Cheney on the M.T.A.]] :paper:lisp:scheme:tail:recursion:c:1994:
 ** [[https://www.microsoft.com/en-us/research/wp-content/uploads/2016/07/state-lasc.pdf][State in Haskell]] 				   :paper:haskell:state:1995:
