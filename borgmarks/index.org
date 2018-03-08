@@ -56,6 +56,12 @@ Curated, categorized, and tagged by hand.
 ** [[https://www.slideshare.net/lmatteis/are-statecharts-the-next-big-ui-paradigm][Are statecharts the next big UI paradigm?]] :algorithms:visualization:state:machines:state:charts:
 ** [[https://statecharts.github.io/][Welcome to the (unfinished) world of Statecharts]] :algorithms:visualization:state:machines:state:charts:
 *** [[https://news.ycombinator.com/item?id=15835005][Hacker News Discussion #15835005]]
+** [[https://github.com/davidkpiano/xstate][Functional, Stateless JS Finite State Machines and Statecharts]] :algorithms:state:machines:state:charts:
+** [[http://raganwald.com/2018/02/23/forde.html][Forde's Tenth Rule, or, "How I Learned to Stop Worrying and ❤ the State Machine"]] :algorithms:state:machines:
+*** [[https://news.ycombinator.com/item?id=16468280][Hacker News Discussion #16468280]]
+** [[https://fgiesen.wordpress.com/2018/02/19/reading-bits-in-far-too-many-ways-part-1/][Reading bits in far too many ways (part 1)]] :algorithms:encoding:decoding:bits:and:bytes:2018:
+** [[https://fgiesen.wordpress.com/2018/02/20/reading-bits-in-far-too-many-ways-part-2/][Reading bits in far too many ways (part 2)]] :algorithms:encoding:decoding:bits:and:bytes:2018:
+
 * Assembly
 ** [[http://bob.cs.sonoma.edu/IntroCompOrg-RPi/intro-co-rpi.html][Introduction to Computer Organization: ARM Assembly Language Using the Raspberry Pi]] :assembly:arm:raspberry:pi:
 ** [[http://benhoyt.com/writings/pyast64/][Compiling Python syntax to x86-64 assembly for fun and (zero) profit]] :assembly:x86:python:static:2017:
@@ -221,11 +227,26 @@ Surviving are his wife of 54 years, Tomoko, of Oberlin, Ohio; and two daughters,
 *** [[http://www.infoq.com/presentations/Design-Composition-Performance][Design, Composition, and Performance]] :talk:hickey:
 *** [[https://www.youtube.com/watch?v=2V1FtfBDsLU][Effective Programs - 10 Years of Clojure - Rich Hickey]] :talk:hickey:effectiveness:2017:
 * Frontend Web Design
-
 ** [[http://flexboxfroggy.com/][CSS Flexbox Froggy]] :css:flexbox:tutorial:game:
 
 ** [[http://cssgridgarden.com/][CSS Grid Garden]] :css:grid:tutorial:game:
 
+** [[https://medium.com/refactoring-ui/7-practical-tips-for-cheating-at-design-40c736799886][7 Practical Tips for Cheating at Design]] :ui:design:tips:
+*** Use color and weight to create hierarchy instead of size
+    - Try using color or font weight to do the same job to differentiate importantness
+    - Stay away from font weights under 400 for UI work
+*** Don't use grey text on colored backgrounds
+    1. Reduce the opacity of white text
+    2. Hand-pick a color that's base don the background color
+***  Offset your shadows
+    - [[https://material.io/guidelines/material-design/elevation-shadows.html][Material Design: Elevation and Shadows]]
+*** Use fewer borders
+    1. Use a box shadow
+    2. Use two different background colors
+    3. Add extra spacing
+*** Don't blow up icons that are meant to be small
+*** Use accent borders to add color to a bland design
+*** Not every button needs a background color
 * Functional Programming
 ** [[https://chriskohlhepp.wordpress.com/functional-programming-section/metacircular-adventures-in-functional-abstraction-challenging-clojure-in-common-lisp/][Metacircular Adventures in Functional Abstraction]] :functional:programming:common:lisp:clojure:
 ** [[https://aphyr.com/posts/301-clojure-from-the-ground-up-welcome][Clojure from the ground up]] :functional:programming:clojure:
