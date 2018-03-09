@@ -247,6 +247,29 @@ Surviving are his wife of 54 years, Tomoko, of Oberlin, Ohio; and two daughters,
 *** Don't blow up icons that are meant to be small
 *** Use accent borders to add color to a bland design
 *** Not every button needs a background color
+** [[https://hacks.mozilla.org/2018/03/how-to-write-css-that-works-in-every-browser-even-the-old-ones/][Resilient CSS: How to Write CSS That Works in Every Browser, Even the Old Ones]] :2018:
+*** [[https://news.ycombinator.com/item?id=16546725][Hacker News discussion #16546725]]
+
+#+CAPTION: ausjke 6 hours ago
+#+BEGIN_QUOTE
+1. CSS and HTML are extremely resilient, they ignore your typos and unsupported features gracefully and never crash, so just daring to use them in your code, no need for exception handling comparing to JS, in that sense, if you can do it in CSS, avoid JS.
+
+2. Leverage CSS override
+
+3. Use browser devtools to test all browsers. No need install all older browser to check CSS. icanuse helps greatly too.
+
+4. Use feature-queries for CSS.
+
+These indeed can make your CSS code work for both the stone age and hottest browsers, all at the same time, without much hacking. Great videos.
+#+END_QUOTE
+
+*** [[https://www.youtube.com/watch?v=u00FY9vADfQ][Introduction to Resilient CSS – 1/7]] :video:9:minutes:2018:
+*** [[https://www.youtube.com/watch?v=WM_cKHH7bZ0][The Secrets of ‘Can I Use’ – 2/7 Resilient CSS]] :video:10:minutes:2018:
+*** [[https://www.youtube.com/watch?v=NJjlzxud4_M][How Browsers Handle Errors in CSS – 3/7 Resilient CSS]] :video:7:minutes:2018:
+*** [[https://www.youtube.com/watch?v=0X6zrW2QW8Q][Unlocking the Power of CSS Overrides – 4/7 Resilient CSS]] :video:8:minutes:2018:
+*** [[https://www.youtube.com/watch?v=T8uxmUQZsck][The Magic of Feature Queries, Part 1 – 5/7 Resilient CSS]] :video:9:minutes:2018:
+*** [[https://www.youtube.com/watch?v=7y-xfxC2jGA][The Magic of Feature Queries, Part 2 – 6/7 Resilient CSS]] :video:5:minutes:2018:
+*** [[https://www.youtube.com/watch?v=X3xvMKgtB-c][Making Your CSS Fail Excellently – 7/7 Resilient CSS]] :video:5:minutes:2018:
 * Functional Programming
 ** [[https://chriskohlhepp.wordpress.com/functional-programming-section/metacircular-adventures-in-functional-abstraction-challenging-clojure-in-common-lisp/][Metacircular Adventures in Functional Abstraction]] :functional:programming:common:lisp:clojure:
 ** [[https://aphyr.com/posts/301-clojure-from-the-ground-up-welcome][Clojure from the ground up]] :functional:programming:clojure:
@@ -587,6 +610,15 @@ The Eye's Rom Section is a project dedicated towards the preservation and archiv
 ** [[https://physicstravelguide.com/][Physics Travel Guides]] :physics:study:tool:
 ** [[http://www.pathsensitive.com/2018/01/the-benjamin-franklin-method-of-reading.html][The Benjamin Franklin Method of Reading Programming Books]] :programming:study:method:2018:
 ** [[https://www.b-list.org/weblog/2018/feb/11/usernames/][Let’s talk about usernames]] :programming:foibles:usernames:2018:
+** [[https://qntm.org/abolish][So you want to Abolish Time Zones]] :time:zones:2015:
+
+   A thought experiment about why abolishing time zones is a generally bad idea.
+
+   - You need to know what solar time (daylight) a remote area is for /reasons/
+   - Calendaring becomes more complicated with many places have split-day schedules
+   - UTC already exists for synchronizing times regardless of time zone
+   - The past will still have timezones and each region will switch at different times so you'll still need =zoneinfo= databases
+
 * UNIX and BSD
 ** [[https://fosdem.org/2017/schedule/event/my_bsd_sucks_less/][My BSD Sucks Less Than Yours]] :talk:unix:openbsd:freebsd:
 
