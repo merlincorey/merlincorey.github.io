@@ -86,6 +86,28 @@ Whereas the Wireworld computer used a rudimentary transport-triggered architectu
 We created an assembly language, known as QFTASM (Quest for Tetris Assembly), which guided the construction of our processor.
    #+END_QUOTE
 
+** [[http://symbolflux.com/conwayz/][Conwayz—"A new rendition of Conway's vital cellular automaton."]] :artificial:life:game:of:ife:web:explorer:
+** [[http://www.conwaylife.com][Conway Life: A community for Conway's Game of Life and reluated cellular automata]] :artificial:life:forum:
+*** [[http://www.conwaylife.com/forums/viewtopic.php?t=3303][Elementary Knightship]] :artificial:life:game:of:life:discovery:2018:
+
+    - Elementary :: Cannot be broken down into smaller pieces
+    - Knightship :: Glider that moves 2 horizontal and 1 vertical unit in its lifecycle
+
+#+BEGIN_EXAMPLE
+x = 31, y = 79, rule = B3/S23
+4b2o$4bo2bo$4bo3bo$6b3o$2b2o6b4o$2bob2o4b4o$bo4bo6b3o$2b4o4b2o3bo$o9b
+2o$bo3bo$6b3o2b2o2bo$2b2o7bo4bo$13bob2o$10b2o6bo$11b2ob3obo$10b2o3bo2b
+o$10bobo2b2o$10bo2bobobo$10b3o6bo$11bobobo3bo$14b2obobo$11bo6b3o2$11bo
+9bo$11bo3bo6bo$12bo5b5o$12b3o$16b2o$13b3o2bo$11bob3obo$10bo3bo2bo$11bo
+4b2ob3o$13b4obo4b2o$13bob4o4b2o$19bo$20bo2b2o$20b2o$21b5o$25b2o$19b3o
+6bo$20bobo3bobo$19bo3bo3bo$19bo3b2o$18bo6bob3o$19b2o3bo3b2o$20b4o2bo2b
+o$22b2o3bo$21bo$21b2obo$20bo$19b5o$19bo4bo$18b3ob3o$18bob5o$18bo$20bo$
+16bo4b4o$20b4ob2o$17b3o4bo$24bobo$28bo$24bo2b2o$25b3o$22b2o$21b3o5bo$
+24b2o2bobo$21bo2b3obobo$22b2obo2bo$24bobo2b2o$26b2o$22b3o4bo$22b3o4bo$
+23b2o3b3o$24b2ob2o$25b2o$25bo2$24b2o$26bo!
+#+END_EXAMPLE
+
+**** [[https://news.ycombinator.com/item?id=16546152][Hackernews Discussion #16546152]] :2018:
 * Build Systems
 ** [[http://nullprogram.com/blog/2017/08/20/][A Tutorial on Portable Makefiles]] :portable:make:2017:
 ** [[http://gittup.org/tup/build_system_rules_and_algorithms.pdf][Build System Rules and Algorithms]] :paper:shal:build:systems:2009:
@@ -278,6 +300,21 @@ These indeed can make your CSS code work for both the stone age and hottest brow
 ** [[https://patrickmn.com/software/the-haskell-pyramid/][The Haskell Pyramid]] :functional:programming:haskell:
 * Game Development
 ** [[https://www.haroldserrano.com/blog/books-i-used-to-develop-a-game-engine][Books I had to read to develop a game engine]] :game:development:game:engine:2018:
+** [[http://www.helixsoft.nl/articles/circle/sincos.htm][Sin & Cos: The Programmer's Pals!]] :game:development:mathematics:trigonometry:
+*** Conclusion
+#+BEGIN_QUOTE
+In this article I set out to answer some of the most common questions on sine and cosine, or trigonometry in general.
+I could give you a more mathematical explanation of sine and cosine, but I wanted this article to be of practical use to game programmers, especially to Allegro game programmers, not to give an encyclopedic description of abstract mathematics.
+I hope that this has been of some use to you, my dear reader.
+Please send me an e-mail if you have something to say about this article, whether you like it, dislike it, find it useful, or just want to say hi.
+If you have any questions you can ask them on the forums at http://www.allegro.cc.
+It is very likely that I'll see it there.
+And if you ever write an effect in a demo or game using the explanations in this article, I would very much like to see the result.
+
+Amarillion
+E-mail: amarillion@yahoo.com
+Home page: http://www.helixsoft.nl/
+#+END_QUOTE
 * Game Theory
 ** [[http://www.chesstactics.org/index.php?Type=page&Action=next&From=1,1,1,1][Ward Farnsworth's Predator at the Chessboard]] :gametheory:book:chess:
 
@@ -402,12 +439,13 @@ Nice recap of maze generation algorithms from a minecraft modder.  Check out his
 ** [[https://raft.github.io/raft.pdf][In Search of an Understandable Consensus Algorithm]] :paper:distributed:consenus:2014:
 
 * Programming Languages
-** [[http://norvig.com/lispy.html][(How to Write a (Lisp) Interpreter (in Python))]] :norvig:implementing:lisp:in:python:2010:
-** [[https://carld.github.io/2017/06/20/lisp-in-less-than-200-lines-of-c.html][Lisp In Less Than 200 Lines Of C]] :implementing:lisp:in:c:2017:
-** [[http://faust.grame.fr/about/][Faust Programming Language]] :dsp:programming:compiling:to:cpp:2016:
+** Lisp
+*** [[http://norvig.com/lispy.html][(How to Write a (Lisp) Interpreter (in Python))]] :norvig:implementing:lisp:in:python:2010:
+*** [[https://carld.github.io/2017/06/20/lisp-in-less-than-200-lines-of-c.html][Lisp In Less Than 200 Lines Of C]] 		:implementing:lisp:in:c:2017:
+*** [[http://faust.grame.fr/about/][Faust Programming Language]] 	      :dsp:programming:compiling:to:cpp:2016:
 *** [[https://news.ycombinator.com/item?id=15832989][HackerNews discussion about Faust 2017-12-02]]
 *** [[https://news.ycombinator.com/item?id=13012880][HackerNews discussion about Faust 2016-11]]
-** [[https://www.quora.com/What-did-Alan-Kay-mean-by-Lisp-is-the-greatest-single-programming-language-ever-designed/answer/Alan-Kay-11][What did Alan Kay mean by, "Lisp is the greatest single programming language ever designed"? Answer by Alan Kay]] :alan:kay:programming:language:design:lisp:2017:
+*** [[https://www.quora.com/What-did-Alan-Kay-mean-by-Lisp-is-the-greatest-single-programming-language-ever-designed/answer/Alan-Kay-11][What did Alan Kay mean by, "Lisp is the greatest single programming language ever designed"? Answer by Alan Kay]] :alan:kay:programming:language:design:lisp:2017:
 
    [[https://www.quora.com/profile/Alan-Kay-11][Alan Kay]], I am the Alan Kay in question. Updated =2017 October 29=.
 
@@ -477,6 +515,9 @@ The biggest feat in science was Newton’s!
 This is why “Lisp is the greatest!”
    #+END_QUOTE
 
+** Python
+*** [[http://automatetheboringstuff.com/chapter0/][Automate the Boring Stuff with Python]] :book:python:programming:automation:
+*** [[http://exploreflask.com][Explore Flask]] :python:programming:web:site:api:
 * Reverse Engineering
 ** [[https://github.com/FireyFly/pixd][Colourful visualization tool for binary files]] :binary:data:visualization:
 * Revision Control
@@ -505,6 +546,75 @@ This is why “Lisp is the greatest!”
 *** [[https://emacsair.me/2017/09/01/magit-walk-through/#start][magit walk through]] :git:magit:walkthrough:2017:
 ** [[http://gittup.org/gittup/][gittup]] :git:linux:distribution:
 ** [[http://ohshitgit.com/][ohshitgit]] :git:oh:shit:pitfalls:remedies:
+** [[https://gist.github.com/scottnonnenberg/fefa3f65fdb3715d25882f3023b31c29][scottnonnenberg/.gitconfig with GPG signing and other goodies]] :git:config:2018:
+#+CAPTION: calcyman's elemental knightship
+#+BEGIN_SRC ini
+[alias]
+  prune = fetch --prune
+  # Because I constantly forget how to do this
+  # https://git-scm.com/docs/git-fetch#git-fetch--p
+
+  undo = reset --soft HEAD^
+  # Not quite as common as an amend, but still common
+  # https://git-scm.com/docs/git-reset#git-reset-emgitresetemltmodegtltcommitgt
+
+  stash-all = stash save --include-untracked
+  # We wanna grab those pesky un-added files!
+  # https://git-scm.com/docs/git-stash
+
+  glog = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
+  # No need for a GUI - a nice, colorful, graphical representation
+  # https://git-scm.com/docs/git-log
+  # via https://medium.com/@payload.dd/thanks-for-the-git-st-i-will-use-this-4da5839a21a4
+
+[merge]
+  ff = only
+  # I pretty much never mean to do a real merge, since I use a rebase workflow.
+  # Note: this global option applies to all merges, including those done during a git pull
+  # https://git-scm.com/docs/git-config#git-config-mergeff
+
+  conflictstyle = diff3
+  # Standard diff is two sets of final changes. This introduces the original text before each side's changes.
+  # https://git-scm.com/docs/git-config#git-config-mergeconflictStyle
+
+[commit]
+  gpgSign = true
+  # "other people can trust that the changes you've made really were made by you"
+  # https://help.github.com/articles/about-gpg/
+  # https://git-scm.com/docs/git-config#git-config-commitgpgSign
+
+[push]
+  default = simple
+  # "push the current branch back to the branch whose changes are usually integrated into the current branch"
+  # "refuse to push if the upstream branch’s name is different from the local one"
+  # https://git-scm.com/docs/git-config#git-config-pushdefault
+
+  followTags = true
+  # Because I get sick of telling git to do it manually
+  # https://git-scm.com/docs/git-config#git-config-pushfollowTags
+
+[status]
+  showUntrackedFiles = all
+  # Sometimes a newly-added folder, since it's only one line in git status, can slip under the radar.
+  # https://git-scm.com/docs/git-config#git-config-statusshowUntrackedFiles
+
+[transfer]
+  fsckobjects = true
+  # To combat repository corruption!
+  # Note: this global option applies during receive and transmit
+  # https://git-scm.com/docs/git-config#git-config-transferfsckObjects
+  # via https://groups.google.com/forum/#!topic/binary-transparency/f-BI4o8HZW0
+
+
+# A nice little github-like colorful, split diff right in the console.
+# via http://owen.cymru/github-style-diff-in-terminal-with-icdiff/
+[diff]
+  tool = icdiff
+[difftool]
+  prompt = false
+[difftool "icdiff"]
+  cmd = /usr/local/bin/icdiff --line-numbers $LOCAL $REMOTE
+#+END_SRC
 * Shells and Terminals
 ** [[https://zanshin.net/2013/02/02/zsh-configuration-from-the-ground-up/][Zsh Configuration From the Ground Up]] :zsh:configuration:tutorial:2013:
 ** [[http://www.howardism.org/Technical/Emacs/eshell-fun.html][Eschewing Zshell for Emacs Shell]] :zsh:emacs:eshell:
