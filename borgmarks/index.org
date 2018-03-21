@@ -248,11 +248,11 @@ Surviving are his wife of 54 years, Tomoko, of Oberlin, Ohio; and two daughters,
 *** [[http://www.youtube.com/watch?v=ROor6_NGIWU][The Language of the System]] :talk:hickey:distrubuted:language:design:
 *** [[http://www.infoq.com/presentations/Design-Composition-Performance][Design, Composition, and Performance]] :talk:hickey:
 *** [[https://www.youtube.com/watch?v=2V1FtfBDsLU][Effective Programs - 10 Years of Clojure - Rich Hickey]] :talk:hickey:effectiveness:2017:
+** Pycon
+*** [[https://www.youtube.com/watch?v=ZzfHjytDceU][Keynote David Beazley - Topics of Interest (Python Asyncio)]] :pycon:brazil:2015:
 * Frontend Web Design
 ** [[http://flexboxfroggy.com/][CSS Flexbox Froggy]] :css:flexbox:tutorial:game:
-
 ** [[http://cssgridgarden.com/][CSS Grid Garden]] :css:grid:tutorial:game:
-
 ** [[https://medium.com/refactoring-ui/7-practical-tips-for-cheating-at-design-40c736799886][7 Practical Tips for Cheating at Design]] :ui:design:tips:
 *** Use color and weight to create hierarchy instead of size
     - Try using color or font weight to do the same job to differentiate importantness
@@ -271,7 +271,6 @@ Surviving are his wife of 54 years, Tomoko, of Oberlin, Ohio; and two daughters,
 *** Not every button needs a background color
 ** [[https://hacks.mozilla.org/2018/03/how-to-write-css-that-works-in-every-browser-even-the-old-ones/][Resilient CSS: How to Write CSS That Works in Every Browser, Even the Old Ones]] :2018:
 *** [[https://news.ycombinator.com/item?id=16546725][Hacker News discussion #16546725]]
-
 #+CAPTION: ausjke 6 hours ago
 #+BEGIN_QUOTE
 1. CSS and HTML are extremely resilient, they ignore your typos and unsupported features gracefully and never crash, so just daring to use them in your code, no need for exception handling comparing to JS, in that sense, if you can do it in CSS, avoid JS.
@@ -292,7 +291,9 @@ These indeed can make your CSS code work for both the stone age and hottest brow
 *** [[https://www.youtube.com/watch?v=T8uxmUQZsck][The Magic of Feature Queries, Part 1 – 5/7 Resilient CSS]] :video:9:minutes:2018:
 *** [[https://www.youtube.com/watch?v=7y-xfxC2jGA][The Magic of Feature Queries, Part 2 – 6/7 Resilient CSS]] :video:5:minutes:2018:
 *** [[https://www.youtube.com/watch?v=X3xvMKgtB-c][Making Your CSS Fail Excellently – 7/7 Resilient CSS]] :video:5:minutes:2018:
-** [[http://enderjs.com/][EnderJS - The no library library]] :2018:
+** [[http://enderjs.com/][EnderJS - The no library library]] :javascript:browser:2018:
+** [[http://tachyons.io/][Tachyons - Responsive CSS framework]] :css:framework:
+** [[http://getbem.com/][BEM - Block Element Modifier]] :css:methodology:
 * Functional Programming
 ** [[https://chriskohlhepp.wordpress.com/functional-programming-section/metacircular-adventures-in-functional-abstraction-challenging-clojure-in-common-lisp/][Metacircular Adventures in Functional Abstraction]] :functional:programming:common:lisp:clojure:
 ** [[https://aphyr.com/posts/301-clojure-from-the-ground-up-welcome][Clojure from the ground up]] :functional:programming:clojure:
@@ -349,6 +350,7 @@ I can’t even decide on the criteria for the best microcontroller — let alone
 
 What I will do, however, is offer a ton of different recommendations for different users at the end. Read on!
    #+END_QUOTE
+** [[http://www.righto.com/2018/03/implementing-fizzbuzz-on-fpga.html][Implementing Fizbuzz on an FPGA]] :2018:
 * Home Automation and Internet of Things
 ** [[http://www.bruhautomation.com/][Bruh Automation]] :home:automation:tutorials:reviews:
 
@@ -519,11 +521,11 @@ This is why “Lisp is the greatest!”
 ** Python
 *** [[http://automatetheboringstuff.com/chapter0/][Automate the Boring Stuff with Python]] :book:python:programming:automation:
 *** [[http://exploreflask.com][Explore Flask]] :python:programming:web:site:api:
+*** [[https://vorpus.org/blog/some-thoughts-on-asynchronous-api-design-in-a-post-asyncawait-world/][Some thoughts on asynchrous API design in a post async/await world]] :python:asynchronous:2016:
 * Reverse Engineering
 ** [[https://github.com/FireyFly/pixd][Colourful visualization tool for binary files]] :binary:data:visualization:
 * Revision Control
 ** [[https://git-scm.com/book/en/v2][Git Book (v2)]] 						   :git:book:
-
 ** [[http://gitready.com/][git ready]] 						    :git:tips:tricks:
 
 ** [[https://github.com/GitAlias/gitalias/blob/master/gitalias.txt][GitAlias/gitalias/gitalias.txt]] 		   :git:alias:aliases:tricks:
