@@ -53,8 +53,15 @@ Curated, categorized, and tagged by hand.
 ** [[https://www.redblobgames.com/grids/hexagons/][Hexagonal Grids]] :algorithms:datastructures:examples:hexagonal:grids:
 ** [[https://github.com/norvig/pytudes][Pytudes -  Python programs to practice or demonstrate skills.]] :norvig:python:etudes:algorithms:datastructures:problem:solving:
 ** [[https://github.com/mandliya/algorithms_and_data_structures][mandliya/algorithms_and_data_structures]] :algorithms:datastructures:c:++:
-** [[http://www.asimovinstitute.org/neural-network-zoo/][The Neural Network Zoo]] :algorithms:neural:networks:
-** [[https://docs.google.com/presentation/d/1kSuQyW5DTnkVaZEjGYCkfOxvzCqGEFzWBy4e9Uedd9k/preview?imm_mid=0f9b7e&cmp=em-data-na-na-newsltr_20171213#slide=id.g168a3288f7_0_58][Machine Learning 101]] :algorithms:machine:learning:slides:2017:
+** [[https://www.slideshare.net/lmatteis/are-statecharts-the-next-big-ui-paradigm][Are statecharts the next big UI paradigm?]] :algorithms:visualization:state:machines:state:charts:
+** [[https://statecharts.github.io/][Welcome to the (unfinished) world of Statecharts]] :algorithms:visualization:state:machines:state:charts:
+*** [[https://news.ycombinator.com/item?id=15835005][Hacker News Discussion #15835005]]
+** [[https://github.com/davidkpiano/xstate][Functional, Stateless JS Finite State Machines and Statecharts]] :algorithms:state:machines:state:charts:
+** [[http://raganwald.com/2018/02/23/forde.html][Forde's Tenth Rule, or, "How I Learned to Stop Worrying and ❤ the State Machine"]] :algorithms:state:machines:
+*** [[https://news.ycombinator.com/item?id=16468280][Hacker News Discussion #16468280]]
+** [[https://fgiesen.wordpress.com/2018/02/19/reading-bits-in-far-too-many-ways-part-1/][Reading bits in far too many ways (part 1)]] :algorithms:encoding:decoding:bits:and:bytes:2018:
+** [[https://fgiesen.wordpress.com/2018/02/20/reading-bits-in-far-too-many-ways-part-2/][Reading bits in far too many ways (part 2)]] :algorithms:encoding:decoding:bits:and:bytes:2018:
+
 * Assembly
 ** [[http://bob.cs.sonoma.edu/IntroCompOrg-RPi/intro-co-rpi.html][Introduction to Computer Organization: ARM Assembly Language Using the Raspberry Pi]] :assembly:arm:raspberry:pi:
 ** [[http://benhoyt.com/writings/pyast64/][Compiling Python syntax to x86-64 assembly for fun and (zero) profit]] :assembly:x86:python:static:2017:
@@ -79,6 +86,28 @@ Whereas the Wireworld computer used a rudimentary transport-triggered architectu
 We created an assembly language, known as QFTASM (Quest for Tetris Assembly), which guided the construction of our processor.
    #+END_QUOTE
 
+** [[http://symbolflux.com/conwayz/][Conwayz—"A new rendition of Conway's vital cellular automaton."]] :artificial:life:game:of:ife:web:explorer:
+** [[http://www.conwaylife.com][Conway Life: A community for Conway's Game of Life and reluated cellular automata]] :artificial:life:forum:
+*** [[http://www.conwaylife.com/forums/viewtopic.php?t=3303][Elementary Knightship]] :artificial:life:game:of:life:discovery:2018:
+
+    - Elementary :: Cannot be broken down into smaller pieces
+    - Knightship :: Glider that moves 2 horizontal and 1 vertical unit in its lifecycle
+
+#+BEGIN_EXAMPLE
+x = 31, y = 79, rule = B3/S23
+4b2o$4bo2bo$4bo3bo$6b3o$2b2o6b4o$2bob2o4b4o$bo4bo6b3o$2b4o4b2o3bo$o9b
+2o$bo3bo$6b3o2b2o2bo$2b2o7bo4bo$13bob2o$10b2o6bo$11b2ob3obo$10b2o3bo2b
+o$10bobo2b2o$10bo2bobobo$10b3o6bo$11bobobo3bo$14b2obobo$11bo6b3o2$11bo
+9bo$11bo3bo6bo$12bo5b5o$12b3o$16b2o$13b3o2bo$11bob3obo$10bo3bo2bo$11bo
+4b2ob3o$13b4obo4b2o$13bob4o4b2o$19bo$20bo2b2o$20b2o$21b5o$25b2o$19b3o
+6bo$20bobo3bobo$19bo3bo3bo$19bo3b2o$18bo6bob3o$19b2o3bo3b2o$20b4o2bo2b
+o$22b2o3bo$21bo$21b2obo$20bo$19b5o$19bo4bo$18b3ob3o$18bob5o$18bo$20bo$
+16bo4b4o$20b4ob2o$17b3o4bo$24bobo$28bo$24bo2b2o$25b3o$22b2o$21b3o5bo$
+24b2o2bobo$21bo2b3obobo$22b2obo2bo$24bobo2b2o$26b2o$22b3o4bo$22b3o4bo$
+23b2o3b3o$24b2ob2o$25b2o$25bo2$24b2o$26bo!
+#+END_EXAMPLE
+
+**** [[https://news.ycombinator.com/item?id=16546152][Hackernews Discussion #16546152]] :2018:
 * Build Systems
 ** [[http://nullprogram.com/blog/2017/08/20/][A Tutorial on Portable Makefiles]] :portable:make:2017:
 ** [[http://gittup.org/tup/build_system_rules_and_algorithms.pdf][Build System Rules and Algorithms]] :paper:shal:build:systems:2009:
@@ -92,7 +121,7 @@ We created an assembly language, known as QFTASM (Quest for Tetris Assembly), wh
    This is obviously true because it rhymes.
    See how the dependencies differ in make and tup:
    #+END_QUOTE
-   
+
    #+CAPTION: Diagram of Make versus Tup directed graphs
    #+BEGIN_EXAMPLE
             Make                     Tup
@@ -125,8 +154,8 @@ We created an assembly language, known as QFTASM (Quest for Tetris Assembly), wh
 *** [[http://www.michaelburge.us/2017/08/31/roll-your-own-bitcoin-exchange.html][Roll your Own Bitcoin Exchange in Haskell]] :cryptography:currency:exchange:haskell:
 *** [[https://hackernoon.com/why-everyone-missed-the-most-important-invention-in-the-last-500-years-c90b0151c169][Why Everyone Missed the Most Important Invention in the Last 500 Years]] :cryptography:accounting:triple:entry:bookkeeping:
 **** [[https://www.cmu.edu/piper/news/archives/2017/january/yuji-ijiri-obituary.html][Yuji Ijiri's obituary at CMU]] :obituary::2017:
-    
-    #+CAPTION: 
+
+    #+CAPTION:
     #+BEGIN_QUOTE
 Former Carnegie Mellon University professor Yuji Ijiri, founder of the transitional momentum accounting practice, also known as triple-entry accounting, died on Jan. 18. He was 81.
 
@@ -149,7 +178,8 @@ Ijiri also was recognized internationally in accounting for aggregation theory, 
 Surviving are his wife of 54 years, Tomoko, of Oberlin, Ohio; and two daughters, Yumi (Oberlin, Ohio) and Lisa (Boston, Massachusetts).
     #+END_QUOTE
 
-**** [[http://iang.org/papers/triple_entry.html][Triple Entry Accounting - Ian Grigg Systemics, Inc.]] :paper::2005:
+**** [[http://iang.org/papers/triple_entry.html][Triple Entry Accounting - Ian Grigg Systemics, Inc.]] :paper:2005:
+*** [[https://blog.keep.network/miners-arent-your-friends-cde9b6e0e9ac?gi=21d51593759c][Miners Aren’t Your Friends: Miners and Consensus: Part 1 of 2]] :cryptography:currency:2018:
 * Datastructures, Databases, and Filesystems
 ** [[http://www.eelis.net/C++/analogliterals.xhtml][Multi-Dimensional Analog Literals]] :datastructures:analog:literals:2006:
 ** [[https://www.interviewcake.com/article/python/data-structures-coding-interview][Datastructures for Coding Interviews]]    :datastructures:python:interviews:
@@ -163,12 +193,17 @@ Surviving are his wife of 54 years, Tomoko, of Oberlin, Ohio; and two daughters,
 ** [[https://blog.demofox.org/2017/11/21/floating-point-precision/][Demystifying Floating Point Precision]] :datastructures:floating:point:numbers:2017:
 ** [[https://norvig.com/design-patterns/design-patterns.pdf][Design Patterns in Dynamic Programming]] :datastructures:design:patterns:norvig:1996:
 ** [[http://mishadoff.com/blog/clojure-design-patterns/][Clojure Design Patterns]] :datastructures:design:patterns:2017:
+** [[https://www.youtube.com/watch?v=T0yzrZL1py0][6.851 MIT Open Courseware - Advanced Datastructures]] :mit:open:courseware:advanced:datastructures:2012:
+** [[https://rcoh.me/posts/cache-oblivious-datastructures/][Cache Oblivious Datastructures]] :datastructures:cache:obliious:2017:
+** [[https://modern-sql.com/use-case/pivot][SQL Pivot — Rows to Columns]] :databases:sql:pivot:
 ** Alembic
 *** [[http://www.chesnok.com/daily/2013/07/02/a-practical-guide-to-using-alembic/][A Practical Guide to using Alembic]] :database:migrations:sqlalchemy:alembic:
 *** [[https://www.compose.com/articles/schema-migrations-with-alembic-python-and-postgresql/][Schema Migrations with Alembic, Python, and PostgreSQL]] :databse:migrations:sqlalchemy:alembic:postgres:
 ** postgres
 *** [[http://rhaas.blogspot.com/2018/01/the-state-of-vacuum.html][The State of VACUUM]] :database:postgres:vacuum:2018:
+*** [[https://github.com/makmanalp/sqlalchemy-crosstab-postgresql][sqlalchemy-crosstab-postgresql]]
 * Development Environments and Editors
+** [[https://ecc-comp.blogspot.com/2015/05/a-brief-glance-at-how-5-text-editors.html][A Brief Glance at How Various Text Editors Manage Their Textual Data]] :editors:data:structures:text:representation:2015:
 ** Emacs
 *** [[https://www.emacswiki.org/][Emacs Wiki]] 				       :emacs:xemacs:emacs:lisp:wiki:
 *** [[http://orgmode.org/manual/][OrgMode Manual]] 				      :emacs:org:mode:manual:
@@ -203,6 +238,7 @@ Surviving are his wife of 54 years, Tomoko, of Oberlin, Ohio; and two daughters,
    The second half goes into using an advanced interpreter along with logic programming in minikanren to find programs that match test constraints.
 
 ** [[https://www.youtube.com/watch?v=Jib2AmRb_rk&app=desktop][SQLite: The Database at the Edge of the Network with Dr. Richard Hipp]] :talk:hipp:database:sqlite:
+** [[http://dtrace.org/blogs/bmc/2018/02/03/talks/][Brian Cantril talks]]
 ** Rich Hickey
    Creator of Clojure known for many great talks.
 *** [[http://www.infoq.com/presentations/Are-We-There-Yet-Rich-Hickey][Are we there yet?]] 				 :talk:hickey:clojure:design:
@@ -212,38 +248,86 @@ Surviving are his wife of 54 years, Tomoko, of Oberlin, Ohio; and two daughters,
 *** [[http://www.youtube.com/watch?v=ROor6_NGIWU][The Language of the System]] :talk:hickey:distrubuted:language:design:
 *** [[http://www.infoq.com/presentations/Design-Composition-Performance][Design, Composition, and Performance]] :talk:hickey:
 *** [[https://www.youtube.com/watch?v=2V1FtfBDsLU][Effective Programs - 10 Years of Clojure - Rich Hickey]] :talk:hickey:effectiveness:2017:
+** Pycon
+*** [[https://www.youtube.com/watch?v=ZzfHjytDceU][Keynote David Beazley - Topics of Interest (Python Asyncio)]] :pycon:brazil:2015:
 * Frontend Web Design
-
 ** [[http://flexboxfroggy.com/][CSS Flexbox Froggy]] :css:flexbox:tutorial:game:
-
 ** [[http://cssgridgarden.com/][CSS Grid Garden]] :css:grid:tutorial:game:
+** [[https://medium.com/refactoring-ui/7-practical-tips-for-cheating-at-design-40c736799886][7 Practical Tips for Cheating at Design]] :ui:design:tips:
+*** Use color and weight to create hierarchy instead of size
+    - Try using color or font weight to do the same job to differentiate importantness
+    - Stay away from font weights under 400 for UI work
+*** Don't use grey text on colored backgrounds
+    1. Reduce the opacity of white text
+    2. Hand-pick a color that's base don the background color
+***  Offset your shadows
+    - [[https://material.io/guidelines/material-design/elevation-shadows.html][Material Design: Elevation and Shadows]]
+*** Use fewer borders
+    1. Use a box shadow
+    2. Use two different background colors
+    3. Add extra spacing
+*** Don't blow up icons that are meant to be small
+*** Use accent borders to add color to a bland design
+*** Not every button needs a background color
+** [[https://hacks.mozilla.org/2018/03/how-to-write-css-that-works-in-every-browser-even-the-old-ones/][Resilient CSS: How to Write CSS That Works in Every Browser, Even the Old Ones]] :2018:
+*** [[https://news.ycombinator.com/item?id=16546725][Hacker News discussion #16546725]]
+#+CAPTION: ausjke 6 hours ago
+#+BEGIN_QUOTE
+1. CSS and HTML are extremely resilient, they ignore your typos and unsupported features gracefully and never crash, so just daring to use them in your code, no need for exception handling comparing to JS, in that sense, if you can do it in CSS, avoid JS.
 
+2. Leverage CSS override
+
+3. Use browser devtools to test all browsers. No need install all older browser to check CSS. icanuse helps greatly too.
+
+4. Use feature-queries for CSS.
+
+These indeed can make your CSS code work for both the stone age and hottest browsers, all at the same time, without much hacking. Great videos.
+#+END_QUOTE
+
+*** [[https://www.youtube.com/watch?v=u00FY9vADfQ][Introduction to Resilient CSS – 1/7]] :video:9:minutes:2018:
+*** [[https://www.youtube.com/watch?v=WM_cKHH7bZ0][The Secrets of ‘Can I Use’ – 2/7 Resilient CSS]] :video:10:minutes:2018:
+*** [[https://www.youtube.com/watch?v=NJjlzxud4_M][How Browsers Handle Errors in CSS – 3/7 Resilient CSS]] :video:7:minutes:2018:
+*** [[https://www.youtube.com/watch?v=0X6zrW2QW8Q][Unlocking the Power of CSS Overrides – 4/7 Resilient CSS]] :video:8:minutes:2018:
+*** [[https://www.youtube.com/watch?v=T8uxmUQZsck][The Magic of Feature Queries, Part 1 – 5/7 Resilient CSS]] :video:9:minutes:2018:
+*** [[https://www.youtube.com/watch?v=7y-xfxC2jGA][The Magic of Feature Queries, Part 2 – 6/7 Resilient CSS]] :video:5:minutes:2018:
+*** [[https://www.youtube.com/watch?v=X3xvMKgtB-c][Making Your CSS Fail Excellently – 7/7 Resilient CSS]] :video:5:minutes:2018:
+** [[http://enderjs.com/][EnderJS - The no library library]] :javascript:browser:2018:
+** [[http://tachyons.io/][Tachyons - Responsive CSS framework]] :css:framework:
+** [[http://getbem.com/][BEM - Block Element Modifier]] :css:methodology:
 * Functional Programming
-
 ** [[https://chriskohlhepp.wordpress.com/functional-programming-section/metacircular-adventures-in-functional-abstraction-challenging-clojure-in-common-lisp/][Metacircular Adventures in Functional Abstraction]] :functional:programming:common:lisp:clojure:
-
 ** [[https://aphyr.com/posts/301-clojure-from-the-ground-up-welcome][Clojure from the ground up]] :functional:programming:clojure:
 ** [[http://eli.thegreenplace.net/2017/reducers-transducers-and-coreasync-in-clojure/][Reducers, transducers, and core.async in clojure]] :functional:programming:clojure:
-
-
 ** [[http://adit.io/posts/2013-04-17-functors,_applicatives,_and_monads_in_pictures.html][Functors, Applicatives, And Monads In Pictures]] :functional:programming:functors:monads:visualizations:
 ** [[https://patrickmn.com/software/the-haskell-pyramid/][The Haskell Pyramid]] :functional:programming:haskell:
+* Game Development
+** [[https://www.haroldserrano.com/blog/books-i-used-to-develop-a-game-engine][Books I had to read to develop a game engine]] :game:development:game:engine:2018:
+** [[http://www.helixsoft.nl/articles/circle/sincos.htm][Sin & Cos: The Programmer's Pals!]] :game:development:mathematics:trigonometry:
+*** Conclusion
+#+BEGIN_QUOTE
+In this article I set out to answer some of the most common questions on sine and cosine, or trigonometry in general.
+I could give you a more mathematical explanation of sine and cosine, but I wanted this article to be of practical use to game programmers, especially to Allegro game programmers, not to give an encyclopedic description of abstract mathematics.
+I hope that this has been of some use to you, my dear reader.
+Please send me an e-mail if you have something to say about this article, whether you like it, dislike it, find it useful, or just want to say hi.
+If you have any questions you can ask them on the forums at http://www.allegro.cc.
+It is very likely that I'll see it there.
+And if you ever write an effect in a demo or game using the explanations in this article, I would very much like to see the result.
 
+Amarillion
+E-mail: amarillion@yahoo.com
+Home page: http://www.helixsoft.nl/
+#+END_QUOTE
 * Game Theory
-
 ** [[http://www.chesstactics.org/index.php?Type=page&Action=next&From=1,1,1,1][Ward Farnsworth's Predator at the Chessboard]] :gametheory:book:chess:
 
 * Graphics
 ** [[http://www.extentofthejam.com/pseudo/][Lou's Psuedo 3d Page]] :graphics:3d:rendering:
-
 ** [[http://machinethink.net/blog/3d-rendering-without-shaders/][3D Rendering without shaders]] :graphics:3d:rendering:shaders:
 
-[[https://news.ycombinator.com/item?id=13448047][Hackernews discussion]] with some interesting discourse and links such as [[https://fgiesen.wordpress.com/2013/02/06/the-barycentric-conspirac/][The Barycentric Conspiracy]].
+   [[https://news.ycombinator.com/item?id=13448047][Hackernews discussion]] with some interesting discourse and links such as [[https://fgiesen.wordpress.com/2013/02/06/the-barycentric-conspirac/][The Barycentric Conspiracy]].
 
 ** [[https://www.fasterthan.life/blog/2017/7/11/i-am-graphics-and-so-can-you-part-1][I Am Graphics And So Can You]] 	       :graphics:3d:rendering:vulkan:
-
 ** [[http://iquilezles.org/www/index.htm][Íñigo Quílez' Demo and Shader Graphics Articles]] :graphics:demo:scene:shaders:
-
 * Hardware
 ** [[https://jaycarlson.net/microcontrollers/][The Amazing $1 Microcontroller]]
 
@@ -266,6 +350,7 @@ I can’t even decide on the criteria for the best microcontroller — let alone
 
 What I will do, however, is offer a ton of different recommendations for different users at the end. Read on!
    #+END_QUOTE
+** [[http://www.righto.com/2018/03/implementing-fizzbuzz-on-fpga.html][Implementing Fizbuzz on an FPGA]] :2018:
 * Home Automation and Internet of Things
 ** [[http://www.bruhautomation.com/][Bruh Automation]] :home:automation:tutorials:reviews:
 
@@ -278,6 +363,10 @@ What I will do, however, is offer a ton of different recommendations for differe
 
 ** [[https://www.defcon.org/images/defcon-21/dc-21-presentations/Tobias-Bluzmanis/DEFCON-21-Tobias-Bluzmanis-Insecurity-A-Failure-of-Imagination.pdf][A FAILURE OF IMAGINATION: Kwikset Smartkey® and Insecurity Engineering]] :physical:security:lockpicking:kwikset:smart:key:
 
+* Machine Learning
+** [[http://www.asimovinstitute.org/neural-network-zoo/][The Neural Network Zoo]]                        :machine:learning:neural:networks:
+** [[https://docs.google.com/presentation/d/1kSuQyW5DTnkVaZEjGYCkfOxvzCqGEFzWBy4e9Uedd9k/preview?imm_mid=0f9b7e&cmp=em-data-na-na-newsltr_20171213#slide=id.g168a3288f7_0_58][Machine Learning 101]]             :machine:learning:slides:2017:
+** [[https://developers.google.com/machine-learning/crash-course/][Google Machine Learning: Crash Course]] :machine:learning:crash:course:
 * Mazes
 
 ** [[http://weblog.jamisbuck.org/2011/2/7/maze-generation-algorithm-recap][Maze Generation Algorithm Recap]] :maze:algorithms:
@@ -299,6 +388,21 @@ Nice recap of maze generation algorithms from a minecraft modder.  Check out his
 
 ** [[https://modern.ircdocs.horse/][Modern IRC Client Protocol]] :networking:protocol:living:documentation:irc:
 ** [[https://coldfix.eu/2017/01/29/vpn-box/][VPN in a Nutshell]] :networking:linux:vpn:per:application:
+** [[https://fgiesen.wordpress.com/2018/01/20/network-latencies-and-speed-of-light/][Network latencies and the speed of light]] :networking:physics:2018:
+** [[https://www.ibiblio.org/harris/500milemail.html][The case of the 500 mile long email]] :networking:physics:statistics:
+** [[http://networkdiagram101.com/][16 Tips to Better Network Diagrams]] :networking:diagrams:
+** [[https://arxiv.org/abs/1103.0463][Fitting Square Pegs Through Round Pipes: Unordered Delivery Wire-Compatible with TCP and TLS]] :networking:protocols:minion:2011:
+** [[https://tools.ietf.org/html/draft-iyengar-minion-protocol-01][Minion - Wire Protocol]] :paper:networking:protocols:minion:2013:
+
+** [[http://ieeexplore.ieee.org/document/7497221/][TCP Hollywood]] :networking:protocols:2016:
+* Object Oriented Programming and Design
+** [[https://ericlippert.com/2015/04/27/wizards-and-warriors-part-one/][Wizards and Warriors: Part One]] :object:oriented:design:
+*** [[https://ericlippert.com/2015/04/30/wizards-and-warriors-part-two/][Wizards and Warriors: Part Two]] :object:oriented:design:
+*** [[https://ericlippert.com/2015/05/04/wizards-and-warriors-part-three/][Wizards and Warriors: Part Three]] :object:oriented:design:
+*** [[https://ericlippert.com/2015/05/07/wizards-and-warriors-part-four/][Wizards and Warriors: Part Four]] :object:oriented:design:
+*** [[https://ericlippert.com/2015/05/11/wizards-and-warriors-part-five/][Wizards and Warriors: Part Five]] :object:oriented:design:
+* Operating Systems
+** [[http://greenteapress.com/thinkos/thinkos.pdf][Think OS: A Brief Introduction to Operating Systems]] :operating:systems:2015:
 * Papers
 ** [[https://www.theatlantic.com/magazine/archive/1945/07/as-we-may-think/303881/][As We May Think]] 						 :paper:1945:
 
@@ -320,9 +424,10 @@ Nice recap of maze generation algorithms from a minecraft modder.  Check out his
 ** [[https://www.student.cs.uwaterloo.ca/~cs492/11public_html/p18-smith.pdf][The Limits of Corrrectness]] 					 :paper:1985:
 ** [[http://www.usingcsp.com/cspbook.pdf][Communicating Sequential Processes]] 		      :paper:concurrent:1985:
 ** [[http://cseweb.ucsd.edu/~ravir/274/15/papers/p143-kajiya.pdf][The Rendering Equation]] 	     :paper:graphics:rendering:pipeline:1986:
-** [[http://www.wisdom.weizmann.ac.il/~harel/papers/Statecharts.pdf][StateCharts: A Visual Formalism for Complex Systems]] :paper:statemachine:1987:
+** [[http://www.wisdom.weizmann.ac.il/~harel/papers/Statecharts.pdf][StateCharts: A Visual Formalism for Complex Systems]] :paper:state:machine:1987:
 *** [[https://www.slideshare.net/lmatteis/are-statecharts-the-next-big-ui-paradigm][Are statecharts the next big UI paradigm?]] :blog:post:statemachine:2017:
 ** [[http://fermatslibrary.com/s/a-sample-of-brilliance][A Sample of Brilliance]] 		     :paper:randomness:sampling:1987:
+** [[http://www.wisdom.weizmann.ac.il/~harel/SCANNED.PAPERS/VisualFormalisms.pdf][On Visual Formalisms]] :paper:state:machine:1988:
 ** [[https://www.finseth.com/craft/][A Cookbook for an Emacs]] 				   :paper:emacs:1991:
 ** [[http://home.pipeline.com/~hbaker1/CheneyMTA.html][CONS Should Not CONS Its Arguments, Part II: Cheney on the M.T.A.]] :paper:lisp:scheme:tail:recursion:c:1994:
 ** [[https://www.microsoft.com/en-us/research/wp-content/uploads/2016/07/state-lasc.pdf][State in Haskell]] 				   :paper:haskell:state:1995:
@@ -337,12 +442,13 @@ Nice recap of maze generation algorithms from a minecraft modder.  Check out his
 ** [[https://raft.github.io/raft.pdf][In Search of an Understandable Consensus Algorithm]] :paper:distributed:consenus:2014:
 
 * Programming Languages
-** [[http://norvig.com/lispy.html][(How to Write a (Lisp) Interpreter (in Python))]] :norvig:implementing:lisp:in:python:2010:
-** [[https://carld.github.io/2017/06/20/lisp-in-less-than-200-lines-of-c.html][Lisp In Less Than 200 Lines Of C]] :implementing:lisp:in:c:2017:
-** [[http://faust.grame.fr/about/][Faust Programming Language]] :dsp:programming:compiling:to:cpp:2016:
+** Lisp
+*** [[http://norvig.com/lispy.html][(How to Write a (Lisp) Interpreter (in Python))]] :norvig:implementing:lisp:in:python:2010:
+*** [[https://carld.github.io/2017/06/20/lisp-in-less-than-200-lines-of-c.html][Lisp In Less Than 200 Lines Of C]] 		:implementing:lisp:in:c:2017:
+*** [[http://faust.grame.fr/about/][Faust Programming Language]] 	      :dsp:programming:compiling:to:cpp:2016:
 *** [[https://news.ycombinator.com/item?id=15832989][HackerNews discussion about Faust 2017-12-02]]
 *** [[https://news.ycombinator.com/item?id=13012880][HackerNews discussion about Faust 2016-11]]
-** [[https://www.quora.com/What-did-Alan-Kay-mean-by-Lisp-is-the-greatest-single-programming-language-ever-designed/answer/Alan-Kay-11][What did Alan Kay mean by, "Lisp is the greatest single programming language ever designed"? Answer by Alan Kay]] :alan:kay:programming:language:design:lisp:2017:
+*** [[https://www.quora.com/What-did-Alan-Kay-mean-by-Lisp-is-the-greatest-single-programming-language-ever-designed/answer/Alan-Kay-11][What did Alan Kay mean by, "Lisp is the greatest single programming language ever designed"? Answer by Alan Kay]] :alan:kay:programming:language:design:lisp:2017:
 
    [[https://www.quora.com/profile/Alan-Kay-11][Alan Kay]], I am the Alan Kay in question. Updated =2017 October 29=.
 
@@ -412,11 +518,14 @@ The biggest feat in science was Newton’s!
 This is why “Lisp is the greatest!”
    #+END_QUOTE
 
+** Python
+*** [[http://automatetheboringstuff.com/chapter0/][Automate the Boring Stuff with Python]] :book:python:programming:automation:
+*** [[http://exploreflask.com][Explore Flask]] :python:programming:web:site:api:
+*** [[https://vorpus.org/blog/some-thoughts-on-asynchronous-api-design-in-a-post-asyncawait-world/][Some thoughts on asynchrous API design in a post async/await world]] :python:asynchronous:2016:
 * Reverse Engineering
 ** [[https://github.com/FireyFly/pixd][Colourful visualization tool for binary files]] :binary:data:visualization:
 * Revision Control
 ** [[https://git-scm.com/book/en/v2][Git Book (v2)]] 						   :git:book:
-
 ** [[http://gitready.com/][git ready]] 						    :git:tips:tricks:
 
 ** [[https://github.com/GitAlias/gitalias/blob/master/gitalias.txt][GitAlias/gitalias/gitalias.txt]] 		   :git:alias:aliases:tricks:
@@ -440,6 +549,155 @@ This is why “Lisp is the greatest!”
 *** [[https://emacsair.me/2017/09/01/magit-walk-through/#start][magit walk through]] :git:magit:walkthrough:2017:
 ** [[http://gittup.org/gittup/][gittup]] :git:linux:distribution:
 ** [[http://ohshitgit.com/][ohshitgit]] :git:oh:shit:pitfalls:remedies:
+** [[https://gist.github.com/scottnonnenberg/fefa3f65fdb3715d25882f3023b31c29][scottnonnenberg/.gitconfig with GPG signing and other goodies]] :git:config:2018:
+#+CAPTION: calcyman's elemental knightship
+#+BEGIN_SRC ini
+[alias]
+  prune = fetch --prune
+  # Because I constantly forget how to do this
+  # https://git-scm.com/docs/git-fetch#git-fetch--p
+
+  undo = reset --soft HEAD^
+  # Not quite as common as an amend, but still common
+  # https://git-scm.com/docs/git-reset#git-reset-emgitresetemltmodegtltcommitgt
+
+  stash-all = stash save --include-untracked
+  # We wanna grab those pesky un-added files!
+  # https://git-scm.com/docs/git-stash
+
+  glog = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
+  # No need for a GUI - a nice, colorful, graphical representation
+  # https://git-scm.com/docs/git-log
+  # via https://medium.com/@payload.dd/thanks-for-the-git-st-i-will-use-this-4da5839a21a4
+
+[merge]
+  ff = only
+  # I pretty much never mean to do a real merge, since I use a rebase workflow.
+  # Note: this global option applies to all merges, including those done during a git pull
+  # https://git-scm.com/docs/git-config#git-config-mergeff
+
+  conflictstyle = diff3
+  # Standard diff is two sets of final changes. This introduces the original text before each side's changes.
+  # https://git-scm.com/docs/git-config#git-config-mergeconflictStyle
+
+[commit]
+  gpgSign = true
+  # "other people can trust that the changes you've made really were made by you"
+  # https://help.github.com/articles/about-gpg/
+  # https://git-scm.com/docs/git-config#git-config-commitgpgSign
+
+[push]
+  default = simple
+  # "push the current branch back to the branch whose changes are usually integrated into the current branch"
+  # "refuse to push if the upstream branch’s name is different from the local one"
+  # https://git-scm.com/docs/git-config#git-config-pushdefault
+
+  followTags = true
+  # Because I get sick of telling git to do it manually
+  # https://git-scm.com/docs/git-config#git-config-pushfollowTags
+
+[status]
+  showUntrackedFiles = all
+  # Sometimes a newly-added folder, since it's only one line in git status, can slip under the radar.
+  # https://git-scm.com/docs/git-config#git-config-statusshowUntrackedFiles
+
+[transfer]
+  fsckobjects = true
+  # To combat repository corruption!
+  # Note: this global option applies during receive and transmit
+  # https://git-scm.com/docs/git-config#git-config-transferfsckObjects
+  # via https://groups.google.com/forum/#!topic/binary-transparency/f-BI4o8HZW0
+
+
+# A nice little github-like colorful, split diff right in the console.
+# via http://owen.cymru/github-style-diff-in-terminal-with-icdiff/
+[diff]
+  tool = icdiff
+[difftool]
+  prompt = false
+[difftool "icdiff"]
+  cmd = /usr/local/bin/icdiff --line-numbers $LOCAL $REMOTE
+#+END_SRC
+** [[https://zwischenzugs.com/2018/03/14/five-key-git-concepts-explained-the-hard-way/][Five Key Git Concepts Explained the Hard Way]] :2018:
+   Author of the book [[https://leanpub.com/learngitthehardway][Learn Git The Hard Way]] offers some git exercises.
+*** References
+    - =HEAD= :: =HEAD= is a special reference that always points to where the git /repository/ is.
+    - /tag/ :: A /tag/ is a reference that points to a specifi /commit/.
+    - /branch/ :: A /branch/ is like a /tag/, but will move when the =HEAD= moves.
+    - /remote reference/ :: A /remote reference/ is a reference to code that’s from another /repository/.
+    Type out these commands and explain what’s going on. Take your time:
+#+CAPTION: Learning about git references, the hard way
+#+BEGIN_SRC shell
+mkdir lgthw_origin
+cd lgthw_origin
+git init
+echo 1 > afile
+git add afile
+git commit -m firstcommit
+git log --oneline --decorate --all --graph
+git branch otherbranch
+git tag firstcommittag
+git log --oneline --decorate --all --graph
+echo 2 >> afile
+git commit -am secondcommit
+git checkout otherbranch
+git log --oneline --decorate --all --graph
+echo 3 >> afile
+git commit -am thirdcommit
+git log --oneline --decorate --all --graph
+#+END_SRC
+*** Detached Head
+#+CAPTION: Learning about git detached heads, the hard way
+#+BEGIN_SRC shell
+git checkout firstcommit
+# You are in 'detached HEAD' state.
+git log --oneline --decorate --all --graph
+git checkout -b firstcommitbranch
+git log --oneline --decorate --all --graph
+#+END_SRC
+*** Remote Reference
+#+CAPTION: Learning about git remote references, the hard way
+#+BEGIN_SRC shell
+cd ..
+git clone lgthw_origin lgthw_cloned
+cd lgthw_cloned
+git remote -v
+git log --oneline --decorate --all --graph
+git branch -a
+git checkout master
+# Branch master set up to track remote branch master from origin. Switched to a new branch 'master'
+cd ../lgthw_origin
+git checkout master
+echo origin_change >> afile
+git commit -am 'Change on the origin'
+cd ../lgthw_cloned
+git fetch origin
+git log --oneline --decorate --all --graph
+#+END_SRC
+*** Fast Forward
+#+CAPTION: Learning about git fast forward, the hard way
+#+BEGIN_SRC shell
+git merge origin/master
+git log --oneline --decorate --all --graph
+#+END_SRC
+*** Rebase
+#+CAPTION: Learning about git rebase, the hard way
+#+BEGIN_SRC shell
+cd ../lgthw_origin 
+git status
+echo origin_change_rebase >> afile 
+git commit -am 'origin change rebase' 
+git log --oneline --decorate --all --graph
+cd ../lgthw_cloned 
+echo cloned_change_rebase >> anewfile 
+git add anewfile 
+git commit -m 'cloned change rebase in anewfile' 
+git log --oneline --decorate --all --graph 
+git fetch origin 
+git log --oneline --decorate --all --graph 
+git rebase origin/master 
+git log --oneline --decorate --all --graph
+#+END_SRC
 * Shells and Terminals
 ** [[https://zanshin.net/2013/02/02/zsh-configuration-from-the-ground-up/][Zsh Configuration From the Ground Up]] :zsh:configuration:tutorial:2013:
 ** [[http://www.howardism.org/Technical/Emacs/eshell-fun.html][Eschewing Zshell for Emacs Shell]] :zsh:emacs:eshell:
@@ -449,6 +707,7 @@ This is why “Lisp is the greatest!”
 ** [[http://python.apichecklist.com/][Python API Checklist]] :python:api:programming:checklist:2017:
 ** [[https://blog.ionelmc.ro/2014/06/25/python-packaging-pitfalls/][Python Packaging Pitfalls]] :python:packaging:2014:
 ** [[https://ep2015.europython.eu/conference/talks/less-known-packaging-features-and-tricks][Less known (python) packaging features and tricks]] :python:packaging:talk:slides:video:2015:
+** [[https://github.com/arogozhnikov/python3_with_pleasure][Migrating to Python 3 with pleasure]] :python:3:migration:features:
 * Systems Engineering
 ** [[https://alestic.com/2010/12/ec2-user-data-output/][Logging user-data Script Output on EC2 Instances]] :systems:cloudinit:logging:aws:ec2:
 
@@ -477,6 +736,7 @@ This is why “Lisp is the greatest!”
    - [[http://nginx.org/en/docs/http/configuring_https_servers.html][Configuring HTTPS servers with NginX]]
    - [[https://www.nginx.com/resources/admin-guide/][NginX Administration Guide]]
 
+** [[https://chrisdown.name/2018/01/02/in-defence-of-swap.html][In defence of swap: common misconceptions]] :systems:swap:memory:2018:
 ** Terraform
 
 *** [[https://opencredo.com/terraform-infrastructure-design-patterns/][Terraform Infrastructure Design Patterns]] :systems:terraform:2015:
@@ -525,12 +785,42 @@ The Eye's Rom Section is a project dedicated towards the preservation and archiv
 
 ** [[https://cs007.blog/][CS 007 - Personal Finance for Programmers]] :personal:finance:programmers:course:2017:
 ** [[http://www.people.vcu.edu/~dcranston/490/handouts/math-read.html][How to Read Mathematics]] :mathematics:reading:how:to:
+** [[https://www.youtube.com/watch?v=3GJUM6pCpew][standupmaths - Why is TV 29.97 frames per second?]] :mathematics:color:television:video:ntsc:
+** [[https://github.com/leandromoreira/ffmpeg-libav-tutorial#learn-ffmpeg-libav-the-hard-way][Learn ffmpeg the hard way]] :video:ffmpeg:tutorial:
+** [[http://crasseux.com/books/ctutorial/][The GNU C Programming Tutorial]] :gnu:c:programming:tutorial:
+** [[https://viewsourcecode.org/snaptoken/][snaptoken C utility]]
+
+   These tutorials walk you through writing medium-size software projects from scratch, step by step.
+   The projects are based on real open-source software projects, and most of the tutorials stay true to the original source code.
+   Every line of code is explained in detail, allowing you to thoroughly understand the project’s entire codebase.
+
+   - [[https://viewsourcecode.org/snaptoken/kilo/][kilo]] :: Guide for building text editor in C based on antirez's 1000 line editor
+
+** [[https://www.smbc-comics.com/comic/the-talk-3][Sunday Morning Breakfast Comisc: The Talk 3]] :web:comic:quantum:mechanics:
+** [[http://wordsandbuttons.online/programmers_guide_to_polynomials_and_splines.html][Programmer's Guide to Polynomials and Splines]] :mathematics:guide:splines:
+** [[https://www.math.uh.edu/~dblecher/pf2.html][How to Study Mathematics]] :mathematics:study:tool:
+** [[https://www.susanjfowler.com/blog/2016/8/13/so-you-want-to-learn-physics][So You Want to Learn Physics...]] :physics:susan:flower:2016:
+** [[https://physicstravelguide.com/][Physics Travel Guides]] :physics:study:tool:
+** [[http://www.pathsensitive.com/2018/01/the-benjamin-franklin-method-of-reading.html][The Benjamin Franklin Method of Reading Programming Books]] :programming:study:method:2018:
+** [[https://www.b-list.org/weblog/2018/feb/11/usernames/][Let’s talk about usernames]] :programming:foibles:usernames:2018:
+** [[https://qntm.org/abolish][So you want to Abolish Time Zones]] :time:zones:2015:
+
+   A thought experiment about why abolishing time zones is a generally bad idea.
+
+   - You need to know what solar time (daylight) a remote area is for /reasons/
+   - Calendaring becomes more complicated with many places have split-day schedules
+   - UTC already exists for synchronizing times regardless of time zone
+   - The past will still have timezones and each region will switch at different times so you'll still need =zoneinfo= databases
+
 * UNIX and BSD
 ** [[https://fosdem.org/2017/schedule/event/my_bsd_sucks_less/][My BSD Sucks Less Than Yours]] :talk:unix:openbsd:freebsd:
 
+** [[http://changelog.complete.org/archives/9317-has-linux-lost-its-way-comments-prompt-a-debian-developer-to-revisit-freebsd-after-20-years][“Has Linux lost its way?” comments prompt a Debian developer to revisit FreeBSD after 20 years]] :unix:linux:comparison:2015:
 ** [[https://manpages.bsd.lv/][Practical UNIX Manuals - mdoc: structure, style, and composition]] :book:unix:man:pages:mdoc:
 ** [[https://vez.mrsk.me/freebsd-defaults.txt][FreeBSD - a lesson in poor defaults]] :freebsd:defaults:security:2017:
 * Video Series
+** [[https://www.youtube.com/user/professorleonard57][Professor Leonard]] :video::mathematics:lectures:
+** [[https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw][3Blue1Brown]] :video:series:mathematics:
 ** [[https://www.youtube.com/watch?list=PL2VAYZE_4wRJi_vgpjsH75kMhN4KsuzR_&v=m0TsdytmGhc][Little Bits of Lisp with Baggers]] :video:series:common:lisp:
 ** [[https://www.youtube.com/watch?v=MCuzvy79WWQ][Rewriting BSD 4.4 Shell Commands (part 1: cat)]]
 
