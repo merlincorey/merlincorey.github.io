@@ -292,6 +292,7 @@ These indeed can make your CSS code work for both the stone age and hottest brow
 *** [[https://www.youtube.com/watch?v=T8uxmUQZsck][The Magic of Feature Queries, Part 1 – 5/7 Resilient CSS]] :video:9:minutes:2018:
 *** [[https://www.youtube.com/watch?v=7y-xfxC2jGA][The Magic of Feature Queries, Part 2 – 6/7 Resilient CSS]] :video:5:minutes:2018:
 *** [[https://www.youtube.com/watch?v=X3xvMKgtB-c][Making Your CSS Fail Excellently – 7/7 Resilient CSS]] :video:5:minutes:2018:
+** [[http://enderjs.com/][EnderJS - The no library library]] :2018:
 * Functional Programming
 ** [[https://chriskohlhepp.wordpress.com/functional-programming-section/metacircular-adventures-in-functional-abstraction-challenging-clojure-in-common-lisp/][Metacircular Adventures in Functional Abstraction]] :functional:programming:common:lisp:clojure:
 ** [[https://aphyr.com/posts/301-clojure-from-the-ground-up-welcome][Clojure from the ground up]] :functional:programming:clojure:
@@ -614,6 +615,86 @@ This is why “Lisp is the greatest!”
   prompt = false
 [difftool "icdiff"]
   cmd = /usr/local/bin/icdiff --line-numbers $LOCAL $REMOTE
+#+END_SRC
+** [[https://zwischenzugs.com/2018/03/14/five-key-git-concepts-explained-the-hard-way/][Five Key Git Concepts Explained the Hard Way]] :2018:
+   Author of the book [[https://leanpub.com/learngitthehardway][Learn Git The Hard Way]] offers some git exercises.
+*** References
+    - =HEAD= :: =HEAD= is a special reference that always points to where the git /repository/ is.
+    - /tag/ :: A /tag/ is a reference that points to a specifi /commit/.
+    - /branch/ :: A /branch/ is like a /tag/, but will move when the =HEAD= moves.
+    - /remote reference/ :: A /remote reference/ is a reference to code that’s from another /repository/.
+    Type out these commands and explain what’s going on. Take your time:
+#+CAPTION: Learning about git references, the hard way
+#+BEGIN_SRC shell
+mkdir lgthw_origin
+cd lgthw_origin
+git init
+echo 1 > afile
+git add afile
+git commit -m firstcommit
+git log --oneline --decorate --all --graph
+git branch otherbranch
+git tag firstcommittag
+git log --oneline --decorate --all --graph
+echo 2 >> afile
+git commit -am secondcommit
+git checkout otherbranch
+git log --oneline --decorate --all --graph
+echo 3 >> afile
+git commit -am thirdcommit
+git log --oneline --decorate --all --graph
+#+END_SRC
+*** Detached Head
+#+CAPTION: Learning about git detached heads, the hard way
+#+BEGIN_SRC shell
+git checkout firstcommit
+# You are in 'detached HEAD' state.
+git log --oneline --decorate --all --graph
+git checkout -b firstcommitbranch
+git log --oneline --decorate --all --graph
+#+END_SRC
+*** Remote Reference
+#+CAPTION: Learning about git remote references, the hard way
+#+BEGIN_SRC shell
+cd ..
+git clone lgthw_origin lgthw_cloned
+cd lgthw_cloned
+git remote -v
+git log --oneline --decorate --all --graph
+git branch -a
+git checkout master
+# Branch master set up to track remote branch master from origin. Switched to a new branch 'master'
+cd ../lgthw_origin
+git checkout master
+echo origin_change >> afile
+git commit -am 'Change on the origin'
+cd ../lgthw_cloned
+git fetch origin
+git log --oneline --decorate --all --graph
+#+END_SRC
+*** Fast Forward
+#+CAPTION: Learning about git fast forward, the hard way
+#+BEGIN_SRC shell
+git merge origin/master
+git log --oneline --decorate --all --graph
+#+END_SRC
+*** Rebase
+#+CAPTION: Learning about git rebase, the hard way
+#+BEGIN_SRC shell
+cd ../lgthw_origin 
+git status
+echo origin_change_rebase >> afile 
+git commit -am 'origin change rebase' 
+git log --oneline --decorate --all --graph
+cd ../lgthw_cloned 
+echo cloned_change_rebase >> anewfile 
+git add anewfile 
+git commit -m 'cloned change rebase in anewfile' 
+git log --oneline --decorate --all --graph 
+git fetch origin 
+git log --oneline --decorate --all --graph 
+git rebase origin/master 
+git log --oneline --decorate --all --graph
 #+END_SRC
 * Shells and Terminals
 ** [[https://zanshin.net/2013/02/02/zsh-configuration-from-the-ground-up/][Zsh Configuration From the Ground Up]] :zsh:configuration:tutorial:2013:
