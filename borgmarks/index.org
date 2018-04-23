@@ -196,6 +196,7 @@ Surviving are his wife of 54 years, Tomoko, of Oberlin, Ohio; and two daughters,
 ** [[https://www.youtube.com/watch?v=T0yzrZL1py0][6.851 MIT Open Courseware - Advanced Datastructures]] :mit:open:courseware:advanced:datastructures:2012:
 ** [[https://rcoh.me/posts/cache-oblivious-datastructures/][Cache Oblivious Datastructures]] :datastructures:cache:obliious:2017:
 ** [[https://modern-sql.com/use-case/pivot][SQL Pivot — Rows to Columns]] :databases:sql:pivot:
+** [[http://seriot.ch/parsing_json.php][Parsing JSON is a Minefield]] :datastructure:parsing:json:2016:2018:
 ** Alembic
 *** [[http://www.chesnok.com/daily/2013/07/02/a-practical-guide-to-using-alembic/][A Practical Guide to using Alembic]] :database:migrations:sqlalchemy:alembic:
 *** [[https://www.compose.com/articles/schema-migrations-with-alembic-python-and-postgresql/][Schema Migrations with Alembic, Python, and PostgreSQL]] :databse:migrations:sqlalchemy:alembic:postgres:
@@ -225,6 +226,16 @@ Surviving are his wife of 54 years, Tomoko, of Oberlin, Ohio; and two daughters,
 ** [[http://www.ccs.neu.edu/home/matthias/HtDP2e/][How to Design Programs 2]] :book:scheme:2014:
 ** [[https://softwarefoundations.cis.upenn.edu/][Software Foundations Series (books)]] :books:logic:math:computer:science:proofs:coq:
 ** [[http://adam.chlipala.net/cpdt/][Certified Programming with Dependent Types]] :book:logic:types:proofs:coq:2017:
+* Game Consoles
+** Nintendo Entertainment System
+*** [[https://github.com/blanham/ChickeNES][blanham/ChickeNES]] :nintendo:entertainment:system:emulator:c:2013:2015:
+*** [[https://medium.com/@fogleman/i-made-an-nes-emulator-here-s-what-i-learned-about-the-original-nintendo-2e078c9b28fe][I made an NES emulator. Here’s what I learned about the original Nintendo.]] :nintendo:entertainment:system:emulator:2015:
+**** [[https://github.com/fogleman/nes][fogleman/nes]] :nintendo:entertainment:system:emulator:golang:2015:2018:
+*** [[http://yizhang82.me/nes-emu-overview][Writing your own NES emulator - overview]] :nintendo:entertainment:system:emulator:cpp:2018:
+**** [[https://github.com/yizhang82/neschan][yizhang82/neschan]] :nitendo:entertainment:system:emulator:cpp:2018:
+*** [[https://nesdoug.com/][How to Program an NES game in C]] :programming:nintendo:entertainment:system:2017:
+*** [[https://tedium.co/2018/04/10/nes-homebrew-scene-history/][The strange and wonderful world of homebrew games for the original Nintendo Entertainment System.]] :nintendo:entertainment:system:homebrew:2018:
+*** [[https://www.moria.us/blog/2018/03/nes-development][NES Development Day 1: Creating a ROM]] :nintendo:entertainment:system:rom:programming:2018:
 * Great Talks
 ** [[https://www.youtube.com/watch?v=Sg4U4r_AgJU][Brian Kernighan - How to succeed at language design without really trying]] :talk:kernighan:language:design:awk:
 
@@ -238,6 +249,7 @@ Surviving are his wife of 54 years, Tomoko, of Oberlin, Ohio; and two daughters,
    The second half goes into using an advanced interpreter along with logic programming in minikanren to find programs that match test constraints.
 
 ** [[https://www.youtube.com/watch?v=Jib2AmRb_rk&app=desktop][SQLite: The Database at the Edge of the Network with Dr. Richard Hipp]] :talk:hipp:database:sqlite:
+** [[https://www.youtube.com/watch?v=_gZK0tW8EhQ][Ron Garret - The Remote Agent Experiment: Debugging Code from 60 Million Miles Away]] :talk:garret:lisp:in:space:
 ** [[http://dtrace.org/blogs/bmc/2018/02/03/talks/][Brian Cantril talks]]
 ** Rich Hickey
    Creator of Clojure known for many great talks.
@@ -317,6 +329,7 @@ Amarillion
 E-mail: amarillion@yahoo.com
 Home page: http://www.helixsoft.nl/
 #+END_QUOTE
+** [[https://allarsblog.com/2018/03/16/confessions-of-an-unreal-engine-4-engineering-firefighter/][Confessions of an Unreal Engine 4 Engineering Firefighter]] :game:development:unreal:engine:fire:fighting:2018:
 * Game Theory
 ** [[http://www.chesstactics.org/index.php?Type=page&Action=next&From=1,1,1,1][Ward Farnsworth's Predator at the Chessboard]] :gametheory:book:chess:
 
@@ -367,6 +380,8 @@ What I will do, however, is offer a ton of different recommendations for differe
 ** [[http://www.asimovinstitute.org/neural-network-zoo/][The Neural Network Zoo]]                        :machine:learning:neural:networks:
 ** [[https://docs.google.com/presentation/d/1kSuQyW5DTnkVaZEjGYCkfOxvzCqGEFzWBy4e9Uedd9k/preview?imm_mid=0f9b7e&cmp=em-data-na-na-newsltr_20171213#slide=id.g168a3288f7_0_58][Machine Learning 101]]             :machine:learning:slides:2017:
 ** [[https://developers.google.com/machine-learning/crash-course/][Google Machine Learning: Crash Course]] :machine:learning:crash:course:
+** [[https://github.com/glouw/tinn][glouw/tinn]] :machine:learning:neural:network:library:
+   The tiny neural network library
 * Mazes
 
 ** [[http://weblog.jamisbuck.org/2011/2/7/maze-generation-algorithm-recap][Maze Generation Algorithm Recap]] :maze:algorithms:
@@ -395,6 +410,7 @@ Nice recap of maze generation algorithms from a minecraft modder.  Check out his
 ** [[https://tools.ietf.org/html/draft-iyengar-minion-protocol-01][Minion - Wire Protocol]] :paper:networking:protocols:minion:2013:
 
 ** [[http://ieeexplore.ieee.org/document/7497221/][TCP Hollywood]] :networking:protocols:2016:
+** [[https://www.schoenitzer.de/blog/2018/Linux%20Raw%20Sockets.html][Linux Raw Sockets]] :networking:raw:sockets:linux:2018:
 * Object Oriented Programming and Design
 ** [[https://ericlippert.com/2015/04/27/wizards-and-warriors-part-one/][Wizards and Warriors: Part One]] :object:oriented:design:
 *** [[https://ericlippert.com/2015/04/30/wizards-and-warriors-part-two/][Wizards and Warriors: Part Two]] :object:oriented:design:
@@ -522,6 +538,8 @@ This is why “Lisp is the greatest!”
 *** [[http://automatetheboringstuff.com/chapter0/][Automate the Boring Stuff with Python]] :book:python:programming:automation:
 *** [[http://exploreflask.com][Explore Flask]] :python:programming:web:site:api:
 *** [[https://vorpus.org/blog/some-thoughts-on-asynchronous-api-design-in-a-post-asyncawait-world/][Some thoughts on asynchrous API design in a post async/await world]] :python:asynchronous:2016:
+*** [[https://blog.petrzemek.net/2018/04/22/on-incomplete-http-reads-and-the-requests-library-in-python/][On Incomplete HTTP Reads and the Requests Library In Python]] :python:requests:2018:
+*** [[http://willcrichton.net/notes/programming-in-the-debugger/][Programming in the Debugger]] :python:jupyter:2018:
 * Reverse Engineering
 ** [[https://github.com/FireyFly/pixd][Colourful visualization tool for binary files]] :binary:data:visualization:
 * Revision Control
@@ -761,7 +779,6 @@ The Eye's Rom Section is a project dedicated towards the preservation and archiv
 ** [[https://ski.ihoc.net/][The Most Officialest SkiFree Home Page!]] :software:history:skifree:
 
 ** [[http://vvvvalvalval.github.io/posts/what-makes-a-good-repl.html][What makes a good REPL?]] :programming:language:interpreter:design:clojure:
-** [[https://nesdoug.com/][How to Program an NES game in C]] :programming:nintendo:entertainment:system:2017:
 ** [[https://github.com/karllhughes/side-project-marketing/blob/master/marketing-checklist.md][Side Project Marketing Checklist]] :open:source:marketing:checklist:2017:
 ** [[http://www.drdobbs.com/architecture-and-design/software-engineering-computer-science/217701907][Software Engineering ≠ Computer Science]] :software:engineering:architecture:design:2009:
 
