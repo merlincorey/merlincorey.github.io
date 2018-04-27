@@ -458,6 +458,35 @@ Nice recap of maze generation algorithms from a minecraft modder.  Check out his
 ** [[https://raft.github.io/raft.pdf][In Search of an Understandable Consensus Algorithm]] :paper:distributed:consenus:2014:
 
 * Programming Languages
+** C++
+*** [[https://yosefk.com/c++fqa/][C++ FQA]]                                              :language:cpp98:fqa:
+    A bit dated now, especially with regards to consistency between implementations and support for modern features.
+    However, many of the general concerns still ring true today.
+*** [[http://cpptruths.blogspot.com/][C++ Truths]] :blog:language:cpp:2017:
+    A blog exploring C++ features and best practices with articles posted between =2005= and =2017=.
+**** [[http://cpptruths.blogspot.com/2005/06/i-love-c-programming-language-for-its.html][I love C++ Programming]] :blog:language:cpp:2005:
+**** [[http://cpptruths.blogspot.com/2014/03/fun-with-lambdas-c14-style-part-1.html][Fun with Lambdas: C++14 Style (part 1)]] :blog:language:cpp:2014:
+**** [[http://cpptruths.blogspot.com/2014/05/fun-with-lambdas-c14-style-part-2.html][Fun with Lambdas: C++14 Style (part 2)]] :blog:language:cpp:2014:
+**** [[http://cpptruths.blogspot.com/2014/08/fun-with-lambdas-c14-style-part-3.html][Fun with Lambdas: C++14 Style (part 3)]] :blog:language:cpp:2014:
+**** [[http://cpptruths.blogspot.com/2015/06/fun-with-lambdas-c14-style-part-4.html][Fun with Lambdas: C++14 Style (part 4)]] :blog:language:cpp:2015:
+*** [[https://github.com/lefticus/cppbestpractices][lefticus/cppbestpractices]]         :language:cpp:best:practices:2015:2018:
+**** [[https://lefticus.gitbooks.io/cpp-best-practices/][GitBook: C++ Best Practices]]      :book:language:cpp:best:practices:2018:
+
+*** [[https://github.com/rigtorp/awesome-modern-cpp][rigtorp/awesome-modern-cpp]] :language:cpp:awesome:list:2016:
+*** [[https://docs.microsoft.com/en-us/cpp/cpp/welcome-back-to-cpp-modern-cpp][Microsoft: Welcome back to C++ - Modern C++]] :language:cpp11:cpp14:2016:
+*** [[https://github.com/isocpp/CppCoreGuidelines][isocpp/CppCoreGuidelines]] :language:cpp11:cpp14:cpp17:guidelines:2018:
+    C++ core guidelines maintained by Dr. Bjarne Stroustrup.
+**** [[http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines][ISO CPP: C++ Core Guidelines]] :language:cpp11:cpp14:cpp17:guidelines:2018:
+*** [[https://isocpp.org/faq][ISO CPP: C++ FAQ Super FAQ]]                      :language:cpp11:cpp14:faq:
+*** [[https://news.ycombinator.com/item?id=16535886][HackerNews Discussion #16535886: Ask HN: Best way to learn modern C++?]] :language:cpp:learning:modern:hacker:news:2018:
+*** [[http://clang.llvm.org/docs/ClangFormat.html][clang-format: Automated formatting for C and C++]] :language:cpp:clang:formatter:
+#+CAPTION: Basic Emacs integration binding C-M-TAB to clang-format-region
+#+BEGIN_SRC elisp
+(load "<path-to-clang>/tools/clang-format/clang-format.el")
+(global-set-key [C-M-tab] 'clang-format-region)
+#+END_SRC
+*** [[https://github.com/catchorg/Catch2][catchorg/Catch2]]                             :language:cpp:test:framework:
+    Modern test framework in a header (or few, with extensions).
 ** Lisp
 *** [[http://norvig.com/lispy.html][(How to Write a (Lisp) Interpreter (in Python))]] :norvig:implementing:lisp:in:python:2010:
 *** [[https://carld.github.io/2017/06/20/lisp-in-less-than-200-lines-of-c.html][Lisp In Less Than 200 Lines Of C]] 		:implementing:lisp:in:c:2017:
