@@ -487,6 +487,51 @@ Nice recap of maze generation algorithms from a minecraft modder.  Check out his
 #+END_SRC
 *** [[https://github.com/catchorg/Catch2][catchorg/Catch2]]                             :language:cpp:test:framework:
     Modern test framework in a header (or few, with extensions).
+*** Command Line Argument Parsing
+**** [[https://github.com/kmurray/libargparse][kmurray/libargparse]]         :language:cpp:argument:parsing:library:2017:
+    A C++11 command-line parsing single-header library inspired by Python's =argparse=.
+**** [[https://github.com/catchorg/Clara][catchorg/Clara]] :language:cpp:argument:parsing:library:2018:
+     A simple to use, composable, command line parser for C++ 11 and beyond in a single-header library.
+#+BEGIN_SRC cpp
+int width = 0;
+std::string name;
+bool doIt = false;
+std::string command;
+auto cli
+    = Opt( width, "width" )
+        ["-w"]["--width"]
+        ("How wide should it be?")
+    | Opt( name, "name" )
+        ["-n"]["--name"]
+        ("By what name should I be known")
+    | Opt( doIt )
+        ["-d"]["--doit"]
+        ("Do the thing" )
+    | Arg( command, "command" )
+        ("which command to run");
+#+END_SRC
+**** [[https://github.com/muellan/clipp][meullan/clipp]] :language:cpp:argument:parsing:library:2018:
+     Easy to use, powerful and expressive command line argument handling for C++11/14/17 contained in a single header file.
+#+BEGIN_SRC cpp
+#include <iostream>
+#include "clipp.h"
+using namespace clipp; using std::cout; using std::string;
+
+int main(int argc, char* argv[]) {
+    bool rec = false, utf16 = false;
+    string infile = "", fmt = "csv";
+
+    auto cli = (
+        value("input file", infile),
+        option("-r", "--recursive").set(rec).doc("convert files recursively"),
+        option("-o") & value("output format", fmt),
+        option("-utf16").set(utf16).doc("use UTF-16 encoding")
+    );
+
+    if(!parse(argc, argv, cli)) cout << make_man_page(cli, argv[0]);
+    // ...
+}
+#+END_SRC
 ** Lisp
 *** [[http://norvig.com/lispy.html][(How to Write a (Lisp) Interpreter (in Python))]] :norvig:implementing:lisp:in:python:2010:
 *** [[https://carld.github.io/2017/06/20/lisp-in-less-than-200-lines-of-c.html][Lisp In Less Than 200 Lines Of C]] 		:implementing:lisp:in:c:2017:
@@ -730,19 +775,19 @@ git log --oneline --decorate --all --graph
 *** Rebase
 #+CAPTION: Learning about git rebase, the hard way
 #+BEGIN_SRC shell
-cd ../lgthw_origin 
+cd ../lgthw_origin
 git status
-echo origin_change_rebase >> afile 
-git commit -am 'origin change rebase' 
+echo origin_change_rebase >> afile
+git commit -am 'origin change rebase'
 git log --oneline --decorate --all --graph
-cd ../lgthw_cloned 
-echo cloned_change_rebase >> anewfile 
-git add anewfile 
-git commit -m 'cloned change rebase in anewfile' 
-git log --oneline --decorate --all --graph 
-git fetch origin 
-git log --oneline --decorate --all --graph 
-git rebase origin/master 
+cd ../lgthw_cloned
+echo cloned_change_rebase >> anewfile
+git add anewfile
+git commit -m 'cloned change rebase in anewfile'
+git log --oneline --decorate --all --graph
+git fetch origin
+git log --oneline --decorate --all --graph
+git rebase origin/master
 git log --oneline --decorate --all --graph
 #+END_SRC
 * Shells and Terminals
