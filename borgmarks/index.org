@@ -474,6 +474,7 @@ Nice recap of maze generation algorithms from a minecraft modder.  Check out his
 
 *** [[https://github.com/rigtorp/awesome-modern-cpp][rigtorp/awesome-modern-cpp]] :language:cpp:awesome:list:2016:
 *** [[https://docs.microsoft.com/en-us/cpp/cpp/welcome-back-to-cpp-modern-cpp][Microsoft: Welcome back to C++ - Modern C++]] :language:cpp11:cpp14:2016:
+*** [[https://google.github.io/styleguide/cppguide.html][Google C++ Style Guide]] :language:cpp:style:guide:
 *** [[https://github.com/isocpp/CppCoreGuidelines][isocpp/CppCoreGuidelines]] :language:cpp11:cpp14:cpp17:guidelines:2018:
     C++ core guidelines maintained by Dr. Bjarne Stroustrup.
 **** [[http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines][ISO CPP: C++ Core Guidelines]] :language:cpp11:cpp14:cpp17:guidelines:2018:
