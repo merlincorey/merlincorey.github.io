@@ -205,6 +205,7 @@ Surviving are his wife of 54 years, Tomoko, of Oberlin, Ohio; and two daughters,
 *** [[https://github.com/makmanalp/sqlalchemy-crosstab-postgresql][sqlalchemy-crosstab-postgresql]]
 * Development Environments and Editors
 ** [[https://ecc-comp.blogspot.com/2015/05/a-brief-glance-at-how-5-text-editors.html][A Brief Glance at How Various Text Editors Manage Their Textual Data]] :editors:data:structures:text:representation:2015:
+** [[https://blog.d46.us/zsh-tmux-emacs-copy-paste/][ZSH, tmux, Emacs and SSH: A copy-paste story]] :environments:editors:copy:paste:compatibility:
 ** Emacs
 *** [[https://www.emacswiki.org/][Emacs Wiki]] 				       :emacs:xemacs:emacs:lisp:wiki:
 *** [[http://orgmode.org/manual/][OrgMode Manual]] 				      :emacs:org:mode:manual:
@@ -222,6 +223,7 @@ Surviving are his wife of 54 years, Tomoko, of Oberlin, Ohio; and two daughters,
 *** [[https://github.com/rnkn/fountain-mode][fountain-mode - Emacs major mode for screenwriting in Fountain plaintext markup]] :emacs:package:screenwriting:
 *** [[http://howardism.org/Technical/Emacs/literate-devops.html][Literate Devops]] :emacs:org:mode:devops:
 **** [[https://www.youtube.com/watch?v=dljNabciEGg][YouTube: Literate Devops]]           :emacs:org:mode:devops:youtube:video:
+*** [[https://ambrevar.bitbucket.io/emacs-eshell/][eshell as a main shell]] :emacs:eshell:2017:
 * Free Books
 ** [[http://www.ccs.neu.edu/home/matthias/HtDP2e/][How to Design Programs 2]] :book:scheme:2014:
 ** [[https://softwarefoundations.cis.upenn.edu/][Software Foundations Series (books)]] :books:logic:math:computer:science:proofs:coq:
@@ -489,13 +491,14 @@ Nice recap of maze generation algorithms from a minecraft modder.  Check out his
 (global-set-key [C-M-tab] 'clang-format-region)
 #+END_SRC
 *** [[https://www.conan.io/][conan - The C / C++ package manager for developers]] :language:cpp:library:package:manager:
-*** Testing
-**** [[https://github.com/catchorg/Catch2][catchorg/Catch2]]                       :language:cpp:test:framework:2018:
+*** Libraries
+**** Testing
+***** [[https://github.com/catchorg/Catch2][catchorg/Catch2]]                      :language:cpp:test:framework:2018:
     Modern test framework in a header (or few, with extensions).
-*** Command Line Argument Parsing
-**** [[https://github.com/kmurray/libargparse][kmurray/libargparse]]         :language:cpp:argument:parsing:library:2017:
+**** Command Line Argument Parsing
+***** [[https://github.com/kmurray/libargparse][kmurray/libargparse]]        :language:cpp:argument:parsing:library:2017:
     A C++11 command-line parsing single-header library inspired by Python's =argparse=.
-**** [[https://github.com/catchorg/Clara][catchorg/Clara]] :language:cpp:argument:parsing:library:2018:
+***** [[https://github.com/catchorg/Clara][catchorg/Clara]]             :language:cpp:argument:parsing:library:2018:
      A simple to use, composable, command line parser for C++ 11 and beyond in a single-header library.
 #+BEGIN_SRC cpp
 int width = 0;
@@ -515,7 +518,7 @@ auto cli
     | Arg( command, "command" )
         ("which command to run");
 #+END_SRC
-**** [[https://github.com/muellan/clipp][meullan/clipp]] :language:cpp:argument:parsing:library:2018:
+***** [[https://github.com/muellan/clipp][meullan/clipp]]              :language:cpp:argument:parsing:library:2018:
      Easy to use, powerful and expressive command line argument handling for C++11/14/17 contained in a single header file.
 #+BEGIN_SRC cpp
 #include <iostream>
@@ -537,12 +540,20 @@ int main(int argc, char* argv[]) {
     // ...
 }
 #+END_SRC
-*** Terminal Colors
-**** [[https://github.com/agauniyal/rang][agaunival/rang]] :language:cpp:terminal:colors:library:2018:
+**** Terminal Colors
+***** [[https://github.com/agauniyal/rang][agaunival/rang]]              :language:cpp:terminal:colors:library:2018:
      A Minimal, Header only Modern c++ library for colors in your terminal.
+**** Formatting
+***** [[https://github.com/fmtlib/fmt][fmtlib/fmt]]                        :language:cpp:string:formatting:2018:
+     Pythonic and C-style stand-alone and efficient (compile and runtime).
+     Implements [[http://fmtlib.net/Text%20Formatting.html][P0645 Text Formatting]] C++ standards proposal.
+**** Functional
+***** [[https://github.com/beark/ftl][beark/ftl]]                                :language:cpp:functional:2015:
 *** Videos
 **** [[https://www.youtube.com/watch?v=hEx5DNLWGgA][CppCon 2015: Herb Sutter "Writing Good C++14... By Default"]] :video:talk:language:cpp:sutter:2015:
 **** [[https://www.youtube.com/watch?v=fX2W3nNjJIo][CppCon 2017: Bjarne Stroustrup “Learning and Teaching Modern C++”]] :video:talk:language:cpp:stroustrup:2017:
+** Erlang
+*** [[https://happi.github.io/theBeamBook/][The Erlang Runtime System (a.k.a. The Beam Book]] :book:erlang:runtime:
 ** Lisp
 *** [[http://norvig.com/lispy.html][(How to Write a (Lisp) Interpreter (in Python))]] :norvig:implementing:lisp:in:python:2010:
 *** [[https://carld.github.io/2017/06/20/lisp-in-less-than-200-lines-of-c.html][Lisp In Less Than 200 Lines Of C]] 		:implementing:lisp:in:c:2017:
@@ -801,6 +812,7 @@ git log --oneline --decorate --all --graph
 git rebase origin/master
 git log --oneline --decorate --all --graph
 #+END_SRC
+** [[http://www.catb.org/esr/reposurgeon/][esr/reposurgeon]] :revision:control:repository:surgery:2018:
 * Shells and Terminals
 ** [[https://zanshin.net/2013/02/02/zsh-configuration-from-the-ground-up/][Zsh Configuration From the Ground Up]] :zsh:configuration:tutorial:2013:
 ** [[http://www.howardism.org/Technical/Emacs/eshell-fun.html][Eschewing Zshell for Emacs Shell]] :zsh:emacs:eshell:
@@ -914,6 +926,8 @@ The Eye's Rom Section is a project dedicated towards the preservation and archiv
    - UTC already exists for synchronizing times regardless of time zone
    - The past will still have timezones and each region will switch at different times so you'll still need =zoneinfo= databases
 
+** [[http://spacecraft.ssl.umd.edu/akins_laws.html][Akin's Laws of Spacecraft Design]] :engineering:spacecraft:design:axioms:
+** [[https://hackernoon.com/12-manager-readmes-from-silicon-valleys-top-tech-companies-26588a660afe][12 Manager READMEs from Silicon Valley's Top Tech Companies]] :management:2018:
 * UNIX and BSD
 ** [[https://fosdem.org/2017/schedule/event/my_bsd_sucks_less/][My BSD Sucks Less Than Yours]] :talk:unix:openbsd:freebsd:
 
