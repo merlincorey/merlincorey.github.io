@@ -141,17 +141,16 @@ o$22b2o3bo$21bo$21b2obo$20bo$19b5o$19bo4bo$18b3ob3o$18bob5o$18bo$20bo$
 ** [[https://github.com/gchq/CyberChef][GCHQ CyberChef]] :cryptography:tools:
    Forked on my own github [[https://github.com/merlincorey/CyberChef][merlincorey/CyberChef]].
 ** [[https://cryptopals.com/][Cryptopals]] :cryptography:ctf:
-** Crypto currencies
-*** [[http://www.righto.com/2014/09/mining-bitcoin-with-pencil-and-paper.html][Mining Bitcoin with pencil and paper: 0.67 hashes per day]] :cryptography:currency:bitcoin:2014:
-*** [[http://www.righto.com/2014/02/ascii-bernanke-wikileaks-photographs.html][Hidden surprises in the Bitcoin blockchain and how they are stored: Nelson Mandela, Wikileaks, photos, and Python software]] :cryptography:currency:blockchain:creative:hacking:2014:
-*** [[https://storeofvalue.github.io/posts/cryptocurrency-hacks-so-far-august-24th/][List Of High Profile Cryptocurrency Hacks So Far]] :cryptography:currency:crime:and:theft:2017:
-*** [[http://www.jsfour.com/can-you-really-hack-ethereum-smart-contracts/][Can you really hack Ethereum smart contracts?]] :cryptography:currency:ethereum:hate:2017:
-*** [[http://www.michaelburge.us/2017/08/31/roll-your-own-bitcoin-exchange.html][Roll your Own Bitcoin Exchange in Haskell]] :cryptography:currency:exchange:haskell:
-*** [[https://hackernoon.com/why-everyone-missed-the-most-important-invention-in-the-last-500-years-c90b0151c169][Why Everyone Missed the Most Important Invention in the Last 500 Years]] :cryptography:accounting:triple:entry:bookkeeping:
-**** [[https://www.cmu.edu/piper/news/archives/2017/january/yuji-ijiri-obituary.html][Yuji Ijiri's obituary at CMU]] :obituary::2017:
-
-    #+CAPTION:
-    #+BEGIN_QUOTE
+* Crypto currencies
+** [[http://www.righto.com/2014/09/mining-bitcoin-with-pencil-and-paper.html][Mining Bitcoin with pencil and paper: 0.67 hashes per day]] :cryptography:currency:bitcoin:2014:
+** [[http://www.righto.com/2014/02/ascii-bernanke-wikileaks-photographs.html][Hidden surprises in the Bitcoin blockchain and how they are stored: Nelson Mandela, Wikileaks, photos, and Python software]] :cryptography:currency:blockchain:creative:hacking:2014:
+** [[https://storeofvalue.github.io/posts/cryptocurrency-hacks-so-far-august-24th/][List Of High Profile Cryptocurrency Hacks So Far]] :cryptography:currency:crime:and:theft:2017:
+** [[http://www.jsfour.com/can-you-really-hack-ethereum-smart-contracts/][Can you really hack Ethereum smart contracts?]] :cryptography:currency:ethereum:hate:2017:
+** [[http://www.michaelburge.us/2017/08/31/roll-your-own-bitcoin-exchange.html][Roll your Own Bitcoin Exchange in Haskell]] :cryptography:currency:exchange:haskell:
+** [[https://hackernoon.com/why-everyone-missed-the-most-important-invention-in-the-last-500-years-c90b0151c169][Why Everyone Missed the Most Important Invention in the Last 500 Years]] :cryptography:accounting:triple:entry:bookkeeping:
+*** [[https://www.cmu.edu/piper/news/archives/2017/january/yuji-ijiri-obituary.html][Yuji Ijiri's obituary at CMU]]                             :obituary::2017:
+#+CAPTION:
+#+BEGIN_QUOTE
 Former Carnegie Mellon University professor Yuji Ijiri, founder of the transitional momentum accounting practice, also known as triple-entry accounting, died on Jan. 18. He was 81.
 
 Born Feb. 24, 1935, educated and employed as an accountant in his native Japan, Ijiri later adopted the Graduate School of Industrial Administration (GSIA), now the Tepper School of Business, and Carnegie Mellon University as his workplace and home for the final half-century of his life. He earned a Ph.D. in industrial administration at Carnegie Mellon in 1963 and, after four years at the Stanford Graduate School of Business, joined the faculty of GSIA. He remained a central Carnegie Mellon figure from 1967 until his death.
@@ -171,10 +170,21 @@ He worked at a small accounting firm and then with Price Waterhouse & Co. before
 Ijiri also was recognized internationally in accounting for aggregation theory, firm size distributions, accounting measurement theory, computer languages, and quantitative models in business and economics. Fair value accounting in the early 2000s brought his concepts to the forefront again, and among his final papers were works exploring connections between triple-entry accounting and quantum physics and quantum computing. At Carnegie Mellon, his service included academic councils, dean policy advisory and more. He was awarded the Weil Prize for faculty research in 2009-10. Established in 1990, the Yuji Ijiri Award for Excellence in Accounting is awarded to an MBA student during the school’s diploma ceremony each year.
 
 Surviving are his wife of 54 years, Tomoko, of Oberlin, Ohio; and two daughters, Yumi (Oberlin, Ohio) and Lisa (Boston, Massachusetts).
-    #+END_QUOTE
+#+END_QUOTE
 
-**** [[http://iang.org/papers/triple_entry.html][Triple Entry Accounting - Ian Grigg Systemics, Inc.]] :paper:2005:
-*** [[https://blog.keep.network/miners-arent-your-friends-cde9b6e0e9ac?gi=21d51593759c][Miners Aren’t Your Friends: Miners and Consensus: Part 1 of 2]] :cryptography:currency:2018:
+** [[http://iang.org/papers/triple_entry.html][Triple Entry Accounting - Ian Grigg Systemics, Inc.]]           :paper:2005:
+** [[https://blog.keep.network/miners-arent-your-friends-cde9b6e0e9ac?gi=21d51593759c][Miners Aren’t Your Friends: Miners and Consensus: Part 1 of 2]] :cryptography:currency:2018:
+** [[https://www.michaelburge.us/2017/11/28/write-your-next-ethereum-contract-in-pyramid-scheme.html][Write your next Ethereum Contract in Pyramid Scheme]] :cryptography:currency:2017:
+** [[https://www.michaelburge.us/2018/05/15/ethereum-chess-engine.html][DSLs for Ethereum Contracts]] :cryptography:currency:2018:
+** [[https://ethfiddle.com/][EtherFiddle]] :cryptography:currency:ethereum:solidity:ide:
+** [[https://ico.red-lang.org/RED-whitepaper.pdf][RED: a full-stack, open-source toolchain for simple smart contracts and decentralized apps development]] :paper:cryptography:currency:smart:contracts:language:2018:
+** [[https://medium.com/axoni/axlang-formally-verifiable-smart-contracts-for-the-ethereum-ecosystem-6201203be4e8][AxLang: Formally Verifiable Smart Contracts for the Ethereum Ecosystem]] :cryptography:currency:smart:contracts:language:2018:
+** [[https://consensys.github.io/smart-contract-best-practices/security_tools/][Ethereum Smart Contract Best Practices: Static Analysis]] :cryptography:currency:ethereum:smart:contracts:2018:
+** [[https://medium.com/loom-network/how-to-secure-your-smart-contracts-6-solidity-vulnerabilities-and-how-to-avoid-them-part-1-c33048d4d17d][How to Secure Your Smart Contracts: 6 Solidity Vulnerabilities and how to avoid them (Part 1)]] :cryptography:currency:ethereum:smart:contracts:2018:
+*** [[https://medium.com/loom-network/how-to-secure-your-smart-contracts-6-solidity-vulnerabilities-and-how-to-avoid-them-part-2-730db0aa4834][How to Secure Your Smart Contracts: 6 Solidity Vulnerabilities and how to avoid them (Part 2)]] :cryptography:currency:ethereum:smart:contracts:2018:
+** [[https://medium.com/@codetractio/inside-an-ethereum-transaction-fa94ffca912f][Inside an Ethereum transaction]] :cryptography:currency:ethereum:2017:
+** [[https://medium.com/@merunasgrincalaitis/how-to-audit-a-smart-contract-most-dangerous-attacks-in-solidity-ae402a7e7868][The ultimate guide to audit a Smart Contract + Most dangerous attacks]] :cryptography:currency:smart:contracts:2017:
+** [[https://blog.colony.io/writing-upgradeable-contracts-in-solidity-6743f0eecc88][Writing upgradable contracts in Solidity]] :cryptography:currency:smart:contracts:2018:
 * Datastructures, Databases, and Filesystems
 ** [[http://www.eelis.net/C++/analogliterals.xhtml][Multi-Dimensional Analog Literals]] :datastructures:analog:literals:2006:
 ** [[https://www.interviewcake.com/article/python/data-structures-coding-interview][Datastructures for Coding Interviews]]    :datastructures:python:interviews:
@@ -313,6 +323,7 @@ These indeed can make your CSS code work for both the stone age and hottest brow
 ** [[http://eli.thegreenplace.net/2017/reducers-transducers-and-coreasync-in-clojure/][Reducers, transducers, and core.async in clojure]] :functional:programming:clojure:
 ** [[http://adit.io/posts/2013-04-17-functors,_applicatives,_and_monads_in_pictures.html][Functors, Applicatives, And Monads In Pictures]] :functional:programming:functors:monads:visualizations:
 ** [[https://patrickmn.com/software/the-haskell-pyramid/][The Haskell Pyramid]] :functional:programming:haskell:
+** [[https://mostly-adequate.gitbooks.io/mostly-adequate-guide/][Professor Frisby's Mostly Adequate Guide to Functional Programming]] :book:functional:programming:javascript:
 * Game Development
 ** [[https://www.haroldserrano.com/blog/books-i-used-to-develop-a-game-engine][Books I had to read to develop a game engine]] :game:development:game:engine:2018:
 ** [[http://www.helixsoft.nl/articles/circle/sincos.htm][Sin & Cos: The Programmer's Pals!]] :game:development:mathematics:trigonometry:
@@ -413,6 +424,35 @@ Nice recap of maze generation algorithms from a minecraft modder.  Check out his
 ** [[http://ieeexplore.ieee.org/document/7497221/][TCP Hollywood]] :networking:protocols:2016:
 ** [[https://www.schoenitzer.de/blog/2018/Linux%20Raw%20Sockets.html][Linux Raw Sockets]] :networking:raw:sockets:linux:2018:
 ** [[https://startyourownisp.com/][Start your own (wireless) ISP]] :networking:wisp:2018:
+** [[https://www.fastly.com/blog/headers-we-dont-want][The headers we don't want]] :networking:http:headers:2018:
+*** [[https://news.ycombinator.com/item?id=17074721][Hacker News Discussion #17074721]] :2018:
+**** Importance of Via
+#+CAPTION: buro9 on via
+#+BEGIN_QUOTE
+Via is not safe to remove and Fastly know this as well as Akamai, Cloudflare and others.
+
+A very cheap attack is to chain CDNs into a nice circle. This is what Via protects against: https://blog.cloudflare.com/preventing-malicious-request-loops/
+
+Just because a browser doesn't use a header does not make the header superfluous.
+#+END_QUOTE
+**** Expires tricks
+#+CAPTION: justinsaccount on expires
+#+BEGIN_QUOTE
+
+cache-control doesn't completely replace Expires for some use cases.
+
+If you have a scheduled task that generates data every hour, you can set Expires accordingly so all clients will refresh the data as soon as the hour rolls over.
+
+You can do this using max-age but then you have to dynamically calculate this header per request which means you can't do things like upload your data to s3 and set the cache-control header on it.
+
+With expires, I can upload a file to s3 and set
+
+    Expires: ... 17:00
+
+and then not have to touch it again for an hour.
+
+you can work around this client side with per hour filenames or the other usual cache busting tricks, but that's annoying.
+#+END_QUOTE
 * Object Oriented Programming and Design
 ** [[https://ericlippert.com/2015/04/27/wizards-and-warriors-part-one/][Wizards and Warriors: Part One]] :object:oriented:design:
 *** [[https://ericlippert.com/2015/04/30/wizards-and-warriors-part-two/][Wizards and Warriors: Part Two]] :object:oriented:design:
@@ -558,6 +598,10 @@ int main(int argc, char* argv[]) {
 **** [[https://www.youtube.com/watch?v=fX2W3nNjJIo][CppCon 2017: Bjarne Stroustrup “Learning and Teaching Modern C++”]] :video:talk:language:cpp:stroustrup:2017:
 ** Erlang
 *** [[https://happi.github.io/theBeamBook/][The Erlang Runtime System (a.k.a. The Beam Book]] :book:erlang:runtime:
+** Javascript
+*** [[https://github.com/mozilla/narcissus/][mozilla/narcissus]] :javascript:meta:circular:interpreter:2012:
+*** [[https://egghead.io/courses/professor-frisby-introduces-composable-functional-javascript][Professor Frisby introduces composable functional Javascript]] :video:course:javascript:functional:programming:
+*** [[https://github.com/isomorphic-git/isomorphic-git][isomorphic-git/isomorphic-git]] :javascript:git:implementation:2018:
 ** Lisp
 *** [[http://norvig.com/lispy.html][(How to Write a (Lisp) Interpreter (in Python))]] :norvig:implementing:lisp:in:python:2010:
 *** [[https://carld.github.io/2017/06/20/lisp-in-less-than-200-lines-of-c.html][Lisp In Less Than 200 Lines Of C]] 		:implementing:lisp:in:c:2017:
@@ -822,6 +866,7 @@ git log --oneline --decorate --all --graph
 ** [[http://www.howardism.org/Technical/Emacs/eshell-fun.html][Eschewing Zshell for Emacs Shell]] :zsh:emacs:eshell:
 
 ** [[https://termux.com][Termux]] :android:terminal:emulator:
+** [[https://github.com/anordal/shellharden/blob/master/how_to_do_things_safely_in_bash.md][anordal/shellharden: How to do things safely in bash]] :bash:shell:safety:2018:
 * Software Engineering
 ** [[http://python.apichecklist.com/][Python API Checklist]] :python:api:programming:checklist:2017:
 ** [[https://blog.ionelmc.ro/2014/06/25/python-packaging-pitfalls/][Python Packaging Pitfalls]] :python:packaging:2014:
@@ -932,6 +977,27 @@ The Eye's Rom Section is a project dedicated towards the preservation and archiv
 
 ** [[http://spacecraft.ssl.umd.edu/akins_laws.html][Akin's Laws of Spacecraft Design]] :engineering:spacecraft:design:axioms:
 ** [[https://hackernoon.com/12-manager-readmes-from-silicon-valleys-top-tech-companies-26588a660afe][12 Manager READMEs from Silicon Valley's Top Tech Companies]] :management:2018:
+** [[https://tp69.wordpress.com/2018/04/17/completely-silent-computer/][Completely Silent Computer]] :computer:hardware:2018:
+*** [[https://news.ycombinator.com/item?id=17075489][Hacker News Discussion #17075489]] :2018:
+#+CAPTION: baseethrowaway comments on their setup
+#+BEGIN_QUOTE
+One can make a passive build much more powerful.
+
+NSG S0, once out, will most likely be the go-to case for such setups.
+Until then, an HDPLEX H5 is cool.
+
+My desk has a H5 on it, housing an i7 8700 (non-K) and a GTX 1060.
+The TIM under the heatspreader is replaced with Thermal Grizzly Conductonaut and Thermal Grizzly Kryonaut is used as every other TIM that the case setup needs.
+The CPU is on stock clocks with a voltage offset of -30 mV.
+The GPU has the power target reduced to 90% and clocks increased by 130 MHz, so that it is effectively undervolted as well.
+The PSU is a Seasonic Ultra Prime Titanium 650.
+Prime95 with AVX throttles really, really fast, under a minute, perhaps, but is a very unrealistic load.
+Non-AVX stress tests and FurMark take a while to start throttling (20 minutes?), as the thermal capacity of the aluminum case is quite big.
+After hours of gaming, the GPU and CPU float around 80 C while providing full stock performance.
+I don't do 3D rendering (other than in-game) or video en/decoding, so have not had long, real-world, full loads to see how temperatures behave with those.
+
+From the discussion I've had and forums I've read, I think that people are afraid of putting more power in passive cases and having their components at "high" temperatures, despite those being rated for them.
+#+END_QUOTE
 * UNIX and BSD
 ** [[https://fosdem.org/2017/schedule/event/my_bsd_sucks_less/][My BSD Sucks Less Than Yours]] :talk:unix:openbsd:freebsd:
 
