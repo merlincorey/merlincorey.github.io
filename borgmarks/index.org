@@ -64,6 +64,46 @@ Curated, categorized, and tagged by hand.
 ** [[https://graphics.stanford.edu/~seander/bithacks.html][Bit Twiddling Hacks]] :algorithms:encoding:decoding:bit:twiddling:2005:
 ** [[http://blog.refdash.com/dynamic-programming-tutorial-example/][Dynamic Programming – 7 Steps to Solve any DP Interview Problem]] :algorithms:dynamic:programming:recurrence:2018:
 *** [[https://www.youtube.com/watch?v=kKhnYLpME3w][Refdash Demystifying Interviews - Dynamic Programming]] :video:algorithms:dynamic:programming:recurrence:2018:
+** [[https://github.com/trekhleb/javascript-algorithms][trekhleb/javacript-algorithms]] :algorithms:datastructures:javascript:2018:
+*** [[https://news.ycombinator.com/item?id=17134831][Hacker News Discussion #17134831]] :discussion:algorithms:datastructures:javascript:2018:
+#+CAPTION: eximius gets down and dirty
+#+BEGIN_QUOTE
+The documentation and code quality is all good.
+
+The implementation choices leave some things to be desired.
+The Queue and Stack implementations are Linked Lists instead of array backed, the hash table is closed instead of (the only barely more complicated) open Robin hood hash table scheme, the union-find/disjoint-set implementation doesn't have path compression or rank unions.
+
+Overall very good, but it could be Great (tm) with just a little bit of work.
+#+END_QUOTE
+
+#+CAPTION: deathanatos expounds and wonders
+#+BEGIN_QUOTE
+> I thought array-based queues resulted in O(n) queue/dequeue.
+
+Not necessarily. A circular buffer[1] can be used as a queue with O(1) queue/dequeue. C++ implementations (gcc?), IIRC, uses an interesting array-of-arrays approach; it also has O(1) queue/dequeue. I'm not sure why the array-of-arrays approach is better than a circular buffer, though.
+
+Array based designs can result is less allocations, and maybe less overhead. For example, if you have a circular buffer with space for 16 items, it only needs to allocate space if you need more room, whereas a linked list queue would allocate for each and every item placed into it. Linked lists also require space for the pointer to the next link, for each link in the list. (And, if you keep them, back pointers, though these aren't necessary for just a queue.) Arrays might have some unused slack space, however.
+
+[1]: https://en.wikipedia.org/wiki/Circular_buffer
+#+END_QUOTE
+
+#+CAPTION: jayd16 opines
+#+BEGIN_QUOTE
+Resizing a fully contiguous circle buffer would cause a copy every element as well forcing you to make a single contiguous memory section.
+Array of arrays just needs to resize the top level array.
+#+END_QUOTE
+
+#+CAPTION: manwe150 sublimes
+#+BEGIN_QUOTE
+But the copy only has to move n items, but was constructed with m items, where n < m (and usually n << m).
+Where n is the max size of the queue and m is the total number of items that will ever be enqueued.
+
+On the other hand, an array of arrays (no recursion) doesn’t change the big-O complexity cost, just the constant multiplier.
+That should definitely improve performance of the uncommon operation (the copy), but hypothetically might slow down the actual queuing operations (and drastically reduce throughout)
+
+But maybe you meant the array of arrays to be recursive? That seems like it would alter the big-O (from n+m to log(n)+m).
+But typically m>>n, so the net result is the same.
+#+END_QUOTE
 * Artificial Life
 ** [[https://codegolf.stackexchange.com/questions/11880/build-a-working-game-of-tetris-in-conways-game-of-life][Build a working game of Tetris in Conway's Game of Life]] :artificial:life:computer:tetris:in:game:of:life:
 
@@ -204,6 +244,7 @@ Surviving are his wife of 54 years, Tomoko, of Oberlin, Ohio; and two daughters,
 ** [[https://rcoh.me/posts/cache-oblivious-datastructures/][Cache Oblivious Datastructures]] :datastructures:cache:obliious:2017:
 ** [[https://modern-sql.com/use-case/pivot][SQL Pivot — Rows to Columns]] :databases:sql:pivot:
 ** [[http://seriot.ch/parsing_json.php][Parsing JSON is a Minefield]] :datastructure:parsing:json:2016:2018:
+** [[http://canonical.org/~kragen/memory-models/][The memory models that underlie programming languages]] :datastructures:programming:languages:memory:models:2016:
 ** Alembic
 *** [[http://www.chesnok.com/daily/2013/07/02/a-practical-guide-to-using-alembic/][A Practical Guide to using Alembic]] :database:migrations:sqlalchemy:alembic:
 *** [[https://www.compose.com/articles/schema-migrations-with-alembic-python-and-postgresql/][Schema Migrations with Alembic, Python, and PostgreSQL]] :databse:migrations:sqlalchemy:alembic:postgres:
@@ -235,11 +276,12 @@ Surviving are his wife of 54 years, Tomoko, of Oberlin, Ohio; and two daughters,
 **** [[https://news.ycombinator.com/item?id=17048907][Hackernews Discussion #17048907]] :2018:
 **** [[https://github.com/incandescentman/Emacs-Settings][incandescentman/Emacs-Settings]] :emacs:configuration:
 *** [[https://github.com/melling/EditorNotes/blob/master/emacs.org][melling/EditorNotes: Emacs]] :emacs:writers:
-* Free Books
-** [[http://www.ccs.neu.edu/home/matthias/HtDP2e/][How to Design Programs 2]] :book:scheme:2014:
-** [[https://softwarefoundations.cis.upenn.edu/][Software Foundations Series (books)]] :books:logic:math:computer:science:proofs:coq:
-** [[http://adam.chlipala.net/cpdt/][Certified Programming with Dependent Types]] :book:logic:types:proofs:coq:2017:
-* Game Consoles
+* Emulators and Game Consoles
+** [[http://www.codeslinger.co.uk/pages/basics.html][codeslinger Emulation Basics]] :emulator:2008:
+*** [[http://www.codeslinger.co.uk/files/emu.pdf][Study of the techniques for emulation programming]] :paper:emulation:2001:
+*** [[http://www.codeslinger.co.uk/pages/projects/chip8.html][codeslinger chip8 emulator]] :emulator:chip8:2008:
+** [[http://www.emulator101.com/][Emulator 101]] :emulator:arcade:tutorial:2016:
+** [[https://problemkaputt.de/gbatek.htm][GBATek - Gameboy Advance / Nintendo DS / DSi - Technical Info]] :nintendo:gameboy:nintendo:dsi:documentation:
 ** Nintendo Entertainment System
 *** [[https://github.com/blanham/ChickeNES][blanham/ChickeNES]] :nintendo:entertainment:system:emulator:c:2013:2015:
 *** [[https://medium.com/@fogleman/i-made-an-nes-emulator-here-s-what-i-learned-about-the-original-nintendo-2e078c9b28fe][I made an NES emulator. Here’s what I learned about the original Nintendo.]] :nintendo:entertainment:system:emulator:2015:
@@ -249,6 +291,22 @@ Surviving are his wife of 54 years, Tomoko, of Oberlin, Ohio; and two daughters,
 *** [[https://nesdoug.com/][How to Program an NES game in C]] :programming:nintendo:entertainment:system:2017:
 *** [[https://tedium.co/2018/04/10/nes-homebrew-scene-history/][The strange and wonderful world of homebrew games for the original Nintendo Entertainment System.]] :nintendo:entertainment:system:homebrew:2018:
 *** [[https://www.moria.us/blog/2018/03/nes-development][NES Development Day 1: Creating a ROM]] :nintendo:entertainment:system:rom:programming:2018:
+*** [[https://wiki.nesdev.com/][NES Dev Wiki]] :nintendo:entertainment:system:dev:wiki:
+** Nintendo Gameboy
+*** [[http://marc.rawer.de/Gameboy/Docs/GBCPUman.pdf][Game Boy CPU Manual]] :nintendo:gameboy:manual:
+*** [[http://gbdev.gg8.se/wiki/][Gameboy Dev Wiki]]                                  :nintendo:gameboy:wiki:
+**** [[http://gbdev.gg8.se/wiki/articles/Gameboy_sound_hardware][Gameboy Dev Wiki: Gameboy sound hardware]]        :nintendo:gameboy:sound:
+*** [[http://bgb.bircd.org/pandocs.htm][PANDOCS: Everything You Always Wanted to Know about GAMEBOY]] :nintendo:gameboy:documentation:2001:
+*** [[http://gbdev.gg8.se/files/roms/blargg-gb-tests/][Blargg's Gameboy Tests]] :nintendo:gameboy:test:suite:2013:
+*** [[https://github.com/djhworld/gomeboycolor][djhworld/gomeboycolor]] :nintendo:gameboy:emulator:golang:2013:
+*** [[https://www.youtube.com/watch?v=HyzD8pNlpwI][The Ultimate Game Boy Talk (33c3)]]           :video:nintendo:gameboy:2016:
+*** [[http://blog.rekawek.eu/2017/02/09/coffee-gb/][Why did I spend 1.5 months creating a Gameboy emulator?]] :nintendo:gameboy:emulator:java:2017:
+**** [[https://github.com/trekawek/coffee-gb/][trekawek/coffee-gb]] :nintendo:gameboy:emulator:java:2017:
+
+* Free Books
+** [[http://www.ccs.neu.edu/home/matthias/HtDP2e/][How to Design Programs 2]] :book:scheme:2014:
+** [[https://softwarefoundations.cis.upenn.edu/][Software Foundations Series (books)]] :books:logic:math:computer:science:proofs:coq:
+** [[http://adam.chlipala.net/cpdt/][Certified Programming with Dependent Types]] :book:logic:types:proofs:coq:2017:
 * Great Talks
 ** [[https://www.youtube.com/watch?v=Sg4U4r_AgJU][Brian Kernighan - How to succeed at language design without really trying]] :talk:kernighan:language:design:awk:
 
@@ -504,8 +562,13 @@ you can work around this client side with per hour filenames or the other usual 
 * Programming Languages
 ** Assembly
 *** [[http://bob.cs.sonoma.edu/IntroCompOrg-RPi/intro-co-rpi.html][Introduction to Computer Organization: ARM Assembly Language Using the Raspberry Pi]] :assembly:arm:raspberry:pi:
+*** [[https://github.com/ICTeam28/PiFox][ICTeam28/PiFox]] :assembly:arm:raspberry:pi:2014:
 *** [[http://benhoyt.com/writings/pyast64/][Compiling Python syntax to x86-64 assembly for fun and (zero) profit]] :assembly:x86:python:static:2017:
 *** [[https://csl.name/post/python-compiler/][JIT compiling a subset of Python to x86-64]] :assembly:x86:python:jit:2017:
+** C
+*** [[http://www.maizure.org/projects/printf/index.html][Tearing apart printf()]] :c:language:low:level:2018:
+*** Libraries
+**** [[https://github.com/mity/acutest][mitv/acutest]] :c:language:test:framework:2017:
 ** C++
 *** [[https://yosefk.com/c++fqa/][C++ FQA]]                                              :language:cpp98:fqa:
     A bit dated now, especially with regards to consistency between implementations and support for modern features.
