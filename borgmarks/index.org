@@ -147,6 +147,8 @@ o$22b2o3bo$21bo$21b2obo$20bo$19b5o$19bo4bo$18b3ob3o$18bob5o$18bo$20bo$
 
 **** [[https://news.ycombinator.com/item?id=16546152][Hackernews Discussion #16546152]] :2018:
 * Build Systems
+** [[http://lcgapp.cern.ch/project/architecture/recursive_make.pdf][Recursive Make Considered Harmful]] :paper:make:2002:
+** [[http://make.mad-scientist.net/papers/rules-of-makefiles/][GNU Make: Rules of Makefiles]] :make:2002:
 ** [[http://nullprogram.com/blog/2017/08/20/][A Tutorial on Portable Makefiles]] :portable:make:2017:
 ** [[http://gittup.org/tup/build_system_rules_and_algorithms.pdf][Build System Rules and Algorithms]] :paper:shal:build:systems:2009:
 ** [[http://gittup.org/tup/][tup]] :tup:shal:reverse:dag:
