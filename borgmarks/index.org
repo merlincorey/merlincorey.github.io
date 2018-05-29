@@ -1,15 +1,27 @@
+#+TITLE: Borgmarks - Merlin Corey at Github dot I/O
 * Borgmarks
-
 Bookmarks in emacs org-mode.
 
 Curated, categorized, and tagged by hand.
-
 * Theory of organization
-
-   Primary categories are used for bucketing related ideas.
+** Categorization through headings
+   Top-level headings represent broad categories of related links.
 
    Tagging is used for exposing topics related to a particular link.
+** Subcategorization through subheadings
+   Subheadings are used to represent narrower subcategories within a particular category.
 
+   /TODO: Make this consistent/
+   Subheadings should come *BEFORE* or *AFTER* the sibling links.
+** Master list vs Category pages
+   Currently there is only a single page master list, but it is getting very large to manage and read.
+*** Roadmap
+   In the future we will want to have to category and potentially even subcategory pages.
+
+   This will mean either compiling those pages from the master list, or compiling the master list from those pages.
+   Compiling the master list from the categories and subcategories seems most appropriate.
+*** History
+    Originally, Borgmarks was a single =index.org= file with some example =elisp= code.
 ** Theory of operation
 
    Links should be their own headings followed by tags.
@@ -104,6 +116,7 @@ That should definitely improve performance of the uncommon operation (the copy),
 But maybe you meant the array of arrays to be recursive? That seems like it would alter the big-O (from n+m to log(n)+m).
 But typically m>>n, so the net result is the same.
 #+END_QUOTE
+** [[https://gist.github.com/nadavrot/5b35d44e8ba3dd718e595e40184d03f0][High-Performance Matrix Multiplication]] :algorithms:matrix:multiplication:2018:
 * Artificial Life
 ** [[https://codegolf.stackexchange.com/questions/11880/build-a-working-game-of-tetris-in-conways-game-of-life][Build a working game of Tetris in Conway's Game of Life]] :artificial:life:computer:tetris:in:game:of:life:
 
@@ -247,6 +260,8 @@ Surviving are his wife of 54 years, Tomoko, of Oberlin, Ohio; and two daughters,
 ** [[https://modern-sql.com/use-case/pivot][SQL Pivot — Rows to Columns]] :databases:sql:pivot:
 ** [[http://seriot.ch/parsing_json.php][Parsing JSON is a Minefield]] :datastructure:parsing:json:2016:2018:
 ** [[http://canonical.org/~kragen/memory-models/][The memory models that underlie programming languages]] :datastructures:programming:languages:memory:models:2016:
+** [[https://probablydance.com/2018/05/28/a-new-fast-hash-table-in-response-to-googles-new-fast-hash-table/][A new fast hash table in response to Google’s new fast hash table]] :datastructures:hash:table:2018:
+*** [[https://github.com/skarupke/flat_hash_map][skarupke/flat_hash_map]] :datastructures:hash:table:2018:
 ** Alembic
 *** [[http://www.chesnok.com/daily/2013/07/02/a-practical-guide-to-using-alembic/][A Practical Guide to using Alembic]] :database:migrations:sqlalchemy:alembic:
 *** [[https://www.compose.com/articles/schema-migrations-with-alembic-python-and-postgresql/][Schema Migrations with Alembic, Python, and PostgreSQL]] :databse:migrations:sqlalchemy:alembic:postgres:
@@ -305,8 +320,8 @@ Surviving are his wife of 54 years, Tomoko, of Oberlin, Ohio; and two daughters,
 *** [[http://blog.rekawek.eu/2017/02/09/coffee-gb/][Why did I spend 1.5 months creating a Gameboy emulator?]] :nintendo:gameboy:emulator:java:2017:
 **** [[https://github.com/trekawek/coffee-gb/][trekawek/coffee-gb]] :nintendo:gameboy:emulator:java:2017:
 
-* Free Books
-** [[http://www.ccs.neu.edu/home/matthias/HtDP2e/][How to Design Programs 2]] :book:scheme:2014:
+* Free Books (TODO: REMOVE)
+  Books can be categorized by tags to generate a general Books section/page.
 ** [[https://softwarefoundations.cis.upenn.edu/][Software Foundations Series (books)]] :books:logic:math:computer:science:proofs:coq:
 ** [[http://adam.chlipala.net/cpdt/][Certified Programming with Dependent Types]] :book:logic:types:proofs:coq:2017:
 * Great Talks
@@ -561,7 +576,16 @@ you can work around this client side with per hour filenames or the other usual 
 **** [[http://www.diku.dk/hjemmesider/ansatte/henglein/papers/henglein2011c.pdf][Generic Multiset Programming with Discrimination-based Joins and Symbolic Cartesian Products]] :paper:sorting:2011:
 ** [[https://raft.github.io/raft.pdf][In Search of an Understandable Consensus Algorithm]] :paper:distributed:consenus:2014:
 
+* Physics
+** [[https://www.susanjfowler.com/blog/2016/8/13/so-you-want-to-learn-physics][So You Want to Learn Physics...]] :physics:susan:flower:2016:
+** [[https://physicstravelguide.com/][Physics Travel Guides]] :physics:study:tool:
+
+** [[https://landgreen.github.io/physics/index.html][Physics Course Notes with Simulations]] :physics:course:javascript:simulations:2018:
+** [[http://www.falstad.com/mathphysics.html][Math and Physics Simulations]] :physics:java:script:simulations:
+** [[https://phet.colorado.edu/][PhET: Interactive (Physics) Simulations]] :physics:simulations:
 * Programming Languages
+** APL
+*** [[http://wordsandbuttons.online/apl_deserves_its_renaissance_too.html][APL deserves its renaissance too]] 
 ** Assembly
 *** [[http://bob.cs.sonoma.edu/IntroCompOrg-RPi/intro-co-rpi.html][Introduction to Computer Organization: ARM Assembly Language Using the Raspberry Pi]] :assembly:arm:raspberry:pi:
 *** [[https://github.com/ICTeam28/PiFox][ICTeam28/PiFox]] :assembly:arm:raspberry:pi:2014:
@@ -571,6 +595,7 @@ you can work around this client side with per hour filenames or the other usual 
 *** [[http://www.maizure.org/projects/printf/index.html][Tearing apart printf()]] :c:language:low:level:2018:
 *** Libraries
 **** [[https://github.com/mity/acutest][mitv/acutest]] :c:language:test:framework:2017:
+**** [[http://www.glfw.org/index.html][GLFW]] :c:language:opengl:framework:2017:
 ** C++
 *** [[https://yosefk.com/c++fqa/][C++ FQA]]                                              :language:cpp98:fqa:
     A bit dated now, especially with regards to consistency between implementations and support for modern features.
@@ -745,6 +770,9 @@ The biggest feat in science was Newton’s!
 This is why “Lisp is the greatest!”
    #+END_QUOTE
 
+*** [[https://bsima.me/clog/robust-clojure-nil.html][Robust Clojure: The best way to handle nil]] :programming:language:lisp:clojure:nil:null:handling:2018:
+*** [[http://www.ccs.neu.edu/home/matthias/HtDP2e/][How to Design Programs 2]]                               :book:programming:language:lisp:scheme:2014:
+*** [[https://ds26gte.github.io/tyscheme/][Teach Yourself Scheme in FIXNUM days]] :book:programming:language:lisp:scheme:
 ** Python
 *** [[http://automatetheboringstuff.com/chapter0/][Automate the Boring Stuff with Python]] :book:python:programming:automation:
 *** [[http://exploreflask.com][Explore Flask]] :python:programming:web:site:api:
@@ -978,71 +1006,51 @@ git log --oneline --decorate --all --graph
 ** [[http://www.silota.com/docs/recipes/][Advanced SQL Recipes to jumpstart your Analysis]] :sql:tricks:data:analysis:
 ** [[http://www.linusakesson.net/programming/tty/][The TTY Demystified]] :unix:history:tty:
 ** [[http://blog.triplebyte.com/how-to-interview-engineers][How to Interview Engineers]] :hiring:engineers:
-
 ** [[https://the-eye.eu/public/rom/][The Eye's ROM Section]] :open:index:emulation:nes:snes:gba:n64:
-
-The Eye's Rom Section is a project dedicated towards the preservation and archival of video games. All game versions present on the site are already out of production and are unavailable in the primary market.
-
+   The Eye's Rom Section is a project dedicated towards the preservation and archival of video games. All game versions present on the site are already out of production and are unavailable in the primary market.
 ** [[http://willamette.edu/~fruehr/haskell/evolution.html][Evolution of a Haskell Programmer]] :haskell:humor:
 ** [[http://farmos.org/][FarmOS]] :open:source:farm:management:
-
 ** [[https://www.believermag.com/issues/200609/][Destroy All Monsters]] :role:playing:dungeons:and:dragons:2006:
-
 ** [[http://lcamtuf.coredump.cx/prep/][Doomsday planning for less crazy folk]] :planning:for:life:
 ** [[http://rigsomelight.com/2013/09/09/frameless-geodesic-dome.html][Frameless Geodesic Dome]] :construction:design:geodesic:dome:
 ** [[https://ski.ihoc.net/][The Most Officialest SkiFree Home Page!]] :software:history:skifree:
-
 ** [[http://vvvvalvalval.github.io/posts/what-makes-a-good-repl.html][What makes a good REPL?]] :programming:language:interpreter:design:clojure:
 ** [[https://github.com/karllhughes/side-project-marketing/blob/master/marketing-checklist.md][Side Project Marketing Checklist]] :open:source:marketing:checklist:2017:
 ** [[http://www.drdobbs.com/architecture-and-design/software-engineering-computer-science/217701907][Software Engineering ≠ Computer Science]] :software:engineering:architecture:design:2009:
-
 ** [[http://www.projectrho.com/public_html/rocket/worldbuilding.php][Worldbuilding]] :world:building:
-
    Resource on all things world-building with lots of interesting information and pointers to more information about world building.
-
 ** [[https://www.youtube.com/channel/UCEXz4oDS5KqIcinH2CjxVfg/videos][Eckkehard The German Butcher]] :youtube:channel:charcutery:butchery:
-
 ** [[http://www.idallen.com/topposting.html][Topposting and Bottomposting]] :opinion:holy:war:email:netiquette:
 ** [[https://techsolidarity.org/resources/basic_security.htm][Basic security precautions for non-profits and journalists in the United States]] :computer:security:guidelines:precautions:2017:
 ** [[https://mynoise.net/NoiseMachines/neuromodulationTonesGenerator.php][Neural Symphony - Neuromodulated Tinnitus Relief]] :audio:neural:tinnitus:relief:
-
    Sounds purported to help provide temporary relief to tinnitus sufferers.
-
 ** [[http://www.sloperama.com/advice.html][Game Design FAQs]] :game:design:frequently:asked:questions:
 ** [[https://www.linkedin.com/pulse/invitation-live-consciously-business-introduction-part-fred-kofman][An Invitation to Live Consciously in Business]] :fred:kofman:linkedin:conscious:business:academy:2015:
 ** [[https://www.sbnation.com/a/17776-football/][17776-football]] :digital:novel:artificial:intelligence:artificial:life:2017:
-
    A most intriguing story about Football in the year =17776=.
-
 ** [[https://cs007.blog/][CS 007 - Personal Finance for Programmers]] :personal:finance:programmers:course:2017:
 ** [[http://www.people.vcu.edu/~dcranston/490/handouts/math-read.html][How to Read Mathematics]] :mathematics:reading:how:to:
 ** [[https://www.youtube.com/watch?v=3GJUM6pCpew][standupmaths - Why is TV 29.97 frames per second?]] :mathematics:color:television:video:ntsc:
 ** [[https://github.com/leandromoreira/ffmpeg-libav-tutorial#learn-ffmpeg-libav-the-hard-way][Learn ffmpeg the hard way]] :video:ffmpeg:tutorial:
 ** [[http://crasseux.com/books/ctutorial/][The GNU C Programming Tutorial]] :gnu:c:programming:tutorial:
 ** [[https://viewsourcecode.org/snaptoken/][snaptoken C utility]]
-
    These tutorials walk you through writing medium-size software projects from scratch, step by step.
    The projects are based on real open-source software projects, and most of the tutorials stay true to the original source code.
    Every line of code is explained in detail, allowing you to thoroughly understand the project’s entire codebase.
 
    - [[https://viewsourcecode.org/snaptoken/kilo/][kilo]] :: Guide for building text editor in C based on antirez's 1000 line editor
-
-** [[https://www.smbc-comics.com/comic/the-talk-3][Sunday Morning Breakfast Comisc: The Talk 3]] :web:comic:quantum:mechanics:
+** [[https://www.smbc-comics.com/comic/the-talk-3][Sunday Morning Breakfast Comics: The Talk 3]]  :web:comic:quantum:mechanics:
 ** [[http://wordsandbuttons.online/programmers_guide_to_polynomials_and_splines.html][Programmer's Guide to Polynomials and Splines]] :mathematics:guide:splines:
 ** [[https://www.math.uh.edu/~dblecher/pf2.html][How to Study Mathematics]] :mathematics:study:tool:
-** [[https://www.susanjfowler.com/blog/2016/8/13/so-you-want-to-learn-physics][So You Want to Learn Physics...]] :physics:susan:flower:2016:
-** [[https://physicstravelguide.com/][Physics Travel Guides]] :physics:study:tool:
 ** [[http://www.pathsensitive.com/2018/01/the-benjamin-franklin-method-of-reading.html][The Benjamin Franklin Method of Reading Programming Books]] :programming:study:method:2018:
 ** [[https://www.b-list.org/weblog/2018/feb/11/usernames/][Let’s talk about usernames]] :programming:foibles:usernames:2018:
 ** [[https://qntm.org/abolish][So you want to Abolish Time Zones]] :time:zones:2015:
-
    A thought experiment about why abolishing time zones is a generally bad idea.
 
    - You need to know what solar time (daylight) a remote area is for /reasons/
    - Calendaring becomes more complicated with many places have split-day schedules
    - UTC already exists for synchronizing times regardless of time zone
    - The past will still have timezones and each region will switch at different times so you'll still need =zoneinfo= databases
-
 ** [[http://spacecraft.ssl.umd.edu/akins_laws.html][Akin's Laws of Spacecraft Design]] :engineering:spacecraft:design:axioms:
 ** [[https://hackernoon.com/12-manager-readmes-from-silicon-valleys-top-tech-companies-26588a660afe][12 Manager READMEs from Silicon Valley's Top Tech Companies]] :management:2018:
 ** [[https://tp69.wordpress.com/2018/04/17/completely-silent-computer/][Completely Silent Computer]] :computer:hardware:2018:
@@ -1066,6 +1074,7 @@ I don't do 3D rendering (other than in-game) or video en/decoding, so have not h
 
 From the discussion I've had and forums I've read, I think that people are afraid of putting more power in passive cases and having their components at "high" temperatures, despite those being rated for them.
 #+END_QUOTE
+
 * UNIX and BSD
 ** [[https://fosdem.org/2017/schedule/event/my_bsd_sucks_less/][My BSD Sucks Less Than Yours]] :talk:unix:openbsd:freebsd:
 
