@@ -160,12 +160,11 @@ o$22b2o3bo$21bo$21b2obo$20bo$19b5o$19bo4bo$18b3ob3o$18bob5o$18bo$20bo$
 
 **** [[https://news.ycombinator.com/item?id=16546152][Hackernews Discussion #16546152]] :2018:
 * Build Systems
-** [[http://lcgapp.cern.ch/project/architecture/recursive_make.pdf][Recursive Make Considered Harmful]] :paper:make:2002:
-** [[http://make.mad-scientist.net/papers/rules-of-makefiles/][GNU Make: Rules of Makefiles]] :make:2002:
-** [[http://nullprogram.com/blog/2017/08/20/][A Tutorial on Portable Makefiles]] :portable:make:2017:
+** [[http://lcgapp.cern.ch/project/architecture/recursive_make.pdf][Recursive Make Considered Harmful]] :build:systems:paper:make:2002:
+** [[http://make.mad-scientist.net/papers/rules-of-makefiles/][GNU Make: Rules of Makefiles]] :build:systems:make:2002:
+** [[http://nullprogram.com/blog/2017/08/20/][A Tutorial on Portable Makefiles]] :build:systems:portable:make:2017:
 ** [[http://gittup.org/tup/build_system_rules_and_algorithms.pdf][Build System Rules and Algorithms]] :paper:shal:build:systems:2009:
-** [[http://gittup.org/tup/][tup]] :tup:shal:reverse:dag:
-
+** [[http://gittup.org/tup/][tup]] :build:systems:tup:shal:reverse:dag:
    #+BEGIN_QUOTE
    In a typical build system, the dependency arrows go down.
    Although this is the way they would naturally go due to gravity, it is unfortunately also where the enemy's gate is.
@@ -193,6 +192,7 @@ o$22b2o3bo$21bo$21b2obo$20bo$19b5o$19bo4bo$18b3ob3o$18bob5o$18bo$20bo$
    See the Build System Rules and Algorithms (PDF) paper for more detailed information.
    #+END_QUOTE
 
+** [[http://bastian.rieck.me/blog/posts/2018/cmake_tips/][Some nice and accurate CMake tips]] :build:systems:cmake:2018:
 * Cryptography
 ** [[https://begriffs.com/posts/2016-11-05-advanced-intro-gnupg.html][Advanced Introduction to GnuPG]] :cryptography:tutorial:gnupg:
 ** [[https://github.com/gchq/CyberChef][GCHQ CyberChef]] :cryptography:tools:
@@ -262,6 +262,7 @@ Surviving are his wife of 54 years, Tomoko, of Oberlin, Ohio; and two daughters,
 ** [[http://canonical.org/~kragen/memory-models/][The memory models that underlie programming languages]] :datastructures:programming:languages:memory:models:2016:
 ** [[https://probablydance.com/2018/05/28/a-new-fast-hash-table-in-response-to-googles-new-fast-hash-table/][A new fast hash table in response to Google’s new fast hash table]] :datastructures:hash:table:2018:
 *** [[https://github.com/skarupke/flat_hash_map][skarupke/flat_hash_map]] :datastructures:hash:table:2018:
+** [[http://db.cs.berkeley.edu/papers/fntdb07-architecture.pdf][Architecture of a Database System]] :paper:databases:architecture:2007:
 ** Alembic
 *** [[http://www.chesnok.com/daily/2013/07/02/a-practical-guide-to-using-alembic/][A Practical Guide to using Alembic]] :database:migrations:sqlalchemy:alembic:
 *** [[https://www.compose.com/articles/schema-migrations-with-alembic-python-and-postgresql/][Schema Migrations with Alembic, Python, and PostgreSQL]] :databse:migrations:sqlalchemy:alembic:postgres:
@@ -293,6 +294,7 @@ Surviving are his wife of 54 years, Tomoko, of Oberlin, Ohio; and two daughters,
 **** [[https://news.ycombinator.com/item?id=17048907][Hackernews Discussion #17048907]] :2018:
 **** [[https://github.com/incandescentman/Emacs-Settings][incandescentman/Emacs-Settings]] :emacs:configuration:
 *** [[https://github.com/melling/EditorNotes/blob/master/emacs.org][melling/EditorNotes: Emacs]] :emacs:writers:
+*** [[http://nullprogram.com/blog/2018/05/31/][Emacs 26 Brings Generators and Threads]] :emacs:threads:2018:
 * Emulators and Game Consoles
 ** [[http://www.codeslinger.co.uk/pages/basics.html][codeslinger Emulation Basics]] :emulator:2008:
 *** [[http://www.codeslinger.co.uk/files/emu.pdf][Study of the techniques for emulation programming]] :paper:emulation:2001:
@@ -471,6 +473,7 @@ What I will do, however, is offer a ton of different recommendations for differe
 ** [[https://developers.google.com/machine-learning/crash-course/][Google Machine Learning: Crash Course]] :machine:learning:crash:course:
 ** [[https://github.com/glouw/tinn][glouw/tinn]] :machine:learning:neural:network:library:
    The tiny neural network library
+** [[https://sandipanweb.wordpress.com/2018/05/31/8626/][Few Machine Learning Problems (with Python implementations)]] :machine:learning:neural:networks:2018:
 * Mazes
 
 ** [[http://weblog.jamisbuck.org/2011/2/7/maze-generation-algorithm-recap][Maze Generation Algorithm Recap]] :maze:algorithms:
@@ -502,7 +505,7 @@ Nice recap of maze generation algorithms from a minecraft modder.  Check out his
 ** [[https://www.schoenitzer.de/blog/2018/Linux%20Raw%20Sockets.html][Linux Raw Sockets]] :networking:raw:sockets:linux:2018:
 ** [[https://startyourownisp.com/][Start your own (wireless) ISP]] :networking:wisp:2018:
 ** [[https://www.fastly.com/blog/headers-we-dont-want][The headers we don't want]] :networking:http:headers:2018:
-*** [[https://news.ycombinator.com/item?id=17074721][Hacker News Discussion #17074721]] :2018:
+*** [[https://news.ycombinator.com/item?id=17074721][Hacker News Discussion #17074721]]                                   :2018:
 **** Importance of Via
 #+CAPTION: buro9 on via
 #+BEGIN_QUOTE
@@ -529,7 +532,8 @@ With expires, I can upload a file to s3 and set
 and then not have to touch it again for an hour.
 
 you can work around this client side with per hour filenames or the other usual cache busting tricks, but that's annoying.
-#+END_QUOTE
+#+END_QUO
+** [[http://www.computerhistory.org/atchm/the-two-napkin-protocol/][The Two-Napkin Protocol]] :networking:bgp:history:1989:2018:
 * Object Oriented Programming and Design
 ** [[https://ericlippert.com/2015/04/27/wizards-and-warriors-part-one/][Wizards and Warriors: Part One]] :object:oriented:design:
 *** [[https://ericlippert.com/2015/04/30/wizards-and-warriors-part-two/][Wizards and Warriors: Part Two]] :object:oriented:design:
@@ -963,11 +967,13 @@ git log --oneline --decorate --all --graph
 
 ** [[https://termux.com][Termux]] :android:terminal:emulator:
 ** [[https://github.com/anordal/shellharden/blob/master/how_to_do_things_safely_in_bash.md][anordal/shellharden: How to do things safely in bash]] :bash:shell:safety:2018:
+** [[http://blog.deadvax.net/2018/05/29/shell-magic-set-operations-with-uniq/][Shell Magic: Set Operations with uniq]] :shell:scripting:2018:
 * Software Engineering
 ** [[http://python.apichecklist.com/][Python API Checklist]] :python:api:programming:checklist:2017:
 ** [[https://blog.ionelmc.ro/2014/06/25/python-packaging-pitfalls/][Python Packaging Pitfalls]] :python:packaging:2014:
 ** [[https://ep2015.europython.eu/conference/talks/less-known-packaging-features-and-tricks][Less known (python) packaging features and tricks]] :python:packaging:talk:slides:video:2015:
 ** [[https://github.com/arogozhnikov/python3_with_pleasure][Migrating to Python 3 with pleasure]] :python:3:migration:features:
+** [[https://zealdocs.org/][Zeal is an offline documentation browser for software developers.]] :software:engineering:programming:languages:offline:documentation:reference:
 * Systems Engineering
 ** [[https://alestic.com/2010/12/ec2-user-data-output/][Logging user-data Script Output on EC2 Instances]] :systems:cloudinit:logging:aws:ec2:
 
