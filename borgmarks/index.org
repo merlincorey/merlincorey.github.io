@@ -5,14 +5,14 @@ Bookmarks in emacs org-mode.
 Curated, categorized, and tagged by hand.
 * Theory of organization
 ** Categorization through headings
-   Top-level headings represent broad categories of related links.
-
-   Tagging is used for exposing topics related to a particular link.
+   - Top-level headings represent broad categories of related links.
+   - Tagging is used for exposing topics related to a particular link.
 ** Subcategorization through subheadings
-   Subheadings are used to represent narrower subcategories within a particular category.
-
-   /TODO: Make this consistent/
-   Subheadings should come *BEFORE* or *AFTER* the sibling links.
+   - Subheadings are used to represent narrower subcategories within a particular category.
+   - Subheadings *must* come *after* the sibling links.
+** Tags for metadata
+   - Tags should be single words so they can be categorized automatically without a full NLP engine
+   - Tags should include the publish year and last update year if available
 ** Master list vs Category pages
    Currently there is only a single page master list, but it is getting very large to manage and read.
 *** Roadmap
@@ -193,6 +193,21 @@ o$22b2o3bo$21bo$21b2obo$20bo$19b5o$19bo4bo$18b3ob3o$18bob5o$18bo$20bo$
    #+END_QUOTE
 
 ** [[http://bastian.rieck.me/blog/posts/2018/cmake_tips/][Some nice and accurate CMake tips]] :build:systems:cmake:2018:
+* Compilers
+** GCC
+*** [[https://stackoverflow.com/questions/38960763/ftrapv-and-fwrapv-which-is-better-for-efficiency][StackOverflow: "-ftrapv" and "-fwrapv": Which is better for efficiency?]] :compilers:gcc:2016:
+    [[https://stackoverflow.com/users/743382/hvd][hvd]] answers:
+#+BEGIN_QUOTE
+The whole point of both of these options is to give the optimiser less leeway than it normally has.
+Therefore, unless you encounter a bug in the optimiser, the fastest should be to use neither, where the optimiser assumes your code doesn't have any overflows and doesn't emit code to handle overflows.
+
+> What what does it mean when the =-ftrapv= definition says it generates "traps?" Does this mean exceptions?
+
+It doesn't mean a C++ exception.
+It's target-dependent, but assuming x86, it means the GCC runtime libraries cause =SIGABRT= to be raised that will normally abort your program.
+On other platforms, it might use special CPU instructions that cause a hardware exception.
+It's mainly useful for debugging purposes and perhaps in a few cases for safety, where the risk of continuing after overflow is greater than the risk of the program suddenly terminating.
+#+END_QUOTE
 * Cryptography
 ** [[https://begriffs.com/posts/2016-11-05-advanced-intro-gnupg.html][Advanced Introduction to GnuPG]] :cryptography:tutorial:gnupg:
 ** [[https://github.com/gchq/CyberChef][GCHQ CyberChef]] :cryptography:tools:
@@ -274,11 +289,11 @@ Surviving are his wife of 54 years, Tomoko, of Oberlin, Ohio; and two daughters,
 ** [[https://blog.d46.us/zsh-tmux-emacs-copy-paste/][ZSH, tmux, Emacs and SSH: A copy-paste story]] :environments:editors:copy:paste:compatibility:
 ** Emacs
 *** [[https://www.emacswiki.org/][Emacs Wiki]] 				       :emacs:xemacs:emacs:lisp:wiki:
-*** [[http://orgmode.org/manual/][OrgMode Manual]] 				      :emacs:org:mode:manual:
-*** [[http://sachachua.com/blog/2007/12/how-to-use-emacs-org-as-a-basic-day-planner/][How to use Emacs Org as a Basic Day Planner]] :emacs:org:mode:day:planner:2007:
-*** [[http://newartisans.com/2007/08/using-org-mode-as-a-day-planner/][Using org-mode as a Day Planner]] 	:emacs:org:mode:org:day:planner:2007:
-*** [[http://orgmode.org/worg/org-tutorials/orgtutorial_dto.html][David O'Toole Org tutorial]] 		:emacs:org:mode:tutorial:todo:agenda:
-*** [[http://orgmode.org/worg/org-tutorials/non-beamer-presentations.html][Writing Non-Beamer presentations in org-mode]] :emacs:org:mode:presentations:slides:
+*** [[http://orgmode.org/manual/][OrgMode Manual]] 				      :emacs:orgmode:manual:
+*** [[http://sachachua.com/blog/2007/12/how-to-use-emacs-org-as-a-basic-day-planner/][How to use Emacs Org as a Basic Day Planner]] :emacs:orgmode:day:planner:2007:
+*** [[http://newartisans.com/2007/08/using-org-mode-as-a-day-planner/][Using org-mode as a Day Planner]] 	:emacs:orgmode:org:day:planner:2007:
+*** [[http://orgmode.org/worg/org-tutorials/orgtutorial_dto.html][David O'Toole Org tutorial]] 		:emacs:orgmode:tutorial:todo:agenda:
+*** [[http://orgmode.org/worg/org-tutorials/non-beamer-presentations.html][Writing Non-Beamer presentations in org-mode]] :emacs:orgmode:presentations:slides:
 *** [[https://portacle.github.io/][Portacle - Portable Common Lisp IDE]]        :emacs:slime:sbcl:common:lisp:
 *** [[https://github.com/emacs-helm/helm][helm - Emacs incremental completion and selection narrowing framework]] :emacs:package:incremental:completion:search:
 *** [[https://github.com/bbatsov/projectile][projectile - Project Interaction Library for Emacs]] :emacs:package:project:management:
@@ -287,14 +302,21 @@ Surviving are his wife of 54 years, Tomoko, of Oberlin, Ohio; and two daughters,
 *** [[https://geokon-gh.github.io/.emacs.d/][Emacs configuration for C++/CMake/git]] :emacs:configuration:c:language:integrated:development:environment:explained:
 *** [[https://blog.fugue.co/2015-11-11-guide-to-emacs.html][A CEO's Guide to Emacs]] :emacs:configuration:exposition:2015:
 *** [[https://github.com/rnkn/fountain-mode][fountain-mode - Emacs major mode for screenwriting in Fountain plaintext markup]] :emacs:package:screenwriting:
-*** [[http://howardism.org/Technical/Emacs/literate-devops.html][Literate Devops]] :emacs:org:mode:devops:
-**** [[https://www.youtube.com/watch?v=dljNabciEGg][YouTube: Literate Devops]]           :emacs:org:mode:devops:youtube:video:
+*** [[http://howardism.org/Technical/Emacs/literate-devops.html][Literate Devops]] :emacs:orgmode:devops:
+**** [[https://www.youtube.com/watch?v=dljNabciEGg][YouTube: Literate Devops]]           :emacs:orgmode:devops:youtube:video:
 *** [[https://ambrevar.bitbucket.io/emacs-eshell/][eshell as a main shell]] :emacs:eshell:2017:
 *** [[https://www.youtube.com/watch?v=FtieBc3KptU][Emacs for Writers]] :emacs:video:writers:2015:
 **** [[https://news.ycombinator.com/item?id=17048907][Hackernews Discussion #17048907]] :2018:
 **** [[https://github.com/incandescentman/Emacs-Settings][incandescentman/Emacs-Settings]] :emacs:configuration:
 *** [[https://github.com/melling/EditorNotes/blob/master/emacs.org][melling/EditorNotes: Emacs]] :emacs:writers:
-*** [[http://nullprogram.com/blog/2018/05/31/][Emacs 26 Brings Generators and Threads]] :emacs:threads:2018:
+*** [[http://nullprogram.com/blog/2018/05/31/][Emacs 26 Brings Generators and Threads]]               :emacs:threads:2018:
+**** Kanban
+***** [[http://agilesoc.com/2011/08/08/emacs-org-mode-kanban-pomodoro-oh-my/][Emacs, org-mode, Kanban, Pomodoro... Oh my...]] :emacs:orgmode:kanban:2011:
+***** [[http://www.draketo.de/light/english/free-software/el-kanban-org-table][El Kanban Org: parse org-mode todo-states to use org-tables as Kanban tables]] :emacs:orgmode:kanban:2012:
+***** [[http://jr0cket.co.uk/2016/09/Kanban-board-Emacs-Org-mode-to-get-work-done.html][Kanban in Emacs Org-Mode to Get More Work Done]] :emacs:orgmode:kanban:2016:
+***** [[http://www.starnix.se/kanban-workflow-with-emacs-and-org-mode/][Kanban workflow with Emacs, and org-mode]] :emacs:orgmode:kanban:2017:
+***** [[https://github.com/hagmonk/org-kanban][Github: hagmonk/org-kanban]] :emacs:orgmode:kanban:2017:2018:
+***** [[https://github.com/gizmomogwai/org-kanban][Github: gizmomogwai/org-kanban]] :emacs:orgmode:kanban:2016:2018:
 * Emulators and Game Consoles
 ** [[http://www.codeslinger.co.uk/pages/basics.html][codeslinger Emulation Basics]] :emulator:2008:
 *** [[http://www.codeslinger.co.uk/files/emu.pdf][Study of the techniques for emulation programming]] :paper:emulation:2001:
@@ -534,6 +556,7 @@ and then not have to touch it again for an hour.
 you can work around this client side with per hour filenames or the other usual cache busting tricks, but that's annoying.
 #+END_QUO
 ** [[http://www.computerhistory.org/atchm/the-two-napkin-protocol/][The Two-Napkin Protocol]] :networking:bgp:history:1989:2018:
+** [[https://www.jmarshall.com/easy/http/][HTTP Made Really Easy]] :networking:http:2012:
 * Object Oriented Programming and Design
 ** [[https://ericlippert.com/2015/04/27/wizards-and-warriors-part-one/][Wizards and Warriors: Part One]] :object:oriented:design:
 *** [[https://ericlippert.com/2015/04/30/wizards-and-warriors-part-two/][Wizards and Warriors: Part Two]] :object:oriented:design:
@@ -631,6 +654,7 @@ you can work around this client side with per hour filenames or the other usual 
 (global-set-key [C-M-tab] 'clang-format-region)
 #+END_SRC
 *** [[https://www.conan.io/][conan - The C / C++ package manager for developers]] :language:cpp:library:package:manager:
+*** [[http://blog.reverberate.org/2013/08/parsing-c-is-literally-undecidable.html][Parsing C++ is literally undecidable]] :language:cpp:compilers:decideability:2013:
 *** Libraries
 **** Testing
 ***** [[https://github.com/catchorg/Catch2][catchorg/Catch2]]                      :language:cpp:test:framework:2018:
@@ -692,6 +716,8 @@ int main(int argc, char* argv[]) {
 *** Videos
 **** [[https://www.youtube.com/watch?v=hEx5DNLWGgA][CppCon 2015: Herb Sutter "Writing Good C++14... By Default"]] :video:talk:language:cpp:sutter:2015:
 **** [[https://www.youtube.com/watch?v=fX2W3nNjJIo][CppCon 2017: Bjarne Stroustrup “Learning and Teaching Modern C++”]] :video:talk:language:cpp:stroustrup:2017:
+** Go
+*** [[https://github.com/chaseadamsio/goorgeous][chaseadamsio/goorgeous]] :github:golang:emacs:orgmode:2017:2018:
 ** Erlang
 *** [[https://happi.github.io/theBeamBook/][The Erlang Runtime System (a.k.a. The Beam Book]] :book:erlang:runtime:
 ** Javascript
@@ -1081,6 +1107,9 @@ I don't do 3D rendering (other than in-game) or video en/decoding, so have not h
 From the discussion I've had and forums I've read, I think that people are afraid of putting more power in passive cases and having their components at "high" temperatures, despite those being rated for them.
 #+END_QUOTE
 
+** [[https://getweeklyupdate.com/manager-guide][How to be a Manager]] :management:2018:
+** [[https://github.com/kanboard/kanboard][Github: kanboard/kanboard]] :kanban:2015:2018:
+   Open source kanban board web application in =PHP= with =MySQL= database.
 * UNIX and BSD
 ** [[https://fosdem.org/2017/schedule/event/my_bsd_sucks_less/][My BSD Sucks Less Than Yours]] :talk:unix:openbsd:freebsd:
 
