@@ -30,9 +30,7 @@ Curated, categorized, and tagged by hand.
 :PROPERTIES:
 :CREATED: [2014-08-09 Sat 10:41]
 :END:
-
     Well written post linked to from [[https://www.reddit.com/r/orgmode/comments/3vtxz1/storing_a_collection_of_web_bookmarks_with_org/][this discussion on reddit]] and elsewhere.
-
 #+BEGIN_SRC emacs-lisp
 (setq org-capture-templates
   '(
@@ -42,9 +40,7 @@ Curated, categorized, and tagged by hand.
    )
 )
 #+END_SRC
-
-*** [[http://orgmode.org/orgcard.pdf][Org Card]] 				       :emacs:orgmode:reference:card:
-
+*** [[http://orgmode.org/orgcard.pdf][Org Card]] 				       :emacs:orgmode:reference:card
 * Algorithms
 ** Books
 *** [[https://github.com/mdipierro/nlib][Annotated Algorithms in Python]] :book:algorithms:python:
