@@ -806,6 +806,9 @@ This is why “Lisp is the greatest!”
 * Reverse Engineering
 ** [[https://www.youtube.com/user/OpenSecurityTraining][Open Security Training YouTube Channel]]                            :videos:binary:reverse:engineering:
 ** [[https://github.com/FireyFly/pixd][Colourful visualization tool for binary files]] :binary:data:visualization:
+** [[https://binary.ninja/][Binary Ninja]] :reverse:engineering:platform:
+** [[https://www.trailofbits.com/research-and-development/binja/][Trail of Bits: Binary Ninja]] :reverse:engineering:platform:
+** [[https://github.com/radareorg/cutter][radareorg/cutter]] :github:reverse:engineering:platform:
 * Revision Control
 ** [[https://git-scm.com/book/en/v2][Git Book (v2)]] 						   :git:book:
 ** [[http://gitready.com/][git ready]] 						    :git:tips:tricks:
