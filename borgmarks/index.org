@@ -304,6 +304,9 @@ Surviving are his wife of 54 years, Tomoko, of Oberlin, Ohio; and two daughters,
 **** [[https://github.com/incandescentman/Emacs-Settings][incandescentman/Emacs-Settings]] :emacs:configuration:
 *** [[https://github.com/melling/EditorNotes/blob/master/emacs.org][melling/EditorNotes: Emacs]] :emacs:writers:
 *** [[http://nullprogram.com/blog/2018/05/31/][Emacs 26 Brings Generators and Threads]]               :emacs:threads:2018:
+*** [[http://www.sastibe.de/2018/05/2018-05-11-emacs-org-mode-rest-apis-stocks/][Use Emacs Org Mode and REST APIs for an up-to-date Stock Portfolio]] :emacs:orgmode:2018:
+**** Packages
+***** [[https://github.com/pashky/restclient.el][pashky/restclient]] :emacs:package:rest:2016:2018:
 **** Kanban
 ***** [[http://agilesoc.com/2011/08/08/emacs-org-mode-kanban-pomodoro-oh-my/][Emacs, org-mode, Kanban, Pomodoro... Oh my...]] :emacs:orgmode:kanban:2011:
 ***** [[http://www.draketo.de/light/english/free-software/el-kanban-org-table][El Kanban Org: parse org-mode todo-states to use org-tables as Kanban tables]] :emacs:orgmode:kanban:2012:
@@ -551,6 +554,9 @@ you can work around this client side with per hour filenames or the other usual 
 #+END_QUO
 ** [[http://www.computerhistory.org/atchm/the-two-napkin-protocol/][The Two-Napkin Protocol]] :networking:bgp:history:1989:2018:
 ** [[https://www.jmarshall.com/easy/http/][HTTP Made Really Easy]] :networking:http:2012:
+** [[https://blog.benjojo.co.uk/post/bgp-battleships][Playing battleships over BGP]] :networking:bgp:games:2018:
+*** [[https://github.com/benjojo/bgp-battleships][benjoho/bgp-battleships]] :github:networking:bgp:games:2018:
+*** [[https://www.reddit.com/r/networking/comments/8lds0e/playing_battleship_over_bgp/][/r/networking/Playing Battleship over BGP]] :discussion:networking:bgp:games:2018:
 * Object Oriented Programming and Design
 ** [[https://ericlippert.com/2015/04/27/wizards-and-warriors-part-one/][Wizards and Warriors: Part One]] :object:oriented:design:
 *** [[https://ericlippert.com/2015/04/30/wizards-and-warriors-part-two/][Wizards and Warriors: Part Two]] :object:oriented:design:
@@ -984,6 +990,7 @@ git rebase origin/master
 git log --oneline --decorate --all --graph
 #+END_SRC
 ** [[http://www.catb.org/esr/reposurgeon/][esr/reposurgeon]] :revision:control:repository:surgery:2018:
+** [[https://www.destroyallsoftware.com/blog/2017/the-biggest-and-weirdest-commits-in-linux-kernel-git-history][The Biggest and Weirdest Commits in Linux Kernel Git History]] :revision:control:git:linux:2017:
 * Shells and Terminals
 ** [[https://zanshin.net/2013/02/02/zsh-configuration-from-the-ground-up/][Zsh Configuration From the Ground Up]] :zsh:configuration:tutorial:2013:
 ** [[http://www.howardism.org/Technical/Emacs/eshell-fun.html][Eschewing Zshell for Emacs Shell]] :zsh:emacs:eshell:
