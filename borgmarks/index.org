@@ -809,6 +809,9 @@ This is why “Lisp is the greatest!”
 *** [[https://vorpus.org/blog/some-thoughts-on-asynchronous-api-design-in-a-post-asyncawait-world/][Some thoughts on asynchrous API design in a post async/await world]] :python:asynchronous:2016:
 *** [[https://blog.petrzemek.net/2018/04/22/on-incomplete-http-reads-and-the-requests-library-in-python/][On Incomplete HTTP Reads and the Requests Library In Python]] :python:requests:2018:
 *** [[http://willcrichton.net/notes/programming-in-the-debugger/][Programming in the Debugger]] :python:jupyter:2018:
+*** Libraries
+**** [[http://npyscreen.readthedocs.io/index.html][npyscreen Documentation]] :python:library:terminal:ui:2014:
+**** [[http://python-prompt-toolkit.readthedocs.io/en/master/][prompt-toolkit Documentation]] :python:library:terminal:ui:2014:2018:
 * Reverse Engineering
 ** [[https://www.youtube.com/user/OpenSecurityTraining][Open Security Training YouTube Channel]]                            :videos:binary:reverse:engineering:
 ** [[https://github.com/FireyFly/pixd][Colourful visualization tool for binary files]] :binary:data:visualization:
@@ -991,6 +994,8 @@ git log --oneline --decorate --all --graph
 #+END_SRC
 ** [[http://www.catb.org/esr/reposurgeon/][esr/reposurgeon]] :revision:control:repository:surgery:2018:
 ** [[https://www.destroyallsoftware.com/blog/2017/the-biggest-and-weirdest-commits-in-linux-kernel-git-history][The Biggest and Weirdest Commits in Linux Kernel Git History]] :revision:control:git:linux:2017:
+** [[https://zwischenzugs.com/2018/03/26/git-log-the-good-parts/][Git Log: The Good Parts]] :revision:control:git:log:2018:
+*** [[https://news.ycombinator.com/item?id=16677308][Hacker News Discussion #16677308]] :discussion:revision:control:git:log:2018:
 * Shells and Terminals
 ** [[https://zanshin.net/2013/02/02/zsh-configuration-from-the-ground-up/][Zsh Configuration From the Ground Up]] :zsh:configuration:tutorial:2013:
 ** [[http://www.howardism.org/Technical/Emacs/eshell-fun.html][Eschewing Zshell for Emacs Shell]] :zsh:emacs:eshell:
