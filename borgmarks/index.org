@@ -305,15 +305,39 @@ Surviving are his wife of 54 years, Tomoko, of Oberlin, Ohio; and two daughters,
 *** [[https://github.com/melling/EditorNotes/blob/master/emacs.org][melling/EditorNotes: Emacs]] :emacs:writers:
 *** [[http://nullprogram.com/blog/2018/05/31/][Emacs 26 Brings Generators and Threads]]               :emacs:threads:2018:
 *** [[http://www.sastibe.de/2018/05/2018-05-11-emacs-org-mode-rest-apis-stocks/][Use Emacs Org Mode and REST APIs for an up-to-date Stock Portfolio]] :emacs:orgmode:2018:
-**** Packages
-***** [[https://github.com/pashky/restclient.el][pashky/restclient]] :emacs:package:rest:2016:2018:
-**** Kanban
-***** [[http://agilesoc.com/2011/08/08/emacs-org-mode-kanban-pomodoro-oh-my/][Emacs, org-mode, Kanban, Pomodoro... Oh my...]] :emacs:orgmode:kanban:2011:
-***** [[http://www.draketo.de/light/english/free-software/el-kanban-org-table][El Kanban Org: parse org-mode todo-states to use org-tables as Kanban tables]] :emacs:orgmode:kanban:2012:
-***** [[http://jr0cket.co.uk/2016/09/Kanban-board-Emacs-Org-mode-to-get-work-done.html][Kanban in Emacs Org-Mode to Get More Work Done]] :emacs:orgmode:kanban:2016:
-***** [[http://www.starnix.se/kanban-workflow-with-emacs-and-org-mode/][Kanban workflow with Emacs, and org-mode]] :emacs:orgmode:kanban:2017:
-***** [[https://github.com/hagmonk/org-kanban][Github: hagmonk/org-kanban]] :emacs:orgmode:kanban:2017:2018:
-***** [[https://github.com/gizmomogwai/org-kanban][Github: gizmomogwai/org-kanban]] :emacs:orgmode:kanban:2016:2018:
+*** [[http://tuhdo.github.io/c-ide.html][C/C++ Development Environment for Emacs]] :emacs:c:cplusplus:2015:
+*** Packages
+**** [[https://github.com/pashky/restclient.el][pashky/restclient]]                         :emacs:package:rest:2016:2018:
+**** [[https://projectile.readthedocs.io/en/latest/][ReadTheDocs: projectile]]                                  :emacs:package:
+***** [[http://astronautradio.com/post/152934998548/open-a-terminal-with-projectile-in-emacs][Open a terminal with projectile in emacs]] :emacs:package:2017:
+#+CAPTION: Function to make reusable ansi-term
+#+BEGIN_SRC  elisp
+;; Enable Projectile globally
+(projectile-global-mode)
+
+(defun projectile-term ()
+  "Create an ansi-term at the project root"
+  (interactive)
+  (let ((root (projectile-project-root))
+  (buff-name (concat " [term] " (projectile-project-root))))
+    (if (get-buffer buff-name)
+      (switch-to-buffer-other-window buff-name)
+      (progn
+      (split-window-sensibly (selected-window))
+      (other-window 1)
+      (setq default-directory root)
+      (ansi-term (getenv "SHELL"))
+      (rename-buffer buff-name t)))))
+
+(global-set-key (kbd "C-x M-t") 'projectile-term)
+#+END_SRC
+*** Kanban
+**** [[http://agilesoc.com/2011/08/08/emacs-org-mode-kanban-pomodoro-oh-my/][Emacs, org-mode, Kanban, Pomodoro... Oh my...]] :emacs:orgmode:kanban:2011:
+**** [[http://www.draketo.de/light/english/free-software/el-kanban-org-table][El Kanban Org: parse org-mode todo-states to use org-tables as Kanban tables]] :emacs:orgmode:kanban:2012:
+**** [[http://jr0cket.co.uk/2016/09/Kanban-board-Emacs-Org-mode-to-get-work-done.html][Kanban in Emacs Org-Mode to Get More Work Done]] :emacs:orgmode:kanban:2016:
+**** [[http://www.starnix.se/kanban-workflow-with-emacs-and-org-mode/][Kanban workflow with Emacs, and org-mode]]     :emacs:orgmode:kanban:2017:
+**** [[https://github.com/hagmonk/org-kanban][Github: hagmonk/org-kanban]]              :emacs:orgmode:kanban:2017:2018:
+**** [[https://github.com/gizmomogwai/org-kanban][Github: gizmomogwai/org-kanban]]          :emacs:orgmode:kanban:2016:2018:
 * Emulators and Game Consoles
 ** [[http://www.codeslinger.co.uk/pages/basics.html][codeslinger Emulation Basics]] :emulator:2008:
 *** [[http://www.codeslinger.co.uk/files/emu.pdf][Study of the techniques for emulation programming]] :paper:emulation:2001:
@@ -557,6 +581,7 @@ you can work around this client side with per hour filenames or the other usual 
 ** [[https://blog.benjojo.co.uk/post/bgp-battleships][Playing battleships over BGP]] :networking:bgp:games:2018:
 *** [[https://github.com/benjojo/bgp-battleships][benjoho/bgp-battleships]] :github:networking:bgp:games:2018:
 *** [[https://www.reddit.com/r/networking/comments/8lds0e/playing_battleship_over_bgp/][/r/networking/Playing Battleship over BGP]] :discussion:networking:bgp:games:2018:
+** [[https://mailman.nanog.org/pipermail/nanog/2018-June/095728.html][Broadcom vs Mellanox based platforms: 100 Gbps networking]] :networking:performance:2018:
 * Object Oriented Programming and Design
 ** [[https://ericlippert.com/2015/04/27/wizards-and-warriors-part-one/][Wizards and Warriors: Part One]] :object:oriented:design:
 *** [[https://ericlippert.com/2015/04/30/wizards-and-warriors-part-two/][Wizards and Warriors: Part Two]] :object:oriented:design:
@@ -620,6 +645,7 @@ you can work around this client side with per hour filenames or the other usual 
 *** [[https://csl.name/post/python-compiler/][JIT compiling a subset of Python to x86-64]] :assembly:x86:python:jit:2017:
 ** C
 *** [[http://www.maizure.org/projects/printf/index.html][Tearing apart printf()]] :c:language:low:level:2018:
+*** [[http://nullprogram.com/blog/2018/06/10/][Minimalist C Libraries]] :c:language:libraries:2018:
 *** Libraries
 **** [[https://github.com/mity/acutest][mitv/acutest]] :c:language:test:framework:2017:
 **** [[http://www.glfw.org/index.html][GLFW]] :c:language:opengl:framework:2017:
@@ -818,6 +844,7 @@ This is why “Lisp is the greatest!”
 ** [[https://binary.ninja/][Binary Ninja]] :reverse:engineering:platform:
 ** [[https://www.trailofbits.com/research-and-development/binja/][Trail of Bits: Binary Ninja]] :reverse:engineering:platform:
 ** [[https://github.com/radareorg/cutter][radareorg/cutter]] :github:reverse:engineering:platform:
+** [[https://jamchamb.github.io/2018/06/09/animal-crossing-developer-mode.html][Reverse engineering Animal Crossing's developer mode]] :reverse:engineering:2018:
 * Revision Control
 ** [[https://git-scm.com/book/en/v2][Git Book (v2)]] 						   :git:book:
 ** [[http://gitready.com/][git ready]] 						    :git:tips:tricks:
