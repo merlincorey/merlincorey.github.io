@@ -272,6 +272,7 @@ Surviving are his wife of 54 years, Tomoko, of Oberlin, Ohio; and two daughters,
 ** [[https://probablydance.com/2018/05/28/a-new-fast-hash-table-in-response-to-googles-new-fast-hash-table/][A new fast hash table in response to Google’s new fast hash table]] :datastructures:hash:table:2018:
 *** [[https://github.com/skarupke/flat_hash_map][skarupke/flat_hash_map]] :datastructures:hash:table:2018:
 ** [[http://db.cs.berkeley.edu/papers/fntdb07-architecture.pdf][Architecture of a Database System]] :paper:databases:architecture:2007:
+** [[https://cs.uwaterloo.ca/~plragde/flaneries/FDS/][Functional Data Structures]] :book:datastructures:functional:
 ** Alembic
 *** [[http://www.chesnok.com/daily/2013/07/02/a-practical-guide-to-using-alembic/][A Practical Guide to using Alembic]] :database:migrations:sqlalchemy:alembic:
 *** [[https://www.compose.com/articles/schema-migrations-with-alembic-python-and-postgresql/][Schema Migrations with Alembic, Python, and PostgreSQL]] :databse:migrations:sqlalchemy:alembic:postgres:
@@ -467,6 +468,7 @@ Home page: http://www.helixsoft.nl/
 * Game Theory
 ** [[http://www.chesstactics.org/index.php?Type=page&Action=next&From=1,1,1,1][Ward Farnsworth's Predator at the Chessboard]] :gametheory:book:chess:
 
+** [[http://www.mindsports.nl/][mindsports.nl]] :gametheory:gamedesign:puzzles:
 * Graphics
 ** [[http://www.extentofthejam.com/pseudo/][Lou's Psuedo 3d Page]] :graphics:3d:rendering:
 ** [[http://machinethink.net/blog/3d-rendering-without-shaders/][3D Rendering without shaders]] :graphics:3d:rendering:shaders:
@@ -498,6 +500,7 @@ I can’t even decide on the criteria for the best microcontroller — let alone
 What I will do, however, is offer a ton of different recommendations for different users at the end. Read on!
    #+END_QUOTE
 ** [[http://www.righto.com/2018/03/implementing-fizzbuzz-on-fpga.html][Implementing Fizbuzz on an FPGA]] :2018:
+** [[http://www.gleech.org/first-computers/][Disambiguating the first computer]] :hardware:history:
 * Home Automation and Internet of Things
 ** [[http://www.bruhautomation.com/][Bruh Automation]] :home:automation:tutorials:reviews:
 
@@ -582,6 +585,7 @@ you can work around this client side with per hour filenames or the other usual 
 *** [[https://github.com/benjojo/bgp-battleships][benjoho/bgp-battleships]] :github:networking:bgp:games:2018:
 *** [[https://www.reddit.com/r/networking/comments/8lds0e/playing_battleship_over_bgp/][/r/networking/Playing Battleship over BGP]] :discussion:networking:bgp:games:2018:
 ** [[https://mailman.nanog.org/pipermail/nanog/2018-June/095728.html][Broadcom vs Mellanox based platforms: 100 Gbps networking]] :networking:performance:2018:
+** [[http://napalm.readthedocs.io/en/latest/][NAPALM (Network Automation and Programmability Abstraction Layer with Multivendor support)]] :networking:python:2018:
 * Object Oriented Programming and Design
 ** [[https://ericlippert.com/2015/04/27/wizards-and-warriors-part-one/][Wizards and Warriors: Part One]] :object:oriented:design:
 *** [[https://ericlippert.com/2015/04/30/wizards-and-warriors-part-two/][Wizards and Warriors: Part Two]] :object:oriented:design:
@@ -646,6 +650,7 @@ you can work around this client side with per hour filenames or the other usual 
 ** C
 *** [[http://www.maizure.org/projects/printf/index.html][Tearing apart printf()]] :c:language:low:level:2018:
 *** [[http://nullprogram.com/blog/2018/06/10/][Minimalist C Libraries]] :c:language:libraries:2018:
+*** [[http://www.iso-9899.info/wiki/Alignment][iso-9899 wiki: Alignment]] :wiki:c:language:2017:
 *** Libraries
 **** [[https://github.com/mity/acutest][mitv/acutest]] :c:language:test:framework:2017:
 **** [[http://www.glfw.org/index.html][GLFW]] :c:language:opengl:framework:2017:
