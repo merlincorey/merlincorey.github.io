@@ -16,7 +16,7 @@ Curated, categorized, and tagged by hand.
 ** Master list vs Category pages
    Currently there is only a single page master list, but it is getting very large to manage and read.
 *** Roadmap
-   In the future we will want to have to category and potentially even subcategory pages.
+   In the future we will want to have tag, category, and potentially even subcategory pages.
 
    This will mean either compiling those pages from the master list, or compiling the master list from those pages.
    Compiling the master list from the categories and subcategories seems most appropriate.
