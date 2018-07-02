@@ -42,12 +42,6 @@ Curated, categorized, and tagged by hand.
 #+END_SRC
 *** [[http://orgmode.org/orgcard.pdf][Org Card]] 				       :emacs:orgmode:reference:card
 * Algorithms
-** Books
-*** [[https://github.com/mdipierro/nlib][Annotated Algorithms in Python]] :book:algorithms:python:
-** Programming Exercises
-*** [[https://projecteuler.net/][Project Euler]] 				  :programming:exercise:math:
-*** [[http://codewars.com/][Codewars]] 					       :programming:exercise:
-*** [[http://exercism.io/][Exercism]] 				    :programming:exercise:opensource:
 ** [[https://bost.ocks.org/mike/algorithms/][Visualizing Algorithms]] 		  :bostocks:visualization:algorithms:
 
    Great overview of various algorithms with visualizations from visualization master Mike Bostocks.
@@ -111,6 +105,16 @@ But maybe you meant the array of arrays to be recursive? That seems like it woul
 But typically m>>n, so the net result is the same.
 #+END_QUOTE
 ** [[https://gist.github.com/nadavrot/5b35d44e8ba3dd718e595e40184d03f0][High-Performance Matrix Multiplication]] :algorithms:matrix:multiplication:2018:
+** [[https://hackernoon.com/timsort-the-fastest-sorting-algorithm-youve-never-heard-of-36b28417f399][Timsort — the fastest sorting algorithm you’ve never heard of]] :algorithms:sorting:2018:
+   The core sorting algorithm in =Python=.
+*** [[https://news.ycombinator.com/item?id=17436591][Hackernews Discussion #17436591]] :discussion:algorithms:sorting:2018:
+** Books
+*** [[https://github.com/mdipierro/nlib][Annotated Algorithms in Python]] :book:algorithms:python:
+** Programming Exercises
+*** [[https://projecteuler.net/][Project Euler]] 				  :programming:exercise:math:
+*** [[http://codewars.com/][Codewars]] 					       :programming:exercise:
+*** [[http://exercism.io/][Exercism]] 				    :programming:exercise:opensource:
+
 * Artificial Life
 ** [[https://codegolf.stackexchange.com/questions/11880/build-a-working-game-of-tetris-in-conways-game-of-life][Build a working game of Tetris in Conway's Game of Life]] :artificial:life:computer:tetris:in:game:of:life:
 
@@ -243,22 +247,24 @@ Surviving are his wife of 54 years, Tomoko, of Oberlin, Ohio; and two daughters,
 ** [[https://www.michaelburge.us/2017/11/28/write-your-next-ethereum-contract-in-pyramid-scheme.html][Write your next Ethereum Contract in Pyramid Scheme]] :cryptography:currency:2017:
 ** [[https://www.michaelburge.us/2018/05/15/ethereum-chess-engine.html][DSLs for Ethereum Contracts]] :cryptography:currency:2018:
 ** [[https://ethfiddle.com/][EtherFiddle]] :cryptography:currency:ethereum:solidity:ide:
-** [[https://ico.red-lang.org/RED-whitepaper.pdf][RED: a full-stack, open-source toolchain for simple smart contracts and decentralized apps development]] :paper:cryptography:currency:smart:contracts:language:2018:
-** [[https://medium.com/axoni/axlang-formally-verifiable-smart-contracts-for-the-ethereum-ecosystem-6201203be4e8][AxLang: Formally Verifiable Smart Contracts for the Ethereum Ecosystem]] :cryptography:currency:smart:contracts:language:2018:
-** [[https://consensys.github.io/smart-contract-best-practices/security_tools/][Ethereum Smart Contract Best Practices: Static Analysis]] :cryptography:currency:ethereum:smart:contracts:2018:
-** [[https://medium.com/loom-network/how-to-secure-your-smart-contracts-6-solidity-vulnerabilities-and-how-to-avoid-them-part-1-c33048d4d17d][How to Secure Your Smart Contracts: 6 Solidity Vulnerabilities and how to avoid them (Part 1)]] :cryptography:currency:ethereum:smart:contracts:2018:
-*** [[https://medium.com/loom-network/how-to-secure-your-smart-contracts-6-solidity-vulnerabilities-and-how-to-avoid-them-part-2-730db0aa4834][How to Secure Your Smart Contracts: 6 Solidity Vulnerabilities and how to avoid them (Part 2)]] :cryptography:currency:ethereum:smart:contracts:2018:
+** [[https://ico.red-lang.org/RED-whitepaper.pdf][RED: a full-stack, open-source toolchain for simple smart contracts and decentralized apps development]] :paper:cryptography:currency:smartcontracts:language:2018:
+** [[https://medium.com/axoni/axlang-formally-verifiable-smart-contracts-for-the-ethereum-ecosystem-6201203be4e8][AxLang: Formally Verifiable Smart Contracts for the Ethereum Ecosystem]] :cryptography:currency:smartcontracts:language:2018:
+** [[https://consensys.github.io/smart-contract-best-practices/security_tools/][Ethereum Smart Contract Best Practices: Static Analysis]] :cryptography:currency:ethereum:smartcontracts:2018:
+** [[https://medium.com/loom-network/how-to-secure-your-smart-contracts-6-solidity-vulnerabilities-and-how-to-avoid-them-part-1-c33048d4d17d][How to Secure Your Smart Contracts: 6 Solidity Vulnerabilities and how to avoid them (Part 1)]] :cryptography:currency:ethereum:smartcontracts:2018:
+*** [[https://medium.com/loom-network/how-to-secure-your-smart-contracts-6-solidity-vulnerabilities-and-how-to-avoid-them-part-2-730db0aa4834][How to Secure Your Smart Contracts: 6 Solidity Vulnerabilities and how to avoid them (Part 2)]] :cryptography:currency:ethereum:smartcontracts:2018:
 ** [[https://medium.com/@codetractio/inside-an-ethereum-transaction-fa94ffca912f][Inside an Ethereum transaction]] :cryptography:currency:ethereum:2017:
-** [[https://medium.com/@merunasgrincalaitis/how-to-audit-a-smart-contract-most-dangerous-attacks-in-solidity-ae402a7e7868][The ultimate guide to audit a Smart Contract + Most dangerous attacks]] :cryptography:currency:smart:contracts:2017:
-** [[https://blog.colony.io/writing-upgradeable-contracts-in-solidity-6743f0eecc88][Writing upgradable contracts in Solidity]] :cryptography:currency:smart:contracts:2018:
+** [[https://medium.com/@merunasgrincalaitis/how-to-audit-a-smart-contract-most-dangerous-attacks-in-solidity-ae402a7e7868][The ultimate guide to audit a Smart Contract + Most dangerous attacks]] :cryptography:currency:smartcontracts:2017:
+** [[https://blog.colony.io/writing-upgradeable-contracts-in-solidity-6743f0eecc88][Writing upgradable contracts in Solidity]] :cryptography:currency:smartcontracts:2018:
+** [[https://github.com/ethereum/wiki/wiki/Safety][ethereum wiki: Safety]] :cryptography:currency:smartcontracts:2018:
+** [[https://dasp.co/][Decentralized Application Security Project]] :cryptography:currency:smartcontracts:2018:
+** [[https://consensys.github.io/smart-contract-best-practices/][Ethereum Smart Contract Security Best Practices]] :cryptography:currency:smartcontracts:2018:
+** [[https://github.com/cryptofinlabs/audit-checklist][cryptofinlabs/audit-checklist]]  :github:repository:cryptography:currency:smartcontracts:2018:
 * Datastructures, Databases, and Filesystems
 ** [[http://www.eelis.net/C++/analogliterals.xhtml][Multi-Dimensional Analog Literals]] :datastructures:analog:literals:2006:
 ** [[https://www.interviewcake.com/article/python/data-structures-coding-interview][Datastructures for Coding Interviews]]    :datastructures:python:interviews:
 ** [[http://www.catb.org/esr/structure-packing/][The Lost Art of C Structure Packing]] :datastructures:c:packing:esr:2014:
 ** [[https://cstack.github.io/db_tutorial/][Let's Build a Simple Database]] :datastructures:databases:c:language:sql:sqlite:
-
    Writing a sqlite clone from scratch in C
-
 ** [[http://use-the-index-luke.com/no-offset][We need tool support for keyset pagination]] :datastructures:databases:sql:pitfall:pagination:offset:
 ** [[https://www.percona.com/blog/2017/11/15/zfs-from-a-mysql-perspective/][ZFS from a MySQL perspective]] :datastructures:databases:filesystems:mysql:zfs:2017:
 ** [[https://blog.demofox.org/2017/11/21/floating-point-precision/][Demystifying Floating Point Precision]] :datastructures:floating:point:numbers:2017:
@@ -655,6 +661,7 @@ you can work around this client side with per hour filenames or the other usual 
 *** [[http://www.iso-9899.info/wiki/Alignment][iso-9899 wiki: Alignment]] :wiki:c:language:2017:
 *** [[https://wozniak.ca/blog/2018/06/25/Massacring-C-Pointers/index.html][Massacring C Pointers]] :c:language::2018:
 **** [[https://wozniak.ca/blog/2018/06/25/Massacring-C-Pointers/code.html][Code Listing from Massacring C Pointers]] :c:language:2018:
+*** [[https://stefansf.de/post/pointers-are-more-abstract-than-you-might-expect/][Pointers are more abstract than you might expect in C]] :c:language:2018:
 *** Libraries
 **** [[https://github.com/mity/acutest][mitv/acutest]] :c:language:test:framework:2017:
 **** [[http://www.glfw.org/index.html][GLFW]] :c:language:opengl:framework:2017:
@@ -1033,6 +1040,7 @@ git log --oneline --decorate --all --graph
 ** [[https://www.destroyallsoftware.com/blog/2017/the-biggest-and-weirdest-commits-in-linux-kernel-git-history][The Biggest and Weirdest Commits in Linux Kernel Git History]] :revision:control:git:linux:2017:
 ** [[https://zwischenzugs.com/2018/03/26/git-log-the-good-parts/][Git Log: The Good Parts]] :revision:control:git:log:2018:
 *** [[https://news.ycombinator.com/item?id=16677308][Hacker News Discussion #16677308]] :discussion:revision:control:git:log:2018:
+** [[https://drewdevault.com/2018/07/02/Email-driven-git.html][The advantages of an email-driven git workflow]] :revision:control:git:2018:
 * Shells and Terminals
 ** [[https://zanshin.net/2013/02/02/zsh-configuration-from-the-ground-up/][Zsh Configuration From the Ground Up]] :zsh:configuration:tutorial:2013:
 ** [[http://www.howardism.org/Technical/Emacs/eshell-fun.html][Eschewing Zshell for Emacs Shell]] :zsh:emacs:eshell:
@@ -1156,6 +1164,7 @@ From the discussion I've had and forums I've read, I think that people are afrai
 ** [[https://getweeklyupdate.com/manager-guide][How to be a Manager]] :management:2018:
 ** [[https://github.com/kanboard/kanboard][Github: kanboard/kanboard]] :kanban:2015:2018:
    Open source kanban board web application in =PHP= with =MySQL= database.
+** [[http://www.texpaste.com/][TexPaste: Pastebin for Mathematicians]] :pastebin:mathematics:
 * UNIX and BSD
 ** [[https://fosdem.org/2017/schedule/event/my_bsd_sucks_less/][My BSD Sucks Less Than Yours]] :talk:unix:openbsd:freebsd:
 
