@@ -759,6 +759,8 @@ int main(int argc, char* argv[]) {
 *** Videos
 **** [[https://www.youtube.com/watch?v=hEx5DNLWGgA][CppCon 2015: Herb Sutter "Writing Good C++14... By Default"]] :video:talk:language:cpp:sutter:2015:
 **** [[https://www.youtube.com/watch?v=fX2W3nNjJIo][CppCon 2017: Bjarne Stroustrup “Learning and Teaching Modern C++”]] :video:talk:language:cpp:stroustrup:2017:
+** C#
+*** [[https://blog.marcgravell.com/2018/07/pipe-dreams-part-1.html][Pipelines - a guided tour of the new IO API in .NET, part 1]] :csharp:2018:
 ** Go
 *** [[https://github.com/chaseadamsio/goorgeous][chaseadamsio/goorgeous]] :github:golang:emacs:orgmode:2017:2018:
 ** Erlang
@@ -1054,6 +1056,7 @@ git log --oneline --decorate --all --graph
 ** [[https://ep2015.europython.eu/conference/talks/less-known-packaging-features-and-tricks][Less known (python) packaging features and tricks]] :python:packaging:talk:slides:video:2015:
 ** [[https://github.com/arogozhnikov/python3_with_pleasure][Migrating to Python 3 with pleasure]] :python:3:migration:features:
 ** [[https://zealdocs.org/][Zeal is an offline documentation browser for software developers.]] :software:engineering:programming:languages:offline:documentation:reference:
+** [[http://www.humus.name/index.php?page=News&ID=383][Rules of optimization]] :software:engineering:optimization:process:2018:
 * Systems Engineering
 ** [[https://alestic.com/2010/12/ec2-user-data-output/][Logging user-data Script Output on EC2 Instances]] :systems:cloudinit:logging:aws:ec2:
 
