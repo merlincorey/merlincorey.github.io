@@ -259,6 +259,7 @@ Surviving are his wife of 54 years, Tomoko, of Oberlin, Ohio; and two daughters,
 ** [[https://dasp.co/][Decentralized Application Security Project]] :cryptography:currency:smartcontracts:2018:
 ** [[https://consensys.github.io/smart-contract-best-practices/][Ethereum Smart Contract Security Best Practices]] :cryptography:currency:smartcontracts:2018:
 ** [[https://github.com/cryptofinlabs/audit-checklist][cryptofinlabs/audit-checklist]]  :github:repository:cryptography:currency:smartcontracts:2018:
+** [[https://dappradar.com/][dApp Radar]] :statistics:aggregator:cryptography:currency:2018:
 * Datastructures, Databases, and Filesystems
 ** [[http://www.eelis.net/C++/analogliterals.xhtml][Multi-Dimensional Analog Literals]] :datastructures:analog:literals:2006:
 ** [[https://www.interviewcake.com/article/python/data-structures-coding-interview][Datastructures for Coding Interviews]]    :datastructures:python:interviews:
@@ -1043,6 +1044,7 @@ git log --oneline --decorate --all --graph
 ** [[https://zwischenzugs.com/2018/03/26/git-log-the-good-parts/][Git Log: The Good Parts]] :revision:control:git:log:2018:
 *** [[https://news.ycombinator.com/item?id=16677308][Hacker News Discussion #16677308]] :discussion:revision:control:git:log:2018:
 ** [[https://drewdevault.com/2018/07/02/Email-driven-git.html][The advantages of an email-driven git workflow]] :revision:control:git:2018:
+** [[https://twobithistory.org/2018/07/07/cvs.html][Version Control Before Git with CVS]] :revision:control:history:2018:
 * Shells and Terminals
 ** [[https://zanshin.net/2013/02/02/zsh-configuration-from-the-ground-up/][Zsh Configuration From the Ground Up]] :zsh:configuration:tutorial:2013:
 ** [[http://www.howardism.org/Technical/Emacs/eshell-fun.html][Eschewing Zshell for Emacs Shell]] :zsh:emacs:eshell:
