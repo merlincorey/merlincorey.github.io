@@ -211,6 +211,7 @@ It's mainly useful for debugging purposes and perhaps in a few cases for safety,
 ** [[https://github.com/gchq/CyberChef][GCHQ CyberChef]] :cryptography:tools:
    Forked on my own github [[https://github.com/merlincorey/CyberChef][merlincorey/CyberChef]].
 ** [[https://cryptopals.com/][Cryptopals]] :cryptography:ctf:
+** [[https://softwareengineering.stackexchange.com/questions/49550/which-hashing-algorithm-is-best-for-uniqueness-and-speed][StackOverflow: Which hashing algorithm is best for uniqueness and speed?]] :stackoverflow:answers:cryptography:hashing:2013:
 * Crypto currencies
 ** [[http://www.righto.com/2014/09/mining-bitcoin-with-pencil-and-paper.html][Mining Bitcoin with pencil and paper: 0.67 hashes per day]] :cryptography:currency:bitcoin:2014:
 ** [[http://www.righto.com/2014/02/ascii-bernanke-wikileaks-photographs.html][Hidden surprises in the Bitcoin blockchain and how they are stored: Nelson Mandela, Wikileaks, photos, and Python software]] :cryptography:currency:blockchain:creative:hacking:2014:
@@ -280,6 +281,10 @@ Surviving are his wife of 54 years, Tomoko, of Oberlin, Ohio; and two daughters,
 *** [[https://github.com/skarupke/flat_hash_map][skarupke/flat_hash_map]] :datastructures:hash:table:2018:
 ** [[http://db.cs.berkeley.edu/papers/fntdb07-architecture.pdf][Architecture of a Database System]] :paper:databases:architecture:2007:
 ** [[https://cs.uwaterloo.ca/~plragde/flaneries/FDS/][Functional Data Structures]] :book:datastructures:functional:
+** [[https://clemenswinter.com/2018/07/09/how-to-analyze-billions-of-records-per-second-on-a-single-desktop-pc/][How to Analyze Billions of Records per Second on a Single Desktop PC]] :blog:inmemory:databases:2018:
+** [[https://adamdrake.com/command-line-tools-can-be-235x-faster-than-your-hadoop-cluster.html][Command-line Tools can be 235x Faster than your Hadoop Cluster]] :blog:analytics:performance:2014:
+** [[https://adamdrake.com/big-data-small-machine.html][Big Data, Small Machine]] :blog:analytics:performance:2018:
+** [[http://traildb.io/][TrailDB]] :databases:events:2014:2018:
 ** Alembic
 *** [[http://www.chesnok.com/daily/2013/07/02/a-practical-guide-to-using-alembic/][A Practical Guide to using Alembic]] :database:migrations:sqlalchemy:alembic:
 *** [[https://www.compose.com/articles/schema-migrations-with-alembic-python-and-postgresql/][Schema Migrations with Alembic, Python, and PostgreSQL]] :databse:migrations:sqlalchemy:alembic:postgres:
@@ -527,6 +532,8 @@ What I will do, however, is offer a ton of different recommendations for differe
 ** [[https://github.com/glouw/tinn][glouw/tinn]] :machine:learning:neural:network:library:
    The tiny neural network library
 ** [[https://sandipanweb.wordpress.com/2018/05/31/8626/][Few Machine Learning Problems (with Python implementations)]] :machine:learning:neural:networks:2018:
+** [[https://thegradient.pub/why-rl-is-flawed/][Reinforcement learning's foundational flaw]] :machine:learning:reinforcement:2018:
+*** [[https://thegradient.pub/how-to-fix-rl/][How to fix reinforcement learning]] :machine:learning:reinforcement:2018:
 * Mazes
 
 ** [[http://weblog.jamisbuck.org/2011/2/7/maze-generation-algorithm-recap][Maze Generation Algorithm Recap]] :maze:algorithms:
@@ -601,6 +608,11 @@ you can work around this client side with per hour filenames or the other usual 
 *** [[https://ericlippert.com/2015/05/04/wizards-and-warriors-part-three/][Wizards and Warriors: Part Three]] :object:oriented:design:
 *** [[https://ericlippert.com/2015/05/07/wizards-and-warriors-part-four/][Wizards and Warriors: Part Four]] :object:oriented:design:
 *** [[https://ericlippert.com/2015/05/11/wizards-and-warriors-part-five/][Wizards and Warriors: Part Five]] :object:oriented:design:
+* Open Source
+** [[https://www.rainloop.net/downloads/][Rainloop webmail]]                                       :oss:php:mail:2018:
+** [[https://github.com/usefathom/fathom][Github: usefathom/fathom]] :oss:repository:golang:analytics:2018:
+** [[https://matomo.org/][Matomo: Open analytics platform]] :oss:php:analytics:2018:
+   Formerly ~PIWIK~, free Google Analytics-like platform.
 * Operating Systems
 ** [[http://greenteapress.com/thinkos/thinkos.pdf][Think OS: A Brief Introduction to Operating Systems]] :operating:systems:2015:
 * Papers
@@ -849,6 +861,7 @@ This is why “Lisp is the greatest!”
 *** [[https://bsima.me/clog/robust-clojure-nil.html][Robust Clojure: The best way to handle nil]] :programming:language:lisp:clojure:nil:null:handling:2018:
 *** [[http://www.ccs.neu.edu/home/matthias/HtDP2e/][How to Design Programs 2]]                               :book:programming:language:lisp:scheme:2014:
 *** [[https://ds26gte.github.io/tyscheme/][Teach Yourself Scheme in FIXNUM days]] :book:programming:language:lisp:scheme:
+*** [[http://stevelosh.com/blog/2018/07/fun-with-macros-if-let/][Fun with Macros: if-let and when-let]] :blog:language:lisp:macros:2018:
 ** Python
 *** [[http://automatetheboringstuff.com/chapter0/][Automate the Boring Stuff with Python]] :book:python:programming:automation:
 *** [[http://exploreflask.com][Explore Flask]] :python:programming:web:site:api:
@@ -1088,6 +1101,15 @@ git log --oneline --decorate --all --graph
    - [[https://www.nginx.com/resources/admin-guide/][NginX Administration Guide]]
 
 ** [[https://chrisdown.name/2018/01/02/in-defence-of-swap.html][In defence of swap: common misconceptions]] :systems:swap:memory:2018:
+** [[http://aws.amazon.com/][Amazon Web Services]]
+*** [[https://www.trek10.com/blog/lambda-cost/][AWS Lambda Pricing in Context - A Comparison to EC2]] :systems:aws:2016:
+#+CAPTION: Lambda Breakeven Analysis for an m4.large Instance
+| Function Execution Time and Memory | Requests per Hour required for Lambda cost to equal EC2 cost | Requests per second |
+|------------------------------------+--------------------------------------------------------------+---------------------|
+| ~100 ms~ with ~128 MB~ RAM         |                                                       295000 |                81.9 |
+| ~200 ms~ with ~512 MB~ RAM         |                                                        64000 |                17.8 |
+| ~200 ms~ with ~1024 MB~ RAM        |                                                        34000 |                9.4. |
+| ~1000 ms~ with ~1024 MB~ RAM       |                                                         7100 |                 2.0 |
 ** Terraform
 
 *** [[https://opencredo.com/terraform-infrastructure-design-patterns/][Terraform Infrastructure Design Patterns]] :systems:terraform:2015:
