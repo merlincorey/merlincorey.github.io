@@ -206,6 +206,10 @@ It's target-dependent, but assuming x86, it means the GCC runtime libraries caus
 On other platforms, it might use special CPU instructions that cause a hardware exception.
 It's mainly useful for debugging purposes and perhaps in a few cases for safety, where the risk of continuing after overflow is greater than the risk of the program suddenly terminating.
 #+END_QUOTE
+* Concurrency
+** [[https://locklessinc.com/articles/locks/][Spinlocks and Read-Write Locks]] :concurrency:c:locks:
+** [[http://effbot.org/zone/thread-synchronization.htm][Thread Synchronization Mechanisms in Python]] :concurrency:python:locks:
+** [[https://9vx.org/presentations/Spinlocks.pdf][Spinlocks]] :slides:concurrency:locks:2011:
 * Cryptography
 ** [[https://begriffs.com/posts/2016-11-05-advanced-intro-gnupg.html][Advanced Introduction to GnuPG]] :cryptography:tutorial:gnupg:
 ** [[https://github.com/gchq/CyberChef][GCHQ CyberChef]] :cryptography:tools:
