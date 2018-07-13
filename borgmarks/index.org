@@ -210,6 +210,7 @@ It's mainly useful for debugging purposes and perhaps in a few cases for safety,
 ** [[https://locklessinc.com/articles/locks/][Spinlocks and Read-Write Locks]] :concurrency:c:locks:
 ** [[http://effbot.org/zone/thread-synchronization.htm][Thread Synchronization Mechanisms in Python]] :concurrency:python:locks:
 ** [[https://9vx.org/presentations/Spinlocks.pdf][Spinlocks]] :slides:concurrency:locks:2011:
+** [[https://eli.thegreenplace.net/2018/basics-of-futexes/][Basics of Futexes]] :blog:concurrency:locks:2018:
 * Cryptography
 ** [[https://begriffs.com/posts/2016-11-05-advanced-intro-gnupg.html][Advanced Introduction to GnuPG]] :cryptography:tutorial:gnupg:
 ** [[https://github.com/gchq/CyberChef][GCHQ CyberChef]] :cryptography:tools:
@@ -289,6 +290,8 @@ Surviving are his wife of 54 years, Tomoko, of Oberlin, Ohio; and two daughters,
 ** [[https://adamdrake.com/command-line-tools-can-be-235x-faster-than-your-hadoop-cluster.html][Command-line Tools can be 235x Faster than your Hadoop Cluster]] :blog:analytics:performance:2014:
 ** [[https://adamdrake.com/big-data-small-machine.html][Big Data, Small Machine]] :blog:analytics:performance:2018:
 ** [[http://traildb.io/][TrailDB]] :databases:events:2014:2018:
+** [[http://www.sarahmei.com/blog/2013/11/11/why-you-should-never-use-mongodb/][Why you should never use MongoDB]] :databases:nosql:2013:
+** [[http://blog.memsql.com/nosql/][Thank You for Your Help NoSQL, but We Got It from Here]] :databases:sql:nosql:2018:
 ** Alembic
 *** [[http://www.chesnok.com/daily/2013/07/02/a-practical-guide-to-using-alembic/][A Practical Guide to using Alembic]] :database:migrations:sqlalchemy:alembic:
 *** [[https://www.compose.com/articles/schema-migrations-with-alembic-python-and-postgresql/][Schema Migrations with Alembic, Python, and PostgreSQL]] :databse:migrations:sqlalchemy:alembic:postgres:
@@ -665,12 +668,13 @@ you can work around this client side with per hour filenames or the other usual 
 ** [[https://phet.colorado.edu/][PhET: Interactive (Physics) Simulations]] :physics:simulations:
 * Programming Languages
 ** APL
-*** [[http://wordsandbuttons.online/apl_deserves_its_renaissance_too.html][APL deserves its renaissance too]] 
+*** [[http://wordsandbuttons.online/apl_deserves_its_renaissance_too.html][APL deserves its renaissance too]]
 ** Assembly
 *** [[http://bob.cs.sonoma.edu/IntroCompOrg-RPi/intro-co-rpi.html][Introduction to Computer Organization: ARM Assembly Language Using the Raspberry Pi]] :assembly:arm:raspberry:pi:
 *** [[https://github.com/ICTeam28/PiFox][ICTeam28/PiFox]] :assembly:arm:raspberry:pi:2014:
 *** [[http://benhoyt.com/writings/pyast64/][Compiling Python syntax to x86-64 assembly for fun and (zero) profit]] :assembly:x86:python:static:2017:
 *** [[https://csl.name/post/python-compiler/][JIT compiling a subset of Python to x86-64]] :assembly:x86:python:jit:2017:
+*** [[https://github.com/nemasu/asmttpd][nemasu/asmttpd]] :assmebly:x86:networking:http:2013:2017:
 ** C
 *** [[http://www.maizure.org/projects/printf/index.html][Tearing apart printf()]] :c:language:low:level:2018:
 *** [[http://nullprogram.com/blog/2018/06/10/][Minimalist C Libraries]] :c:language:libraries:2018:
@@ -1069,12 +1073,40 @@ git log --oneline --decorate --all --graph
 ** [[https://github.com/anordal/shellharden/blob/master/how_to_do_things_safely_in_bash.md][anordal/shellharden: How to do things safely in bash]] :bash:shell:safety:2018:
 ** [[http://blog.deadvax.net/2018/05/29/shell-magic-set-operations-with-uniq/][Shell Magic: Set Operations with uniq]] :shell:scripting:2018:
 * Software Engineering
+** [[http://www.drdobbs.com/architecture-and-design/software-engineering-computer-science/217701907][Software Engineering ≠ Computer Science]] :software:engineering:architecture:design:2009:
 ** [[http://python.apichecklist.com/][Python API Checklist]] :python:api:programming:checklist:2017:
 ** [[https://blog.ionelmc.ro/2014/06/25/python-packaging-pitfalls/][Python Packaging Pitfalls]] :python:packaging:2014:
 ** [[https://ep2015.europython.eu/conference/talks/less-known-packaging-features-and-tricks][Less known (python) packaging features and tricks]] :python:packaging:talk:slides:video:2015:
 ** [[https://github.com/arogozhnikov/python3_with_pleasure][Migrating to Python 3 with pleasure]] :python:3:migration:features:
 ** [[https://zealdocs.org/][Zeal is an offline documentation browser for software developers.]] :software:engineering:programming:languages:offline:documentation:reference:
 ** [[http://www.humus.name/index.php?page=News&ID=383][Rules of optimization]] :software:engineering:optimization:process:2018:
+** [[https://en.wikipedia.org/wiki/Mutation_testing][Wikipedia: Mutation Testing]] :wiki:software:engineering:testing:
+*** [[https://www.guru99.com/mutation-testing.html][Mutation Testing: Complete Guide]] :article:software:engineering:testing:
+#+CAPTION: Explanation of Mutation Testing
+#+BEGIN_QUOTE
+Mutation Testing is a type of software testing where we mutate (change) certain statements in the source code and check if the test cases are able to find the errors.
+It is a type of White Box Testing which is mainly used for Unit Testing.
+The changes in mutant program are kept extremely small, so it does not affect the overall objective of the program.
+
+The goal of Mutation Testing is to assess the quality of the test cases which should be robust enough to fail mutant code.
+This method is also called as Fault based testing strategy as it involves creating fault in the program
+
+Mutation was originally proposed in 1971 but lost fervor due to high costs involved.
+Now, again it has picked steam and is widely used for languages such as Java and XML.
+#+END_QUOTE
+*** [[https://ai.google/research/pubs/pub46584][State of Mutation Testing at Google]] :paper:software:engineering:testing:2018:
+#+CAPTION: Abstract of the paper
+#+BEGIN_QUOTE
+Mutation testing assesses test suite efficacy by inserting small faults into programs and measuring the ability of the test suite to detect them.
+It is widely considered the strongest test criterion in terms of finding the most faults and it subsumes a number of other coverage criteria.
+Traditional mutation analysis is computationally prohibitive which hinders its adoption as an industry standard.
+In order to alleviate the computational issues, we present a diff-based probabilistic approach to mutation analysis that drastically reduces the number of mutants by omitting lines of code without statement coverage and lines that are determined to be uninteresting - we dub these arid lines.
+Furthermore, by reducing the number of mutants and carefully selecting only the most interesting ones we make it easier for humans to understand and evaluate the result of mutation analysis.
+We propose a heuristic for judging whether a node is arid or not, conditioned on the programming language.
+We focus on a code-review based approach and consider the effects of surfacing mutation results on developer attention.
+The described system is used by 6,000 engineers in Google on all code changes they author or review, affecting in total more than 14,000 code authors as part of the mandatory code review process.
+The system processes about 30% of all diffs across Google that have statement coverage calculated.
+#+END_QUOTE
 * Systems Engineering
 ** [[https://alestic.com/2010/12/ec2-user-data-output/][Logging user-data Script Output on EC2 Instances]] :systems:cloudinit:logging:aws:ec2:
 
@@ -1132,7 +1164,6 @@ git log --oneline --decorate --all --graph
 ** [[https://ski.ihoc.net/][The Most Officialest SkiFree Home Page!]] :software:history:skifree:
 ** [[http://vvvvalvalval.github.io/posts/what-makes-a-good-repl.html][What makes a good REPL?]] :programming:language:interpreter:design:clojure:
 ** [[https://github.com/karllhughes/side-project-marketing/blob/master/marketing-checklist.md][Side Project Marketing Checklist]] :open:source:marketing:checklist:2017:
-** [[http://www.drdobbs.com/architecture-and-design/software-engineering-computer-science/217701907][Software Engineering ≠ Computer Science]] :software:engineering:architecture:design:2009:
 ** [[http://www.projectrho.com/public_html/rocket/worldbuilding.php][Worldbuilding]] :world:building:
    Resource on all things world-building with lots of interesting information and pointers to more information about world building.
 ** [[https://www.youtube.com/channel/UCEXz4oDS5KqIcinH2CjxVfg/videos][Eckkehard The German Butcher]] :youtube:channel:charcutery:butchery:
