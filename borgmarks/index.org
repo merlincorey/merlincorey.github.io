@@ -211,12 +211,16 @@ It's mainly useful for debugging purposes and perhaps in a few cases for safety,
 ** [[http://effbot.org/zone/thread-synchronization.htm][Thread Synchronization Mechanisms in Python]] :concurrency:python:locks:
 ** [[https://9vx.org/presentations/Spinlocks.pdf][Spinlocks]] :slides:concurrency:locks:2011:
 ** [[https://eli.thegreenplace.net/2018/basics-of-futexes/][Basics of Futexes]] :blog:concurrency:locks:2018:
+*** [[https://news.ycombinator.com/item?id=17524169][Hacker News Discussion #17524169]] :discussion:concurrency:locks:2018:
 * Cryptography
 ** [[https://begriffs.com/posts/2016-11-05-advanced-intro-gnupg.html][Advanced Introduction to GnuPG]] :cryptography:tutorial:gnupg:
 ** [[https://github.com/gchq/CyberChef][GCHQ CyberChef]] :cryptography:tools:
    Forked on my own github [[https://github.com/merlincorey/CyberChef][merlincorey/CyberChef]].
 ** [[https://cryptopals.com/][Cryptopals]] :cryptography:ctf:
 ** [[https://softwareengineering.stackexchange.com/questions/49550/which-hashing-algorithm-is-best-for-uniqueness-and-speed][StackOverflow: Which hashing algorithm is best for uniqueness and speed?]] :stackoverflow:answers:cryptography:hashing:2013:
+** [[http://www.darkside.com.au/snow/][SNOW - Steganographic Nature Of Whitespace with ICE encryption]] :cryptography:steganography:1998:2013:
+*** [[https://www.chaoswebs.net/snow10/][Snow10]] :cryptography:steganography:webapp:
+*** [[https://secretsigner.com/][Secret Signer]] :cryptography:steganography:webapp:
 * Crypto currencies
 ** [[http://www.righto.com/2014/09/mining-bitcoin-with-pencil-and-paper.html][Mining Bitcoin with pencil and paper: 0.67 hashes per day]] :cryptography:currency:bitcoin:2014:
 ** [[http://www.righto.com/2014/02/ascii-bernanke-wikileaks-photographs.html][Hidden surprises in the Bitcoin blockchain and how they are stored: Nelson Mandela, Wikileaks, photos, and Python software]] :cryptography:currency:blockchain:creative:hacking:2014:
