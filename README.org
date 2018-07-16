@@ -1,4 +1,4 @@
-#+TITLE: Merlin Corey dot Github dot I/O
+xo#+TITLE: Merlin Corey dot Github dot I/O
 * merlincorey.github.io
 
   #+CAPTION: This is Merlin's Wizard Hat
@@ -33,21 +33,21 @@
 | jupyter   | python, R         | Sharing programming sessions has never been easier. | A bit of a learning curve to figure out how to use all the subcommands and the UI. |
 ** Objective Matrix
 #+CAPTION: Comparison of generator age, inputs, and extensions
-| Generator             | Vintage         | Inputs            | Extensions |   |
-|-----------------------+-----------------+-------------------+------------+---|
-| orgmode               |                 | orgmode           | elisp      |   |
-| reveal.js             |                 | html5, javascript | javascript |   |
-| jupyter               |                 | python, R         |            |   |
-| lektor                |                 |                   |            |   |
-| frozen-flask          |                 |                   |            |   |
-| cactus                | 2011-02 to 2017 |                   |            |   |
-| hyde (python)         |                 |                   |            |   |
-| pelican               |                 |                   |            |   |
-| hyde (chicken scheme) |                 |                   |            |   |
-| gatsby                |                 |                   |            |   |
-| stagit                |                 | git               |            |   |
-| hugo                  |                 |                   | go         |   |
-|                       |                 |                   |            |   |
+| Generator             | Vintage         | Inputs            | Extensions  |
+|-----------------------+-----------------+-------------------+-------------|
+| orgmode               |                 | orgmode           | elisp       |
+| reveal.js             |                 | html5, javascript | javascript  |
+| jupyter               |                 | python, R         |             |
+| lektor                |                 |                   |             |
+| frozen-flask          |                 |                   |             |
+| cactus                | 2011-02 to 2017 |                   |             |
+| hyde (python)         |                 |                   |             |
+| pelican               |                 |                   |             |
+| hyde (chicken scheme) |                 |                   |             |
+| gatsby                |                 |                   |             |
+| stagit                |                 | git               |             |
+| hugo                  |                 |                   | go          |
+| ssg                   |                 | markdown          | POSIX shell |
 * Generator Zoo
 ** [[http://orgmode.org/][orgmode]] 						    :emacs:lisp:html:
 
@@ -102,3 +102,5 @@
 ** [[https://gohugo.io/][hugo]] :go:
    [[https://fillmem.com/post/fast-secured-and-free-static-site/][Build a fast, secured and free static site in less than 3 hours]] includes a little tutorial on getting setup with hugo.
 *** [[https://www.dannyguo.com/blog/migrating-from-jekyll-to-hugo/][Migrating from Jekyll to Hugo]] :blog::2018:
+** [[https://www.romanzolotarev.com/ssg.html][ssg]] :shell:markdown:
+   =POSIX= shell /static site generator/ by [[https://www.romanzolotarev.com/][Roman Zolotarev]] from the OpenBSD community.
