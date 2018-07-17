@@ -1,4 +1,4 @@
-xo#+TITLE: Merlin Corey dot Github dot I/O
+#+TITLE: Merlin Corey dot Github dot I/O
 * merlincorey.github.io
 
   #+CAPTION: This is Merlin's Wizard Hat

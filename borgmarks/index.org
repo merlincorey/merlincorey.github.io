@@ -438,6 +438,8 @@ Surviving are his wife of 54 years, Tomoko, of Oberlin, Ohio; and two daughters,
 *** Don't blow up icons that are meant to be small
 *** Use accent borders to add color to a bland design
 *** Not every button needs a background color
+** [[https://dribbble.com/][Dribbble - Design Ideas]] :design:
+*** [[https://dribbble.com/colors][Dribbble: Browse by Colors]] :color:design:
 ** [[https://hacks.mozilla.org/2018/03/how-to-write-css-that-works-in-every-browser-even-the-old-ones/][Resilient CSS: How to Write CSS That Works in Every Browser, Even the Old Ones]] :2018:
 *** [[https://news.ycombinator.com/item?id=16546725][Hacker News discussion #16546725]]
 #+CAPTION: ausjke 6 hours ago
@@ -708,10 +710,10 @@ you can work around this client side with per hour filenames or the other usual 
 **** [[http://cpptruths.blogspot.com/2014/05/fun-with-lambdas-c14-style-part-2.html][Fun with Lambdas: C++14 Style (part 2)]] :blog:language:cpp:2014:
 **** [[http://cpptruths.blogspot.com/2014/08/fun-with-lambdas-c14-style-part-3.html][Fun with Lambdas: C++14 Style (part 3)]] :blog:language:cpp:2014:
 **** [[http://cpptruths.blogspot.com/2015/06/fun-with-lambdas-c14-style-part-4.html][Fun with Lambdas: C++14 Style (part 4)]] :blog:language:cpp:2015:
-*** [[https://github.com/lefticus/cppbestpractices][lefticus/cppbestpractices]]         :language:cpp:best:practices:2015:2018:
+*** [[https://github.com/lefticus/cppbestpractices][lefticus/cppbestpractices]]         :repository:language:cpp:best:practices:2015:2018:
 **** [[https://lefticus.gitbooks.io/cpp-best-practices/][GitBook: C++ Best Practices]]      :book:language:cpp:best:practices:2018:
 
-*** [[https://github.com/rigtorp/awesome-modern-cpp][rigtorp/awesome-modern-cpp]] :language:cpp:awesome:list:2016:
+*** [[https://github.com/rigtorp/awesome-modern-cpp][rigtorp/awesome-modern-cpp]] :repository:language:cpp:awesome:list:2016:
 *** [[https://docs.microsoft.com/en-us/cpp/cpp/welcome-back-to-cpp-modern-cpp][Microsoft: Welcome back to C++ - Modern C++]] :language:cpp11:cpp14:2016:
 *** [[https://google.github.io/styleguide/cppguide.html][Google C++ Style Guide]] :language:cpp:style:guide:
 *** [[https://github.com/isocpp/CppCoreGuidelines][isocpp/CppCoreGuidelines]] :language:cpp11:cpp14:cpp17:guidelines:2018:
@@ -730,6 +732,7 @@ you can work around this client side with per hour filenames or the other usual 
 *** [[https://www.conan.io/][conan - The C / C++ package manager for developers]] :language:cpp:library:package:manager:
 *** [[http://blog.reverberate.org/2013/08/parsing-c-is-literally-undecidable.html][Parsing C++ is literally undecidable]] :language:cpp:compilers:decideability:2013:
 *** [[https://www.bfilipek.com/2018/06/parstl-tests.html][Examples of Parallel Algorithms From C++17]] :language:cpp:cpp17:algorithms:parallel:2018:
+*** [[https://github.com/mattbierner/STT-C-Compile-Time-Snake][mattbierner/STT-C-Compile-Time-Snake]] :repository:language:cpp:templates:2014:2016:
 *** Libraries
 **** Testing
 ***** [[https://github.com/catchorg/Catch2][catchorg/Catch2]]                      :language:cpp:test:framework:2018:
