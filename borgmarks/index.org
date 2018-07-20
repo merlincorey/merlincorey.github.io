@@ -43,9 +43,7 @@ Curated, categorized, and tagged by hand.
 *** [[http://orgmode.org/orgcard.pdf][Org Card]] 				       :emacs:orgmode:reference:card
 * Algorithms
 ** [[https://bost.ocks.org/mike/algorithms/][Visualizing Algorithms]] 		  :bostocks:visualization:algorithms:
-
    Great overview of various algorithms with visualizations from visualization master Mike Bostocks.
-
 ** [[https://yurichev.com/blog/rubik/][Solving pocket Rubik's cube (2 * 2 * 2) using Z3 and SAT solver]] :algorithms:simplified:rubiks:cube:solver:
 ** [[https://users.cs.duke.edu/~ola/bubble/bubble.html][Bubble Sort: An Archaeological Algorithmic Analysis]] :algorithms:bubble:sort:analysis:
 ** [[http://www.keithschwarz.com/interesting/][The Archive of Interesting Code]] :algorithms:datastructures:archive:examples:
@@ -104,10 +102,12 @@ That should definitely improve performance of the uncommon operation (the copy),
 But maybe you meant the array of arrays to be recursive? That seems like it would alter the big-O (from n+m to log(n)+m).
 But typically m>>n, so the net result is the same.
 #+END_QUOTE
+*** [[https://news.ycombinator.com/item?id=17573431][Hacker News Discussion #17573431]] :discussion:algorithms:datastructures:javascript:2018:
 ** [[https://gist.github.com/nadavrot/5b35d44e8ba3dd718e595e40184d03f0][High-Performance Matrix Multiplication]] :algorithms:matrix:multiplication:2018:
 ** [[https://hackernoon.com/timsort-the-fastest-sorting-algorithm-youve-never-heard-of-36b28417f399][Timsort — the fastest sorting algorithm you’ve never heard of]] :algorithms:sorting:2018:
    The core sorting algorithm in =Python=.
 *** [[https://news.ycombinator.com/item?id=17436591][Hackernews Discussion #17436591]] :discussion:algorithms:sorting:2018:
+** [[https://play.elevatorsaga.com/][Elevator Saga: The elevator programming game]] :algorithms:javascript:2014:2015:
 ** Books
 *** [[https://github.com/mdipierro/nlib][Annotated Algorithms in Python]] :book:algorithms:python:
 ** Programming Exercises
@@ -498,6 +498,7 @@ E-mail: amarillion@yahoo.com
 Home page: http://www.helixsoft.nl/
 #+END_QUOTE
 ** [[https://allarsblog.com/2018/03/16/confessions-of-an-unreal-engine-4-engineering-firefighter/][Confessions of an Unreal Engine 4 Engineering Firefighter]] :game:development:unreal:engine:fire:fighting:2018:
+** [[https://www.gamasutra.com/view/feature/131503/1500_archers_on_a_288_network_.php?print=1][1500 Archers on a 28.8: Network Programming in Age of Empires and Beyond]] :game:development:network:2018:
 * Game Theory
 ** [[http://www.chesstactics.org/index.php?Type=page&Action=next&From=1,1,1,1][Ward Farnsworth's Predator at the Chessboard]] :gametheory:book:chess:
 ** [[http://www.mindsports.nl/][mindsports.nl]] :gametheory:gamedesign:puzzles:
@@ -562,9 +563,7 @@ Nice recap of maze generation algorithms from a minecraft modder.  Check out his
 
 * Networking
 ** [[https://www.nanog.org/sites/default/files/2_Steenbergen_Tutor][Everything You Always Wanted to Know About Optical Networking – But Were Afraid to Ask]] :networking:optical:fiber:2017:
-
 ** [[http://beej.us/guide/bgnet/][Beej's Guide to Network Programming]] :networking:programming:c:unix:sockets:beejs:guide:
-
    Famous and extensive introductory text to programming with unix sockets.  Only really touches on simple synchronous socket servers for the most part.
 
    *TODO* - recategorize as their own links
@@ -572,7 +571,6 @@ Nice recap of maze generation algorithms from a minecraft modder.  Check out his
    - [[http://beej.us/guide/bgc/][Beej's Guide to C Programming]]
    - [[http://beej.us/guide/bgipc/][Beej's Guide to Unix Interprocess Communication]]
    - [[http://beej.us/guide/bggdb/][Beej's Quick Guide to GDB]]
-
 ** [[https://modern.ircdocs.horse/][Modern IRC Client Protocol]] :networking:protocol:living:documentation:irc:
 ** [[https://coldfix.eu/2017/01/29/vpn-box/][VPN in a Nutshell]] :networking:linux:vpn:per:application:
 ** [[https://fgiesen.wordpress.com/2018/01/20/network-latencies-and-speed-of-light/][Network latencies and the speed of light]] :networking:physics:2018:
@@ -580,7 +578,6 @@ Nice recap of maze generation algorithms from a minecraft modder.  Check out his
 ** [[http://networkdiagram101.com/][16 Tips to Better Network Diagrams]] :networking:diagrams:
 ** [[https://arxiv.org/abs/1103.0463][Fitting Square Pegs Through Round Pipes: Unordered Delivery Wire-Compatible with TCP and TLS]] :networking:protocols:minion:2011:
 ** [[https://tools.ietf.org/html/draft-iyengar-minion-protocol-01][Minion - Wire Protocol]] :paper:networking:protocols:minion:2013:
-
 ** [[http://ieeexplore.ieee.org/document/7497221/][TCP Hollywood]] :networking:protocols:2016:
 ** [[https://www.schoenitzer.de/blog/2018/Linux%20Raw%20Sockets.html][Linux Raw Sockets]] :networking:raw:sockets:linux:2018:
 ** [[https://startyourownisp.com/][Start your own (wireless) ISP]] :networking:wisp:2018:
@@ -696,6 +693,7 @@ you can work around this client side with per hour filenames or the other usual 
 *** [[https://wozniak.ca/blog/2018/06/25/Massacring-C-Pointers/index.html][Massacring C Pointers]] :c:language::2018:
 **** [[https://wozniak.ca/blog/2018/06/25/Massacring-C-Pointers/code.html][Code Listing from Massacring C Pointers]] :c:language:2018:
 *** [[https://stefansf.de/post/pointers-are-more-abstract-than-you-might-expect/][Pointers are more abstract than you might expect in C]] :c:language:2018:
+*** [[https://stackoverflow.com/questions/514118/how-does-duffs-device-work][How does Duff's device work?]] :c:optimization:2009:
 *** Libraries
 **** [[https://github.com/mity/acutest][mitv/acutest]] :c:language:test:framework:2017:
 **** [[http://www.glfw.org/index.html][GLFW]] :c:language:opengl:framework:2017:
