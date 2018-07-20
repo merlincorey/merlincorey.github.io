@@ -639,10 +639,10 @@ you can work around this client side with per hour filenames or the other usual 
 
     Some musings on hypertext and what we might build after the conclusion of World War II.
 
-** [[http://math.harvard.edu/~ctm/home/text/others/shannon/entropy/entropy.pdf][A Mathematical Theory of Communication]] 	      :paper:networking:1948:
-
+** [[http://math.harvard.edu/~ctm/home/text/others/shannon/entropy/entropy.pdf][A Mathematical Theory of Communication]] 	      :paper:shannon:networking:1948:
     Defines the term "bit" for Binary digIT.
-
+** [[http://netlab.cs.ucla.edu/wiki/files/shannon1949.pdf][Communication Theory of Secrecy Systems]] :paper:shannon:cryptography:1949:
+*** [[http://www.cs.haifa.ac.il/~orrd/IntroToCrypto/Spring11/Lecture2.pdf][Shannon's Theory of Secrecy Systems]] :slides:cryptography:2011:
 ** [[https://www.csee.umbc.edu/courses/471/papers/turing.pdf][Computing Machinery and Intelligence]] :paper:turing:artificial:intelligence:1950:
 ** [[https://ia801903.us.archive.org/1/items/bstj29-2-147/bstj29-2-147.pdf][Error Detecting and Error Correcting Codes]] 		 :paper:hamming:1950:
 
