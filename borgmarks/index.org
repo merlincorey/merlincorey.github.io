@@ -322,6 +322,7 @@ Surviving are his wife of 54 years, Tomoko, of Oberlin, Ohio; and two daughters,
 *** [[https://github.com/rnkn/fountain-mode][fountain-mode - Emacs major mode for screenwriting in Fountain plaintext markup]] :emacs:package:screenwriting:
 *** [[http://howardism.org/Technical/Emacs/literate-devops.html][Literate Devops]] :emacs:orgmode:devops:
 **** [[https://www.youtube.com/watch?v=dljNabciEGg][YouTube: Literate Devops]]           :emacs:orgmode:devops:youtube:video:
+**** [[https://news.ycombinator.com/item?id=16559004][Hacker News Discussion #16559004]] :discussion:2018:
 *** [[https://ambrevar.bitbucket.io/emacs-eshell/][eshell as a main shell]] :emacs:eshell:2017:
 *** [[https://www.youtube.com/watch?v=FtieBc3KptU][Emacs for Writers]] :emacs:video:writers:2015:
 **** [[https://news.ycombinator.com/item?id=17048907][Hackernews Discussion #17048907]] :2018:
@@ -1160,11 +1161,11 @@ The system processes about 30% of all diffs across Google that have statement co
 | ~200 ms~ with ~512 MB~ RAM         |                                                        64000 |                17.8 |
 | ~200 ms~ with ~1024 MB~ RAM        |                                                        34000 |                9.4. |
 | ~1000 ms~ with ~1024 MB~ RAM       |                                                         7100 |                 2.0 |
+** [[https://github.com/ansible/][Github: Ansible Organization]]
+*** [[https://github.com/ansible/ansible][Ansible Configuration Management]] :systems:configuration:management:2012:2018:
 ** Terraform
-
 *** [[https://opencredo.com/terraform-infrastructure-design-patterns/][Terraform Infrastructure Design Patterns]] :systems:terraform:2015:
 *** [[https://medium.com/levops/self-invented-how-to-terraform-rules-4b1eb00709ac][Self-invented “how to Terraform” rules]] :systems:terraform:2017:
-
 * Uncategorized Otherwise
 ** [[http://www.silota.com/docs/recipes/][Advanced SQL Recipes to jumpstart your Analysis]] :sql:tricks:data:analysis:
 ** [[http://www.linusakesson.net/programming/tty/][The TTY Demystified]] :unix:history:tty:
