@@ -694,7 +694,10 @@ you can work around this client side with per hour filenames or the other usual 
 **** [[https://wozniak.ca/blog/2018/06/25/Massacring-C-Pointers/code.html][Code Listing from Massacring C Pointers]] :c:language:2018:
 *** [[https://stefansf.de/post/pointers-are-more-abstract-than-you-might-expect/][Pointers are more abstract than you might expect in C]] :c:language:2018:
 *** [[https://stackoverflow.com/questions/514118/how-does-duffs-device-work][How does Duff's device work?]] :c:optimization:2009:
+*** [[https://nullprogram.com/blog/2018/07/20/][The Value of Undefined Behavior]] :c:2018:
+**** [[https://news.ycombinator.com/item?id=17581319][Hacker News Discussion #17581319]] :discussion:c:2018:
 *** Libraries
+**** [[http://www.musl-libc.org/][musl-lib]] :c:language:
 **** [[https://github.com/mity/acutest][mitv/acutest]] :c:language:test:framework:2017:
 **** [[http://www.glfw.org/index.html][GLFW]] :c:language:opengl:framework:2017:
 **** [[https://github.com/hnes/libaco][hnes/libaco]] :c:language:coroutines:2018:
@@ -892,6 +895,8 @@ This is why “Lisp is the greatest!”
 *** Libraries
 **** [[http://npyscreen.readthedocs.io/index.html][npyscreen Documentation]] :python:library:terminal:ui:2014:
 **** [[http://python-prompt-toolkit.readthedocs.io/en/master/][prompt-toolkit Documentation]] :python:library:terminal:ui:2014:2018:
+**** [[http://toolz.readthedocs.io/en/latest/][toolz Documentation]] :python:library:functional:2014:2018:
+***** [[http://toolz.readthedocs.io/en/latest/streaming-analytics.html][toolz Documentation: Streaming Analytics]] :python:library:functional:
 * Reverse Engineering
 ** [[https://www.youtube.com/user/OpenSecurityTraining][Open Security Training YouTube Channel]]                            :videos:binary:reverse:engineering:
 ** [[https://github.com/FireyFly/pixd][Colourful visualization tool for binary files]] :binary:data:visualization:
@@ -1242,6 +1247,9 @@ From the discussion I've had and forums I've read, I think that people are afrai
 ** [[http://www.texpaste.com/][TexPaste: Pastebin for Mathematicians]] :pastebin:mathematics:
 ** [[https://www.metapsychosis.com/at-play-personal-odyssey-chess/][At Play: A Personal Odyssey in Chess]] :article:chess:2018:
 ** [[https://nedbatchelder.com/text/hexwords.html][Hexwords]] :blog:2003:2007:
+** [[http://www.columbia.edu/~fdc/postal/][Frank's Compulsive Guide to Postal Addresses]] :addreses:1989:2018:
+** [[https://teachyourselfcs.com/][Teach Yourself Computer Science]] :computerscience:2018:
+** [[https://www.jofreeman.com/joreen/tyranny.htm][The Tyranny of Structurelessness]] :essay:
 * UNIX and BSD
 ** [[https://fosdem.org/2017/schedule/event/my_bsd_sucks_less/][My BSD Sucks Less Than Yours]] :talk:unix:openbsd:freebsd:
 
