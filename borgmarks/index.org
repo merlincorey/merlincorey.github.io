@@ -108,6 +108,7 @@ But typically m>>n, so the net result is the same.
    The core sorting algorithm in =Python=.
 *** [[https://news.ycombinator.com/item?id=17436591][Hackernews Discussion #17436591]] :discussion:algorithms:sorting:2018:
 ** [[https://play.elevatorsaga.com/][Elevator Saga: The elevator programming game]] :algorithms:javascript:2014:2015:
+** [[https://www.snellman.net/blog/archive/2018-07-23-optimizing-breadth-first-search/][Optimizing a breadth-first search]] :algorithms:puzzles:2018:
 ** Books
 *** [[https://github.com/mdipierro/nlib][Annotated Algorithms in Python]] :book:algorithms:python:
 ** Programming Exercises
@@ -510,6 +511,7 @@ Home page: http://www.helixsoft.nl/
 
 ** [[https://www.fasterthan.life/blog/2017/7/11/i-am-graphics-and-so-can-you-part-1][I Am Graphics And So Can You]] 	       :graphics:3d:rendering:vulkan:
 ** [[http://iquilezles.org/www/index.htm][Íñigo Quílez' Demo and Shader Graphics Articles]] :graphics:demo:scene:shaders:
+** [[https://www.impulseadventure.com/photo/jpeg-huffman-coding.html][JPEG Huffman Coding Tutorial]] :graphics:compression:images:2010:
 * Hardware
 ** [[https://jaycarlson.net/microcontrollers/][The Amazing $1 Microcontroller]]
 
@@ -534,6 +536,8 @@ What I will do, however, is offer a ton of different recommendations for differe
    #+END_QUOTE
 ** [[http://www.righto.com/2018/03/implementing-fizzbuzz-on-fpga.html][Implementing Fizbuzz on an FPGA]] :2018:
 ** [[http://www.gleech.org/first-computers/][Disambiguating the first computer]] :hardware:history:
+** [[http://www.frantone.com/designwritings/design_writings.html][Fran's Writings on Design and Engineering]] :hardware:electricalengineering:2011:2015:
+*** [[https://www.youtube.com/franblanche][Fran Blanche Youtube Channel]] :video:electricalengineering:2011:2018:
 * Home Automation and Internet of Things
 ** [[http://www.bruhautomation.com/][Bruh Automation]] :home:automation:tutorials:reviews:
 
@@ -548,8 +552,11 @@ What I will do, however, is offer a ton of different recommendations for differe
 
 * Machine Learning
 ** [[http://www.asimovinstitute.org/neural-network-zoo/][The Neural Network Zoo]]                        :machine:learning:neural:networks:
-** [[https://docs.google.com/presentation/d/1kSuQyW5DTnkVaZEjGYCkfOxvzCqGEFzWBy4e9Uedd9k/preview?imm_mid=0f9b7e&cmp=em-data-na-na-newsltr_20171213#slide=id.g168a3288f7_0_58][Machine Learning 101]]             :machine:learning:slides:2017:
-** [[https://developers.google.com/machine-learning/crash-course/][Google Machine Learning: Crash Course]] :machine:learning:crash:course:
+** [[https://docs.google.com/presentation/d/1kSuQyW5DTnkVaZEjGYCkfOxvzCqGEFzWBy4e9Uedd9k/preview?imm_mid=0f9b7e&cmp=em-data-na-na-newsltr_20171213#slide=id.g168a3288f7_0_58][Machine Learning 101]]                        :machine:learning:slides:2017:
+** [[https://developers.google.com/machine-learning/crash-course/][Google Machine Learning: Crash Course]]      :machine:learning:crash:course:
+** [[https://developers.google.com/machine-learning/guides/][Google Machine Learning Guides]]             :machine:learning:guide:2018:
+*** [[https://developers.google.com/machine-learning/guides/rules-of-ml][Google Machine Learning Guides: Rules of Machine Learning]] :machine:learning:guide:2018:
+*** [[https://developers.google.com/machine-learning/guides/text-classification/][Google Machine Learning Guides: Text Classification]]  :machine:learning:guide:2018:
 ** [[https://github.com/glouw/tinn][glouw/tinn]] :machine:learning:neural:network:library:
    The tiny neural network library
 ** [[https://sandipanweb.wordpress.com/2018/05/31/8626/][Few Machine Learning Problems (with Python implementations)]] :machine:learning:neural:networks:2018:
@@ -1256,6 +1263,7 @@ From the discussion I've had and forums I've read, I think that people are afrai
 ** [[http://changelog.complete.org/archives/9317-has-linux-lost-its-way-comments-prompt-a-debian-developer-to-revisit-freebsd-after-20-years][“Has Linux lost its way?” comments prompt a Debian developer to revisit FreeBSD after 20 years]] :unix:linux:comparison:2015:
 ** [[https://manpages.bsd.lv/][Practical UNIX Manuals - mdoc: structure, style, and composition]] :book:unix:man:pages:mdoc:
 ** [[https://vez.mrsk.me/freebsd-defaults.txt][FreeBSD - a lesson in poor defaults]] :freebsd:defaults:security:2017:
+** [[https://pdos.csail.mit.edu/6.828/2017/xv6.html][Xv6, a simple Unix-like teaching operating system]] :2006:2017:
 * Video Series
 ** [[https://www.youtube.com/user/professorleonard57][Professor Leonard]] :video::mathematics:lectures:
 ** [[https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw][3Blue1Brown]] :video:series:mathematics:
