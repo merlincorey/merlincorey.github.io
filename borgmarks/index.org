@@ -538,6 +538,8 @@ What I will do, however, is offer a ton of different recommendations for differe
 ** [[http://www.gleech.org/first-computers/][Disambiguating the first computer]] :hardware:history:
 ** [[http://www.frantone.com/designwritings/design_writings.html][Fran's Writings on Design and Engineering]] :hardware:electricalengineering:2011:2015:
 *** [[https://www.youtube.com/franblanche][Fran Blanche Youtube Channel]] :video:electricalengineering:2011:2018:
+** [[https://www.falstad.com/circuit/circuitjs.html][Circuit Simulator]] :electricalengineering:simulation:2018:
+*** [[https://github.com/sharpie7/circuitjs1][Github: sharpie7/circuitjs1]] :repository:electricalengineering:simulation:2015:2018:
 * Home Automation and Internet of Things
 ** [[http://www.bruhautomation.com/][Bruh Automation]] :home:automation:tutorials:reviews:
 
