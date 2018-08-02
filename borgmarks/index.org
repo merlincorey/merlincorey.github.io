@@ -109,6 +109,8 @@ But typically m>>n, so the net result is the same.
 *** [[https://news.ycombinator.com/item?id=17436591][Hackernews Discussion #17436591]] :discussion:algorithms:sorting:2018:
 ** [[https://play.elevatorsaga.com/][Elevator Saga: The elevator programming game]] :algorithms:javascript:2014:2015:
 ** [[https://www.snellman.net/blog/archive/2018-07-23-optimizing-breadth-first-search/][Optimizing a breadth-first search]] :algorithms:puzzles:2018:
+** [[http://algo.pw/][Algorithm Power]] :algorithms:
+   Listing of various algorithms with per-algorithm descriptions and implementations in various languages.
 ** Books
 *** [[https://github.com/mdipierro/nlib][Annotated Algorithms in Python]] :book:algorithms:python:
 ** Programming Exercises
@@ -369,6 +371,7 @@ Surviving are his wife of 54 years, Tomoko, of Oberlin, Ohio; and two daughters,
 *** [[http://www.codeslinger.co.uk/files/emu.pdf][Study of the techniques for emulation programming]] :paper:emulation:2001:
 *** [[http://www.codeslinger.co.uk/pages/projects/chip8.html][codeslinger chip8 emulator]] :emulator:chip8:2008:
 ** [[http://www.emulator101.com/][Emulator 101]] :emulator:arcade:tutorial:2016:
+*** [[https://news.ycombinator.com/item?id=17608619][Hacker News Discussion #17608619]] :discussion:emulator:arcade:tutorial:2016:
 ** [[https://problemkaputt.de/gbatek.htm][GBATek - Gameboy Advance / Nintendo DS / DSi - Technical Info]] :nintendo:gameboy:nintendo:dsi:documentation:
 ** Nintendo Entertainment System
 *** [[https://github.com/blanham/ChickeNES][blanham/ChickeNES]] :nintendo:entertainment:system:emulator:c:2013:2015:
@@ -474,6 +477,9 @@ These indeed can make your CSS code work for both the stone age and hottest brow
 ** [[https://foundation.zurb.com/][Foundation: The most advanced responsive front-end framework in the world.]] :css:framework:responsive:2018:
 ** [[https://zurb.com/blog/foundation-css-grid-think-beyond-the-page][Foundation & CSS Grid]]                            :blog:css:framework:2018:
 ** [[https://vuejs.org/][VueJS: a progressive framework for building user interfaces.]] :javascript:ui:framework:2018:
+** [[https://www.layoutit.com/grid][Layout It! CSS Grid Fiddle]] :css:grid:2018:
+** [[https://cssgrid.cc/][The CSS Grid]] :css:grid:2018:
+** [[https://pxlnv.com/blog/bullshit-web/][The Bullshit Web]] :article:css:2018:
 * Functional Programming
 ** [[https://chriskohlhepp.wordpress.com/functional-programming-section/metacircular-adventures-in-functional-abstraction-challenging-clojure-in-common-lisp/][Metacircular Adventures in Functional Abstraction]] :functional:programming:common:lisp:clojure:
 ** [[https://aphyr.com/posts/301-clojure-from-the-ground-up-welcome][Clojure from the ground up]] :functional:programming:clojure:
@@ -628,6 +634,8 @@ you can work around this client side with per hour filenames or the other usual 
 ** [[http://napalm.readthedocs.io/en/latest/][NAPALM (Network Automation and Programmability Abstraction Layer with Multivendor support)]] :networking:python:2018:
 ** [[https://www.cambus.net/oldest-domains-in-the-com-net-and-org-tlds/][Oldest domains in the .com, .net, and .org TLDs]] :networking:history:dns:2018:
 ** [[http://www.analog.com/en/education/education-library/software-defined-radio-for-engineers.html][Software-Defined Radio for Engineers, 2018]] :book:networking:sdr:2018:
+** [[https://jvns.ca/blog/2018/07/24/ip-addresses-routing/][IP addresses & routing]] :article:networking:routing:2018:
+*** [[https://news.ycombinator.com/item?id=17607845][Hacker News Discussion #17607845]] :discussion:article:networking:routing:2018:
 * Object Oriented Programming and Design
 ** [[https://ericlippert.com/2015/04/27/wizards-and-warriors-part-one/][Wizards and Warriors: Part One]] :object:oriented:design:
 *** [[https://ericlippert.com/2015/04/30/wizards-and-warriors-part-two/][Wizards and Warriors: Part Two]] :object:oriented:design:
@@ -703,8 +711,10 @@ you can work around this client side with per hour filenames or the other usual 
 **** [[https://wozniak.ca/blog/2018/06/25/Massacring-C-Pointers/code.html][Code Listing from Massacring C Pointers]] :c:language:2018:
 *** [[https://stefansf.de/post/pointers-are-more-abstract-than-you-might-expect/][Pointers are more abstract than you might expect in C]] :c:language:2018:
 *** [[https://stackoverflow.com/questions/514118/how-does-duffs-device-work][How does Duff's device work?]] :c:optimization:2009:
-*** [[https://nullprogram.com/blog/2018/07/20/][The Value of Undefined Behavior]] :c:2018:
+*** [[https://nullprogram.com/blog/2018/07/20/][The Value of Undefined Behavior]]                                  :c:2018:
 **** [[https://news.ycombinator.com/item?id=17581319][Hacker News Discussion #17581319]] :discussion:c:2018:
+*** [[http://floooh.github.io/2018/06/02/one-year-of-c.html][One year of C]] :c:webassembly:2018:
+**** [[https://news.ycombinator.com/item?id=17216039][Hacker News Discussion #17216039]] :discussion:article:c:webassembly:
 *** Libraries
 **** [[http://www.musl-libc.org/][musl-lib]] :c:language:
 **** [[https://github.com/mity/acutest][mitv/acutest]] :c:language:test:framework:2017:
@@ -744,7 +754,14 @@ you can work around this client side with per hour filenames or the other usual 
 *** [[http://blog.reverberate.org/2013/08/parsing-c-is-literally-undecidable.html][Parsing C++ is literally undecidable]] :language:cpp:compilers:decideability:2013:
 *** [[https://www.bfilipek.com/2018/06/parstl-tests.html][Examples of Parallel Algorithms From C++17]] :language:cpp:cpp17:algorithms:parallel:2018:
 *** [[https://github.com/mattbierner/STT-C-Compile-Time-Snake][mattbierner/STT-C-Compile-Time-Snake]] :repository:language:cpp:templates:2014:2016:
+*** [[https://ds9a.nl/articles/posts/c++-1/][Modern C++ for C Programmers: part 1]] :article:cpp:cpp14:cpp17::2018:
+**** [[https://news.ycombinator.com/item?id=17309654][Hackernews Discussion #17309654]] :discussion:article:cpp:cpp14:cpp17::2018:
+**** [[https://ds9a.nl/articles/posts/cpp-2/][Modern C++ for C programmers: part 2]] :article:cpp:cpp14:cpp17::2018:
+**** [[https://ds9a.nl/articles/posts/cpp-3/][Modern C++ for C Programmers: Part 3]] :article:cpp:cpp14:cpp17::2018:
+**** [[https://ds9a.nl/articles/posts/cpp-4/][Modern C++ for C Programmers: Part 4]] :article:cpp:cpp14:cpp17::2018:
+***** [[https://news.ycombinator.com/item?id=17608811][Hacker News Discussion #17608811]] :discussion:article:cpp:cpp14:cpp17::2018:
 *** Libraries
+**** [[https://github.com/nothings/single_file_libs][Github: nothings/single_file_libs]] :repository:list:cpp:library:
 **** Testing
 ***** [[https://github.com/catchorg/Catch2][catchorg/Catch2]]                      :language:cpp:test:framework:2018:
     Modern test framework in a header (or few, with extensions).
@@ -906,6 +923,48 @@ This is why “Lisp is the greatest!”
 **** [[http://python-prompt-toolkit.readthedocs.io/en/master/][prompt-toolkit Documentation]] :python:library:terminal:ui:2014:2018:
 **** [[http://toolz.readthedocs.io/en/latest/][toolz Documentation]] :python:library:functional:2014:2018:
 ***** [[http://toolz.readthedocs.io/en/latest/streaming-analytics.html][toolz Documentation: Streaming Analytics]] :python:library:functional:
+* Project Management
+** [[https://martinfowler.com/articles/itsNotJustStandingUp.html][It's Not Just Standing Up: Patterns for Daily Standup Meetings]] :meetings:article:2016:
+** [[https://www.blossom.co/blog/3-tips-for-quick-effective-stand-up-meetings][3 Tips for Effective Stand-Up Meetings]] :meetings:article:2016:
+   1. Brew some tea together
+   2. Get a Kanban board
+   3. Adapt the format
+** [[https://blog.gotomeeting.com/7-rules-effective-stand-meetings/][7 Rules for Effective Stand-Up Meetings]]            :meetings:article:2018:
+   1. Only meet when necessary
+   2. Keep it short and sweet
+   3. Establish a goal
+   4. Maintain structure
+   5. Make remote employees feel like they're there
+   6. Give everyone a chance to talk
+   7. Don't skip follow-up
+** [[https://sprint.ly/blog/scrum-meeting-best-practices/][5 Scrum Meeting Best Practices: Master the Daily Stand-Up]] :meetings:article:2016:
+   1. Remain standing
+   2. Your 3-question agenda
+      1. What did you accomplish since the last meeting?
+      2. What are you working on until the next meeting?
+      3. What is getting in your way or keeping you from your job?
+   3. Have your project management tool visible
+   4. It's a collaborative effort
+   5. Plan the meeting around your team
+*** Avoidance alert: 4 bad habits that derail scrum meetings
+    1. Waiting around for your team
+    2. Introducing new ideas
+    3. Leetting people ramble
+    4. Abandoning team communication in favor of the standup
+** [[https://www.laserfiche.com/ecmblog/10-ways-to-make-stand-up-meetings-better-office-hack/][Office Hack: 10 ways to make Stand-Up meetings better]] :meetings:article:
+   1. Rally the troops
+   2. Signal the end
+   3. Instill intrigue
+   4. Actually Stand Up
+   5. Keep it short
+   6. Keep it small
+   7. Stick to the Trhee Questions
+      1. What did I accomplish yesterday?
+      2. What will I do today?
+      3. What obstacles are impeding my progress?
+   8. Stay focused, not officious
+   9. Evaluate stand-ups
+   10. Maintain consistency
 * Reverse Engineering
 ** [[https://www.youtube.com/user/OpenSecurityTraining][Open Security Training YouTube Channel]]                            :videos:binary:reverse:engineering:
 ** [[https://github.com/FireyFly/pixd][Colourful visualization tool for binary files]] :binary:data:visualization:
@@ -1093,6 +1152,7 @@ git log --oneline --decorate --all --graph
 *** [[https://news.ycombinator.com/item?id=16677308][Hacker News Discussion #16677308]] :discussion:revision:control:git:log:2018:
 ** [[https://drewdevault.com/2018/07/02/Email-driven-git.html][The advantages of an email-driven git workflow]] :revision:control:git:2018:
 ** [[https://twobithistory.org/2018/07/07/cvs.html][Version Control Before Git with CVS]] :revision:control:history:2018:
+** [[https://www.codementor.io/citizen428/git-tutorial-10-common-git-problems-and-how-to-fix-them-aajv0katd][Git Tutorial: 10 Common Git Problems and How to Fix Them]] :revisioncontrol:git:2018:
 * Shells and Terminals
 ** [[https://zanshin.net/2013/02/02/zsh-configuration-from-the-ground-up/][Zsh Configuration From the Ground Up]] :zsh:configuration:tutorial:2013:
 ** [[http://www.howardism.org/Technical/Emacs/eshell-fun.html][Eschewing Zshell for Emacs Shell]] :zsh:emacs:eshell:
@@ -1259,6 +1319,8 @@ From the discussion I've had and forums I've read, I think that people are afrai
 ** [[http://www.columbia.edu/~fdc/postal/][Frank's Compulsive Guide to Postal Addresses]] :addreses:1989:2018:
 ** [[https://teachyourselfcs.com/][Teach Yourself Computer Science]] :computerscience:2018:
 ** [[https://www.jofreeman.com/joreen/tyranny.htm][The Tyranny of Structurelessness]] :essay:
+** [[http://www.juggling.org/help/siteswap/faq.html][Siteswap FAQ]]                              :answers:juggling:notation:1993:
+** [[https://steveblank.com/2009/12/21/the-elves-leave-middle-earth-%E2%80%93-soda%E2%80%99s-are-no-longer-free/][The Elves Leave Middle Earth – Sodas Are No Longer Free]] :startups:2009:
 * UNIX and BSD
 ** [[https://fosdem.org/2017/schedule/event/my_bsd_sucks_less/][My BSD Sucks Less Than Yours]] :talk:unix:openbsd:freebsd:
 
