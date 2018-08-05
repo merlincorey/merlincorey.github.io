@@ -111,13 +111,21 @@ But typically m>>n, so the net result is the same.
 ** [[https://www.snellman.net/blog/archive/2018-07-23-optimizing-breadth-first-search/][Optimizing a breadth-first search]] :algorithms:puzzles:2018:
 ** [[http://algo.pw/][Algorithm Power]] :algorithms:
    Listing of various algorithms with per-algorithm descriptions and implementations in various languages.
+** [[http://www.pcg-random.org/posts/bounded-rands.html][Efficiently Generating a Number in a Range]] :article:algorithms:rng:2018:
+*** [[https://news.ycombinator.com/item?id=17599660][Hacker News #17599660]] :discussion:article:algorithms:rng:2018:
 ** Books
 *** [[https://github.com/mdipierro/nlib][Annotated Algorithms in Python]] :book:algorithms:python:
 ** Programming Exercises
-*** [[https://projecteuler.net/][Project Euler]] 				  :programming:exercise:math:
+*** [[https://adventofcode.com/][Advent of Code]] :programming:exercise:
+*** [[https://codeforces.com/][CodeForces]] :programming:exercise:competition:
+*** [[https://coderbyte.com/][CoderByte]]                    :programming:exercise:javascript:algorithms:
 *** [[http://codewars.com/][Codewars]] 					       :programming:exercise:
 *** [[http://exercism.io/][Exercism]] 				    :programming:exercise:opensource:
-
+*** [[https://www.hackerrank.com/][HackerRank]] :programming:excercise:
+*** [[https://halite.io/][Halite]] :programming:exercise:competition:machinelearning:
+*** [[https://leetcode.com/][LeetCode]] :programming:exercise:
+*** [[https://projecteuler.net/][Project Euler]] 				  :programming:exercise:math:
+*** [[https://www.topcoder.com/challenges][TopCoder]] :programming:exercise:
 * Artificial Life
 ** [[https://codegolf.stackexchange.com/questions/11880/build-a-working-game-of-tetris-in-conways-game-of-life][Build a working game of Tetris in Conway's Game of Life]] :artificial:life:computer:tetris:in:game:of:life:
 
@@ -224,6 +232,8 @@ It's mainly useful for debugging purposes and perhaps in a few cases for safety,
 ** [[http://www.darkside.com.au/snow/][SNOW - Steganographic Nature Of Whitespace with ICE encryption]] :cryptography:steganography:1998:2013:
 *** [[https://www.chaoswebs.net/snow10/][Snow10]] :cryptography:steganography:webapp:
 *** [[https://secretsigner.com/][Secret Signer]] :cryptography:steganography:webapp:
+** [[https://en.wikipedia.org/wiki/Export_of_cryptography_from_the_United_States][Wikipedia: Export of cryptography from the United States]] :wiki:cryptography:history:
+*** [[http://cypherpunks.venona.com/archive/1995/10/msg00317.html][CJR for perl-RSA t-shirt]] :cryptography:history:1995:
 * Crypto currencies
 ** [[http://www.righto.com/2014/09/mining-bitcoin-with-pencil-and-paper.html][Mining Bitcoin with pencil and paper: 0.67 hashes per day]] :cryptography:currency:bitcoin:2014:
 ** [[http://www.righto.com/2014/02/ascii-bernanke-wikileaks-photographs.html][Hidden surprises in the Bitcoin blockchain and how they are stored: Nelson Mandela, Wikileaks, photos, and Python software]] :cryptography:currency:blockchain:creative:hacking:2014:
@@ -424,7 +434,7 @@ Surviving are his wife of 54 years, Tomoko, of Oberlin, Ohio; and two daughters,
 *** [[https://www.youtube.com/watch?v=2V1FtfBDsLU][Effective Programs - 10 Years of Clojure - Rich Hickey]] :talk:hickey:effectiveness:2017:
 ** Pycon
 *** [[https://www.youtube.com/watch?v=ZzfHjytDceU][Keynote David Beazley - Topics of Interest (Python Asyncio)]] :pycon:brazil:2015:
-* Frontend Web Design
+* Frontend Web Design and Development
 ** [[http://flexboxfroggy.com/][CSS Flexbox Froggy]] :css:flexbox:tutorial:game:
 ** [[http://cssgridgarden.com/][CSS Grid Garden]] :css:grid:tutorial:game:
 ** [[https://medium.com/refactoring-ui/7-practical-tips-for-cheating-at-design-40c736799886][7 Practical Tips for Cheating at Design]] :ui:design:tips:
@@ -480,6 +490,7 @@ These indeed can make your CSS code work for both the stone age and hottest brow
 ** [[https://www.layoutit.com/grid][Layout It! CSS Grid Fiddle]] :css:grid:2018:
 ** [[https://cssgrid.cc/][The CSS Grid]] :css:grid:2018:
 ** [[https://pxlnv.com/blog/bullshit-web/][The Bullshit Web]] :article:css:2018:
+** [[http://youmightnotneedjquery.com/][You might not need jQuery]] :article:javascript:2014:
 * Functional Programming
 ** [[https://chriskohlhepp.wordpress.com/functional-programming-section/metacircular-adventures-in-functional-abstraction-challenging-clojure-in-common-lisp/][Metacircular Adventures in Functional Abstraction]] :functional:programming:common:lisp:clojure:
 ** [[https://aphyr.com/posts/301-clojure-from-the-ground-up-welcome][Clojure from the ground up]] :functional:programming:clojure:
@@ -488,8 +499,8 @@ These indeed can make your CSS code work for both the stone age and hottest brow
 ** [[https://patrickmn.com/software/the-haskell-pyramid/][The Haskell Pyramid]] :functional:programming:haskell:
 ** [[https://mostly-adequate.gitbooks.io/mostly-adequate-guide/][Professor Frisby's Mostly Adequate Guide to Functional Programming]] :book:functional:programming:javascript:
 * Game Development
-** [[https://www.haroldserrano.com/blog/books-i-used-to-develop-a-game-engine][Books I had to read to develop a game engine]] :game:development:game:engine:2018:
-** [[http://www.helixsoft.nl/articles/circle/sincos.htm][Sin & Cos: The Programmer's Pals!]] :game:development:mathematics:trigonometry:
+** [[https://www.haroldserrano.com/blog/books-i-used-to-develop-a-game-engine][Books I had to read to develop a game engine]] :gamedevelopment:game:engine:2018:
+** [[http://www.helixsoft.nl/articles/circle/sincos.htm][Sin & Cos: The Programmer's Pals!]] :gamedevelopment:mathematics:trigonometry:
 *** Conclusion
 #+BEGIN_QUOTE
 In this article I set out to answer some of the most common questions on sine and cosine, or trigonometry in general.
@@ -504,8 +515,10 @@ Amarillion
 E-mail: amarillion@yahoo.com
 Home page: http://www.helixsoft.nl/
 #+END_QUOTE
-** [[https://allarsblog.com/2018/03/16/confessions-of-an-unreal-engine-4-engineering-firefighter/][Confessions of an Unreal Engine 4 Engineering Firefighter]] :game:development:unreal:engine:fire:fighting:2018:
-** [[https://www.gamasutra.com/view/feature/131503/1500_archers_on_a_288_network_.php?print=1][1500 Archers on a 28.8: Network Programming in Age of Empires and Beyond]] :game:development:network:2018:
+** [[https://allarsblog.com/2018/03/16/confessions-of-an-unreal-engine-4-engineering-firefighter/][Confessions of an Unreal Engine 4 Engineering Firefighter]] :gamedevelopment:unreal:engine:fire:fighting:2018:
+** [[https://www.gamasutra.com/view/feature/131503/1500_archers_on_a_288_network_.php?print=1][1500 Archers on a 28.8: Network Programming in Age of Empires and Beyond]] :gamedevelopment:network:2018:
+** [[https://www.masswerk.at/spacewar/inside/][Inside Spacewar! A Software Archeological Approach to the First Video Game]] :history:gamedevelopment:spacewar:2014:2015:
+** [[https://www.masswerk.at/nowgobang/2018/anatomy-of-an-rng][Anatomy of a Random Number Generator]] :history:gamedevelopment:spacewar:algorithms:rng:2018:
 * Game Theory
 ** [[http://www.chesstactics.org/index.php?Type=page&Action=next&From=1,1,1,1][Ward Farnsworth's Predator at the Chessboard]] :gametheory:book:chess:
 ** [[http://www.mindsports.nl/][mindsports.nl]] :gametheory:gamedesign:puzzles:
@@ -546,6 +559,8 @@ What I will do, however, is offer a ton of different recommendations for differe
 *** [[https://www.youtube.com/franblanche][Fran Blanche Youtube Channel]] :video:electricalengineering:2011:2018:
 ** [[https://www.falstad.com/circuit/circuitjs.html][Circuit Simulator]] :electricalengineering:simulation:2018:
 *** [[https://github.com/sharpie7/circuitjs1][Github: sharpie7/circuitjs1]] :repository:electricalengineering:simulation:2015:2018:
+** [[https://basicengine.org/][BASIC Engine]] :hardware:systemonchip:2018:
+** [[http://www.rane.com/note110.html][Sound System Interconnection]] :audio:hardware:1985:
 * Home Automation and Internet of Things
 ** [[http://www.bruhautomation.com/][Bruh Automation]] :home:automation:tutorials:reviews:
 
@@ -636,6 +651,7 @@ you can work around this client side with per hour filenames or the other usual 
 ** [[http://www.analog.com/en/education/education-library/software-defined-radio-for-engineers.html][Software-Defined Radio for Engineers, 2018]] :book:networking:sdr:2018:
 ** [[https://jvns.ca/blog/2018/07/24/ip-addresses-routing/][IP addresses & routing]] :article:networking:routing:2018:
 *** [[https://news.ycombinator.com/item?id=17607845][Hacker News Discussion #17607845]] :discussion:article:networking:routing:2018:
+** [[https://www.mnot.net/blog/2018/07/31/read_rfc][How to Read an RFC]] :article:nettworking:standards:2018:
 * Object Oriented Programming and Design
 ** [[https://ericlippert.com/2015/04/27/wizards-and-warriors-part-one/][Wizards and Warriors: Part One]] :object:oriented:design:
 *** [[https://ericlippert.com/2015/04/30/wizards-and-warriors-part-two/][Wizards and Warriors: Part Two]] :object:oriented:design:
@@ -695,6 +711,7 @@ you can work around this client side with per hour filenames or the other usual 
 ** [[http://www.falstad.com/mathphysics.html][Math and Physics Simulations]] :physics:java:script:simulations:
 ** [[https://phet.colorado.edu/][PhET: Interactive (Physics) Simulations]] :physics:simulations:
 * Programming Languages
+** [[http://kittenlang.org/][Kitten Programming Language]]
 ** APL
 *** [[http://wordsandbuttons.online/apl_deserves_its_renaissance_too.html][APL deserves its renaissance too]]
 ** Assembly
@@ -715,11 +732,14 @@ you can work around this client side with per hour filenames or the other usual 
 **** [[https://news.ycombinator.com/item?id=17581319][Hacker News Discussion #17581319]] :discussion:c:2018:
 *** [[http://floooh.github.io/2018/06/02/one-year-of-c.html][One year of C]] :c:webassembly:2018:
 **** [[https://news.ycombinator.com/item?id=17216039][Hacker News Discussion #17216039]] :discussion:article:c:webassembly:
+*** [[http://blog.llvm.org/2011/05/what-every-c-programmer-should-know.html][What Every C Programmer Should Know About Undefined Behavior #1/3 ]] :article:c:2011:
 *** Libraries
 **** [[http://www.musl-libc.org/][musl-lib]] :c:language:
 **** [[https://github.com/mity/acutest][mitv/acutest]] :c:language:test:framework:2017:
 **** [[http://www.glfw.org/index.html][GLFW]] :c:language:opengl:framework:2017:
 **** [[https://github.com/hnes/libaco][hnes/libaco]] :c:language:coroutines:2018:
+**** [[https://github.com/boyerjohn/rapidstring][boyerjohn/rapidstring]] :c:string:2018:
+***** [[https://news.ycombinator.com/item?id=17643592][Hacker News Discussion #17643592]] :discussion:c:string:2018:
 ** C++
 *** [[https://yosefk.com/c++fqa/][C++ FQA]]                                              :language:cpp98:fqa:
     A bit dated now, especially with regards to consistency between implementations and support for modern features.
@@ -819,6 +839,9 @@ int main(int argc, char* argv[]) {
      Implements [[http://fmtlib.net/Text%20Formatting.html][P0645 Text Formatting]] C++ standards proposal.
 **** Functional
 ***** [[https://github.com/beark/ftl][beark/ftl]]                                :language:cpp:functional:2015:
+**** Game Development
+***** [[https://hugoam.github.io/toy-io/][toy]] :c++:2018:
+      toy is a thin and modular c++ game engine that also runs on the web.
 *** Videos
 **** [[https://www.youtube.com/watch?v=hEx5DNLWGgA][CppCon 2015: Herb Sutter "Writing Good C++14... By Default"]] :video:talk:language:cpp:sutter:2015:
 **** [[https://www.youtube.com/watch?v=fX2W3nNjJIo][CppCon 2017: Bjarne Stroustrup “Learning and Teaching Modern C++”]] :video:talk:language:cpp:stroustrup:2017:
@@ -912,6 +935,26 @@ This is why “Lisp is the greatest!”
 *** [[http://www.ccs.neu.edu/home/matthias/HtDP2e/][How to Design Programs 2]]                               :book:programming:language:lisp:scheme:2014:
 *** [[https://ds26gte.github.io/tyscheme/][Teach Yourself Scheme in FIXNUM days]] :book:programming:language:lisp:scheme:
 *** [[http://stevelosh.com/blog/2018/07/fun-with-macros-if-let/][Fun with Macros: if-let and when-let]] :blog:language:lisp:macros:2018:
+*** [[http://t3x.org/clc/index.html][Compiling Lambda Calculus]] :book:lisp:scheme:compilers:2018:
+*** [[https://srfi.schemers.org/srfi-71/srfi-71.html][Scheme SRFI 71:  Extended LET-syntax for multiple values]] :scheme:2005:
+*** [[https://github.com/nakkaya/ferret][nakkaya/ferret]] :lisp:realtimesystems:
+    Ferret is a free software lisp implementation for real time embedded control systems.
+**** [[https://news.ycombinator.com/item?id=17644580][Hacker News Discussion #17644580]] :discussion:lisp:realtimesystems:orgmode:
+#+CAPTION: phoe-krk comments
+#+BEGIN_QUOTE
+ALL of the code seems to be stored inside the org-mode file, https://github.com/nakkaya/ferret/blob/master/ferret.org - which is the most unusual form of source code organization that I have ever seen.
+#+END_QUOTE
+
+#+CAPTION: antt replies
+#+BEGIN_QUOTE
+There's singles of us!
+
+If you want to extract it run M-x org-babel-tangle and you will end up with the usual source files and directories installed relative to the location of the org file.
+
+I doubt there's a dozen people in the world that do it. But it is surprisingly useful and powerful when you get used to it. If anyone in Melbourne is interested in learning about this I have been toying with the idea of running a workshop on it.
+
+I'm in the process of getting the detangle working for noweb mode. The current implementation fakes it with regex which force you to write code linearly instead of literately. But even if you can't detangle arbitrarily nested code it's magic to see changes in a source file appear in the right source code block.
+#+END_QUOTE
 ** Python
 *** [[http://automatetheboringstuff.com/chapter0/][Automate the Boring Stuff with Python]] :book:python:programming:automation:
 *** [[http://exploreflask.com][Explore Flask]] :python:programming:web:site:api:
@@ -923,6 +966,8 @@ This is why “Lisp is the greatest!”
 **** [[http://python-prompt-toolkit.readthedocs.io/en/master/][prompt-toolkit Documentation]] :python:library:terminal:ui:2014:2018:
 **** [[http://toolz.readthedocs.io/en/latest/][toolz Documentation]] :python:library:functional:2014:2018:
 ***** [[http://toolz.readthedocs.io/en/latest/streaming-analytics.html][toolz Documentation: Streaming Analytics]] :python:library:functional:
+**** [[https://github.com/kitao/pyxel][kitao/pyxel]] :repository:python:library:gamedevelopment:2018:
+     A retro game development environment in Python 
 * Project Management
 ** [[https://martinfowler.com/articles/itsNotJustStandingUp.html][It's Not Just Standing Up: Patterns for Daily Standup Meetings]] :meetings:article:2016:
 ** [[https://www.blossom.co/blog/3-tips-for-quick-effective-stand-up-meetings][3 Tips for Effective Stand-Up Meetings]] :meetings:article:2016:
@@ -1162,6 +1207,9 @@ git log --oneline --decorate --all --graph
 ** [[https://termux.com][Termux]] :android:terminal:emulator:
 ** [[https://github.com/anordal/shellharden/blob/master/how_to_do_things_safely_in_bash.md][anordal/shellharden: How to do things safely in bash]] :bash:shell:safety:2018:
 ** [[http://blog.deadvax.net/2018/05/29/shell-magic-set-operations-with-uniq/][Shell Magic: Set Operations with uniq]] :shell:scripting:2018:
+** [[https://www.idontplaydarts.com/2016/04/detecting-curl-pipe-bash-server-side/][Detecting the use of "curl | bash" server side]] :article:2016:
+*** [[https://news.ycombinator.com/item?id=11532599][Hacker News Discussion #11532599]]                :discussion:article:2016:
+*** [[https://news.ycombinator.com/item?id=17636032][Hacker News Discussion #17636032]] :discussion:article:2018:
 * Software Engineering
 ** [[http://www.drdobbs.com/architecture-and-design/software-engineering-computer-science/217701907][Software Engineering ≠ Computer Science]] :software:engineering:architecture:design:2009:
 ** [[http://python.apichecklist.com/][Python API Checklist]] :python:api:programming:checklist:2017:
