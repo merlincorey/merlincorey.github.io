@@ -965,6 +965,8 @@ This is why “Lisp is the greatest!”
    8. Stay focused, not officious
    9. Evaluate stand-ups
    10. Maintain consistency
+** [[https://medium.com/@jsonpify/you-dont-need-standup-9a74782517c1][You don’t need standup]] :meetings:article:2018:
+*** [[https://news.ycombinator.com/item?id=17671464][Hacker News Discussion #17671464]] :discussion:meetings:article:2018:
 * Reverse Engineering
 ** [[https://www.youtube.com/user/OpenSecurityTraining][Open Security Training YouTube Channel]]                            :videos:binary:reverse:engineering:
 ** [[https://github.com/FireyFly/pixd][Colourful visualization tool for binary files]] :binary:data:visualization:
