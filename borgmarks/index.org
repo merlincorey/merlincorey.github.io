@@ -113,6 +113,7 @@ But typically m>>n, so the net result is the same.
    Listing of various algorithms with per-algorithm descriptions and implementations in various languages.
 ** [[http://www.pcg-random.org/posts/bounded-rands.html][Efficiently Generating a Number in a Range]] :article:algorithms:rng:2018:
 *** [[https://news.ycombinator.com/item?id=17599660][Hacker News #17599660]] :discussion:article:algorithms:rng:2018:
+** [[http://wordsandbuttons.online/tries_as_the_evolution_of_nothing.html][Tries as the evolution of nothing]] :article:algorithms:datastructures:2018:
 ** Books
 *** [[https://github.com/mdipierro/nlib][Annotated Algorithms in Python]] :book:algorithms:python:
 ** Programming Exercises
@@ -235,11 +236,11 @@ It's mainly useful for debugging purposes and perhaps in a few cases for safety,
 ** [[https://en.wikipedia.org/wiki/Export_of_cryptography_from_the_United_States][Wikipedia: Export of cryptography from the United States]] :wiki:cryptography:history:
 *** [[http://cypherpunks.venona.com/archive/1995/10/msg00317.html][CJR for perl-RSA t-shirt]] :cryptography:history:1995:
 * Crypto currencies
-** [[http://www.righto.com/2014/09/mining-bitcoin-with-pencil-and-paper.html][Mining Bitcoin with pencil and paper: 0.67 hashes per day]] :cryptography:currency:bitcoin:2014:
-** [[http://www.righto.com/2014/02/ascii-bernanke-wikileaks-photographs.html][Hidden surprises in the Bitcoin blockchain and how they are stored: Nelson Mandela, Wikileaks, photos, and Python software]] :cryptography:currency:blockchain:creative:hacking:2014:
-** [[https://storeofvalue.github.io/posts/cryptocurrency-hacks-so-far-august-24th/][List Of High Profile Cryptocurrency Hacks So Far]] :cryptography:currency:crime:and:theft:2017:
-** [[http://www.jsfour.com/can-you-really-hack-ethereum-smart-contracts/][Can you really hack Ethereum smart contracts?]] :cryptography:currency:ethereum:hate:2017:
-** [[http://www.michaelburge.us/2017/08/31/roll-your-own-bitcoin-exchange.html][Roll your Own Bitcoin Exchange in Haskell]] :cryptography:currency:exchange:haskell:
+** [[http://www.righto.com/2014/09/mining-bitcoin-with-pencil-and-paper.html][Mining Bitcoin with pencil and paper: 0.67 hashes per day]] :cryptocurrency:bitcoin:2014:
+** [[http://www.righto.com/2014/02/ascii-bernanke-wikileaks-photographs.html][Hidden surprises in the Bitcoin blockchain and how they are stored: Nelson Mandela, Wikileaks, photos, and Python software]] :cryptocurrency:blockchain:creative:hacking:2014:
+** [[https://storeofvalue.github.io/posts/cryptocurrency-hacks-so-far-august-24th/][List Of High Profile Cryptocurrency Hacks So Far]] :cryptocurrency:crime:and:theft:2017:
+** [[http://www.jsfour.com/can-you-really-hack-ethereum-smart-contracts/][Can you really hack Ethereum smart contracts?]] :cryptocurrency:ethereum:hate:2017:
+** [[http://www.michaelburge.us/2017/08/31/roll-your-own-bitcoin-exchange.html][Roll your Own Bitcoin Exchange in Haskell]] :cryptocurrency:exchange:haskell:
 ** [[https://hackernoon.com/why-everyone-missed-the-most-important-invention-in-the-last-500-years-c90b0151c169][Why Everyone Missed the Most Important Invention in the Last 500 Years]] :cryptography:accounting:triple:entry:bookkeeping:
 *** [[https://www.cmu.edu/piper/news/archives/2017/january/yuji-ijiri-obituary.html][Yuji Ijiri's obituary at CMU]]                             :obituary::2017:
 #+CAPTION:
@@ -266,23 +267,25 @@ Surviving are his wife of 54 years, Tomoko, of Oberlin, Ohio; and two daughters,
 #+END_QUOTE
 
 ** [[http://iang.org/papers/triple_entry.html][Triple Entry Accounting - Ian Grigg Systemics, Inc.]]           :paper:2005:
-** [[https://blog.keep.network/miners-arent-your-friends-cde9b6e0e9ac?gi=21d51593759c][Miners Aren’t Your Friends: Miners and Consensus: Part 1 of 2]] :cryptography:currency:2018:
-** [[https://www.michaelburge.us/2017/11/28/write-your-next-ethereum-contract-in-pyramid-scheme.html][Write your next Ethereum Contract in Pyramid Scheme]] :cryptography:currency:2017:
-** [[https://www.michaelburge.us/2018/05/15/ethereum-chess-engine.html][DSLs for Ethereum Contracts]] :cryptography:currency:2018:
-** [[https://ethfiddle.com/][EtherFiddle]] :cryptography:currency:ethereum:solidity:ide:
-** [[https://ico.red-lang.org/RED-whitepaper.pdf][RED: a full-stack, open-source toolchain for simple smart contracts and decentralized apps development]] :paper:cryptography:currency:smartcontracts:language:2018:
-** [[https://medium.com/axoni/axlang-formally-verifiable-smart-contracts-for-the-ethereum-ecosystem-6201203be4e8][AxLang: Formally Verifiable Smart Contracts for the Ethereum Ecosystem]] :cryptography:currency:smartcontracts:language:2018:
-** [[https://consensys.github.io/smart-contract-best-practices/security_tools/][Ethereum Smart Contract Best Practices: Static Analysis]] :cryptography:currency:ethereum:smartcontracts:2018:
-** [[https://medium.com/loom-network/how-to-secure-your-smart-contracts-6-solidity-vulnerabilities-and-how-to-avoid-them-part-1-c33048d4d17d][How to Secure Your Smart Contracts: 6 Solidity Vulnerabilities and how to avoid them (Part 1)]] :cryptography:currency:ethereum:smartcontracts:2018:
-*** [[https://medium.com/loom-network/how-to-secure-your-smart-contracts-6-solidity-vulnerabilities-and-how-to-avoid-them-part-2-730db0aa4834][How to Secure Your Smart Contracts: 6 Solidity Vulnerabilities and how to avoid them (Part 2)]] :cryptography:currency:ethereum:smartcontracts:2018:
-** [[https://medium.com/@codetractio/inside-an-ethereum-transaction-fa94ffca912f][Inside an Ethereum transaction]] :cryptography:currency:ethereum:2017:
-** [[https://medium.com/@merunasgrincalaitis/how-to-audit-a-smart-contract-most-dangerous-attacks-in-solidity-ae402a7e7868][The ultimate guide to audit a Smart Contract + Most dangerous attacks]] :cryptography:currency:smartcontracts:2017:
-** [[https://blog.colony.io/writing-upgradeable-contracts-in-solidity-6743f0eecc88][Writing upgradable contracts in Solidity]] :cryptography:currency:smartcontracts:2018:
-** [[https://github.com/ethereum/wiki/wiki/Safety][ethereum wiki: Safety]] :cryptography:currency:smartcontracts:2018:
-** [[https://dasp.co/][Decentralized Application Security Project]] :cryptography:currency:smartcontracts:2018:
-** [[https://consensys.github.io/smart-contract-best-practices/][Ethereum Smart Contract Security Best Practices]] :cryptography:currency:smartcontracts:2018:
-** [[https://github.com/cryptofinlabs/audit-checklist][cryptofinlabs/audit-checklist]]  :github:repository:cryptography:currency:smartcontracts:2018:
-** [[https://dappradar.com/][dApp Radar]] :statistics:aggregator:cryptography:currency:2018:
+** [[https://blog.keep.network/miners-arent-your-friends-cde9b6e0e9ac?gi=21d51593759c][Miners Aren’t Your Friends: Miners and Consensus: Part 1 of 2]] :cryptocurrency:2018:
+** [[https://www.michaelburge.us/2017/11/28/write-your-next-ethereum-contract-in-pyramid-scheme.html][Write your next Ethereum Contract in Pyramid Scheme]] :cryptocurrency:2017:
+** [[https://www.michaelburge.us/2018/05/15/ethereum-chess-engine.html][DSLs for Ethereum Contracts]] :cryptocurrency:2018:
+** [[https://ethfiddle.com/][EtherFiddle]] :cryptocurrency:ethereum:solidity:ide:
+** [[https://ico.red-lang.org/RED-whitepaper.pdf][RED: a full-stack, open-source toolchain for simple smart contracts and decentralized apps development]] :paper:cryptocurrency:smartcontracts:language:2018:
+** [[https://medium.com/axoni/axlang-formally-verifiable-smart-contracts-for-the-ethereum-ecosystem-6201203be4e8][AxLang: Formally Verifiable Smart Contracts for the Ethereum Ecosystem]] :cryptocurrency:smartcontracts:language:2018:
+** [[https://consensys.github.io/smart-contract-best-practices/security_tools/][Ethereum Smart Contract Best Practices: Static Analysis]] :cryptocurrency:ethereum:smartcontracts:2018:
+** [[https://medium.com/loom-network/how-to-secure-your-smart-contracts-6-solidity-vulnerabilities-and-how-to-avoid-them-part-1-c33048d4d17d][How to Secure Your Smart Contracts: 6 Solidity Vulnerabilities and how to avoid them (Part 1)]] :cryptocurrency:ethereum:smartcontracts:2018:
+*** [[https://medium.com/loom-network/how-to-secure-your-smart-contracts-6-solidity-vulnerabilities-and-how-to-avoid-them-part-2-730db0aa4834][How to Secure Your Smart Contracts: 6 Solidity Vulnerabilities and how to avoid them (Part 2)]] :cryptocurrency:ethereum:smartcontracts:2018:
+** [[https://medium.com/@codetractio/inside-an-ethereum-transaction-fa94ffca912f][Inside an Ethereum transaction]] :cryptocurrency:ethereum:2017:
+** [[https://medium.com/@merunasgrincalaitis/how-to-audit-a-smart-contract-most-dangerous-attacks-in-solidity-ae402a7e7868][The ultimate guide to audit a Smart Contract + Most dangerous attacks]] :cryptocurrency:smartcontracts:2017:
+** [[https://blog.colony.io/writing-upgradeable-contracts-in-solidity-6743f0eecc88][Writing upgradable contracts in Solidity]] :cryptocurrency:smartcontracts:2018:
+** [[https://github.com/ethereum/wiki/wiki/Safety][ethereum wiki: Safety]] :cryptocurrency:smartcontracts:2018:
+** [[https://dasp.co/][Decentralized Application Security Project]] :cryptocurrency:smartcontracts:2018:
+** [[https://consensys.github.io/smart-contract-best-practices/][Ethereum Smart Contract Security Best Practices]] :cryptocurrency:smartcontracts:2018:
+** [[https://github.com/cryptofinlabs/audit-checklist][cryptofinlabs/audit-checklist]]  :github:repository:cryptocurrency:smartcontracts:2018:
+** [[https://dappradar.com/][dApp Radar]] :statistics:aggregator:cryptocurrency:2018:
+** [[https://litepaper.com/resources/hyperledger][What is Hyperledger? An overview of Linux’s open source approach to blockchain building]] :whitepaper:cryptocurrency::2018:
+*** [[https://news.ycombinator.com/item?id=17696158][Hacker News Discussion #17696158]] :discussion:whitepaper:cryptocurrency:2018:
 * Datastructures, Databases, and Filesystems
 ** [[http://www.eelis.net/C++/analogliterals.xhtml][Multi-Dimensional Analog Literals]] :datastructures:analog:literals:2006:
 ** [[https://www.interviewcake.com/article/python/data-structures-coding-interview][Datastructures for Coding Interviews]]    :datastructures:python:interviews:
@@ -955,6 +958,17 @@ I doubt there's a dozen people in the world that do it. But it is surprisingly u
 
 I'm in the process of getting the detangle working for noweb mode. The current implementation fakes it with regex which force you to write code linearly instead of literately. But even if you can't detangle arbitrarily nested code it's magic to see changes in a source file appear in the right source code block.
 #+END_QUOTE
+*** [[http://hackzen.org/gerbil/][Gerbil Scheme]] :lisp:scheme:2017
+    Gerbil is a meta-dialect of Scheme with post-modern features:
+    - It is written in itself.
+    - It is an Actor Language
+    - It is an Objective Language
+    - It is a  Systems Language
+    - It is a  Modern Scheme Implementation
+    - It speaks with a LISP
+**** [[https://news.ycombinator.com/item?id=15394603][Hacker News Discussion #15394603]] :discussion:lisp:scheme:2017:
+**** [[https://news.ycombinator.com/item?id=17707622][Hacker News Discussion #17707622]] :discussion:lisp:scheme:2018:
+
 ** Python
 *** [[http://automatetheboringstuff.com/chapter0/][Automate the Boring Stuff with Python]] :book:python:programming:automation:
 *** [[http://exploreflask.com][Explore Flask]] :python:programming:web:site:api:
@@ -1200,6 +1214,35 @@ git log --oneline --decorate --all --graph
 ** [[https://drewdevault.com/2018/07/02/Email-driven-git.html][The advantages of an email-driven git workflow]] :revision:control:git:2018:
 ** [[https://twobithistory.org/2018/07/07/cvs.html][Version Control Before Git with CVS]] :revision:control:history:2018:
 ** [[https://www.codementor.io/citizen428/git-tutorial-10-common-git-problems-and-how-to-fix-them-aajv0katd][Git Tutorial: 10 Common Git Problems and How to Fix Them]] :revisioncontrol:git:2018:
+** [[http://git.661346.n2.nabble.com/GPG-signing-for-git-commit-td2582986.html#a2583316][GPG signing for git commit?]] :discussion:git:cryptography:2009:
+#+CAPTION: Linus' response summary
+#+BEGIN_QUOTE
+With separate signatures (ie the "git tag -s" model), you can ask the
+people who signed the original repository to consider re-signing the
+rewritten one. See? Safe, flexible, and much superior.
+
+The exact same thing goes for keys that get invalidated because they ended
+up being shown to be too weak or just flawed some other way, btw. That is
+a reason to re-sign, _without_ the repository necessarily changing.
+
+You can do _none_ of these things sanely if you put the signatures into
+the commits themselves.
+
+So don't do it.
+
+Btw, there's a final reason, and probably the really real one. Signing
+each commit is totally stupid. It just means that you automate it, and you
+make the signature worth less. It also doesn't add any real value, since
+the way the git DAG-chain of SHA1's work, you only ever need _one_
+signature to make all the commits reachable from that one be effectively
+covered by that one. So signing each commit is simply missing the point.
+
+IOW, you don't _ever_ have a reason to sign anythign but the "tip". The
+only exception is the "go back and re-sign", but that's the one that
+requires external signatures anyway.
+
+So be happy with 'git tag -s'. It really is the right way.
+#+END_QUOTE
 * Shells and Terminals
 ** [[https://zanshin.net/2013/02/02/zsh-configuration-from-the-ground-up/][Zsh Configuration From the Ground Up]] :zsh:configuration:tutorial:2013:
 ** [[http://www.howardism.org/Technical/Emacs/eshell-fun.html][Eschewing Zshell for Emacs Shell]] :zsh:emacs:eshell:
@@ -1285,6 +1328,11 @@ The system processes about 30% of all diffs across Google that have statement co
 | ~1000 ms~ with ~1024 MB~ RAM       |                                                         7100 |                 2.0 |
 ** [[https://github.com/ansible/][Github: Ansible Organization]]
 *** [[https://github.com/ansible/ansible][Ansible Configuration Management]] :systems:configuration:management:2012:2018:
+** [[https://eng.uber.com/m3/][M3: Uber’s Open Source, Large-scale Metrics Platform for Prometheus]] :systems:metrics:2018:
+*** [[https://news.ycombinator.com/item?id=17707842][Hacker News Discussion #17707842]] :discussion:systems:metrics:2018:
+
+** [[https://movingfulcrum.com/horrors-of-using-azure-kubernetes-service-in-production/][Horrors of using Azure Kubernetes Service in Production]] :article:systems:cloud:2018:
+*** [[https://news.ycombinator.com/item?id=17700360][Hacker News Discussion #17700360]] :discussion:article:systems:cloud:2018:
 ** Terraform
 *** [[https://opencredo.com/terraform-infrastructure-design-patterns/][Terraform Infrastructure Design Patterns]] :systems:terraform:2015:
 *** [[https://medium.com/levops/self-invented-how-to-terraform-rules-4b1eb00709ac][Self-invented “how to Terraform” rules]] :systems:terraform:2017:
@@ -1371,6 +1419,8 @@ From the discussion I've had and forums I've read, I think that people are afrai
 ** [[https://www.jofreeman.com/joreen/tyranny.htm][The Tyranny of Structurelessness]] :essay:
 ** [[http://www.juggling.org/help/siteswap/faq.html][Siteswap FAQ]]                              :answers:juggling:notation:1993:
 ** [[https://steveblank.com/2009/12/21/the-elves-leave-middle-earth-%E2%80%93-soda%E2%80%99s-are-no-longer-free/][The Elves Leave Middle Earth – Sodas Are No Longer Free]] :startups:2009:
+** [[https://www.dungeonstome.com/][Dungeons TOME: A tool for generating random dungeons for RPGs such as Dungeon's & Dragons]] :dungeons:and:dragons:worldgen:2018:
+*** [[https://news.ycombinator.com/item?id=17704557][Hacker News Discussion #17704557]] :discussion:dungeons:and:dragons:worldgen:2018:
 * UNIX and BSD
 ** [[https://fosdem.org/2017/schedule/event/my_bsd_sucks_less/][My BSD Sucks Less Than Yours]] :talk:unix:openbsd:freebsd:
 
