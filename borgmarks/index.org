@@ -1258,6 +1258,9 @@ So be happy with 'git tag -s'. It really is the right way.
 ** [[https://www.idontplaydarts.com/2016/04/detecting-curl-pipe-bash-server-side/][Detecting the use of "curl | bash" server side]] :article:2016:
 *** [[https://news.ycombinator.com/item?id=11532599][Hacker News Discussion #11532599]]                :discussion:article:2016:
 *** [[https://news.ycombinator.com/item?id=17636032][Hacker News Discussion #17636032]] :discussion:article:2018:
+* Security
+** [[https://www.hackthebox.eu/][Hack the Box]] :ctf:
+** [[https://picoctf.com/][PicoCTF]] :ctf:
 * Software Engineering
 ** [[http://www.drdobbs.com/architecture-and-design/software-engineering-computer-science/217701907][Software Engineering ≠ Computer Science]] :software:engineering:architecture:design:2009:
 ** [[http://python.apichecklist.com/][Python API Checklist]] :python:api:programming:checklist:2017:
