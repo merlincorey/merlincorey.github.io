@@ -312,6 +312,8 @@ Surviving are his wife of 54 years, Tomoko, of Oberlin, Ohio; and two daughters,
 ** [[http://traildb.io/][TrailDB]] :databases:events:2014:2018:
 ** [[http://www.sarahmei.com/blog/2013/11/11/why-you-should-never-use-mongodb/][Why you should never use MongoDB]] :databases:nosql:2013:
 ** [[http://blog.memsql.com/nosql/][Thank You for Your Help NoSQL, but We Got It from Here]] :databases:sql:nosql:2018:
+** [[https://blog.timescale.com/timescaledb-vs-influxdb-for-time-series-data-timescale-influx-sql-nosql-36489299877][TimescaleDB vs. InfluxDB: purpose built differently for time-series data]] :article:databases:timeseries:2018:
+*** [[https://news.ycombinator.com/item?id=17766566][Hacker News Discussion #17766566]] :discussion:article:databases:timeseries:2018:
 ** Alembic
 *** [[http://www.chesnok.com/daily/2013/07/02/a-practical-guide-to-using-alembic/][A Practical Guide to using Alembic]] :database:migrations:sqlalchemy:alembic:
 *** [[https://www.compose.com/articles/schema-migrations-with-alembic-python-and-postgresql/][Schema Migrations with Alembic, Python, and PostgreSQL]] :databse:migrations:sqlalchemy:alembic:postgres:
@@ -386,6 +388,7 @@ Surviving are his wife of 54 years, Tomoko, of Oberlin, Ohio; and two daughters,
 ** [[http://www.emulator101.com/][Emulator 101]] :emulator:arcade:tutorial:2016:
 *** [[https://news.ycombinator.com/item?id=17608619][Hacker News Discussion #17608619]] :discussion:emulator:arcade:tutorial:2016:
 ** [[https://problemkaputt.de/gbatek.htm][GBATek - Gameboy Advance / Nintendo DS / DSi - Technical Info]] :nintendo:gameboy:nintendo:dsi:documentation:
+** [[https://dolphin-emu.org/blog/2018/07/21/myth-debugging-wii-more-demanding-emulate-gamecube/][Myth Debugging: Is the Wii More Demanding to Emulate than the GameCube?]] :article:2018:
 ** Nintendo Entertainment System
 *** [[https://github.com/blanham/ChickeNES][blanham/ChickeNES]] :nintendo:entertainment:system:emulator:c:2013:2015:
 *** [[https://medium.com/@fogleman/i-made-an-nes-emulator-here-s-what-i-learned-about-the-original-nintendo-2e078c9b28fe][I made an NES emulator. Here’s what I learned about the original Nintendo.]] :nintendo:entertainment:system:emulator:2015:
@@ -736,6 +739,8 @@ you can work around this client side with per hour filenames or the other usual 
 *** [[http://floooh.github.io/2018/06/02/one-year-of-c.html][One year of C]] :c:webassembly:2018:
 **** [[https://news.ycombinator.com/item?id=17216039][Hacker News Discussion #17216039]] :discussion:article:c:webassembly:
 *** [[http://blog.llvm.org/2011/05/what-every-c-programmer-should-know.html][What Every C Programmer Should Know About Undefined Behavior #1/3 ]] :article:c:2011:
+*** [[http://incise.org/tinywm.html][tinywm]] :c:2005:
+    A mere =50= lines of /C/ code.
 *** Libraries
 **** [[http://www.musl-libc.org/][musl-lib]] :c:language:
 **** [[https://github.com/mity/acutest][mitv/acutest]] :c:language:test:framework:2017:
