@@ -748,6 +748,8 @@ you can work around this client side with per hour filenames or the other usual 
 **** [[https://github.com/hnes/libaco][hnes/libaco]] :c:language:coroutines:2018:
 **** [[https://github.com/boyerjohn/rapidstring][boyerjohn/rapidstring]] :c:string:2018:
 ***** [[https://news.ycombinator.com/item?id=17643592][Hacker News Discussion #17643592]] :discussion:c:string:2018:
+**** [[http://www.throwtheswitch.org/unity/][Unity: Unit testing for C (especially embedded software)]] :c:test:framework:
+***** [[https://github.com/ThrowTheSwitch/Unity][Github: ThrowTheSwitch/Unity]]              :repository:c:test:framework:
 ** C++
 *** [[https://yosefk.com/c++fqa/][C++ FQA]]                                              :language:cpp98:fqa:
     A bit dated now, especially with regards to consistency between implementations and support for modern features.
@@ -1429,6 +1431,7 @@ From the discussion I've had and forums I've read, I think that people are afrai
 ** [[https://steveblank.com/2009/12/21/the-elves-leave-middle-earth-%E2%80%93-soda%E2%80%99s-are-no-longer-free/][The Elves Leave Middle Earth – Sodas Are No Longer Free]] :startups:2009:
 ** [[https://www.dungeonstome.com/][Dungeons TOME: A tool for generating random dungeons for RPGs such as Dungeon's & Dragons]] :dungeons:and:dragons:worldgen:2018:
 *** [[https://news.ycombinator.com/item?id=17704557][Hacker News Discussion #17704557]] :discussion:dungeons:and:dragons:worldgen:2018:
+** [[http://www.cr31.co.uk/stagecast/trains/tt8_duplo_lout.html][Turing Trains: Computational train track layouts: Duplo Layouts]] :2017:
 * UNIX and BSD
 ** [[https://fosdem.org/2017/schedule/event/my_bsd_sucks_less/][My BSD Sucks Less Than Yours]] :talk:unix:openbsd:freebsd:
 
