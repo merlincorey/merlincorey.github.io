@@ -497,6 +497,9 @@ These indeed can make your CSS code work for both the stone age and hottest brow
 ** [[https://cssgrid.cc/][The CSS Grid]] :css:grid:2018:
 ** [[https://pxlnv.com/blog/bullshit-web/][The Bullshit Web]] :article:css:2018:
 ** [[http://youmightnotneedjquery.com/][You might not need jQuery]] :article:javascript:2014:
+** [[http://abovethefold.fyi/][Above the fold is a myth]] :design:
+*** [[https://www.hugeinc.com/articles/everybody-scrolls][Everybody scrolls]] :article:design:2014:
+*** [[https://www.lukew.com/ff/entry.asp?1946][There is No Fold]] :article:design:2015:
 * Functional Programming
 ** [[https://chriskohlhepp.wordpress.com/functional-programming-section/metacircular-adventures-in-functional-abstraction-challenging-clojure-in-common-lisp/][Metacircular Adventures in Functional Abstraction]] :functional:programming:common:lisp:clojure:
 ** [[https://aphyr.com/posts/301-clojure-from-the-ground-up-welcome][Clojure from the ground up]] :functional:programming:clojure:
@@ -567,6 +570,7 @@ What I will do, however, is offer a ton of different recommendations for differe
 *** [[https://github.com/sharpie7/circuitjs1][Github: sharpie7/circuitjs1]] :repository:electricalengineering:simulation:2015:2018:
 ** [[https://basicengine.org/][BASIC Engine]] :hardware:systemonchip:2018:
 ** [[http://www.rane.com/note110.html][Sound System Interconnection]] :audio:hardware:1985:
+** [[https://blog.arduino.cc/2018/08/24/announcing-the-arduino-command-line-interface-cli/][Announcing the Arduino Command Line Interface (CLI)]] :article:2018:
 * Home Automation and Internet of Things
 ** [[http://www.bruhautomation.com/][Bruh Automation]] :home:automation:tutorials:reviews:
 
@@ -726,6 +730,8 @@ you can work around this client side with per hour filenames or the other usual 
 *** [[http://benhoyt.com/writings/pyast64/][Compiling Python syntax to x86-64 assembly for fun and (zero) profit]] :assembly:x86:python:static:2017:
 *** [[https://csl.name/post/python-compiler/][JIT compiling a subset of Python to x86-64]] :assembly:x86:python:jit:2017:
 *** [[https://github.com/nemasu/asmttpd][nemasu/asmttpd]] :assmebly:x86:networking:http:2013:2017:
+*** [[http://www.egr.unlv.edu/~ed/x86.html][x86-64 Assembly Language Programming with Ubuntu]] :assembly:x86:book:2018:
+*** [[http://linasm.sourceforge.net/][Linux Assembly Collection of Fast Libraries]] :assembly:linux:
 ** C
 *** [[http://www.maizure.org/projects/printf/index.html][Tearing apart printf()]] :c:language:low:level:2018:
 *** [[http://nullprogram.com/blog/2018/06/10/][Minimalist C Libraries]] :c:language:libraries:2018:
@@ -982,6 +988,11 @@ I'm in the process of getting the detangle working for noweb mode. The current i
 *** [[https://vorpus.org/blog/some-thoughts-on-asynchronous-api-design-in-a-post-asyncawait-world/][Some thoughts on asynchrous API design in a post async/await world]] :python:asynchronous:2016:
 *** [[https://blog.petrzemek.net/2018/04/22/on-incomplete-http-reads-and-the-requests-library-in-python/][On Incomplete HTTP Reads and the Requests Library In Python]] :python:requests:2018:
 *** [[http://willcrichton.net/notes/programming-in-the-debugger/][Programming in the Debugger]] :python:jupyter:2018:
+*** [[https://stackoverflow.com/questions/38722105/format-strings-vs-concatenation][StackOverflow: Format strings vs concatenation]] :answers:2016:
+    - =format= strings are generally more explicit and maintainable
+    : "Name: {name}".format(name=name)
+    - =f= strings in =Python 3.6= are highly efficient and readable
+    : f"Name: {name}"
 *** Libraries
 **** [[http://npyscreen.readthedocs.io/index.html][npyscreen Documentation]] :python:library:terminal:ui:2014:
 **** [[http://python-prompt-toolkit.readthedocs.io/en/master/][prompt-toolkit Documentation]] :python:library:terminal:ui:2014:2018:
@@ -1343,6 +1354,7 @@ The system processes about 30% of all diffs across Google that have statement co
 
 ** [[https://movingfulcrum.com/horrors-of-using-azure-kubernetes-service-in-production/][Horrors of using Azure Kubernetes Service in Production]] :article:systems:cloud:2018:
 *** [[https://news.ycombinator.com/item?id=17700360][Hacker News Discussion #17700360]] :discussion:article:systems:cloud:2018:
+** [[https://www.weave.works/blog/gitops-operations-by-pull-request][GitOps - Operations by Pull Request]] :article:revisioncontrol:git:continuousintegration:2018:
 ** Terraform
 *** [[https://opencredo.com/terraform-infrastructure-design-patterns/][Terraform Infrastructure Design Patterns]] :systems:terraform:2015:
 *** [[https://medium.com/levops/self-invented-how-to-terraform-rules-4b1eb00709ac][Self-invented “how to Terraform” rules]] :systems:terraform:2017:
