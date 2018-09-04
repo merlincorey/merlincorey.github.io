@@ -290,8 +290,6 @@ Surviving are his wife of 54 years, Tomoko, of Oberlin, Ohio; and two daughters,
 ** [[http://www.eelis.net/C++/analogliterals.xhtml][Multi-Dimensional Analog Literals]] :datastructures:analog:literals:2006:
 ** [[https://www.interviewcake.com/article/python/data-structures-coding-interview][Datastructures for Coding Interviews]]    :datastructures:python:interviews:
 ** [[http://www.catb.org/esr/structure-packing/][The Lost Art of C Structure Packing]] :datastructures:c:packing:esr:2014:
-** [[https://cstack.github.io/db_tutorial/][Let's Build a Simple Database]] :datastructures:databases:c:language:sql:sqlite:
-   Writing a sqlite clone from scratch in C
 ** [[http://use-the-index-luke.com/no-offset][We need tool support for keyset pagination]] :datastructures:databases:sql:pitfall:pagination:offset:
 ** [[https://www.percona.com/blog/2017/11/15/zfs-from-a-mysql-perspective/][ZFS from a MySQL perspective]] :datastructures:databases:filesystems:mysql:zfs:2017:
 ** [[https://blog.demofox.org/2017/11/21/floating-point-precision/][Demystifying Floating Point Precision]] :datastructures:floating:point:numbers:2017:
@@ -299,21 +297,28 @@ Surviving are his wife of 54 years, Tomoko, of Oberlin, Ohio; and two daughters,
 ** [[http://mishadoff.com/blog/clojure-design-patterns/][Clojure Design Patterns]] :datastructures:design:patterns:2017:
 ** [[https://www.youtube.com/watch?v=T0yzrZL1py0][6.851 MIT Open Courseware - Advanced Datastructures]] :mit:open:courseware:advanced:datastructures:2012:
 ** [[https://rcoh.me/posts/cache-oblivious-datastructures/][Cache Oblivious Datastructures]] :datastructures:cache:obliious:2017:
-** [[https://modern-sql.com/use-case/pivot][SQL Pivot — Rows to Columns]] :databases:sql:pivot:
 ** [[http://seriot.ch/parsing_json.php][Parsing JSON is a Minefield]] :datastructure:parsing:json:2016:2018:
 ** [[http://canonical.org/~kragen/memory-models/][The memory models that underlie programming languages]] :datastructures:programming:languages:memory:models:2016:
 ** [[https://probablydance.com/2018/05/28/a-new-fast-hash-table-in-response-to-googles-new-fast-hash-table/][A new fast hash table in response to Google’s new fast hash table]] :datastructures:hash:table:2018:
 *** [[https://github.com/skarupke/flat_hash_map][skarupke/flat_hash_map]] :datastructures:hash:table:2018:
-** [[http://db.cs.berkeley.edu/papers/fntdb07-architecture.pdf][Architecture of a Database System]] :paper:databases:architecture:2007:
 ** [[https://cs.uwaterloo.ca/~plragde/flaneries/FDS/][Functional Data Structures]] :book:datastructures:functional:
+* Databases
+** [[https://cstack.github.io/db_tutorial/][Let's Build a Simple Database]] :datastructures:databases:c:language:sql:sqlite:
+   Writing a sqlite clone from scratch in C
+
+** [[https://modern-sql.com/use-case/pivot][SQL Pivot — Rows to Columns]] :databases:sql:pivot:
+
+** [[http://db.cs.berkeley.edu/papers/fntdb07-architecture.pdf][Architecture of a Database System]] :paper:databases:architecture:2007:
 ** [[https://clemenswinter.com/2018/07/09/how-to-analyze-billions-of-records-per-second-on-a-single-desktop-pc/][How to Analyze Billions of Records per Second on a Single Desktop PC]] :blog:inmemory:databases:2018:
 ** [[https://adamdrake.com/command-line-tools-can-be-235x-faster-than-your-hadoop-cluster.html][Command-line Tools can be 235x Faster than your Hadoop Cluster]] :blog:analytics:performance:2014:
 ** [[https://adamdrake.com/big-data-small-machine.html][Big Data, Small Machine]] :blog:analytics:performance:2018:
+
 ** [[http://traildb.io/][TrailDB]] :databases:events:2014:2018:
 ** [[http://www.sarahmei.com/blog/2013/11/11/why-you-should-never-use-mongodb/][Why you should never use MongoDB]] :databases:nosql:2013:
 ** [[http://blog.memsql.com/nosql/][Thank You for Your Help NoSQL, but We Got It from Here]] :databases:sql:nosql:2018:
 ** [[https://blog.timescale.com/timescaledb-vs-influxdb-for-time-series-data-timescale-influx-sql-nosql-36489299877][TimescaleDB vs. InfluxDB: purpose built differently for time-series data]] :article:databases:timeseries:2018:
 *** [[https://news.ycombinator.com/item?id=17766566][Hacker News Discussion #17766566]] :discussion:article:databases:timeseries:2018:
+
 ** Alembic
 *** [[http://www.chesnok.com/daily/2013/07/02/a-practical-guide-to-using-alembic/][A Practical Guide to using Alembic]] :database:migrations:sqlalchemy:alembic:
 *** [[https://www.compose.com/articles/schema-migrations-with-alembic-python-and-postgresql/][Schema Migrations with Alembic, Python, and PostgreSQL]] :databse:migrations:sqlalchemy:alembic:postgres:
@@ -1000,6 +1005,9 @@ I'm in the process of getting the detangle working for noweb mode. The current i
 ***** [[http://toolz.readthedocs.io/en/latest/streaming-analytics.html][toolz Documentation: Streaming Analytics]] :python:library:functional:
 **** [[https://github.com/kitao/pyxel][kitao/pyxel]] :repository:python:library:gamedevelopment:2018:
      A retro game development environment in Python 
+** SQL
+*** [[https://selectstarsql.com/][Select Star SQL]] :book:exercise:databases:sql:2018:
+**** [[https://news.ycombinator.com/item?id=17905666][Hacker News Discussion #17905666]] :discussion:book:exercise:databases:sql:2018:
 * Project Management
 ** [[https://martinfowler.com/articles/itsNotJustStandingUp.html][It's Not Just Standing Up: Patterns for Daily Standup Meetings]] :meetings:article:2016:
 ** [[https://www.blossom.co/blog/3-tips-for-quick-effective-stand-up-meetings][3 Tips for Effective Stand-Up Meetings]] :meetings:article:2016:
@@ -1355,6 +1363,8 @@ The system processes about 30% of all diffs across Google that have statement co
 ** [[https://movingfulcrum.com/horrors-of-using-azure-kubernetes-service-in-production/][Horrors of using Azure Kubernetes Service in Production]] :article:systems:cloud:2018:
 *** [[https://news.ycombinator.com/item?id=17700360][Hacker News Discussion #17700360]] :discussion:article:systems:cloud:2018:
 ** [[https://www.weave.works/blog/gitops-operations-by-pull-request][GitOps - Operations by Pull Request]] :article:revisioncontrol:git:continuousintegration:2018:
+** [[https://www.magicsandbox.com/][Magic Sandbox: Learn Kubernetes by Doing]] :exercise:systems:2018:
+*** [[https://news.ycombinator.com/item?id=17909594][Hacker News Discussion #17909594]] :discussion:exercise:systems:2018:
 ** Terraform
 *** [[https://opencredo.com/terraform-infrastructure-design-patterns/][Terraform Infrastructure Design Patterns]] :systems:terraform:2015:
 *** [[https://medium.com/levops/self-invented-how-to-terraform-rules-4b1eb00709ac][Self-invented “how to Terraform” rules]] :systems:terraform:2017:
