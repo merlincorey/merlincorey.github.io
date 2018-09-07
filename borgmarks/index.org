@@ -286,6 +286,8 @@ Surviving are his wife of 54 years, Tomoko, of Oberlin, Ohio; and two daughters,
 ** [[https://dappradar.com/][dApp Radar]] :statistics:aggregator:cryptocurrency:2018:
 ** [[https://litepaper.com/resources/hyperledger][What is Hyperledger? An overview of Linux’s open source approach to blockchain building]] :whitepaper:cryptocurrency::2018:
 *** [[https://news.ycombinator.com/item?id=17696158][Hacker News Discussion #17696158]] :discussion:whitepaper:cryptocurrency:2018:
+** [[https://blog.trailofbits.com/2018/09/05/contract-upgrade-anti-patterns/][Contract upgrade anti-patterns]] :article:cryptocurrency:smartcontracts:2018:
+*** [[https://news.ycombinator.com/item?id=17916516][Hacker New Discussion #17916516]] :discussion:article:cryptocurrency:smartcontracts:2018:
 * Datastructures, Databases, and Filesystems
 ** [[http://www.eelis.net/C++/analogliterals.xhtml][Multi-Dimensional Analog Literals]] :datastructures:analog:literals:2006:
 ** [[https://www.interviewcake.com/article/python/data-structures-coding-interview][Datastructures for Coding Interviews]]    :datastructures:python:interviews:
@@ -505,6 +507,7 @@ These indeed can make your CSS code work for both the stone age and hottest brow
 ** [[http://abovethefold.fyi/][Above the fold is a myth]] :design:
 *** [[https://www.hugeinc.com/articles/everybody-scrolls][Everybody scrolls]] :article:design:2014:
 *** [[https://www.lukew.com/ff/entry.asp?1946][There is No Fold]] :article:design:2015:
+** [[https://githubengineering.com/removing-jquery-from-github-frontend/][Removing jQuery from GitHub.com frontend]] :article:javascript:2018:
 * Functional Programming
 ** [[https://chriskohlhepp.wordpress.com/functional-programming-section/metacircular-adventures-in-functional-abstraction-challenging-clojure-in-common-lisp/][Metacircular Adventures in Functional Abstraction]] :functional:programming:common:lisp:clojure:
 ** [[https://aphyr.com/posts/301-clojure-from-the-ground-up-welcome][Clojure from the ground up]] :functional:programming:clojure:
@@ -987,6 +990,8 @@ I'm in the process of getting the detangle working for noweb mode. The current i
 **** [[https://news.ycombinator.com/item?id=15394603][Hacker News Discussion #15394603]] :discussion:lisp:scheme:2017:
 **** [[https://news.ycombinator.com/item?id=17707622][Hacker News Discussion #17707622]] :discussion:lisp:scheme:2018:
 
+** OCaml
+*** [[https://try.ocamlpro.com/][Try OCaml]] :tutorial:exercise:ocaml:2018:
 ** Python
 *** [[http://automatetheboringstuff.com/chapter0/][Automate the Boring Stuff with Python]] :book:python:programming:automation:
 *** [[http://exploreflask.com][Explore Flask]] :python:programming:web:site:api:
@@ -1008,6 +1013,8 @@ I'm in the process of getting the detangle working for noweb mode. The current i
 ** SQL
 *** [[https://selectstarsql.com/][Select Star SQL]] :book:exercise:databases:sql:2018:
 **** [[https://news.ycombinator.com/item?id=17905666][Hacker News Discussion #17905666]] :discussion:book:exercise:databases:sql:2018:
+*** [[https://www.sqlstyle.guide/][SQL Style Guide]] :sql:2018:
+**** [[https://www.simonholywell.com/post/2016/12/sql-style-guide-misconceptions/#where-is-the-justification][SQL style guide misconceptions]] :artile:sql:2017:
 * Project Management
 ** [[https://martinfowler.com/articles/itsNotJustStandingUp.html][It's Not Just Standing Up: Patterns for Daily Standup Meetings]] :meetings:article:2016:
 ** [[https://www.blossom.co/blog/3-tips-for-quick-effective-stand-up-meetings][3 Tips for Effective Stand-Up Meetings]] :meetings:article:2016:
@@ -1454,6 +1461,9 @@ From the discussion I've had and forums I've read, I think that people are afrai
 ** [[https://www.dungeonstome.com/][Dungeons TOME: A tool for generating random dungeons for RPGs such as Dungeon's & Dragons]] :dungeons:and:dragons:worldgen:2018:
 *** [[https://news.ycombinator.com/item?id=17704557][Hacker News Discussion #17704557]] :discussion:dungeons:and:dragons:worldgen:2018:
 ** [[http://www.cr31.co.uk/stagecast/trains/tt8_duplo_lout.html][Turing Trains: Computational train track layouts: Duplo Layouts]] :2017:
+** [[http://www.chrobotics.com/library/understanding-quaternions][Understanding Quaternions]] :article:
+** [[https://www.statisticsdonewrong.com/][Statistics Done Wrong]] :book:
+   Original open source content that spawned the /No Starch Press/ book.
 * UNIX and BSD
 ** [[https://fosdem.org/2017/schedule/event/my_bsd_sucks_less/][My BSD Sucks Less Than Yours]] :talk:unix:openbsd:freebsd:
 
