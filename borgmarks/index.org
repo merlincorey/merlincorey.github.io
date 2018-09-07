@@ -108,6 +108,126 @@ But typically m>>n, so the net result is the same.
    The core sorting algorithm in =Python=.
 *** [[https://news.ycombinator.com/item?id=17436591][Hackernews Discussion #17436591]] :discussion:algorithms:sorting:2018:
 ** [[https://play.elevatorsaga.com/][Elevator Saga: The elevator programming game]] :algorithms:javascript:2014:2015:
+#+CAPTION: Current solution by Merlin
+#+BEGIN_SRC javascript
+{
+    init: function(elevators, floors) {
+        console.log('-----------------------------------');
+        console.log('Initialize ' + elevators.length + ' elevators and ' + floors.length + ' floors');
+        console.log('-----------------------------------');
+        let up = "up";
+        let down = "down";
+        let stopped = "stopped"
+        let directions = [up, down, stopped];
+
+        let elevator_index = function(elevator) {
+            return elevators.indexOf(elevator);
+        }
+
+        let elog = function(elevator, message) {
+            console.log('Elevator #' + elevator_index(elevator) + ": " + message)
+        }
+
+        let flog = function(floor, message) {
+            console.log('Floor #' + floor.floorNum() + ": " + message);
+        }
+
+        let random_binary = function() {
+            return Math.random() < 0.5;
+        }
+
+        let elevators_filter = function(predicate) {
+            let _elevators = [];
+            var i;
+            for (i = 0; i < elevators.length; ++i) {
+                if (predicate(elevators[i])) {
+                    _elevators.push(elevators[i])
+                }
+            }
+            return _elevators;
+        }
+
+        let elevators_going_to = function(floor) {
+            return elevators_filter(function(elevator) {
+                return -1 != elevator.destinationQueue.indexOf(floor);
+            });
+        }
+
+        let elevators_not_going_to = function(floor) {
+            return elevators_filter(function(elevator) {
+                return -1 == elevator.destinationQueue.indexOf(floor);
+            });
+        }
+
+        let state_idle = function(elevator) {
+            elog(elevator, 'Elevator is idle');
+            if (0 == elevator.currentFloor()) {
+                //elevator.goingUpIndicator(true);
+            } else {
+                elevator.goToFloor(0);
+            }
+        }
+
+        let state_floor_button_pressed = function(elevator, floor) {
+            elog(elevator, 'Floor button pressed for ' + floor);
+            if (floor < elevator.currentFloor()) {
+                //elevator.goingUpIndicator(false);
+                //elevator.goingDownIndicator(true);
+            } else {
+                //elevator.goingUpIndicator(false);
+                //elevator.goingDownIndicator(true);
+            }
+            elevator.goToFloor(floor);
+        };
+
+        let state_passing_floor = function(elevator, floor, direction) {
+            elog(elevator, 'Passing floor ' + floor + ' in direction ' + direction);
+        };
+
+        let state_stopped_at_floor = function(elevator, floor) {
+            elog(elevator, 'Stopped at floor ' + floor);
+        };
+
+        let state_up_button_pressed = function(floor) {
+            flog(floor, 'Up button pressed');
+            going = elevators_going_to(floor);
+            not_going = elevators_not_going_to(floor);
+            if (0 == going.length) {
+                if (0 == not_going.length) {
+                    flog(floor, 'No elevators bound for this floor and no elevators available!');
+                } else {
+                    flog(floor, 'No elevators bound for this floor, dispatching first available.');
+                    elog(not_going[0], 'Queuing up destination for ' + floor.floorNum());
+                    not_going[0].goToFloor(floor.floorNum());
+                }
+            } else {
+                flog(floor, going.length + ' elevators bound for this floor!');
+            }
+        }
+
+        let state_down_button_pressed = function(floor) {
+            flog(floor, 'Down button pressed')
+        }
+
+        elevators.forEach(function(elevator) {
+            elog(elevator, 'Adding state functions');
+            elevator.on('idle', function() { state_idle(elevator); });
+            elevator.on('floor_button_pressed', function(floor) { state_floor_button_pressed(elevator, floor); });
+            elevator.on('passing_floor', function(floor, direction) { state_passing_floor(elevator, floor, direction); });
+            elevator.on('stopped_at_floor', function(floor) { state_stopped_at_floor(elevator, floor); });
+        });
+
+        floors.forEach(function(floor) {
+            flog(floor, 'Adding state functions');
+            floor.on('up_button_pressed', function() { state_up_button_pressed(floor); });
+            floor.on('down_button_pressed', function() { state_down_button_pressed(floor); });
+        });
+    },
+    update: function(dt, elevators, floors) {
+        // We normally don't need to do anything here
+    }
+}
+#+END_SRC
 ** [[https://www.snellman.net/blog/archive/2018-07-23-optimizing-breadth-first-search/][Optimizing a breadth-first search]] :algorithms:puzzles:2018:
 ** [[http://algo.pw/][Algorithm Power]] :algorithms:
    Listing of various algorithms with per-algorithm descriptions and implementations in various languages.
@@ -1009,7 +1129,7 @@ I'm in the process of getting the detangle working for noweb mode. The current i
 **** [[http://toolz.readthedocs.io/en/latest/][toolz Documentation]] :python:library:functional:2014:2018:
 ***** [[http://toolz.readthedocs.io/en/latest/streaming-analytics.html][toolz Documentation: Streaming Analytics]] :python:library:functional:
 **** [[https://github.com/kitao/pyxel][kitao/pyxel]] :repository:python:library:gamedevelopment:2018:
-     A retro game development environment in Python 
+     A retro game development environment in Python
 ** SQL
 *** [[https://selectstarsql.com/][Select Star SQL]] :book:exercise:databases:sql:2018:
 **** [[https://news.ycombinator.com/item?id=17905666][Hacker News Discussion #17905666]] :discussion:book:exercise:databases:sql:2018:
