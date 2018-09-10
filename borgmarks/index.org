@@ -877,6 +877,7 @@ you can work around this client side with per hour filenames or the other usual 
 *** [[http://blog.llvm.org/2011/05/what-every-c-programmer-should-know.html][What Every C Programmer Should Know About Undefined Behavior #1/3 ]] :article:c:2011:
 *** [[http://incise.org/tinywm.html][tinywm]] :c:2005:
     A mere =50= lines of /C/ code.
+*** [[https://p.janouch.name/article-tui.html][So you want to make a TUI...]] :article:c:tui:2015:
 *** Libraries
 **** [[http://www.musl-libc.org/][musl-lib]] :c:language:
 **** [[https://github.com/mity/acutest][mitv/acutest]] :c:language:test:framework:2017:
