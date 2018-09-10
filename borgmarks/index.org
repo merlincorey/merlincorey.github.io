@@ -408,7 +408,7 @@ Surviving are his wife of 54 years, Tomoko, of Oberlin, Ohio; and two daughters,
 *** [[https://news.ycombinator.com/item?id=17696158][Hacker News Discussion #17696158]] :discussion:whitepaper:cryptocurrency:2018:
 ** [[https://blog.trailofbits.com/2018/09/05/contract-upgrade-anti-patterns/][Contract upgrade anti-patterns]] :article:cryptocurrency:smartcontracts:2018:
 *** [[https://news.ycombinator.com/item?id=17916516][Hacker New Discussion #17916516]] :discussion:article:cryptocurrency:smartcontracts:2018:
-* Datastructures, Databases, and Filesystems
+* Datastructures and Filesystems
 ** [[http://www.eelis.net/C++/analogliterals.xhtml][Multi-Dimensional Analog Literals]] :datastructures:analog:literals:2006:
 ** [[https://www.interviewcake.com/article/python/data-structures-coding-interview][Datastructures for Coding Interviews]]    :datastructures:python:interviews:
 ** [[http://www.catb.org/esr/structure-packing/][The Lost Art of C Structure Packing]] :datastructures:c:packing:esr:2014:
@@ -441,6 +441,8 @@ Surviving are his wife of 54 years, Tomoko, of Oberlin, Ohio; and two daughters,
 ** [[https://blog.timescale.com/timescaledb-vs-influxdb-for-time-series-data-timescale-influx-sql-nosql-36489299877][TimescaleDB vs. InfluxDB: purpose built differently for time-series data]] :article:databases:timeseries:2018:
 *** [[https://news.ycombinator.com/item?id=17766566][Hacker News Discussion #17766566]] :discussion:article:databases:timeseries:2018:
 
+** [[https://github.com/BurntSushi/xsv][Github: BurntSushi/xsv]] :repository:databases:csv:rust:2014:2018:
+   CSV toolkit written in Rust.
 ** Alembic
 *** [[http://www.chesnok.com/daily/2013/07/02/a-practical-guide-to-using-alembic/][A Practical Guide to using Alembic]] :database:migrations:sqlalchemy:alembic:
 *** [[https://www.compose.com/articles/schema-migrations-with-alembic-python-and-postgresql/][Schema Migrations with Alembic, Python, and PostgreSQL]] :databse:migrations:sqlalchemy:alembic:postgres:
@@ -1584,6 +1586,8 @@ From the discussion I've had and forums I've read, I think that people are afrai
 ** [[http://www.chrobotics.com/library/understanding-quaternions][Understanding Quaternions]] :article:
 ** [[https://www.statisticsdonewrong.com/][Statistics Done Wrong]] :book:
    Original open source content that spawned the /No Starch Press/ book.
+** [[https://github.com/cjbarber/ToolsOfTheTrade][Github: cjbarber/ToolsOfTheTrade]] :repository:2016:2018:
+   Description of various software tools used in startups and enterprises.
 * UNIX and BSD
 ** [[https://fosdem.org/2017/schedule/event/my_bsd_sucks_less/][My BSD Sucks Less Than Yours]] :talk:unix:openbsd:freebsd:
 
