@@ -108,6 +108,7 @@ But typically m>>n, so the net result is the same.
    The core sorting algorithm in =Python=.
 *** [[https://news.ycombinator.com/item?id=17436591][Hackernews Discussion #17436591]] :discussion:algorithms:sorting:2018:
 ** [[https://play.elevatorsaga.com/][Elevator Saga: The elevator programming game]] :algorithms:javascript:2014:2015:
+** [[https://commandcenter.blogspot.com/2012/04/byte-order-fallacy.html][Byte Order Fallacy]] :algorithms:encoding:decoding:2012:2013:
 #+CAPTION: Current solution by Merlin
 #+BEGIN_SRC javascript
 {
