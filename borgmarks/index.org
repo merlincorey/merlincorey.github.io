@@ -1183,6 +1183,22 @@ I'm in the process of getting the detangle working for noweb mode. The current i
    10. Maintain consistency
 ** [[https://medium.com/@jsonpify/you-dont-need-standup-9a74782517c1][You don’t need standup]] :meetings:article:2018:
 *** [[https://news.ycombinator.com/item?id=17671464][Hacker News Discussion #17671464]] :discussion:meetings:article:2018:
+** [[https://github.com/kanboard/kanboard][Github: kanboard/kanboard]]                               :repository:kanban:2015:2018:
+   Open source kanban board web application in =PHP= with =MySQL= database.
+** [[https://github.com/kiswa/TaskBoard][Github: kiswa/TaskBoard]]                                 :repository:kanban:2014:2017:
+   Open source kanban board web application in =PHP= with =SQLite= database.
+** [[https://github.com/taigaio][Github: Taigaio Organization]]
+   Open source Project Management in =Django= with =MySQL= database.
+   Available as a hosted service, with free plans for a single private project.
+   Organizes by Epics, Scrum Backlog, Kanban Board, Issues, and Wiki.
+*** [[https://github.com/taigaio/taiga-back][Github: taigaio/taiga-back]] :repository:2014:2018:
+    =Django= backend.
+*** [[https://github.com/taigaio/taiga-front][Github: taigaio/taiga-front]] :repository:2014:2018:
+    =AngularJS= frontend.
+** [[https://github.com/RestyaPlatform/board/][Github: RestyaPlatform/board]] :repository:kanban:2014:2018:
+   Open source kanban board web application in =PHP= with =PostgreSQL= and =ElasticSearch= databases.
+** [[https://github.com/wekan/wekan][Github: wekan/wekan]] :repository:kanban:2015:2018:
+   Open source kanban board web application in =NodeJS=.
 * Reverse Engineering
 ** [[https://www.youtube.com/user/OpenSecurityTraining][Open Security Training YouTube Channel]]                            :videos:binary:reverse:engineering:
 ** [[https://github.com/FireyFly/pixd][Colourful visualization tool for binary files]] :binary:data:visualization:
@@ -1572,8 +1588,6 @@ From the discussion I've had and forums I've read, I think that people are afrai
 #+END_QUOTE
 
 ** [[https://getweeklyupdate.com/manager-guide][How to be a Manager]] :management:2018:
-** [[https://github.com/kanboard/kanboard][Github: kanboard/kanboard]] :kanban:2015:2018:
-   Open source kanban board web application in =PHP= with =MySQL= database.
 ** [[http://www.texpaste.com/][TexPaste: Pastebin for Mathematicians]] :pastebin:mathematics:
 ** [[https://www.metapsychosis.com/at-play-personal-odyssey-chess/][At Play: A Personal Odyssey in Chess]] :article:chess:2018:
 ** [[https://nedbatchelder.com/text/hexwords.html][Hexwords]] :blog:2003:2007:
