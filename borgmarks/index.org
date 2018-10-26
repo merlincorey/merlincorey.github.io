@@ -357,7 +357,7 @@ It's mainly useful for debugging purposes and perhaps in a few cases for safety,
 *** [[https://secretsigner.com/][Secret Signer]] :cryptography:steganography:webapp:
 ** [[https://en.wikipedia.org/wiki/Export_of_cryptography_from_the_United_States][Wikipedia: Export of cryptography from the United States]] :wiki:cryptography:history:
 *** [[http://cypherpunks.venona.com/archive/1995/10/msg00317.html][CJR for perl-RSA t-shirt]] :cryptography:history:1995:
-* Crypto currencies
+* Cryptocurrencies
 ** [[http://www.righto.com/2014/09/mining-bitcoin-with-pencil-and-paper.html][Mining Bitcoin with pencil and paper: 0.67 hashes per day]] :cryptocurrency:bitcoin:2014:
 ** [[http://www.righto.com/2014/02/ascii-bernanke-wikileaks-photographs.html][Hidden surprises in the Bitcoin blockchain and how they are stored: Nelson Mandela, Wikileaks, photos, and Python software]] :cryptocurrency:blockchain:creative:hacking:2014:
 ** [[https://storeofvalue.github.io/posts/cryptocurrency-hacks-so-far-august-24th/][List Of High Profile Cryptocurrency Hacks So Far]] :cryptocurrency:crime:and:theft:2017:
@@ -410,6 +410,8 @@ Surviving are his wife of 54 years, Tomoko, of Oberlin, Ohio; and two daughters,
 *** [[https://news.ycombinator.com/item?id=17696158][Hacker News Discussion #17696158]] :discussion:whitepaper:cryptocurrency:2018:
 ** [[https://blog.trailofbits.com/2018/09/05/contract-upgrade-anti-patterns/][Contract upgrade anti-patterns]] :article:cryptocurrency:smartcontracts:2018:
 *** [[https://news.ycombinator.com/item?id=17916516][Hacker New Discussion #17916516]] :discussion:article:cryptocurrency:smartcontracts:2018:
+** [[https://medium.com/@preethikasireddy/how-does-ethereum-work-anyway-22d1df506369][How does Ethereum work, anyway?]] :article:cryptocurrency:2017:
+** [[https://ethernaut.zeppelin.solutions/][The Ethernaut]] :ctf:cryptocurrency:2018:
 * Datastructures and Filesystems
 ** [[http://www.eelis.net/C++/analogliterals.xhtml][Multi-Dimensional Analog Literals]] :datastructures:analog:literals:2006:
 ** [[https://www.interviewcake.com/article/python/data-structures-coding-interview][Datastructures for Coding Interviews]]    :datastructures:python:interviews:
@@ -721,17 +723,18 @@ What I will do, however, is offer a ton of different recommendations for differe
 ** [[https://www.defcon.org/images/defcon-21/dc-21-presentations/Tobias-Bluzmanis/DEFCON-21-Tobias-Bluzmanis-Insecurity-A-Failure-of-Imagination.pdf][A FAILURE OF IMAGINATION: Kwikset Smartkey® and Insecurity Engineering]] :physical:security:lockpicking:kwikset:smart:key:
 
 * Machine Learning
-** [[http://www.asimovinstitute.org/neural-network-zoo/][The Neural Network Zoo]]                        :machine:learning:neural:networks:
-** [[https://docs.google.com/presentation/d/1kSuQyW5DTnkVaZEjGYCkfOxvzCqGEFzWBy4e9Uedd9k/preview?imm_mid=0f9b7e&cmp=em-data-na-na-newsltr_20171213#slide=id.g168a3288f7_0_58][Machine Learning 101]]                        :machine:learning:slides:2017:
-** [[https://developers.google.com/machine-learning/crash-course/][Google Machine Learning: Crash Course]]      :machine:learning:crash:course:
-** [[https://developers.google.com/machine-learning/guides/][Google Machine Learning Guides]]             :machine:learning:guide:2018:
-*** [[https://developers.google.com/machine-learning/guides/rules-of-ml][Google Machine Learning Guides: Rules of Machine Learning]] :machine:learning:guide:2018:
-*** [[https://developers.google.com/machine-learning/guides/text-classification/][Google Machine Learning Guides: Text Classification]]  :machine:learning:guide:2018:
-** [[https://github.com/glouw/tinn][glouw/tinn]] :machine:learning:neural:network:library:
+** [[http://www.asimovinstitute.org/neural-network-zoo/][The Neural Network Zoo]]                        :machinelearning:neuralnetworks:
+** [[https://docs.google.com/presentation/d/1kSuQyW5DTnkVaZEjGYCkfOxvzCqGEFzWBy4e9Uedd9k/preview?imm_mid=0f9b7e&cmp=em-data-na-na-newsltr_20171213#slide=id.g168a3288f7_0_58][Machine Learning 101]]                        :machinelearning:slides:2017:
+** [[https://developers.google.com/machine-learning/crash-course/][Google Machine Learning: Crash Course]]      :machinelearning:crash:course:
+** [[https://developers.google.com/machine-learning/guides/][Google Machine Learning Guides]]             :machinelearning:guide:2018:
+*** [[https://developers.google.com/machine-learning/guides/rules-of-ml][Google Machine Learning Guides: Rules of Machine Learning]] :machinelearning:guide:2018:
+*** [[https://developers.google.com/machine-learning/guides/text-classification/][Google Machine Learning Guides: Text Classification]]  :machinelearning:guide:2018:
+** [[https://github.com/glouw/tinn][glouw/tinn]] :machinelearning:neural:network:library:
    The tiny neural network library
-** [[https://sandipanweb.wordpress.com/2018/05/31/8626/][Few Machine Learning Problems (with Python implementations)]] :machine:learning:neural:networks:2018:
-** [[https://thegradient.pub/why-rl-is-flawed/][Reinforcement learning's foundational flaw]] :machine:learning:reinforcement:2018:
-*** [[https://thegradient.pub/how-to-fix-rl/][How to fix reinforcement learning]] :machine:learning:reinforcement:2018:
+** [[https://sandipanweb.wordpress.com/2018/05/31/8626/][Few Machine Learning Problems (with Python implementations)]] :machinelearning:neuralnetworks:2018:
+** [[https://thegradient.pub/why-rl-is-flawed/][Reinforcement learning's foundational flaw]] :machinelearning:reinforcement:2018:
+*** [[https://thegradient.pub/how-to-fix-rl/][How to fix reinforcement learning]] :machinelearning:reinforcement:2018:
+** [[https://towardsdatascience.com/how-to-build-your-own-neural-network-from-scratch-in-python-68998a08e4f6][How to build your own Neural Network from scratch in Python]] :article::neuralnetworks:2018:
 * Mazes
 
 ** [[http://weblog.jamisbuck.org/2011/2/7/maze-generation-algorithm-recap][Maze Generation Algorithm Recap]] :maze:algorithms:
@@ -851,6 +854,7 @@ you can work around this client side with per hour filenames or the other usual 
 **** [[http://www.diku.dk/hjemmesider/ansatte/henglein/papers/henglein2011c.pdf][Generic Multiset Programming with Discrimination-based Joins and Symbolic Cartesian Products]] :paper:sorting:2011:
 ** [[https://raft.github.io/raft.pdf][In Search of an Understandable Consensus Algorithm]] :paper:distributed:consenus:2014:
 
+** [[https://pdfs.semanticscholar.org/441f/ac7c2020e1c8f0d32adffca697bbb8a198a1.pdf][How to Write a Technical Paper: Structure and Style of the Epitome of your Research]] :2018:
 * Physics
 ** [[https://www.susanjfowler.com/blog/2016/8/13/so-you-want-to-learn-physics][So You Want to Learn Physics...]] :physics:susan:flower:2016:
 ** [[https://physicstravelguide.com/][Physics Travel Guides]] :physics:study:tool:
@@ -1127,6 +1131,11 @@ I'm in the process of getting the detangle working for noweb mode. The current i
 **** [[https://news.ycombinator.com/item?id=15394603][Hacker News Discussion #15394603]] :discussion:lisp:scheme:2017:
 **** [[https://news.ycombinator.com/item?id=17707622][Hacker News Discussion #17707622]] :discussion:lisp:scheme:2018:
 *** [[https://github.com/mntmn/interim][Github: mntmn/interim]] :lisp:os:2015:
+*** [[https://funcall.blogspot.com/2009/03/not-lisp-again.html][Not Lisp again...]] :article:lisp:scheme:1983:2009:
+**** [[https://news.ycombinator.com/item?id=504667][Hacker News Discussion #504667]] :discussion:lisp:scheme:2009:
+**** [[https://news.ycombinator.com/item?id=5375735][Hacker News Discussion #5375735]] :discussion:lisp:scheme:2013:
+**** [[https://news.ycombinator.com/item?id=14247269][Hacker News Discussion #14247269]] :discussion:lisp:scheme:2017:
+**** [[https://news.ycombinator.com/item?id=18308721][Hacker News Discussion #18308721]] :discussion:lisp:scheme:2018:
 ** [[http://kittenlang.org/][Kitten Programming Language]]
 ** OCaml
 *** [[https://try.ocamlpro.com/][Try OCaml]] :tutorial:exercise:ocaml:2018:
@@ -1433,6 +1442,8 @@ requires external signatures anyway.
 So be happy with 'git tag -s'. It really is the right way.
 #+END_QUOTE
 ** [[https://ndpsoftware.com/git-cheatsheet.html][Visual Git Cheatsheet]] :git:2018:
+** [[http://tom.preston-werner.com/2009/05/19/the-git-parable.html][The Git Parable]] :article:git:2009:
+** [[http://aosabook.org/en/git.html][The Architecture of Open Source Applications: Git in a Nutshell]] :book:git:
 * Shells and Terminals
 ** [[https://zanshin.net/2013/02/02/zsh-configuration-from-the-ground-up/][Zsh Configuration From the Ground Up]] :zsh:configuration:tutorial:2013:
 ** [[http://www.howardism.org/Technical/Emacs/eshell-fun.html][Eschewing Zshell for Emacs Shell]] :zsh:emacs:eshell:
@@ -1445,6 +1456,7 @@ So be happy with 'git tag -s'. It really is the right way.
 * Security
 ** [[https://www.hackthebox.eu/][Hack the Box]] :ctf:
 ** [[https://picoctf.com/][PicoCTF]] :ctf:
+** [[https://github.com/malwaredllc/byob][Github: malwaredllc/byob]] :repository:security:botnet:
 * Software Engineering
 ** [[http://www.drdobbs.com/architecture-and-design/software-engineering-computer-science/217701907][Software Engineering ≠ Computer Science]] :software:engineering:architecture:design:2009:
 ** [[http://python.apichecklist.com/][Python API Checklist]] :python:api:programming:checklist:2017:
@@ -1681,6 +1693,9 @@ Conclusion
 
 There is no one-size-fits-all solution to this problem, but anything you can do to make it simple, transparent, straightforward, and, above-all, fair, will make your company much more likely to be successful.
 #+END_QUOTE
+** [[https://www.foldnfly.com/][Fold 'N Fly Paper Airplane Designs]] :2018:
+** [[http://solvingsol.com/][Solving Sol]] :art:2018:
+*** [[https://github.com/wholepixel/solving-sol][Github: wholepixel/solving-sol]] :repository:art:2018:
 * UNIX and BSD
 ** [[https://fosdem.org/2017/schedule/event/my_bsd_sucks_less/][My BSD Sucks Less Than Yours]] :talk:unix:openbsd:freebsd:
 
