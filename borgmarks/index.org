@@ -891,6 +891,7 @@ you can work around this client side with per hour filenames or the other usual 
 **** [[https://news.ycombinator.com/item?id=17581319][Hacker News Discussion #17581319]] :discussion:c:2018:
 *** [[http://floooh.github.io/2018/06/02/one-year-of-c.html][One year of C]] :c:webassembly:2018:
 **** [[https://news.ycombinator.com/item?id=17216039][Hacker News Discussion #17216039]] :discussion:article:c:webassembly:
+*** [[https://blog.regehr.org/archives/213][A Guide to Undefined Behavior in C and C++, Part 1]]       :article:c:2010:
 *** [[http://blog.llvm.org/2011/05/what-every-c-programmer-should-know.html][What Every C Programmer Should Know About Undefined Behavior #1/3 ]] :article:c:2011:
 *** [[http://incise.org/tinywm.html][tinywm]] :c:2005:
     A mere =50= lines of /C/ code.
@@ -1530,6 +1531,7 @@ The system processes about 30% of all diffs across Google that have statement co
 | ~200 ms~ with ~512 MB~ RAM         |                                                        64000 |                17.8 |
 | ~200 ms~ with ~1024 MB~ RAM        |                                                        34000 |                9.4. |
 | ~1000 ms~ with ~1024 MB~ RAM       |                                                         7100 |                 2.0 |
+*** [[https://www.awsgeek.com/][AWS Cloud Diagrams]] :systems:aws:
 ** [[https://github.com/ansible/][Github: Ansible Organization]]
 *** [[https://github.com/ansible/ansible][Ansible Configuration Management]] :systems:configuration:management:2012:2018:
 ** [[https://eng.uber.com/m3/][M3: Uber’s Open Source, Large-scale Metrics Platform for Prometheus]] :systems:metrics:2018:
