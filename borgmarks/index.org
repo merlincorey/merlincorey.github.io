@@ -667,6 +667,8 @@ Home page: http://www.helixsoft.nl/
 ** [[https://www.gamasutra.com/view/feature/131503/1500_archers_on_a_288_network_.php?print=1][1500 Archers on a 28.8: Network Programming in Age of Empires and Beyond]] :gamedevelopment:network:2018:
 ** [[https://www.masswerk.at/spacewar/inside/][Inside Spacewar! A Software Archeological Approach to the First Video Game]] :history:gamedevelopment:spacewar:2014:2015:
 ** [[https://www.masswerk.at/nowgobang/2018/anatomy-of-an-rng][Anatomy of a Random Number Generator]] :history:gamedevelopment:spacewar:algorithms:rng:2018:
+** [[http://www.gamasutra.com/blogs/JoshGe/20181029/329512/How_to_Make_a_Roguelike.php][How to Make a Roguelike]] :article:roguelike:2018:
+*** [[https://news.ycombinator.com/item?id=18335409][Hacker News Discussion #18335409]] :discussion:article:roguelike:2018:
 * Game Theory
 ** [[http://www.chesstactics.org/index.php?Type=page&Action=next&From=1,1,1,1][Ward Farnsworth's Predator at the Chessboard]] :gametheory:book:chess:
 ** [[http://www.mindsports.nl/][mindsports.nl]] :gametheory:gamedesign:puzzles:
