@@ -804,7 +804,9 @@ you can work around this client side with per hour filenames or the other usual 
 ** [[https://jvns.ca/blog/2018/07/24/ip-addresses-routing/][IP addresses & routing]] :article:networking:routing:2018:
 *** [[https://news.ycombinator.com/item?id=17607845][Hacker News Discussion #17607845]] :discussion:article:networking:routing:2018:
 ** [[https://www.mnot.net/blog/2018/07/31/read_rfc][How to Read an RFC]] :article:nettworking:standards:2018:
-** [[https://tls.ulfheim.net/][The Illustrated TLS Connection]] :article:
+** [[https://tls.ulfheim.net/][The Illustrated TLS Connection]] 				    :article:networking:2017:
+** [[https://tls13.ulfheim.net/][The New Illustrated TLS Connection]] :article:networking:2018:
+*** [[https://news.ycombinator.com/item?id=18400158][Hacker News Discussion #18400158]] :discussion:article:networking:2018:
 * Object Oriented Programming and Design
 ** [[https://ericlippert.com/2015/04/27/wizards-and-warriors-part-one/][Wizards and Warriors: Part One]] :object:oriented:design:
 *** [[https://ericlippert.com/2015/04/30/wizards-and-warriors-part-two/][Wizards and Warriors: Part Two]] :object:oriented:design:
