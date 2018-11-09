@@ -673,6 +673,8 @@ Home page: http://www.helixsoft.nl/
 ** [[https://www.gamasutra.com/view/feature/131503/1500_archers_on_a_288_network_.php?print=1][1500 Archers on a 28.8: Network Programming in Age of Empires and Beyond]] :gamedevelopment:network:2018:
 ** [[https://www.masswerk.at/spacewar/inside/][Inside Spacewar! A Software Archeological Approach to the First Video Game]] :history:gamedevelopment:spacewar:2014:2015:
 ** [[https://www.masswerk.at/nowgobang/2018/anatomy-of-an-rng][Anatomy of a Random Number Generator]] :history:gamedevelopment:spacewar:algorithms:rng:2018:
+** [[http://www.gamasutra.com/blogs/JoshGe/20181029/329512/How_to_Make_a_Roguelike.php][How to Make a Roguelike]] :article:roguelike:2018:
+*** [[https://news.ycombinator.com/item?id=18335409][Hacker News Discussion #18335409]] :discussion:article:roguelike:2018:
 * Game Theory
 ** [[http://www.chesstactics.org/index.php?Type=page&Action=next&From=1,1,1,1][Ward Farnsworth's Predator at the Chessboard]] :gametheory:book:chess:
 ** [[http://www.mindsports.nl/][mindsports.nl]] :gametheory:gamedesign:puzzles:
@@ -808,7 +810,9 @@ you can work around this client side with per hour filenames or the other usual 
 ** [[https://jvns.ca/blog/2018/07/24/ip-addresses-routing/][IP addresses & routing]] :article:networking:routing:2018:
 *** [[https://news.ycombinator.com/item?id=17607845][Hacker News Discussion #17607845]] :discussion:article:networking:routing:2018:
 ** [[https://www.mnot.net/blog/2018/07/31/read_rfc][How to Read an RFC]] :article:nettworking:standards:2018:
-** [[https://tls.ulfheim.net/][The Illustrated TLS Connection]] :article:
+** [[https://tls.ulfheim.net/][The Illustrated TLS Connection]] 				    :article:networking:2017:
+** [[https://tls13.ulfheim.net/][The New Illustrated TLS Connection]] :article:networking:2018:
+*** [[https://news.ycombinator.com/item?id=18400158][Hacker News Discussion #18400158]] :discussion:article:networking:2018:
 * Object Oriented Programming and Design
 ** [[https://ericlippert.com/2015/04/27/wizards-and-warriors-part-one/][Wizards and Warriors: Part One]] :object:oriented:design:
 *** [[https://ericlippert.com/2015/04/30/wizards-and-warriors-part-two/][Wizards and Warriors: Part Two]] :object:oriented:design:
