@@ -291,6 +291,10 @@ o$22b2o3bo$21bo$21b2obo$20bo$19b5o$19bo4bo$18b3ob3o$18bob5o$18bo$20bo$
 #+END_EXAMPLE
 
 **** [[https://news.ycombinator.com/item?id=16546152][Hackernews Discussion #16546152]] :2018:
+* Blockchain
+** [[https://thomaslarock.com/2018/11/no-you-dont-need-a-blockchain/][No, You Don’t Need a Blockchain]] :article:blockchain:2018:
+** [[https://www.dapp.com/article/proof-of-stake-or-proof-of-work-whats-the-difference][Proof of Stake or Proof of Work, What's the Difference?]] :article:blockchain:2018:
+*** [[https://news.ycombinator.com/item?id=18369593][Hacker News Discussion #18369593]] :discussion:article:blockchain:2018:
 * Build Systems
 ** [[http://lcgapp.cern.ch/project/architecture/recursive_make.pdf][Recursive Make Considered Harmful]] :build:systems:paper:make:2002:
 ** [[http://make.mad-scientist.net/papers/rules-of-makefiles/][GNU Make: Rules of Makefiles]] :build:systems:make:2002:
@@ -357,6 +361,8 @@ It's mainly useful for debugging purposes and perhaps in a few cases for safety,
 *** [[https://secretsigner.com/][Secret Signer]] :cryptography:steganography:webapp:
 ** [[https://en.wikipedia.org/wiki/Export_of_cryptography_from_the_United_States][Wikipedia: Export of cryptography from the United States]] :wiki:cryptography:history:
 *** [[http://cypherpunks.venona.com/archive/1995/10/msg00317.html][CJR for perl-RSA t-shirt]] :cryptography:history:1995:
+** [[https://paseto.io/][PASETO - everything you love about JOSE (JWT, JWE, JWS) without any of the many design deficits that plague the JOSE standards.]] :authorization:cryptography:2018:
+*** [[https://paragonie.com/blog/2017/03/jwt-json-web-tokens-is-bad-standard-that-everyone-should-avoid][No Way, JOSE! Javascript Object Signing and Encryption is a Bad Standard That Everyone Should Avoid]] :article:authorization:cryptography:2018:
 * Cryptocurrencies
 ** [[http://www.righto.com/2014/09/mining-bitcoin-with-pencil-and-paper.html][Mining Bitcoin with pencil and paper: 0.67 hashes per day]] :cryptocurrency:bitcoin:2014:
 ** [[http://www.righto.com/2014/02/ascii-bernanke-wikileaks-photographs.html][Hidden surprises in the Bitcoin blockchain and how they are stored: Nelson Mandela, Wikileaks, photos, and Python software]] :cryptocurrency:blockchain:creative:hacking:2014:
@@ -1163,8 +1169,14 @@ I'm in the process of getting the detangle working for noweb mode. The current i
 ** SQL
 *** [[https://selectstarsql.com/][Select Star SQL]] :book:exercise:databases:sql:2018:
 **** [[https://news.ycombinator.com/item?id=17905666][Hacker News Discussion #17905666]] :discussion:book:exercise:databases:sql:2018:
+**** [[https://news.ycombinator.com/item?id=17905666][Hacker News Discussion #17905666]]
 *** [[https://www.sqlstyle.guide/][SQL Style Guide]] :sql:2018:
 **** [[https://www.simonholywell.com/post/2016/12/sql-style-guide-misconceptions/#where-is-the-justification][SQL style guide misconceptions]] :artile:sql:2017:
+*** [[https://app.bytescout.com/sql-trainer/index.html][Bytescout SQL Trainer]] :exercise:sql:2018:
+**** [[https://news.ycombinator.com/item?id=18335723][Hacker News Discussion #18335723]]
+*** [[https://sqlbolt.com][SQL Bolt]] :exercise:sql:
+*** [[https://pgexercises.com/][PostgreSQL Exercises]] :exercise:sql:
+*** [[https://schemaverse.com/][The Schemaverse]] :game:sql:
 * Project Management
 ** [[https://martinfowler.com/articles/itsNotJustStandingUp.html][It's Not Just Standing Up: Patterns for Daily Standup Meetings]] :meetings:article:2016:
 ** [[https://www.blossom.co/blog/3-tips-for-quick-effective-stand-up-meetings][3 Tips for Effective Stand-Up Meetings]] :meetings:article:2016:
@@ -1234,6 +1246,7 @@ I'm in the process of getting the detangle working for noweb mode. The current i
 ** [[https://jamchamb.github.io/2018/06/09/animal-crossing-developer-mode.html][Reverse engineering Animal Crossing's developer mode]] :reverse:engineering:2018:
 * Revision Control
 ** [[https://git-scm.com/book/en/v2][Git Book (v2)]] 						   :git:book:
+*** [[https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History][Git Book: 7.6 Rewriting History]]                                :git:book:
 ** [[http://gitready.com/][git ready]] 						    :git:tips:tricks:
 
 ** [[https://github.com/GitAlias/gitalias/blob/master/gitalias.txt][GitAlias/gitalias/gitalias.txt]] 		   :git:alias:aliases:tricks:
@@ -1700,7 +1713,6 @@ There is no one-size-fits-all solution to this problem, but anything you can do 
 *** [[https://github.com/wholepixel/solving-sol][Github: wholepixel/solving-sol]] :repository:art:2018:
 * UNIX and BSD
 ** [[https://fosdem.org/2017/schedule/event/my_bsd_sucks_less/][My BSD Sucks Less Than Yours]] :talk:unix:openbsd:freebsd:
-
 ** [[http://changelog.complete.org/archives/9317-has-linux-lost-its-way-comments-prompt-a-debian-developer-to-revisit-freebsd-after-20-years][“Has Linux lost its way?” comments prompt a Debian developer to revisit FreeBSD after 20 years]] :unix:linux:comparison:2015:
 ** [[https://manpages.bsd.lv/][Practical UNIX Manuals - mdoc: structure, style, and composition]] :book:unix:man:pages:mdoc:
 ** [[https://vez.mrsk.me/freebsd-defaults.txt][FreeBSD - a lesson in poor defaults]] :freebsd:defaults:security:2017:
