@@ -363,6 +363,9 @@ It's mainly useful for debugging purposes and perhaps in a few cases for safety,
 *** [[http://cypherpunks.venona.com/archive/1995/10/msg00317.html][CJR for perl-RSA t-shirt]] :cryptography:history:1995:
 ** [[https://paseto.io/][PASETO - everything you love about JOSE (JWT, JWE, JWS) without any of the many design deficits that plague the JOSE standards.]] :authorization:cryptography:2018:
 *** [[https://paragonie.com/blog/2017/03/jwt-json-web-tokens-is-bad-standard-that-everyone-should-avoid][No Way, JOSE! Javascript Object Signing and Encryption is a Bad Standard That Everyone Should Avoid]] :article:authorization:cryptography:2018:
+** [[https://bitwarden.com/][Bitwarden: Open Source Password Management Solutions]] :cryptography:
+*** [[https://blog.bitwarden.com/bitwarden-completes-third-party-security-audit-c1cc81b6d33][Bitwarden Blog: Bitwarden Completes Third-party Security Audit]] :article:cryptography:2018:
+**** [[https://news.ycombinator.com/item?id=18433144][Hacker News Discussion #18433144]] :discussion:article:cryptography:2018:
 * Cryptocurrencies
 ** [[http://www.righto.com/2014/09/mining-bitcoin-with-pencil-and-paper.html][Mining Bitcoin with pencil and paper: 0.67 hashes per day]] :cryptocurrency:bitcoin:2014:
 ** [[http://www.righto.com/2014/02/ascii-bernanke-wikileaks-photographs.html][Hidden surprises in the Bitcoin blockchain and how they are stored: Nelson Mandela, Wikileaks, photos, and Python software]] :cryptocurrency:blockchain:creative:hacking:2014:
@@ -956,6 +959,7 @@ you can work around this client side with per hour filenames or the other usual 
 **** [[https://ds9a.nl/articles/posts/cpp-3/][Modern C++ for C Programmers: Part 3]] :article:cpp:cpp14:cpp17::2018:
 **** [[https://ds9a.nl/articles/posts/cpp-4/][Modern C++ for C Programmers: Part 4]] :article:cpp:cpp14:cpp17::2018:
 ***** [[https://news.ycombinator.com/item?id=17608811][Hacker News Discussion #17608811]] :discussion:article:cpp:cpp14:cpp17::2018:
+*** [[https://github.com/green7ea/cpp-compilation/blob/master/README.md][The C++ Build Process Explained]] :article:cpp:2018:
 *** Libraries
 **** [[https://github.com/nothings/single_file_libs][Github: nothings/single_file_libs]] :repository:list:cpp:library:
 **** Testing
@@ -1559,6 +1563,10 @@ The system processes about 30% of all diffs across Google that have statement co
 ** [[https://www.magicsandbox.com/][Magic Sandbox: Learn Kubernetes by Doing]] :exercise:systems:2018:
 *** [[https://news.ycombinator.com/item?id=17909594][Hacker News Discussion #17909594]] :discussion:exercise:systems:2018:
 ** [[https://www.youtube.com/watch?v=6BIry0cepz4][30 Jenkins features and plugins you wished you had known about before! by Joep Weijers]] :video:2017:
+** [[http://pushtrain.club/][The Push Train]] :slides:systems:2017:
+** [[https://blog.petegoo.com/2018/11/09/optimizing-ci-cd-pipelines/][Measuring and improving your CI/CD Pipelines]] :article:systems:2018:
+*** [[https://news.ycombinator.com/item?id=18426194][Hacker News Discussion #18426194]] :discussion:article:systems:2018:
+** [[https://gitlab.com/NickBusey/HomelabOS][Gitlab: NickBusy/HomelabOS]] :repository:systems:2018:
 ** Terraform
 *** [[https://opencredo.com/terraform-infrastructure-design-patterns/][Terraform Infrastructure Design Patterns]] :systems:terraform:2015:
 *** [[https://medium.com/levops/self-invented-how-to-terraform-rules-4b1eb00709ac][Self-invented “how to Terraform” rules]] :systems:terraform:2017:
