@@ -249,6 +249,7 @@ But typically m>>n, so the net result is the same.
 *** [[https://leetcode.com/][LeetCode]] :programming:exercise:
 *** [[https://projecteuler.net/][Project Euler]] 				  :programming:exercise:math:
 *** [[https://www.topcoder.com/challenges][TopCoder]] :programming:exercise:
+*** [[https://skillupper.com/][SkillUpper]] :algorithm:exercise:
 * Artificial Life
 ** [[https://codegolf.stackexchange.com/questions/11880/build-a-working-game-of-tetris-in-conways-game-of-life][Build a working game of Tetris in Conway's Game of Life]] :artificial:life:computer:tetris:in:game:of:life:
 
@@ -366,6 +367,9 @@ It's mainly useful for debugging purposes and perhaps in a few cases for safety,
 ** [[https://bitwarden.com/][Bitwarden: Open Source Password Management Solutions]] :cryptography:
 *** [[https://blog.bitwarden.com/bitwarden-completes-third-party-security-audit-c1cc81b6d33][Bitwarden Blog: Bitwarden Completes Third-party Security Audit]] :article:cryptography:2018:
 **** [[https://news.ycombinator.com/item?id=18433144][Hacker News Discussion #18433144]] :discussion:article:cryptography:2018:
+** [[https://ericrafaloff.com/shamirs-secret-sharing-scheme/][Shamir's Secret Sharing Scheme]]             :cryptography:keyexchange:2018:
+** [[http://rot8000.com/Index][ROT8000]] :cryptography:2018:
+*** [[https://github.com/rottytooth/rot8000][Github: rottytooth/rot8000]] :repository:cryptography:2018:
 * Cryptocurrencies
 ** [[http://www.righto.com/2014/09/mining-bitcoin-with-pencil-and-paper.html][Mining Bitcoin with pencil and paper: 0.67 hashes per day]] :cryptocurrency:bitcoin:2014:
 ** [[http://www.righto.com/2014/02/ascii-bernanke-wikileaks-photographs.html][Hidden surprises in the Bitcoin blockchain and how they are stored: Nelson Mandela, Wikileaks, photos, and Python software]] :cryptocurrency:blockchain:creative:hacking:2014:
