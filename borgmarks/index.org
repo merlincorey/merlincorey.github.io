@@ -820,6 +820,7 @@ you can work around this client side with per hour filenames or the other usual 
 ** [[https://tls.ulfheim.net/][The Illustrated TLS Connection]] 				    :article:networking:2017:
 ** [[https://tls13.ulfheim.net/][The New Illustrated TLS Connection]] :article:networking:2018:
 *** [[https://news.ycombinator.com/item?id=18400158][Hacker News Discussion #18400158]] :discussion:article:networking:2018:
+** [[https://dn42.net/Home][dn42 dynamic VPN]] :networking:
 * Object Oriented Programming and Design
 ** [[https://ericlippert.com/2015/04/27/wizards-and-warriors-part-one/][Wizards and Warriors: Part One]] :object:oriented:design:
 *** [[https://ericlippert.com/2015/04/30/wizards-and-warriors-part-two/][Wizards and Warriors: Part Two]] :object:oriented:design:
@@ -1576,6 +1577,7 @@ The system processes about 30% of all diffs across Google that have statement co
 ** [[https://blog.petegoo.com/2018/11/09/optimizing-ci-cd-pipelines/][Measuring and improving your CI/CD Pipelines]] :article:systems:2018:
 *** [[https://news.ycombinator.com/item?id=18426194][Hacker News Discussion #18426194]] :discussion:article:systems:2018:
 ** [[https://gitlab.com/NickBusey/HomelabOS][Gitlab: NickBusy/HomelabOS]] :repository:systems:2018:
+** [[https://itnext.io/benchmark-results-of-kubernetes-network-plugins-cni-over-10gbit-s-network-36475925a560][Benchmark results of Kubernetes network plugins (CNI) over 10Gbit/s network]] :article:systems:networking:containers:2018:
 ** Terraform
 *** [[https://opencredo.com/terraform-infrastructure-design-patterns/][Terraform Infrastructure Design Patterns]] :systems:terraform:2015:
 *** [[https://medium.com/levops/self-invented-how-to-terraform-rules-4b1eb00709ac][Self-invented “how to Terraform” rules]] :systems:terraform:2017:
@@ -1732,6 +1734,7 @@ There is no one-size-fits-all solution to this problem, but anything you can do 
 ** [[https://www.foldnfly.com/][Fold 'N Fly Paper Airplane Designs]] :2018:
 ** [[http://solvingsol.com/][Solving Sol]] :art:2018:
 *** [[https://github.com/wholepixel/solving-sol][Github: wholepixel/solving-sol]] :repository:art:2018:
+** [[https://www.math.uwaterloo.ca/~hwolkowi/matrixcookbook.pdf][The Matrix Cookbook]] :mathematics:book:2012:
 * UNIX and BSD
 ** [[https://fosdem.org/2017/schedule/event/my_bsd_sucks_less/][My BSD Sucks Less Than Yours]] :talk:unix:openbsd:freebsd:
 ** [[http://changelog.complete.org/archives/9317-has-linux-lost-its-way-comments-prompt-a-debian-developer-to-revisit-freebsd-after-20-years][“Has Linux lost its way?” comments prompt a Debian developer to revisit FreeBSD after 20 years]] :unix:linux:comparison:2015:
