@@ -442,6 +442,7 @@ Surviving are his wife of 54 years, Tomoko, of Oberlin, Ohio; and two daughters,
 *** [[https://github.com/skarupke/flat_hash_map][skarupke/flat_hash_map]] :datastructures:hash:table:2018:
 ** [[https://cs.uwaterloo.ca/~plragde/flaneries/FDS/][Functional Data Structures]] :book:datastructures:functional:
 ** [[https://www.cs.uaf.edu/2012/fall/cs301/lecture/10_24_weirdfloat.html][Bits in a Float, and Infinity, NaN, and denormal]] :datastructures:
+** [[https://docs.oracle.com/cd/E19957-01/806-3568/ncg_goldberg.html][What Every Computer Scientist Should Know About Floating-Point Arithmetic]] :datastructures:1991:
 * Databases
 ** [[https://cstack.github.io/db_tutorial/][Let's Build a Simple Database]] :datastructures:databases:c:language:sql:sqlite:
    Writing a sqlite clone from scratch in C
@@ -498,6 +499,8 @@ Surviving are his wife of 54 years, Tomoko, of Oberlin, Ohio; and two daughters,
 #+BEGIN_SRC sh
 emacs --quick --script publish.el --funcall=org-publish-all
 #+END_SRC
+*** [[http://www.jesshamrick.com/2012/09/10/absolute-beginners-guide-to-emacs/][Absolute Beginner's Guide to Emacs]] :emacs:tutorial:2012:
+**** [[https://news.ycombinator.com/item?id=18598544][Hacker News Discussion #18598544]] :discussion:emacs:tutorial:2012:
 *** Packages
 **** [[https://github.com/pashky/restclient.el][pashky/restclient]]                         :emacs:package:rest:2016:2018:
 **** [[https://projectile.readthedocs.io/en/latest/][ReadTheDocs: projectile]]                                  :emacs:package:
@@ -652,6 +655,7 @@ These indeed can make your CSS code work for both the stone age and hottest brow
 ** [[https://githubengineering.com/removing-jquery-from-github-frontend/][Removing jQuery from GitHub.com frontend]] :article:javascript:2018:
 ** [[http://atomicdesign.bradfrost.com/][Atomic Design]] :book:design:2018:
 ** [[https://pinegrow.com/courses/learn-css-grid-with-pinegrow/][Learn CSS Grid with Pinegrow]] :tutorial:video:css:cssgrid:
+** [[https://immutablewebapps.org/][Immutable Web Apps]] :singlepageapp:
 * Functional Programming
 ** [[https://chriskohlhepp.wordpress.com/functional-programming-section/metacircular-adventures-in-functional-abstraction-challenging-clojure-in-common-lisp/][Metacircular Adventures in Functional Abstraction]] :functional:programming:common:lisp:clojure:
 ** [[https://aphyr.com/posts/301-clojure-from-the-ground-up-welcome][Clojure from the ground up]] :functional:programming:clojure:
@@ -917,6 +921,7 @@ you can work around this client side with per hour filenames or the other usual 
 *** [[https://tia.mat.br/posts/2018/02/01/more_on_string_switch_in_c.html][More on string switch in C]] :article:c:2018:
 *** [[https://begriffs.com/posts/2018-11-15-c-portability.html][C Portability Lessons from Weird Machines]] :article:c:2018:
 **** [[https://news.ycombinator.com/item?id=18466006][Hacker News Discussion #18466006]] :discussion:article:c:2018:
+*** [[http://www.c-faq.com/][comp.lang.c Frequently Asked Questions]] :answers:c:1995:2005:
 *** Libraries
 **** [[http://www.musl-libc.org/][musl-lib]] :c:language:
 **** [[https://github.com/mity/acutest][mitv/acutest]] :c:language:test:framework:2017:
@@ -1173,6 +1178,8 @@ I'm in the process of getting the detangle working for noweb mode. The current i
     - =f= strings in =Python 3.6= are highly efficient and readable
     : f"Name: {name}"
 *** [[http://treyhunner.com/2018/10/asterisks-in-python-what-they-are-and-how-to-use-them/][Asterisk in Python: what they are and how to use them]] :article:python:2018:
+*** [[https://chriswarrick.com/blog/2018/07/17/pipenv-promises-a-lot-delivers-very-little/][Pipenv: promises a lot, delivers very little]] :article:python:packaging:2018:
+*** [[https://www.python.org/dev/peps/pep-0518/][PEP 518 -- Specifying Minimum Build System Requirements for Python Projects]] :standard:python:packaging:2018:
 *** Libraries and Tools
 **** [[http://npyscreen.readthedocs.io/index.html][npyscreen Documentation]] :python:library:terminal:ui:2014:
 **** [[http://python-prompt-toolkit.readthedocs.io/en/master/][prompt-toolkit Documentation]] :python:library:terminal:ui:2014:2018:
@@ -1183,6 +1190,7 @@ I'm in the process of getting the detangle working for noweb mode. The current i
 **** [[https://github.com/socialcopsdev/camelot/][Github: socialcopsdev/camelot]] :repository:python:pdf:etl:2018:
 **** [[https://www.anaconda.com/blog/developer-blog/python-data-visualization-2018-why-so-many-libraries/][Python Data Visualization 2018: Why So Many Libraries?]] :article:python:visualization:2018:
 **** [[https://plotnine.readthedocs.io/en/latest/][Plotnine Documentation: GGPlot2 in Python]] :documentation:python:visualization:
+**** [[https://github.com/sdispater/poetry][Github: sdispater/poetry]] :repository:python:packaging:2018:
 ** SQL
 *** [[https://selectstarsql.com/][Select Star SQL]] :book:exercise:databases:sql:2018:
 **** [[https://news.ycombinator.com/item?id=17905666][Hacker News Discussion #17905666]] :discussion:book:exercise:databases:sql:2018:
@@ -1581,6 +1589,7 @@ The system processes about 30% of all diffs across Google that have statement co
 ** Terraform
 *** [[https://opencredo.com/terraform-infrastructure-design-patterns/][Terraform Infrastructure Design Patterns]] :systems:terraform:2015:
 *** [[https://medium.com/levops/self-invented-how-to-terraform-rules-4b1eb00709ac][Self-invented “how to Terraform” rules]] :systems:terraform:2017:
+*** [[https://github.com/tweag/terraform-provider-secret][Github: tweag/terraform-provider-secret]] :repository:systems:terraform:2018:
 * Uncategorized Otherwise
 ** [[http://www.silota.com/docs/recipes/][Advanced SQL Recipes to jumpstart your Analysis]] :sql:tricks:data:analysis:
 ** [[http://www.linusakesson.net/programming/tty/][The TTY Demystified]] :unix:history:tty:
@@ -1735,6 +1744,8 @@ There is no one-size-fits-all solution to this problem, but anything you can do 
 ** [[http://solvingsol.com/][Solving Sol]] :art:2018:
 *** [[https://github.com/wholepixel/solving-sol][Github: wholepixel/solving-sol]] :repository:art:2018:
 ** [[https://www.math.uwaterloo.ca/~hwolkowi/matrixcookbook.pdf][The Matrix Cookbook]] :mathematics:book:2012:
+** [[https://henrikwarne.com/2018/12/03/developer-on-call/][Developer On Call]] :article:2018:
+*** [[https://news.ycombinator.com/item?id=18586743][Hacker News Discussion #18586743]] :discussion:article:2018:
 * UNIX and BSD
 ** [[https://fosdem.org/2017/schedule/event/my_bsd_sucks_less/][My BSD Sucks Less Than Yours]] :talk:unix:openbsd:freebsd:
 ** [[http://changelog.complete.org/archives/9317-has-linux-lost-its-way-comments-prompt-a-debian-developer-to-revisit-freebsd-after-20-years][“Has Linux lost its way?” comments prompt a Debian developer to revisit FreeBSD after 20 years]] :unix:linux:comparison:2015:
