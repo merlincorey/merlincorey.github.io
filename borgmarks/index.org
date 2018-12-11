@@ -16,7 +16,7 @@ Curated, categorized, and tagged by hand.
 ** Master list vs Category pages
    Currently there is only a single page master list, but it is getting very large to manage and read.
 *** Roadmap
-   In the future we will want to have to category and potentially even subcategory pages.
+   In the future we will want to have tag, category, and potentially even subcategory pages.
 
    This will mean either compiling those pages from the master list, or compiling the master list from those pages.
    Compiling the master list from the categories and subcategories seems most appropriate.
@@ -42,16 +42,8 @@ Curated, categorized, and tagged by hand.
 #+END_SRC
 *** [[http://orgmode.org/orgcard.pdf][Org Card]] 				       :emacs:orgmode:reference:card
 * Algorithms
-** Books
-*** [[https://github.com/mdipierro/nlib][Annotated Algorithms in Python]] :book:algorithms:python:
-** Programming Exercises
-*** [[https://projecteuler.net/][Project Euler]] 				  :programming:exercise:math:
-*** [[http://codewars.com/][Codewars]] 					       :programming:exercise:
-*** [[http://exercism.io/][Exercism]] 				    :programming:exercise:opensource:
 ** [[https://bost.ocks.org/mike/algorithms/][Visualizing Algorithms]] 		  :bostocks:visualization:algorithms:
-
    Great overview of various algorithms with visualizations from visualization master Mike Bostocks.
-
 ** [[https://yurichev.com/blog/rubik/][Solving pocket Rubik's cube (2 * 2 * 2) using Z3 and SAT solver]] :algorithms:simplified:rubiks:cube:solver:
 ** [[https://users.cs.duke.edu/~ola/bubble/bubble.html][Bubble Sort: An Archaeological Algorithmic Analysis]] :algorithms:bubble:sort:analysis:
 ** [[http://www.keithschwarz.com/interesting/][The Archive of Interesting Code]] :algorithms:datastructures:archive:examples:
@@ -110,7 +102,154 @@ That should definitely improve performance of the uncommon operation (the copy),
 But maybe you meant the array of arrays to be recursive? That seems like it would alter the big-O (from n+m to log(n)+m).
 But typically m>>n, so the net result is the same.
 #+END_QUOTE
+*** [[https://news.ycombinator.com/item?id=17573431][Hacker News Discussion #17573431]] :discussion:algorithms:datastructures:javascript:2018:
 ** [[https://gist.github.com/nadavrot/5b35d44e8ba3dd718e595e40184d03f0][High-Performance Matrix Multiplication]] :algorithms:matrix:multiplication:2018:
+** [[https://hackernoon.com/timsort-the-fastest-sorting-algorithm-youve-never-heard-of-36b28417f399][Timsort — the fastest sorting algorithm you’ve never heard of]] :algorithms:sorting:2018:
+   The core sorting algorithm in =Python=.
+*** [[https://news.ycombinator.com/item?id=17436591][Hackernews Discussion #17436591]] :discussion:algorithms:sorting:2018:
+** [[https://play.elevatorsaga.com/][Elevator Saga: The elevator programming game]] :algorithms:javascript:2014:2015:
+** [[https://commandcenter.blogspot.com/2012/04/byte-order-fallacy.html][Byte Order Fallacy]] :algorithms:encoding:decoding:2012:2013:
+#+CAPTION: Current solution by Merlin
+#+BEGIN_SRC javascript
+{
+    init: function(elevators, floors) {
+        console.log('-----------------------------------');
+        console.log('Initialize ' + elevators.length + ' elevators and ' + floors.length + ' floors');
+        console.log('-----------------------------------');
+        let up = "up";
+        let down = "down";
+        let stopped = "stopped"
+        let directions = [up, down, stopped];
+
+        let elevator_index = function(elevator) {
+            return elevators.indexOf(elevator);
+        }
+
+        let elog = function(elevator, message) {
+            console.log('Elevator #' + elevator_index(elevator) + ": " + message)
+        }
+
+        let flog = function(floor, message) {
+            console.log('Floor #' + floor.floorNum() + ": " + message);
+        }
+
+        let random_binary = function() {
+            return Math.random() < 0.5;
+        }
+
+        let elevators_filter = function(predicate) {
+            let _elevators = [];
+            var i;
+            for (i = 0; i < elevators.length; ++i) {
+                if (predicate(elevators[i])) {
+                    _elevators.push(elevators[i])
+                }
+            }
+            return _elevators;
+        }
+
+        let elevators_going_to = function(floor) {
+            return elevators_filter(function(elevator) {
+                return -1 != elevator.destinationQueue.indexOf(floor);
+            });
+        }
+
+        let elevators_not_going_to = function(floor) {
+            return elevators_filter(function(elevator) {
+                return -1 == elevator.destinationQueue.indexOf(floor);
+            });
+        }
+
+        let state_idle = function(elevator) {
+            elog(elevator, 'Elevator is idle');
+            if (0 == elevator.currentFloor()) {
+                //elevator.goingUpIndicator(true);
+            } else {
+                elevator.goToFloor(0);
+            }
+        }
+
+        let state_floor_button_pressed = function(elevator, floor) {
+            elog(elevator, 'Floor button pressed for ' + floor);
+            if (floor < elevator.currentFloor()) {
+                //elevator.goingUpIndicator(false);
+                //elevator.goingDownIndicator(true);
+            } else {
+                //elevator.goingUpIndicator(false);
+                //elevator.goingDownIndicator(true);
+            }
+            elevator.goToFloor(floor);
+        };
+
+        let state_passing_floor = function(elevator, floor, direction) {
+            elog(elevator, 'Passing floor ' + floor + ' in direction ' + direction);
+        };
+
+        let state_stopped_at_floor = function(elevator, floor) {
+            elog(elevator, 'Stopped at floor ' + floor);
+        };
+
+        let state_up_button_pressed = function(floor) {
+            flog(floor, 'Up button pressed');
+            going = elevators_going_to(floor);
+            not_going = elevators_not_going_to(floor);
+            if (0 == going.length) {
+                if (0 == not_going.length) {
+                    flog(floor, 'No elevators bound for this floor and no elevators available!');
+                } else {
+                    flog(floor, 'No elevators bound for this floor, dispatching first available.');
+                    elog(not_going[0], 'Queuing up destination for ' + floor.floorNum());
+                    not_going[0].goToFloor(floor.floorNum());
+                }
+            } else {
+                flog(floor, going.length + ' elevators bound for this floor!');
+            }
+        }
+
+        let state_down_button_pressed = function(floor) {
+            flog(floor, 'Down button pressed')
+        }
+
+        elevators.forEach(function(elevator) {
+            elog(elevator, 'Adding state functions');
+            elevator.on('idle', function() { state_idle(elevator); });
+            elevator.on('floor_button_pressed', function(floor) { state_floor_button_pressed(elevator, floor); });
+            elevator.on('passing_floor', function(floor, direction) { state_passing_floor(elevator, floor, direction); });
+            elevator.on('stopped_at_floor', function(floor) { state_stopped_at_floor(elevator, floor); });
+        });
+
+        floors.forEach(function(floor) {
+            flog(floor, 'Adding state functions');
+            floor.on('up_button_pressed', function() { state_up_button_pressed(floor); });
+            floor.on('down_button_pressed', function() { state_down_button_pressed(floor); });
+        });
+    },
+    update: function(dt, elevators, floors) {
+        // We normally don't need to do anything here
+    }
+}
+#+END_SRC
+** [[https://www.snellman.net/blog/archive/2018-07-23-optimizing-breadth-first-search/][Optimizing a breadth-first search]] :algorithms:puzzles:2018:
+** [[http://algo.pw/][Algorithm Power]] :algorithms:
+   Listing of various algorithms with per-algorithm descriptions and implementations in various languages.
+** [[http://www.pcg-random.org/posts/bounded-rands.html][Efficiently Generating a Number in a Range]] :article:algorithms:rng:2018:
+*** [[https://news.ycombinator.com/item?id=17599660][Hacker News #17599660]] :discussion:article:algorithms:rng:2018:
+** [[http://wordsandbuttons.online/tries_as_the_evolution_of_nothing.html][Tries as the evolution of nothing]] :article:algorithms:datastructures:2018:
+** [[https://www.evanmiller.org/how-not-to-sort-by-average-rating.html][How not to sort by average rating]] :article:algorithms:sorting:2009:2016:
+** Books
+*** [[https://github.com/mdipierro/nlib][Annotated Algorithms in Python]] :book:algorithms:python:
+** Programming Exercises
+*** [[https://adventofcode.com/][Advent of Code]] :programming:exercise:
+*** [[https://codeforces.com/][CodeForces]] :programming:exercise:competition:
+*** [[https://coderbyte.com/][CoderByte]]                    :programming:exercise:javascript:algorithms:
+*** [[http://codewars.com/][Codewars]] 					       :programming:exercise:
+*** [[http://exercism.io/][Exercism]] 				    :programming:exercise:opensource:
+*** [[https://www.hackerrank.com/][HackerRank]] :programming:excercise:
+*** [[https://halite.io/][Halite]] :programming:exercise:competition:machinelearning:
+*** [[https://leetcode.com/][LeetCode]] :programming:exercise:
+*** [[https://projecteuler.net/][Project Euler]] 				  :programming:exercise:math:
+*** [[https://www.topcoder.com/challenges][TopCoder]] :programming:exercise:
+*** [[https://skillupper.com/][SkillUpper]] :algorithm:exercise:
 * Artificial Life
 ** [[https://codegolf.stackexchange.com/questions/11880/build-a-working-game-of-tetris-in-conways-game-of-life][Build a working game of Tetris in Conway's Game of Life]] :artificial:life:computer:tetris:in:game:of:life:
 
@@ -153,6 +292,10 @@ o$22b2o3bo$21bo$21b2obo$20bo$19b5o$19bo4bo$18b3ob3o$18bob5o$18bo$20bo$
 #+END_EXAMPLE
 
 **** [[https://news.ycombinator.com/item?id=16546152][Hackernews Discussion #16546152]] :2018:
+* Blockchain
+** [[https://thomaslarock.com/2018/11/no-you-dont-need-a-blockchain/][No, You Don’t Need a Blockchain]] :article:blockchain:2018:
+** [[https://www.dapp.com/article/proof-of-stake-or-proof-of-work-whats-the-difference][Proof of Stake or Proof of Work, What's the Difference?]] :article:blockchain:2018:
+*** [[https://news.ycombinator.com/item?id=18369593][Hacker News Discussion #18369593]] :discussion:article:blockchain:2018:
 * Build Systems
 ** [[http://lcgapp.cern.ch/project/architecture/recursive_make.pdf][Recursive Make Considered Harmful]] :build:systems:paper:make:2002:
 ** [[http://make.mad-scientist.net/papers/rules-of-makefiles/][GNU Make: Rules of Makefiles]] :build:systems:make:2002:
@@ -202,17 +345,37 @@ It's target-dependent, but assuming x86, it means the GCC runtime libraries caus
 On other platforms, it might use special CPU instructions that cause a hardware exception.
 It's mainly useful for debugging purposes and perhaps in a few cases for safety, where the risk of continuing after overflow is greater than the risk of the program suddenly terminating.
 #+END_QUOTE
+* Concurrency
+** [[https://locklessinc.com/articles/locks/][Spinlocks and Read-Write Locks]] :concurrency:c:locks:
+** [[http://effbot.org/zone/thread-synchronization.htm][Thread Synchronization Mechanisms in Python]] :concurrency:python:locks:
+** [[https://9vx.org/presentations/Spinlocks.pdf][Spinlocks]] :slides:concurrency:locks:2011:
+** [[https://eli.thegreenplace.net/2018/basics-of-futexes/][Basics of Futexes]] :blog:concurrency:locks:2018:
+*** [[https://news.ycombinator.com/item?id=17524169][Hacker News Discussion #17524169]] :discussion:concurrency:locks:2018:
 * Cryptography
 ** [[https://begriffs.com/posts/2016-11-05-advanced-intro-gnupg.html][Advanced Introduction to GnuPG]] :cryptography:tutorial:gnupg:
 ** [[https://github.com/gchq/CyberChef][GCHQ CyberChef]] :cryptography:tools:
    Forked on my own github [[https://github.com/merlincorey/CyberChef][merlincorey/CyberChef]].
 ** [[https://cryptopals.com/][Cryptopals]] :cryptography:ctf:
-* Crypto currencies
-** [[http://www.righto.com/2014/09/mining-bitcoin-with-pencil-and-paper.html][Mining Bitcoin with pencil and paper: 0.67 hashes per day]] :cryptography:currency:bitcoin:2014:
-** [[http://www.righto.com/2014/02/ascii-bernanke-wikileaks-photographs.html][Hidden surprises in the Bitcoin blockchain and how they are stored: Nelson Mandela, Wikileaks, photos, and Python software]] :cryptography:currency:blockchain:creative:hacking:2014:
-** [[https://storeofvalue.github.io/posts/cryptocurrency-hacks-so-far-august-24th/][List Of High Profile Cryptocurrency Hacks So Far]] :cryptography:currency:crime:and:theft:2017:
-** [[http://www.jsfour.com/can-you-really-hack-ethereum-smart-contracts/][Can you really hack Ethereum smart contracts?]] :cryptography:currency:ethereum:hate:2017:
-** [[http://www.michaelburge.us/2017/08/31/roll-your-own-bitcoin-exchange.html][Roll your Own Bitcoin Exchange in Haskell]] :cryptography:currency:exchange:haskell:
+** [[https://softwareengineering.stackexchange.com/questions/49550/which-hashing-algorithm-is-best-for-uniqueness-and-speed][StackOverflow: Which hashing algorithm is best for uniqueness and speed?]] :stackoverflow:answers:cryptography:hashing:2013:
+** [[http://www.darkside.com.au/snow/][SNOW - Steganographic Nature Of Whitespace with ICE encryption]] :cryptography:steganography:1998:2013:
+*** [[https://www.chaoswebs.net/snow10/][Snow10]] :cryptography:steganography:webapp:
+*** [[https://secretsigner.com/][Secret Signer]] :cryptography:steganography:webapp:
+** [[https://en.wikipedia.org/wiki/Export_of_cryptography_from_the_United_States][Wikipedia: Export of cryptography from the United States]] :wiki:cryptography:history:
+*** [[http://cypherpunks.venona.com/archive/1995/10/msg00317.html][CJR for perl-RSA t-shirt]] :cryptography:history:1995:
+** [[https://paseto.io/][PASETO - everything you love about JOSE (JWT, JWE, JWS) without any of the many design deficits that plague the JOSE standards.]] :authorization:cryptography:2018:
+*** [[https://paragonie.com/blog/2017/03/jwt-json-web-tokens-is-bad-standard-that-everyone-should-avoid][No Way, JOSE! Javascript Object Signing and Encryption is a Bad Standard That Everyone Should Avoid]] :article:authorization:cryptography:2018:
+** [[https://bitwarden.com/][Bitwarden: Open Source Password Management Solutions]] :cryptography:
+*** [[https://blog.bitwarden.com/bitwarden-completes-third-party-security-audit-c1cc81b6d33][Bitwarden Blog: Bitwarden Completes Third-party Security Audit]] :article:cryptography:2018:
+**** [[https://news.ycombinator.com/item?id=18433144][Hacker News Discussion #18433144]] :discussion:article:cryptography:2018:
+** [[https://ericrafaloff.com/shamirs-secret-sharing-scheme/][Shamir's Secret Sharing Scheme]]             :cryptography:keyexchange:2018:
+** [[http://rot8000.com/Index][ROT8000]] :cryptography:2018:
+*** [[https://github.com/rottytooth/rot8000][Github: rottytooth/rot8000]] :repository:cryptography:2018:
+* Cryptocurrencies
+** [[http://www.righto.com/2014/09/mining-bitcoin-with-pencil-and-paper.html][Mining Bitcoin with pencil and paper: 0.67 hashes per day]] :cryptocurrency:bitcoin:2014:
+** [[http://www.righto.com/2014/02/ascii-bernanke-wikileaks-photographs.html][Hidden surprises in the Bitcoin blockchain and how they are stored: Nelson Mandela, Wikileaks, photos, and Python software]] :cryptocurrency:blockchain:creative:hacking:2014:
+** [[https://storeofvalue.github.io/posts/cryptocurrency-hacks-so-far-august-24th/][List Of High Profile Cryptocurrency Hacks So Far]] :cryptocurrency:crime:and:theft:2017:
+** [[http://www.jsfour.com/can-you-really-hack-ethereum-smart-contracts/][Can you really hack Ethereum smart contracts?]] :cryptocurrency:ethereum:hate:2017:
+** [[http://www.michaelburge.us/2017/08/31/roll-your-own-bitcoin-exchange.html][Roll your Own Bitcoin Exchange in Haskell]] :cryptocurrency:exchange:haskell:
 ** [[https://hackernoon.com/why-everyone-missed-the-most-important-invention-in-the-last-500-years-c90b0151c169][Why Everyone Missed the Most Important Invention in the Last 500 Years]] :cryptography:accounting:triple:entry:bookkeeping:
 *** [[https://www.cmu.edu/piper/news/archives/2017/january/yuji-ijiri-obituary.html][Yuji Ijiri's obituary at CMU]]                             :obituary::2017:
 #+CAPTION:
@@ -239,26 +402,33 @@ Surviving are his wife of 54 years, Tomoko, of Oberlin, Ohio; and two daughters,
 #+END_QUOTE
 
 ** [[http://iang.org/papers/triple_entry.html][Triple Entry Accounting - Ian Grigg Systemics, Inc.]]           :paper:2005:
-** [[https://blog.keep.network/miners-arent-your-friends-cde9b6e0e9ac?gi=21d51593759c][Miners Aren’t Your Friends: Miners and Consensus: Part 1 of 2]] :cryptography:currency:2018:
-** [[https://www.michaelburge.us/2017/11/28/write-your-next-ethereum-contract-in-pyramid-scheme.html][Write your next Ethereum Contract in Pyramid Scheme]] :cryptography:currency:2017:
-** [[https://www.michaelburge.us/2018/05/15/ethereum-chess-engine.html][DSLs for Ethereum Contracts]] :cryptography:currency:2018:
-** [[https://ethfiddle.com/][EtherFiddle]] :cryptography:currency:ethereum:solidity:ide:
-** [[https://ico.red-lang.org/RED-whitepaper.pdf][RED: a full-stack, open-source toolchain for simple smart contracts and decentralized apps development]] :paper:cryptography:currency:smart:contracts:language:2018:
-** [[https://medium.com/axoni/axlang-formally-verifiable-smart-contracts-for-the-ethereum-ecosystem-6201203be4e8][AxLang: Formally Verifiable Smart Contracts for the Ethereum Ecosystem]] :cryptography:currency:smart:contracts:language:2018:
-** [[https://consensys.github.io/smart-contract-best-practices/security_tools/][Ethereum Smart Contract Best Practices: Static Analysis]] :cryptography:currency:ethereum:smart:contracts:2018:
-** [[https://medium.com/loom-network/how-to-secure-your-smart-contracts-6-solidity-vulnerabilities-and-how-to-avoid-them-part-1-c33048d4d17d][How to Secure Your Smart Contracts: 6 Solidity Vulnerabilities and how to avoid them (Part 1)]] :cryptography:currency:ethereum:smart:contracts:2018:
-*** [[https://medium.com/loom-network/how-to-secure-your-smart-contracts-6-solidity-vulnerabilities-and-how-to-avoid-them-part-2-730db0aa4834][How to Secure Your Smart Contracts: 6 Solidity Vulnerabilities and how to avoid them (Part 2)]] :cryptography:currency:ethereum:smart:contracts:2018:
-** [[https://medium.com/@codetractio/inside-an-ethereum-transaction-fa94ffca912f][Inside an Ethereum transaction]] :cryptography:currency:ethereum:2017:
-** [[https://medium.com/@merunasgrincalaitis/how-to-audit-a-smart-contract-most-dangerous-attacks-in-solidity-ae402a7e7868][The ultimate guide to audit a Smart Contract + Most dangerous attacks]] :cryptography:currency:smart:contracts:2017:
-** [[https://blog.colony.io/writing-upgradeable-contracts-in-solidity-6743f0eecc88][Writing upgradable contracts in Solidity]] :cryptography:currency:smart:contracts:2018:
-* Datastructures, Databases, and Filesystems
+** [[https://blog.keep.network/miners-arent-your-friends-cde9b6e0e9ac?gi=21d51593759c][Miners Aren’t Your Friends: Miners and Consensus: Part 1 of 2]] :cryptocurrency:2018:
+** [[https://www.michaelburge.us/2017/11/28/write-your-next-ethereum-contract-in-pyramid-scheme.html][Write your next Ethereum Contract in Pyramid Scheme]] :cryptocurrency:2017:
+** [[https://www.michaelburge.us/2018/05/15/ethereum-chess-engine.html][DSLs for Ethereum Contracts]] :cryptocurrency:2018:
+** [[https://ethfiddle.com/][EtherFiddle]] :cryptocurrency:ethereum:solidity:ide:
+** [[https://ico.red-lang.org/RED-whitepaper.pdf][RED: a full-stack, open-source toolchain for simple smart contracts and decentralized apps development]] :paper:cryptocurrency:smartcontracts:language:2018:
+** [[https://medium.com/axoni/axlang-formally-verifiable-smart-contracts-for-the-ethereum-ecosystem-6201203be4e8][AxLang: Formally Verifiable Smart Contracts for the Ethereum Ecosystem]] :cryptocurrency:smartcontracts:language:2018:
+** [[https://consensys.github.io/smart-contract-best-practices/security_tools/][Ethereum Smart Contract Best Practices: Static Analysis]] :cryptocurrency:ethereum:smartcontracts:2018:
+** [[https://medium.com/loom-network/how-to-secure-your-smart-contracts-6-solidity-vulnerabilities-and-how-to-avoid-them-part-1-c33048d4d17d][How to Secure Your Smart Contracts: 6 Solidity Vulnerabilities and how to avoid them (Part 1)]] :cryptocurrency:ethereum:smartcontracts:2018:
+*** [[https://medium.com/loom-network/how-to-secure-your-smart-contracts-6-solidity-vulnerabilities-and-how-to-avoid-them-part-2-730db0aa4834][How to Secure Your Smart Contracts: 6 Solidity Vulnerabilities and how to avoid them (Part 2)]] :cryptocurrency:ethereum:smartcontracts:2018:
+** [[https://medium.com/@codetractio/inside-an-ethereum-transaction-fa94ffca912f][Inside an Ethereum transaction]] :cryptocurrency:ethereum:2017:
+** [[https://medium.com/@merunasgrincalaitis/how-to-audit-a-smart-contract-most-dangerous-attacks-in-solidity-ae402a7e7868][The ultimate guide to audit a Smart Contract + Most dangerous attacks]] :cryptocurrency:smartcontracts:2017:
+** [[https://blog.colony.io/writing-upgradeable-contracts-in-solidity-6743f0eecc88][Writing upgradable contracts in Solidity]] :cryptocurrency:smartcontracts:2018:
+** [[https://github.com/ethereum/wiki/wiki/Safety][ethereum wiki: Safety]] :cryptocurrency:smartcontracts:2018:
+** [[https://dasp.co/][Decentralized Application Security Project]] :cryptocurrency:smartcontracts:2018:
+** [[https://consensys.github.io/smart-contract-best-practices/][Ethereum Smart Contract Security Best Practices]] :cryptocurrency:smartcontracts:2018:
+** [[https://github.com/cryptofinlabs/audit-checklist][cryptofinlabs/audit-checklist]]  :github:repository:cryptocurrency:smartcontracts:2018:
+** [[https://dappradar.com/][dApp Radar]] :statistics:aggregator:cryptocurrency:2018:
+** [[https://litepaper.com/resources/hyperledger][What is Hyperledger? An overview of Linux’s open source approach to blockchain building]] :whitepaper:cryptocurrency::2018:
+*** [[https://news.ycombinator.com/item?id=17696158][Hacker News Discussion #17696158]] :discussion:whitepaper:cryptocurrency:2018:
+** [[https://blog.trailofbits.com/2018/09/05/contract-upgrade-anti-patterns/][Contract upgrade anti-patterns]] :article:cryptocurrency:smartcontracts:2018:
+*** [[https://news.ycombinator.com/item?id=17916516][Hacker New Discussion #17916516]] :discussion:article:cryptocurrency:smartcontracts:2018:
+** [[https://medium.com/@preethikasireddy/how-does-ethereum-work-anyway-22d1df506369][How does Ethereum work, anyway?]] :article:cryptocurrency:2017:
+** [[https://ethernaut.zeppelin.solutions/][The Ethernaut]] :ctf:cryptocurrency:2018:
+* Datastructures and Filesystems
 ** [[http://www.eelis.net/C++/analogliterals.xhtml][Multi-Dimensional Analog Literals]] :datastructures:analog:literals:2006:
 ** [[https://www.interviewcake.com/article/python/data-structures-coding-interview][Datastructures for Coding Interviews]]    :datastructures:python:interviews:
 ** [[http://www.catb.org/esr/structure-packing/][The Lost Art of C Structure Packing]] :datastructures:c:packing:esr:2014:
-** [[https://cstack.github.io/db_tutorial/][Let's Build a Simple Database]] :datastructures:databases:c:language:sql:sqlite:
-
-   Writing a sqlite clone from scratch in C
-
 ** [[http://use-the-index-luke.com/no-offset][We need tool support for keyset pagination]] :datastructures:databases:sql:pitfall:pagination:offset:
 ** [[https://www.percona.com/blog/2017/11/15/zfs-from-a-mysql-perspective/][ZFS from a MySQL perspective]] :datastructures:databases:filesystems:mysql:zfs:2017:
 ** [[https://blog.demofox.org/2017/11/21/floating-point-precision/][Demystifying Floating Point Precision]] :datastructures:floating:point:numbers:2017:
@@ -266,13 +436,39 @@ Surviving are his wife of 54 years, Tomoko, of Oberlin, Ohio; and two daughters,
 ** [[http://mishadoff.com/blog/clojure-design-patterns/][Clojure Design Patterns]] :datastructures:design:patterns:2017:
 ** [[https://www.youtube.com/watch?v=T0yzrZL1py0][6.851 MIT Open Courseware - Advanced Datastructures]] :mit:open:courseware:advanced:datastructures:2012:
 ** [[https://rcoh.me/posts/cache-oblivious-datastructures/][Cache Oblivious Datastructures]] :datastructures:cache:obliious:2017:
-** [[https://modern-sql.com/use-case/pivot][SQL Pivot — Rows to Columns]] :databases:sql:pivot:
 ** [[http://seriot.ch/parsing_json.php][Parsing JSON is a Minefield]] :datastructure:parsing:json:2016:2018:
 ** [[http://canonical.org/~kragen/memory-models/][The memory models that underlie programming languages]] :datastructures:programming:languages:memory:models:2016:
 ** [[https://probablydance.com/2018/05/28/a-new-fast-hash-table-in-response-to-googles-new-fast-hash-table/][A new fast hash table in response to Google’s new fast hash table]] :datastructures:hash:table:2018:
 *** [[https://github.com/skarupke/flat_hash_map][skarupke/flat_hash_map]] :datastructures:hash:table:2018:
-** [[http://db.cs.berkeley.edu/papers/fntdb07-architecture.pdf][Architecture of a Database System]] :paper:databases:architecture:2007:
 ** [[https://cs.uwaterloo.ca/~plragde/flaneries/FDS/][Functional Data Structures]] :book:datastructures:functional:
+** [[https://www.cs.uaf.edu/2012/fall/cs301/lecture/10_24_weirdfloat.html][Bits in a Float, and Infinity, NaN, and denormal]] :datastructures:
+** [[https://docs.oracle.com/cd/E19957-01/806-3568/ncg_goldberg.html][What Every Computer Scientist Should Know About Floating-Point Arithmetic]] :datastructures:1991:
+** [[https://blog.waffles.space/2018/12/07/deep-dive-into-hashbrown/][The Swiss Army Knife of Hashmaps]]             :article:datastructures:2018:
+** [[https://github.com/facebook/folly/blob/master/folly/container/F14.md][Github: facebook/folly: F14 Hash Table]] :datastructures:2018:
+*** [[https://groups.google.com/forum/#!msg/hashtable-benchmarks/-nT-3fESXq8/1ckpGBiAAgAJ][Google Groups: folly::F14ValueSet vs absl::flat_hash_set]] :discussion:datastructures:2018:
+#+CAPTION: Nathan Bronson discussed tradeoffs between SwissTable and F14
+#+BEGIN_QUOTE
+From a performance perspective the main design difference between SwissTable and F14 is whether the metadata and data are separated (as in SwissTable) or colocated (as in F14).
+I would expect colocation to work better when the entries are small, and separation to work better the elements are large.
+F14 also pushes users toward a third storage strategy, F14VectorSet, for medium and large values.
+This stores elements in a contiguous array and puts a 4-byte index into the main hash table, which makes lookup slower but iteration (and hence destruction) faster.
+This indirect strategy also saves memory, because the vector effectively has a perfect load factor.
+#+END_QUOTE
+* Databases
+** [[https://cstack.github.io/db_tutorial/][Let's Build a Simple Database]] :datastructures:databases:c:language:sql:sqlite:
+   Writing a sqlite clone from scratch in C
+** [[https://modern-sql.com/use-case/pivot][SQL Pivot — Rows to Columns]] :databases:sql:pivot:
+** [[http://db.cs.berkeley.edu/papers/fntdb07-architecture.pdf][Architecture of a Database System]] :paper:databases:architecture:2007:
+** [[https://clemenswinter.com/2018/07/09/how-to-analyze-billions-of-records-per-second-on-a-single-desktop-pc/][How to Analyze Billions of Records per Second on a Single Desktop PC]] :blog:inmemory:databases:2018:
+** [[https://adamdrake.com/command-line-tools-can-be-235x-faster-than-your-hadoop-cluster.html][Command-line Tools can be 235x Faster than your Hadoop Cluster]] :blog:analytics:performance:2014:
+** [[https://adamdrake.com/big-data-small-machine.html][Big Data, Small Machine]] :blog:analytics:performance:2018:
+** [[http://traildb.io/][TrailDB]] :databases:events:2014:2018:
+** [[http://www.sarahmei.com/blog/2013/11/11/why-you-should-never-use-mongodb/][Why you should never use MongoDB]] :databases:nosql:2013:
+** [[http://blog.memsql.com/nosql/][Thank You for Your Help NoSQL, but We Got It from Here]] :databases:sql:nosql:2018:
+** [[https://blog.timescale.com/timescaledb-vs-influxdb-for-time-series-data-timescale-influx-sql-nosql-36489299877][TimescaleDB vs. InfluxDB: purpose built differently for time-series data]] :article:databases:timeseries:2018:
+*** [[https://news.ycombinator.com/item?id=17766566][Hacker News Discussion #17766566]] :discussion:article:databases:timeseries:2018:
+** [[https://github.com/BurntSushi/xsv][Github: BurntSushi/xsv]] :repository:databases:csv:rust:2014:2018:
+   CSV toolkit written in Rust.
 ** Alembic
 *** [[http://www.chesnok.com/daily/2013/07/02/a-practical-guide-to-using-alembic/][A Practical Guide to using Alembic]] :database:migrations:sqlalchemy:alembic:
 *** [[https://www.compose.com/articles/schema-migrations-with-alembic-python-and-postgresql/][Schema Migrations with Alembic, Python, and PostgreSQL]] :databse:migrations:sqlalchemy:alembic:postgres:
@@ -299,6 +495,7 @@ Surviving are his wife of 54 years, Tomoko, of Oberlin, Ohio; and two daughters,
 *** [[https://github.com/rnkn/fountain-mode][fountain-mode - Emacs major mode for screenwriting in Fountain plaintext markup]] :emacs:package:screenwriting:
 *** [[http://howardism.org/Technical/Emacs/literate-devops.html][Literate Devops]] :emacs:orgmode:devops:
 **** [[https://www.youtube.com/watch?v=dljNabciEGg][YouTube: Literate Devops]]           :emacs:orgmode:devops:youtube:video:
+**** [[https://news.ycombinator.com/item?id=16559004][Hacker News Discussion #16559004]] :discussion:2018:
 *** [[https://ambrevar.bitbucket.io/emacs-eshell/][eshell as a main shell]] :emacs:eshell:2017:
 *** [[https://www.youtube.com/watch?v=FtieBc3KptU][Emacs for Writers]] :emacs:video:writers:2015:
 **** [[https://news.ycombinator.com/item?id=17048907][Hackernews Discussion #17048907]] :2018:
@@ -307,6 +504,14 @@ Surviving are his wife of 54 years, Tomoko, of Oberlin, Ohio; and two daughters,
 *** [[http://nullprogram.com/blog/2018/05/31/][Emacs 26 Brings Generators and Threads]]               :emacs:threads:2018:
 *** [[http://www.sastibe.de/2018/05/2018-05-11-emacs-org-mode-rest-apis-stocks/][Use Emacs Org Mode and REST APIs for an up-to-date Stock Portfolio]] :emacs:orgmode:2018:
 *** [[http://tuhdo.github.io/c-ide.html][C/C++ Development Environment for Emacs]] :emacs:c:cplusplus:2015:
+*** [[https://karl-voit.at/2017/09/23/orgmode-as-markup-only/][Org-Mode Is One of the Most Reasonable Markup Languages to Use for Text]] :emacs:orgmode:2017:2018:
+*** [[https://ambrevar.xyz/blog-architecture/][A blog in pure Org/Lisp]] :emacs:orgmode:2018:
+#+CAPTION: Publishing org-mode files from commandline
+#+BEGIN_SRC sh
+emacs --quick --script publish.el --funcall=org-publish-all
+#+END_SRC
+*** [[http://www.jesshamrick.com/2012/09/10/absolute-beginners-guide-to-emacs/][Absolute Beginner's Guide to Emacs]] :emacs:tutorial:2012:
+**** [[https://news.ycombinator.com/item?id=18598544][Hacker News Discussion #18598544]] :discussion:emacs:tutorial:2012:
 *** Packages
 **** [[https://github.com/pashky/restclient.el][pashky/restclient]]                         :emacs:package:rest:2016:2018:
 **** [[https://projectile.readthedocs.io/en/latest/][ReadTheDocs: projectile]]                                  :emacs:package:
@@ -344,7 +549,9 @@ Surviving are his wife of 54 years, Tomoko, of Oberlin, Ohio; and two daughters,
 *** [[http://www.codeslinger.co.uk/files/emu.pdf][Study of the techniques for emulation programming]] :paper:emulation:2001:
 *** [[http://www.codeslinger.co.uk/pages/projects/chip8.html][codeslinger chip8 emulator]] :emulator:chip8:2008:
 ** [[http://www.emulator101.com/][Emulator 101]] :emulator:arcade:tutorial:2016:
+*** [[https://news.ycombinator.com/item?id=17608619][Hacker News Discussion #17608619]] :discussion:emulator:arcade:tutorial:2016:
 ** [[https://problemkaputt.de/gbatek.htm][GBATek - Gameboy Advance / Nintendo DS / DSi - Technical Info]] :nintendo:gameboy:nintendo:dsi:documentation:
+** [[https://dolphin-emu.org/blog/2018/07/21/myth-debugging-wii-more-demanding-emulate-gamecube/][Myth Debugging: Is the Wii More Demanding to Emulate than the GameCube?]] :article:2018:
 ** Nintendo Entertainment System
 *** [[https://github.com/blanham/ChickeNES][blanham/ChickeNES]] :nintendo:entertainment:system:emulator:c:2013:2015:
 *** [[https://medium.com/@fogleman/i-made-an-nes-emulator-here-s-what-i-learned-about-the-original-nintendo-2e078c9b28fe][I made an NES emulator. Here’s what I learned about the original Nintendo.]] :nintendo:entertainment:system:emulator:2015:
@@ -396,7 +603,7 @@ Surviving are his wife of 54 years, Tomoko, of Oberlin, Ohio; and two daughters,
 *** [[https://www.youtube.com/watch?v=2V1FtfBDsLU][Effective Programs - 10 Years of Clojure - Rich Hickey]] :talk:hickey:effectiveness:2017:
 ** Pycon
 *** [[https://www.youtube.com/watch?v=ZzfHjytDceU][Keynote David Beazley - Topics of Interest (Python Asyncio)]] :pycon:brazil:2015:
-* Frontend Web Design
+* Frontend Web Design and Development
 ** [[http://flexboxfroggy.com/][CSS Flexbox Froggy]] :css:flexbox:tutorial:game:
 ** [[http://cssgridgarden.com/][CSS Grid Garden]] :css:grid:tutorial:game:
 ** [[https://medium.com/refactoring-ui/7-practical-tips-for-cheating-at-design-40c736799886][7 Practical Tips for Cheating at Design]] :ui:design:tips:
@@ -415,6 +622,8 @@ Surviving are his wife of 54 years, Tomoko, of Oberlin, Ohio; and two daughters,
 *** Don't blow up icons that are meant to be small
 *** Use accent borders to add color to a bland design
 *** Not every button needs a background color
+** [[https://dribbble.com/][Dribbble - Design Ideas]] :design:
+*** [[https://dribbble.com/colors][Dribbble: Browse by Colors]] :color:design:
 ** [[https://hacks.mozilla.org/2018/03/how-to-write-css-that-works-in-every-browser-even-the-old-ones/][Resilient CSS: How to Write CSS That Works in Every Browser, Even the Old Ones]] :2018:
 *** [[https://news.ycombinator.com/item?id=16546725][Hacker News discussion #16546725]]
 #+CAPTION: ausjke 6 hours ago
@@ -440,6 +649,24 @@ These indeed can make your CSS code work for both the stone age and hottest brow
 ** [[http://enderjs.com/][EnderJS - The no library library]] :javascript:browser:2018:
 ** [[http://tachyons.io/][Tachyons - Responsive CSS framework]] :css:framework:
 ** [[http://getbem.com/][BEM - Block Element Modifier]] :css:methodology:
+** [[https://hackernoon.com/how-css-grid-beats-bootstrap-85d5881cf163][Why CSS Grid is better than Bootstrap for creating layouts]] :article:css:layout:2017:
+** [[https://www.sitepoint.com/css-grid-layout-vs-css-frameworks-debate/][The CSS Grid Layout vs CSS Frameworks Debate]]     :article:css:layout:2018:
+*** [[https://scrimba.com/g/gR8PTE][Learn CSS Grid for free]] :video:course:css:layout:2017:2018:
+*** [[https://medium.freecodecamp.org/heres-my-free-css-grid-course-merry-christmas-3826dd24f098][Want to learn CSS Grid? Here’s my free full-length course. Merry Christmas!]] :course:css:layout:2017:
+** [[https://foundation.zurb.com/][Foundation: The most advanced responsive front-end framework in the world.]] :css:framework:responsive:2018:
+** [[https://zurb.com/blog/foundation-css-grid-think-beyond-the-page][Foundation & CSS Grid]]                            :blog:css:framework:2018:
+** [[https://vuejs.org/][VueJS: a progressive framework for building user interfaces.]] :javascript:ui:framework:2018:
+** [[https://www.layoutit.com/grid][Layout It! CSS Grid Fiddle]] :css:grid:2018:
+** [[https://cssgrid.cc/][The CSS Grid]] :css:grid:2018:
+** [[https://pxlnv.com/blog/bullshit-web/][The Bullshit Web]] :article:css:2018:
+** [[http://youmightnotneedjquery.com/][You might not need jQuery]] :article:javascript:2014:
+** [[http://abovethefold.fyi/][Above the fold is a myth]] :design:
+*** [[https://www.hugeinc.com/articles/everybody-scrolls][Everybody scrolls]] :article:design:2014:
+*** [[https://www.lukew.com/ff/entry.asp?1946][There is No Fold]] :article:design:2015:
+** [[https://githubengineering.com/removing-jquery-from-github-frontend/][Removing jQuery from GitHub.com frontend]] :article:javascript:2018:
+** [[http://atomicdesign.bradfrost.com/][Atomic Design]] :book:design:2018:
+** [[https://pinegrow.com/courses/learn-css-grid-with-pinegrow/][Learn CSS Grid with Pinegrow]] :tutorial:video:css:cssgrid:
+** [[https://immutablewebapps.org/][Immutable Web Apps]] :singlepageapp:
 * Functional Programming
 ** [[https://chriskohlhepp.wordpress.com/functional-programming-section/metacircular-adventures-in-functional-abstraction-challenging-clojure-in-common-lisp/][Metacircular Adventures in Functional Abstraction]] :functional:programming:common:lisp:clojure:
 ** [[https://aphyr.com/posts/301-clojure-from-the-ground-up-welcome][Clojure from the ground up]] :functional:programming:clojure:
@@ -448,8 +675,8 @@ These indeed can make your CSS code work for both the stone age and hottest brow
 ** [[https://patrickmn.com/software/the-haskell-pyramid/][The Haskell Pyramid]] :functional:programming:haskell:
 ** [[https://mostly-adequate.gitbooks.io/mostly-adequate-guide/][Professor Frisby's Mostly Adequate Guide to Functional Programming]] :book:functional:programming:javascript:
 * Game Development
-** [[https://www.haroldserrano.com/blog/books-i-used-to-develop-a-game-engine][Books I had to read to develop a game engine]] :game:development:game:engine:2018:
-** [[http://www.helixsoft.nl/articles/circle/sincos.htm][Sin & Cos: The Programmer's Pals!]] :game:development:mathematics:trigonometry:
+** [[https://www.haroldserrano.com/blog/books-i-used-to-develop-a-game-engine][Books I had to read to develop a game engine]] :gamedevelopment:game:engine:2018:
+** [[http://www.helixsoft.nl/articles/circle/sincos.htm][Sin & Cos: The Programmer's Pals!]] :gamedevelopment:mathematics:trigonometry:
 *** Conclusion
 #+BEGIN_QUOTE
 In this article I set out to answer some of the most common questions on sine and cosine, or trigonometry in general.
@@ -464,10 +691,14 @@ Amarillion
 E-mail: amarillion@yahoo.com
 Home page: http://www.helixsoft.nl/
 #+END_QUOTE
-** [[https://allarsblog.com/2018/03/16/confessions-of-an-unreal-engine-4-engineering-firefighter/][Confessions of an Unreal Engine 4 Engineering Firefighter]] :game:development:unreal:engine:fire:fighting:2018:
+** [[https://allarsblog.com/2018/03/16/confessions-of-an-unreal-engine-4-engineering-firefighter/][Confessions of an Unreal Engine 4 Engineering Firefighter]] :gamedevelopment:unreal:engine:fire:fighting:2018:
+** [[https://www.gamasutra.com/view/feature/131503/1500_archers_on_a_288_network_.php?print=1][1500 Archers on a 28.8: Network Programming in Age of Empires and Beyond]] :gamedevelopment:network:2018:
+** [[https://www.masswerk.at/spacewar/inside/][Inside Spacewar! A Software Archeological Approach to the First Video Game]] :history:gamedevelopment:spacewar:2014:2015:
+** [[https://www.masswerk.at/nowgobang/2018/anatomy-of-an-rng][Anatomy of a Random Number Generator]] :history:gamedevelopment:spacewar:algorithms:rng:2018:
+** [[http://www.gamasutra.com/blogs/JoshGe/20181029/329512/How_to_Make_a_Roguelike.php][How to Make a Roguelike]] :article:roguelike:2018:
+*** [[https://news.ycombinator.com/item?id=18335409][Hacker News Discussion #18335409]] :discussion:article:roguelike:2018:
 * Game Theory
 ** [[http://www.chesstactics.org/index.php?Type=page&Action=next&From=1,1,1,1][Ward Farnsworth's Predator at the Chessboard]] :gametheory:book:chess:
-
 ** [[http://www.mindsports.nl/][mindsports.nl]] :gametheory:gamedesign:puzzles:
 * Graphics
 ** [[http://www.extentofthejam.com/pseudo/][Lou's Psuedo 3d Page]] :graphics:3d:rendering:
@@ -477,6 +708,7 @@ Home page: http://www.helixsoft.nl/
 
 ** [[https://www.fasterthan.life/blog/2017/7/11/i-am-graphics-and-so-can-you-part-1][I Am Graphics And So Can You]] 	       :graphics:3d:rendering:vulkan:
 ** [[http://iquilezles.org/www/index.htm][Íñigo Quílez' Demo and Shader Graphics Articles]] :graphics:demo:scene:shaders:
+** [[https://www.impulseadventure.com/photo/jpeg-huffman-coding.html][JPEG Huffman Coding Tutorial]] :graphics:compression:images:2010:
 * Hardware
 ** [[https://jaycarlson.net/microcontrollers/][The Amazing $1 Microcontroller]]
 
@@ -501,6 +733,13 @@ What I will do, however, is offer a ton of different recommendations for differe
    #+END_QUOTE
 ** [[http://www.righto.com/2018/03/implementing-fizzbuzz-on-fpga.html][Implementing Fizbuzz on an FPGA]] :2018:
 ** [[http://www.gleech.org/first-computers/][Disambiguating the first computer]] :hardware:history:
+** [[http://www.frantone.com/designwritings/design_writings.html][Fran's Writings on Design and Engineering]] :hardware:electricalengineering:2011:2015:
+*** [[https://www.youtube.com/franblanche][Fran Blanche Youtube Channel]] :video:electricalengineering:2011:2018:
+** [[https://www.falstad.com/circuit/circuitjs.html][Circuit Simulator]] :electricalengineering:simulation:2018:
+*** [[https://github.com/sharpie7/circuitjs1][Github: sharpie7/circuitjs1]] :repository:electricalengineering:simulation:2015:2018:
+** [[https://basicengine.org/][BASIC Engine]] :hardware:systemonchip:2018:
+** [[http://www.rane.com/note110.html][Sound System Interconnection]] :audio:hardware:1985:
+** [[https://blog.arduino.cc/2018/08/24/announcing-the-arduino-command-line-interface-cli/][Announcing the Arduino Command Line Interface (CLI)]] :article:2018:
 * Home Automation and Internet of Things
 ** [[http://www.bruhautomation.com/][Bruh Automation]] :home:automation:tutorials:reviews:
 
@@ -514,12 +753,19 @@ What I will do, however, is offer a ton of different recommendations for differe
 ** [[https://www.defcon.org/images/defcon-21/dc-21-presentations/Tobias-Bluzmanis/DEFCON-21-Tobias-Bluzmanis-Insecurity-A-Failure-of-Imagination.pdf][A FAILURE OF IMAGINATION: Kwikset Smartkey® and Insecurity Engineering]] :physical:security:lockpicking:kwikset:smart:key:
 
 * Machine Learning
-** [[http://www.asimovinstitute.org/neural-network-zoo/][The Neural Network Zoo]]                        :machine:learning:neural:networks:
-** [[https://docs.google.com/presentation/d/1kSuQyW5DTnkVaZEjGYCkfOxvzCqGEFzWBy4e9Uedd9k/preview?imm_mid=0f9b7e&cmp=em-data-na-na-newsltr_20171213#slide=id.g168a3288f7_0_58][Machine Learning 101]]             :machine:learning:slides:2017:
-** [[https://developers.google.com/machine-learning/crash-course/][Google Machine Learning: Crash Course]] :machine:learning:crash:course:
-** [[https://github.com/glouw/tinn][glouw/tinn]] :machine:learning:neural:network:library:
+** [[http://www.asimovinstitute.org/neural-network-zoo/][The Neural Network Zoo]]                        :machinelearning:neuralnetworks:
+** [[https://docs.google.com/presentation/d/1kSuQyW5DTnkVaZEjGYCkfOxvzCqGEFzWBy4e9Uedd9k/preview?imm_mid=0f9b7e&cmp=em-data-na-na-newsltr_20171213#slide=id.g168a3288f7_0_58][Machine Learning 101]]                        :machinelearning:slides:2017:
+** [[https://developers.google.com/machine-learning/crash-course/][Google Machine Learning: Crash Course]]      :machinelearning:crash:course:
+** [[https://developers.google.com/machine-learning/guides/][Google Machine Learning Guides]]             :machinelearning:guide:2018:
+*** [[https://developers.google.com/machine-learning/guides/rules-of-ml][Google Machine Learning Guides: Rules of Machine Learning]] :machinelearning:guide:2018:
+*** [[https://developers.google.com/machine-learning/guides/text-classification/][Google Machine Learning Guides: Text Classification]]  :machinelearning:guide:2018:
+** [[https://github.com/glouw/tinn][glouw/tinn]] :machinelearning:neural:network:library:
    The tiny neural network library
-** [[https://sandipanweb.wordpress.com/2018/05/31/8626/][Few Machine Learning Problems (with Python implementations)]] :machine:learning:neural:networks:2018:
+** [[https://sandipanweb.wordpress.com/2018/05/31/8626/][Few Machine Learning Problems (with Python implementations)]] :machinelearning:neuralnetworks:2018:
+** [[https://thegradient.pub/why-rl-is-flawed/][Reinforcement learning's foundational flaw]] :machinelearning:reinforcement:2018:
+*** [[https://thegradient.pub/how-to-fix-rl/][How to fix reinforcement learning]] :machinelearning:reinforcement:2018:
+** [[https://towardsdatascience.com/how-to-build-your-own-neural-network-from-scratch-in-python-68998a08e4f6][How to build your own Neural Network from scratch in Python]] :article::neuralnetworks:2018:
+** [[https://github.com/GokuMohandas/practicalAI/blob/master/README.md][Github: GokuMohandas/practicalAI]] :repository:machinelearning:python:2018:
 * Mazes
 
 ** [[http://weblog.jamisbuck.org/2011/2/7/maze-generation-algorithm-recap][Maze Generation Algorithm Recap]] :maze:algorithms:
@@ -528,9 +774,7 @@ Nice recap of maze generation algorithms from a minecraft modder.  Check out his
 
 * Networking
 ** [[https://www.nanog.org/sites/default/files/2_Steenbergen_Tutor][Everything You Always Wanted to Know About Optical Networking – But Were Afraid to Ask]] :networking:optical:fiber:2017:
-
 ** [[http://beej.us/guide/bgnet/][Beej's Guide to Network Programming]] :networking:programming:c:unix:sockets:beejs:guide:
-
    Famous and extensive introductory text to programming with unix sockets.  Only really touches on simple synchronous socket servers for the most part.
 
    *TODO* - recategorize as their own links
@@ -538,7 +782,6 @@ Nice recap of maze generation algorithms from a minecraft modder.  Check out his
    - [[http://beej.us/guide/bgc/][Beej's Guide to C Programming]]
    - [[http://beej.us/guide/bgipc/][Beej's Guide to Unix Interprocess Communication]]
    - [[http://beej.us/guide/bggdb/][Beej's Quick Guide to GDB]]
-
 ** [[https://modern.ircdocs.horse/][Modern IRC Client Protocol]] :networking:protocol:living:documentation:irc:
 ** [[https://coldfix.eu/2017/01/29/vpn-box/][VPN in a Nutshell]] :networking:linux:vpn:per:application:
 ** [[https://fgiesen.wordpress.com/2018/01/20/network-latencies-and-speed-of-light/][Network latencies and the speed of light]] :networking:physics:2018:
@@ -546,7 +789,6 @@ Nice recap of maze generation algorithms from a minecraft modder.  Check out his
 ** [[http://networkdiagram101.com/][16 Tips to Better Network Diagrams]] :networking:diagrams:
 ** [[https://arxiv.org/abs/1103.0463][Fitting Square Pegs Through Round Pipes: Unordered Delivery Wire-Compatible with TCP and TLS]] :networking:protocols:minion:2011:
 ** [[https://tools.ietf.org/html/draft-iyengar-minion-protocol-01][Minion - Wire Protocol]] :paper:networking:protocols:minion:2013:
-
 ** [[http://ieeexplore.ieee.org/document/7497221/][TCP Hollywood]] :networking:protocols:2016:
 ** [[https://www.schoenitzer.de/blog/2018/Linux%20Raw%20Sockets.html][Linux Raw Sockets]] :networking:raw:sockets:linux:2018:
 ** [[https://startyourownisp.com/][Start your own (wireless) ISP]] :networking:wisp:2018:
@@ -588,12 +830,24 @@ you can work around this client side with per hour filenames or the other usual 
 ** [[http://napalm.readthedocs.io/en/latest/][NAPALM (Network Automation and Programmability Abstraction Layer with Multivendor support)]] :networking:python:2018:
 ** [[https://www.cambus.net/oldest-domains-in-the-com-net-and-org-tlds/][Oldest domains in the .com, .net, and .org TLDs]] :networking:history:dns:2018:
 ** [[http://www.analog.com/en/education/education-library/software-defined-radio-for-engineers.html][Software-Defined Radio for Engineers, 2018]] :book:networking:sdr:2018:
+** [[https://jvns.ca/blog/2018/07/24/ip-addresses-routing/][IP addresses & routing]] :article:networking:routing:2018:
+*** [[https://news.ycombinator.com/item?id=17607845][Hacker News Discussion #17607845]] :discussion:article:networking:routing:2018:
+** [[https://www.mnot.net/blog/2018/07/31/read_rfc][How to Read an RFC]] :article:nettworking:standards:2018:
+** [[https://tls.ulfheim.net/][The Illustrated TLS Connection]] 				    :article:networking:2017:
+** [[https://tls13.ulfheim.net/][The New Illustrated TLS Connection]] :article:networking:2018:
+*** [[https://news.ycombinator.com/item?id=18400158][Hacker News Discussion #18400158]] :discussion:article:networking:2018:
+** [[https://dn42.net/Home][dn42 dynamic VPN]] :networking:
 * Object Oriented Programming and Design
 ** [[https://ericlippert.com/2015/04/27/wizards-and-warriors-part-one/][Wizards and Warriors: Part One]] :object:oriented:design:
 *** [[https://ericlippert.com/2015/04/30/wizards-and-warriors-part-two/][Wizards and Warriors: Part Two]] :object:oriented:design:
 *** [[https://ericlippert.com/2015/05/04/wizards-and-warriors-part-three/][Wizards and Warriors: Part Three]] :object:oriented:design:
 *** [[https://ericlippert.com/2015/05/07/wizards-and-warriors-part-four/][Wizards and Warriors: Part Four]] :object:oriented:design:
 *** [[https://ericlippert.com/2015/05/11/wizards-and-warriors-part-five/][Wizards and Warriors: Part Five]] :object:oriented:design:
+* Open Source
+** [[https://www.rainloop.net/downloads/][Rainloop webmail]]                                       :oss:php:mail:2018:
+** [[https://github.com/usefathom/fathom][Github: usefathom/fathom]] :oss:repository:golang:analytics:2018:
+** [[https://matomo.org/][Matomo: Open analytics platform]] :oss:php:analytics:2018:
+   Formerly ~PIWIK~, free Google Analytics-like platform.
 * Operating Systems
 ** [[http://greenteapress.com/thinkos/thinkos.pdf][Think OS: A Brief Introduction to Operating Systems]] :operating:systems:2015:
 * Papers
@@ -601,10 +855,10 @@ you can work around this client side with per hour filenames or the other usual 
 
     Some musings on hypertext and what we might build after the conclusion of World War II.
 
-** [[http://math.harvard.edu/~ctm/home/text/others/shannon/entropy/entropy.pdf][A Mathematical Theory of Communication]] 	      :paper:networking:1948:
-
+** [[http://math.harvard.edu/~ctm/home/text/others/shannon/entropy/entropy.pdf][A Mathematical Theory of Communication]] 	      :paper:shannon:networking:1948:
     Defines the term "bit" for Binary digIT.
-
+** [[http://netlab.cs.ucla.edu/wiki/files/shannon1949.pdf][Communication Theory of Secrecy Systems]] :paper:shannon:cryptography:1949:
+*** [[http://www.cs.haifa.ac.il/~orrd/IntroToCrypto/Spring11/Lecture2.pdf][Shannon's Theory of Secrecy Systems]] :slides:cryptography:2011:
 ** [[https://www.csee.umbc.edu/courses/471/papers/turing.pdf][Computing Machinery and Intelligence]] :paper:turing:artificial:intelligence:1950:
 ** [[https://ia801903.us.archive.org/1/items/bstj29-2-147/bstj29-2-147.pdf][Error Detecting and Error Correcting Codes]] 		 :paper:hamming:1950:
 
@@ -634,6 +888,7 @@ you can work around this client side with per hour filenames or the other usual 
 **** [[http://www.diku.dk/hjemmesider/ansatte/henglein/papers/henglein2011c.pdf][Generic Multiset Programming with Discrimination-based Joins and Symbolic Cartesian Products]] :paper:sorting:2011:
 ** [[https://raft.github.io/raft.pdf][In Search of an Understandable Consensus Algorithm]] :paper:distributed:consenus:2014:
 
+** [[https://pdfs.semanticscholar.org/441f/ac7c2020e1c8f0d32adffca697bbb8a198a1.pdf][How to Write a Technical Paper: Structure and Style of the Epitome of your Research]] :2018:
 * Physics
 ** [[https://www.susanjfowler.com/blog/2016/8/13/so-you-want-to-learn-physics][So You Want to Learn Physics...]] :physics:susan:flower:2016:
 ** [[https://physicstravelguide.com/][Physics Travel Guides]] :physics:study:tool:
@@ -642,22 +897,52 @@ you can work around this client side with per hour filenames or the other usual 
 ** [[http://www.falstad.com/mathphysics.html][Math and Physics Simulations]] :physics:java:script:simulations:
 ** [[https://phet.colorado.edu/][PhET: Interactive (Physics) Simulations]] :physics:simulations:
 * Programming Languages
+** All or Any
+*** [[https://learnxinyminutes.com/][Learn X in Y Minutes]]
+*** [[http://hyperpolyglot.org/][Hyper Polyglot]]
+*** [[http://99-bottles-of-beer.net/][99-bottles-of-beer.net]]
+*** [[https://esolangs.org/wiki/Main_Page][Esoteric Programming Languages Wiki]]
+*** [[http://wiki.c2.com/][C2 Wiki Wiki Web]] :1995:2018:
 ** APL
-*** [[http://wordsandbuttons.online/apl_deserves_its_renaissance_too.html][APL deserves its renaissance too]] 
+*** [[http://wordsandbuttons.online/apl_deserves_its_renaissance_too.html][APL deserves its renaissance too]]
 ** Assembly
 *** [[http://bob.cs.sonoma.edu/IntroCompOrg-RPi/intro-co-rpi.html][Introduction to Computer Organization: ARM Assembly Language Using the Raspberry Pi]] :assembly:arm:raspberry:pi:
 *** [[https://github.com/ICTeam28/PiFox][ICTeam28/PiFox]] :assembly:arm:raspberry:pi:2014:
 *** [[http://benhoyt.com/writings/pyast64/][Compiling Python syntax to x86-64 assembly for fun and (zero) profit]] :assembly:x86:python:static:2017:
 *** [[https://csl.name/post/python-compiler/][JIT compiling a subset of Python to x86-64]] :assembly:x86:python:jit:2017:
+*** [[https://github.com/nemasu/asmttpd][nemasu/asmttpd]] :assmebly:x86:networking:http:2013:2017:
+*** [[http://www.egr.unlv.edu/~ed/x86.html][x86-64 Assembly Language Programming with Ubuntu]] :assembly:x86:book:2018:
+*** [[http://linasm.sourceforge.net/][Linux Assembly Collection of Fast Libraries]] :assembly:linux:
 ** C
 *** [[http://www.maizure.org/projects/printf/index.html][Tearing apart printf()]] :c:language:low:level:2018:
 *** [[http://nullprogram.com/blog/2018/06/10/][Minimalist C Libraries]] :c:language:libraries:2018:
 *** [[http://www.iso-9899.info/wiki/Alignment][iso-9899 wiki: Alignment]] :wiki:c:language:2017:
 *** [[https://wozniak.ca/blog/2018/06/25/Massacring-C-Pointers/index.html][Massacring C Pointers]] :c:language::2018:
 **** [[https://wozniak.ca/blog/2018/06/25/Massacring-C-Pointers/code.html][Code Listing from Massacring C Pointers]] :c:language:2018:
+*** [[https://stefansf.de/post/pointers-are-more-abstract-than-you-might-expect/][Pointers are more abstract than you might expect in C]] :c:language:2018:
+*** [[https://stackoverflow.com/questions/514118/how-does-duffs-device-work][How does Duff's device work?]] :c:optimization:2009:
+*** [[https://nullprogram.com/blog/2018/07/20/][The Value of Undefined Behavior]]                                  :c:2018:
+**** [[https://news.ycombinator.com/item?id=17581319][Hacker News Discussion #17581319]] :discussion:c:2018:
+*** [[http://floooh.github.io/2018/06/02/one-year-of-c.html][One year of C]] :c:webassembly:2018:
+**** [[https://news.ycombinator.com/item?id=17216039][Hacker News Discussion #17216039]] :discussion:article:c:webassembly:
+*** [[https://blog.regehr.org/archives/213][A Guide to Undefined Behavior in C and C++, Part 1]]       :article:c:2010:
+*** [[http://blog.llvm.org/2011/05/what-every-c-programmer-should-know.html][What Every C Programmer Should Know About Undefined Behavior #1/3 ]] :article:c:2011:
+*** [[http://incise.org/tinywm.html][tinywm]] :c:2005:
+    A mere =50= lines of /C/ code.
+*** [[https://p.janouch.name/article-tui.html][So you want to make a TUI...]] :article:c:tui:2015:
+*** [[https://tia.mat.br/posts/2018/02/01/more_on_string_switch_in_c.html][More on string switch in C]] :article:c:2018:
+*** [[https://begriffs.com/posts/2018-11-15-c-portability.html][C Portability Lessons from Weird Machines]] :article:c:2018:
+**** [[https://news.ycombinator.com/item?id=18466006][Hacker News Discussion #18466006]] :discussion:article:c:2018:
+*** [[http://www.c-faq.com/][comp.lang.c Frequently Asked Questions]] :answers:c:1995:2005:
 *** Libraries
+**** [[http://www.musl-libc.org/][musl-lib]] :c:language:
 **** [[https://github.com/mity/acutest][mitv/acutest]] :c:language:test:framework:2017:
 **** [[http://www.glfw.org/index.html][GLFW]] :c:language:opengl:framework:2017:
+**** [[https://github.com/hnes/libaco][hnes/libaco]] :c:language:coroutines:2018:
+**** [[https://github.com/boyerjohn/rapidstring][boyerjohn/rapidstring]] :c:string:2018:
+***** [[https://news.ycombinator.com/item?id=17643592][Hacker News Discussion #17643592]] :discussion:c:string:2018:
+**** [[http://www.throwtheswitch.org/unity/][Unity: Unit testing for C (especially embedded software)]] :c:test:framework:
+***** [[https://github.com/ThrowTheSwitch/Unity][Github: ThrowTheSwitch/Unity]]              :repository:c:test:framework:
 ** C++
 *** [[https://yosefk.com/c++fqa/][C++ FQA]]                                              :language:cpp98:fqa:
     A bit dated now, especially with regards to consistency between implementations and support for modern features.
@@ -669,10 +954,10 @@ you can work around this client side with per hour filenames or the other usual 
 **** [[http://cpptruths.blogspot.com/2014/05/fun-with-lambdas-c14-style-part-2.html][Fun with Lambdas: C++14 Style (part 2)]] :blog:language:cpp:2014:
 **** [[http://cpptruths.blogspot.com/2014/08/fun-with-lambdas-c14-style-part-3.html][Fun with Lambdas: C++14 Style (part 3)]] :blog:language:cpp:2014:
 **** [[http://cpptruths.blogspot.com/2015/06/fun-with-lambdas-c14-style-part-4.html][Fun with Lambdas: C++14 Style (part 4)]] :blog:language:cpp:2015:
-*** [[https://github.com/lefticus/cppbestpractices][lefticus/cppbestpractices]]         :language:cpp:best:practices:2015:2018:
+*** [[https://github.com/lefticus/cppbestpractices][lefticus/cppbestpractices]]         :repository:language:cpp:best:practices:2015:2018:
 **** [[https://lefticus.gitbooks.io/cpp-best-practices/][GitBook: C++ Best Practices]]      :book:language:cpp:best:practices:2018:
 
-*** [[https://github.com/rigtorp/awesome-modern-cpp][rigtorp/awesome-modern-cpp]] :language:cpp:awesome:list:2016:
+*** [[https://github.com/rigtorp/awesome-modern-cpp][rigtorp/awesome-modern-cpp]] :repository:language:cpp:awesome:list:2016:
 *** [[https://docs.microsoft.com/en-us/cpp/cpp/welcome-back-to-cpp-modern-cpp][Microsoft: Welcome back to C++ - Modern C++]] :language:cpp11:cpp14:2016:
 *** [[https://google.github.io/styleguide/cppguide.html][Google C++ Style Guide]] :language:cpp:style:guide:
 *** [[https://github.com/isocpp/CppCoreGuidelines][isocpp/CppCoreGuidelines]] :language:cpp11:cpp14:cpp17:guidelines:2018:
@@ -691,7 +976,16 @@ you can work around this client side with per hour filenames or the other usual 
 *** [[https://www.conan.io/][conan - The C / C++ package manager for developers]] :language:cpp:library:package:manager:
 *** [[http://blog.reverberate.org/2013/08/parsing-c-is-literally-undecidable.html][Parsing C++ is literally undecidable]] :language:cpp:compilers:decideability:2013:
 *** [[https://www.bfilipek.com/2018/06/parstl-tests.html][Examples of Parallel Algorithms From C++17]] :language:cpp:cpp17:algorithms:parallel:2018:
+*** [[https://github.com/mattbierner/STT-C-Compile-Time-Snake][mattbierner/STT-C-Compile-Time-Snake]] :repository:language:cpp:templates:2014:2016:
+*** [[https://ds9a.nl/articles/posts/c++-1/][Modern C++ for C Programmers: part 1]] :article:cpp:cpp14:cpp17::2018:
+**** [[https://news.ycombinator.com/item?id=17309654][Hackernews Discussion #17309654]] :discussion:article:cpp:cpp14:cpp17::2018:
+**** [[https://ds9a.nl/articles/posts/cpp-2/][Modern C++ for C programmers: part 2]] :article:cpp:cpp14:cpp17::2018:
+**** [[https://ds9a.nl/articles/posts/cpp-3/][Modern C++ for C Programmers: Part 3]] :article:cpp:cpp14:cpp17::2018:
+**** [[https://ds9a.nl/articles/posts/cpp-4/][Modern C++ for C Programmers: Part 4]] :article:cpp:cpp14:cpp17::2018:
+***** [[https://news.ycombinator.com/item?id=17608811][Hacker News Discussion #17608811]] :discussion:article:cpp:cpp14:cpp17::2018:
+*** [[https://github.com/green7ea/cpp-compilation/blob/master/README.md][The C++ Build Process Explained]] :article:cpp:2018:
 *** Libraries
+**** [[https://github.com/nothings/single_file_libs][Github: nothings/single_file_libs]] :repository:list:cpp:library:
 **** Testing
 ***** [[https://github.com/catchorg/Catch2][catchorg/Catch2]]                      :language:cpp:test:framework:2018:
     Modern test framework in a header (or few, with extensions).
@@ -749,9 +1043,14 @@ int main(int argc, char* argv[]) {
      Implements [[http://fmtlib.net/Text%20Formatting.html][P0645 Text Formatting]] C++ standards proposal.
 **** Functional
 ***** [[https://github.com/beark/ftl][beark/ftl]]                                :language:cpp:functional:2015:
+**** Game Development
+***** [[https://hugoam.github.io/toy-io/][toy]] :c++:2018:
+      toy is a thin and modular c++ game engine that also runs on the web.
 *** Videos
 **** [[https://www.youtube.com/watch?v=hEx5DNLWGgA][CppCon 2015: Herb Sutter "Writing Good C++14... By Default"]] :video:talk:language:cpp:sutter:2015:
 **** [[https://www.youtube.com/watch?v=fX2W3nNjJIo][CppCon 2017: Bjarne Stroustrup “Learning and Teaching Modern C++”]] :video:talk:language:cpp:stroustrup:2017:
+** C#
+*** [[https://blog.marcgravell.com/2018/07/pipe-dreams-part-1.html][Pipelines - a guided tour of the new IO API in .NET, part 1]] :csharp:2018:
 ** Go
 *** [[https://github.com/chaseadamsio/goorgeous][chaseadamsio/goorgeous]] :github:golang:emacs:orgmode:2017:2018:
 ** Erlang
@@ -839,15 +1138,143 @@ This is why “Lisp is the greatest!”
 *** [[https://bsima.me/clog/robust-clojure-nil.html][Robust Clojure: The best way to handle nil]] :programming:language:lisp:clojure:nil:null:handling:2018:
 *** [[http://www.ccs.neu.edu/home/matthias/HtDP2e/][How to Design Programs 2]]                               :book:programming:language:lisp:scheme:2014:
 *** [[https://ds26gte.github.io/tyscheme/][Teach Yourself Scheme in FIXNUM days]] :book:programming:language:lisp:scheme:
+*** [[http://stevelosh.com/blog/2018/07/fun-with-macros-if-let/][Fun with Macros: if-let and when-let]] :blog:language:lisp:macros:2018:
+*** [[http://t3x.org/clc/index.html][Compiling Lambda Calculus]] :book:lisp:scheme:compilers:2018:
+*** [[https://srfi.schemers.org/srfi-71/srfi-71.html][Scheme SRFI 71:  Extended LET-syntax for multiple values]] :scheme:2005:
+*** [[https://github.com/nakkaya/ferret][nakkaya/ferret]] :lisp:realtimesystems:
+    Ferret is a free software lisp implementation for real time embedded control systems.
+**** [[https://news.ycombinator.com/item?id=17644580][Hacker News Discussion #17644580]] :discussion:lisp:realtimesystems:orgmode:
+#+CAPTION: phoe-krk comments
+#+BEGIN_QUOTE
+ALL of the code seems to be stored inside the org-mode file, https://github.com/nakkaya/ferret/blob/master/ferret.org - which is the most unusual form of source code organization that I have ever seen.
+#+END_QUOTE
+
+#+CAPTION: antt replies
+#+BEGIN_QUOTE
+There's singles of us!
+
+If you want to extract it run M-x org-babel-tangle and you will end up with the usual source files and directories installed relative to the location of the org file.
+
+I doubt there's a dozen people in the world that do it. But it is surprisingly useful and powerful when you get used to it. If anyone in Melbourne is interested in learning about this I have been toying with the idea of running a workshop on it.
+
+I'm in the process of getting the detangle working for noweb mode. The current implementation fakes it with regex which force you to write code linearly instead of literately. But even if you can't detangle arbitrarily nested code it's magic to see changes in a source file appear in the right source code block.
+#+END_QUOTE
+*** [[http://hackzen.org/gerbil/][Gerbil Scheme]] :lisp:scheme:2017
+    Gerbil is a meta-dialect of Scheme with post-modern features:
+    - It is written in itself.
+    - It is an Actor Language
+    - It is an Objective Language
+    - It is a  Systems Language
+    - It is a  Modern Scheme Implementation
+    - It speaks with a LISP
+**** [[https://news.ycombinator.com/item?id=15394603][Hacker News Discussion #15394603]] :discussion:lisp:scheme:2017:
+**** [[https://news.ycombinator.com/item?id=17707622][Hacker News Discussion #17707622]] :discussion:lisp:scheme:2018:
+*** [[https://github.com/mntmn/interim][Github: mntmn/interim]] :lisp:os:2015:
+*** [[https://funcall.blogspot.com/2009/03/not-lisp-again.html][Not Lisp again...]] :article:lisp:scheme:1983:2009:
+**** [[https://news.ycombinator.com/item?id=504667][Hacker News Discussion #504667]] :discussion:lisp:scheme:2009:
+**** [[https://news.ycombinator.com/item?id=5375735][Hacker News Discussion #5375735]] :discussion:lisp:scheme:2013:
+**** [[https://news.ycombinator.com/item?id=14247269][Hacker News Discussion #14247269]] :discussion:lisp:scheme:2017:
+**** [[https://news.ycombinator.com/item?id=18308721][Hacker News Discussion #18308721]] :discussion:lisp:scheme:2018:
+** [[http://kittenlang.org/][Kitten Programming Language]]
+** OCaml
+*** [[https://try.ocamlpro.com/][Try OCaml]] :tutorial:exercise:ocaml:2018:
 ** Python
 *** [[http://automatetheboringstuff.com/chapter0/][Automate the Boring Stuff with Python]] :book:python:programming:automation:
 *** [[http://exploreflask.com][Explore Flask]] :python:programming:web:site:api:
 *** [[https://vorpus.org/blog/some-thoughts-on-asynchronous-api-design-in-a-post-asyncawait-world/][Some thoughts on asynchrous API design in a post async/await world]] :python:asynchronous:2016:
 *** [[https://blog.petrzemek.net/2018/04/22/on-incomplete-http-reads-and-the-requests-library-in-python/][On Incomplete HTTP Reads and the Requests Library In Python]] :python:requests:2018:
 *** [[http://willcrichton.net/notes/programming-in-the-debugger/][Programming in the Debugger]] :python:jupyter:2018:
-*** Libraries
+*** [[https://stackoverflow.com/questions/38722105/format-strings-vs-concatenation][StackOverflow: Format strings vs concatenation]] :answers:python:2016:
+    - =format= strings are generally more explicit and maintainable
+    : "Name: {name}".format(name=name)
+    - =f= strings in =Python 3.6= are highly efficient and readable
+    : f"Name: {name}"
+*** [[http://treyhunner.com/2018/10/asterisks-in-python-what-they-are-and-how-to-use-them/][Asterisk in Python: what they are and how to use them]] :article:python:2018:
+*** [[https://chriswarrick.com/blog/2018/07/17/pipenv-promises-a-lot-delivers-very-little/][Pipenv: promises a lot, delivers very little]] :article:python:packaging:2018:
+*** [[https://www.python.org/dev/peps/pep-0518/][PEP 518 -- Specifying Minimum Build System Requirements for Python Projects]] :standard:python:packaging:2018:
+*** Libraries and Tools
 **** [[http://npyscreen.readthedocs.io/index.html][npyscreen Documentation]] :python:library:terminal:ui:2014:
 **** [[http://python-prompt-toolkit.readthedocs.io/en/master/][prompt-toolkit Documentation]] :python:library:terminal:ui:2014:2018:
+**** [[http://toolz.readthedocs.io/en/latest/][toolz Documentation]] :python:library:functional:2014:2018:
+***** [[http://toolz.readthedocs.io/en/latest/streaming-analytics.html][toolz Documentation: Streaming Analytics]] :python:library:functional:
+**** [[https://github.com/kitao/pyxel][kitao/pyxel]] :repository:python:library:gamedevelopment:2018:
+     A retro game development environment in Python
+**** [[https://github.com/socialcopsdev/camelot/][Github: socialcopsdev/camelot]] :repository:python:pdf:etl:2018:
+**** [[https://www.anaconda.com/blog/developer-blog/python-data-visualization-2018-why-so-many-libraries/][Python Data Visualization 2018: Why So Many Libraries?]] :article:python:visualization:2018:
+**** [[https://plotnine.readthedocs.io/en/latest/][Plotnine Documentation: GGPlot2 in Python]] :documentation:python:visualization:
+**** [[https://github.com/sdispater/poetry][Github: sdispater/poetry]] :repository:python:packaging:2018:
+** SQL
+*** [[https://selectstarsql.com/][Select Star SQL]] :book:exercise:databases:sql:2018:
+**** [[https://news.ycombinator.com/item?id=17905666][Hacker News Discussion #17905666]] :discussion:book:exercise:databases:sql:2018:
+**** [[https://news.ycombinator.com/item?id=17905666][Hacker News Discussion #17905666]]
+*** [[https://www.sqlstyle.guide/][SQL Style Guide]] :sql:2018:
+**** [[https://www.simonholywell.com/post/2016/12/sql-style-guide-misconceptions/#where-is-the-justification][SQL style guide misconceptions]] :artile:sql:2017:
+*** [[https://app.bytescout.com/sql-trainer/index.html][Bytescout SQL Trainer]] :exercise:sql:2018:
+**** [[https://news.ycombinator.com/item?id=18335723][Hacker News Discussion #18335723]]
+*** [[https://sqlbolt.com][SQL Bolt]] :exercise:sql:
+*** [[https://pgexercises.com/][PostgreSQL Exercises]] :exercise:sql:
+*** [[https://schemaverse.com/][The Schemaverse]] :game:sql:
+* Project Management
+** [[https://martinfowler.com/articles/itsNotJustStandingUp.html][It's Not Just Standing Up: Patterns for Daily Standup Meetings]] :meetings:article:2016:
+** [[https://www.blossom.co/blog/3-tips-for-quick-effective-stand-up-meetings][3 Tips for Effective Stand-Up Meetings]] :meetings:article:2016:
+   1. Brew some tea together
+   2. Get a Kanban board
+   3. Adapt the format
+** [[https://blog.gotomeeting.com/7-rules-effective-stand-meetings/][7 Rules for Effective Stand-Up Meetings]]            :meetings:article:2018:
+   1. Only meet when necessary
+   2. Keep it short and sweet
+   3. Establish a goal
+   4. Maintain structure
+   5. Make remote employees feel like they're there
+   6. Give everyone a chance to talk
+   7. Don't skip follow-up
+** [[https://sprint.ly/blog/scrum-meeting-best-practices/][5 Scrum Meeting Best Practices: Master the Daily Stand-Up]] :meetings:article:2016:
+   1. Remain standing
+   2. Your 3-question agenda
+      1. What did you accomplish since the last meeting?
+      2. What are you working on until the next meeting?
+      3. What is getting in your way or keeping you from your job?
+   3. Have your project management tool visible
+   4. It's a collaborative effort
+   5. Plan the meeting around your team
+*** Avoidance alert: 4 bad habits that derail scrum meetings
+    1. Waiting around for your team
+    2. Introducing new ideas
+    3. Leetting people ramble
+    4. Abandoning team communication in favor of the standup
+** [[https://www.laserfiche.com/ecmblog/10-ways-to-make-stand-up-meetings-better-office-hack/][Office Hack: 10 ways to make Stand-Up meetings better]] :meetings:article:
+   1. Rally the troops
+   2. Signal the end
+   3. Instill intrigue
+   4. Actually Stand Up
+   5. Keep it short
+   6. Keep it small
+   7. Stick to the Trhee Questions
+      1. What did I accomplish yesterday?
+      2. What will I do today?
+      3. What obstacles are impeding my progress?
+   8. Stay focused, not officious
+   9. Evaluate stand-ups
+   10. Maintain consistency
+** [[https://medium.com/@jsonpify/you-dont-need-standup-9a74782517c1][You don’t need standup]] :meetings:article:2018:
+*** [[https://news.ycombinator.com/item?id=17671464][Hacker News Discussion #17671464]] :discussion:meetings:article:2018:
+** [[https://github.com/kanboard/kanboard][Github: kanboard/kanboard]]                               :repository:kanban:2015:2018:
+   Open source kanban board web application in =PHP= with =MySQL= database.
+** [[https://github.com/kiswa/TaskBoard][Github: kiswa/TaskBoard]]                                 :repository:kanban:2014:2017:
+   Open source kanban board web application in =PHP= with =SQLite= database.
+** [[https://github.com/taigaio][Github: Taigaio Organization]]
+   Open source Project Management in =Django= with =MySQL= database.
+   Available as a hosted service, with free plans for a single private project.
+   Organizes by Epics, Scrum Backlog, Kanban Board, Issues, and Wiki.
+*** [[https://github.com/taigaio/taiga-back][Github: taigaio/taiga-back]] :repository:2014:2018:
+    =Django= backend.
+*** [[https://github.com/taigaio/taiga-front][Github: taigaio/taiga-front]] :repository:2014:2018:
+    =AngularJS= frontend.
+** [[https://github.com/RestyaPlatform/board/][Github: RestyaPlatform/board]] :repository:kanban:2014:2018:
+   Open source kanban board web application in =PHP= with =PostgreSQL= and =ElasticSearch= databases.
+** [[https://github.com/wekan/wekan][Github: wekan/wekan]] :repository:kanban:2015:2018:
+   Open source kanban board web application in =NodeJS=.
+** [[https://www.teamgantt.com/art-science-of-leading-projects][Art & Science of Leading Projects]] :video:guide:management:2018:
 * Reverse Engineering
 ** [[https://www.youtube.com/user/OpenSecurityTraining][Open Security Training YouTube Channel]]                            :videos:binary:reverse:engineering:
 ** [[https://github.com/FireyFly/pixd][Colourful visualization tool for binary files]] :binary:data:visualization:
@@ -857,6 +1284,7 @@ This is why “Lisp is the greatest!”
 ** [[https://jamchamb.github.io/2018/06/09/animal-crossing-developer-mode.html][Reverse engineering Animal Crossing's developer mode]] :reverse:engineering:2018:
 * Revision Control
 ** [[https://git-scm.com/book/en/v2][Git Book (v2)]] 						   :git:book:
+*** [[https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History][Git Book: 7.6 Rewriting History]]                                :git:book:
 ** [[http://gitready.com/][git ready]] 						    :git:tips:tricks:
 
 ** [[https://github.com/GitAlias/gitalias/blob/master/gitalias.txt][GitAlias/gitalias/gitalias.txt]] 		   :git:alias:aliases:tricks:
@@ -1033,19 +1461,89 @@ git log --oneline --decorate --all --graph
 ** [[https://www.destroyallsoftware.com/blog/2017/the-biggest-and-weirdest-commits-in-linux-kernel-git-history][The Biggest and Weirdest Commits in Linux Kernel Git History]] :revision:control:git:linux:2017:
 ** [[https://zwischenzugs.com/2018/03/26/git-log-the-good-parts/][Git Log: The Good Parts]] :revision:control:git:log:2018:
 *** [[https://news.ycombinator.com/item?id=16677308][Hacker News Discussion #16677308]] :discussion:revision:control:git:log:2018:
+** [[https://drewdevault.com/2018/07/02/Email-driven-git.html][The advantages of an email-driven git workflow]] :revision:control:git:2018:
+** [[https://twobithistory.org/2018/07/07/cvs.html][Version Control Before Git with CVS]] :revision:control:history:2018:
+** [[https://www.codementor.io/citizen428/git-tutorial-10-common-git-problems-and-how-to-fix-them-aajv0katd][Git Tutorial: 10 Common Git Problems and How to Fix Them]] :revisioncontrol:git:2018:
+** [[http://git.661346.n2.nabble.com/GPG-signing-for-git-commit-td2582986.html#a2583316][GPG signing for git commit?]] :discussion:git:cryptography:2009:
+#+CAPTION: Linus' response summary
+#+BEGIN_QUOTE
+With separate signatures (ie the "git tag -s" model), you can ask the
+people who signed the original repository to consider re-signing the
+rewritten one. See? Safe, flexible, and much superior.
+
+The exact same thing goes for keys that get invalidated because they ended
+up being shown to be too weak or just flawed some other way, btw. That is
+a reason to re-sign, _without_ the repository necessarily changing.
+
+You can do _none_ of these things sanely if you put the signatures into
+the commits themselves.
+
+So don't do it.
+
+Btw, there's a final reason, and probably the really real one. Signing
+each commit is totally stupid. It just means that you automate it, and you
+make the signature worth less. It also doesn't add any real value, since
+the way the git DAG-chain of SHA1's work, you only ever need _one_
+signature to make all the commits reachable from that one be effectively
+covered by that one. So signing each commit is simply missing the point.
+
+IOW, you don't _ever_ have a reason to sign anythign but the "tip". The
+only exception is the "go back and re-sign", but that's the one that
+requires external signatures anyway.
+
+So be happy with 'git tag -s'. It really is the right way.
+#+END_QUOTE
+** [[https://ndpsoftware.com/git-cheatsheet.html][Visual Git Cheatsheet]] :git:2018:
+** [[http://tom.preston-werner.com/2009/05/19/the-git-parable.html][The Git Parable]] :article:git:2009:
+** [[http://aosabook.org/en/git.html][The Architecture of Open Source Applications: Git in a Nutshell]] :book:git:
 * Shells and Terminals
 ** [[https://zanshin.net/2013/02/02/zsh-configuration-from-the-ground-up/][Zsh Configuration From the Ground Up]] :zsh:configuration:tutorial:2013:
 ** [[http://www.howardism.org/Technical/Emacs/eshell-fun.html][Eschewing Zshell for Emacs Shell]] :zsh:emacs:eshell:
-
 ** [[https://termux.com][Termux]] :android:terminal:emulator:
 ** [[https://github.com/anordal/shellharden/blob/master/how_to_do_things_safely_in_bash.md][anordal/shellharden: How to do things safely in bash]] :bash:shell:safety:2018:
 ** [[http://blog.deadvax.net/2018/05/29/shell-magic-set-operations-with-uniq/][Shell Magic: Set Operations with uniq]] :shell:scripting:2018:
+** [[https://www.idontplaydarts.com/2016/04/detecting-curl-pipe-bash-server-side/][Detecting the use of "curl | bash" server side]] :article:2016:
+*** [[https://news.ycombinator.com/item?id=11532599][Hacker News Discussion #11532599]]                :discussion:article:2016:
+*** [[https://news.ycombinator.com/item?id=17636032][Hacker News Discussion #17636032]] :discussion:article:2018:
+* Security
+** [[https://www.hackthebox.eu/][Hack the Box]] :ctf:
+** [[https://picoctf.com/][PicoCTF]] :ctf:
+** [[https://github.com/malwaredllc/byob][Github: malwaredllc/byob]] :repository:security:botnet:
 * Software Engineering
+** [[http://www.drdobbs.com/architecture-and-design/software-engineering-computer-science/217701907][Software Engineering ≠ Computer Science]] :software:engineering:architecture:design:2009:
 ** [[http://python.apichecklist.com/][Python API Checklist]] :python:api:programming:checklist:2017:
 ** [[https://blog.ionelmc.ro/2014/06/25/python-packaging-pitfalls/][Python Packaging Pitfalls]] :python:packaging:2014:
 ** [[https://ep2015.europython.eu/conference/talks/less-known-packaging-features-and-tricks][Less known (python) packaging features and tricks]] :python:packaging:talk:slides:video:2015:
 ** [[https://github.com/arogozhnikov/python3_with_pleasure][Migrating to Python 3 with pleasure]] :python:3:migration:features:
 ** [[https://zealdocs.org/][Zeal is an offline documentation browser for software developers.]] :software:engineering:programming:languages:offline:documentation:reference:
+** [[http://www.humus.name/index.php?page=News&ID=383][Rules of optimization]] :software:engineering:optimization:process:2018:
+** [[https://en.wikipedia.org/wiki/Mutation_testing][Wikipedia: Mutation Testing]] :wiki:software:engineering:testing:
+*** [[https://www.guru99.com/mutation-testing.html][Mutation Testing: Complete Guide]] :article:software:engineering:testing:
+#+CAPTION: Explanation of Mutation Testing
+#+BEGIN_QUOTE
+Mutation Testing is a type of software testing where we mutate (change) certain statements in the source code and check if the test cases are able to find the errors.
+It is a type of White Box Testing which is mainly used for Unit Testing.
+The changes in mutant program are kept extremely small, so it does not affect the overall objective of the program.
+
+The goal of Mutation Testing is to assess the quality of the test cases which should be robust enough to fail mutant code.
+This method is also called as Fault based testing strategy as it involves creating fault in the program
+
+Mutation was originally proposed in 1971 but lost fervor due to high costs involved.
+Now, again it has picked steam and is widely used for languages such as Java and XML.
+#+END_QUOTE
+*** [[https://ai.google/research/pubs/pub46584][State of Mutation Testing at Google]] :paper:software:engineering:testing:2018:
+#+CAPTION: Abstract of the paper
+#+BEGIN_QUOTE
+Mutation testing assesses test suite efficacy by inserting small faults into programs and measuring the ability of the test suite to detect them.
+It is widely considered the strongest test criterion in terms of finding the most faults and it subsumes a number of other coverage criteria.
+Traditional mutation analysis is computationally prohibitive which hinders its adoption as an industry standard.
+In order to alleviate the computational issues, we present a diff-based probabilistic approach to mutation analysis that drastically reduces the number of mutants by omitting lines of code without statement coverage and lines that are determined to be uninteresting - we dub these arid lines.
+Furthermore, by reducing the number of mutants and carefully selecting only the most interesting ones we make it easier for humans to understand and evaluate the result of mutation analysis.
+We propose a heuristic for judging whether a node is arid or not, conditioned on the programming language.
+We focus on a code-review based approach and consider the effects of surfacing mutation results on developer attention.
+The described system is used by 6,000 engineers in Google on all code changes they author or review, affecting in total more than 14,000 code authors as part of the mandatory code review process.
+The system processes about 30% of all diffs across Google that have statement coverage calculated.
+#+END_QUOTE
 * Systems Engineering
 ** [[https://alestic.com/2010/12/ec2-user-data-output/][Logging user-data Script Output on EC2 Instances]] :systems:cloudinit:logging:aws:ec2:
 
@@ -1075,11 +1573,38 @@ git log --oneline --decorate --all --graph
    - [[https://www.nginx.com/resources/admin-guide/][NginX Administration Guide]]
 
 ** [[https://chrisdown.name/2018/01/02/in-defence-of-swap.html][In defence of swap: common misconceptions]] :systems:swap:memory:2018:
+** [[http://aws.amazon.com/][Amazon Web Services]]
+*** [[https://www.trek10.com/blog/lambda-cost/][AWS Lambda Pricing in Context - A Comparison to EC2]] :systems:aws:2016:
+#+CAPTION: Lambda Breakeven Analysis for an m4.large Instance
+| Function Execution Time and Memory | Requests per Hour required for Lambda cost to equal EC2 cost | Requests per second |
+|------------------------------------+--------------------------------------------------------------+---------------------|
+| ~100 ms~ with ~128 MB~ RAM         |                                                       295000 |                81.9 |
+| ~200 ms~ with ~512 MB~ RAM         |                                                        64000 |                17.8 |
+| ~200 ms~ with ~1024 MB~ RAM        |                                                        34000 |                9.4. |
+| ~1000 ms~ with ~1024 MB~ RAM       |                                                         7100 |                 2.0 |
+*** [[https://www.awsgeek.com/][AWS Cloud Diagrams]] :systems:aws:
+** [[https://github.com/ansible/][Github: Ansible Organization]]
+*** [[https://github.com/ansible/ansible][Ansible Configuration Management]] :systems:configuration:management:2012:2018:
+** [[https://eng.uber.com/m3/][M3: Uber’s Open Source, Large-scale Metrics Platform for Prometheus]] :systems:metrics:2018:
+*** [[https://news.ycombinator.com/item?id=17707842][Hacker News Discussion #17707842]] :discussion:systems:metrics:2018:
+** [[https://movingfulcrum.com/horrors-of-using-azure-kubernetes-service-in-production/][Horrors of using Azure Kubernetes Service in Production]] :article:systems:cloud:2018:
+*** [[https://news.ycombinator.com/item?id=17700360][Hacker News Discussion #17700360]] :discussion:article:systems:cloud:2018:
+** [[https://www.weave.works/blog/gitops-operations-by-pull-request][GitOps - Operations by Pull Request]] :article:revisioncontrol:git:continuousintegration:2018:
+** [[https://www.magicsandbox.com/][Magic Sandbox: Learn Kubernetes by Doing]] :exercise:systems:2018:
+*** [[https://news.ycombinator.com/item?id=17909594][Hacker News Discussion #17909594]] :discussion:exercise:systems:2018:
+** [[https://www.youtube.com/watch?v=6BIry0cepz4][30 Jenkins features and plugins you wished you had known about before! by Joep Weijers]] :video:2017:
+** [[http://pushtrain.club/][The Push Train]] :slides:systems:2017:
+** [[https://blog.petegoo.com/2018/11/09/optimizing-ci-cd-pipelines/][Measuring and improving your CI/CD Pipelines]] :article:systems:2018:
+*** [[https://news.ycombinator.com/item?id=18426194][Hacker News Discussion #18426194]] :discussion:article:systems:2018:
+** [[https://gitlab.com/NickBusey/HomelabOS][Gitlab: NickBusy/HomelabOS]] :repository:systems:2018:
+** [[https://itnext.io/benchmark-results-of-kubernetes-network-plugins-cni-over-10gbit-s-network-36475925a560][Benchmark results of Kubernetes network plugins (CNI) over 10Gbit/s network]] :article:systems:networking:containers:2018:
 ** Terraform
-
 *** [[https://opencredo.com/terraform-infrastructure-design-patterns/][Terraform Infrastructure Design Patterns]] :systems:terraform:2015:
 *** [[https://medium.com/levops/self-invented-how-to-terraform-rules-4b1eb00709ac][Self-invented “how to Terraform” rules]] :systems:terraform:2017:
-
+*** [[https://github.com/tweag/terraform-provider-secret][Github: tweag/terraform-provider-secret]] :repository:systems:terraform:2018:
+** Windows
+*** [[https://chocolatey.org/][Chocolatey: The package manager for Windows]]
+*** [[https://boxstarter.org/][Boxstarter: Repeatable windows environment installations using Chocolatey]]
 * Uncategorized Otherwise
 ** [[http://www.silota.com/docs/recipes/][Advanced SQL Recipes to jumpstart your Analysis]] :sql:tricks:data:analysis:
 ** [[http://www.linusakesson.net/programming/tty/][The TTY Demystified]] :unix:history:tty:
@@ -1094,7 +1619,6 @@ git log --oneline --decorate --all --graph
 ** [[https://ski.ihoc.net/][The Most Officialest SkiFree Home Page!]] :software:history:skifree:
 ** [[http://vvvvalvalval.github.io/posts/what-makes-a-good-repl.html][What makes a good REPL?]] :programming:language:interpreter:design:clojure:
 ** [[https://github.com/karllhughes/side-project-marketing/blob/master/marketing-checklist.md][Side Project Marketing Checklist]] :open:source:marketing:checklist:2017:
-** [[http://www.drdobbs.com/architecture-and-design/software-engineering-computer-science/217701907][Software Engineering ≠ Computer Science]] :software:engineering:architecture:design:2009:
 ** [[http://www.projectrho.com/public_html/rocket/worldbuilding.php][Worldbuilding]] :world:building:
    Resource on all things world-building with lots of interesting information and pointers to more information about world building.
 ** [[https://www.youtube.com/channel/UCEXz4oDS5KqIcinH2CjxVfg/videos][Eckkehard The German Butcher]] :youtube:channel:charcutery:butchery:
@@ -1154,14 +1678,95 @@ From the discussion I've had and forums I've read, I think that people are afrai
 #+END_QUOTE
 
 ** [[https://getweeklyupdate.com/manager-guide][How to be a Manager]] :management:2018:
-** [[https://github.com/kanboard/kanboard][Github: kanboard/kanboard]] :kanban:2015:2018:
-   Open source kanban board web application in =PHP= with =MySQL= database.
+** [[http://www.texpaste.com/][TexPaste: Pastebin for Mathematicians]] :pastebin:mathematics:
+** [[https://www.metapsychosis.com/at-play-personal-odyssey-chess/][At Play: A Personal Odyssey in Chess]] :article:chess:2018:
+** [[https://nedbatchelder.com/text/hexwords.html][Hexwords]] :blog:2003:2007:
+** [[http://www.columbia.edu/~fdc/postal/][Frank's Compulsive Guide to Postal Addresses]] :addreses:1989:2018:
+** [[https://teachyourselfcs.com/][Teach Yourself Computer Science]] :computerscience:2018:
+** [[https://www.jofreeman.com/joreen/tyranny.htm][The Tyranny of Structurelessness]] :essay:
+** [[http://www.juggling.org/help/siteswap/faq.html][Siteswap FAQ]]                              :answers:juggling:notation:1993:
+** [[https://steveblank.com/2009/12/21/the-elves-leave-middle-earth-%E2%80%93-soda%E2%80%99s-are-no-longer-free/][The Elves Leave Middle Earth – Sodas Are No Longer Free]] :startups:2009:
+** [[https://www.dungeonstome.com/][Dungeons TOME: A tool for generating random dungeons for RPGs such as Dungeon's & Dragons]] :dungeons:and:dragons:worldgen:2018:
+*** [[https://news.ycombinator.com/item?id=17704557][Hacker News Discussion #17704557]] :discussion:dungeons:and:dragons:worldgen:2018:
+** [[http://www.cr31.co.uk/stagecast/trains/tt8_duplo_lout.html][Turing Trains: Computational train track layouts: Duplo Layouts]] :2017:
+** [[http://www.chrobotics.com/library/understanding-quaternions][Understanding Quaternions]] :article:
+** [[https://www.statisticsdonewrong.com/][Statistics Done Wrong]] :book:
+   Original open source content that spawned the /No Starch Press/ book.
+** [[https://github.com/cjbarber/ToolsOfTheTrade][Github: cjbarber/ToolsOfTheTrade]] :repository:2016:2018:
+   Description of various software tools used in startups and enterprises.
+** [[https://techyaks.com/][Tech Yaks : The best of 50k tech talks]] :aggregator:2018:
+** [[https://adampash.com/joels-totally-fair-method][Joel’s Totally Fair Method to Divide Up The Ownership of Any Startup]] :archive:answers:2011:2014:
+#+CAPTION: Joel's answer from 2011
+#+BEGIN_QUOTE
+This is such a common question here and elsewhere that I will attempt to write the world’s most canonical answer to this question. Hopefully in the future when someone on answers.onstartups asks how to split up the ownership of their new company, you can simply point to this answer.
+
+The most important principle: Fairness, and the perception of fairness, is much more valuable than owning a large stake. Almost everything that can go wrong in a startup will go wrong, and one of the biggest things that can go wrong is huge, angry, shouting matches between the founders as to who worked harder, who owns more, whose idea was it anyway, etc. That is why I would always rather split a new company 50-50 with a friend than insist on owning 60% because “it was my idea,” or because “I was more experienced” or anything else. Why? Because if I split the company 60-40, the company is going to fail when we argue ourselves to death. And if you just say, “to heck with it, we can NEVER figure out what the correct split is, so let’s just be pals and go 50-50,” you’ll stay friends and the company will survive.
+
+Thus, I present you with Joel’s Totally Fair Method to Divide Up The Ownership of Any Startup.
+
+For simplicity sake, I’m going to start by assuming that you are not going to raise venture capital and you are not going to have outside investors. Later, I’ll explain how to deal with venture capital, but for now assume no investors.
+
+Also for simplicity sake, let’s temporarily assume that the founders all quit their jobs and start working on the new company full time at the same time. Later, I’ll explain how to deal with founders who do not start at the same time.
+
+Here’s the principle. As your company grows, you tend to add people in “layers”.
+
+1. The top layer is the first founder or founders. There may be 1, 2, 3, or more of you, but you all start working about the same time, and you all take the same risk… quitting your jobs to go work for a new and unproven company.
+2. The second layer is the first real employees. By the time you hire this layer, you’ve got cash coming in from somewhere (investors or customers–doesn’t matter). These people didn’t take as much risk because they got a salary from day one, and honestly, they didn’t start the company, they joined it as a job.
+3. The third layer are later employees. By the time they joined the company, it was going pretty well.
+
+For many companies, each “layer” will be approximately one year long. By the time your company is big enough to sell to Google or go public or whatever, you probably have about 6 layers: the founders and roughly five layers of employees. Each successive layer is larger. There might be two founders, five early employees in layer 2, 25 employees in layer 3, and 200 employees in layer 4. The later layers took less risk.
+
+OK, now here’s how you use that information:
+
+The founders should end up with about 50% of the company, total. Each of the next five layers should end up with about 10% of the company, split equally among everyone in the layer.
+
+Example:
+
+- Two founders start the company. They each take 2500 shares. There are 5000 shares outstanding, so each founder owns half.
+- They hire four employees in year one. These four employees each take 250 shares. There are 6000 shares outstanding.
+- They hire another 20 employees in year two. Each one takes 50 shares. They get fewer shares because they took less risk, and they get 50 shares because we’re giving each layer 1000 shares to divide up.
+- By the time the company has six layers, you have given out 10,000 shares. Each founder ends up owning 25%. Each employee layer owns 10% collectively. The earliest employees who took the most risk own the most shares.
+
+Make sense? You don’t have to follow this exact formula but the basic idea is that you set up “stripes” of seniority, where the top stripe took the most risk and the bottom stripe took the least, and each “stripe” shares an equal number of shares, which magically gives employees more shares for joining early.
+
+A slightly different way to use the stripes is for seniority. Your top stripe is the founders, below that you reserve a whole stripe for the fancy CEO that you recruited who insisted on owning 10%, the stripe below that is for the early employees and also the top managers, etc. However you organize the stripes, it should be simple and clear and easy to understand and not prone to arguments.
+
+Now that we have a fair system set out, there is one important principle. You must have vesting. Preferably 4 or 5 years. Nobody earns their shares until they’ve stayed with the company for a year. A good vesting schedule is 25% in the first year, 2% each additional month. Otherwise your co-founder is going to quit after three weeks and show up, 7 years later, claiming he owns 25% of the company. It never makes sense to give anyone equity without vesting. This is an extremely common mistake and it’s terrible when it happens. You have these companies where 3 cofounders have been working day and night for five years, and then you discover there’s some jerk that quit after two weeks and he still thinks he owns 25% of the company for his two weeks of work.
+
+Now, let me clear up some little things that often complicate the picture.
+
+What happens if you raise an investment? The investment can come from anywhere… an angel, a VC, or someone’s dad. Basically, the answer is simple: the investment just dilutes everyone.
+
+Using the example from above… we’re two founders, we gave ourselves 2500 shares each, so we each own 50%, and now we go to a VC and he offers to give us a million dollars in exchange for 1/3rd of the company.
+
+1/3rd of the company is 2500 shares. So you make another 2500 shares and give them to the VC. He owns 1/3rd and you each own 1/3rd. That’s all there is to it.
+
+What happens if not all the early employees need to take a salary? A lot of times you have one founder who has a little bit of money saved up, so she decides to go without a salary for a while, while the other founder, who needs the money, takes a salary. It is tempting just to give the founder who went without pay more shares to make up for it. The trouble is that you can never figure out the right amount of shares to give. This is just going to cause conflicts. Don’t resolve these problems with shares. Instead, just keep a ledger of how much you paid each of the founders, and if someone goes without salary, give them an IOU. Later, when you have money, you’ll pay them back in cash. In a few years when the money comes rolling in, or even after the first VC investment, you can pay back each founder so that each founder has taken exactly the same amount of salary from the company.
+
+Shouldn’t I get more equity because it was my idea? No. Ideas are pretty much worthless. It is not worth the arguments it would cause to pay someone in equity for an idea. If one of you had the idea but you both quit your jobs and started working at the same time, you should both get the same amount of equity. Working on the company is what causes value, not thinking up some crazy invention in the shower.
+
+What if one of the founders doesn’t work full time on the company? Then they’re not a founder. In my book nobody who is not working full time counts as a founder. Anyone who holds on to their day job gets a salary or IOUs, but not equity. If they hang onto that day job until the VC puts in funding and then comes to work for the company full time, they didn’t take nearly as much risk and they deserve to receive equity along with the first layer of employees.
+
+What if someone contributes equipment or other valuable goods (patents, domain names, etc) to the company? Great. Pay for that in cash or IOUs, not shares. Figure out the right price for that computer they brought with them, or their clever word-processing patent, and give them an IOU to be paid off when you’re doing well. Trying to buy things with equity at this early stage just creates inequality, arguments, and unfairness.
+
+How much should the investors own vs. the founders and employees? That depends on market conditions. Realistically, if the investors end up owning more than 50%, the founders are going to feel like sharecroppers and lose motivation, so good investors don’t get greedy that way. If the company can bootstrap without investors, the founders and employees might end up owning 100% of the company. Interestingly enough, the pressure is pretty strong to keep things balanced between investors and founders/employees; an old rule of thumb was that at IPO time (when you had hired all the employees and raised as much money as you were going to raise) the investors would have 50% and the founders/employees would have 50%, but with hot Internet companies in 2011, investors may end up owning a lot less than 50%.
+
+Conclusion
+
+There is no one-size-fits-all solution to this problem, but anything you can do to make it simple, transparent, straightforward, and, above-all, fair, will make your company much more likely to be successful.
+#+END_QUOTE
+** [[https://www.foldnfly.com/][Fold 'N Fly Paper Airplane Designs]] :2018:
+** [[http://solvingsol.com/][Solving Sol]] :art:2018:
+*** [[https://github.com/wholepixel/solving-sol][Github: wholepixel/solving-sol]] :repository:art:2018:
+** [[https://www.math.uwaterloo.ca/~hwolkowi/matrixcookbook.pdf][The Matrix Cookbook]] :mathematics:book:2012:
+** [[https://henrikwarne.com/2018/12/03/developer-on-call/][Developer On Call]] :article:2018:
+*** [[https://news.ycombinator.com/item?id=18586743][Hacker News Discussion #18586743]] :discussion:article:2018:
 * UNIX and BSD
 ** [[https://fosdem.org/2017/schedule/event/my_bsd_sucks_less/][My BSD Sucks Less Than Yours]] :talk:unix:openbsd:freebsd:
-
 ** [[http://changelog.complete.org/archives/9317-has-linux-lost-its-way-comments-prompt-a-debian-developer-to-revisit-freebsd-after-20-years][“Has Linux lost its way?” comments prompt a Debian developer to revisit FreeBSD after 20 years]] :unix:linux:comparison:2015:
 ** [[https://manpages.bsd.lv/][Practical UNIX Manuals - mdoc: structure, style, and composition]] :book:unix:man:pages:mdoc:
 ** [[https://vez.mrsk.me/freebsd-defaults.txt][FreeBSD - a lesson in poor defaults]] :freebsd:defaults:security:2017:
+** [[https://pdos.csail.mit.edu/6.828/2017/xv6.html][Xv6, a simple Unix-like teaching operating system]] :2006:2017:
 * Video Series
 ** [[https://www.youtube.com/user/professorleonard57][Professor Leonard]] :video::mathematics:lectures:
 ** [[https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw][3Blue1Brown]] :video:series:mathematics:
