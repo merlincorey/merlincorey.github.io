@@ -443,6 +443,17 @@ Surviving are his wife of 54 years, Tomoko, of Oberlin, Ohio; and two daughters,
 ** [[https://cs.uwaterloo.ca/~plragde/flaneries/FDS/][Functional Data Structures]] :book:datastructures:functional:
 ** [[https://www.cs.uaf.edu/2012/fall/cs301/lecture/10_24_weirdfloat.html][Bits in a Float, and Infinity, NaN, and denormal]] :datastructures:
 ** [[https://docs.oracle.com/cd/E19957-01/806-3568/ncg_goldberg.html][What Every Computer Scientist Should Know About Floating-Point Arithmetic]] :datastructures:1991:
+** [[https://blog.waffles.space/2018/12/07/deep-dive-into-hashbrown/][The Swiss Army Knife of Hashmaps]]             :article:datastructures:2018:
+** [[https://github.com/facebook/folly/blob/master/folly/container/F14.md][Github: facebook/folly: F14 Hash Table]] :datastructures:2018:
+*** [[https://groups.google.com/forum/#!msg/hashtable-benchmarks/-nT-3fESXq8/1ckpGBiAAgAJ][Google Groups: folly::F14ValueSet vs absl::flat_hash_set]] :discussion:datastructures:2018:
+#+CAPTION: Nathan Bronson discussed tradeoffs between SwissTable and F14
+#+BEGIN_QUOTE
+From a performance perspective the main design difference between SwissTable and F14 is whether the metadata and data are separated (as in SwissTable) or colocated (as in F14).
+I would expect colocation to work better when the entries are small, and separation to work better the elements are large.
+F14 also pushes users toward a third storage strategy, F14VectorSet, for medium and large values.
+This stores elements in a contiguous array and puts a 4-byte index into the main hash table, which makes lookup slower but iteration (and hence destruction) faster.
+This indirect strategy also saves memory, because the vector effectively has a perfect load factor.
+#+END_QUOTE
 * Databases
 ** [[https://cstack.github.io/db_tutorial/][Let's Build a Simple Database]] :datastructures:databases:c:language:sql:sqlite:
    Writing a sqlite clone from scratch in C
@@ -754,6 +765,7 @@ What I will do, however, is offer a ton of different recommendations for differe
 ** [[https://thegradient.pub/why-rl-is-flawed/][Reinforcement learning's foundational flaw]] :machinelearning:reinforcement:2018:
 *** [[https://thegradient.pub/how-to-fix-rl/][How to fix reinforcement learning]] :machinelearning:reinforcement:2018:
 ** [[https://towardsdatascience.com/how-to-build-your-own-neural-network-from-scratch-in-python-68998a08e4f6][How to build your own Neural Network from scratch in Python]] :article::neuralnetworks:2018:
+** [[https://github.com/GokuMohandas/practicalAI/blob/master/README.md][Github: GokuMohandas/practicalAI]] :repository:machinelearning:python:2018:
 * Mazes
 
 ** [[http://weblog.jamisbuck.org/2011/2/7/maze-generation-algorithm-recap][Maze Generation Algorithm Recap]] :maze:algorithms:
@@ -1590,6 +1602,9 @@ The system processes about 30% of all diffs across Google that have statement co
 *** [[https://opencredo.com/terraform-infrastructure-design-patterns/][Terraform Infrastructure Design Patterns]] :systems:terraform:2015:
 *** [[https://medium.com/levops/self-invented-how-to-terraform-rules-4b1eb00709ac][Self-invented “how to Terraform” rules]] :systems:terraform:2017:
 *** [[https://github.com/tweag/terraform-provider-secret][Github: tweag/terraform-provider-secret]] :repository:systems:terraform:2018:
+** Windows
+*** [[https://chocolatey.org/][Chocolatey: The package manager for Windows]]
+*** [[https://boxstarter.org/][Boxstarter: Repeatable windows environment installations using Chocolatey]]
 * Uncategorized Otherwise
 ** [[http://www.silota.com/docs/recipes/][Advanced SQL Recipes to jumpstart your Analysis]] :sql:tricks:data:analysis:
 ** [[http://www.linusakesson.net/programming/tty/][The TTY Demystified]] :unix:history:tty:
