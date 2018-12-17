@@ -454,6 +454,11 @@ F14 also pushes users toward a third storage strategy, F14VectorSet, for medium 
 This stores elements in a contiguous array and puts a 4-byte index into the main hash table, which makes lookup slower but iteration (and hence destruction) faster.
 This indirect strategy also saves memory, because the vector effectively has a perfect load factor.
 #+END_QUOTE
+** [[https://github.com/realriot/ff4d/][Github: realriot/ff4d]] :filesystems:fuse:2013:2018:
+   A ~Python2~ implementation of a [[https://github.com/libfuse/libfuse][Fuse]] filesystem for DropBox.
+
+   Merlin has contributed to this project:
+   - [[https://github.com/realriot/ff4d/pull/29][Business account support #29]] (2018)
 * Databases
 ** [[https://cstack.github.io/db_tutorial/][Let's Build a Simple Database]] :datastructures:databases:c:language:sql:sqlite:
    Writing a sqlite clone from scratch in C
