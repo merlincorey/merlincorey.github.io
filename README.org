@@ -48,6 +48,7 @@
 | stagit                |                 | git               |             |
 | hugo                  |                 |                   | go          |
 | ssg                   |                 | markdown          | POSIX shell |
+| saait                 | 2016 to 2018    | html              |             |
 * Generator Zoo
 ** [[http://orgmode.org/][orgmode]] 						    :emacs:lisp:html:
 
@@ -104,3 +105,4 @@
 *** [[https://www.dannyguo.com/blog/migrating-from-jekyll-to-hugo/][Migrating from Jekyll to Hugo]] :blog::2018:
 ** [[https://www.romanzolotarev.com/ssg.html][ssg]] :shell:markdown:
    =POSIX= shell /static site generator/ by [[https://www.romanzolotarev.com/][Roman Zolotarev]] from the OpenBSD community.
+** [[https://codemadness.org/saait.html][Saait]] :c:html:

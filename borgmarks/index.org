@@ -238,6 +238,7 @@ But typically m>>n, so the net result is the same.
 ** [[https://www.evanmiller.org/how-not-to-sort-by-average-rating.html][How not to sort by average rating]] :article:algorithms:sorting:2009:2016:
 ** Books
 *** [[https://github.com/mdipierro/nlib][Annotated Algorithms in Python]] :book:algorithms:python:
+*** [[http://jeffe.cs.illinois.edu/teaching/algorithms/?][Algorithms by Jeff Erickson]] :book:algorithms:2018:
 ** Programming Exercises
 *** [[https://adventofcode.com/][Advent of Code]] :programming:exercise:
 *** [[https://codeforces.com/][CodeForces]] :programming:exercise:competition:
@@ -439,6 +440,7 @@ Surviving are his wife of 54 years, Tomoko, of Oberlin, Ohio; and two daughters,
 ** [[http://seriot.ch/parsing_json.php][Parsing JSON is a Minefield]] :datastructure:parsing:json:2016:2018:
 ** [[http://canonical.org/~kragen/memory-models/][The memory models that underlie programming languages]] :datastructures:programming:languages:memory:models:2016:
 ** [[https://probablydance.com/2018/05/28/a-new-fast-hash-table-in-response-to-googles-new-fast-hash-table/][A new fast hash table in response to Google’s new fast hash table]] :datastructures:hash:table:2018:
+** [[http://0.30000000000000004.com/][Floating Point Math]] :datastructures:floatingpoint:
 *** [[https://github.com/skarupke/flat_hash_map][skarupke/flat_hash_map]] :datastructures:hash:table:2018:
 ** [[https://cs.uwaterloo.ca/~plragde/flaneries/FDS/][Functional Data Structures]] :book:datastructures:functional:
 ** [[https://www.cs.uaf.edu/2012/fall/cs301/lecture/10_24_weirdfloat.html][Bits in a Float, and Infinity, NaN, and denormal]] :datastructures:
@@ -557,6 +559,7 @@ emacs --quick --script publish.el --funcall=org-publish-all
 *** [[https://news.ycombinator.com/item?id=17608619][Hacker News Discussion #17608619]] :discussion:emulator:arcade:tutorial:2016:
 ** [[https://problemkaputt.de/gbatek.htm][GBATek - Gameboy Advance / Nintendo DS / DSi - Technical Info]] :nintendo:gameboy:nintendo:dsi:documentation:
 ** [[https://dolphin-emu.org/blog/2018/07/21/myth-debugging-wii-more-demanding-emulate-gamecube/][Myth Debugging: Is the Wii More Demanding to Emulate than the GameCube?]] :article:2018:
+** [[https://8bitworkshop.com/][8bit Workshop: Write 8-bit code in your browser]] :2019:
 ** Nintendo Entertainment System
 *** [[https://github.com/blanham/ChickeNES][blanham/ChickeNES]] :nintendo:entertainment:system:emulator:c:2013:2015:
 *** [[https://medium.com/@fogleman/i-made-an-nes-emulator-here-s-what-i-learned-about-the-original-nintendo-2e078c9b28fe][I made an NES emulator. Here’s what I learned about the original Nintendo.]] :nintendo:entertainment:system:emulator:2015:
@@ -578,6 +581,7 @@ emacs --quick --script publish.el --funcall=org-publish-all
 *** [[http://blog.rekawek.eu/2017/02/09/coffee-gb/][Why did I spend 1.5 months creating a Gameboy emulator?]] :nintendo:gameboy:emulator:java:2017:
 **** [[https://github.com/trekawek/coffee-gb/][trekawek/coffee-gb]] :nintendo:gameboy:emulator:java:2017:
 
+*** [[https://invisibleup.neocities.org/articles/18/][Making a Game Boy Game! Part 1]] :article:nintendo:gameboy:game:
 * Free Books (TODO: REMOVE)
   Books can be categorized by tags to generate a general Books section/page.
 ** [[https://softwarefoundations.cis.upenn.edu/][Software Foundations Series (books)]] :books:logic:math:computer:science:proofs:coq:
@@ -708,13 +712,17 @@ Home page: http://www.helixsoft.nl/
 * Graphics
 ** [[http://www.extentofthejam.com/pseudo/][Lou's Psuedo 3d Page]] :graphics:3d:rendering:
 ** [[http://machinethink.net/blog/3d-rendering-without-shaders/][3D Rendering without shaders]] :graphics:3d:rendering:shaders:
-
-   [[https://news.ycombinator.com/item?id=13448047][Hackernews discussion]] with some interesting discourse and links such as [[https://fgiesen.wordpress.com/2013/02/06/the-barycentric-conspirac/][The Barycentric Conspiracy]].
-
+*** [[https://news.ycombinator.com/item?id=13448047][Hackernews discussion]] 
+    Some interesting discourse and links such as [[https://fgiesen.wordpress.com/2013/02/06/the-barycentric-conspirac/][The Barycentric Conspiracy]].
 ** [[https://www.fasterthan.life/blog/2017/7/11/i-am-graphics-and-so-can-you-part-1][I Am Graphics And So Can You]] 	       :graphics:3d:rendering:vulkan:
 ** [[http://iquilezles.org/www/index.htm][Íñigo Quílez' Demo and Shader Graphics Articles]] :graphics:demo:scene:shaders:
 ** [[https://www.impulseadventure.com/photo/jpeg-huffman-coding.html][JPEG Huffman Coding Tutorial]] :graphics:compression:images:2010:
-* Hardware
+** [[https://github.com/ssloy/tinykaboom/wiki][KABOOM! in 180 lines of bare C++]]                  :graphics:tutorial:2019:
+** [[http://www.pbr-book.org/][Physically Based Rendering: From Theory to Implementation]] :graphics:rendering:
+** [[https://github.com/ssloy/tinyraytracer][Github: ssloy/tinyraytracer]] :repository:graphics:rendering:2019:
+** [[https://erkaman.github.io/posts/beginner_computer_graphics.html][How to Start Learning Computer Graphics Programming]] :article:graphics:
+*** [[https://news.ycombinator.com/item?id=18840859][Hacker News Discussion #18840859]] :discussion:article:graphics:2019:
+* Hardware and Embedded
 ** [[https://jaycarlson.net/microcontrollers/][The Amazing $1 Microcontroller]]
 
    Exploration of 21 different microcontrollers each costing less than $1 to help familiarize oneself with all the major ecosystems out there.
@@ -745,6 +753,7 @@ What I will do, however, is offer a ton of different recommendations for differe
 ** [[https://basicengine.org/][BASIC Engine]] :hardware:systemonchip:2018:
 ** [[http://www.rane.com/note110.html][Sound System Interconnection]] :audio:hardware:1985:
 ** [[https://blog.arduino.cc/2018/08/24/announcing-the-arduino-command-line-interface-cli/][Announcing the Arduino Command Line Interface (CLI)]] :article:2018:
+** [[https://dmitryfrank.com/articles/how_i_ended_up_writing_my_own_kernel][How I ended up writing a new real-time kernel]] :article:2015:
 * Home Automation and Internet of Things
 ** [[http://www.bruhautomation.com/][Bruh Automation]] :home:automation:tutorials:reviews:
 
@@ -772,11 +781,11 @@ What I will do, however, is offer a ton of different recommendations for differe
 ** [[https://towardsdatascience.com/how-to-build-your-own-neural-network-from-scratch-in-python-68998a08e4f6][How to build your own Neural Network from scratch in Python]] :article::neuralnetworks:2018:
 ** [[https://github.com/GokuMohandas/practicalAI/blob/master/README.md][Github: GokuMohandas/practicalAI]] :repository:machinelearning:python:2018:
 * Mazes
-
 ** [[http://weblog.jamisbuck.org/2011/2/7/maze-generation-algorithm-recap][Maze Generation Algorithm Recap]] :maze:algorithms:
 
 Nice recap of maze generation algorithms from a minecraft modder.  Check out his [[http://jamisbuck.org/mazes/minecraft.html][minecraft maze generator]].
 
+** [[http://www.astrolog.org/labyrnth/algrithm.htm][Maze Classification]] :maze:classification:
 * Networking
 ** [[https://www.nanog.org/sites/default/files/2_Steenbergen_Tutor][Everything You Always Wanted to Know About Optical Networking – But Were Afraid to Ask]] :networking:optical:fiber:2017:
 ** [[http://beej.us/guide/bgnet/][Beej's Guide to Network Programming]] :networking:programming:c:unix:sockets:beejs:guide:
@@ -842,6 +851,7 @@ you can work around this client side with per hour filenames or the other usual 
 ** [[https://tls13.ulfheim.net/][The New Illustrated TLS Connection]] :article:networking:2018:
 *** [[https://news.ycombinator.com/item?id=18400158][Hacker News Discussion #18400158]] :discussion:article:networking:2018:
 ** [[https://dn42.net/Home][dn42 dynamic VPN]] :networking:
+** [[https://www.destroyallsoftware.com/compendium/network-protocols][Network Protocols for anyone who knows a programming language]] :article:network:programming:
 * Object Oriented Programming and Design
 ** [[https://ericlippert.com/2015/04/27/wizards-and-warriors-part-one/][Wizards and Warriors: Part One]] :object:oriented:design:
 *** [[https://ericlippert.com/2015/04/30/wizards-and-warriors-part-two/][Wizards and Warriors: Part Two]] :object:oriented:design:
@@ -961,7 +971,6 @@ you can work around this client side with per hour filenames or the other usual 
 **** [[http://cpptruths.blogspot.com/2015/06/fun-with-lambdas-c14-style-part-4.html][Fun with Lambdas: C++14 Style (part 4)]] :blog:language:cpp:2015:
 *** [[https://github.com/lefticus/cppbestpractices][lefticus/cppbestpractices]]         :repository:language:cpp:best:practices:2015:2018:
 **** [[https://lefticus.gitbooks.io/cpp-best-practices/][GitBook: C++ Best Practices]]      :book:language:cpp:best:practices:2018:
-
 *** [[https://github.com/rigtorp/awesome-modern-cpp][rigtorp/awesome-modern-cpp]] :repository:language:cpp:awesome:list:2016:
 *** [[https://docs.microsoft.com/en-us/cpp/cpp/welcome-back-to-cpp-modern-cpp][Microsoft: Welcome back to C++ - Modern C++]] :language:cpp11:cpp14:2016:
 *** [[https://google.github.io/styleguide/cppguide.html][Google C++ Style Guide]] :language:cpp:style:guide:
@@ -989,6 +998,8 @@ you can work around this client side with per hour filenames or the other usual 
 **** [[https://ds9a.nl/articles/posts/cpp-4/][Modern C++ for C Programmers: Part 4]] :article:cpp:cpp14:cpp17::2018:
 ***** [[https://news.ycombinator.com/item?id=17608811][Hacker News Discussion #17608811]] :discussion:article:cpp:cpp14:cpp17::2018:
 *** [[https://github.com/green7ea/cpp-compilation/blob/master/README.md][The C++ Build Process Explained]] :article:cpp:2018:
+*** [[http://www.gamasutra.com/view/news/169296/Indepth_Functional_programming_in_C.php][In-depth: Functional programming in C++ by John Carmack]] :article:cpp:2012:
+*** [[https://mikelui.io/2019/01/03/seriously-bonkers.html][Initialization in C++ is Seriously Bonkers]] :article:cpp:2019:
 *** Libraries
 **** [[https://github.com/nothings/single_file_libs][Github: nothings/single_file_libs]] :repository:list:cpp:library:
 **** Testing
@@ -1180,9 +1191,15 @@ I'm in the process of getting the detangle working for noweb mode. The current i
 **** [[https://news.ycombinator.com/item?id=5375735][Hacker News Discussion #5375735]] :discussion:lisp:scheme:2013:
 **** [[https://news.ycombinator.com/item?id=14247269][Hacker News Discussion #14247269]] :discussion:lisp:scheme:2017:
 **** [[https://news.ycombinator.com/item?id=18308721][Hacker News Discussion #18308721]] :discussion:lisp:scheme:2018:
+*** [[https://xuanji.appspot.com/isicp/][Structure and Interpretation of Computer Programs Interactive Version]] :scheme:2014:2019:
+*** [[https://ebzzry.io/en/script-lisp/][Scripting in Common Lisp]] :lisp:article:2018:
+*** [[http://www.paulgraham.com/rootsoflisp.html][Paul Graham: The Roots of Lisp]] :lisp:article:2001:
 ** [[http://kittenlang.org/][Kitten Programming Language]]
 ** OCaml
 *** [[https://try.ocamlpro.com/][Try OCaml]] :tutorial:exercise:ocaml:2018:
+** PHP
+*** [[https://phptherightway.com/][PHP The Right Right]] :php:article:2018:
+*** [[http://www.phpthewrongway.com/][PHP The Wrong Way]] :php:article:2018:
 ** Python
 *** [[http://automatetheboringstuff.com/chapter0/][Automate the Boring Stuff with Python]] :book:python:programming:automation:
 *** [[http://exploreflask.com][Explore Flask]] :python:programming:web:site:api:
@@ -1197,6 +1214,7 @@ I'm in the process of getting the detangle working for noweb mode. The current i
 *** [[http://treyhunner.com/2018/10/asterisks-in-python-what-they-are-and-how-to-use-them/][Asterisk in Python: what they are and how to use them]] :article:python:2018:
 *** [[https://chriswarrick.com/blog/2018/07/17/pipenv-promises-a-lot-delivers-very-little/][Pipenv: promises a lot, delivers very little]] :article:python:packaging:2018:
 *** [[https://www.python.org/dev/peps/pep-0518/][PEP 518 -- Specifying Minimum Build System Requirements for Python Projects]] :standard:python:packaging:2018:
+*** [[https://composingprograms.com/][Composing Programs (SICP in Python)]] :python:curriculum:
 *** Libraries and Tools
 **** [[http://npyscreen.readthedocs.io/index.html][npyscreen Documentation]] :python:library:terminal:ui:2014:
 **** [[http://python-prompt-toolkit.readthedocs.io/en/master/][prompt-toolkit Documentation]] :python:library:terminal:ui:2014:2018:
@@ -1501,6 +1519,7 @@ So be happy with 'git tag -s'. It really is the right way.
 ** [[https://ndpsoftware.com/git-cheatsheet.html][Visual Git Cheatsheet]] :git:2018:
 ** [[http://tom.preston-werner.com/2009/05/19/the-git-parable.html][The Git Parable]] :article:git:2009:
 ** [[http://aosabook.org/en/git.html][The Architecture of Open Source Applications: Git in a Nutshell]] :book:git:
+** [[https://rachelcarmena.github.io/2018/12/12/how-to-teach-git.html][How to teach Git]] :article:git:2019:
 * Shells and Terminals
 ** [[https://zanshin.net/2013/02/02/zsh-configuration-from-the-ground-up/][Zsh Configuration From the Ground Up]] :zsh:configuration:tutorial:2013:
 ** [[http://www.howardism.org/Technical/Emacs/eshell-fun.html][Eschewing Zshell for Emacs Shell]] :zsh:emacs:eshell:
@@ -1510,6 +1529,7 @@ So be happy with 'git tag -s'. It really is the right way.
 ** [[https://www.idontplaydarts.com/2016/04/detecting-curl-pipe-bash-server-side/][Detecting the use of "curl | bash" server side]] :article:2016:
 *** [[https://news.ycombinator.com/item?id=11532599][Hacker News Discussion #11532599]]                :discussion:article:2016:
 *** [[https://news.ycombinator.com/item?id=17636032][Hacker News Discussion #17636032]] :discussion:article:2018:
+** [[http://www.grymoire.com/Unix/Sed.html][Sed - An Introduction and Tutorial]] :shell:1994:2013:
 * Security
 ** [[https://www.hackthebox.eu/][Hack the Box]] :ctf:
 ** [[https://picoctf.com/][PicoCTF]] :ctf:
@@ -1603,6 +1623,12 @@ The system processes about 30% of all diffs across Google that have statement co
 *** [[https://news.ycombinator.com/item?id=18426194][Hacker News Discussion #18426194]] :discussion:article:systems:2018:
 ** [[https://gitlab.com/NickBusey/HomelabOS][Gitlab: NickBusy/HomelabOS]] :repository:systems:2018:
 ** [[https://itnext.io/benchmark-results-of-kubernetes-network-plugins-cni-over-10gbit-s-network-36475925a560][Benchmark results of Kubernetes network plugins (CNI) over 10Gbit/s network]] :article:systems:networking:containers:2018:
+** [[https://queue.acm.org/detail.cfm?id=2945077][The Small Batches Principle]] :article:devops:2016:
+** [[https://queue.acm.org/detail.cfm?id=3300018][SQL is no excuse to avoid DevOps]] :article:devops:2018:
+** [[https://bl33pbl0p.github.io/systemd.html][Notes on how systemd's Job engine is structured]]          :systems:systemd:
+** [[http://www.daemonology.net/blog/2018-12-26-the-many-ways-to-launch-FreeBSD-in-EC2.html][The many ways to launch FreeBSD in EC2]] :article:systems:2018:
+** Kubernetes
+*** [[https://srcco.de/posts/kubernetes-failure-stories.html][Kubernetes Failure Stories]] :article:systems:kubernetes:2019:
 ** Terraform
 *** [[https://opencredo.com/terraform-infrastructure-design-patterns/][Terraform Infrastructure Design Patterns]] :systems:terraform:2015:
 *** [[https://medium.com/levops/self-invented-how-to-terraform-rules-4b1eb00709ac][Self-invented “how to Terraform” rules]] :systems:terraform:2017:
@@ -1766,6 +1792,13 @@ There is no one-size-fits-all solution to this problem, but anything you can do 
 ** [[https://www.math.uwaterloo.ca/~hwolkowi/matrixcookbook.pdf][The Matrix Cookbook]] :mathematics:book:2012:
 ** [[https://henrikwarne.com/2018/12/03/developer-on-call/][Developer On Call]] :article:2018:
 *** [[https://news.ycombinator.com/item?id=18586743][Hacker News Discussion #18586743]] :discussion:article:2018:
+** [[https://functionalcs.github.io/curriculum/][A Self-Learning, Modern Computer Science Curriculum]] :computerscience:curriculum:2019:
+** [[https://hiringengineersbook.com/post/trouble-hiring/][Trouble hiring senior engineers? It's probably you]] :article:hiring:engineers:2019:
+** [[https://scottbot.net/the-route-of-a-text-message/][The Route of a Text Message]] :article:hardware:software:networking:2019:
+** [[https://pellsson.github.io/][SWAGGINZZZ: RNG predicting Nethack ascension bot]] :article:2019:
+** [[https://github.com/trimstray/the-book-of-secret-knowledge][Github: trimstray/the-book-of-secret-knowledge]] :repository:systems:networking:security:2018:2019:
+** [[https://github.com/ligurio/awesome-ttygames][Github: ligurio/awesome-ttygames]] :repository:games:2016:2018:
+** [[https://www.lockhaven.edu/~dsimanek/puzzles/puzzles.htm][Donald Simanek's Physics Puzzles]] :puzzles:
 * UNIX and BSD
 ** [[https://fosdem.org/2017/schedule/event/my_bsd_sucks_less/][My BSD Sucks Less Than Yours]] :talk:unix:openbsd:freebsd:
 ** [[http://changelog.complete.org/archives/9317-has-linux-lost-its-way-comments-prompt-a-debian-developer-to-revisit-freebsd-after-20-years][“Has Linux lost its way?” comments prompt a Debian developer to revisit FreeBSD after 20 years]] :unix:linux:comparison:2015:
