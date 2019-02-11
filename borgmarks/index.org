@@ -331,6 +331,7 @@ o$22b2o3bo$21bo$21b2obo$20bo$19b5o$19bo4bo$18b3ob3o$18bob5o$18bo$20bo$
    #+END_QUOTE
 
 ** [[http://bastian.rieck.me/blog/posts/2018/cmake_tips/][Some nice and accurate CMake tips]] :build:systems:cmake:2018:
+** [[https://izzys.casa/2019/02/everything-you-never-wanted-to-know-about-cmake/][Everything you never wanted to know about CMake]] :build:systems:cmake:2019:
 * Compilers
 ** GCC
 *** [[https://stackoverflow.com/questions/38960763/ftrapv-and-fwrapv-which-is-better-for-efficiency][StackOverflow: "-ftrapv" and "-fwrapv": Which is better for efficiency?]] :compilers:gcc:2016:
@@ -676,6 +677,12 @@ These indeed can make your CSS code work for both the stone age and hottest brow
 ** [[http://atomicdesign.bradfrost.com/][Atomic Design]] :book:design:2018:
 ** [[https://pinegrow.com/courses/learn-css-grid-with-pinegrow/][Learn CSS Grid with Pinegrow]] :tutorial:video:css:cssgrid:
 ** [[https://immutablewebapps.org/][Immutable Web Apps]] :singlepageapp:
+** [[https://www.256kilobytes.com/content/show/4399/get-these-dependencies-off-my-lawn-5-tasks-you-didnt-know-could-be-done-with-pure-html-and-css#hsl-colors-are-built-into-the-css-standard][Get These Dependencies Off My Lawn: 5 Tasks You Didn't Know Could be Done with Pure HTML and CSS]] :article:frontend:html:css:2019:
+   1. CSS supports smooth scrolling on the HTML element
+   2. CSS supports HSL colors
+   3. HTML ~details~ entity with ~summary~ and ~p~ members makes a non-javascript "read more" toggle
+   4. HTML ~progress~ and ~meter~ entities for progress bars and metrics meters
+   5. [[https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_variables][CSS Variables]] exist
 * Functional Programming
 ** [[https://chriskohlhepp.wordpress.com/functional-programming-section/metacircular-adventures-in-functional-abstraction-challenging-clojure-in-common-lisp/][Metacircular Adventures in Functional Abstraction]] :functional:programming:common:lisp:clojure:
 ** [[https://aphyr.com/posts/301-clojure-from-the-ground-up-welcome][Clojure from the ground up]] :functional:programming:clojure:
@@ -852,6 +859,7 @@ you can work around this client side with per hour filenames or the other usual 
 *** [[https://news.ycombinator.com/item?id=18400158][Hacker News Discussion #18400158]] :discussion:article:networking:2018:
 ** [[https://dn42.net/Home][dn42 dynamic VPN]] :networking:
 ** [[https://www.destroyallsoftware.com/compendium/network-protocols][Network Protocols for anyone who knows a programming language]] :article:network:programming:
+** [[http://networkdiagram101.com/][17 Tips for Creating Better Network Diagrams]] :networking:2017:
 * Object Oriented Programming and Design
 ** [[https://ericlippert.com/2015/04/27/wizards-and-warriors-part-one/][Wizards and Warriors: Part One]] :object:oriented:design:
 *** [[https://ericlippert.com/2015/04/30/wizards-and-warriors-part-two/][Wizards and Warriors: Part Two]] :object:oriented:design:
@@ -1568,6 +1576,17 @@ We propose a heuristic for judging whether a node is arid or not, conditioned on
 We focus on a code-review based approach and consider the effects of surfacing mutation results on developer attention.
 The described system is used by 6,000 engineers in Google on all code changes they author or review, affecting in total more than 14,000 code authors as part of the mandatory code review process.
 The system processes about 30% of all diffs across Google that have statement coverage calculated.
+#+END_QUOTE
+** [[https://semver.org/][Semantic Versioning]] :software:engineering:2009:
+** [[https://words.steveklabnik.com/what-s-next-for-semver][What's next for SemVer]] :article:software:engineering:2019:
+*** [[https://github.com/semver/semver][Github: semver/semver]] :2019:
+*** [[https://news.ycombinator.com/item?id=19135965][Hacker News Discussion #19135965]] :discussion:article:software:engineering:2019:
+#+CAPTION: Steve Klabnik explains the major missing specification
+#+BEGIN_QUOTE
+“Matchers” or “ranges” (even the terminology is split up thanks to the lack of a spec!) are not defined in semver.
+It only defines how to version a particular software artifact, it cannot answer the question “does version 1.2.3 fit the constraint > 1.0.0?”
+
+Does that make sense? The “> 1.0.0” part is undefined. That includes things like “is that space required there?”, and so is an interoperabilty issue. 
 #+END_QUOTE
 * Systems Engineering
 ** [[https://alestic.com/2010/12/ec2-user-data-output/][Logging user-data Script Output on EC2 Instances]] :systems:cloudinit:logging:aws:ec2:
