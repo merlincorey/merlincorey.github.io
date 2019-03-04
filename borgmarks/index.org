@@ -236,6 +236,7 @@ But typically m>>n, so the net result is the same.
 *** [[https://news.ycombinator.com/item?id=17599660][Hacker News #17599660]] :discussion:article:algorithms:rng:2018:
 ** [[http://wordsandbuttons.online/tries_as_the_evolution_of_nothing.html][Tries as the evolution of nothing]] :article:algorithms:datastructures:2018:
 ** [[https://www.evanmiller.org/how-not-to-sort-by-average-rating.html][How not to sort by average rating]] :article:algorithms:sorting:2009:2016:
+** [[http://www.oranlooney.com/post/fibonacci/][A Fairly Fast Fibonacci Function]] :article:algorithms:fibonacci:2019:
 ** Books
 *** [[https://github.com/mdipierro/nlib][Annotated Algorithms in Python]] :book:algorithms:python:
 *** [[http://jeffe.cs.illinois.edu/teaching/algorithms/?][Algorithms by Jeff Erickson]] :book:algorithms:2018:
@@ -372,6 +373,9 @@ It's mainly useful for debugging purposes and perhaps in a few cases for safety,
 ** [[https://ericrafaloff.com/shamirs-secret-sharing-scheme/][Shamir's Secret Sharing Scheme]]             :cryptography:keyexchange:2018:
 ** [[http://rot8000.com/Index][ROT8000]] :cryptography:2018:
 *** [[https://github.com/rottytooth/rot8000][Github: rottytooth/rot8000]] :repository:cryptography:2018:
+** [[http://passwordstore.org/][Pass: The Standard Unix Password Manager]] :cryptography:tool:
+*** [[https://github.com/tadfisher/pass-otp][Github: tadfisher/pass-otp]] :repository:cryptography:2018:
+*** [[https://github.com/browserpass/browserpass][Github: browserpass/browserpass]] :repository:cryptography:2018:
 * Cryptocurrencies
 ** [[http://www.righto.com/2014/09/mining-bitcoin-with-pencil-and-paper.html][Mining Bitcoin with pencil and paper: 0.67 hashes per day]] :cryptocurrency:bitcoin:2014:
 ** [[http://www.righto.com/2014/02/ascii-bernanke-wikileaks-photographs.html][Hidden surprises in the Bitcoin blockchain and how they are stored: Nelson Mandela, Wikileaks, photos, and Python software]] :cryptocurrency:blockchain:creative:hacking:2014:
@@ -430,7 +434,7 @@ Surviving are his wife of 54 years, Tomoko, of Oberlin, Ohio; and two daughters,
 * Datastructures and Filesystems
 ** [[http://www.eelis.net/C++/analogliterals.xhtml][Multi-Dimensional Analog Literals]] :datastructures:analog:literals:2006:
 ** [[https://www.interviewcake.com/article/python/data-structures-coding-interview][Datastructures for Coding Interviews]]    :datastructures:python:interviews:
-** [[http://www.catb.org/esr/structure-packing/][The Lost Art of C Structure Packing]] :datastructures:c:packing:esr:2014:
+** [[http://www.catb.org/esr/structure-packing/][The Lost Art of Structure Packing]]      :datastructures:packing:esr:2014:
 ** [[http://use-the-index-luke.com/no-offset][We need tool support for keyset pagination]] :datastructures:databases:sql:pitfall:pagination:offset:
 ** [[https://www.percona.com/blog/2017/11/15/zfs-from-a-mysql-perspective/][ZFS from a MySQL perspective]] :datastructures:databases:filesystems:mysql:zfs:2017:
 ** [[https://blog.demofox.org/2017/11/21/floating-point-precision/][Demystifying Floating Point Precision]] :datastructures:floating:point:numbers:2017:
@@ -1202,6 +1206,7 @@ I'm in the process of getting the detangle working for noweb mode. The current i
 *** [[https://xuanji.appspot.com/isicp/][Structure and Interpretation of Computer Programs Interactive Version]] :scheme:2014:2019:
 *** [[https://ebzzry.io/en/script-lisp/][Scripting in Common Lisp]] :lisp:article:2018:
 *** [[http://www.paulgraham.com/rootsoflisp.html][Paul Graham: The Roots of Lisp]] :lisp:article:2001:
+*** [[https://github.com/rigetti/quilc][Github: rigetti/guilc]] :repository:lisp:quantum:2019:
 ** [[http://kittenlang.org/][Kitten Programming Language]]
 ** OCaml
 *** [[https://try.ocamlpro.com/][Try OCaml]] :tutorial:exercise:ocaml:2018:
@@ -1234,6 +1239,8 @@ I'm in the process of getting the detangle working for noweb mode. The current i
 **** [[https://www.anaconda.com/blog/developer-blog/python-data-visualization-2018-why-so-many-libraries/][Python Data Visualization 2018: Why So Many Libraries?]] :article:python:visualization:2018:
 **** [[https://plotnine.readthedocs.io/en/latest/][Plotnine Documentation: GGPlot2 in Python]] :documentation:python:visualization:
 **** [[https://github.com/sdispater/poetry][Github: sdispater/poetry]] :repository:python:packaging:2018:
+** Rust
+*** [[https://cglab.ca/~abeinges/blah/too-many-lists/book/][Learning Rust with Entirely too many Linked Lists]] :book:rust:
 ** SQL
 *** [[https://selectstarsql.com/][Select Star SQL]] :book:exercise:databases:sql:2018:
 **** [[https://news.ycombinator.com/item?id=17905666][Hacker News Discussion #17905666]] :discussion:book:exercise:databases:sql:2018:
@@ -1311,8 +1318,10 @@ I'm in the process of getting the detangle working for noweb mode. The current i
 ** [[https://github.com/FireyFly/pixd][Colourful visualization tool for binary files]] :binary:data:visualization:
 ** [[https://binary.ninja/][Binary Ninja]] :reverse:engineering:platform:
 ** [[https://www.trailofbits.com/research-and-development/binja/][Trail of Bits: Binary Ninja]] :reverse:engineering:platform:
-** [[https://github.com/radareorg/cutter][radareorg/cutter]] :github:reverse:engineering:platform:
+** [[https://github.com/radareorg/cutter][Github: radareorg/cutter]]         :repository:reverse:engineering:platform:
 ** [[https://jamchamb.github.io/2018/06/09/animal-crossing-developer-mode.html][Reverse engineering Animal Crossing's developer mode]] :reverse:engineering:2018:
+** [[https://redasm.io/][REDasm Disassembler]] :reversing:tool:
+*** [[https://github.com/REDasmOrg/REDasm][Github: REDasmOrg/REDasm]]                 :repository:reversing:2018:2019:
 * Revision Control
 ** [[https://git-scm.com/book/en/v2][Git Book (v2)]] 						   :git:book:
 *** [[https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History][Git Book: 7.6 Rewriting History]]                                :git:book:
@@ -1818,6 +1827,7 @@ There is no one-size-fits-all solution to this problem, but anything you can do 
 ** [[https://github.com/trimstray/the-book-of-secret-knowledge][Github: trimstray/the-book-of-secret-knowledge]] :repository:systems:networking:security:2018:2019:
 ** [[https://github.com/ligurio/awesome-ttygames][Github: ligurio/awesome-ttygames]] :repository:games:2016:2018:
 ** [[https://www.lockhaven.edu/~dsimanek/puzzles/puzzles.htm][Donald Simanek's Physics Puzzles]] :puzzles:
+** [[https://github.com/minimaxir/hacker-news-undocumented][Github: minimaxir/hacker-news-undocumented]] :repository:2018:2019:
 * UNIX and BSD
 ** [[https://fosdem.org/2017/schedule/event/my_bsd_sucks_less/][My BSD Sucks Less Than Yours]] :talk:unix:openbsd:freebsd:
 ** [[http://changelog.complete.org/archives/9317-has-linux-lost-its-way-comments-prompt-a-debian-developer-to-revisit-freebsd-after-20-years][“Has Linux lost its way?” comments prompt a Debian developer to revisit FreeBSD after 20 years]] :unix:linux:comparison:2015:
