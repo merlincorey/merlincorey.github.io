@@ -940,6 +940,7 @@ you can work around this client side with per hour filenames or the other usual 
 *** [[https://github.com/nemasu/asmttpd][nemasu/asmttpd]] :assmebly:x86:networking:http:2013:2017:
 *** [[http://www.egr.unlv.edu/~ed/x86.html][x86-64 Assembly Language Programming with Ubuntu]] :assembly:x86:book:2018:
 *** [[http://linasm.sourceforge.net/][Linux Assembly Collection of Fast Libraries]] :assembly:linux:
+*** [[https://gitlab.com/mcmfb/intro_x86-64/tree/master][Intro to x86-64 Assembly]] :book:assembly:2019:
 ** C
 *** [[http://www.maizure.org/projects/printf/index.html][Tearing apart printf()]] :c:language:low:level:2018:
 *** [[http://nullprogram.com/blog/2018/06/10/][Minimalist C Libraries]] :c:language:libraries:2018:
@@ -1207,6 +1208,8 @@ I'm in the process of getting the detangle working for noweb mode. The current i
 *** [[https://ebzzry.io/en/script-lisp/][Scripting in Common Lisp]] :lisp:article:2018:
 *** [[http://www.paulgraham.com/rootsoflisp.html][Paul Graham: The Roots of Lisp]] :lisp:article:2001:
 *** [[https://github.com/rigetti/quilc][Github: rigetti/guilc]] :repository:lisp:quantum:2019:
+*** [[https://google.github.io/styleguide/lispguide.xml][Google Common Lisp Style Guide]] :lisp:style:
+*** [[https://github.com/google/lisp-koans][Github: google/lisp-koans]] :repository:lisp:2013:2017:
 ** [[http://kittenlang.org/][Kitten Programming Language]]
 ** OCaml
 *** [[https://try.ocamlpro.com/][Try OCaml]] :tutorial:exercise:ocaml:2018:
@@ -1322,6 +1325,7 @@ I'm in the process of getting the detangle working for noweb mode. The current i
 ** [[https://jamchamb.github.io/2018/06/09/animal-crossing-developer-mode.html][Reverse engineering Animal Crossing's developer mode]] :reverse:engineering:2018:
 ** [[https://redasm.io/][REDasm Disassembler]] :reversing:tool:
 *** [[https://github.com/REDasmOrg/REDasm][Github: REDasmOrg/REDasm]]                 :repository:reversing:2018:2019:
+** [[https://github.com/NationalSecurityAgency/ghidra][Github: NationalSecurityAgency/ghidra]] :repository:reversing:2019:
 * Revision Control
 ** [[https://git-scm.com/book/en/v2][Git Book (v2)]] 						   :git:book:
 *** [[https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History][Git Book: 7.6 Rewriting History]]                                :git:book:
@@ -1657,10 +1661,14 @@ Does that make sense? The “> 1.0.0” part is undefined. That includes things 
 ** [[http://www.daemonology.net/blog/2018-12-26-the-many-ways-to-launch-FreeBSD-in-EC2.html][The many ways to launch FreeBSD in EC2]] :article:systems:2018:
 ** Kubernetes
 *** [[https://srcco.de/posts/kubernetes-failure-stories.html][Kubernetes Failure Stories]] :article:systems:kubernetes:2019:
-** Terraform
-*** [[https://opencredo.com/terraform-infrastructure-design-patterns/][Terraform Infrastructure Design Patterns]] :systems:terraform:2015:
-*** [[https://medium.com/levops/self-invented-how-to-terraform-rules-4b1eb00709ac][Self-invented “how to Terraform” rules]] :systems:terraform:2017:
-*** [[https://github.com/tweag/terraform-provider-secret][Github: tweag/terraform-provider-secret]] :repository:systems:terraform:2018:
+** Hashicorp
+*** Terraform
+**** [[https://opencredo.com/terraform-infrastructure-design-patterns/][Terraform Infrastructure Design Patterns]]        :systems:2015:
+**** [[https://medium.com/levops/self-invented-how-to-terraform-rules-4b1eb00709ac][Self-invented “how to Terraform” rules]]          :systems:2017:
+**** [[https://github.com/tweag/terraform-provider-secret][Github: tweag/terraform-provider-secret]] :repository:systems:2018:
+*** Vault
+**** [[https://www.hashicorp.com/resources/adopting-hashicorp-vault][Hashicorp Guide: Adopting Hashicorp Vault]] :guide:systems:
+**** [[https://old.reddit.com/r/devops/comments/ath4vg/structure_for_organizing_secrets_in_hashicorp/][Reddit /r/devops: Structure for organizing secrets in HashiCorp Vault]] :discussion:2019:
 ** Windows
 *** [[https://chocolatey.org/][Chocolatey: The package manager for Windows]]
 *** [[https://boxstarter.org/][Boxstarter: Repeatable windows environment installations using Chocolatey]]
@@ -1828,6 +1836,9 @@ There is no one-size-fits-all solution to this problem, but anything you can do 
 ** [[https://github.com/ligurio/awesome-ttygames][Github: ligurio/awesome-ttygames]] :repository:games:2016:2018:
 ** [[https://www.lockhaven.edu/~dsimanek/puzzles/puzzles.htm][Donald Simanek's Physics Puzzles]] :puzzles:
 ** [[https://github.com/minimaxir/hacker-news-undocumented][Github: minimaxir/hacker-news-undocumented]] :repository:2018:2019:
+** [[https://introtcs.org/public/index.html][Introduction to Theoretical Computer Science]] :book:computerscience:
+** [[http://joshua.smcvt.edu/linearalgebra/][Linear Algebra - A Free text for a standard US undergraduate course]] :book:mathematics:
+** [[http://immersivemath.com/ila/index.html][Immersive Math: Interactive Linear Algebra]] :mathematics:
 * UNIX and BSD
 ** [[https://fosdem.org/2017/schedule/event/my_bsd_sucks_less/][My BSD Sucks Less Than Yours]] :talk:unix:openbsd:freebsd:
 ** [[http://changelog.complete.org/archives/9317-has-linux-lost-its-way-comments-prompt-a-debian-developer-to-revisit-freebsd-after-20-years][“Has Linux lost its way?” comments prompt a Debian developer to revisit FreeBSD after 20 years]] :unix:linux:comparison:2015:
