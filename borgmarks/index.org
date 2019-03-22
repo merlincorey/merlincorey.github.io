@@ -237,6 +237,7 @@ But typically m>>n, so the net result is the same.
 ** [[http://wordsandbuttons.online/tries_as_the_evolution_of_nothing.html][Tries as the evolution of nothing]] :article:algorithms:datastructures:2018:
 ** [[https://www.evanmiller.org/how-not-to-sort-by-average-rating.html][How not to sort by average rating]] :article:algorithms:sorting:2009:2016:
 ** [[http://www.oranlooney.com/post/fibonacci/][A Fairly Fast Fibonacci Function]] :article:algorithms:fibonacci:2019:
+** [[https://blogarithms.github.io/articles/2019-03/cracking-dp-part-one][The One On Dynamic Programming!]] :article:algorithms:2019:
 ** Books
 *** [[https://github.com/mdipierro/nlib][Annotated Algorithms in Python]] :book:algorithms:python:
 *** [[http://jeffe.cs.illinois.edu/teaching/algorithms/?][Algorithms by Jeff Erickson]] :book:algorithms:2018:
@@ -687,6 +688,7 @@ These indeed can make your CSS code work for both the stone age and hottest brow
    3. HTML ~details~ entity with ~summary~ and ~p~ members makes a non-javascript "read more" toggle
    4. HTML ~progress~ and ~meter~ entities for progress bars and metrics meters
    5. [[https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_variables][CSS Variables]] exist
+** [[https://opensenselabs.com/blog/tech/rem-vs-em-vs-px-when-use-these-units][Rem vs Em vs Px | When to use these units]] :article:2018:
 * Functional Programming
 ** [[https://chriskohlhepp.wordpress.com/functional-programming-section/metacircular-adventures-in-functional-abstraction-challenging-clojure-in-common-lisp/][Metacircular Adventures in Functional Abstraction]] :functional:programming:common:lisp:clojure:
 ** [[https://aphyr.com/posts/301-clojure-from-the-ground-up-welcome][Clojure from the ground up]] :functional:programming:clojure:
@@ -916,6 +918,7 @@ you can work around this client side with per hour filenames or the other usual 
 ** [[https://raft.github.io/raft.pdf][In Search of an Understandable Consensus Algorithm]] :paper:distributed:consenus:2014:
 
 ** [[https://pdfs.semanticscholar.org/441f/ac7c2020e1c8f0d32adffca697bbb8a198a1.pdf][How to Write a Technical Paper: Structure and Style of the Epitome of your Research]] :2018:
+** [[http://www.eecg.toronto.edu/~jzhu/csc326/readings/iverson.pdf][Notation as a Tool of Thought]] :paper:apl:1979:
 * Physics
 ** [[https://www.susanjfowler.com/blog/2016/8/13/so-you-want-to-learn-physics][So You Want to Learn Physics...]] :physics:susan:flower:2016:
 ** [[https://physicstravelguide.com/][Physics Travel Guides]] :physics:study:tool:
@@ -1244,6 +1247,7 @@ I'm in the process of getting the detangle working for noweb mode. The current i
 **** [[https://github.com/sdispater/poetry][Github: sdispater/poetry]] :repository:python:packaging:2018:
 ** Rust
 *** [[https://cglab.ca/~abeinges/blah/too-many-lists/book/][Learning Rust with Entirely too many Linked Lists]] :book:rust:
+*** [[https://rust-lang-nursery.github.io/rust-cookbook/][Rust Cookbook]] :book:rust:
 ** SQL
 *** [[https://selectstarsql.com/][Select Star SQL]] :book:exercise:databases:sql:2018:
 **** [[https://news.ycombinator.com/item?id=17905666][Hacker News Discussion #17905666]] :discussion:book:exercise:databases:sql:2018:
@@ -1326,6 +1330,7 @@ I'm in the process of getting the detangle working for noweb mode. The current i
 ** [[https://redasm.io/][REDasm Disassembler]] :reversing:tool:
 *** [[https://github.com/REDasmOrg/REDasm][Github: REDasmOrg/REDasm]]                 :repository:reversing:2018:2019:
 ** [[https://github.com/NationalSecurityAgency/ghidra][Github: NationalSecurityAgency/ghidra]] :repository:reversing:2019:
+** [[https://icyphox.sh/blog/python-for-re-1/][Python for Reverse Engineering 1: ELF Binaries]] :article:reversing:2019:
 * Revision Control
 ** [[https://git-scm.com/book/en/v2][Git Book (v2)]] 						   :git:book:
 *** [[https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History][Git Book: 7.6 Rewriting History]]                                :git:book:
@@ -1839,6 +1844,8 @@ There is no one-size-fits-all solution to this problem, but anything you can do 
 ** [[https://introtcs.org/public/index.html][Introduction to Theoretical Computer Science]] :book:computerscience:
 ** [[http://joshua.smcvt.edu/linearalgebra/][Linear Algebra - A Free text for a standard US undergraduate course]] :book:mathematics:
 ** [[http://immersivemath.com/ila/index.html][Immersive Math: Interactive Linear Algebra]] :mathematics:
+** [[https://haseebq.com/my-ten-rules-for-negotiating-a-job-offer/][Ten Rules for Negotiating a Job Offer (part 1)]] :article:negotiation:2016:
+*** [[https://haseebq.com/how-not-to-bomb-your-offer-negotiation/][How Not to Bomb Your Offer Negotiation (part 2)]]            :article:2016:
 * UNIX and BSD
 ** [[https://fosdem.org/2017/schedule/event/my_bsd_sucks_less/][My BSD Sucks Less Than Yours]] :talk:unix:openbsd:freebsd:
 ** [[http://changelog.complete.org/archives/9317-has-linux-lost-its-way-comments-prompt-a-debian-developer-to-revisit-freebsd-after-20-years][“Has Linux lost its way?” comments prompt a Debian developer to revisit FreeBSD after 20 years]] :unix:linux:comparison:2015:
