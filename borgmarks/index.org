@@ -238,6 +238,7 @@ But typically m>>n, so the net result is the same.
 ** [[https://www.evanmiller.org/how-not-to-sort-by-average-rating.html][How not to sort by average rating]] :article:algorithms:sorting:2009:2016:
 ** [[http://www.oranlooney.com/post/fibonacci/][A Fairly Fast Fibonacci Function]] :article:algorithms:fibonacci:2019:
 ** [[https://blogarithms.github.io/articles/2019-03/cracking-dp-part-one][The One On Dynamic Programming!]] :article:algorithms:2019:
+** [[http://raganwald.com/2019/02/14/i-love-programming-and-programmers.html][A Brutal Look at Balanced Parentheses, Computing Machines, and Pushdown Automata]] :article:algorithms:2019:
 ** Books
 *** [[https://github.com/mdipierro/nlib][Annotated Algorithms in Python]] :book:algorithms:python:
 *** [[http://jeffe.cs.illinois.edu/teaching/algorithms/?][Algorithms by Jeff Erickson]] :book:algorithms:2018:
@@ -299,6 +300,8 @@ o$22b2o3bo$21bo$21b2obo$20bo$19b5o$19bo4bo$18b3ob3o$18bob5o$18bo$20bo$
 ** [[https://thomaslarock.com/2018/11/no-you-dont-need-a-blockchain/][No, You Don’t Need a Blockchain]] :article:blockchain:2018:
 ** [[https://www.dapp.com/article/proof-of-stake-or-proof-of-work-whats-the-difference][Proof of Stake or Proof of Work, What's the Difference?]] :article:blockchain:2018:
 *** [[https://news.ycombinator.com/item?id=18369593][Hacker News Discussion #18369593]] :discussion:article:blockchain:2018:
+** [[https://blog.smartdec.net/you-do-not-need-blockchain-eight-popular-use-cases-and-why-they-do-not-work-f2ecc6cc2129][You Do Not Need Blockchain: Eight Popular Use Cases And Why They Do Not Work]] :article:blockchain:2019:
+*** [[https://news.ycombinator.com/item?id=19225857][Hacker News Discussion #19225857]] :discussion:article:blockchain:2019:
 * Build Systems
 ** [[http://lcgapp.cern.ch/project/architecture/recursive_make.pdf][Recursive Make Considered Harmful]] :build:systems:paper:make:2002:
 ** [[http://make.mad-scientist.net/papers/rules-of-makefiles/][GNU Make: Rules of Makefiles]] :build:systems:make:2002:
@@ -689,6 +692,7 @@ These indeed can make your CSS code work for both the stone age and hottest brow
    4. HTML ~progress~ and ~meter~ entities for progress bars and metrics meters
    5. [[https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_variables][CSS Variables]] exist
 ** [[https://opensenselabs.com/blog/tech/rem-vs-em-vs-px-when-use-these-units][Rem vs Em vs Px | When to use these units]] :article:2018:
+** [[https://mastery.games/p/flexbox-zombies][Flexbox Zombies]] :css:flexbox:tutorial:game:
 * Functional Programming
 ** [[https://chriskohlhepp.wordpress.com/functional-programming-section/metacircular-adventures-in-functional-abstraction-challenging-clojure-in-common-lisp/][Metacircular Adventures in Functional Abstraction]] :functional:programming:common:lisp:clojure:
 ** [[https://aphyr.com/posts/301-clojure-from-the-ground-up-welcome][Clojure from the ground up]] :functional:programming:clojure:
@@ -719,6 +723,7 @@ Home page: http://www.helixsoft.nl/
 ** [[https://www.masswerk.at/nowgobang/2018/anatomy-of-an-rng][Anatomy of a Random Number Generator]] :history:gamedevelopment:spacewar:algorithms:rng:2018:
 ** [[http://www.gamasutra.com/blogs/JoshGe/20181029/329512/How_to_Make_a_Roguelike.php][How to Make a Roguelike]] :article:roguelike:2018:
 *** [[https://news.ycombinator.com/item?id=18335409][Hacker News Discussion #18335409]] :discussion:article:roguelike:2018:
+** [[http://www.vintage-basic.net/games.html][Vintage Basic: BASIC Computer Games]] :history:gamedevelopment:collection:
 * Game Theory
 ** [[http://www.chesstactics.org/index.php?Type=page&Action=next&From=1,1,1,1][Ward Farnsworth's Predator at the Chessboard]] :gametheory:book:chess:
 ** [[http://www.mindsports.nl/][mindsports.nl]] :gametheory:gamedesign:puzzles:
@@ -866,6 +871,8 @@ you can work around this client side with per hour filenames or the other usual 
 ** [[https://dn42.net/Home][dn42 dynamic VPN]] :networking:
 ** [[https://www.destroyallsoftware.com/compendium/network-protocols][Network Protocols for anyone who knows a programming language]] :article:network:programming:
 ** [[http://networkdiagram101.com/][17 Tips for Creating Better Network Diagrams]] :networking:2017:
+** [[https://metis.fi/en/2017/10/txpower/][8 reasons to turn down the transmit power of your Wi-Fi]] :article:networking:2017:
+** [[http://unpbook.com/src.html][Unix Network Programming book Source Code]] :networking:programming:unix:examples:
 * Object Oriented Programming and Design
 ** [[https://ericlippert.com/2015/04/27/wizards-and-warriors-part-one/][Wizards and Warriors: Part One]] :object:oriented:design:
 *** [[https://ericlippert.com/2015/04/30/wizards-and-warriors-part-two/][Wizards and Warriors: Part Two]] :object:oriented:design:
@@ -1664,6 +1671,7 @@ Does that make sense? The “> 1.0.0” part is undefined. That includes things 
 ** [[https://queue.acm.org/detail.cfm?id=3300018][SQL is no excuse to avoid DevOps]] :article:devops:2018:
 ** [[https://bl33pbl0p.github.io/systemd.html][Notes on how systemd's Job engine is structured]]          :systems:systemd:
 ** [[http://www.daemonology.net/blog/2018-12-26-the-many-ways-to-launch-FreeBSD-in-EC2.html][The many ways to launch FreeBSD in EC2]] :article:systems:2018:
+** [[https://matthias-endler.de/2019/maybe-you-dont-need-kubernetes/][Maybe you don't need Kubernetes]]    :article:systems:kubernetes:nomad:2019:
 ** Kubernetes
 *** [[https://srcco.de/posts/kubernetes-failure-stories.html][Kubernetes Failure Stories]] :article:systems:kubernetes:2019:
 ** Hashicorp
