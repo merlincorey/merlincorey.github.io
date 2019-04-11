@@ -1613,6 +1613,7 @@ It only defines how to version a particular software artifact, it cannot answer 
 
 Does that make sense? The “> 1.0.0” part is undefined. That includes things like “is that space required there?”, and so is an interoperabilty issue. 
 #+END_QUOTE
+** [[https://www.fuzzingbook.org/][Fuzzing Book: Generating Software Tests]] :book:software:engineering:2019:
 * Systems Engineering
 ** [[https://alestic.com/2010/12/ec2-user-data-output/][Logging user-data Script Output on EC2 Instances]] :systems:cloudinit:logging:aws:ec2:
 
