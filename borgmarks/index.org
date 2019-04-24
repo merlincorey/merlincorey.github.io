@@ -730,7 +730,7 @@ Home page: http://www.helixsoft.nl/
 * Graphics
 ** [[http://www.extentofthejam.com/pseudo/][Lou's Psuedo 3d Page]] :graphics:3d:rendering:
 ** [[http://machinethink.net/blog/3d-rendering-without-shaders/][3D Rendering without shaders]] :graphics:3d:rendering:shaders:
-*** [[https://news.ycombinator.com/item?id=13448047][Hackernews discussion]] 
+*** [[https://news.ycombinator.com/item?id=13448047][Hackernews discussion]]
     Some interesting discourse and links such as [[https://fgiesen.wordpress.com/2013/02/06/the-barycentric-conspirac/][The Barycentric Conspiracy]].
 ** [[https://www.fasterthan.life/blog/2017/7/11/i-am-graphics-and-so-can-you-part-1][I Am Graphics And So Can You]] 	       :graphics:3d:rendering:vulkan:
 ** [[http://iquilezles.org/www/index.htm][Íñigo Quílez' Demo and Shader Graphics Articles]] :graphics:demo:scene:shaders:
@@ -873,6 +873,7 @@ you can work around this client side with per hour filenames or the other usual 
 ** [[http://networkdiagram101.com/][17 Tips for Creating Better Network Diagrams]] :networking:2017:
 ** [[https://metis.fi/en/2017/10/txpower/][8 reasons to turn down the transmit power of your Wi-Fi]] :article:networking:2017:
 ** [[http://unpbook.com/src.html][Unix Network Programming book Source Code]] :networking:programming:unix:examples:
+** [[https://github.com/leandromoreira/linux-network-performance-parameters][Github: leandromoreira/linux-network-performance-parameters]] :repository:networking:2018:
 * Object Oriented Programming and Design
 ** [[https://ericlippert.com/2015/04/27/wizards-and-warriors-part-one/][Wizards and Warriors: Part One]] :object:oriented:design:
 *** [[https://ericlippert.com/2015/04/30/wizards-and-warriors-part-two/][Wizards and Warriors: Part Two]] :object:oriented:design:
@@ -1023,6 +1024,7 @@ you can work around this client side with per hour filenames or the other usual 
 *** [[https://github.com/green7ea/cpp-compilation/blob/master/README.md][The C++ Build Process Explained]] :article:cpp:2018:
 *** [[http://www.gamasutra.com/view/news/169296/Indepth_Functional_programming_in_C.php][In-depth: Functional programming in C++ by John Carmack]] :article:cpp:2012:
 *** [[https://mikelui.io/2019/01/03/seriously-bonkers.html][Initialization in C++ is Seriously Bonkers]] :article:cpp:2019:
+*** [[https://alexgaynor.net/2019/apr/21/modern-c++-wont-save-us/][Modern C++ won't save us]] :article:cpp:security:2019:
 *** Libraries
 **** [[https://github.com/nothings/single_file_libs][Github: nothings/single_file_libs]] :repository:list:cpp:library:
 **** Testing
@@ -1252,6 +1254,10 @@ I'm in the process of getting the detangle working for noweb mode. The current i
 **** [[https://www.anaconda.com/blog/developer-blog/python-data-visualization-2018-why-so-many-libraries/][Python Data Visualization 2018: Why So Many Libraries?]] :article:python:visualization:2018:
 **** [[https://plotnine.readthedocs.io/en/latest/][Plotnine Documentation: GGPlot2 in Python]] :documentation:python:visualization:
 **** [[https://github.com/sdispater/poetry][Github: sdispater/poetry]] :repository:python:packaging:2018:
+**** [[https://github.com/gruns/icecream][Github: gruns/icecream]] :repository:python:debugging:2018:2019:
+     Sweet and creamy print debugging.
+**** [[https://github.com/cool-RR/pysnooper][Github: cool-RR/pysnooper]] :repository:python:debugging:2019:
+     Never use print for debugging again.
 ** Rust
 *** [[https://cglab.ca/~abeinges/blah/too-many-lists/book/][Learning Rust with Entirely too many Linked Lists]] :book:rust:
 *** [[https://rust-lang-nursery.github.io/rust-cookbook/][Rust Cookbook]] :book:rust:
@@ -1327,6 +1333,7 @@ I'm in the process of getting the detangle working for noweb mode. The current i
 ** [[https://github.com/wekan/wekan][Github: wekan/wekan]] :repository:kanban:2015:2018:
    Open source kanban board web application in =NodeJS=.
 ** [[https://www.teamgantt.com/art-science-of-leading-projects][Art & Science of Leading Projects]] :video:guide:management:2018:
+** [[https://blog.plaid.com/growing-our-team-with-retrospectives/][Growing our team with retrospectives]] :article:management:2019:
 * Reverse Engineering
 ** [[https://www.youtube.com/user/OpenSecurityTraining][Open Security Training YouTube Channel]]                            :videos:binary:reverse:engineering:
 ** [[https://github.com/FireyFly/pixd][Colourful visualization tool for binary files]] :binary:data:visualization:
@@ -1611,7 +1618,7 @@ The system processes about 30% of all diffs across Google that have statement co
 “Matchers” or “ranges” (even the terminology is split up thanks to the lack of a spec!) are not defined in semver.
 It only defines how to version a particular software artifact, it cannot answer the question “does version 1.2.3 fit the constraint > 1.0.0?”
 
-Does that make sense? The “> 1.0.0” part is undefined. That includes things like “is that space required there?”, and so is an interoperabilty issue. 
+Does that make sense? The “> 1.0.0” part is undefined. That includes things like “is that space required there?”, and so is an interoperabilty issue.
 #+END_QUOTE
 ** [[https://www.fuzzingbook.org/][Fuzzing Book: Generating Software Tests]] :book:software:engineering:2019:
 * Systems Engineering
