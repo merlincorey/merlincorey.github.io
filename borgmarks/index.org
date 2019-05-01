@@ -338,6 +338,8 @@ o$22b2o3bo$21bo$21b2obo$20bo$19b5o$19bo4bo$18b3ob3o$18bob5o$18bo$20bo$
 ** [[http://bastian.rieck.me/blog/posts/2018/cmake_tips/][Some nice and accurate CMake tips]] :build:systems:cmake:2018:
 ** [[https://izzys.casa/2019/02/everything-you-never-wanted-to-know-about-cmake/][Everything you never wanted to know about CMake]] :build:systems:cmake:2019:
 * Compilers
+** [[https://kishuagarwal.github.io/life-of-a-binary.html][Life of a binary]] :article:2017:
+** [[https://software.intel.com/sites/default/files/m/a/1/e/dsohowto.pdf][How to write Shared Libraries]] :paper:2011:
 ** GCC
 *** [[https://stackoverflow.com/questions/38960763/ftrapv-and-fwrapv-which-is-better-for-efficiency][StackOverflow: "-ftrapv" and "-fwrapv": Which is better for efficiency?]] :compilers:gcc:2016:
     [[https://stackoverflow.com/users/743382/hvd][hvd]] answers:
@@ -560,6 +562,39 @@ emacs --quick --script publish.el --funcall=org-publish-all
 **** [[http://www.starnix.se/kanban-workflow-with-emacs-and-org-mode/][Kanban workflow with Emacs, and org-mode]]     :emacs:orgmode:kanban:2017:
 **** [[https://github.com/hagmonk/org-kanban][Github: hagmonk/org-kanban]]              :emacs:orgmode:kanban:2017:2018:
 **** [[https://github.com/gizmomogwai/org-kanban][Github: gizmomogwai/org-kanban]]          :emacs:orgmode:kanban:2016:2018:
+* Electrical Engineering
+** [[https://jaycarlson.net/microcontrollers/][The Amazing $1 Microcontroller]]
+
+   Exploration of 21 different microcontrollers each costing less than $1 to help familiarize oneself with all the major ecosystems out there.
+
+   #+BEGIN_QUOTE
+While some projects that come across my desk are complex enough to require a hundreds-of-MHz microcontroller with all the bells and whistles, it’s amazing how many projects work great using nothing more than a $1 chip — so this is the only rule I established for the shoot-out. 1
+
+I wanted to explore the $1 pricing zone specifically because it’s the least amount of money you can spend on an MCU that’s still general-purpose enough to be widely useful in a diverse array of projects.
+
+Any cheaper, and you end up with 6- or 8-pin parts with only a few dozen bytes of RAM, no ADC, nor any peripherals other than a single timer and some GPIO.
+
+Any more expensive, and the field completely opens up to an overwhelming number of parts — all with heavily-specialized peripherals and connectivity options.
+
+These MCUs were selected to represent their entire families — or sub-families, depending on the architecture — and in my analysis, I’ll offer some information about the family as a whole.
+
+If you want to scroll down and find out who the winner is, don’t bother — there’s really no sense in trying to declare the “king of $1 MCUs” as everyone knows the best microcontroller is the one that best matches your application needs. I mean, everyone knows the best microcontroller is the one you already know how to use. No, wait — the best microcontroller is definitely the one that is easiest to prototype with. Or maybe that has the lowest impact on BOM pricing?
+
+I can’t even decide on the criteria for the best microcontroller — let alone crown a winner.
+
+What I will do, however, is offer a ton of different recommendations for different users at the end. Read on!
+   #+END_QUOTE
+** [[http://www.righto.com/2018/03/implementing-fizzbuzz-on-fpga.html][Implementing Fizbuzz on an FPGA]] :2018:
+** [[http://www.gleech.org/first-computers/][Disambiguating the first computer]] :hardware:history:
+** [[http://www.frantone.com/designwritings/design_writings.html][Fran's Writings on Design and Engineering]] :hardware:electricalengineering:2011:2015:
+*** [[https://www.youtube.com/franblanche][Fran Blanche Youtube Channel]] :video:electricalengineering:2011:2018:
+** [[https://www.falstad.com/circuit/circuitjs.html][Circuit Simulator]] :electricalengineering:simulation:2018:
+*** [[https://github.com/sharpie7/circuitjs1][Github: sharpie7/circuitjs1]] :repository:electricalengineering:simulation:2015:2018:
+** [[https://basicengine.org/][BASIC Engine]] :hardware:systemonchip:2018:
+** [[http://www.rane.com/note110.html][Sound System Interconnection]] :audio:hardware:1985:
+** [[https://blog.arduino.cc/2018/08/24/announcing-the-arduino-command-line-interface-cli/][Announcing the Arduino Command Line Interface (CLI)]] :article:2018:
+** [[https://dmitryfrank.com/articles/how_i_ended_up_writing_my_own_kernel][How I ended up writing a new real-time kernel]] :article:2015:
+** [[https://artofelectronics.net/][The Art of Electronics]]                                         :book:2015:
 * Emulators and Game Consoles
 ** [[http://www.codeslinger.co.uk/pages/basics.html][codeslinger Emulation Basics]] :emulator:2008:
 *** [[http://www.codeslinger.co.uk/files/emu.pdf][Study of the techniques for emulation programming]] :paper:emulation:2001:
@@ -740,38 +775,6 @@ Home page: http://www.helixsoft.nl/
 ** [[https://github.com/ssloy/tinyraytracer][Github: ssloy/tinyraytracer]] :repository:graphics:rendering:2019:
 ** [[https://erkaman.github.io/posts/beginner_computer_graphics.html][How to Start Learning Computer Graphics Programming]] :article:graphics:
 *** [[https://news.ycombinator.com/item?id=18840859][Hacker News Discussion #18840859]] :discussion:article:graphics:2019:
-* Hardware and Embedded
-** [[https://jaycarlson.net/microcontrollers/][The Amazing $1 Microcontroller]]
-
-   Exploration of 21 different microcontrollers each costing less than $1 to help familiarize oneself with all the major ecosystems out there.
-
-   #+BEGIN_QUOTE
-While some projects that come across my desk are complex enough to require a hundreds-of-MHz microcontroller with all the bells and whistles, it’s amazing how many projects work great using nothing more than a $1 chip — so this is the only rule I established for the shoot-out. 1
-
-I wanted to explore the $1 pricing zone specifically because it’s the least amount of money you can spend on an MCU that’s still general-purpose enough to be widely useful in a diverse array of projects.
-
-Any cheaper, and you end up with 6- or 8-pin parts with only a few dozen bytes of RAM, no ADC, nor any peripherals other than a single timer and some GPIO.
-
-Any more expensive, and the field completely opens up to an overwhelming number of parts — all with heavily-specialized peripherals and connectivity options.
-
-These MCUs were selected to represent their entire families — or sub-families, depending on the architecture — and in my analysis, I’ll offer some information about the family as a whole.
-
-If you want to scroll down and find out who the winner is, don’t bother — there’s really no sense in trying to declare the “king of $1 MCUs” as everyone knows the best microcontroller is the one that best matches your application needs. I mean, everyone knows the best microcontroller is the one you already know how to use. No, wait — the best microcontroller is definitely the one that is easiest to prototype with. Or maybe that has the lowest impact on BOM pricing?
-
-I can’t even decide on the criteria for the best microcontroller — let alone crown a winner.
-
-What I will do, however, is offer a ton of different recommendations for different users at the end. Read on!
-   #+END_QUOTE
-** [[http://www.righto.com/2018/03/implementing-fizzbuzz-on-fpga.html][Implementing Fizbuzz on an FPGA]] :2018:
-** [[http://www.gleech.org/first-computers/][Disambiguating the first computer]] :hardware:history:
-** [[http://www.frantone.com/designwritings/design_writings.html][Fran's Writings on Design and Engineering]] :hardware:electricalengineering:2011:2015:
-*** [[https://www.youtube.com/franblanche][Fran Blanche Youtube Channel]] :video:electricalengineering:2011:2018:
-** [[https://www.falstad.com/circuit/circuitjs.html][Circuit Simulator]] :electricalengineering:simulation:2018:
-*** [[https://github.com/sharpie7/circuitjs1][Github: sharpie7/circuitjs1]] :repository:electricalengineering:simulation:2015:2018:
-** [[https://basicengine.org/][BASIC Engine]] :hardware:systemonchip:2018:
-** [[http://www.rane.com/note110.html][Sound System Interconnection]] :audio:hardware:1985:
-** [[https://blog.arduino.cc/2018/08/24/announcing-the-arduino-command-line-interface-cli/][Announcing the Arduino Command Line Interface (CLI)]] :article:2018:
-** [[https://dmitryfrank.com/articles/how_i_ended_up_writing_my_own_kernel][How I ended up writing a new real-time kernel]] :article:2015:
 * Home Automation and Internet of Things
 ** [[http://www.bruhautomation.com/][Bruh Automation]] :home:automation:tutorials:reviews:
 
@@ -1243,6 +1246,7 @@ I'm in the process of getting the detangle working for noweb mode. The current i
 *** [[https://chriswarrick.com/blog/2018/07/17/pipenv-promises-a-lot-delivers-very-little/][Pipenv: promises a lot, delivers very little]] :article:python:packaging:2018:
 *** [[https://www.python.org/dev/peps/pep-0518/][PEP 518 -- Specifying Minimum Build System Requirements for Python Projects]] :standard:python:packaging:2018:
 *** [[https://composingprograms.com/][Composing Programs (SICP in Python)]] :python:curriculum:
+*** [[https://medium.com/netflix-techblog/python-at-netflix-bba45dae649e][Python at Netflix]] :article:python:2019:
 *** Libraries and Tools
 **** [[http://npyscreen.readthedocs.io/index.html][npyscreen Documentation]] :python:library:terminal:ui:2014:
 **** [[http://python-prompt-toolkit.readthedocs.io/en/master/][prompt-toolkit Documentation]] :python:library:terminal:ui:2014:2018:
@@ -1258,6 +1262,30 @@ I'm in the process of getting the detangle working for noweb mode. The current i
      Sweet and creamy print debugging.
 **** [[https://github.com/cool-RR/pysnooper][Github: cool-RR/pysnooper]] :repository:python:debugging:2019:
      Never use print for debugging again.
+**** [[https://github.com/Netflix/bless][Github: Netflix/bless]] :repository:python:security:cloud:2016:2019:
+     BLESS - Bastion's Lambda Ephemeral SSH Service
+#+CAPTION: Description
+#+BEGIN_QUOTE
+BLESS is an SSH Certificate Authority that runs as an AWS Lambda function and is used to sign SSH public keys.
+
+SSH Certificates are an excellent way to authorize users to access a particular SSH host, as they can be restricted for a single use case, and can be short lived. Instead of managing the authorized_keys of a host, or controlling who has access to SSH Private Keys, hosts just need to be configured to trust an SSH CA.
+
+BLESS should be run as an AWS Lambda in an isolated AWS account. Because BLESS needs access to a private key which is trusted by your hosts, an isolated AWS account helps restrict who can access that private key, or modify the BLESS code you are running.
+
+AWS Lambda functions can use an AWS IAM Policy to limit which IAM Roles can invoke the Lambda Function. If properly configured, you can restrict which IAM Roles can request SSH Certificates. For example, your SSH Bastion (aka SSH Jump Host) can run with the only IAM Role with access to invoke a BLESS Lambda Function configured with the SSH CA key trusted by the instances accessible to that SSH Bastion.
+#+END_QUOTE
+     The [[https://github.com/Netflix/bless/blob/master/Makefile#L32-L39][make publish]] target can be used to generate a Lambda compatible zip file:
+#+CAPTION: publish target for Netflix's BLESS
+#+BEGIN_SRC makefile
+publish:
+	rm -rf ./publish/bless_lambda/
+	mkdir -p ./publish/bless_lambda
+	cp -r ./bless ./publish/bless_lambda/
+	mv ./publish/bless_lambda/bless/aws_lambda/* ./publish/bless_lambda/
+	cp -r ./aws_lambda_libs/. ./publish/bless_lambda/
+	if [ -d ./lambda_configs/ ]; then cp -r ./lambda_configs/. ./publish/bless_lambda/; fi
+	cd ./publish/bless_lambda && zip -FSr ../bless_lambda.zip .
+#+END_SRC
 ** Rust
 *** [[https://cglab.ca/~abeinges/blah/too-many-lists/book/][Learning Rust with Entirely too many Linked Lists]] :book:rust:
 *** [[https://rust-lang-nursery.github.io/rust-cookbook/][Rust Cookbook]] :book:rust:
@@ -1574,6 +1602,7 @@ So be happy with 'git tag -s'. It really is the right way.
 ** [[https://www.hackthebox.eu/][Hack the Box]] :ctf:
 ** [[https://picoctf.com/][PicoCTF]] :ctf:
 ** [[https://github.com/malwaredllc/byob][Github: malwaredllc/byob]] :repository:security:botnet:
+** [[https://medium.com/netflix-techblog/netflix-sirt-releases-diffy-a-differencing-engine-for-digital-forensics-in-the-cloud-37b71abd2698][Netflix Cloud Security SIRT releases Diffy: A Differencing Engine for Digital Forensics in the Cloud]]
 * Software Engineering
 ** [[http://www.drdobbs.com/architecture-and-design/software-engineering-computer-science/217701907][Software Engineering ≠ Computer Science]] :software:engineering:architecture:design:2009:
 ** [[http://python.apichecklist.com/][Python API Checklist]] :python:api:programming:checklist:2017:
@@ -1680,6 +1709,7 @@ Does that make sense? The “> 1.0.0” part is undefined. That includes things 
 ** [[https://bl33pbl0p.github.io/systemd.html][Notes on how systemd's Job engine is structured]]          :systems:systemd:
 ** [[http://www.daemonology.net/blog/2018-12-26-the-many-ways-to-launch-FreeBSD-in-EC2.html][The many ways to launch FreeBSD in EC2]] :article:systems:2018:
 ** [[https://matthias-endler.de/2019/maybe-you-dont-need-kubernetes/][Maybe you don't need Kubernetes]]    :article:systems:kubernetes:nomad:2019:
+** [[https://www.linuxjournal.com/content/data-flash-part-i-evolution-disk-storage-and-introduction-nvme][Data in a Flash, Part I: the Evolution of Disk Storage and an Introduction to NVMe]] :article:systems:2019:
 ** Kubernetes
 *** [[https://srcco.de/posts/kubernetes-failure-stories.html][Kubernetes Failure Stories]] :article:systems:kubernetes:2019:
 ** Hashicorp
