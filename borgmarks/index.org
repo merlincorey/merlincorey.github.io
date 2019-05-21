@@ -595,6 +595,19 @@ What I will do, however, is offer a ton of different recommendations for differe
 ** [[https://blog.arduino.cc/2018/08/24/announcing-the-arduino-command-line-interface-cli/][Announcing the Arduino Command Line Interface (CLI)]] :article:2018:
 ** [[https://dmitryfrank.com/articles/how_i_ended_up_writing_my_own_kernel][How I ended up writing a new real-time kernel]] :article:2015:
 ** [[https://artofelectronics.net/][The Art of Electronics]]                                         :book:2015:
+** [[https://www.nand2tetris.org/][Nand to Tetris]] :book:
+** [[http://nandgame.com/][Nand Game]] :game:
+** [[http://www.lighterra.com/papers/modernmicroprocessors/][Modern Microprocessors a 90 minute guide]]
+#+CAPTION: Directions received when opening the game
+#+BEGIN_QUOTE
+Welcome to The Nand Game!
+
+You are going to build a simple computer.
+
+You start with a single component, the nand gate. Using this as the fundamental building block, you will build all other components necessary.
+
+Your first task is to build an inverter component.
+#+END_QUOTE
 * Emulators and Game Consoles
 ** [[http://www.codeslinger.co.uk/pages/basics.html][codeslinger Emulation Basics]] :emulator:2008:
 *** [[http://www.codeslinger.co.uk/files/emu.pdf][Study of the techniques for emulation programming]] :paper:emulation:2001:
@@ -1588,6 +1601,8 @@ So be happy with 'git tag -s'. It really is the right way.
 ** [[http://tom.preston-werner.com/2009/05/19/the-git-parable.html][The Git Parable]] :article:git:2009:
 ** [[http://aosabook.org/en/git.html][The Architecture of Open Source Applications: Git in a Nutshell]] :book:git:
 ** [[https://rachelcarmena.github.io/2018/12/12/how-to-teach-git.html][How to teach Git]] :article:git:2019:
+** [[https://git-rebase.io/][git rebase in depth]] :tutorial:
+** [[https://docs.gitlab.com/ee/workflow/gitlab_flow.html][Introduction to GitLab Flow]] :documentation:2014:2018:
 * Shells and Terminals
 ** [[https://zanshin.net/2013/02/02/zsh-configuration-from-the-ground-up/][Zsh Configuration From the Ground Up]] :zsh:configuration:tutorial:2013:
 ** [[http://www.howardism.org/Technical/Emacs/eshell-fun.html][Eschewing Zshell for Emacs Shell]] :zsh:emacs:eshell:
