@@ -382,6 +382,7 @@ It's mainly useful for debugging purposes and perhaps in a few cases for safety,
 ** [[http://passwordstore.org/][Pass: The Standard Unix Password Manager]] :cryptography:tool:
 *** [[https://github.com/tadfisher/pass-otp][Github: tadfisher/pass-otp]] :repository:cryptography:2018:
 *** [[https://github.com/browserpass/browserpass][Github: browserpass/browserpass]] :repository:cryptography:2018:
+** [[https://latacora.micro.blog/2018/04/03/cryptographic-right-answers.html][Cryptographic Right Answers]] :article:cryptography:2018:
 * Cryptocurrencies
 ** [[http://www.righto.com/2014/09/mining-bitcoin-with-pencil-and-paper.html][Mining Bitcoin with pencil and paper: 0.67 hashes per day]] :cryptocurrency:bitcoin:2014:
 ** [[http://www.righto.com/2014/02/ascii-bernanke-wikileaks-photographs.html][Hidden surprises in the Bitcoin blockchain and how they are stored: Nelson Mandela, Wikileaks, photos, and Python software]] :cryptocurrency:blockchain:creative:hacking:2014:
@@ -493,6 +494,7 @@ This indirect strategy also saves memory, because the vector effectively has a p
 ** postgres
 *** [[http://rhaas.blogspot.com/2018/01/the-state-of-vacuum.html][The State of VACUUM]] :database:postgres:vacuum:2018:
 *** [[https://github.com/makmanalp/sqlalchemy-crosstab-postgresql][sqlalchemy-crosstab-postgresql]]
+*** [[https://pgtune.leopard.in.ua/#/][PGTune]] :tool:
 * Development Environments and Editors
 ** [[https://ecc-comp.blogspot.com/2015/05/a-brief-glance-at-how-5-text-editors.html][A Brief Glance at How Various Text Editors Manage Their Textual Data]] :editors:data:structures:text:representation:2015:
 ** [[https://blog.d46.us/zsh-tmux-emacs-copy-paste/][ZSH, tmux, Emacs and SSH: A copy-paste story]] :environments:editors:copy:paste:compatibility:
@@ -530,6 +532,7 @@ emacs --quick --script publish.el --funcall=org-publish-all
 #+END_SRC
 *** [[http://www.jesshamrick.com/2012/09/10/absolute-beginners-guide-to-emacs/][Absolute Beginner's Guide to Emacs]] :emacs:tutorial:2012:
 **** [[https://news.ycombinator.com/item?id=18598544][Hacker News Discussion #18598544]] :discussion:emacs:tutorial:2012:
+*** [[https://alphapapa.github.io/emacs-package-dev-handbook/][The Emacs Package Developer's Handbook]] :packages:
 *** Packages
 **** [[https://github.com/pashky/restclient.el][pashky/restclient]]                         :emacs:package:rest:2016:2018:
 **** [[https://projectile.readthedocs.io/en/latest/][ReadTheDocs: projectile]]                                  :emacs:package:
@@ -555,6 +558,7 @@ emacs --quick --script publish.el --funcall=org-publish-all
 
 (global-set-key (kbd "C-x M-t") 'projectile-term)
 #+END_SRC
+**** [[https://gitlab.com/ambrevar/emacs-gif-screencast][Gitlab: ambrevar/emacs-gif-screencast]] :package:screencast:2018:2019:
 *** Kanban
 **** [[http://agilesoc.com/2011/08/08/emacs-org-mode-kanban-pomodoro-oh-my/][Emacs, org-mode, Kanban, Pomodoro... Oh my...]] :emacs:orgmode:kanban:2011:
 **** [[http://www.draketo.de/light/english/free-software/el-kanban-org-table][El Kanban Org: parse org-mode todo-states to use org-tables as Kanban tables]] :emacs:orgmode:kanban:2012:
@@ -608,8 +612,11 @@ You start with a single component, the nand gate. Using this as the fundamental 
 
 Your first task is to build an inverter component.
 #+END_QUOTE
+** [[http://www.pynq.io/][PYNQ: Python productivity for ZYNQ]]
+** [[https://internalregister.github.io/2019/03/14/Homebrew-Console.html][Building a 'Homebrew' Video Game Console]] :article:2019:
+** [[https://workmanship.nasa.gov/lib/insp/2%20books/frameset.html][NASA Workmanship Standards Pictoral Reference]] :documentation:
 * Emulators and Game Consoles
-** [[http://www.codeslinger.co.uk/pages/basics.html][codeslinger Emulation Basics]] :emulator:2008:
+** [[http://www.codeslinger.co.uk/pages/basics.html][codeslinger Emulation Basics]] :emulator:chip8:2008:
 *** [[http://www.codeslinger.co.uk/files/emu.pdf][Study of the techniques for emulation programming]] :paper:emulation:2001:
 *** [[http://www.codeslinger.co.uk/pages/projects/chip8.html][codeslinger chip8 emulator]] :emulator:chip8:2008:
 ** [[http://www.emulator101.com/][Emulator 101]] :emulator:arcade:tutorial:2016:
@@ -617,6 +624,8 @@ Your first task is to build an inverter component.
 ** [[https://problemkaputt.de/gbatek.htm][GBATek - Gameboy Advance / Nintendo DS / DSi - Technical Info]] :nintendo:gameboy:nintendo:dsi:documentation:
 ** [[https://dolphin-emu.org/blog/2018/07/21/myth-debugging-wii-more-demanding-emulate-gamecube/][Myth Debugging: Is the Wii More Demanding to Emulate than the GameCube?]] :article:2018:
 ** [[https://8bitworkshop.com/][8bit Workshop: Write 8-bit code in your browser]] :2019:
+** [[http://emacsninja.com/posts/smooth-video-game-emulation-in-emacs.html][Smooth Video Game Emulation in Emacs]] :article:emulator:chip8:2019:
+** [[https://codeplusplus.blogspot.com/2019/02/oldschool-planar-graphics-and-why-they.html][Oldschool planar graphics and why they were a good idea]] :article:graphics:2019:
 ** Nintendo Entertainment System
 *** [[https://github.com/blanham/ChickeNES][blanham/ChickeNES]] :nintendo:entertainment:system:emulator:c:2013:2015:
 *** [[https://medium.com/@fogleman/i-made-an-nes-emulator-here-s-what-i-learned-about-the-original-nintendo-2e078c9b28fe][I made an NES emulator. Here’s what I learned about the original Nintendo.]] :nintendo:entertainment:system:emulator:2015:
@@ -639,6 +648,8 @@ Your first task is to build an inverter component.
 **** [[https://github.com/trekawek/coffee-gb/][trekawek/coffee-gb]] :nintendo:gameboy:emulator:java:2017:
 
 *** [[https://invisibleup.neocities.org/articles/18/][Making a Game Boy Game! Part 1]] :article:nintendo:gameboy:game:
+*** [[https://github.com/vreeze/eboy][Github: vreeze/eboy]] :repository:emacs:2019:
+    Emacs Gameboy Emulator
 * Free Books (TODO: REMOVE)
   Books can be categorized by tags to generate a general Books section/page.
 ** [[https://softwarefoundations.cis.upenn.edu/][Software Foundations Series (books)]] :books:logic:math:computer:science:proofs:coq:
@@ -741,6 +752,7 @@ These indeed can make your CSS code work for both the stone age and hottest brow
    5. [[https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_variables][CSS Variables]] exist
 ** [[https://opensenselabs.com/blog/tech/rem-vs-em-vs-px-when-use-these-units][Rem vs Em vs Px | When to use these units]] :article:2018:
 ** [[https://mastery.games/p/flexbox-zombies][Flexbox Zombies]] :css:flexbox:tutorial:game:
+** [[http://clagnut.com/blog/2395][All you need to know about hyphenation in CSS]] :article:css:2019:
 * Functional Programming
 ** [[https://chriskohlhepp.wordpress.com/functional-programming-section/metacircular-adventures-in-functional-abstraction-challenging-clojure-in-common-lisp/][Metacircular Adventures in Functional Abstraction]] :functional:programming:common:lisp:clojure:
 ** [[https://aphyr.com/posts/301-clojure-from-the-ground-up-welcome][Clojure from the ground up]] :functional:programming:clojure:
@@ -1041,6 +1053,8 @@ you can work around this client side with per hour filenames or the other usual 
 *** [[http://www.gamasutra.com/view/news/169296/Indepth_Functional_programming_in_C.php][In-depth: Functional programming in C++ by John Carmack]] :article:cpp:2012:
 *** [[https://mikelui.io/2019/01/03/seriously-bonkers.html][Initialization in C++ is Seriously Bonkers]] :article:cpp:2019:
 *** [[https://alexgaynor.net/2019/apr/21/modern-c++-wont-save-us/][Modern C++ won't save us]] :article:cpp:security:2019:
+*** [[https://www.bfilipek.com/2019/02/lambdas-story-part1.html][Bartek's Coding blog: Lambdas: From C++11 to C++20, Part 1]] :article:cpp03:cpp11:cpp14:2019:
+*** [[https://www.bfilipek.com/2019/03/lambdas-story-part2.html][Bartek's coding blog: Lambdas: From C++11 to C++20, Part 2]] :article:cpp17:cpp20:2019:
 *** Libraries
 **** [[https://github.com/nothings/single_file_libs][Github: nothings/single_file_libs]] :repository:list:cpp:library:
 **** Testing
@@ -1313,6 +1327,7 @@ publish:
 *** [[https://sqlbolt.com][SQL Bolt]] :exercise:sql:
 *** [[https://pgexercises.com/][PostgreSQL Exercises]] :exercise:sql:
 *** [[https://schemaverse.com/][The Schemaverse]] :game:sql:
+*** [[http://www.zindlerb.com/joins-in-steps/][SQL Joins In Steps]] :article:sql:2019:
 * Project Management
 ** [[https://martinfowler.com/articles/itsNotJustStandingUp.html][It's Not Just Standing Up: Patterns for Daily Standup Meetings]] :meetings:article:2016:
 ** [[https://www.blossom.co/blog/3-tips-for-quick-effective-stand-up-meetings][3 Tips for Effective Stand-Up Meetings]] :meetings:article:2016:
@@ -1665,6 +1680,7 @@ It only defines how to version a particular software artifact, it cannot answer 
 Does that make sense? The “> 1.0.0” part is undefined. That includes things like “is that space required there?”, and so is an interoperabilty issue.
 #+END_QUOTE
 ** [[https://www.fuzzingbook.org/][Fuzzing Book: Generating Software Tests]] :book:software:engineering:2019:
+** [[https://triplebyte.com/blog/how-to-pass-a-programming-interview][How to pass a programming interview]] :article:2016:
 * Systems Engineering
 ** [[https://alestic.com/2010/12/ec2-user-data-output/][Logging user-data Script Output on EC2 Instances]] :systems:cloudinit:logging:aws:ec2:
 
