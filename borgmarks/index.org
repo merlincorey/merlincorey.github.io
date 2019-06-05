@@ -654,32 +654,6 @@ Your first task is to build an inverter component.
   Books can be categorized by tags to generate a general Books section/page.
 ** [[https://softwarefoundations.cis.upenn.edu/][Software Foundations Series (books)]] :books:logic:math:computer:science:proofs:coq:
 ** [[http://adam.chlipala.net/cpdt/][Certified Programming with Dependent Types]] :book:logic:types:proofs:coq:2017:
-* Great Talks
-** [[https://www.youtube.com/watch?v=Sg4U4r_AgJU][Brian Kernighan - How to succeed at language design without really trying]] :talk:kernighan:language:design:awk:
-
-    Mentions Alan Perlis' [[http://www.cs.yale.edu/homes/perlis-alan/quotes.html][Epigrams in Programming]]
-
-** [[https://www.youtube.com/watch?v=O3tVctB_VSU][Gerald Sussman - We Don't Really Know how to Compute]] :talk:sussman:computation:
-
-** [[https://www.youtube.com/watch?v=OyfBQmvr2Hc][William Byrd - The Most Beautiful Program Ever Written]] :talk:byrd:interpreters:provers:solvers:minikanren:
-
-   The first half is an overview of Scheme and writing an interpreter in scheme.
-   The second half goes into using an advanced interpreter along with logic programming in minikanren to find programs that match test constraints.
-
-** [[https://www.youtube.com/watch?v=Jib2AmRb_rk&app=desktop][SQLite: The Database at the Edge of the Network with Dr. Richard Hipp]] :talk:hipp:database:sqlite:
-** [[https://www.youtube.com/watch?v=_gZK0tW8EhQ][Ron Garret - The Remote Agent Experiment: Debugging Code from 60 Million Miles Away]] :talk:garret:lisp:in:space:
-** [[http://dtrace.org/blogs/bmc/2018/02/03/talks/][Brian Cantril talks]]
-** Rich Hickey
-   Creator of Clojure known for many great talks.
-*** [[http://www.infoq.com/presentations/Are-We-There-Yet-Rich-Hickey][Are we there yet?]] 				 :talk:hickey:clojure:design:
-*** [[http://www.youtube.com/watch?v=f84n5oFoZBc][Hammock Driven Development]] :talk:hickey:design:
-*** [[http://www.infoq.com/presentations/Simple-Made-Easy][Simple Made Easy]] :talk:hickey:complexity:
-*** [[http://www.infoq.com/presentations/Value-Values][The Value of Values]] :talk:hickey:
-*** [[http://www.youtube.com/watch?v=ROor6_NGIWU][The Language of the System]] :talk:hickey:distrubuted:language:design:
-*** [[http://www.infoq.com/presentations/Design-Composition-Performance][Design, Composition, and Performance]] :talk:hickey:
-*** [[https://www.youtube.com/watch?v=2V1FtfBDsLU][Effective Programs - 10 Years of Clojure - Rich Hickey]] :talk:hickey:effectiveness:2017:
-** Pycon
-*** [[https://www.youtube.com/watch?v=ZzfHjytDceU][Keynote David Beazley - Topics of Interest (Python Asyncio)]] :pycon:brazil:2015:
 * Frontend Web Design and Development
 ** [[http://flexboxfroggy.com/][CSS Flexbox Froggy]] :css:flexbox:tutorial:game:
 ** [[http://cssgridgarden.com/][CSS Grid Garden]] :css:grid:tutorial:game:
@@ -784,6 +758,7 @@ Home page: http://www.helixsoft.nl/
 ** [[http://www.gamasutra.com/blogs/JoshGe/20181029/329512/How_to_Make_a_Roguelike.php][How to Make a Roguelike]] :article:roguelike:2018:
 *** [[https://news.ycombinator.com/item?id=18335409][Hacker News Discussion #18335409]] :discussion:article:roguelike:2018:
 ** [[http://www.vintage-basic.net/games.html][Vintage Basic: BASIC Computer Games]] :history:gamedevelopment:collection:
+** [[https://lazyfoo.net/tutorials/SDL/][Lazy Foo' Productions: Beginning Game Programming v2.0 with SDL2]] :tutorial:2004:2019:
 * Game Theory
 ** [[http://www.chesstactics.org/index.php?Type=page&Action=next&From=1,1,1,1][Ward Farnsworth's Predator at the Chessboard]] :gametheory:book:chess:
 ** [[http://www.mindsports.nl/][mindsports.nl]] :gametheory:gamedesign:puzzles:
@@ -800,6 +775,32 @@ Home page: http://www.helixsoft.nl/
 ** [[https://github.com/ssloy/tinyraytracer][Github: ssloy/tinyraytracer]] :repository:graphics:rendering:2019:
 ** [[https://erkaman.github.io/posts/beginner_computer_graphics.html][How to Start Learning Computer Graphics Programming]] :article:graphics:
 *** [[https://news.ycombinator.com/item?id=18840859][Hacker News Discussion #18840859]] :discussion:article:graphics:2019:
+* Great Talks
+** [[https://www.youtube.com/watch?v=Sg4U4r_AgJU][Brian Kernighan - How to succeed at language design without really trying]] :talk:kernighan:language:design:awk:
+
+    Mentions Alan Perlis' [[http://www.cs.yale.edu/homes/perlis-alan/quotes.html][Epigrams in Programming]]
+
+** [[https://www.youtube.com/watch?v=O3tVctB_VSU][Gerald Sussman - We Don't Really Know how to Compute]] :talk:sussman:computation:
+
+** [[https://www.youtube.com/watch?v=OyfBQmvr2Hc][William Byrd - The Most Beautiful Program Ever Written]] :talk:byrd:interpreters:provers:solvers:minikanren:
+
+   The first half is an overview of Scheme and writing an interpreter in scheme.
+   The second half goes into using an advanced interpreter along with logic programming in minikanren to find programs that match test constraints.
+
+** [[https://www.youtube.com/watch?v=Jib2AmRb_rk&app=desktop][SQLite: The Database at the Edge of the Network with Dr. Richard Hipp]] :talk:hipp:database:sqlite:
+** [[https://www.youtube.com/watch?v=_gZK0tW8EhQ][Ron Garret - The Remote Agent Experiment: Debugging Code from 60 Million Miles Away]] :talk:garret:lisp:in:space:
+** [[http://dtrace.org/blogs/bmc/2018/02/03/talks/][Brian Cantril talks]]
+** Rich Hickey
+   Creator of Clojure known for many great talks.
+*** [[http://www.infoq.com/presentations/Are-We-There-Yet-Rich-Hickey][Are we there yet?]] 				 :talk:hickey:clojure:design:
+*** [[http://www.youtube.com/watch?v=f84n5oFoZBc][Hammock Driven Development]] :talk:hickey:design:
+*** [[http://www.infoq.com/presentations/Simple-Made-Easy][Simple Made Easy]] :talk:hickey:complexity:
+*** [[http://www.infoq.com/presentations/Value-Values][The Value of Values]] :talk:hickey:
+*** [[http://www.youtube.com/watch?v=ROor6_NGIWU][The Language of the System]] :talk:hickey:distrubuted:language:design:
+*** [[http://www.infoq.com/presentations/Design-Composition-Performance][Design, Composition, and Performance]] :talk:hickey:
+*** [[https://www.youtube.com/watch?v=2V1FtfBDsLU][Effective Programs - 10 Years of Clojure - Rich Hickey]] :talk:hickey:effectiveness:2017:
+** Pycon
+*** [[https://www.youtube.com/watch?v=ZzfHjytDceU][Keynote David Beazley - Topics of Interest (Python Asyncio)]] :pycon:brazil:2015:
 * Home Automation and Internet of Things
 ** [[http://www.bruhautomation.com/][Bruh Automation]] :home:automation:tutorials:reviews:
 
@@ -1923,6 +1924,7 @@ There is no one-size-fits-all solution to this problem, but anything you can do 
 ** [[http://immersivemath.com/ila/index.html][Immersive Math: Interactive Linear Algebra]] :mathematics:
 ** [[https://haseebq.com/my-ten-rules-for-negotiating-a-job-offer/][Ten Rules for Negotiating a Job Offer (part 1)]] :article:negotiation:2016:
 *** [[https://haseebq.com/how-not-to-bomb-your-offer-negotiation/][How Not to Bomb Your Offer Negotiation (part 2)]]            :article:2016:
+** [[http://bofh.bjash.com/][The Bastard Operator From Hell - The Complete WWW Edition]] :archive:
 * UNIX and BSD
 ** [[https://fosdem.org/2017/schedule/event/my_bsd_sucks_less/][My BSD Sucks Less Than Yours]] :talk:unix:openbsd:freebsd:
 ** [[http://changelog.complete.org/archives/9317-has-linux-lost-its-way-comments-prompt-a-debian-developer-to-revisit-freebsd-after-20-years][“Has Linux lost its way?” comments prompt a Debian developer to revisit FreeBSD after 20 years]] :unix:linux:comparison:2015:
