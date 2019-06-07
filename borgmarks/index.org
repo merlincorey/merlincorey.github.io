@@ -759,6 +759,7 @@ Home page: http://www.helixsoft.nl/
 *** [[https://news.ycombinator.com/item?id=18335409][Hacker News Discussion #18335409]] :discussion:article:roguelike:2018:
 ** [[http://www.vintage-basic.net/games.html][Vintage Basic: BASIC Computer Games]] :history:gamedevelopment:collection:
 ** [[https://lazyfoo.net/tutorials/SDL/][Lazy Foo' Productions: Beginning Game Programming v2.0 with SDL2]] :tutorial:2004:2019:
+** [[https://lopespm.github.io/2019/02/06/survival-ball-making-the-game.html][Survival Ball: Making the Game]] :article:gamedevelopment:2019:
 * Game Theory
 ** [[http://www.chesstactics.org/index.php?Type=page&Action=next&From=1,1,1,1][Ward Farnsworth's Predator at the Chessboard]] :gametheory:book:chess:
 ** [[http://www.mindsports.nl/][mindsports.nl]] :gametheory:gamedesign:puzzles:
