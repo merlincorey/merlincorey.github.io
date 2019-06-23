@@ -532,6 +532,8 @@ emacs --quick --script publish.el --funcall=org-publish-all
 *** [[http://www.jesshamrick.com/2012/09/10/absolute-beginners-guide-to-emacs/][Absolute Beginner's Guide to Emacs]] :emacs:tutorial:2012:
 **** [[https://news.ycombinator.com/item?id=18598544][Hacker News Discussion #18598544]] :discussion:emacs:tutorial:2012:
 *** [[https://alphapapa.github.io/emacs-package-dev-handbook/][The Emacs Package Developer's Handbook]] :packages:
+*** [[https://github.com/gilbertw1/emacs-literate-starter][Github: gilbertw1/emacs-literate-starter]] :repository:2017:
+*** [[https://github.com/mclear-tools/dotemacs/blob/master/config.org][mclear-tools/dotemacs]] :repository:2019:
 *** Packages
 **** [[https://github.com/pashky/restclient.el][pashky/restclient]]                         :emacs:package:rest:2016:2018:
 **** [[https://projectile.readthedocs.io/en/latest/][ReadTheDocs: projectile]]                                  :emacs:package:
@@ -1002,6 +1004,7 @@ you can work around this client side with per hour filenames or the other usual 
 *** [[https://begriffs.com/posts/2018-11-15-c-portability.html][C Portability Lessons from Weird Machines]] :article:c:2018:
 **** [[https://news.ycombinator.com/item?id=18466006][Hacker News Discussion #18466006]] :discussion:article:c:2018:
 *** [[http://www.c-faq.com/][comp.lang.c Frequently Asked Questions]] :answers:c:1995:2005:
+*** [[https://begriffs.com/posts/2019-05-23-unicode-icu.html][Unicode programming, with examples]] :article:2019:
 *** Libraries
 **** [[http://www.musl-libc.org/][musl-lib]] :c:language:
 **** [[https://github.com/mity/acutest][mitv/acutest]] :c:language:test:framework:2017:
@@ -1317,6 +1320,8 @@ publish:
 ** Rust
 *** [[https://cglab.ca/~abeinges/blah/too-many-lists/book/][Learning Rust with Entirely too many Linked Lists]] :book:rust:
 *** [[https://rust-lang-nursery.github.io/rust-cookbook/][Rust Cookbook]] :book:rust:
+*** [[https://github.com/m-labs/smoltcp][Github: m-labs/smoltcp]] :repository:2016:2019:
+    a smol tcp/ip stack
 ** SQL
 *** [[https://selectstarsql.com/][Select Star SQL]] :book:exercise:databases:sql:2018:
 **** [[https://news.ycombinator.com/item?id=17905666][Hacker News Discussion #17905666]] :discussion:book:exercise:databases:sql:2018:
@@ -1634,6 +1639,13 @@ So be happy with 'git tag -s'. It really is the right way.
 ** [[https://picoctf.com/][PicoCTF]] :ctf:
 ** [[https://github.com/malwaredllc/byob][Github: malwaredllc/byob]] :repository:security:botnet:
 ** [[https://medium.com/netflix-techblog/netflix-sirt-releases-diffy-a-differencing-engine-for-digital-forensics-in-the-cloud-37b71abd2698][Netflix Cloud Security SIRT releases Diffy: A Differencing Engine for Digital Forensics in the Cloud]]
+** [[https://www.bvp.com/atlas/security-for-startups][A comprehensive guide to security for startups]] :guide:2018:
+** [[https://en.wikipedia.org/wiki/Incident_Command_System][Wikipedia: Incident Command System]] :wiki:
+   Incident response is an important part of security, and this is how governments today are handling large incidents.
+#+CAPTION: Summary from Wikipedia
+#+BEGIN_QUOTE
+The Incident Command System (ICS) is a standardized approach to the command, control, and coordination of emergency response providing a common hierarchy within which responders from multiple agencies can be effective.
+#+END_QUOTE
 * Software Engineering
 ** [[http://www.drdobbs.com/architecture-and-design/software-engineering-computer-science/217701907][Software Engineering ≠ Computer Science]] :software:engineering:architecture:design:2009:
 ** [[http://python.apichecklist.com/][Python API Checklist]] :python:api:programming:checklist:2017:
@@ -1744,6 +1756,7 @@ Does that make sense? The “> 1.0.0” part is undefined. That includes things 
 ** [[https://www.linuxjournal.com/content/data-flash-part-i-evolution-disk-storage-and-introduction-nvme][Data in a Flash, Part I: the Evolution of Disk Storage and an Introduction to NVMe]] :article:systems:2019:
 ** Kubernetes
 *** [[https://srcco.de/posts/kubernetes-failure-stories.html][Kubernetes Failure Stories]] :article:systems:kubernetes:2019:
+*** [[https://github.com/hjacobs/kubernetes-failure-stories][Github: hjacobs/kubernetes-failure-stories]] :repository:2019:
 ** Hashicorp
 *** Terraform
 **** [[https://opencredo.com/terraform-infrastructure-design-patterns/][Terraform Infrastructure Design Patterns]]        :systems:2015:
