@@ -1,6 +1,5 @@
 #+TITLE: Borgmarks - Merlin Corey at Github dot I/O
-* Borgmarks
-Bookmarks in emacs org-mode.
+Bookmarks in [[https://www.gnu.org/software/emacs/][GNU Emacs]] [[https://orgmode.org/][org-mode]].
 
 Curated, categorized, and tagged by hand.
 * Theory of organization
