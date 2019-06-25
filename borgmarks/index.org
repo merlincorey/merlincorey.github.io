@@ -792,6 +792,7 @@ Home page: http://www.helixsoft.nl/
 ** [[https://www.youtube.com/watch?v=Jib2AmRb_rk&app=desktop][SQLite: The Database at the Edge of the Network with Dr. Richard Hipp]] :talk:hipp:database:sqlite:
 ** [[https://www.youtube.com/watch?v=_gZK0tW8EhQ][Ron Garret - The Remote Agent Experiment: Debugging Code from 60 Million Miles Away]] :talk:garret:lisp:in:space:
 ** [[http://dtrace.org/blogs/bmc/2018/02/03/talks/][Brian Cantril talks]]
+*** [[https://www.youtube.com/watch?v=30jNsCVLpAE][Youtube: GOTO 2017 • Debugging Under Fire: Keep your Head when Systems have Lost their Mind • Bryan Cantrill]] :video:2017:
 ** Rich Hickey
    Creator of Clojure known for many great talks.
 *** [[http://www.infoq.com/presentations/Are-We-There-Yet-Rich-Hickey][Are we there yet?]] 				 :talk:hickey:clojure:design:
