@@ -627,6 +627,9 @@ Your first task is to build an inverter component.
 ** [[https://8bitworkshop.com/][8bit Workshop: Write 8-bit code in your browser]] :2019:
 ** [[http://emacsninja.com/posts/smooth-video-game-emulation-in-emacs.html][Smooth Video Game Emulation in Emacs]] :article:emulator:chip8:2019:
 ** [[https://codeplusplus.blogspot.com/2019/02/oldschool-planar-graphics-and-why-they.html][Oldschool planar graphics and why they were a good idea]] :article:graphics:2019:
+** [[http://notes.eatonphil.com/emulator-basics-a-stack-and-register-machine.html][Emulator basics: a stack and register machine]] :article:2019:
+*** [[https://github.com/eatonphil/x86e][Github: eatonphil/x86e]] :repository:2019:
+** [[http://www.t3x.org/lsi/index.html][Lisp System Emulation]] :book:lisp:
 ** Nintendo Entertainment System
 *** [[https://github.com/blanham/ChickeNES][blanham/ChickeNES]] :nintendo:entertainment:system:emulator:c:2013:2015:
 *** [[https://medium.com/@fogleman/i-made-an-nes-emulator-here-s-what-i-learned-about-the-original-nintendo-2e078c9b28fe][I made an NES emulator. Here’s what I learned about the original Nintendo.]] :nintendo:entertainment:system:emulator:2015:
@@ -1938,6 +1941,7 @@ There is no one-size-fits-all solution to this problem, but anything you can do 
 ** [[https://haseebq.com/my-ten-rules-for-negotiating-a-job-offer/][Ten Rules for Negotiating a Job Offer (part 1)]] :article:negotiation:2016:
 *** [[https://haseebq.com/how-not-to-bomb-your-offer-negotiation/][How Not to Bomb Your Offer Negotiation (part 2)]]            :article:2016:
 ** [[http://bofh.bjash.com/][The Bastard Operator From Hell - The Complete WWW Edition]] :archive:
+** [[https://www.filfre.net/2019/06/day-of-the-tentacle/][Day of the Tentacle]] :article:2019:
 * UNIX and BSD
 ** [[https://fosdem.org/2017/schedule/event/my_bsd_sucks_less/][My BSD Sucks Less Than Yours]] :talk:unix:openbsd:freebsd:
 ** [[http://changelog.complete.org/archives/9317-has-linux-lost-its-way-comments-prompt-a-debian-developer-to-revisit-freebsd-after-20-years][“Has Linux lost its way?” comments prompt a Debian developer to revisit FreeBSD after 20 years]] :unix:linux:comparison:2015:
