@@ -1943,6 +1943,7 @@ There is no one-size-fits-all solution to this problem, but anything you can do 
 *** [[https://haseebq.com/how-not-to-bomb-your-offer-negotiation/][How Not to Bomb Your Offer Negotiation (part 2)]]            :article:2016:
 ** [[http://bofh.bjash.com/][The Bastard Operator From Hell - The Complete WWW Edition]] :archive:
 ** [[https://www.filfre.net/2019/06/day-of-the-tentacle/][Day of the Tentacle]] :article:2019:
+** [[https://learningsynths.ableton.com/][Learning Synths]] :tutorial:
 * UNIX and BSD
 ** [[https://fosdem.org/2017/schedule/event/my_bsd_sucks_less/][My BSD Sucks Less Than Yours]] :talk:unix:openbsd:freebsd:
 ** [[http://changelog.complete.org/archives/9317-has-linux-lost-its-way-comments-prompt-a-debian-developer-to-revisit-freebsd-after-20-years][“Has Linux lost its way?” comments prompt a Debian developer to revisit FreeBSD after 20 years]] :unix:linux:comparison:2015:
