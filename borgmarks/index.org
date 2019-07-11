@@ -1741,17 +1741,12 @@ Does that make sense? The “> 1.0.0” part is undefined. That includes things 
 *** [[https://github.com/ansible/ansible][Ansible Configuration Management]] :systems:configuration:management:2012:2018:
 ** [[https://eng.uber.com/m3/][M3: Uber’s Open Source, Large-scale Metrics Platform for Prometheus]] :systems:metrics:2018:
 *** [[https://news.ycombinator.com/item?id=17707842][Hacker News Discussion #17707842]] :discussion:systems:metrics:2018:
-** [[https://movingfulcrum.com/horrors-of-using-azure-kubernetes-service-in-production/][Horrors of using Azure Kubernetes Service in Production]] :article:systems:cloud:2018:
-*** [[https://news.ycombinator.com/item?id=17700360][Hacker News Discussion #17700360]] :discussion:article:systems:cloud:2018:
 ** [[https://www.weave.works/blog/gitops-operations-by-pull-request][GitOps - Operations by Pull Request]] :article:revisioncontrol:git:continuousintegration:2018:
-** [[https://www.magicsandbox.com/][Magic Sandbox: Learn Kubernetes by Doing]] :exercise:systems:2018:
-*** [[https://news.ycombinator.com/item?id=17909594][Hacker News Discussion #17909594]] :discussion:exercise:systems:2018:
 ** [[https://www.youtube.com/watch?v=6BIry0cepz4][30 Jenkins features and plugins you wished you had known about before! by Joep Weijers]] :video:2017:
 ** [[http://pushtrain.club/][The Push Train]] :slides:systems:2017:
 ** [[https://blog.petegoo.com/2018/11/09/optimizing-ci-cd-pipelines/][Measuring and improving your CI/CD Pipelines]] :article:systems:2018:
 *** [[https://news.ycombinator.com/item?id=18426194][Hacker News Discussion #18426194]] :discussion:article:systems:2018:
 ** [[https://gitlab.com/NickBusey/HomelabOS][Gitlab: NickBusy/HomelabOS]] :repository:systems:2018:
-** [[https://itnext.io/benchmark-results-of-kubernetes-network-plugins-cni-over-10gbit-s-network-36475925a560][Benchmark results of Kubernetes network plugins (CNI) over 10Gbit/s network]] :article:systems:networking:containers:2018:
 ** [[https://queue.acm.org/detail.cfm?id=2945077][The Small Batches Principle]] :article:devops:2016:
 ** [[https://queue.acm.org/detail.cfm?id=3300018][SQL is no excuse to avoid DevOps]] :article:devops:2018:
 ** [[https://bl33pbl0p.github.io/systemd.html][Notes on how systemd's Job engine is structured]]          :systems:systemd:
@@ -1759,8 +1754,15 @@ Does that make sense? The “> 1.0.0” part is undefined. That includes things 
 ** [[https://matthias-endler.de/2019/maybe-you-dont-need-kubernetes/][Maybe you don't need Kubernetes]]    :article:systems:kubernetes:nomad:2019:
 ** [[https://www.linuxjournal.com/content/data-flash-part-i-evolution-disk-storage-and-introduction-nvme][Data in a Flash, Part I: the Evolution of Disk Storage and an Introduction to NVMe]] :article:systems:2019:
 ** Kubernetes
-*** [[https://srcco.de/posts/kubernetes-failure-stories.html][Kubernetes Failure Stories]] :article:systems:kubernetes:2019:
+*** [[https://cloud.google.com/kubernetes-engine/kubernetes-comic/][Smooth Sailing with Kubernetes]] :comic:
+*** [[https://www.cncf.io/the-childrens-illustrated-guide-to-kubernetes/][The Children's Illustrated Guide to Kubernetes]] :comic:
+*** [[https://www.magicsandbox.com/][Magic Sandbox: Learn Kubernetes by Doing]]          :exercise:systems:2018:
+**** [[https://news.ycombinator.com/item?id=17909594][Hacker News Discussion #17909594]]      :discussion:exercise:systems:2018:
+*** [[https://movingfulcrum.com/horrors-of-using-azure-kubernetes-service-in-production/][Horrors of using Azure Kubernetes Service in Production]] :article:systems:cloud:2018:
+**** [[https://news.ycombinator.com/item?id=17700360][Hacker News Discussion #17700360]] :discussion:article:systems:cloud:2018:
+*** [[https://srcco.de/posts/kubernetes-failure-stories.html][Kubernetes Failure Stories]]              :article:systems:kubernetes:2019:
 *** [[https://github.com/hjacobs/kubernetes-failure-stories][Github: hjacobs/kubernetes-failure-stories]] :repository:2019:
+*** [[https://itnext.io/benchmark-results-of-kubernetes-network-plugins-cni-over-10gbit-s-network-36475925a560][Benchmark results of Kubernetes network plugins (CNI) over 10Gbit/s network]] :article:systems:networking:containers:2018:
 ** Hashicorp
 *** Terraform
 **** [[https://opencredo.com/terraform-infrastructure-design-patterns/][Terraform Infrastructure Design Patterns]]        :systems:2015:
