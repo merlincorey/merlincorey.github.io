@@ -1698,6 +1698,10 @@ Does that make sense? The “> 1.0.0” part is undefined. That includes things 
 #+END_QUOTE
 ** [[https://www.fuzzingbook.org/][Fuzzing Book: Generating Software Tests]] :book:software:engineering:2019:
 ** [[https://triplebyte.com/blog/how-to-pass-a-programming-interview][How to pass a programming interview]] :article:2016:
+** [[https://medium.com/@kentbeck_7670/software-design-is-human-relationships-part-1-of-3-perspective-1bcd53855557][Software Design is Human Relationships (Part 1 of 3)]] :article:2019:
+*** [[https://medium.com/@kentbeck_7670/software-design-is-human-relationships-part-2-of-3-waiters-changers-and-sufficiency-4c0bb9a08d23][Software Design is Human Relationships (Part 2 of 3)]] :article:2019:
+*** [[https://medium.com/@kentbeck_7670/software-design-is-human-relationships-part-3-of-3-changers-changers-20eeac7846e0][Software Design is Human Relationships (Part 3 of 3)]] :article:2019:
+
 * Systems Engineering
 ** [[https://alestic.com/2010/12/ec2-user-data-output/][Logging user-data Script Output on EC2 Instances]] :systems:cloudinit:logging:aws:ec2:
 
