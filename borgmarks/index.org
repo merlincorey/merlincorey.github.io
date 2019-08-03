@@ -731,6 +731,7 @@ These indeed can make your CSS code work for both the stone age and hottest brow
 ** [[https://opensenselabs.com/blog/tech/rem-vs-em-vs-px-when-use-these-units][Rem vs Em vs Px | When to use these units]] :article:2018:
 ** [[https://mastery.games/p/flexbox-zombies][Flexbox Zombies]] :css:flexbox:tutorial:game:
 ** [[http://clagnut.com/blog/2395][All you need to know about hyphenation in CSS]] :article:css:2019:
+** [[https://nystudio107.com/blog/the-css-background-image-property-as-an-anti-pattern][The CSS background-image property as an anti-pattern]] :article:css:2019:
 * Functional Programming
 ** [[https://chriskohlhepp.wordpress.com/functional-programming-section/metacircular-adventures-in-functional-abstraction-challenging-clojure-in-common-lisp/][Metacircular Adventures in Functional Abstraction]] :functional:programming:common:lisp:clojure:
 ** [[https://aphyr.com/posts/301-clojure-from-the-ground-up-welcome][Clojure from the ground up]] :functional:programming:clojure:
@@ -1063,6 +1064,7 @@ you can work around this client side with per hour filenames or the other usual 
 *** [[https://alexgaynor.net/2019/apr/21/modern-c++-wont-save-us/][Modern C++ won't save us]] :article:cpp:security:2019:
 *** [[https://www.bfilipek.com/2019/02/lambdas-story-part1.html][Bartek's Coding blog: Lambdas: From C++11 to C++20, Part 1]] :article:cpp03:cpp11:cpp14:2019:
 *** [[https://www.bfilipek.com/2019/03/lambdas-story-part2.html][Bartek's coding blog: Lambdas: From C++11 to C++20, Part 2]] :article:cpp17:cpp20:2019:
+*** [[https://github.com/RandyGaul/cute_headers][Github: RandyGaul/cute_headers]] :repository:2018:2019:
 *** Libraries
 **** [[https://github.com/nothings/single_file_libs][Github: nothings/single_file_libs]] :repository:list:cpp:library:
 **** Testing
@@ -1702,6 +1704,9 @@ Does that make sense? The “> 1.0.0” part is undefined. That includes things 
 *** [[https://medium.com/@kentbeck_7670/software-design-is-human-relationships-part-2-of-3-waiters-changers-and-sufficiency-4c0bb9a08d23][Software Design is Human Relationships (Part 2 of 3)]] :article:2019:
 *** [[https://medium.com/@kentbeck_7670/software-design-is-human-relationships-part-3-of-3-changers-changers-20eeac7846e0][Software Design is Human Relationships (Part 3 of 3)]] :article:2019:
 
+** [[https://trunkbaseddevelopment.com/][Trunk based development]] :article:
+** [[http://blog.shippable.com/ci/cd-of-microservices-using-mono-repos][CI/CD For Microservices Using Monorepos]] :article:2017:
+** [[https://yosefk.com/blog/dont-ask-if-a-monorepo-is-good-for-you-ask-if-youre-good-enough-for-a-monorepo.html][Don't ask if a monorepo is good for you – ask if you're good enough for a monorepo]] :article:2019:
 * Systems Engineering
 ** [[https://alestic.com/2010/12/ec2-user-data-output/][Logging user-data Script Output on EC2 Instances]] :systems:cloudinit:logging:aws:ec2:
 
@@ -1757,6 +1762,11 @@ Does that make sense? The “> 1.0.0” part is undefined. That includes things 
 ** [[http://www.daemonology.net/blog/2018-12-26-the-many-ways-to-launch-FreeBSD-in-EC2.html][The many ways to launch FreeBSD in EC2]] :article:systems:2018:
 ** [[https://matthias-endler.de/2019/maybe-you-dont-need-kubernetes/][Maybe you don't need Kubernetes]]    :article:systems:kubernetes:nomad:2019:
 ** [[https://www.linuxjournal.com/content/data-flash-part-i-evolution-disk-storage-and-introduction-nvme][Data in a Flash, Part I: the Evolution of Disk Storage and an Introduction to NVMe]] :article:systems:2019:
+** [[https://github.com/prometheus/snmp_exporter][Github: prometheus/snmp_exporter]] :repository:2015:2019:
+** [[https://demo.cloudalchemy.org/][CloudAlchemy configuration managed monitoring stack demo site]]       :demo:
+** [[https://github.com/thanos-io/thanos][Github: thanos-io/thanos]] :repository:2017:2019:
+   Highly available Prometheus setup with long term storage capabilities.
+** [[https://github.com/cortexproject/cortex][Github: cortexproject/cortex]] :repository:2018:2019:
 ** Kubernetes
 *** [[https://cloud.google.com/kubernetes-engine/kubernetes-comic/][Smooth Sailing with Kubernetes]] :comic:
 *** [[https://www.cncf.io/the-childrens-illustrated-guide-to-kubernetes/][The Children's Illustrated Guide to Kubernetes]] :comic:
