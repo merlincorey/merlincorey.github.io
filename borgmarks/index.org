@@ -923,6 +923,69 @@ you can work around this client side with per hour filenames or the other usual 
    Formerly ~PIWIK~, free Google Analytics-like platform.
 * Operating Systems
 ** [[http://greenteapress.com/thinkos/thinkos.pdf][Think OS: A Brief Introduction to Operating Systems]] :operating:systems:2015:
+* Management
+** [[https://martinfowler.com/articles/itsNotJustStandingUp.html][It's Not Just Standing Up: Patterns for Daily Standup Meetings]] :meetings:article:2016:
+** [[https://www.blossom.co/blog/3-tips-for-quick-effective-stand-up-meetings][3 Tips for Effective Stand-Up Meetings]]             :meetings:article:2016:
+   1. Brew some tea together
+   2. Get a Kanban board
+   3. Adapt the format
+** [[https://blog.gotomeeting.com/7-rules-effective-stand-meetings/][7 Rules for Effective Stand-Up Meetings]]            :meetings:article:2018:
+   1. Only meet when necessary
+   2. Keep it short and sweet
+   3. Establish a goal
+   4. Maintain structure
+   5. Make remote employees feel like they're there
+   6. Give everyone a chance to talk
+   7. Don't skip follow-up
+** [[https://sprint.ly/blog/scrum-meeting-best-practices/][5 Scrum Meeting Best Practices: Master the Daily Stand-Up]] :meetings:article:2016:
+   1. Remain standing
+   2. Your 3-question agenda
+      1. What did you accomplish since the last meeting?
+      2. What are you working on until the next meeting?
+      3. What is getting in your way or keeping you from your job?
+   3. Have your project management tool visible
+   4. It's a collaborative effort
+   5. Plan the meeting around your team
+*** Avoidance alert: 4 bad habits that derail scrum meetings
+    1. Waiting around for your team
+    2. Introducing new ideas
+    3. Leetting people ramble
+    4. Abandoning team communication in favor of the standup
+** [[https://www.laserfiche.com/ecmblog/10-ways-to-make-stand-up-meetings-better-office-hack/][Office Hack: 10 ways to make Stand-Up meetings better]] :meetings:article:
+   1. Rally the troops
+   2. Signal the end
+   3. Instill intrigue
+   4. Actually Stand Up
+   5. Keep it short
+   6. Keep it small
+   7. Stick to the Trhee Questions
+      1. What did I accomplish yesterday?
+      2. What will I do today?
+      3. What obstacles are impeding my progress?
+   8. Stay focused, not officious
+   9. Evaluate stand-ups
+   10. Maintain consistency
+** [[https://medium.com/@jsonpify/you-dont-need-standup-9a74782517c1][You don’t need standup]] :meetings:article:2018:
+*** [[https://news.ycombinator.com/item?id=17671464][Hacker News Discussion #17671464]] :discussion:meetings:article:2018:
+** [[https://github.com/kanboard/kanboard][Github: kanboard/kanboard]]                               :repository:kanban:2015:2018:
+   Open source kanban board web application in =PHP= with =MySQL= database.
+** [[https://github.com/kiswa/TaskBoard][Github: kiswa/TaskBoard]]                                 :repository:kanban:2014:2017:
+   Open source kanban board web application in =PHP= with =SQLite= database.
+** [[https://github.com/taigaio][Github: Taigaio Organization]]
+   Open source Project Management in =Django= with =MySQL= database.
+   Available as a hosted service, with free plans for a single private project.
+   Organizes by Epics, Scrum Backlog, Kanban Board, Issues, and Wiki.
+*** [[https://github.com/taigaio/taiga-back][Github: taigaio/taiga-back]] :repository:2014:2018:
+    =Django= backend.
+*** [[https://github.com/taigaio/taiga-front][Github: taigaio/taiga-front]] :repository:2014:2018:
+    =AngularJS= frontend.
+** [[https://github.com/RestyaPlatform/board/][Github: RestyaPlatform/board]] :repository:kanban:2014:2018:
+   Open source kanban board web application in =PHP= with =PostgreSQL= and =ElasticSearch= databases.
+** [[https://github.com/wekan/wekan][Github: wekan/wekan]] :repository:kanban:2015:2018:
+   Open source kanban board web application in =NodeJS=.
+** [[https://www.teamgantt.com/art-science-of-leading-projects][Art & Science of Leading Projects]] :video:guide:2018:
+** [[https://blog.plaid.com/growing-our-team-with-retrospectives/][Growing our team with retrospectives]] :article:2019:
+** [[https://medium.com/@bellmar/all-the-best-engineering-advice-i-stole-from-non-technical-people-eb7f90ca2f5f][All the best engineering advice I stole from non-technical people]] :article:2019:
 * Papers
 ** [[https://www.theatlantic.com/magazine/archive/1945/07/as-we-may-think/303881/][As We May Think]] 						 :paper:1945:
 
@@ -1340,68 +1403,6 @@ publish:
 *** [[https://pgexercises.com/][PostgreSQL Exercises]] :exercise:sql:
 *** [[https://schemaverse.com/][The Schemaverse]] :game:sql:
 *** [[http://www.zindlerb.com/joins-in-steps/][SQL Joins In Steps]] :article:sql:2019:
-* Project Management
-** [[https://martinfowler.com/articles/itsNotJustStandingUp.html][It's Not Just Standing Up: Patterns for Daily Standup Meetings]] :meetings:article:2016:
-** [[https://www.blossom.co/blog/3-tips-for-quick-effective-stand-up-meetings][3 Tips for Effective Stand-Up Meetings]] :meetings:article:2016:
-   1. Brew some tea together
-   2. Get a Kanban board
-   3. Adapt the format
-** [[https://blog.gotomeeting.com/7-rules-effective-stand-meetings/][7 Rules for Effective Stand-Up Meetings]]            :meetings:article:2018:
-   1. Only meet when necessary
-   2. Keep it short and sweet
-   3. Establish a goal
-   4. Maintain structure
-   5. Make remote employees feel like they're there
-   6. Give everyone a chance to talk
-   7. Don't skip follow-up
-** [[https://sprint.ly/blog/scrum-meeting-best-practices/][5 Scrum Meeting Best Practices: Master the Daily Stand-Up]] :meetings:article:2016:
-   1. Remain standing
-   2. Your 3-question agenda
-      1. What did you accomplish since the last meeting?
-      2. What are you working on until the next meeting?
-      3. What is getting in your way or keeping you from your job?
-   3. Have your project management tool visible
-   4. It's a collaborative effort
-   5. Plan the meeting around your team
-*** Avoidance alert: 4 bad habits that derail scrum meetings
-    1. Waiting around for your team
-    2. Introducing new ideas
-    3. Leetting people ramble
-    4. Abandoning team communication in favor of the standup
-** [[https://www.laserfiche.com/ecmblog/10-ways-to-make-stand-up-meetings-better-office-hack/][Office Hack: 10 ways to make Stand-Up meetings better]] :meetings:article:
-   1. Rally the troops
-   2. Signal the end
-   3. Instill intrigue
-   4. Actually Stand Up
-   5. Keep it short
-   6. Keep it small
-   7. Stick to the Trhee Questions
-      1. What did I accomplish yesterday?
-      2. What will I do today?
-      3. What obstacles are impeding my progress?
-   8. Stay focused, not officious
-   9. Evaluate stand-ups
-   10. Maintain consistency
-** [[https://medium.com/@jsonpify/you-dont-need-standup-9a74782517c1][You don’t need standup]] :meetings:article:2018:
-*** [[https://news.ycombinator.com/item?id=17671464][Hacker News Discussion #17671464]] :discussion:meetings:article:2018:
-** [[https://github.com/kanboard/kanboard][Github: kanboard/kanboard]]                               :repository:kanban:2015:2018:
-   Open source kanban board web application in =PHP= with =MySQL= database.
-** [[https://github.com/kiswa/TaskBoard][Github: kiswa/TaskBoard]]                                 :repository:kanban:2014:2017:
-   Open source kanban board web application in =PHP= with =SQLite= database.
-** [[https://github.com/taigaio][Github: Taigaio Organization]]
-   Open source Project Management in =Django= with =MySQL= database.
-   Available as a hosted service, with free plans for a single private project.
-   Organizes by Epics, Scrum Backlog, Kanban Board, Issues, and Wiki.
-*** [[https://github.com/taigaio/taiga-back][Github: taigaio/taiga-back]] :repository:2014:2018:
-    =Django= backend.
-*** [[https://github.com/taigaio/taiga-front][Github: taigaio/taiga-front]] :repository:2014:2018:
-    =AngularJS= frontend.
-** [[https://github.com/RestyaPlatform/board/][Github: RestyaPlatform/board]] :repository:kanban:2014:2018:
-   Open source kanban board web application in =PHP= with =PostgreSQL= and =ElasticSearch= databases.
-** [[https://github.com/wekan/wekan][Github: wekan/wekan]] :repository:kanban:2015:2018:
-   Open source kanban board web application in =NodeJS=.
-** [[https://www.teamgantt.com/art-science-of-leading-projects][Art & Science of Leading Projects]] :video:guide:management:2018:
-** [[https://blog.plaid.com/growing-our-team-with-retrospectives/][Growing our team with retrospectives]] :article:management:2019:
 * Reverse Engineering
 ** [[https://www.youtube.com/user/OpenSecurityTraining][Open Security Training YouTube Channel]]                            :videos:binary:reverse:engineering:
 ** [[https://github.com/FireyFly/pixd][Colourful visualization tool for binary files]] :binary:data:visualization:
@@ -1767,6 +1768,7 @@ Does that make sense? The “> 1.0.0” part is undefined. That includes things 
 ** [[https://github.com/thanos-io/thanos][Github: thanos-io/thanos]] :repository:2017:2019:
    Highly available Prometheus setup with long term storage capabilities.
 ** [[https://github.com/cortexproject/cortex][Github: cortexproject/cortex]] :repository:2018:2019:
+** [[https://devconnected.com/syslog-the-complete-system-administrator-guide/][Syslog : The Complete System Administrator Guide]] :guide:2019:
 ** Kubernetes
 *** [[https://cloud.google.com/kubernetes-engine/kubernetes-comic/][Smooth Sailing with Kubernetes]] :comic:
 *** [[https://www.cncf.io/the-childrens-illustrated-guide-to-kubernetes/][The Children's Illustrated Guide to Kubernetes]] :comic:
@@ -1960,6 +1962,7 @@ There is no one-size-fits-all solution to this problem, but anything you can do 
 ** [[http://bofh.bjash.com/][The Bastard Operator From Hell - The Complete WWW Edition]] :archive:
 ** [[https://www.filfre.net/2019/06/day-of-the-tentacle/][Day of the Tentacle]] :article:2019:
 ** [[https://learningsynths.ableton.com/][Learning Synths]] :tutorial:
+** [[https://punpedia.org/][Punpedia - Encyclopedia of Puns]] :reference:tool:
 * UNIX and BSD
 ** [[https://fosdem.org/2017/schedule/event/my_bsd_sucks_less/][My BSD Sucks Less Than Yours]] :talk:unix:openbsd:freebsd:
 ** [[http://changelog.complete.org/archives/9317-has-linux-lost-its-way-comments-prompt-a-debian-developer-to-revisit-freebsd-after-20-years][“Has Linux lost its way?” comments prompt a Debian developer to revisit FreeBSD after 20 years]] :unix:linux:comparison:2015:
