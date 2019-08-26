@@ -560,6 +560,8 @@ emacs --quick --script publish.el --funcall=org-publish-all
 (global-set-key (kbd "C-x M-t") 'projectile-term)
 #+END_SRC
 **** [[https://gitlab.com/ambrevar/emacs-gif-screencast][Gitlab: ambrevar/emacs-gif-screencast]] :package:screencast:2018:2019:
+**** [[https://github.com/alphapapa/outshine][Github: alphapapa/outshine]] :repository:2015:2018:
+     Org-mode for non-Org buffers.
 *** Kanban
 **** [[http://agilesoc.com/2011/08/08/emacs-org-mode-kanban-pomodoro-oh-my/][Emacs, org-mode, Kanban, Pomodoro... Oh my...]] :emacs:orgmode:kanban:2011:
 **** [[http://www.draketo.de/light/english/free-software/el-kanban-org-table][El Kanban Org: parse org-mode todo-states to use org-tables as Kanban tables]] :emacs:orgmode:kanban:2012:
@@ -616,6 +618,7 @@ Your first task is to build an inverter component.
 ** [[http://www.pynq.io/][PYNQ: Python productivity for ZYNQ]]
 ** [[https://internalregister.github.io/2019/03/14/Homebrew-Console.html][Building a 'Homebrew' Video Game Console]] :article:2019:
 ** [[https://workmanship.nasa.gov/lib/insp/2%20books/frameset.html][NASA Workmanship Standards Pictoral Reference]] :documentation:
+** [[https://projects.drogon.net/wiringpi-pin-numbering/][wiringPi Pin numbering]] :article:2016:
 * Emulators and Game Consoles
 ** [[http://www.codeslinger.co.uk/pages/basics.html][codeslinger Emulation Basics]] :emulator:chip8:2008:
 *** [[http://www.codeslinger.co.uk/files/emu.pdf][Study of the techniques for emulation programming]] :paper:emulation:2001:
@@ -834,6 +837,69 @@ Home page: http://www.helixsoft.nl/
 *** [[https://thegradient.pub/how-to-fix-rl/][How to fix reinforcement learning]] :machinelearning:reinforcement:2018:
 ** [[https://towardsdatascience.com/how-to-build-your-own-neural-network-from-scratch-in-python-68998a08e4f6][How to build your own Neural Network from scratch in Python]] :article::neuralnetworks:2018:
 ** [[https://github.com/GokuMohandas/practicalAI/blob/master/README.md][Github: GokuMohandas/practicalAI]] :repository:machinelearning:python:2018:
+* Management
+** [[https://martinfowler.com/articles/itsNotJustStandingUp.html][It's Not Just Standing Up: Patterns for Daily Standup Meetings]] :meetings:article:2016:
+** [[https://www.blossom.co/blog/3-tips-for-quick-effective-stand-up-meetings][3 Tips for Effective Stand-Up Meetings]]             :meetings:article:2016:
+   1. Brew some tea together
+   2. Get a Kanban board
+   3. Adapt the format
+** [[https://blog.gotomeeting.com/7-rules-effective-stand-meetings/][7 Rules for Effective Stand-Up Meetings]]            :meetings:article:2018:
+   1. Only meet when necessary
+   2. Keep it short and sweet
+   3. Establish a goal
+   4. Maintain structure
+   5. Make remote employees feel like they're there
+   6. Give everyone a chance to talk
+   7. Don't skip follow-up
+** [[https://sprint.ly/blog/scrum-meeting-best-practices/][5 Scrum Meeting Best Practices: Master the Daily Stand-Up]] :meetings:article:2016:
+   1. Remain standing
+   2. Your 3-question agenda
+      1. What did you accomplish since the last meeting?
+      2. What are you working on until the next meeting?
+      3. What is getting in your way or keeping you from your job?
+   3. Have your project management tool visible
+   4. It's a collaborative effort
+   5. Plan the meeting around your team
+*** Avoidance alert: 4 bad habits that derail scrum meetings
+    1. Waiting around for your team
+    2. Introducing new ideas
+    3. Leetting people ramble
+    4. Abandoning team communication in favor of the standup
+** [[https://www.laserfiche.com/ecmblog/10-ways-to-make-stand-up-meetings-better-office-hack/][Office Hack: 10 ways to make Stand-Up meetings better]] :meetings:article:
+   1. Rally the troops
+   2. Signal the end
+   3. Instill intrigue
+   4. Actually Stand Up
+   5. Keep it short
+   6. Keep it small
+   7. Stick to the Trhee Questions
+      1. What did I accomplish yesterday?
+      2. What will I do today?
+      3. What obstacles are impeding my progress?
+   8. Stay focused, not officious
+   9. Evaluate stand-ups
+   10. Maintain consistency
+** [[https://medium.com/@jsonpify/you-dont-need-standup-9a74782517c1][You don’t need standup]] :meetings:article:2018:
+*** [[https://news.ycombinator.com/item?id=17671464][Hacker News Discussion #17671464]] :discussion:meetings:article:2018:
+** [[https://github.com/kanboard/kanboard][Github: kanboard/kanboard]]                               :repository:kanban:2015:2018:
+   Open source kanban board web application in =PHP= with =MySQL= database.
+** [[https://github.com/kiswa/TaskBoard][Github: kiswa/TaskBoard]]                                 :repository:kanban:2014:2017:
+   Open source kanban board web application in =PHP= with =SQLite= database.
+** [[https://github.com/taigaio][Github: Taigaio Organization]]
+   Open source Project Management in =Django= with =MySQL= database.
+   Available as a hosted service, with free plans for a single private project.
+   Organizes by Epics, Scrum Backlog, Kanban Board, Issues, and Wiki.
+*** [[https://github.com/taigaio/taiga-back][Github: taigaio/taiga-back]] :repository:2014:2018:
+    =Django= backend.
+*** [[https://github.com/taigaio/taiga-front][Github: taigaio/taiga-front]] :repository:2014:2018:
+    =AngularJS= frontend.
+** [[https://github.com/RestyaPlatform/board/][Github: RestyaPlatform/board]] :repository:kanban:2014:2018:
+   Open source kanban board web application in =PHP= with =PostgreSQL= and =ElasticSearch= databases.
+** [[https://github.com/wekan/wekan][Github: wekan/wekan]] :repository:kanban:2015:2018:
+   Open source kanban board web application in =NodeJS=.
+** [[https://www.teamgantt.com/art-science-of-leading-projects][Art & Science of Leading Projects]] :video:guide:2018:
+** [[https://blog.plaid.com/growing-our-team-with-retrospectives/][Growing our team with retrospectives]] :article:2019:
+** [[https://medium.com/@bellmar/all-the-best-engineering-advice-i-stole-from-non-technical-people-eb7f90ca2f5f][All the best engineering advice I stole from non-technical people]] :article:2019:
 * Mazes
 ** [[http://weblog.jamisbuck.org/2011/2/7/maze-generation-algorithm-recap][Maze Generation Algorithm Recap]] :maze:algorithms:
 
@@ -923,69 +989,6 @@ you can work around this client side with per hour filenames or the other usual 
    Formerly ~PIWIK~, free Google Analytics-like platform.
 * Operating Systems
 ** [[http://greenteapress.com/thinkos/thinkos.pdf][Think OS: A Brief Introduction to Operating Systems]] :operating:systems:2015:
-* Management
-** [[https://martinfowler.com/articles/itsNotJustStandingUp.html][It's Not Just Standing Up: Patterns for Daily Standup Meetings]] :meetings:article:2016:
-** [[https://www.blossom.co/blog/3-tips-for-quick-effective-stand-up-meetings][3 Tips for Effective Stand-Up Meetings]]             :meetings:article:2016:
-   1. Brew some tea together
-   2. Get a Kanban board
-   3. Adapt the format
-** [[https://blog.gotomeeting.com/7-rules-effective-stand-meetings/][7 Rules for Effective Stand-Up Meetings]]            :meetings:article:2018:
-   1. Only meet when necessary
-   2. Keep it short and sweet
-   3. Establish a goal
-   4. Maintain structure
-   5. Make remote employees feel like they're there
-   6. Give everyone a chance to talk
-   7. Don't skip follow-up
-** [[https://sprint.ly/blog/scrum-meeting-best-practices/][5 Scrum Meeting Best Practices: Master the Daily Stand-Up]] :meetings:article:2016:
-   1. Remain standing
-   2. Your 3-question agenda
-      1. What did you accomplish since the last meeting?
-      2. What are you working on until the next meeting?
-      3. What is getting in your way or keeping you from your job?
-   3. Have your project management tool visible
-   4. It's a collaborative effort
-   5. Plan the meeting around your team
-*** Avoidance alert: 4 bad habits that derail scrum meetings
-    1. Waiting around for your team
-    2. Introducing new ideas
-    3. Leetting people ramble
-    4. Abandoning team communication in favor of the standup
-** [[https://www.laserfiche.com/ecmblog/10-ways-to-make-stand-up-meetings-better-office-hack/][Office Hack: 10 ways to make Stand-Up meetings better]] :meetings:article:
-   1. Rally the troops
-   2. Signal the end
-   3. Instill intrigue
-   4. Actually Stand Up
-   5. Keep it short
-   6. Keep it small
-   7. Stick to the Trhee Questions
-      1. What did I accomplish yesterday?
-      2. What will I do today?
-      3. What obstacles are impeding my progress?
-   8. Stay focused, not officious
-   9. Evaluate stand-ups
-   10. Maintain consistency
-** [[https://medium.com/@jsonpify/you-dont-need-standup-9a74782517c1][You don’t need standup]] :meetings:article:2018:
-*** [[https://news.ycombinator.com/item?id=17671464][Hacker News Discussion #17671464]] :discussion:meetings:article:2018:
-** [[https://github.com/kanboard/kanboard][Github: kanboard/kanboard]]                               :repository:kanban:2015:2018:
-   Open source kanban board web application in =PHP= with =MySQL= database.
-** [[https://github.com/kiswa/TaskBoard][Github: kiswa/TaskBoard]]                                 :repository:kanban:2014:2017:
-   Open source kanban board web application in =PHP= with =SQLite= database.
-** [[https://github.com/taigaio][Github: Taigaio Organization]]
-   Open source Project Management in =Django= with =MySQL= database.
-   Available as a hosted service, with free plans for a single private project.
-   Organizes by Epics, Scrum Backlog, Kanban Board, Issues, and Wiki.
-*** [[https://github.com/taigaio/taiga-back][Github: taigaio/taiga-back]] :repository:2014:2018:
-    =Django= backend.
-*** [[https://github.com/taigaio/taiga-front][Github: taigaio/taiga-front]] :repository:2014:2018:
-    =AngularJS= frontend.
-** [[https://github.com/RestyaPlatform/board/][Github: RestyaPlatform/board]] :repository:kanban:2014:2018:
-   Open source kanban board web application in =PHP= with =PostgreSQL= and =ElasticSearch= databases.
-** [[https://github.com/wekan/wekan][Github: wekan/wekan]] :repository:kanban:2015:2018:
-   Open source kanban board web application in =NodeJS=.
-** [[https://www.teamgantt.com/art-science-of-leading-projects][Art & Science of Leading Projects]] :video:guide:2018:
-** [[https://blog.plaid.com/growing-our-team-with-retrospectives/][Growing our team with retrospectives]] :article:2019:
-** [[https://medium.com/@bellmar/all-the-best-engineering-advice-i-stole-from-non-technical-people-eb7f90ca2f5f][All the best engineering advice I stole from non-technical people]] :article:2019:
 * Papers
 ** [[https://www.theatlantic.com/magazine/archive/1945/07/as-we-may-think/303881/][As We May Think]] 						 :paper:1945:
 
@@ -1347,6 +1350,7 @@ I'm in the process of getting the detangle working for noweb mode. The current i
 *** [[https://www.python.org/dev/peps/pep-0518/][PEP 518 -- Specifying Minimum Build System Requirements for Python Projects]] :standard:python:packaging:2018:
 *** [[https://composingprograms.com/][Composing Programs (SICP in Python)]] :python:curriculum:
 *** [[https://medium.com/netflix-techblog/python-at-netflix-bba45dae649e][Python at Netflix]] :article:python:2019:
+*** [[https://charlesleifer.com/blog/going-fast-with-sqlite-and-python/][Going fast with SQLite and Python]] :article:2017:
 *** Libraries and Tools
 **** [[http://npyscreen.readthedocs.io/index.html][npyscreen Documentation]] :python:library:terminal:ui:2014:
 **** [[http://python-prompt-toolkit.readthedocs.io/en/master/][prompt-toolkit Documentation]] :python:library:terminal:ui:2014:2018:
