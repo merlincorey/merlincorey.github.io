@@ -1773,6 +1773,7 @@ Does that make sense? The “> 1.0.0” part is undefined. That includes things 
    Highly available Prometheus setup with long term storage capabilities.
 ** [[https://github.com/cortexproject/cortex][Github: cortexproject/cortex]] :repository:2018:2019:
 ** [[https://devconnected.com/syslog-the-complete-system-administrator-guide/][Syslog : The Complete System Administrator Guide]] :guide:2019:
+** [[https://nickcraver.com/desktop-build/][Stack Overflow Developer Desktop Build - 2015 to 2019]] :article:2015:2019:
 ** Kubernetes
 *** [[https://cloud.google.com/kubernetes-engine/kubernetes-comic/][Smooth Sailing with Kubernetes]] :comic:
 *** [[https://www.cncf.io/the-childrens-illustrated-guide-to-kubernetes/][The Children's Illustrated Guide to Kubernetes]] :comic:
@@ -1967,6 +1968,11 @@ There is no one-size-fits-all solution to this problem, but anything you can do 
 ** [[https://www.filfre.net/2019/06/day-of-the-tentacle/][Day of the Tentacle]] :article:2019:
 ** [[https://learningsynths.ableton.com/][Learning Synths]] :tutorial:
 ** [[https://punpedia.org/][Punpedia - Encyclopedia of Puns]] :reference:tool:
+** [[https://www.merriam-webster.com/words-at-play/misuse-of-literally][Did We Change the Definition of 'Literally'?]] :article:2018:
+   Literally every modern dictionary includes this definition.
+
+   Is it ever okay to use [[https://www.merriam-webster.com/dictionary/literally][literally]] to mean "figuratively"?
+** [[https://www.blocklayer.com/][Calculators for Contractors]] :tools:
 * UNIX and BSD
 ** [[https://fosdem.org/2017/schedule/event/my_bsd_sucks_less/][My BSD Sucks Less Than Yours]] :talk:unix:openbsd:freebsd:
 ** [[http://changelog.complete.org/archives/9317-has-linux-lost-its-way-comments-prompt-a-debian-developer-to-revisit-freebsd-after-20-years][“Has Linux lost its way?” comments prompt a Debian developer to revisit FreeBSD after 20 years]] :unix:linux:comparison:2015:
