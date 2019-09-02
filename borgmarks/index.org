@@ -976,6 +976,8 @@ you can work around this client side with per hour filenames or the other usual 
 ** [[https://metis.fi/en/2017/10/txpower/][8 reasons to turn down the transmit power of your Wi-Fi]] :article:networking:2017:
 ** [[http://unpbook.com/src.html][Unix Network Programming book Source Code]] :networking:programming:unix:examples:
 ** [[https://github.com/leandromoreira/linux-network-performance-parameters][Github: leandromoreira/linux-network-performance-parameters]] :repository:networking:2018:
+** [[https://www.joyent.com/blog/tcp-puzzlers][TCP Puzzlers]] :article:2016:
+*** [[https://news.ycombinator.com/item?id=12315814][Hacker News Discussion #12315814]] :discussion:article:2016:
 * Object Oriented Programming and Design
 ** [[https://ericlippert.com/2015/04/27/wizards-and-warriors-part-one/][Wizards and Warriors: Part One]] :object:oriented:design:
 *** [[https://ericlippert.com/2015/04/30/wizards-and-warriors-part-two/][Wizards and Warriors: Part Two]] :object:oriented:design:
