@@ -1045,6 +1045,8 @@ you can work around this client side with per hour filenames or the other usual 
 *** [[http://99-bottles-of-beer.net/][99-bottles-of-beer.net]]
 *** [[https://esolangs.org/wiki/Main_Page][Esoteric Programming Languages Wiki]]
 *** [[http://wiki.c2.com/][C2 Wiki Wiki Web]] :1995:2018:
+*** [[https://futureofcoding.org/catalog/][The Whole Code Catalog]] :2019:
+    Almanac of lesser known programming languages.
 ** APL
 *** [[http://wordsandbuttons.online/apl_deserves_its_renaissance_too.html][APL deserves its renaissance too]]
 ** Assembly
@@ -1133,6 +1135,7 @@ you can work around this client side with per hour filenames or the other usual 
 *** [[https://www.bfilipek.com/2019/02/lambdas-story-part1.html][Bartek's Coding blog: Lambdas: From C++11 to C++20, Part 1]] :article:cpp03:cpp11:cpp14:2019:
 *** [[https://www.bfilipek.com/2019/03/lambdas-story-part2.html][Bartek's coding blog: Lambdas: From C++11 to C++20, Part 2]] :article:cpp17:cpp20:2019:
 *** [[https://github.com/RandyGaul/cute_headers][Github: RandyGaul/cute_headers]] :repository:2018:2019:
+*** [[https://mcla.ug/blog/cpp-is-not-a-superset-of-c.html][C++ is not a superset of C]] :article:c:cpp:2019:
 *** Libraries
 **** [[https://github.com/nothings/single_file_libs][Github: nothings/single_file_libs]] :repository:list:cpp:library:
 **** Testing
