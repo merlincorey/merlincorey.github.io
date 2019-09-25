@@ -743,8 +743,8 @@ These indeed can make your CSS code work for both the stone age and hottest brow
 ** [[https://patrickmn.com/software/the-haskell-pyramid/][The Haskell Pyramid]] :functional:programming:haskell:
 ** [[https://mostly-adequate.gitbooks.io/mostly-adequate-guide/][Professor Frisby's Mostly Adequate Guide to Functional Programming]] :book:functional:programming:javascript:
 * Game Development
-** [[https://www.haroldserrano.com/blog/books-i-used-to-develop-a-game-engine][Books I had to read to develop a game engine]] :gamedevelopment:game:engine:2018:
-** [[http://www.helixsoft.nl/articles/circle/sincos.htm][Sin & Cos: The Programmer's Pals!]] :gamedevelopment:mathematics:trigonometry:
+** [[https://www.haroldserrano.com/blog/books-i-used-to-develop-a-game-engine][Books I had to read to develop a game engine]] game:engine:2018:
+** [[http://www.helixsoft.nl/articles/circle/sincos.htm][Sin & Cos: The Programmer's Pals!]] mathematics:trigonometry:
 *** Conclusion
 #+BEGIN_QUOTE
 In this article I set out to answer some of the most common questions on sine and cosine, or trigonometry in general.
@@ -759,15 +759,16 @@ Amarillion
 E-mail: amarillion@yahoo.com
 Home page: http://www.helixsoft.nl/
 #+END_QUOTE
-** [[https://allarsblog.com/2018/03/16/confessions-of-an-unreal-engine-4-engineering-firefighter/][Confessions of an Unreal Engine 4 Engineering Firefighter]] :gamedevelopment:unreal:engine:fire:fighting:2018:
-** [[https://www.gamasutra.com/view/feature/131503/1500_archers_on_a_288_network_.php?print=1][1500 Archers on a 28.8: Network Programming in Age of Empires and Beyond]] :gamedevelopment:network:2018:
-** [[https://www.masswerk.at/spacewar/inside/][Inside Spacewar! A Software Archeological Approach to the First Video Game]] :history:gamedevelopment:spacewar:2014:2015:
-** [[https://www.masswerk.at/nowgobang/2018/anatomy-of-an-rng][Anatomy of a Random Number Generator]] :history:gamedevelopment:spacewar:algorithms:rng:2018:
+** [[https://allarsblog.com/2018/03/16/confessions-of-an-unreal-engine-4-engineering-firefighter/][Confessions of an Unreal Engine 4 Engineering Firefighter]] unreal:engine:fire:fighting:2018:
+** [[https://www.gamasutra.com/view/feature/131503/1500_archers_on_a_288_network_.php?print=1][1500 Archers on a 28.8: Network Programming in Age of Empires and Beyond]] network:2018:
+** [[https://www.masswerk.at/spacewar/inside/][Inside Spacewar! A Software Archeological Approach to the First Video Game]] :historyspacewar:2014:2015:
+** [[https://www.masswerk.at/nowgobang/2018/anatomy-of-an-rng][Anatomy of a Random Number Generator]] :historyspacewar:algorithms:rng:2018:
 ** [[http://www.gamasutra.com/blogs/JoshGe/20181029/329512/How_to_Make_a_Roguelike.php][How to Make a Roguelike]] :article:roguelike:2018:
 *** [[https://news.ycombinator.com/item?id=18335409][Hacker News Discussion #18335409]] :discussion:article:roguelike:2018:
-** [[http://www.vintage-basic.net/games.html][Vintage Basic: BASIC Computer Games]] :history:gamedevelopment:collection:
+** [[http://www.vintage-basic.net/games.html][Vintage Basic: BASIC Computer Games]] :historycollection:
 ** [[https://lazyfoo.net/tutorials/SDL/][Lazy Foo' Productions: Beginning Game Programming v2.0 with SDL2]] :tutorial:2004:2019:
-** [[https://lopespm.github.io/2019/02/06/survival-ball-making-the-game.html][Survival Ball: Making the Game]] :article:gamedevelopment:2019:
+** [[https://lopespm.github.io/2019/02/06/survival-ball-making-the-game.html][Survival Ball: Making the Game]] :article2019:
+** [[http://www.dustmop.io/blog/2019/09/10/what-remains-technical-breakdown/][What Remains Technical Breakdown]] :article:nes:2019:
 * Game Theory
 ** [[http://www.chesstactics.org/index.php?Type=page&Action=next&From=1,1,1,1][Ward Farnsworth's Predator at the Chessboard]] :gametheory:book:chess:
 ** [[http://www.mindsports.nl/][mindsports.nl]] :gametheory:gamedesign:puzzles:
@@ -1080,6 +1081,7 @@ you can work around this client side with per hour filenames or the other usual 
 **** [[https://news.ycombinator.com/item?id=18466006][Hacker News Discussion #18466006]] :discussion:article:c:2018:
 *** [[http://www.c-faq.com/][comp.lang.c Frequently Asked Questions]] :answers:c:1995:2005:
 *** [[https://begriffs.com/posts/2019-05-23-unicode-icu.html][Unicode programming, with examples]] :article:2019:
+*** [[https://jonathanwhiting.com/writing/blog/games_in_c/][Why I Write Games in C (yes, C)]] :article:gamedevelopment:2019:
 *** Libraries
 **** [[http://www.musl-libc.org/][musl-lib]] :c:language:
 **** [[https://github.com/mity/acutest][mitv/acutest]] :c:language:test:framework:2017:
@@ -1334,6 +1336,27 @@ I'm in the process of getting the detangle working for noweb mode. The current i
 *** [[https://google.github.io/styleguide/lispguide.xml][Google Common Lisp Style Guide]] :lisp:style:
 *** [[https://github.com/google/lisp-koans][Github: google/lisp-koans]] :repository:lisp:2013:2017:
 ** [[http://kittenlang.org/][Kitten Programming Language]]
+** Objective C
+*** [[https://academy.realm.io/posts/altconf-aaron-hillegass-eulogy-for-objective-c/][A Eulogy for Objective C]] :article:2015:
+**** [[https://news.ycombinator.com/item?id=21064689][Hacker News discussion #21064689]] :discussion:article:2019:
+#+CAPTION: Walter Bright, creator of the D programming language
+#+BEGIN_QUOTE
+Back in 1987, I was looking around for an advantage for my C compiler (Zortech C).
+I looked at ObjectiveC (by Stepstone) and C++ (by AT&T).
+Both had NNTP newsgroups for them, and both had about the same amount of traffic, and hotly debated each other.
+
+I had to choose, and knew little technically about either.
+But Stepstone wanted royalties for developing a clone of ObjectiveC.
+I contacted AT&T's lawyer (William Ryan) who said I didn't need a license to develop a clone of C++.
+I asked if I could call it "C++" and he said sure.
+He laughed, and thanked me, saying I was the only one who ever bothered to ask.
+
+So C++ it was, and Zortech C++ came out in 1988 (the first native C++ compiler for DOS, and arguably at all.
+g++ was out, but as a beta.)
+
+The action for programming at the time was on DOS, and C++ pretty much exploded with the availability of an inexpensive, fast, native compiler for DOS.
+The comp.lang.c++ traffic grew by leaps and bounds, and comp.lang.objectivec faded away.
+#+END_QUOTE
 ** OCaml
 *** [[https://try.ocamlpro.com/][Try OCaml]] :tutorial:exercise:ocaml:2018:
 ** PHP
@@ -1717,6 +1740,7 @@ Does that make sense? The “> 1.0.0” part is undefined. That includes things 
 ** [[https://trunkbaseddevelopment.com/][Trunk based development]] :article:
 ** [[http://blog.shippable.com/ci/cd-of-microservices-using-mono-repos][CI/CD For Microservices Using Monorepos]] :article:2017:
 ** [[https://yosefk.com/blog/dont-ask-if-a-monorepo-is-good-for-you-ask-if-youre-good-enough-for-a-monorepo.html][Don't ask if a monorepo is good for you – ask if you're good enough for a monorepo]] :article:2019:
+** [[https://c4model.com/][The C4 model for visualising software architecture: Context, Containers, Components and Code]] :guide:
 * Systems Engineering
 ** [[https://alestic.com/2010/12/ec2-user-data-output/][Logging user-data Script Output on EC2 Instances]] :systems:cloudinit:logging:aws:ec2:
 
