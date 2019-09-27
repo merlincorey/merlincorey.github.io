@@ -1663,6 +1663,7 @@ So be happy with 'git tag -s'. It really is the right way.
 ** [[https://rachelcarmena.github.io/2018/12/12/how-to-teach-git.html][How to teach Git]] :article:git:2019:
 ** [[https://git-rebase.io/][git rebase in depth]] :tutorial:
 ** [[https://docs.gitlab.com/ee/workflow/gitlab_flow.html][Introduction to GitLab Flow]] :documentation:2014:2018:
+** [[https://pvigier.github.io/2019/05/06/commit-graph-drawing-algorithms.html][Commit graph drawing algorithms]] :article:2019:
 * Shells and Terminals
 ** [[https://zanshin.net/2013/02/02/zsh-configuration-from-the-ground-up/][Zsh Configuration From the Ground Up]] :zsh:configuration:tutorial:2013:
 ** [[http://www.howardism.org/Technical/Emacs/eshell-fun.html][Eschewing Zshell for Emacs Shell]] :zsh:emacs:eshell:
