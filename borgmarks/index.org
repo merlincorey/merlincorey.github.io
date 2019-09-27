@@ -1741,6 +1741,15 @@ Does that make sense? The “> 1.0.0” part is undefined. That includes things 
 ** [[http://blog.shippable.com/ci/cd-of-microservices-using-mono-repos][CI/CD For Microservices Using Monorepos]] :article:2017:
 ** [[https://yosefk.com/blog/dont-ask-if-a-monorepo-is-good-for-you-ask-if-youre-good-enough-for-a-monorepo.html][Don't ask if a monorepo is good for you – ask if you're good enough for a monorepo]] :article:2019:
 ** [[https://c4model.com/][The C4 model for visualising software architecture: Context, Containers, Components and Code]] :guide:
+** [[https://startupandrew.com/posts/how-firebase-interviewed-software-engineers/?1][How Firebase Interviewed Software Engineers]] :article:2019:
+*** The Technical Test
+    ~Gold Mine~ is their take-home technical test which is described as an open-ended optimization problem with infinite complexity targeted for 6 hours but allowing up to 12.
+    It had an objective scoring measure (the total gold mined) and provided text input and output and a basic compiled solution (free algorithms for reverse engineers).
+    This allows for any programming language.
+
+    The author then goes on to state that no one minded spending this time on the test, but I believe they just would not have head about it.
+
+    If I were to follow the author's advice, I would probably offer it as a paid project with a flat rate fee.
 * Systems Engineering
 ** [[https://alestic.com/2010/12/ec2-user-data-output/][Logging user-data Script Output on EC2 Instances]] :systems:cloudinit:logging:aws:ec2:
 
