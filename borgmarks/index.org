@@ -1200,6 +1200,8 @@ int main(int argc, char* argv[]) {
 **** Game Development
 ***** [[https://hugoam.github.io/toy-io/][toy]] :c++:2018:
       toy is a thin and modular c++ game engine that also runs on the web.
+**** Math
+***** [[https://bitbucket.org/davidstone/bounded_integer/src/master/][Bitbucket: davidstone/bounded_integer]]            :repository:2018:2019:
 *** Videos
 **** [[https://www.youtube.com/watch?v=hEx5DNLWGgA][CppCon 2015: Herb Sutter "Writing Good C++14... By Default"]] :video:talk:language:cpp:sutter:2015:
 **** [[https://www.youtube.com/watch?v=fX2W3nNjJIo][CppCon 2017: Bjarne Stroustrup “Learning and Teaching Modern C++”]] :video:talk:language:cpp:stroustrup:2017:
