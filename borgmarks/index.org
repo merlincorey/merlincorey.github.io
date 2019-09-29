@@ -769,6 +769,7 @@ Home page: http://www.helixsoft.nl/
 ** [[https://lazyfoo.net/tutorials/SDL/][Lazy Foo' Productions: Beginning Game Programming v2.0 with SDL2]] :tutorial:2004:2019:
 ** [[https://lopespm.github.io/2019/02/06/survival-ball-making-the-game.html][Survival Ball: Making the Game]] :article2019:
 ** [[http://www.dustmop.io/blog/2019/09/10/what-remains-technical-breakdown/][What Remains Technical Breakdown]] :article:nes:2019:
+** [[http://onemanmmo.com/][One Man MMO]] :project:2010:2019:
 * Game Theory
 ** [[http://www.chesstactics.org/index.php?Type=page&Action=next&From=1,1,1,1][Ward Farnsworth's Predator at the Chessboard]] :gametheory:book:chess:
 ** [[http://www.mindsports.nl/][mindsports.nl]] :gametheory:gamedesign:puzzles:
@@ -901,6 +902,7 @@ Home page: http://www.helixsoft.nl/
 ** [[https://www.teamgantt.com/art-science-of-leading-projects][Art & Science of Leading Projects]] :video:guide:2018:
 ** [[https://blog.plaid.com/growing-our-team-with-retrospectives/][Growing our team with retrospectives]] :article:2019:
 ** [[https://medium.com/@bellmar/all-the-best-engineering-advice-i-stole-from-non-technical-people-eb7f90ca2f5f][All the best engineering advice I stole from non-technical people]] :article:2019:
+** [[https://apenwarr.ca/log/20190926][What do executives do anyway?]] :article:2019:
 * Mazes
 ** [[http://weblog.jamisbuck.org/2011/2/7/maze-generation-algorithm-recap][Maze Generation Algorithm Recap]] :maze:algorithms:
 
