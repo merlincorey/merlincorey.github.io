@@ -839,6 +839,69 @@ Home page: http://www.helixsoft.nl/
 *** [[https://thegradient.pub/how-to-fix-rl/][How to fix reinforcement learning]] :machinelearning:reinforcement:2018:
 ** [[https://towardsdatascience.com/how-to-build-your-own-neural-network-from-scratch-in-python-68998a08e4f6][How to build your own Neural Network from scratch in Python]] :article::neuralnetworks:2018:
 ** [[https://github.com/GokuMohandas/practicalAI/blob/master/README.md][Github: GokuMohandas/practicalAI]] :repository:machinelearning:python:2018:
+** [[https://medium.com/@ageitgey/the-dumb-reason-your-fancy-computer-vision-app-isnt-working-exif-orientation-73166c7d39da][The dumb reason your fancy Computer Vision app isn't working: Exif Orientation]] :article:computer_vision:2019:
+#+CAPTION: Here is code to load any image into a numpy array with the correct rotation applied:
+#+BEGIN_SRC python
+import PIL.Image
+import PIL.ImageOps
+import numpy as np
+
+def exif_transpose(img):
+    if not img:
+        return img
+
+    exif_orientation_tag = 274
+
+    # Check for EXIF data (only present on some files)
+    if hasattr(img, "_getexif") and isinstance(img._getexif(), dict) and exif_orientation_tag in img._getexif():
+        exif_data = img._getexif()
+        orientation = exif_data[exif_orientation_tag]
+
+        # Handle EXIF Orientation
+        if orientation == 1:
+            # Normal image - nothing to do!
+            pass
+        elif orientation == 2:
+            # Mirrored left to right
+            img = img.transpose(PIL.Image.FLIP_LEFT_RIGHT)
+        elif orientation == 3:
+            # Rotated 180 degrees
+            img = img.rotate(180)
+        elif orientation == 4:
+            # Mirrored top to bottom
+            img = img.rotate(180).transpose(PIL.Image.FLIP_LEFT_RIGHT)
+        elif orientation == 5:
+            # Mirrored along top-left diagonal
+            img = img.rotate(-90, expand=True).transpose(PIL.Image.FLIP_LEFT_RIGHT)
+        elif orientation == 6:
+            # Rotated 90 degrees
+            img = img.rotate(-90, expand=True)
+        elif orientation == 7:
+            # Mirrored along top-right diagonal
+            img = img.rotate(90, expand=True).transpose(PIL.Image.FLIP_LEFT_RIGHT)
+        elif orientation == 8:
+            # Rotated 270 degrees
+            img = img.rotate(90, expand=True)
+
+    return img
+
+
+def load_image_file(file, mode='RGB'):
+    # Load the image with PIL
+    img = PIL.Image.open(file)
+
+    if hasattr(PIL.ImageOps, 'exif_transpose'):
+        # Very recent versions of PIL can do exit transpose internally
+        img = PIL.ImageOps.exif_transpose(img)
+    else:
+        # Otherwise, do the exif transpose ourselves
+        img = exif_transpose(img)
+
+    img = img.convert(mode)
+
+    return np.array(img)
+#+END_SRC
+*** [[https://github.com/ageitgey/image_to_numpy][Github: ageitgey/image_to_numpy]] :repository:computer_vision:2019:
 * Management
 ** [[https://martinfowler.com/articles/itsNotJustStandingUp.html][It's Not Just Standing Up: Patterns for Daily Standup Meetings]] :meetings:article:2016:
 ** [[https://www.blossom.co/blog/3-tips-for-quick-effective-stand-up-meetings][3 Tips for Effective Stand-Up Meetings]]             :meetings:article:2016:
@@ -1755,6 +1818,52 @@ Does that make sense? The “> 1.0.0” part is undefined. That includes things 
     The author then goes on to state that no one minded spending this time on the test, but I believe they just would not have head about it.
 
     If I were to follow the author's advice, I would probably offer it as a paid project with a flat rate fee.
+** [[https://cloud.google.com/blog/products/gcp/api-design-which-version-of-versioning-is-right-for-you][API design: Which version of versioning is right for you?]] :article:2019:
+*** Randomized properties for future proofing clients
+#+CAPTION: Using randomized properties to test clients for future proofing
+#+BEGIN_QUOTE
+One reason why many APIs never need versioning is that you can make many small enhancements to APIs in a backwards-compatible way, usually by adding new properties or new entities that older clients can safely ignore.
+Your first thought should always be to try to find a backwards-compatible way of introducing an API change without versioning; versioning of either sort should only be attempted if that fails.
+Fortunately, there are things you can do up front when designing your API to maximize the number of changes that can be made in a backwards-compatible way.
+One example is using PATCH instead of PUT for updates. You can also add a couple of random and meaningless properties to every entity representation; this will test the clients' ability to ignore future properties they haven't seen before.
+#+END_QUOTE
+*** Recommended object format
+#+CAPTION: Object formats
+#+BEGIN_SOURCE js
+{"kind": "Book",
+ "name": "The Adventures of Tom Sawyer",
+ "characters": {
+   "Tom Sawyer": {"address": "St Petersburg, Mo"},
+   "Huckleberry Finn": {"father": "Pap Finn"}
+  }
+}
+{"kind": "Book",
+ "name": "The Adventures of Tom Sawyer",
+ "characters": [
+   {"name": "Tom Sawyer", "address": "St Petersburg, Mo"},
+   {"name": "Huckleberry Finn", "father": "Pap Finn"}
+  ]
+}
+#+END_SOURCE
+#+CAPTION: Recommended object format
+#+BEGIN_QUOTE
+One of these formats encodes the list of characters as a JSON object keyed by the characters' name, and the other encodes it as a JSON array.
+Neither are right or wrong.
+The first format is convenient for clients that always access the characters by name, but it requires clients to learn that the name of the character is to be found in the place that a property name is usually found in JSON, rather than as a property value.
+The second format does not favor one access pattern over another and is more self-describing; if in doubt, I recommend you use this one.
+This particular representation choice may not seem very important, but as an API designer you're faced with a large number of options, and you may sometimes wish you had chosen differently. 
+#+END_QUOTE
+*** More versioning tips
+#+CAPTION: More versioning tips
+#+BEGIN_QUOTE
+If you use versioning, make it clear what sort of versioning you use.
+If there'a a field in your HTTP requests and responses that says "version: V1," what does that mean? Does V1 apply to the persistent entity itself (entity versioning), or does it reflect the format in which the client asked to see the entity (format versioning)? Having a clear understanding of which versioning scheme or schemes you use helps your users understand how to use your API as it evolves.
+
+If you're using format versioning and entity versioning together, signal them with different mechanisms.
+Format versions should go in headers—Accept-Version and Content-Version—in the request and response.
+Format versions can also be included in the bodies of responses and requests, for those requests that have them.
+Entity versions (which are really part of the entity type) belong in the request and response bodies; they're part of the representation of the entity.
+#+END_QUOTE
 * Systems Engineering
 ** [[https://alestic.com/2010/12/ec2-user-data-output/][Logging user-data Script Output on EC2 Instances]] :systems:cloudinit:logging:aws:ec2:
 
