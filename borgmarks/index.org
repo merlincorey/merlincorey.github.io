@@ -382,6 +382,7 @@ It's mainly useful for debugging purposes and perhaps in a few cases for safety,
 *** [[https://github.com/tadfisher/pass-otp][Github: tadfisher/pass-otp]] :repository:cryptography:2018:
 *** [[https://github.com/browserpass/browserpass][Github: browserpass/browserpass]] :repository:cryptography:2018:
 ** [[https://latacora.micro.blog/2018/04/03/cryptographic-right-answers.html][Cryptographic Right Answers]] :article:cryptography:2018:
+** [[https://www.garykessler.net/library/crypto.html][An Overview of Cryptography by Gary C. Kesler]] :paper:1998:2019:
 * Cryptocurrencies
 ** [[http://www.righto.com/2014/09/mining-bitcoin-with-pencil-and-paper.html][Mining Bitcoin with pencil and paper: 0.67 hashes per day]] :cryptocurrency:bitcoin:2014:
 ** [[http://www.righto.com/2014/02/ascii-bernanke-wikileaks-photographs.html][Hidden surprises in the Bitcoin blockchain and how they are stored: Nelson Mandela, Wikileaks, photos, and Python software]] :cryptocurrency:blockchain:creative:hacking:2014:
@@ -437,6 +438,7 @@ Surviving are his wife of 54 years, Tomoko, of Oberlin, Ohio; and two daughters,
 *** [[https://news.ycombinator.com/item?id=17916516][Hacker New Discussion #17916516]] :discussion:article:cryptocurrency:smartcontracts:2018:
 ** [[https://medium.com/@preethikasireddy/how-does-ethereum-work-anyway-22d1df506369][How does Ethereum work, anyway?]] :article:cryptocurrency:2017:
 ** [[https://ethernaut.zeppelin.solutions/][The Ethernaut]] :ctf:cryptocurrency:2018:
+** [[https://vitalik.ca/general/2019/11/22/progress.html][Hard Problems in Cryptocurrency: Five Years later]] :article:2019:
 * Datastructures and Filesystems
 ** [[http://www.eelis.net/C++/analogliterals.xhtml][Multi-Dimensional Analog Literals]] :datastructures:analog:literals:2006:
 ** [[https://www.interviewcake.com/article/python/data-structures-coding-interview][Datastructures for Coding Interviews]]    :datastructures:python:interviews:
@@ -487,6 +489,7 @@ This indirect strategy also saves memory, because the vector effectively has a p
 *** [[https://news.ycombinator.com/item?id=17766566][Hacker News Discussion #17766566]] :discussion:article:databases:timeseries:2018:
 ** [[https://github.com/BurntSushi/xsv][Github: BurntSushi/xsv]] :repository:databases:csv:rust:2014:2018:
    CSV toolkit written in Rust.
+** [[https://www.evanjones.ca/ordered-vs-unordered-indexes.html][Why databases use ordered indexes but programming uses hash tables]] :article:2019:
 ** Alembic
 *** [[http://www.chesnok.com/daily/2013/07/02/a-practical-guide-to-using-alembic/][A Practical Guide to using Alembic]] :database:migrations:sqlalchemy:alembic:
 *** [[https://www.compose.com/articles/schema-migrations-with-alembic-python-and-postgresql/][Schema Migrations with Alembic, Python, and PostgreSQL]] :databse:migrations:sqlalchemy:alembic:postgres:
@@ -534,6 +537,8 @@ emacs --quick --script publish.el --funcall=org-publish-all
 *** [[https://alphapapa.github.io/emacs-package-dev-handbook/][The Emacs Package Developer's Handbook]] :packages:
 *** [[https://github.com/gilbertw1/emacs-literate-starter][Github: gilbertw1/emacs-literate-starter]] :repository:2017:
 *** [[https://github.com/mclear-tools/dotemacs/blob/master/config.org][mclear-tools/dotemacs]] :repository:2019:
+*** [[https://kitchingroup.cheme.cmu.edu/blog/2017/01/03/Find-stuff-in-org-mode-anywhere/][Find stuff in org-mode anywhere]] :article:orgmode:2017:
+*** [[https://emacsair.me/2017/09/01/magit-walk-through/][EmacsAir: A walk through the Magit interface]] :article:magit:
 *** Packages
 **** [[https://github.com/pashky/restclient.el][pashky/restclient]]                         :emacs:package:rest:2016:2018:
 **** [[https://projectile.readthedocs.io/en/latest/][ReadTheDocs: projectile]]                                  :emacs:package:
@@ -619,6 +624,7 @@ Your first task is to build an inverter component.
 ** [[https://internalregister.github.io/2019/03/14/Homebrew-Console.html][Building a 'Homebrew' Video Game Console]] :article:2019:
 ** [[https://workmanship.nasa.gov/lib/insp/2%20books/frameset.html][NASA Workmanship Standards Pictoral Reference]] :documentation:
 ** [[https://projects.drogon.net/wiringpi-pin-numbering/][wiringPi Pin numbering]] :article:2016:
+** [[https://bunniefoo.com/bunnie/essential/essential-guide-shenzhen-web.pdf][The Essential Guide to Electronics in Shenzhen]] :book:2016:
 * Emulators and Game Consoles
 ** [[http://www.codeslinger.co.uk/pages/basics.html][codeslinger Emulation Basics]] :emulator:chip8:2008:
 *** [[http://www.codeslinger.co.uk/files/emu.pdf][Study of the techniques for emulation programming]] :paper:emulation:2001:
@@ -966,6 +972,8 @@ def load_image_file(file, mode='RGB'):
 ** [[https://blog.plaid.com/growing-our-team-with-retrospectives/][Growing our team with retrospectives]] :article:2019:
 ** [[https://medium.com/@bellmar/all-the-best-engineering-advice-i-stole-from-non-technical-people-eb7f90ca2f5f][All the best engineering advice I stole from non-technical people]] :article:2019:
 ** [[https://apenwarr.ca/log/20190926][What do executives do anyway?]] :article:2019:
+** [[https://blog.remote.com/why-you-should-be-doing-async-work/][You should be working asynchronously (async)]] :article:2019:
+** [[https://www.sametab.com/blog/operations-and-internal-communication-strategies-for-effective-ceos][Operations and Internal Communication Strategies For Effective CEOs]] :article:2019:
 * Mazes
 ** [[http://weblog.jamisbuck.org/2011/2/7/maze-generation-algorithm-recap][Maze Generation Algorithm Recap]] :maze:algorithms:
 
@@ -1114,7 +1122,9 @@ you can work around this client side with per hour filenames or the other usual 
 *** [[https://futureofcoding.org/catalog/][The Whole Code Catalog]] :2019:
     Almanac of lesser known programming languages.
 ** APL
-*** [[http://wordsandbuttons.online/apl_deserves_its_renaissance_too.html][APL deserves its renaissance too]]
+*** [[http://wordsandbuttons.online/apl_deserves_its_renaissance_too.html][APL deserves its renaissance too]] :article:2017:
+*** [[https://www.sacrideo.us/getting-started-with-apl/][Getting Started with APL]] :article:2017:
+*** [[https://www.jsoftware.com/papers/50/][A History of APL in 50 Functions]] :paper:2016:2019:
 ** Assembly
 *** [[http://bob.cs.sonoma.edu/IntroCompOrg-RPi/intro-co-rpi.html][Introduction to Computer Organization: ARM Assembly Language Using the Raspberry Pi]] :assembly:arm:raspberry:pi:
 *** [[https://github.com/ICTeam28/PiFox][ICTeam28/PiFox]] :assembly:arm:raspberry:pi:2014:
@@ -1147,8 +1157,12 @@ you can work around this client side with per hour filenames or the other usual 
 *** [[http://www.c-faq.com/][comp.lang.c Frequently Asked Questions]] :answers:c:1995:2005:
 *** [[https://begriffs.com/posts/2019-05-23-unicode-icu.html][Unicode programming, with examples]] :article:2019:
 *** [[https://jonathanwhiting.com/writing/blog/games_in_c/][Why I Write Games in C (yes, C)]] :article:gamedevelopment:2019:
+*** [[http://maplant.com/gc.html][Writing a Simple Garbage Collector in C]] :tutorial:2017:
 *** Libraries
 **** [[http://www.musl-libc.org/][musl-lib]] :c:language:
+**** [[https://github.com/keith-packard/picolibc][Github: keith-packard/picolibc]]                    :repository:2014:2019:
+     PicoLibc is library offering standard C library APIs that targets small embedded systems with limited RAM.
+
 **** [[https://github.com/mity/acutest][mitv/acutest]] :c:language:test:framework:2017:
 **** [[http://www.glfw.org/index.html][GLFW]] :c:language:opengl:framework:2017:
 **** [[https://github.com/hnes/libaco][hnes/libaco]] :c:language:coroutines:2018:
@@ -1502,6 +1516,10 @@ publish:
 *** [[https://pgexercises.com/][PostgreSQL Exercises]] :exercise:sql:
 *** [[https://schemaverse.com/][The Schemaverse]] :game:sql:
 *** [[http://www.zindlerb.com/joins-in-steps/][SQL Joins In Steps]] :article:sql:2019:
+*** [[https://github.com/verpeteren/SqlDetective][Github: verpeteren/SqlDetective]] :repository:2014:2015:
+*** [[https://mystery.knightlab.com/][SQL Murder Mystery]] :exercise:2017:2019:
+**** [[https://github.com/NUKnightLab/sql-mysteries][Github: NUKnightLab/sql-mysteries]] :repository:exercise:2017:2019:
+*** [[https://jvns.ca/blog/2019/10/03/sql-queries-don-t-start-with-select/][SQL queries don't start with SELECT]] :article:2019:
 * Reverse Engineering
 ** [[https://www.youtube.com/user/OpenSecurityTraining][Open Security Training YouTube Channel]]                            :videos:binary:reverse:engineering:
 ** [[https://github.com/FireyFly/pixd][Colourful visualization tool for binary files]] :binary:data:visualization:
@@ -1731,6 +1749,7 @@ So be happy with 'git tag -s'. It really is the right way.
 ** [[https://git-rebase.io/][git rebase in depth]] :tutorial:
 ** [[https://docs.gitlab.com/ee/workflow/gitlab_flow.html][Introduction to GitLab Flow]] :documentation:2014:2018:
 ** [[https://pvigier.github.io/2019/05/06/commit-graph-drawing-algorithms.html][Commit graph drawing algorithms]] :article:2019:
+** [[http://timstaley.co.uk/posts/making-git-and-jupyter-notebooks-play-nice/][Make Git and Jupyter Notebooks play nice]] :article:jupyter:2017:
 * Shells and Terminals
 ** [[https://zanshin.net/2013/02/02/zsh-configuration-from-the-ground-up/][Zsh Configuration From the Ground Up]] :zsh:configuration:tutorial:2013:
 ** [[http://www.howardism.org/Technical/Emacs/eshell-fun.html][Eschewing Zshell for Emacs Shell]] :zsh:emacs:eshell:
@@ -1741,6 +1760,7 @@ So be happy with 'git tag -s'. It really is the right way.
 *** [[https://news.ycombinator.com/item?id=11532599][Hacker News Discussion #11532599]]                :discussion:article:2016:
 *** [[https://news.ycombinator.com/item?id=17636032][Hacker News Discussion #17636032]] :discussion:article:2018:
 ** [[http://www.grymoire.com/Unix/Sed.html][Sed - An Introduction and Tutorial]] :shell:1994:2013:
+** [[https://github.com/veltman/clmystery][Github: veltman/clmystery]] :repository:2013:2015:
 * Security
 ** [[https://www.hackthebox.eu/][Hack the Box]] :ctf:
 ** [[https://picoctf.com/][PicoCTF]] :ctf:
@@ -1864,6 +1884,8 @@ Format versions should go in headers—Accept-Version and Content-Version—in t
 Format versions can also be included in the bodies of responses and requests, for those requests that have them.
 Entity versions (which are really part of the entity type) belong in the request and response bodies; they're part of the representation of the entity.
 #+END_QUOTE
+** [[https://cloudblog.withgoogle.com/products/ai-machine-learning/best-practices-that-can-improve-the-life-of-any-developer-using-jupyter-notebooks/amp/][Google Cloud Blog: Jupyter Notebook Manifesto: Best practices that can improve the life of any developer using Jupyter notebooks]] :article:jupyter:2019:
+** [[https://tech.channable.com/posts/2019-10-04-why-we-decided-to-go-for-the-big-rewrite.html][Why we decided to go for the Big Rewrite]] :article:2019:
 * Systems Engineering
 ** [[https://alestic.com/2010/12/ec2-user-data-output/][Logging user-data Script Output on EC2 Instances]] :systems:cloudinit:logging:aws:ec2:
 
@@ -1926,6 +1948,39 @@ Entity versions (which are really part of the entity type) belong in the request
 ** [[https://github.com/cortexproject/cortex][Github: cortexproject/cortex]] :repository:2018:2019:
 ** [[https://devconnected.com/syslog-the-complete-system-administrator-guide/][Syslog : The Complete System Administrator Guide]] :guide:2019:
 ** [[https://nickcraver.com/desktop-build/][Stack Overflow Developer Desktop Build - 2015 to 2019]] :article:2015:2019:
+** [[https://guacamole.apache.org/][Apache Guacamole: Clientless remote desktop gateway supporting VNC, RDP, and SSH]] :software:
+** [[http://www.pbenson.net/2014/02/the-difference-between-fault-tolerance-high-availability-disaster-recovery/][The Difference Between Fault Tolerance, High Availability, & Disaster Recovery]] :article:2014:
+   #+CAPTION: Text from the article
+   #+BEGIN_QUOTE
+Three terms that I hear being misused often by IT professionals new to the industry are “fault tolerance”, “high availability”, and “disaster recovery”.
+Here are some pictures that can help you visualize the differences between each of these terms.
+
+Fault tolerant solutions have the ability to keep operating even if a component, or multiple components, should fail.
+In the picture above the aircraft has four engines.
+The loss of a single engine would not cause the aircraft to fail as the three remaining engines would continue to operate.
+Take note that the engines are circled, and not the wings.
+Lose one wing and the aircraft will not fly.
+It is not enough to have multiple components to achieve fault tolerance.
+You need to have multiple components capable of maintaining the system if the other components are lost in order to achieve fault tolerance.
+
+The spare tire for a vehicle is an example of a high availability design.
+Losing one of the tires will require the vehicle to stop, but there is a spare tire ready to replace the failed component with.
+A high availability design does not prevent outages, that is what fault tolerance does.
+A high availability design means that the outage will be brief because it will not take long to redeploy the required component.
+Unlike replacing a tire with high availability the redeployment is completely automated following a component failure.
+
+Imagine that the jet in the picture above is your IT infrastructure, and the pilot is your business.
+The pilot above is ejecting from an aircraft that has failed in some way and the aircraft is now dangerous to remain within.
+The pilot has activated the ejection system and will soon have a parachute deployed so that the he will survive while the jet will be destroyed.
+That is the whole point of disaster recovery – you are saving your business by ditching your compromised infrastructure.
+A good disaster recovery solution is all about getting your business’s valuable data and operations out of the failed infrastructure and running again on new infrastructure.
+Disaster recovery is not about saving the infrastructure.
+Disaster recovery is about saving the business.
+
+Keep these images in mind when you are designing your infrastructure.
+Think through what it is that you need to deliver: multiple engines to keep the business flying with, a spare tire ready to go following an acceptable outage, or a parachute to save what matters most following a disaster.
+Being able to visualize an objective often helps with the design process, and recalling these images will prevent you from using the wrong term when talking about fault tolerance, high availability, and disaster recovery!
+   #+END_QUOTE
 ** Kubernetes
 *** [[https://cloud.google.com/kubernetes-engine/kubernetes-comic/][Smooth Sailing with Kubernetes]] :comic:
 *** [[https://www.cncf.io/the-childrens-illustrated-guide-to-kubernetes/][The Children's Illustrated Guide to Kubernetes]] :comic:
@@ -1936,6 +1991,7 @@ Entity versions (which are really part of the entity type) belong in the request
 *** [[https://srcco.de/posts/kubernetes-failure-stories.html][Kubernetes Failure Stories]]              :article:systems:kubernetes:2019:
 *** [[https://github.com/hjacobs/kubernetes-failure-stories][Github: hjacobs/kubernetes-failure-stories]] :repository:2019:
 *** [[https://itnext.io/benchmark-results-of-kubernetes-network-plugins-cni-over-10gbit-s-network-36475925a560][Benchmark results of Kubernetes network plugins (CNI) over 10Gbit/s network]] :article:systems:networking:containers:2018:
+*** [[https://learnk8s.io/troubleshooting-deployments][A visual guide on troubleshooting Kubernetes deployments]] :guide:2019:
 ** Hashicorp
 *** Terraform
 **** [[https://opencredo.com/terraform-infrastructure-design-patterns/][Terraform Infrastructure Design Patterns]]        :systems:2015:
@@ -1952,7 +2008,8 @@ Entity versions (which are really part of the entity type) belong in the request
 ** [[http://www.linusakesson.net/programming/tty/][The TTY Demystified]] :unix:history:tty:
 ** [[http://blog.triplebyte.com/how-to-interview-engineers][How to Interview Engineers]] :hiring:engineers:
 ** [[https://the-eye.eu/public/rom/][The Eye's ROM Section]] :open:index:emulation:nes:snes:gba:n64:
-   The Eye's Rom Section is a project dedicated towards the preservation and archival of video games. All game versions present on the site are already out of production and are unavailable in the primary market.
+   The Eye's Rom Section is a project dedicated towards the preservation and archival of video games.
+   All game versions present on the site are already out of production and are unavailable in the primary market.
 ** [[http://willamette.edu/~fruehr/haskell/evolution.html][Evolution of a Haskell Programmer]] :haskell:humor:
 ** [[http://farmos.org/][FarmOS]] :open:source:farm:management:
 ** [[https://www.believermag.com/issues/200609/][Destroy All Monsters]] :role:playing:dungeons:and:dragons:2006:
@@ -2125,12 +2182,43 @@ There is no one-size-fits-all solution to this problem, but anything you can do 
 
    Is it ever okay to use [[https://www.merriam-webster.com/dictionary/literally][literally]] to mean "figuratively"?
 ** [[https://www.blocklayer.com/][Calculators for Contractors]] :tools:
+** [[https://chemapps.stolaf.edu/jmol/jsmol/hackamol.htm][Hack-a-Mol]] :reference:tool:chemistry:
+** [[http://www.ccs.neu.edu/home/shivers/autoweapons.html][A series of posts appearing on the Opinion bboard at CMU in 1987.]] :humor:1987:
+   #+CAPTION: Introduction to the archived posts
+   #+BEGIN_QUOTE
+It's common knowledge that whenever you get two or more CS grad students together, the conversation will inevitably drift to the same topic: automatic weapons.
+Lately, we've noticed that whenever we attend a CS party, picnic, or bullsession, we always hear the same questions and discussions, usually from the younger grad students:
+
+- When I switched from guncotton to standard ball powder on my .223 loads, the gas ports on my M16 would clog like you wouldn't believe.Steer clear of that stuff. 
+- You haven't cleared an ejection port jam until you've cleared one in the Hill district at 4:00 AM on a Saturday morning. 
+- I want to mount an M60 in front of the sun roof of my Tercel, but the mounting bracket wasn't drilled for import cars. How did Josh Bloch do his? 
+- What exactly are those special 'conference rounds' that Newell hand loads before AAAI every year? 
+- Some of my friends at the MIT AI Lab don't like M203's because the grenade launcher adds too much weight, but I wouldn't have gotten out of IJCAI-85 in one piece if it hadn't been for those 40mm flechette rounds. What do you think? 
+- Do you have to be a god-damned tenured professor to get teflon rounds at this place? 
+- Does the 'reasonable person principle' cover hosing down a member of the Soar project after he's used the phrase 'cognitively plausible' for the fifteenth time in a 20 minute conference talk? 
+- Where /did/ Prof. Vrsalovic get that Kalashnikov AK-47? 
+- I used to use Dri-Slide to lube my M16. How come my advisor says Dri-Slide is for momma's boys and Stanford profs? 
+- Does the way Jon Webb keeps flicking the safety of his Mac-10 on and off at thesis defenses make you nervous, too? 
+
+In short, there is a lot of concern in this department for the proper care, handling and etiquette of automatic weapons.
+So as a service to the department, we are starting a two week daily series on "The Care and Handling of Your M16A1." Every day for the next two weeks, we will post on the wall outside our office the day's helpful hint on care and maintenance of that good old departmental standby: the M16A1.
+Our thanks to the US Army, whose training manuals we have shamelessly cribbed for material.
+
+We would like to encourage other knowledgeable members of the CS community to share their expertise in a similar fashion.
+There is a real need for this kind of dialogue in the department.
+The new students come in here every fall, and are totally unequipped to handle the realities of graduate student life at CMU.
+Computability theory and lexical scoping are fine things to know about, but they just don't cut the mustard when somebody from the Psych department opens up on you with an Ingram set to full auto.
+- the friendly automatic weapons enthusiasts of SkyCave1, Olin, Derek, and Allan 
+   #+END_QUOTE
+** [[https://github.com/danistefanovic/build-your-own-x][Github: danistefanovic/build-your-own-x]] :repository:2017:2019:
+** [[https://ciechanow.ski/earth-and-sun/][Earth and Sun]] :article:visualization:2019:
 * UNIX and BSD
 ** [[https://fosdem.org/2017/schedule/event/my_bsd_sucks_less/][My BSD Sucks Less Than Yours]] :talk:unix:openbsd:freebsd:
 ** [[http://changelog.complete.org/archives/9317-has-linux-lost-its-way-comments-prompt-a-debian-developer-to-revisit-freebsd-after-20-years][“Has Linux lost its way?” comments prompt a Debian developer to revisit FreeBSD after 20 years]] :unix:linux:comparison:2015:
 ** [[https://manpages.bsd.lv/][Practical UNIX Manuals - mdoc: structure, style, and composition]] :book:unix:man:pages:mdoc:
 ** [[https://vez.mrsk.me/freebsd-defaults.txt][FreeBSD - a lesson in poor defaults]] :freebsd:defaults:security:2017:
 ** [[https://pdos.csail.mit.edu/6.828/2017/xv6.html][Xv6, a simple Unix-like teaching operating system]] :2006:2017:
+** [[https://magcius.github.io/xplain/article/index.html][Explain: The X Windows System playground]] :guide:
 * Video Series
 ** [[https://www.youtube.com/user/professorleonard57][Professor Leonard]] :video::mathematics:lectures:
 ** [[https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw][3Blue1Brown]] :video:series:mathematics:
