@@ -383,6 +383,8 @@ It's mainly useful for debugging purposes and perhaps in a few cases for safety,
 *** [[https://github.com/browserpass/browserpass][Github: browserpass/browserpass]] :repository:cryptography:2018:
 ** [[https://latacora.micro.blog/2018/04/03/cryptographic-right-answers.html][Cryptographic Right Answers]] :article:cryptography:2018:
 ** [[https://www.garykessler.net/library/crypto.html][An Overview of Cryptography by Gary C. Kesler]] :paper:1998:2019:
+** [[https://electriccoin.co/blog/lessons-from-the-history-of-attacks-on-secure-hash-functions/][Lessons From The History Of Attacks On Secure Hash Functions]] :article:2017:2019:
+*** [[https://news.ycombinator.com/item?id=22253977][Hacker News Discussion #22253977]] :discussion:article:2019:
 * Cryptocurrencies
 ** [[http://www.righto.com/2014/09/mining-bitcoin-with-pencil-and-paper.html][Mining Bitcoin with pencil and paper: 0.67 hashes per day]] :cryptocurrency:bitcoin:2014:
 ** [[http://www.righto.com/2014/02/ascii-bernanke-wikileaks-photographs.html][Hidden surprises in the Bitcoin blockchain and how they are stored: Nelson Mandela, Wikileaks, photos, and Python software]] :cryptocurrency:blockchain:creative:hacking:2014:
@@ -504,7 +506,7 @@ This indirect strategy also saves memory, because the vector effectively has a p
 *** [[https://www.emacswiki.org/][Emacs Wiki]] 				       :emacs:xemacs:emacs:lisp:wiki:
 *** [[http://orgmode.org/manual/][OrgMode Manual]] 				      :emacs:orgmode:manual:
 *** [[http://sachachua.com/blog/2007/12/how-to-use-emacs-org-as-a-basic-day-planner/][How to use Emacs Org as a Basic Day Planner]] :emacs:orgmode:day:planner:2007:
-*** [[http://newartisans.com/2007/08/using-org-mode-as-a-day-planner/][Using org-mode as a Day Planner]] 	:emacs:orgmode:org:day:planner:2007:
+*** [[http://newartisans.com/2007/08/using-org-mode-as-a-day-planner/][Using org-mode as a Day Planner]] 	:emacs:orgmode:orgmode:day:planner:2007:
 *** [[http://orgmode.org/worg/org-tutorials/orgtutorial_dto.html][David O'Toole Org tutorial]] 		:emacs:orgmode:tutorial:todo:agenda:
 *** [[http://orgmode.org/worg/org-tutorials/non-beamer-presentations.html][Writing Non-Beamer presentations in org-mode]] :emacs:orgmode:presentations:slides:
 *** [[https://portacle.github.io/][Portacle - Portable Common Lisp IDE]]        :emacs:slime:sbcl:common:lisp:
@@ -539,6 +541,7 @@ emacs --quick --script publish.el --funcall=org-publish-all
 *** [[https://github.com/mclear-tools/dotemacs/blob/master/config.org][mclear-tools/dotemacs]] :repository:2019:
 *** [[https://kitchingroup.cheme.cmu.edu/blog/2017/01/03/Find-stuff-in-org-mode-anywhere/][Find stuff in org-mode anywhere]] :article:orgmode:2017:
 *** [[https://emacsair.me/2017/09/01/magit-walk-through/][EmacsAir: A walk through the Magit interface]] :article:magit:
+*** [[https://beepb00p.xyz/pkm-search.html][Building personal search infrastructure for your knowledge and code]] :orgmode:article:2019:
 *** Packages
 **** [[https://github.com/pashky/restclient.el][pashky/restclient]]                         :emacs:package:rest:2016:2018:
 **** [[https://projectile.readthedocs.io/en/latest/][ReadTheDocs: projectile]]                                  :emacs:package:
@@ -974,6 +977,7 @@ def load_image_file(file, mode='RGB'):
 ** [[https://apenwarr.ca/log/20190926][What do executives do anyway?]] :article:2019:
 ** [[https://blog.remote.com/why-you-should-be-doing-async-work/][You should be working asynchronously (async)]] :article:2019:
 ** [[https://www.sametab.com/blog/operations-and-internal-communication-strategies-for-effective-ceos][Operations and Internal Communication Strategies For Effective CEOs]] :article:2019:
+** [[https://kristoff.it/blog/good-bad-ugly-standup/][The Good, the Bad and the Ugly Standup]] :meetings:article:20202:
 * Mazes
 ** [[http://weblog.jamisbuck.org/2011/2/7/maze-generation-algorithm-recap][Maze Generation Algorithm Recap]] :maze:algorithms:
 
@@ -1520,6 +1524,7 @@ publish:
 *** [[https://mystery.knightlab.com/][SQL Murder Mystery]] :exercise:2017:2019:
 **** [[https://github.com/NUKnightLab/sql-mysteries][Github: NUKnightLab/sql-mysteries]] :repository:exercise:2017:2019:
 *** [[https://jvns.ca/blog/2019/10/03/sql-queries-don-t-start-with-select/][SQL queries don't start with SELECT]] :article:2019:
+*** [[https://mitchum.blog/null-values-in-sql-queries/][NULL Values in SQL Queries]] :article:2020:
 * Reverse Engineering
 ** [[https://www.youtube.com/user/OpenSecurityTraining][Open Security Training YouTube Channel]]                            :videos:binary:reverse:engineering:
 ** [[https://github.com/FireyFly/pixd][Colourful visualization tool for binary files]] :binary:data:visualization:
